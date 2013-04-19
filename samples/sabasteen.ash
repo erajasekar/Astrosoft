@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>sabasteen </Name><DateTime>Sep 10 1980, 08:00:00 AM</DateTime><Place><City>Delhi   </City><Longitude dir="E">77.12</Longitude><Latitude dir="N">28.37</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

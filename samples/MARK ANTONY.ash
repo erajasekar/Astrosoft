@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>MARK ANTONY</Name><DateTime>Mar 20 1989, 09:05:00 AM</DateTime><Place><City>Madurai</City><Longitude dir="E">78.06</Longitude><Latitude dir="N">09.54</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp codebase="file:///c:/AstroSoft" href="bin/AstroSoft.jnlp"> 
+   <information> 
+      <title>Astrosoft Application</title> 
+      <vendor>E. Rajsekar</vendor> 
+      <description>Astrology Software</description> 
+      <offline-allowed/> 
+    <shortcut online="false">
+      <desktop/>
+      <menu submenu="Astrosoft Application"/>
+    </shortcut>
+    </information> 
+    <resources> 
+        <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se" />
+        
+        <property name="java.util.logging.config.file" value="bin/AstroSoft.jar!/resources/logging.properties"/>
+        <jar href="bin/AstroSoft.jar" download="eager"/> 
+        <jar href="lib/toniclf.jar" download="eager"/> 
+        <jar href="lib/swisseph.jar" download="eager"/> 
+        <jar href="lib/org.jar" download="eager"/> 
+        <jar href="lib/suntimes.jar" download="eager"/> 
+        <jar href="lib/ant-1.6.5.jar" download="eager"/>
+        <jar href="lib/ant-antlr-1.6.5.jar" download="eager"/>
+        <jar href="lib/antlr-2.7.6.jar" download="eager"/>
+        <jar href="lib/asm-attrs.jar" download="eager"/>
+        <jar href="lib/asm.jar" download="eager"/>
+        <jar href="lib/c3p0-0.9.1.jar" download="eager"/>
+        <jar href="lib/cglib-2.1.3.jar" download="eager"/>
+        <jar href="lib/commons-collections-2.1.1.jar" download="eager"/>
+		<jar href="lib/commons-logging-1.0.4.jar" download="eager"/>
+		<jar href="lib/dom4j-1.6.1.jar" download="eager"/>
+		<jar href="lib/ejb3-persistence.jar" download="eager"/>
+        <jar href="lib/hibernate-annotations.jar" download="eager"/>
+		<jar href="lib/hibernate-entitymanager.jar" download="eager"/>
+		<jar href="lib/hibernate3.jar" download="eager"/>
+		<jar href="lib/hsqldb.jar" download="eager"/>
+        <jar href="lib/javassist.jar" download="eager"/>
+		<jar href="lib/jboss-archive-browsing.jar" download="eager"/>
+		<jar href="lib/jta.jar" download="eager"/>
+		<jar href="lib/fop.jar" download="eager"/>
+		<jar href="lib/avalon-framework-4.2.0.jar" download="eager"/>
+		<jar href="lib/batik-all-1.6.jar" download="eager"/>
+		<jar href="lib/commons-io-1.1.jar" download="eager"/>
+		<jar href="lib/xmlgraphics-commons-1.1.jar" download="eager"/>
+		<jar href="lib/org.eclipse.jdt.core.jar" download="eager"/>
+		<jar href="lib/drools-compiler.jar" download="eager"/>
+		<jar href="lib/drools-core.jar" download="eager"/>
+		<jar href="lib/antlr-runtime.jar" download="eager"/>
+		<jar href="lib/drools-decisiontables.jar" download="eager"/>
+		<jar href="lib/drools-jsr94.jar" download="eager"/>
+		<jar href="lib/jsr94.jar" download="eager"/>
+		<jar href="lib/jxl.jar" download="eager"/>
+		<jar href="lib/mvel14.jar" download="eager"/>
+		<jar href="lib/xpp3.jar" download="eager"/>
+		<jar href="lib/xstream.jar" download="eager"/>
+		<jar href="lib/xpp3_min.jar" download="eager"/>
+		<jar href="lib/junit.jar" download="eager"/>
+    
+    </resources> 
+    <application-desc main-class="app.astrosoft.ui.AstroSoft"> 
+    	<argument>c:/AstroSoft/samples/raja.ash</argument> 
+    </application-desc>
+    
+    <security>
+        <all-permissions/>
+    </security>
+</jnlp> 

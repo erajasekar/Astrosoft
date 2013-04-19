@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Ananthitha Sister</Name><DateTime>Feb 18 1988, 09:10:00 AM</DateTime><Place><City>Mavelikkara</City><Longitude dir="E">76.44</Longitude><Latitude dir="N">09.30</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

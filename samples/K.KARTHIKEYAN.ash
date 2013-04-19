@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>K.KARTHIKEYAN</Name><DateTime>Nov 28 1967, 04:25:00 AM</DateTime><Place><City>SALEM</City><Longitude dir="E">78.12</Longitude><Latitude dir="N">11.39</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

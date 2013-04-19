@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>saravanan bride</Name><DateTime>Dec 8 1984, 01:20:00 PM</DateTime><Place><City>Madurai</City><Longitude dir="E">78.10</Longitude><Latitude dir="N">09.58</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

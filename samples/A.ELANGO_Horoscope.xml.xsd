@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Astrosoft" type="AstrosoftType"/>
+  <xs:complexType name="Bhava-PositionsType">
+    <xs:sequence>
+      <xs:element type="Bhava-PositionType" name="Bhava-Position" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HoroscopeType">
+    <xs:sequence>
+      <xs:element type="Horoscope-InformationType" name="Horoscope-Information"/>
+      <xs:element type="Planetary-PositionType" name="Planetary-Position"/>
+      <xs:element type="Bhava-PositionsType" name="Bhava-Positions"/>
+      <xs:element type="Varga-ChartType" name="Varga-Chart"/>
+      <xs:element type="AshtavargasType" name="Ashtavargas"/>
+      <xs:element type="ShadbalasType" name="Shadbalas"/>
+      <xs:element type="Vimshottari-DasasType" name="Vimshottari-Dasas"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Title"/>
+  </xs:complexType>
+  <xs:complexType name="Vimshottari-DasasType">
+    <xs:sequence>
+      <xs:element type="Major-DasaType" name="Major-Dasa" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="KalabalaType">
+    <xs:sequence>
+      <xs:element type="BalaType" name="Bala" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Major-DasaType">
+    <xs:sequence>
+      <xs:element type="Sub-DasaType" name="Sub-Dasa" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Dasa" use="optional"/>
+    <xs:attribute type="xs:string" name="Period" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="InformationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="Name" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AstrosoftType">
+    <xs:sequence>
+      <xs:element type="HoroscopeType" name="Horoscope"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AshtavargasType">
+    <xs:sequence>
+      <xs:element type="AshtavargaType" name="Ashtavarga" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ShadbalaType">
+    <xs:sequence>
+      <xs:element type="BalaType" name="Bala" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Horoscope-InformationType">
+    <xs:sequence>
+      <xs:element type="InformationType" name="Information" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SthanabalaType">
+    <xs:sequence>
+      <xs:element type="BalaType" name="Bala" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Planet-PositionType">
+    <xs:sequence>
+      <xs:element name="Planet">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Sun"/>
+            <xs:enumeration value="Moon"/>
+            <xs:enumeration value="Mars"/>
+            <xs:enumeration value="Mercury"/>
+            <xs:enumeration value="Jupiter"/>
+            <xs:enumeration value="Venus"/>
+            <xs:enumeration value="Saturn"/>
+            <xs:enumeration value="Rahu"/>
+            <xs:enumeration value="Ketu"/>
+            <xs:enumeration value="Asc"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Longitude">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="003 : 31 : 13"/>
+            <xs:enumeration value="216 : 42 : 37"/>
+            <xs:enumeration value="055 : 42 : 01"/>
+            <xs:enumeration value="022 : 55 : 27"/>
+            <xs:enumeration value="150 : 05 : 16"/>
+            <xs:enumeration value="004 : 10 : 08"/>
+            <xs:enumeration value="230 : 34 : 27"/>
+            <xs:enumeration value="206 : 28 : 15"/>
+            <xs:enumeration value="026 : 28 : 15"/>
+            <xs:enumeration value="020 : 07 : 30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Rasi">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Mesha"/>
+            <xs:enumeration value="Vrichika"/>
+            <xs:enumeration value="Vrishabha"/>
+            <xs:enumeration value="Kanya"/>
+            <xs:enumeration value="Thula"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="NakshathraPada">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Ashwini ~ 2"/>
+            <xs:enumeration value="Anuradha ~ 2"/>
+            <xs:enumeration value="Mrigasira ~ 1"/>
+            <xs:enumeration value="Bharani ~ 3"/>
+            <xs:enumeration value="Uttra Phalguni ~ 2"/>
+            <xs:enumeration value="Jyeshta ~ 2"/>
+            <xs:enumeration value="Vishakha ~ 2"/>
+            <xs:enumeration value="Bharani ~ 4"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="JaiminiKaraka">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="GnatiKaraka"/>
+            <xs:enumeration value="MatruKaraka"/>
+            <xs:enumeration value="AtmaKaraka"/>
+            <xs:enumeration value="AmatyaKaraka"/>
+            <xs:enumeration value="DaraKaraka"/>
+            <xs:enumeration value="PuthraKaraka"/>
+            <xs:enumeration value="BhratruKaraka"/>
+            <xs:enumeration value=""/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ChartType">
+    <xs:sequence>
+      <xs:element type="HouseType" name="House" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="Bhava-PositionType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="House"/>
+      <xs:element type="xs:string" name="Bhava"/>
+      <xs:element type="xs:string" name="Start"/>
+      <xs:element type="xs:string" name="Mid"/>
+      <xs:element type="xs:string" name="End"/>
+      <xs:element name="Length">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="031 : 43 : 08"/>
+            <xs:enumeration value="027 : 34 : 46"/>
+            <xs:enumeration value="026 : 30 : 20"/>
+            <xs:enumeration value="028 : 18 : 59"/>
+            <xs:enumeration value="031 : 46 : 30"/>
+            <xs:enumeration value="034 : 06 : 13"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BalaType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name" minOccurs="0"/>
+      <xs:element type="xs:string" name="Sun" minOccurs="0"/>
+      <xs:element type="xs:string" name="Moon" minOccurs="0"/>
+      <xs:element type="xs:string" name="Mars" minOccurs="0"/>
+      <xs:element type="xs:string" name="Mercury" minOccurs="0"/>
+      <xs:element type="xs:string" name="Jupiter" minOccurs="0"/>
+      <xs:element type="xs:string" name="Venus" minOccurs="0"/>
+      <xs:element type="xs:string" name="Saturn" minOccurs="0"/>
+      <xs:element name="Rahu" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="056.08"/>
+            <xs:enumeration value=""/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Ketu" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="056.08"/>
+            <xs:enumeration value=""/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="House" minOccurs="0"/>
+      <xs:element type="xs:string" name="Bhava" minOccurs="0"/>
+      <xs:element name="BhavaAdhipathiBala" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="329.89"/>
+            <xs:enumeration value="461.03"/>
+            <xs:enumeration value="573.37"/>
+            <xs:enumeration value="347.00"/>
+            <xs:enumeration value="503.30"/>
+            <xs:enumeration value="406.51"/>
+            <xs:enumeration value="337.55"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="BhavaDigBala" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="030.00"/>
+            <xs:enumeration value="020.00"/>
+            <xs:enumeration value="040.00"/>
+            <xs:enumeration value="060.00"/>
+            <xs:enumeration value="010.00"/>
+            <xs:enumeration value="000.00"/>
+            <xs:enumeration value="050.00"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="BhavaDrishtiBala" minOccurs="0"/>
+      <xs:element type="xs:string" name="BhavaBala" minOccurs="0"/>
+      <xs:element type="xs:string" name="Rupa" minOccurs="0"/>
+      <xs:element type="xs:string" name="Rank" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Sub-DasaType">
+    <xs:sequence>
+      <xs:element type="Anthara-DasaType" name="Anthara-Dasa" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Dasa" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="HouseType" mixed="true">
+    <xs:sequence>
+      <xs:element name="Planet" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Su"/>
+            <xs:enumeration value="Me"/>
+            <xs:enumeration value="Ve"/>
+            <xs:enumeration value="Ke"/>
+            <xs:enumeration value="Asc"/>
+            <xs:enumeration value="Ma"/>
+            <xs:enumeration value="Ju"/>
+            <xs:enumeration value="Ra"/>
+            <xs:enumeration value="Mo"/>
+            <xs:enumeration value="Sa"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="No" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="AshtavargaType">
+    <xs:sequence>
+      <xs:element ref="ash:Chart" maxOccurs="unbounded" minOccurs="0" xmlns:ash="Ashtavarga"/>
+      <xs:element type="GunaharasType" name="Gunaharas" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="Varga-ChartType">
+    <xs:sequence>
+      <xs:element type="ChartType" name="Chart" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GunaharaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="Name" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="GunaharasType">
+    <xs:sequence>
+      <xs:element type="GunaharaType" name="Gunahara" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BhavabalaType">
+    <xs:sequence>
+      <xs:element type="BalaType" name="Bala" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Planetary-PositionType">
+    <xs:sequence>
+      <xs:element type="Planet-PositionType" name="Planet-Position" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ShadbalasType">
+    <xs:sequence>
+      <xs:element type="ShadbalaType" name="Shadbala"/>
+      <xs:element type="SthanabalaType" name="Sthanabala"/>
+      <xs:element type="KalabalaType" name="Kalabala"/>
+      <xs:element type="BhavabalaType" name="Bhavabala"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Anthara-DasaType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Dasa"/>
+      <xs:element type="xs:string" name="Start"/>
+      <xs:element type="xs:string" name="End"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

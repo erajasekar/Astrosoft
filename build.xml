@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<!-- ====================================================================== 
+     May 2, 2007 4:50:32 PM                                                        
+
+     project    - Astrosoft
+                   
+     Author 	- Raja                                                                
+     ====================================================================== 
+-->
+<project name="AstroSoft" default="run" basedir=".">
+
+	<description>
+    	Astrosoft Application for Hindu Astrology Computation
+    </description>
+
+	<property name="src_dir" value="src" />
+	<property name="lib_dir" value="lib" />
+	<property name="deploy_dir" value="deploy" />
+	<property name="resources_dir" value="resources" />
+	<property name="dist_resources_dir" value="${deploy_dir}/resources" />
+	<property name="bin_dir" value="bin" />
+	<property name="etc_dir" value="${src_dir}/etc" />
+	<property name="release_dir" value="release/AstroSoft" />
+	<property name="log_prop" value="${resources_dir}/logging.properties" />
+
+	<path id="libraries">
+		<fileset dir="${lib_dir}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<path id="classpath">
+		<path refid="libraries" />
+		<path path="${deploy_dir}" />
+	</path>
+
+	<target name="clean" description="Deletes old class files">
+		<delete dir="${deploy_dir}" />
+		<mkdir dir="${deploy_dir}" />
+		<mkdir dir="${dist_resources_dir}" />
+	</target>
+
+	<target name="build" description="Builds Astrosoft Application" depends="compile,copy-resources" />
+
+	<target name="compile" description="Compiles source files" depends="clean">
+		<javac srcdir="${src_dir}" destdir="${deploy_dir}" target="1.5" classpathref="libraries">
+		</javac>
+	</target>
+
+	<target name="copy-resources" description="Copy Resources to Classes dir">
+		<copy todir="${dist_resources_dir}">
+			<fileset dir="${resources_dir}" />
+		</copy>
+		<copy todir="${deploy_dir}">
+			<fileset dir="${etc_dir}" />
+		</copy>
+	</target>
+
+	<target name="run" description="Run Astrosoft Application">
+		<java fork="true" classname="app.astrosoft.ui.AstroSoft">
+			<classpath refid="classpath" />
+			<jvmarg value="-Djava.util.logging.config.file=${log_prop}" />
+			<jvmarg value="-Djava.util.prefs.PreferencesFactory=app.astrosoft.pref.UserPreferencesFactory" />
+		</java>
+	</target>
+
+	<target name="build-run" description="Builds and Runs Astrosoft Application" depends="build" />
+
+	<target name="deploy" description="Creates and deploys AstroSoft.jar" depends="build">
+
+		<manifestclasspath property="lib.list" jarfile="${bin_dir}/AstroSoft.jar">
+			<classpath refid="classpath" />
+		</manifestclasspath>
+
+		<tstamp>
+			<format pattern="MM/dd/yyyy HH:mm:ss" property="tstamp.default" />
+		</tstamp>
+		<jar basedir="${deploy_dir}" destfile="${bin_dir}/AstroSoft.jar">
+			<manifest>
+				<attribute name="Main-Class" value="app.astrosoft.ui.AstroSoft" />
+				<attribute name="Jar-Name" value="AstroSoft.jar" />
+				<attribute name="Class-Path" value="${lib.list}" />
+				<attribute name="Create-Date" value="${tstamp.default}" />
+				<attribute name="Java-Version" value="${java.version}" />
+				<attribute name="Built-By" value="${user.name}" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="deploy-run" description="Deploys and Runs Astrosoft Application" depends="deploy">
+		<java fork="true" jar="${bin_dir}/AstroSoft.jar">
+			<jvmarg value="-Djava.util.logging.config.file=${log_prop}" />
+			<jvmarg value="-Djava.util.prefs.PreferencesFactory=app.astrosoft.pref.UserPreferencesFactory" />
+		</java>
+	</target>
+
+	<target name="start" description="Launch Astrosoft Application">
+		<java fork="true" jar="${bin_dir}/AstroSoft.jar">
+			<jvmarg value="-Djava.util.logging.config.file=${log_prop}" />
+			<jvmarg value="-Djava.util.prefs.PreferencesFactory=app.astrosoft.pref.UserPreferencesFactory" />
+		</java>
+	</target>
+
+	<target name="signjars" description="Signs Jar files " depends="deploy">
+		<signjar alias="Raja" keystore="${bin_dir}/astrosoft_keys" storepass="astrosoft">
+
+			<fileset dir="${lib_dir}">
+				<include name="*.jar" />
+			</fileset>
+			<fileset dir="${bin_dir}">
+				<include name="AstroSoft.jar" />
+			</fileset>
+		</signjar>
+	</target>
+
+	<target name="genkeys" description="Generates Keys for jar signing ">
+		<genkey alias="Raja" keystore="${bin_dir}/astrosoft_keys" storepass="astrosoft" keypass="astrosoft" verbose="true" dname="CN=Rajasekar Elango, OU=Individual, O=Astrosoft, C=IN" />
+	</target>
+
+	<target name="dbmanager" description="Start HSQLDB manager">
+		<java classname="org.hsqldb.util.DatabaseManagerSwing" fork="true" classpathref="libraries" failonerror="true">
+			<arg value="-url" />
+			<arg value="jdbc:hsqldb:hsql://localhost/astrodb" />
+			<arg value="-driver" />
+			<arg value="org.hsqldb.jdbcDriver" />
+		</java>
+	</target>
+
+	<target name="startdb" description="Start HSQLDB Server">
+		<java classname="org.hsqldb.Server" fork="true" classpath="${lib_dir}/hsqldb.jar">
+		</java>
+	</target>
+
+	<target name="run-app" description="Run Java program specified as -Dclass=class_name ">
+		<java fork="true" classname="${class}">
+			<classpath refid="classpath" />
+			<jvmarg value="-Djava.util.logging.config.file=${log_prop}" />
+		</java>
+	</target>
+
+	<target name="release" description="Creates a release package">
+		<delete dir="${release_dir}" />
+		<mkdir dir="${release_dir}" />
+		<copy todir="${release_dir}/bin">
+			<fileset dir="${bin_dir}" />
+		</copy>
+		<copy todir="${release_dir}/lib">
+			<fileset dir="${lib_dir}" />
+		</copy>
+	</target>
+
+</project>
+

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>B.ARUN RAJESH</Name><DateTime>Dec 18 1984, 08:12:00 PM</DateTime><Place><City>Dindgul   </City><Longitude dir="E">78.00</Longitude><Latitude dir="N">10.16</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

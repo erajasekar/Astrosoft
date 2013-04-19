@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>M.DEEPHA</Name><DateTime>Mar 23 1983, 05:45:00 PM</DateTime><Place><City>BANGALORE</City><Longitude dir="E">77.38</Longitude><Latitude dir="N">12.58</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

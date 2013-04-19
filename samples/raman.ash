@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>Raman</Name><DateTime>Apr 3 1979, 04:35:00 PM</DateTime><Place><City>siswa bazar</City><Longitude dir="E">83.45</Longitude><Latitude dir="N">27.08</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

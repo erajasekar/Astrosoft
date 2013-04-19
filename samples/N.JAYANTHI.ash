@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>N.JAYANTHI</Name><DateTime>Jun 17 1984, 03:25:00 PM</DateTime><Place><City>Erode </City><Longitude dir="E">77.44</Longitude><Latitude dir="N">11.22</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

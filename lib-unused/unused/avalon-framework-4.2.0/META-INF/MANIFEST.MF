@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.5.3 
+Created-By: Apache Jakarta Maven
+Built-By: mcconnell
+Package: org.apache.avalon.framework
+Build-Jdk: 1.4.2
+Extension-Name: avalon-framework
+Specification-Version: 1.0
+Specification-Vendor: Apache Software Foundation
+Specification-Title: Avalon Framework API
+Implementation-Version: 4.1.5
+Implementation-Vendor: Apache Software Foundation
+Implementation-Vendor-Id: ASF
+

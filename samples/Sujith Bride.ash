@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Sujith Bride</Name><DateTime>May 3 1983, 12:30:00 PM</DateTime><Place><City>Kuwait</City><Longitude dir="E">47.59</Longitude><Latitude dir="N">29.19</Latitude><TimeZone>Asia/Kuwait</TimeZone></Place></BirthData>

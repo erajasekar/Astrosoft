@@ -1,0 +1,148 @@
+Ashtavarga
+Sun Astavarga 
+
+Mesha -->  3
+Vrishabha -->  3
+Mithuna -->  5
+Kataka -->  6
+Simha -->  4
+Kanya -->  5
+Thula -->  4
+Vrichika -->  3
+Dhanus -->  4
+Makara -->  3
+Kumbha -->  3
+Meena -->  5
+Sum 48
+
+RasiGuna 60
+GrahaGuna 45
+Moon Astavarga 
+
+Mesha -->  4
+Vrishabha -->  3
+Mithuna -->  6
+Kataka -->  5
+Simha -->  5
+Kanya -->  4
+Thula -->  2
+Vrichika -->  4
+Dhanus -->  2
+Makara -->  6
+Kumbha -->  5
+Meena -->  3
+Sum 49
+
+RasiGuna 81
+GrahaGuna 40
+Mars Astavarga 
+
+Mesha -->  3
+Vrishabha -->  2
+Mithuna -->  5
+Kataka -->  4
+Simha -->  3
+Kanya -->  6
+Thula -->  1
+Vrichika -->  2
+Dhanus -->  2
+Makara -->  3
+Kumbha -->  2
+Meena -->  6
+Sum 39
+
+RasiGuna 98
+GrahaGuna 65
+Mercury Astavarga 
+
+Mesha -->  6
+Vrishabha -->  2
+Mithuna -->  5
+Kataka -->  6
+Simha -->  5
+Kanya -->  5
+Thula -->  7
+Vrichika -->  3
+Dhanus -->  4
+Makara -->  3
+Kumbha -->  4
+Meena -->  4
+Sum 54
+
+RasiGuna 89
+GrahaGuna 71
+Jupiter Astavarga 
+
+Mesha -->  2
+Vrishabha -->  3
+Mithuna -->  5
+Kataka -->  7
+Simha -->  4
+Kanya -->  6
+Thula -->  3
+Vrichika -->  6
+Dhanus -->  5
+Makara -->  4
+Kumbha -->  6
+Meena -->  5
+Sum 56
+
+RasiGuna 94
+GrahaGuna 84
+Venus Astavarga 
+
+Mesha -->  6
+Vrishabha -->  6
+Mithuna -->  4
+Kataka -->  5
+Simha -->  3
+Kanya -->  4
+Thula -->  4
+Vrichika -->  5
+Dhanus -->  4
+Makara -->  6
+Kumbha -->  3
+Meena -->  2
+Sum 52
+
+RasiGuna 80
+GrahaGuna 55
+Saturn Astavarga 
+
+Mesha -->  2
+Vrishabha -->  2
+Mithuna -->  4
+Kataka -->  4
+Simha -->  4
+Kanya -->  5
+Thula -->  2
+Vrichika -->  5
+Dhanus -->  2
+Makara -->  2
+Kumbha -->  5
+Meena -->  2
+Sum 39
+
+RasiGuna 100
+GrahaGuna 75
+SarvaAshtavarga Astavarga 
+
+Mesha -->  26
+Vrishabha -->  21
+Mithuna -->  34
+Kataka -->  37
+Simha -->  28
+Kanya -->  35
+Thula -->  23
+Vrichika -->  28
+Dhanus -->  23
+Makara -->  27
+Kumbha -->  28
+Meena -->  27
+Sum 337
+
+RasiGuna 214
+GrahaGuna 271
+
+Total 674
+

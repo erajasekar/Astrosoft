@@ -1,0 +1,69 @@
+18 Dec 14:13:54  - 19 Dec 16:46:21  -> 93 : 20 : 00 - 106 : 40 : 00 -> [ Kataka , Poosam ] VeryGood
+
+14 Jan 21:26:02  - 15 Jan 23:59:46  -> 93 : 20 : 00 - 106 : 40 : 00 -> [ Kataka , Poosam ] VeryGood
+
+23 Dec 01:49:59  - 24 Dec 04:38:26  -> 146 : 40 : 00 - 160 : 00 : 00 -> [ Simha , Uththiram ] VeryGood
+
+19 Jan 09:04:07  - 20 Jan 12:06:16  -> 146 : 40 : 00 - 160 : 00 : 00 -> [ Simha , Uththiram ] VeryGood
+
+24 Dec 04:38:26  - 20 Jan 12:06:16  -> 160 : 00 : 00 - 160 : 00 : 00 -> [ Kanya , Hastam ] VeryGood
+
+24 Dec 04:38:26  - 20 Jan 12:06:16  -> 160 : 00 : 00 - 160 : 00 : 00 -> [ Kanya , Hastam ] VeryGood
+
+24 Dec 04:38:26  - 25 Dec 06:56:30  -> 160 : 00 : 00 - 173 : 20 : 00 -> [ Kanya , Hastam ] VeryGood
+
+20 Jan 12:06:16  - 21 Jan 14:48:54  -> 160 : 00 : 00 - 173 : 20 : 00 -> [ Kanya , Hastam ] VeryGood
+
+26 Dec 08:32:38  - 27 Dec 09:19:56  -> 186 : 40 : 00 - 200 : 00 : 00 -> [ Thula , Swathi ] VeryGood
+
+22 Jan 16:59:04  - 23 Jan 18:26:01  -> 186 : 40 : 00 - 200 : 00 : 00 -> [ Thula , Swathi ] VeryGood
+
+28 Dec 09:16:41  - 29 Dec 08:26:00  -> 213 : 20 : 00 - 226 : 40 : 00 -> [ Vrichika , Anusham ] VeryGood
+
+24 Jan 19:02:52  - 25 Jan 18:47:32  -> 213 : 20 : 00 - 226 : 40 : 00 -> [ Vrichika , Anusham ] VeryGood
+
+04 Dec 17:22:05  - 05 Dec 15:30:00  -> 266 : 40 : 00 - 280 : 00 : 00 -> [ Dhanus , Uththiradam ] VeryGood
+
+01 Jan 02:28:56  - 01 Jan 23:56:19  -> 266 : 40 : 00 - 280 : 00 : 00 -> [ Dhanus , Uththiradam ] VeryGood
+
+28 Jan 13:31:53  - 29 Jan 10:46:13  -> 266 : 40 : 00 - 280 : 00 : 00 -> [ Dhanus , Uththiradam ] VeryGood
+
+05 Dec 15:30:00  - 06 Dec 13:43:08  -> 280 : 00 : 00 - 293 : 19 : 59 -> [ Makara , Thiruvonam ] VeryGood
+
+01 Jan 23:56:19  - 02 Jan 21:25:00  -> 280 : 00 : 00 - 293 : 19 : 59 -> [ Makara , Thiruvonam ] VeryGood
+
+29 Jan 10:46:13  - 30 Jan 07:48:53  -> 280 : 00 : 00 - 293 : 19 : 59 -> [ Makara , Thiruvonam ] VeryGood
+
+09 Dec 09:39:40  - 10 Dec 08:51:23  -> 333 : 20 : 00 - 346 : 40 : 00 -> [ Meena , Uttarattadhi ] VeryGood
+
+05 Jan 15:27:12  - 06 Jan 14:19:45  -> 333 : 20 : 00 - 346 : 40 : 00 -> [ Meena , Uttarattadhi ] VeryGood
+
+11 Dec 08:20:20  - 12 Dec 08:06:35  -> 00 : 00 : 00 - 13 : 20 : 00 -> [ Mesha , Ashwini ] VeryGood
+
+07 Jan 13:42:28  - 08 Jan 13:34:46  -> 00 : 00 : 00 - 13 : 20 : 00 -> [ Mesha , Ashwini ] VeryGood
+
+14 Dec 08:34:27  - 15 Dec 09:20:03  -> 40 : 00 : 00 - 53 : 20 : 00 -> [ Vrishabha , Rohini ] VeryGood
+
+10 Jan 14:40:18  - 11 Jan 15:49:11  -> 40 : 00 : 00 - 53 : 20 : 00 -> [ Vrishabha , Rohini ] VeryGood
+
+16 Dec 10:30:26  - 17 Dec 12:08:03  -> 66 : 40 : 00 - 80 : 00 : 00 -> [ Mithuna , Thiruvaadhirai ] Good
+
+12 Jan 17:20:08  - 13 Jan 19:12:31  -> 66 : 40 : 00 - 80 : 00 : 00 -> [ Mithuna , Thiruvaadhirai ] Good
+
+20 Dec 19:40:02  - 21 Dec 22:45:34  -> 120 : 00 : 00 - 133 : 20 : 00 -> [ Simha , Magam ] Good
+
+17 Jan 02:51:14  - 18 Jan 05:55:25  -> 120 : 00 : 00 - 133 : 20 : 00 -> [ Simha , Magam ] Good
+
+02 Dec 20:52:26  - 03 Dec 19:12:19  -> 240 : 00 : 00 - 253 : 20 : 00 -> [ Dhanus , Moolam ] Good
+
+30 Dec 06:54:41  - 31 Dec 04:52:05  -> 240 : 00 : 00 - 253 : 20 : 00 -> [ Dhanus , Moolam ] Good
+
+26 Jan 17:42:32  - 27 Jan 15:54:16  -> 240 : 00 : 00 - 253 : 20 : 00 -> [ Dhanus , Moolam ] Good
+
+07 Dec 12:06:56  - 08 Dec 10:45:06  -> 306 : 40 : 00 - 320 : 00 : 00 -> [ Kumbha , Shathayam ] Good
+
+03 Jan 19:04:40  - 04 Jan 17:03:24  -> 306 : 40 : 00 - 320 : 00 : 00 -> [ Kumbha , Shathayam ] Good
+
+31 Jan 04:51:29  - 01 Feb 02:05:05  -> 306 : 40 : 00 - 320 : 00 : 00 -> [ Kumbha , Shathayam ] Good
+
+

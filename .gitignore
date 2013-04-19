@@ -1,0 +1,15 @@
+^target$
+^out$
+\.class$
+/classes$
+^\.idea$
+\.log$
+\.log\.*
+\.iml$
+\.orig$
+\.pdf$
+^deploy$
+\.project$
+\.classpath$
+^release$
+^lib-unused$

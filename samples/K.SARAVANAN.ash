@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>K.SARAVANAN</Name><DateTime>Jan 21 1988, 11:00:00 PM</DateTime><Place><City>Karikkudui  </City><Longitude dir="E">78.45</Longitude><Latitude dir="N">10.03</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Karthi EEE brother</Name><DateTime>May 28 1981, 04:30:00 PM</DateTime><Place><City>Karur</City><Longitude dir="E">78.05</Longitude><Latitude dir="N">10.58</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

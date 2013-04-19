@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Subathra</Name><DateTime>Dec 22 1982, 12:10:08 AM</DateTime><Place><City>Madurai </City><Longitude dir="E">78.10</Longitude><Latitude dir="N">09.58</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

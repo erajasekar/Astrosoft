@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Male baby of dubai parthipan</Name><DateTime>Mar 2 2011, 07:37:00 AM</DateTime><Place><City>Salem</City><Longitude dir="E">77.44</Longitude><Latitude dir="N">11.22</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

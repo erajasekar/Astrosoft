@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>A.Elango</Name><DateTime>Apr 17 1957, 07:20:00 AM</DateTime><Place><City>Erode</City><Longitude dir="E">77.45</Longitude><Latitude dir="N">11.20</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

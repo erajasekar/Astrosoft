@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>D.RAVICHANDRAN</Name><DateTime>Aug 10 1957, 10:15:00 PM</DateTime><Place><City>Kolar</City><Longitude dir="E">78.13</Longitude><Latitude dir="N">13.09</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

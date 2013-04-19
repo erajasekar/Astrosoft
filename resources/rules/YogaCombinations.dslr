@@ -1,0 +1,608 @@
+#created on: Oct 19, 2007
+#Author E. Rajasekar
+ 
+package app.astrosoft.xps.yoga
+
+import java.util.Set;
+import java.util.EnumSet;
+import java.util.Arrays;
+import app.astrosoft.xps.beans.PlanetChart;
+import app.astrosoft.beans.PlanetCharacter;
+import app.astrosoft.xps.yoga.YogaResults;
+import app.astrosoft.xps.beans.YogaFacts;
+import app.astrosoft.consts.Planet;
+import app.astrosoft.consts.Sex;
+import app.astrosoft.consts.Rasi;
+import app.astrosoft.consts.Varga;
+import app.astrosoft.consts.YogaCombination;
+import app.astrosoft.util.Mod;
+
+global app.astrosoft.xps.yoga.YogaResults yogas
+#global app.astrosoft.beans.PlanetCharacter $pc
+global app.astrosoft.xps.beans.YogaFacts $facts
+
+expander YogaCombinations.dsl
+
+dialect "java" 
+
+rule "Adhi Yoga"
+when
+		In "Rasi" chart;
+		"6,7,8" th of "Moon" occupied by all benefics 
+	then 
+		int count = count of "6,7,8" of "Moon";
+		
+		if (count >= 3) 
+		 	Predict "AdhiYoga" with efficacy "100%";
+		else 
+		if ( count >= 2)
+			Predict "AdhiYoga" with efficacy "75%";
+		
+end
+
+## This does change efficacy if malefics were present
+rule "Amala Yoga"
+	when
+		In "Rasi" chart;
+		"10" th of "Moon" occupied by a benefic;
+		OR
+		"10" th of "Ascendant" occupied by a benefic 
+	then 
+		Predict "AmalaYoga" with efficacy "100%";
+end
+
+rule "Amsavatara Yoga"
+	when
+		In "Rasi" chart;
+		"Jupiter" is in kendra from "Ascendant";
+		"Venus" is in kendra from "Ascendant";
+		"Saturn" is in kendra from "Ascendant";
+		"Saturn" is exalted;
+		"1" house is a movable sign;
+	then
+		Predict "AmsavataraYoga" with efficacy "100%";
+end
+
+rule "Anapha Yoga"
+	when 
+		In "Rasi" chart;
+		"12" th of "Moon" occupied by any of planets "Mars,Mercury,Jupiter,Venus,Saturn";
+	then
+		Set<Planet> planets = "12" th of "Moon";
+		> if ($facts.character().isAnyMalefics(planets)) {
+			Predict "AnaphaYoga" with efficacy "50%";
+		>}else {
+			Predict "AnaphaYoga" with efficacy "100%";
+		>}
+end
+
+rule "Bhadra Yoga"
+	when
+		In "Rasi" chart;
+		"Mercury" is in kendra from "Ascendant";
+		"Mercury" is in own house;
+		OR
+		"Mercury" is exalted;
+	then 
+		Predict "BhadraYoga" with efficacy "100%";
+end
+
+rule "Bheri Yoga"
+	when
+		In "Rasi" chart;
+		"Venus" is in kendra from "Jupiter";
+		"Venus" is in kendra to "1" th lord;
+		"9" th lord is strongly disposed;
+	then 
+		Predict "BheriYoga" with efficacy "100%";
+end
+
+rule "Budha-Aditya Yoga"
+	when
+		In "Rasi" chart;
+		"Mercury" conjoins "Sun";
+	then 
+		Predict "BudhaAdityaYoga" with efficacy "100%";
+end
+
+rule "Chandra Mangla Yoga"
+	when
+		In "Rasi" chart;
+		"Moon" conjoins "Mars";
+	then 
+		Predict "ChandraManglaYoga" with efficacy "100%";
+end
+
+rule "Chapa Yoga"
+	when
+		In "Rasi" chart;
+		"1" th lord is exalted;
+		"4" th lord is in "10" th house;
+		"10" th lord is in "4" th house;
+	then 
+		Predict "ChapaYoga" with efficacy "100%";
+end
+
+##This rule explicitly excludes Rahu/Ketu
+rule "Chatussagara Yoga"
+	when
+		In "Rasi" chart;
+		"1" th of "Ascendant" occupied by a planet;
+		"4" th of "Ascendant" occupied by a planet;
+		"7" th of "Ascendant" occupied by a planet;
+		"10" th of "Ascendant" occupied by a planet;
+	then 
+		Predict "ChatussagaraYoga" with efficacy "100%";
+end
+
+rule "Devendra Yoga"
+	when
+		In "Rasi" chart;
+		"1" house is a fixed sign;
+		"1" th lord is in "11" th house;
+		"11" th lord is in "1" th house;
+		"2" th lord is in "10" th house;
+		"10" th lord is in "2" th house;
+	then 
+		Predict "DevendraYoga" with efficacy "100%";
+end
+
+rule "Dhurdhura Yoga"
+	when
+		In "Rasi" chart;
+		"2" th of "Moon" occupied by any of planets "Mars,Mercury,Jupiter,Venus,Saturn";
+		"12" th of "Moon" occupied by any of planets "Mars,Mercury,Jupiter,Venus,Saturn";
+	then 
+		Predict "DhurdhuraYoga" with efficacy "100%";
+end
+
+rule "Gaja Yoga"
+	when
+		In "Rasi" chart;
+		"7" th lord is in "11" th house;
+		"Moon" is in "11" th house;
+		"Moon" aspected by "11" th lord;
+	then 
+		Predict "GajaYoga" with efficacy "100%";
+end
+
+rule "Gajakesari Yoga"
+	when
+		In "Rasi" chart;
+		"Jupiter" is in kendra from "Moon";
+	then 
+		Predict "GajakesariYoga" with efficacy "100%";
+end
+
+rule "Go Yoga"
+	when
+		In "Rasi" chart;
+		"2" th lord is not "Jupiter";
+		"2" th lord conjoins "Jupiter"
+		"Jupiter" is MoolaTrikona;
+		"1" th lord is exalted;
+	then 
+		Predict "GoYoga" with efficacy "100%";
+end
+
+rule "Jaya Yoga"
+	when
+		In "Rasi" chart;
+		"6" th lord is debilitated;
+		"10" th lord is exalted;
+	then 
+		Predict "JayaYoga" with efficacy "100%";
+end
+
+rule "Hamsa Yoga"
+	when
+		In "Rasi" chart;
+		"Jupiter" is in kendra from "Ascendant";
+		"Jupiter" is in own house;
+		OR
+		"Jupiter" is exalted;
+	then 
+		Predict "HamsaYoga" with efficacy "100%";
+end
+
+rule "Indra Yoga"
+	when
+		In "Rasi" chart;
+		"5" th lord is in "11" th house;
+		"11" th lord is in "5" th house;
+		"Moon" is in "5" th house;
+	then
+		Predict "IndraYoga" with efficacy "100%";
+end
+
+rule "Kusuma Yoga"
+	when
+		In "Rasi" chart;
+		"Jupiter" is in Ascendant;
+		"Moon" is in "7" th house;
+		"Sun" is in "8" th from "Moon"
+	then 
+		Predict "KusumaYoga" with efficacy "100%";
+end
+
+rule "Kahala Yoga"
+	when
+		In "Rasi" chart;
+		"1" th lord is strongly disposed;
+		"4" th lord is in mutual kendra to "9" th lord;
+	then 
+		Predict "KahalaYoga" with efficacy "100%";
+end
+
+rule "Kemadruma Yoga"
+	when
+		In "Rasi" chart;
+		"2" th of "Moon" occupied by no planet;
+		"12" th of "Moon" occupied by no planet; 
+	then 
+		Predict "KemadrumaYoga" with efficacy "100%";
+end
+
+rule "Lakshmi Yoga"
+	when
+		In "Rasi" chart;
+		"1" th lord is powerful;
+		"9" th lord is in own or exalted house;
+		"9" th lord is in kendra or trine;
+	then 
+	    String $percent = strength of "1" th lord;
+		Predict "LakshmiYoga";
+end
+
+rule "Mahabhagya Yoga"
+
+	when
+		In "Rasi" chart;
+		>((
+			Person is "Male";
+			AND
+			Person born during "Day";
+			AND
+			"Sun" is in "Odd" sign;
+			AND
+			"Moon" is in "Odd" sign;
+			AND
+			"Ascendant" is in "Odd" sign; 
+		>)
+		OR
+		>(
+			Person is "Female";
+			AND
+			Person born during "Night";
+			AND
+			"Sun" is in "Even" sign;
+			AND
+			"Moon" is in "Even" sign;
+			AND
+			"Ascendant" is in "Even" sign; 
+		>))
+	then 
+		Predict "MahabhagyaYoga" with efficacy "100%";
+end
+
+rule "Malavya Yoga"
+	when
+		In "Rasi" chart;
+		"Venus" is in kendra from "Ascendant";
+		"Venus" is in own house;
+		OR
+		"Venus" is exalted;
+	then 
+		Predict "MalavyaYoga" with efficacy "100%";
+end
+
+rule "Makuta Yoga"
+	when
+		In "Rasi" chart;
+		"Jupiter" is in "9" th from the "9" th lord;
+		"9" th of "Jupiter" occupied by a benefic;
+		"Saturn" is in "10" th house;
+	then
+		Predict "MakutaYoga" with efficacy "100%";
+end
+
+rule "Obhayachari Yoga"
+	when
+		In "Rasi" chart;
+		"2" th of "Sun" occupied by any of planets "Mars,Mercury,Jupiter,Venus,Saturn";
+		"12" th of "Sun" occupied by any of planets "Mars,Mercury,Jupiter,Venus,Saturn";
+	then 
+		Predict "ObhayachariYoga" with efficacy "100%";
+end
+
+rule "Rajalakshana Yoga"
+	when
+		In "Rasi" chart;
+		"Moon" is in kendra from "Ascendant";
+		"Mercury" is in kendra from "Ascendant";
+		"Jupiter" is in kendra from "Ascendant";
+		"Venus" is in kendra from "Ascendant";
+	then 
+		Predict "RajalakshanaYoga" with efficacy "100%";
+end
+
+rule "Ravi Yoga"
+	when
+		In "Rasi" chart;
+		"10" th lord is not "Saturn";
+		"Sun" is in "10" th house;
+		"Saturn" is in "3" th house;
+		"10" th lord is in "3" th house;
+	then 
+	    Predict "RaviYoga" with efficacy "100%";
+end
+
+rule "Ruchaka Yoga"
+	when
+		In "Rasi" chart;
+		"Mars" is in kendra from "Ascendant";
+		"Mars" is in own house;
+		OR
+		"Mars" is exalted;
+	then 
+		Predict "RuchakaYoga" with efficacy "100%";
+end
+
+rule "Sakata Yoga"
+	when
+		In "Rasi" chart;
+		"Moon" is in "6,8,12" th from "Jupiter";
+	then 
+		Predict "SakataYoga" with efficacy "100%";
+end
+
+rule "Sankha Yoga"
+	when
+		In "Rasi" chart;
+		"1" th lord is strongly disposed;
+		"5" th lord is in mutual kendra to "6" th lord;
+	then 
+		Predict "SankhaYoga" with efficacy "100%";
+end
+
+rule "Sreenatha Yoga"
+	when
+		In "Rasi" chart;
+		"7" th lord is exalted;
+		"7" th lord is in "10" th house;
+		"10" th lord is with "9" th lord;
+	then
+		Predict "SreenathaYoga" with efficacy "100%";
+end
+
+rule "Sasa Yoga"
+	when
+		In "Rasi" chart;
+		"Saturn" is in kendra from "Ascendant";
+		"Saturn" is in own house;
+		OR
+		"Saturn" is exalted;
+	then 
+		Predict "SasaYoga" with efficacy "100%";
+end
+
+rule "Siva Yoga"
+	when
+		In "Rasi" chart;
+		"5" th lord is in "9" th house;
+		"9" th lord is in "10" th house;
+		"10" th lord is in "5" th house;
+	then 
+		Predict "SivaYoga" with efficacy "100%";
+end
+
+rule "Sunapha Yoga"
+	when 
+		In "Rasi" chart;
+		"2" th of "Moon" occupied by any of planets "Mars,Mercury,Jupiter,Venus,Saturn";
+	then
+		Set<Planet> planets = "2" th of "Moon";
+		> if ($facts.character().isAnyMalefics(planets)) {
+			Predict "SunaphaYoga" with efficacy "50%";
+		>}else {
+			Predict "SunaphaYoga" with  efficacy "100%";
+		>}
+end
+
+
+
+
+
+rule "SubhaVasi Yoga"
+	when
+		In "Rasi" chart;
+		"12" th of "Sun" occupied by any of planets "Mercury,Jupiter,Venus";
+	then 
+		Predict "SubhaVasiYoga" with efficacy "100%";
+end
+
+rule "PapaVasi Yoga"
+	when
+		In "Rasi" chart;
+		"12" th of "Sun" occupied by any of planets "Mars,Saturn";
+	then 
+		Predict "PapaVasiYoga" with efficacy "100%";
+end
+
+rule "SubhaVesi Yoga"
+	when
+		In "Rasi" chart;
+		"2" th of "Sun" occupied by any of planets "Mercury,Jupiter,Venus";
+	then 
+		Predict "SubhaVesiYoga" with efficacy "100%";
+end
+
+rule "PapaVesi Yoga"
+	when
+		In "Rasi" chart;
+		"2" th of "Sun" occupied by any of planets "Mars,Saturn";
+	then 
+		Predict "PapaVesiYoga" with efficacy "100%";
+end
+
+rule "Thrilochana Yoga"
+	when
+		In "Rasi" chart;
+		"Sun" is in trine from "Moon";
+		"Moon" is in trine from "Mars";
+	then
+		Predict "ThrilochanaYoga" with efficacy "100%";
+end	
+
+rule "Vasumathi Yoga"
+when
+		In "Rasi" chart;
+		"3,6,10,11" th of "Moon" occupied by all benefics;
+		OR
+		"3,6,10,11" th of "Ascendant" occupied by all benefics;
+	
+	then 
+		int moonCount = count of "3,6,10,11" of "Moon";
+		int ascCount = count of "3,6,10,11" of "Ascendant";
+		
+		> int count = moonCount > ascCount ? moonCount : ascCount;
+		
+		if (count >= 3)
+			Predict "VasumathiYoga" with efficacy "100%";
+		else 
+		if (count >=2 )
+			Predict "VasumathiYoga" with efficacy "75%";
+end
+
+rule "Vidyut Yoga"
+	when
+		In "Rasi" chart;
+		"11" th lord is exalted;
+		"11" th lord conjoins "Venus";
+		"Venus" is in kendra to "1" th lord;
+	then
+		Predict "VidyutYoga" with efficacy "100%";
+end
+
+		
+/*function Set planetsAt(PlanetChart chart, String planetFrom, String location){
+	return chart.planetsAt( Planet.valueOf( planetFrom ) , Integer.parseInt( location  ) );
+}
+*/
+
+function Set planetsAt(PlanetChart chart, String planetFrom, String locations){
+
+	//System.out.println("here..." + $pc);
+	Set planets = EnumSet.noneOf(Planet.class);
+	String []locArray = locations.split(",");
+	
+	for(String loc : locArray){
+		planets.addAll(chart.planetsAt( Planet.valueOf( planetFrom ) , Integer.parseInt( loc  ) ));
+	}
+	
+	planets.remove(Planet.Ascendant);
+	
+	System.out.println(planets);
+	return planets;
+}
+
+function boolean hasPlanetBut(Set planets, String planet){
+	return ( (planets.size() > 0) && !planets.contains(Planet.valueOf(planet)) ); 
+}
+
+function boolean isPlanetInKendraTo(PlanetChart chart, String planet1, String planet2){
+	return chart.isPlanetInKendraTo(Planet.valueOf( planet1 ), Planet.valueOf( planet2 ));
+}
+
+function boolean isPlanetInTrineTo(PlanetChart chart, String planet1, String planet2){
+	return chart.isPlanetInTrineTo(Planet.valueOf( planet1 ), Planet.valueOf( planet2 ));
+}
+
+function boolean isPlanetInKendraToLord(PlanetChart chart, String planet1, String location){
+	return chart.isPlanetInKendraTo(Planet.valueOf( planet1 ), chart.lordOf(location));
+}
+
+function boolean isPlanetInPositionTo(PlanetChart chart, String planet1, String planet2, String positions){
+
+	Mod mod = new Mod(12);
+	String distance = String.valueOf(mod.sub(chart.getPlanetLocation(Planet.valueOf(planet1)) , chart.getPlanetLocation(Planet.valueOf(planet2))) + 1);
+	return (Arrays.asList(positions.split(",")).indexOf(distance) >=0);
+		
+}
+
+function boolean hasAnyOfPlanet(Set source, String planets){
+	
+	if (source.isEmpty()){
+		return false;
+	}
+	
+	String []planetArray = planets.split(",");
+	
+	for (String p : planetArray){
+		if (source.contains(Planet.valueOf(p))){
+			return true;
+		}
+	}
+	
+	return false;
+}  
+
+function boolean isPlanetAtHouse(PlanetChart chart, String planet, String location){
+	return chart.isPlanetAt(Planet.valueOf(planet), Integer.parseInt(location));
+}
+
+function boolean isLordKendraToLord(PlanetChart chart, String location1,String location2){
+	Planet lord1 = chart.lordOf(location1);
+	Planet lord2 = chart.lordOf(location2);
+	
+	return chart.isPlanetInKendraTo(lord1, lord2);
+}
+
+function boolean isPersonSex(YogaFacts facts, String sex){
+	
+	Sex personSex = Sex.valueOf(sex);
+	
+	if (personSex.isMale()){
+		return facts.isMale();
+	}
+	
+	if (personSex.isFemale()){
+		return facts.isFemale();
+	}
+	
+	return false;
+}
+
+function boolean isBornDuring(YogaFacts facts, String dayOrNight){
+	
+	if (dayOrNight.equals("Day")){
+		return facts.isBirthAtDay();
+	}
+	if (dayOrNight.equals("Night")){
+		return !facts.isBirthAtDay();
+	}
+	
+	return false;
+}
+
+function boolean isPlanetInSign(PlanetChart chart, String planet, String sign){
+
+	Rasi house = chart.getPlanetHouse(Planet.valueOf(planet));
+	
+	if (sign.equals("Odd")){
+		return house.isOddSign();
+	}
+	
+	if (sign.equals("Even")){
+		return house.isEvenSign();
+	}
+	
+	return false;
+}
+
+function Set removeNodes(Set planets){
+	planets.remove(Planet.Rahu);
+	planets.remove(Planet.Ketu);
+	
+	return planets;
+}

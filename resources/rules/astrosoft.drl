@@ -1,0 +1,114 @@
+#created on: Oct 16, 2007
+package app.astrosoft.xps
+
+import app.astrosoft.xps.beans.PlanetChart;
+import java.util.Map;
+import java.util.EnumSet;
+import app.astrosoft.consts.Planet;
+import app.astrosoft.consts.Rasi;
+import app.astrosoft.consts.Varga;
+import app.astrosoft.beans.PlanetCharacter;
+import app.astrosoft.xps.YogaResult;
+import app.astrosoft.consts.YogaCombination;
+import app.astrosoft.xps.YogaAnalysis;
+
+global app.astrosoft.xps.YogaAnalysis yogas
+
+rule "test1"
+	dialect "java"
+	when
+		#$m : Map()
+		#a : m.get("Sun")
+		#eval($m[Planet.Sun].equals(new Integer(1)))
+		
+		#$chart : PlanetChart( varga == "Rasi" , $p : planetLocations );
+		#eval(pc.isPlanetsAt(EnumSet.of(Planet.Sun,Planet.Mercury),3))
+		#eval(pc.isPlanetsAt(EnumSet.of(Planet.Sun,Planet.Mercury),Rasi.Vrichika))
+		
+		#p : pc.planetAt(Planet.Sun, 1);
+		
+		
+		#p : pc.planetLocations;
+		#eval(pc.isPlanetInMoolaTrikona(Planet.Venus));
+		
+		#$pc : PlanetCharacter();
+	
+		#eval($pc.isAnyBenefics($chart.planetsAt(Planet.Moon,10)));
+		
+		#eval( evalTrue() && evalFalse())
+		
+	then 
+		System.out.println("PlanetChart " );
+		
+end
+
+/*rule "Anapha Yoga 1"
+
+	when
+		$chart : PlanetChart( varga == "Rasi" )
+		$pc : PlanetCharacter();
+		eval(  !($chart.planetsAt(Planet.Moon,12).contains(Planet.Sun)) )
+		
+	then
+		if ( $pc.isAnyMalefics($chart.planetsAt(Planet.Moon,12)) ) {
+			yogas.addYoga(YogaCombination.AnaphaYoga,"50");
+		}else {
+			yogas.addYoga(YogaCombination.AnaphaYoga,"100");
+		}
+		System.out.println("AnaphaYoga");
+end
+
+rule "Anapha Yoga 2"
+	dialect "mvel"
+	no-loop true
+	
+	when
+		$chart : PlanetChart( varga == "Rasi" );
+		$yoga: YogaResult( yoga == YogaCombination.AnaphaYoga);
+		$pc : PlanetCharacter();
+		eval($pc.isAnyMalefics($chart.planetsAt(Planet.Moon,12)));
+
+	then
+		modify( $yoga ) { efficacy = "50" }
+end
+
+
+rule "result"
+
+	when
+		$result : YogaResult();
+	then
+		System.out.println("Result -> " + $result);
+end
+
+*/
+
+rule "Anapha Yoga 3"
+
+	when
+		$chart : PlanetChart( varga == "Rasi" )
+		$pc : PlanetCharacter();
+		(eval( $chart.planetsAt(Planet.Moon,12).contains(Planet.Sun)) 
+		 or eval($chart.planetsAt(Planet.Moon,12).contains(Planet.Mars))) ;
+		
+	then
+		
+		System.out.println("AnaphaYoga");
+end
+
+function boolean evalTrue(){
+	System.out.println("evalTrue");
+	return true;
+}
+
+function boolean evalFalse(){
+	System.out.println("evalFalse");
+	return false;
+}
+
+/*function boolean insertResult(String yoga, String efficacy){
+
+	drools.getWorkingMemory().insert(new YogaResult(YogaCombination.valueOf(yoga) , Integer.parseInt(efficacy)));
+	#insert(new YogaResult(YogaCombination.valueOf(yoga) , Integer.parseInt(efficacy)) );
+	return true;
+}*/

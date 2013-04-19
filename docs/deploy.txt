@@ -1,0 +1,6 @@
+jar -cvfm AstroSoft.jar Manifest.mft .
+java -jar AstroSoft.jar %ASTROSOFT_HOME%
+
+
+D:\AstroSoft>jar -cvfm .\bin\AstroSoft.jar .\bin\Manifest.mft -C classes app lib
+ samples images

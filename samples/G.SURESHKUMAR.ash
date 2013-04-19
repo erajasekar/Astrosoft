@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>G.SURESHKUMAR</Name><DateTime>Jun 14 1990, 08:50:00 AM</DateTime><Place><City>Krishnagri</City><Longitude dir="E">78.15</Longitude><Latitude dir="N">12.31</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>MALLIKA MANI AUTO</Name><DateTime>Feb 7 1961, 02:45:00 PM</DateTime><Place><City>Erode</City><Longitude dir="E">77.45</Longitude><Latitude dir="N">11.20</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

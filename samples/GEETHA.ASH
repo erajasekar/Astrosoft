@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>GEETHA</Name><DateTime>Oct 1 1969, 10:00:00 PM</DateTime><Place><City>VELLI TIRUPPUR</City><Longitude dir="E">77.30</Longitude><Latitude dir="N">11.30</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>NALLI SAVEEKSHANA</Name><DateTime>Feb 6 1983, 01:00:00 PM</DateTime><Place><City>Palakollu</City><Longitude dir="E">81.45</Longitude><Latitude dir="N">16.30</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

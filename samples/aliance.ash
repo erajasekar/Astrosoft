@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>aliance</Name><DateTime>Apr 23 1982, 11:15:00 PM</DateTime><Place><City>Erode</City><Longitude dir="E">77.45</Longitude><Latitude dir="N">11.20</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

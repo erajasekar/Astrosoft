@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>R.ABITHA</Name><DateTime>Mar 6 1976, 05:55:00 PM</DateTime><Place><City>VELLORE  </City><Longitude dir="E">79.20</Longitude><Latitude dir="N">12.52</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

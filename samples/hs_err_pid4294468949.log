@@ -1,0 +1,178 @@
+#
+# An unexpected error has been detected by HotSpot Virtual Machine:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d68e34a, pid=-498347, tid=4294447033
+#
+# Java VM: Java HotSpot(TM) Client VM (1.5.0_04-b05 mixed mode)
+# Problematic frame:
+# V  [JVM.DLL+0x4e34a]
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x006ae690):  JavaThread "CompilerThread0" daemon [_thread_in_vm, id=-520263]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x406b2634
+
+Registers:
+EAX=0xffffffff, EBX=0x00c99dc8, ECX=0x00c99dc8, EDX=0x009a3d84
+ESP=0x0af1fac0, EBP=0x0af1fad0, ESI=0x406b2634, EDI=0x0000095c
+EIP=0x6d68e34a, EFLAGS=0x00010202
+
+Top of Stack: (sp=0x0af1fac0)
+0x0af1fac0:   006ae330 006ae330 00c99e40 00000257
+0x0af1fad0:   0af1fafc 6d7138b8 009882c8 000002cc
+0x0af1fae0:   6d6a1f2c 00c99dc8 006ae330 00c99dc8
+0x0af1faf0:   00c99e40 006ae330 006ae330 0af1fb14
+0x0af1fb00:   6d70eb53 00c99dc8 00000a00 00008400
+0x0af1fb10:   000000ac 0af1fb74 6d70e996 06d17be8
+0x0af1fb20:   00008400 ffffffff 00001d0c 00000007
+0x0af1fb30:   00000010 00000010 00000000 006ae330 
+
+Instructions: (pc=0x6d68e34a)
+0x6d68e33a:   03 f3 e8 d8 af 0b 00 89 04 37 eb 0e 85 f6 74 02
+0x6d68e34a:   8b 36 8b 43 1c 03 c7 89 34 18 ff 45 fc 8b 45 fc 
+
+
+Stack: [0x0aed0000,0x0af30000),  sp=0x0af1fac0,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [JVM.DLL+0x4e34a]
+V  [JVM.DLL+0xd38b8]
+V  [JVM.DLL+0xceb53]
+V  [JVM.DLL+0xce996]
+V  [JVM.DLL+0x419b9]
+V  [JVM.DLL+0x1920d]
+V  [JVM.DLL+0x194a4]
+V  [JVM.DLL+0x19b14]
+V  [JVM.DLL+0x55ec0]
+V  [JVM.DLL+0x55be7]
+V  [JVM.DLL+0x101489]
+V  [JVM.DLL+0x101457]
+C  [MSVCRT.DLL+0x248d]
+C  [KERNEL32.DLL+0x19391]
+C  [KERNEL32.DLL+0x16e3a]
+
+
+Current CompileTask:
+HotSpot Client Compiler:211  !b  sun.nio.cs.SingleByteEncoder.encodeArrayLoop(Ljava/nio/CharBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/charset/CoderResult; (475 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x006fc8f0 JavaThread "AWT-EventQueue-0" [_thread_in_vm, id=-482063]
+  0x006fbe80 JavaThread "TimerQueue" daemon [_thread_blocked, id=-481683]
+  0x006fa680 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=-484963]
+  0x006f6a10 JavaThread "DestroyJavaVM" [_thread_blocked, id=-497619]
+  0x006d5720 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=-488163]
+  0x006d6d50 JavaThread "AWT-Shutdown" [_thread_blocked, id=-487799]
+  0x006cd1e0 JavaThread "Image Fetcher 1" daemon [_thread_blocked, id=-489467]
+  0x006cc4a0 JavaThread "Image Fetcher 0" daemon [_thread_blocked, id=-490063]
+  0x006c49b0 JavaThread "Thread-2" daemon [_thread_blocked, id=-464555]
+  0x006c0e80 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=-461575]
+  0x006bea50 JavaThread "AWT-Windows" daemon [_thread_in_native, id=-462887]
+  0x006af330 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=-519667]
+=>0x006ae690 JavaThread "CompilerThread0" daemon [_thread_in_vm, id=-520263]
+  0x006ad530 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=-521931]
+  0x006ac960 JavaThread "Finalizer" daemon [_thread_blocked, id=-522255]
+  0x006ab660 JavaThread "Reference Handler" daemon [_thread_blocked, id=-523923]
+
+Other Threads:
+  0x006aa8f0 VMThread [id=-523623]
+  0x006b1bd0 WatcherThread [id=-520047]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x006a1130/0x00000024] CodeCache_lock - owner thread: 0x006ae690
+[0x006a2a90/0x0000010c] Compile_lock - owner thread: 0x006fc8f0
+[0x006a2a10/0x0000011c] MethodCompileQueue_lock - owner thread: 0x006ae690
+
+Heap
+ def new generation   total 576K, used 378K [0x02c50000, 0x02cf0000, 0x03130000)
+  eden space 512K,  71% used [0x02c50000, 0x02cab3e8, 0x02cd0000)
+  from space 64K,  21% used [0x02cd0000, 0x02cd35c8, 0x02ce0000)
+  to   space 64K,   0% used [0x02ce0000, 0x02ce0000, 0x02cf0000)
+ tenured generation   total 2080K, used 1698K [0x03130000, 0x03338000, 0x06c50000)
+   the space 2080K,  81% used [0x03130000, 0x032d88f0, 0x032d8a00, 0x03338000)
+ compacting perm gen  total 9216K, used 9035K [0x06c50000, 0x07550000, 0x0ac50000)
+   the space 9216K,  98% used [0x06c50000, 0x07522ec8, 0x07523000, 0x07550000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x6d4e0000 - 0x6d4e9000 	C:\PROGRAM FILES\JAVA\JRE1.5.0_04\BIN\NIO.DLL
+0x6d4c0000 - 0x6d4d3000 	C:\PROGRAM FILES\JAVA\JRE1.5.0_04\BIN\NET.DLL
+0x73710000 - 0x73721000 	C:\WINDOWS\SYSTEM\WS2_32.DLL
+0x7f7a0000 - 0x7f7dd000 	C:\WINDOWS\SYSTEM\RASAPI32.DLL
+0x736d0000 - 0x736d9000 	C:\WINDOWS\SYSTEM\WSOCK32.DLL
+0x77d70000 - 0x77d84000 	C:\WINDOWS\SYSTEM\MSWSOCK.DLL
+0x7f780000 - 0x7f791000 	C:\WINDOWS\SYSTEM\SECUR32.DLL
+0x7f870000 - 0x7f878000 	C:\WINDOWS\SYSTEM\SVRAPI.DLL
+0x7fa30000 - 0x7fa43000 	C:\WINDOWS\SYSTEM\MSNET32.DLL
+0x7f860000 - 0x7f86a000 	C:\WINDOWS\SYSTEM\NWNET32.DLL
+0x7fa70000 - 0x7fa7a000 	C:\WINDOWS\SYSTEM\MSPWL32.DLL
+0x7f880000 - 0x7f89e000 	C:\WINDOWS\SYSTEM\TAPI32.DLL
+0x7f8b0000 - 0x7f8b5000 	C:\WINDOWS\SYSTEM\NETAPI32.DLL
+0x7f750000 - 0x7f758000 	C:\WINDOWS\SYSTEM\NETBIOS.DLL
+0x73700000 - 0x73705000 	C:\WINDOWS\SYSTEM\WS2HELP.DLL
+0x6d240000 - 0x6d27d000 	C:\PROGRAM FILES\JAVA\JRE1.5.0_04\BIN\FONTMANAGER.DLL
+0x10000000 - 0x1000b000 	C:\WINDOWS\SYSTEM\QDCSPI.DLL
+0x56660000 - 0x5673b000 	C:\WINDOWS\SYSTEM\D3DIM700.DLL
+0x7ca00000 - 0x7ca1b000 	C:\WINDOWS\SYSTEM\RSAENH.DLL
+0x741d0000 - 0x741fb000 	C:\WINDOWS\SYSTEM\WINTRUST.DLL
+0x7b960000 - 0x7b983000 	C:\WINDOWS\SYSTEM\IMAGEHLP.DLL
+0x7da90000 - 0x7db05000 	C:\WINDOWS\SYSTEM\CRYPT32.DLL
+0x7fab0000 - 0x7fb04000 	C:\WINDOWS\SYSTEM\RPCRT4.DLL
+0x79f80000 - 0x79f90000 	C:\WINDOWS\SYSTEM\MSASN1.DLL
+0xbaaa0000 - 0xbab01000 	C:\WINDOWS\SYSTEM\DDRAW.DLL
+0xbfe70000 - 0xbfe75000 	C:\WINDOWS\SYSTEM\NTDLL.DLL
+0x6d000000 - 0x6d167000 	C:\PROGRAM FILES\JAVA\JRE1.5.0_04\BIN\AWT.DLL
+0x7f2d0000 - 0x7f30d000 	C:\PROGRAM FILES\JAVA\JRE1.5.0_04\BIN\UNICOWS.DLL
+0x7e480000 - 0x7e491000 	C:\WINDOWS\SYSTEM\AVICAP32.DLL
+0x77ee0000 - 0x77f04000 	C:\WINDOWS\SYSTEM\MSVFW32.DLL
+0xbfdc0000 - 0xbfdc5000 	C:\WINDOWS\SYSTEM\WOW32.DLL
+0x7d190000 - 0x7d196000 	C:\WINDOWS\SYSTEM\DCIMAN32.DLL
+0x7fe50000 - 0x7fe76000 	C:\WINDOWS\SYSTEM\OLEDLG.DLL
+0x7fb50000 - 0x7fb95000 	C:\WINDOWS\SYSTEM\MSVCRT20.DLL
+0xbfe50000 - 0xbfe56000 	C:\WINDOWS\SYSTEM\VERSION.DLL
+0x7fe00000 - 0x7fe33000 	C:\WINDOWS\SYSTEM\COMDLG32.DLL
+0x7fbd0000 - 0x7fdfe000 	C:\WINDOWS\SYSTEM\SHELL32.DLL
+0xbfe80000 - 0xbff0e000 	C:\WINDOWS\SYSTEM\COMCTL32.DLL
+0x63180000 - 0x631cd000 	C:\WINDOWS\SYSTEM\SHLWAPI.DLL
+0x7f160000 - 0x7f16e000 	C:\WINDOWS\SYSTEM\MPR.DLL
+0x7ff20000 - 0x7ffe2000 	C:\WINDOWS\SYSTEM\OLE32.DLL
+0xbfe00000 - 0xbfe04000 	C:\WINDOWS\SYSTEM\IMM32.DLL
+0x7fe40000 - 0x7fe49000 	C:\WINDOWS\SYSTEM\WINSPOOL.DRV
+0x6d630000 - 0x6d63f000 	C:\PROGRAM FILES\JAVA\JRE1.5.0_04\BIN\ZIP.DLL
+0x6d300000 - 0x6d31d000 	C:\PROGRAM FILES\JAVA\JRE1.5.0_04\BIN\JAVA.DLL
+0x6d610000 - 0x6d61c000 	C:\PROGRAM FILES\JAVA\JRE1.5.0_04\BIN\VERIFY.DLL
+0x6d280000 - 0x6d288000 	C:\PROGRAM FILES\JAVA\JRE1.5.0_04\BIN\HPI.DLL
+0x6d640000 - 0x6d7c9000 	C:\PROGRAM FILES\JAVA\JRE1.5.0_04\BIN\CLIENT\JVM.DLL
+0xbfdd0000 - 0xbfde0000 	C:\WINDOWS\SYSTEM\WINMM.DLL
+0xbff40000 - 0xbff51000 	C:\WINDOWS\SYSTEM\USER32.DLL
+0xbff10000 - 0xbff3a000 	C:\WINDOWS\SYSTEM\GDI32.DLL
+0x00400000 - 0x0040c000 	C:\WINDOWS\JAVA.EXE
+0x78000000 - 0x78046000 	C:\WINDOWS\SYSTEM\MSVCRT.DLL
+0xbfe60000 - 0xbfe70000 	C:\WINDOWS\SYSTEM\ADVAPI32.DLL
+0xbff60000 - 0xbffe3000 	C:\WINDOWS\SYSTEM\KERNEL32.DLL
+
+VM Arguments:
+java_command: G:\ASTROSOFT\bin\AstroSoft.jar G:\ASTROSOFT G:\ASTROS~3\SAMPLES\AMEENA~1.ASH
+
+Environment Variables:
+JAVA_HOME=C:\PROGRA~1\JDK15~1.0_0
+CLASSPATH=G:\ASTROSOFT/classes;G:\ASTROSOFT/lib/swisseph.jar;G:\ASTROSOFT/lib/org.jar;;G:\ASTROSOFT/lib/suntimes.jar;G:\ASTROSOFT/lib/kunststoff.jar;G:\ASTROSOFT/lib/toniclf.jar;
+PATH=C:\WINDOWS;C:\WINDOWS\COMMAND;G:\TC\BIN;C:\PROGRAM FILES\GROOVE NETWORKS\GROOVE\BIN;C:\PROGRAM FILES\NORTON SYSTEMWORKS\NORTON GHOST\;C:\PROGRA~1\JDK15~1.0_0\bin;
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows Me Build 73010104  
+
+CPU:total 1 family 15, cmov, cx8, fxsr, mmx, sse, sse2, ht
+
+Memory: 4k page, physical 261576k(69536k free), swap 1469440k(1376640k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.5.0_04-b05) for windows-x86, built on Jun  3 2005 02:10:41 by "java_re" with MS VC++ 6.0
+

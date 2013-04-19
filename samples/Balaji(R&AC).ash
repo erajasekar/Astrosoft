@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>Balaji(R&amp;AC)</Name><DateTime>Oct 6 1981, 06:15:00 PM</DateTime><Place><City>Erode</City><Longitude dir="E">78.35</Longitude><Latitude dir="N">11.35</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

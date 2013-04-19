@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>Ramnivasan</Name><DateTime>Aug 27 1983, 02:20:00 AM</DateTime><Place><City>Erode</City><Longitude dir="E">78.42</Longitude><Latitude dir="N">10.48</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

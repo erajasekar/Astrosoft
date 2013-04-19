@@ -1,0 +1,13 @@
+16 Sag 40	28 Sco 03	25 Lib 56	04 Cap 24	22 Can 57R	00 Sco 10	00 Gem 31R	14 Tau 34	14 Sco 34	
+18 Cap 13	17 Cap 49	15 Sco 55	23 Sag 04	19 Can 20R	02 Sag 34	28 Tau 38R	12 Tau 35	12 Sco 35	
+16 Aqu 30	26 Cap 52	03 Sag 53	00 Aqu 04	15 Can 54R	04 Cap 47	28 Tau 17	09 Tau 39	09 Sco 39	
+17 Pis 22	13 Pis 05	23 Sag 28	28 Pis 05	14 Can 10R	11 Aqu 41	29 Tau 33	06 Tau 34	06 Sco 34	
+16 Ari 43	15 Ari 42	11 Cap 42	25 Ari 37R	15 Can 17	17 Pis 52	02 Gem 09	05 Tau 32	05 Sco 32	
+16 Tau 36	00 Gem 17	28 Cap 47	22 Ari 32	18 Can 56	25 Ari 28	05 Gem 45	05 Tau 35	05 Sco 35	
+15 Gem 16	04 Can 22	11 Aqu 27	10 Gem 22	24 Can 07	02 Gem 02	09 Gem 37	04 Tau 57	04 Sco 57	
+14 Can 51	24 Leo 05	16 Aqu 09R	08 Leo 47	00 Leo 27	10 Can 04	13 Gem 30	02 Tau 34	02 Sco 34	
+14 Leo 39	16 Lib 49	10 Aqu 08R	01 Vir 40R	07 Leo 11	18 Leo 24	16 Gem 44	29 Ari 31	29 Lib 31	
+13 Vir 54	25 Sco 53	06 Aqu 19	27 Leo 09	13 Leo 31	25 Vir 40	18 Gem 46	27 Ari 22	27 Lib 22	
+14 Lib 39	17 Cap 33	13 Aqu 33	19 Lib 04	19 Leo 14	04 Sco 14	19 Gem 17R	26 Ari 37	26 Lib 37	
+14 Sco 52	23 Aqu 05	27 Aqu 37	04 Sag 06	23 Leo 15	11 Sag 30	18 Gem 09R	26 Ari 25	26 Lib 25	
+

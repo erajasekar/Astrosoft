@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name/><DateTime>Nov 7 1982, 08:21:10 AM</DateTime><Place><City>Salem </City><Longitude dir="E">78.12</Longitude><Latitude dir="N">11.39</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

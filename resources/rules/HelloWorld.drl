@@ -1,0 +1,25 @@
+package app.astrosoft.xps
+ 
+import app.astrosoft.xps.HelloWorldExample.Message;
+
+ 
+rule "Hello World"
+    dialect "java"
+	when
+		m : Message( status == Message.STATUSVALS.HELLO, message : message )
+	then
+	System.out.println( message ); 
+	//modify ( m ) { message = "Goodbyte cruel world",
+	//               status = Message.STATUSVALS.GOODBYE };
+	//System.out.println( message ); 	               
+end
+
+/*rule "Good Bye"
+    dialect "java"
+	when
+		Message( status == Message.STATUSVALS.GOODBYE, message : message )
+	then
+		System.out.println( message ); 
+	System.out.println( message ); 
+	System.out.println( message ); 			
+end*/

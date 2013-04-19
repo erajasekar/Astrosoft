@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>K.SIVAMOORTHY</Name><DateTime>Oct 13 1972, 08:45:00 AM</DateTime><Place><City>Erode  </City><Longitude dir="E">77.44</Longitude><Latitude dir="N">11.22</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

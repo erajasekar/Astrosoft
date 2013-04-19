@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Antony</Name><DateTime>Feb 9 1980, 11:05:37 PM</DateTime><Place><City>Tirunelveli </City><Longitude dir="E">77.44</Longitude><Latitude dir="N">08.43</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>K.RAATHIKA</Name><DateTime>Jun 16 1984, 10:35:00 PM</DateTime><Place><City>Kumbakonam </City><Longitude dir="E">79.25</Longitude><Latitude dir="N">10.58</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

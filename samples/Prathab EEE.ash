@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Prathab EEE</Name><DateTime>Aug 1 1982, 08:54:00 AM</DateTime><Place><City>Erode</City><Longitude dir="E">79.24</Longitude><Latitude dir="N">10.31</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

@@ -1,0 +1,9 @@
+ GUNA  BOY  GIRL  MAXIMUM OBTAINED  OBTAINED POINTS  AREA OF LIFE  
+ Varna  Bramhin  Bramhin  1  1  Work  
+* Vasya  Jalch  Keeta  2  1  Dominance  +1
+* Tara  Sampat  Sampat  3  3  Destiny  -3
+ Yoni  Bilav  Mriga  4  3  Mentality  
+ Maitri  Moon  Mars  5  4  Compatibility  
+ Gana  Rakshas  Rakshas  6  6  Guna Level  
+* Bhakoot  Cancer  Scorpion  7  0  Love  +6
+ Nadi  Antya  Adi  8  8  Health  

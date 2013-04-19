@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>SURENDAR SEKAR</Name><DateTime>Apr 20 1989, 05:30:00 AM</DateTime><Place><City>KOVAI</City><Longitude dir="E">77.00</Longitude><Latitude dir="N">11.00</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>B.RAJESH</Name><DateTime>Nov 6 1983, 10:47:00 PM</DateTime><Place><City>KALLAKURICHI</City><Longitude dir="E">78.58</Longitude><Latitude dir="N">11.43</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>SHANTHI</Name><DateTime>Apr 6 1962, 06:45:00 AM</DateTime><Place><City>SIVAGANGA</City><Longitude dir="E">78.29</Longitude><Latitude dir="N">09.28</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

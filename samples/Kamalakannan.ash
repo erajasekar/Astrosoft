@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Kamalakannan</Name><DateTime>Feb 17 1978, 07:00:00 AM</DateTime><Place><City>Chennai </City><Longitude dir="E">80.15</Longitude><Latitude dir="N">13.03</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

@@ -1,0 +1,179 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d847687, pid=-576301, tid=4294497131
+#
+# Java VM: Java HotSpot(TM) Client VM (1.6.0_01-b06 mixed mode)
+# Problematic frame:
+# V  [JVM.DLL+0x87687]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x007d4400):  JavaThread "main" [_thread_in_vm, id=-470165]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0xffffffff
+
+Registers:
+EAX=0x0000001c, EBX=0x00000000, ECX=0x071afa00, EDX=0x008e272c
+ESP=0x00a3f6a0, EBP=0x00000000, ESI=0x008e2728, EDI=0x00000000
+EIP=0x6d847687, EFLAGS=0x00010216
+
+Top of Stack: (sp=0x00a3f6a0)
+0x00a3f6a0:   007d4400 071afa00 008e2724 00000000
+0x00a3f6b0:   06b5d323 00002975 0000001c 008e2b04
+0x00a3f6c0:   6d94612a 008e2734 007d4400 008e273c
+0x00a3f6d0:   06d32f50 00000001 0000025a 008e9020
+0x00a3f6e0:   008c1cd4 00000000 06b5ddb8 01cf8583
+0x00a3f6f0:   6d8ef4b0 008e2764 00000000 008e275c
+0x00a3f700:   008e2764 00000000 06b5ddb8 00000000
+0x00a3f710:   6d84f159 00000189 01cf8583 008e2764 
+
+Instructions: (pc=0x6d847687)
+0x6d847677:   0e 8d 04 ad 1c 00 00 00 57 8b 3c 08 89 44 24 18
+0x6d847687:   8b 47 04 8b 50 08 8d 48 08 ff 92 8c 00 00 00 84 
+
+
+Stack: [0x009e0000,0x00a50000),  sp=0x00a3f6a0,  free space=381k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [JVM.DLL+0x87687]
+
+[error occurred during error reporting, step 120, id 0xc0000005]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  com.digitprop.tonic.ToolBarUI$ToolBarContListener.componentAdded(Ljava/awt/event/ContainerEvent;)V+6
+j  java.awt.Container.processContainerEvent(Ljava/awt/event/ContainerEvent;)V+42
+j  java.awt.Container.processEvent(Ljava/awt/AWTEvent;)V+12
+j  java.awt.Component.dispatchEventImpl(Ljava/awt/AWTEvent;)V+562
+j  java.awt.Container.dispatchEventImpl(Ljava/awt/AWTEvent;)V+42
+j  java.awt.Component.dispatchEvent(Ljava/awt/AWTEvent;)V+2
+j  java.awt.Container.addImpl(Ljava/awt/Component;Ljava/lang/Object;I)V+418
+j  javax.swing.JToolBar.addImpl(Ljava/awt/Component;Ljava/lang/Object;I)V+38
+j  java.awt.Container.add(Ljava/awt/Component;)Ljava/awt/Component;+4
+j  app.astrosoft.ui.comp.AstrosoftToolBar.<init>(Ljava/awt/Color;Lapp/astrosoft/ui/AstrosoftActionManager;)V+96
+j  app.astrosoft.ui.comp.AstrosoftToolBar.<init>(Lapp/astrosoft/ui/AstrosoftActionManager;)V+5
+j  app.astrosoft.ui.AstroSoft.formMenuAndToolBar()V+44
+j  app.astrosoft.ui.AstroSoft.<init>()V+30
+j  app.astrosoft.ui.AstroSoft.<init>([Ljava/lang/String;)V+1
+j  app.astrosoft.ui.AstroSoft.main([Ljava/lang/String;)V+41
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0ac73000 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=-484985]
+  0x008cdc00 JavaThread "AWT-Shutdown" [_thread_blocked, id=-475197]
+  0x0ac59c00 JavaThread "Image Fetcher 3" daemon [_thread_blocked, id=-484549]
+  0x0ac59800 JavaThread "Image Fetcher 2" daemon [_thread_blocked, id=-483665]
+  0x0ac4e400 JavaThread "Image Fetcher 1" daemon [_thread_blocked, id=-483293]
+  0x0ac41c00 JavaThread "Image Fetcher 0" daemon [_thread_blocked, id=-482473]
+  0x0ac1d000 JavaThread "Thread-2" daemon [_thread_blocked, id=-477957]
+  0x008ce000 JavaThread "AWT-Windows" daemon [_thread_in_native, id=-476113]
+  0x008cfc00 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=-505009]
+  0x00853400 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=-460245]
+  0x00853000 JavaThread "CompilerThread0" daemon [_thread_blocked, id=-459425]
+  0x00852800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=-491309]
+  0x00847800 JavaThread "Finalizer" daemon [_thread_blocked, id=-490089]
+  0x0af9f800 JavaThread "Reference Handler" daemon [_thread_blocked, id=-489717]
+=>0x007d4400 JavaThread "main" [_thread_in_vm, id=-470165]
+
+Other Threads:
+  0x0af9f400 VMThread [id=-488769]
+  0x00853c00 WatcherThread [id=-460617]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 960K, used 410K [0x02b00000, 0x02c00000, 0x02fe0000)
+  eden space 896K,  38% used [0x02b00000, 0x02b569c8, 0x02be0000)
+  from space 64K, 100% used [0x02be0000, 0x02bf0000, 0x02bf0000)
+  to   space 64K,   0% used [0x02bf0000, 0x02bf0000, 0x02c00000)
+ tenured generation   total 4096K, used 739K [0x02fe0000, 0x033e0000, 0x06b00000)
+   the space 4096K,  18% used [0x02fe0000, 0x03098da8, 0x03098e00, 0x033e0000)
+ compacting perm gen  total 12288K, used 6909K [0x06b00000, 0x07700000, 0x0ab00000)
+   the space 12288K,  56% used [0x06b00000, 0x071bf538, 0x071bf600, 0x07700000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x6d590000 - 0x6d599000 	C:\PROGRAM FILES\JAVA\JRE1.6.0_01\BIN\NIO.DLL
+0x6d570000 - 0x6d583000 	C:\PROGRAM FILES\JAVA\JRE1.6.0_01\BIN\NET.DLL
+0x73710000 - 0x73721000 	C:\WINDOWS\SYSTEM\WS2_32.DLL
+0x7f7a0000 - 0x7f7dd000 	C:\WINDOWS\SYSTEM\RASAPI32.DLL
+0x736d0000 - 0x736d9000 	C:\WINDOWS\SYSTEM\WSOCK32.DLL
+0x77d70000 - 0x77d84000 	C:\WINDOWS\SYSTEM\MSWSOCK.DLL
+0x7f780000 - 0x7f791000 	C:\WINDOWS\SYSTEM\SECUR32.DLL
+0x7f870000 - 0x7f878000 	C:\WINDOWS\SYSTEM\SVRAPI.DLL
+0x7fa30000 - 0x7fa43000 	C:\WINDOWS\SYSTEM\MSNET32.DLL
+0x7f860000 - 0x7f86a000 	C:\WINDOWS\SYSTEM\NWNET32.DLL
+0x7fa70000 - 0x7fa7a000 	C:\WINDOWS\SYSTEM\MSPWL32.DLL
+0x7f880000 - 0x7f89e000 	C:\WINDOWS\SYSTEM\TAPI32.DLL
+0x7f8b0000 - 0x7f8b5000 	C:\WINDOWS\SYSTEM\NETAPI32.DLL
+0x7f750000 - 0x7f758000 	C:\WINDOWS\SYSTEM\NETBIOS.DLL
+0x73700000 - 0x73705000 	C:\WINDOWS\SYSTEM\WS2HELP.DLL
+0x6d2b0000 - 0x6d303000 	C:\PROGRAM FILES\JAVA\JRE1.6.0_01\BIN\FONTMANAGER.DLL
+0x10000000 - 0x1000b000 	C:\WINDOWS\SYSTEM\QDCSPI.DLL
+0x7ca00000 - 0x7ca1b000 	C:\WINDOWS\SYSTEM\RSAENH.DLL
+0x741d0000 - 0x741fb000 	C:\WINDOWS\SYSTEM\WINTRUST.DLL
+0x7b960000 - 0x7b983000 	C:\WINDOWS\SYSTEM\IMAGEHLP.DLL
+0x7da90000 - 0x7db05000 	C:\WINDOWS\SYSTEM\CRYPT32.DLL
+0x7fab0000 - 0x7fb04000 	C:\WINDOWS\SYSTEM\RPCRT4.DLL
+0x79f80000 - 0x79f90000 	C:\WINDOWS\SYSTEM\MSASN1.DLL
+0xbaaa0000 - 0xbab01000 	C:\WINDOWS\SYSTEM\DDRAW.DLL
+0xbfe70000 - 0xbfe75000 	C:\WINDOWS\SYSTEM\NTDLL.DLL
+0x6d000000 - 0x6d1c3000 	C:\PROGRAM FILES\JAVA\JRE1.6.0_01\BIN\AWT.DLL
+0x7f2d0000 - 0x7f30d000 	C:\PROGRAM FILES\JAVA\JRE1.6.0_01\BIN\UNICOWS.DLL
+0x7e480000 - 0x7e491000 	C:\WINDOWS\SYSTEM\AVICAP32.DLL
+0x77ee0000 - 0x77f04000 	C:\WINDOWS\SYSTEM\MSVFW32.DLL
+0xbfdc0000 - 0xbfdc5000 	C:\WINDOWS\SYSTEM\WOW32.DLL
+0x7d190000 - 0x7d196000 	C:\WINDOWS\SYSTEM\DCIMAN32.DLL
+0x7fe50000 - 0x7fe76000 	C:\WINDOWS\SYSTEM\OLEDLG.DLL
+0x7fb50000 - 0x7fb95000 	C:\WINDOWS\SYSTEM\MSVCRT20.DLL
+0xbfe50000 - 0xbfe56000 	C:\WINDOWS\SYSTEM\VERSION.DLL
+0x7fe00000 - 0x7fe33000 	C:\WINDOWS\SYSTEM\COMDLG32.DLL
+0x7fbd0000 - 0x7fdfe000 	C:\WINDOWS\SYSTEM\SHELL32.DLL
+0x78000000 - 0x78046000 	C:\WINDOWS\SYSTEM\MSVCRT.DLL
+0xbfe80000 - 0xbff0e000 	C:\WINDOWS\SYSTEM\COMCTL32.DLL
+0x63180000 - 0x631cd000 	C:\WINDOWS\SYSTEM\SHLWAPI.DLL
+0x7f160000 - 0x7f16e000 	C:\WINDOWS\SYSTEM\MPR.DLL
+0x7ff20000 - 0x7ffe2000 	C:\WINDOWS\SYSTEM\OLE32.DLL
+0xbfe00000 - 0xbfe04000 	C:\WINDOWS\SYSTEM\IMM32.DLL
+0x7fe40000 - 0x7fe49000 	C:\WINDOWS\SYSTEM\WINSPOOL.DRV
+0x6d7b0000 - 0x6d7bf000 	C:\PROGRAM FILES\JAVA\JRE1.6.0_01\BIN\ZIP.DLL
+0x6d3b0000 - 0x6d3cf000 	C:\PROGRAM FILES\JAVA\JRE1.6.0_01\BIN\JAVA.DLL
+0x6d770000 - 0x6d77c000 	C:\PROGRAM FILES\JAVA\JRE1.6.0_01\BIN\VERIFY.DLL
+0x6d310000 - 0x6d318000 	C:\PROGRAM FILES\JAVA\JRE1.6.0_01\BIN\HPI.DLL
+0x6d7c0000 - 0x6da07000 	C:\PROGRAM FILES\JAVA\JRE1.6.0_01\BIN\CLIENT\JVM.DLL
+0xbfdd0000 - 0xbfde0000 	C:\WINDOWS\SYSTEM\WINMM.DLL
+0xbff40000 - 0xbff51000 	C:\WINDOWS\SYSTEM\USER32.DLL
+0xbff10000 - 0xbff3a000 	C:\WINDOWS\SYSTEM\GDI32.DLL
+0x7c340000 - 0x7c396000 	C:\PROGRAM FILES\JAVA\JRE1.6.0_01\BIN\MSVCR71.DLL
+0x00400000 - 0x00423000 	C:\WINDOWS\JAVA.EXE
+0xbfe60000 - 0xbfe70000 	C:\WINDOWS\SYSTEM\ADVAPI32.DLL
+0xbff60000 - 0xbffe3000 	C:\WINDOWS\SYSTEM\KERNEL32.DLL
+
+VM Arguments:
+java_command: G:\ASTROSOFT\bin\AstroSoft.jar G:\ASTROSOFT G:\ASTROS~1.0\SAMPLES\SGAJEN~1.ASH
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\PROGRA~1\JDK15~1.0_0
+CLASSPATH=G:\ASTROSOFT/classes;G:\ASTROSOFT/lib/swisseph.jar;G:\ASTROSOFT/lib/org.jar;;G:\ASTROSOFT/lib/suntimes.jar;G:\ASTROSOFT/lib/kunststoff.jar;G:\ASTROSOFT/lib/toniclf.jar;
+PATH=C:\WINDOWS;C:\WINDOWS\COMMAND;G:\TC\BIN;C:\PROGRAM FILES\GROOVE NETWORKS\GROOVE\BIN;C:\PROGRAM FILES\NORTON SYSTEMWORKS\NORTON GHOST\;C:\PROGRA~1\JDK15~1.0_0\bin;
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows Me Build 73010104  
+
+CPU:total 1 family 15, cmov, cx8, fxsr, mmx, sse, sse2
+
+Memory: 4k page, physical 261576k(69940k free), swap 829056k(733724k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.6.0_01-b06) for windows-x86, built on Mar 14 2007 00:24:02 by "java_re" with unknown MS VC++:1310
+

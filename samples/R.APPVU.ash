@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>R.APPVU</Name><DateTime>Oct 31 1962, 06:00:00 AM</DateTime><Place><City>Karur  </City><Longitude dir="E">78.04</Longitude><Latitude dir="N">10.58</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

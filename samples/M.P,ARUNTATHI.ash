@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>M.P.ARUNTHATHI</Name><DateTime>Oct 5 2004, 08:24:00 PM</DateTime><Place><City>Erode  </City><Longitude dir="E">77.44</Longitude><Latitude dir="N">11.22</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

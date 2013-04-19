@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>son of MANDRAMOORTHY</Name><DateTime>Oct 8 2008, 04:16:00 AM</DateTime><Place><City>Tuticorin </City><Longitude dir="E">78.11</Longitude><Latitude dir="N">08.48</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

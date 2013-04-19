@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>R.RENUGA DEVI</Name><DateTime>Jul 5 1987, 01:56:00 PM</DateTime><Place><City>Palghat</City><Longitude dir="E">76.42</Longitude><Latitude dir="N">10.46</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

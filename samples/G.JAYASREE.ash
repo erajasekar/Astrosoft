@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>G.JAYASREE</Name><DateTime>Jun 13 1987, 06:15:00 AM</DateTime><Place><City>Krishnagiri</City><Longitude dir="E">78.15</Longitude><Latitude dir="N">12.31</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

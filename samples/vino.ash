@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Vino</Name><DateTime>Mar 18 1982, 10:59:00 AM</DateTime><Place><City>Madurai </City><Longitude dir="E">78.10</Longitude><Latitude dir="N">09.58</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

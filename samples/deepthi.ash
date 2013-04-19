@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Deepthi</Name><DateTime>May 6 1985, 01:40:00 PM</DateTime><Place><City>Trivandrum </City><Longitude dir="E">76.59</Longitude><Latitude dir="N">08.28</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

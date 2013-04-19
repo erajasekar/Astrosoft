@@ -1,0 +1,2685 @@
+
+
+
+
+
+
+Uses Krishnamoorthy ayanamsa
+
+----------------------Raja----------------------
+Sun --> 235 : 27 : 24 Dir -->false
+Moon --> 273 : 04 : 32 Dir -->false
+Mars --> 260 : 51 : 57 Dir -->false
+Mercury --> 224 : 10 : 50 Dir -->false
+Jupiter --> 163 : 53 : 15 Dir -->false
+Venus --> 207 : 16 : 31 Dir -->false
+Saturn --> 164 : 58 : 08 Dir -->false
+Rahu --> 108 : 32 : 27 Dir -->false
+Ketu --> 288 : 32 : 27 Dir -->false
+Sun --> 167 : 27 : 29 Dir -->false
+
+cp Ra/Ju/Ra
+Bhava
+0 --> 00 : 00 : 00 sandi 152 : 12 : 57
+1 --> 167 : 27 : 29 sandi 182 : 37 : 22
+2 --> 197 : 47 : 14 sandi 212 : 37 : 27
+3 --> 227 : 27 : 40 sandi 242 : 00 : 44
+4 --> 256 : 33 : 48 sandi 271 : 24 : 04
+5 --> 286 : 14 : 21 sandi 301 : 36 : 23
+6 --> 316 : 58 : 25 sandi 332 : 12 : 57
+7 --> 347 : 27 : 29 sandi 02 : 37 : 22
+8 --> 17 : 47 : 14 sandi 32 : 37 : 27
+9 --> 47 : 27 : 40 sandi 62 : 00 : 44
+10 --> 76 : 33 : 48 sandi 91 : 24 : 04
+11 --> 106 : 14 : 21 sandi 121 : 36 : 23
+12 --> 136 : 58 : 25 sandi 152 : 12 : 57
+
+Sun --> Vrichika - 8
+Moon --> Makara - 10
+Mars --> Dhanus - 9
+Mercury --> Vrichika - 8
+Jupiter --> Kanya - 6
+Venus --> Thula - 7
+Saturn --> Kanya - 6
+Rahu --> Kataka - 4
+Ketu --> Makara - 10
+Sun --> Kanya - 6
+
+Thithi Chathruthi Paksha Shukla
+0 --> 5<--> AmatyaKaraka
+1 --> 0<--> DaraKaraka
+2 --> 2<--> BhratruKaraka
+3 --> 6<--> PuthraKaraka
+4 --> 3<--> GnatiKaraka
+5 --> 4<--> AtmaKaraka
+6 --> 1<--> MatruKaraka
+Charts
+Rasi -> 8 , 10 , 9 , 8 , 6 , 7 , 6 , 4 , 10 , 6 , 
+Hora -> 5 , 4 , 4 , 4 , 4 , 4 , 4 , 5 , 5 , 5 , 
+Drekkana -> 4 , 10 , 5 , 12 , 10 , 3 , 10 , 8 , 2 , 10 , 
+Chaturtamsa -> 5 , 10 , 3 , 11 , 9 , 4 , 9 , 10 , 4 , 12 , 
+Navamsa -> 11 , 10 , 7 , 8 , 2 , 3 , 2 , 9 , 3 , 3 , 
+Saptamsa -> 7 , 4 , 1 , 5 , 3 , 1 , 3 , 2 , 8 , 4 , 
+Dasamsa -> 12 , 7 , 3 , 8 , 6 , 4 , 6 , 6 , 12 , 7 , 
+Dwadasamsa -> 6 , 11 , 5 , 1 , 11 , 5 , 11 , 11 , 5 , 12 , 
+Shodasamsa -> 6 , 2 , 8 , 12 , 4 , 3 , 4 , 10 , 10 , 6 , 
+Vimshamsa -> 1 , 3 , 6 , 6 , 2 , 7 , 2 , 1 , 1 , 4 , 
+ChaturVimshamsa -> 12 , 6 , 9 , 3 , 3 , 2 , 3 , 6 , 6 , 5 , 
+Bhamsa -> 8 , 6 , 7 , 10 , 4 , 7 , 5 , 2 , 8 , 7 , 
+Trimshamsa -> 8 , 2 , 3 , 12 , 12 , 7 , 12 , 12 , 12 , 12 , 
+Khavedamsa -> 4 , 11 , 4 , 1 , 1 , 1 , 2 , 7 , 7 , 6 , 
+Akshvedamsa -> 7 , 5 , 4 , 2 , 5 , 5 , 7 , 4 , 4 , 11 , 
+Shastiamsa -> 10 , 4 , 2 , 12 , 9 , 1 , 11 , 5 , 11 , 4 , 
+Panchamsa -> 8 , 2 , 3 , 12 , 12 , 7 , 12 , 10 , 10 , 12 , 
+Shashtamsa -> 12 , 7 , 5 , 9 , 9 , 6 , 9 , 10 , 10 , 10 , 
+Ashtamsa -> 11 , 1 , 2 , 8 , 12 , 8 , 12 , 5 , 5 , 1 , 
+Ekadamsa -> 3 , 11 , 5 , 7 , 7 , 2 , 7 , 6 , 6 , 6 , 
+Bhava -> 8 , 10 , 9 , 8 , 6 , 7 , 6 , 4 , 10 , 6 , 
+
+Ashtavarga
+Sun  Astavarga 
+Mesha -->  3
+Vrishabha -->  3
+Mithuna -->  5
+Kataka -->  6
+Simha -->  4
+Kanya -->  5
+Thula -->  4
+Vrichika -->  3
+Dhanus -->  4
+Makara -->  3
+Kumbha -->  3
+Meena -->  5
+Sum 48
+RasiGuna 60 , GrahaGuna 45 , Moon  Astavarga 
+Mesha -->  4
+Vrishabha -->  3
+Mithuna -->  6
+Kataka -->  5
+Simha -->  5
+Kanya -->  4
+Thula -->  2
+Vrichika -->  4
+Dhanus -->  2
+Makara -->  6
+Kumbha -->  5
+Meena -->  3
+Sum 49
+RasiGuna 81 , GrahaGuna 40 , Mars  Astavarga 
+Mesha -->  3
+Vrishabha -->  2
+Mithuna -->  5
+Kataka -->  4
+Simha -->  3
+Kanya -->  6
+Thula -->  1
+Vrichika -->  2
+Dhanus -->  2
+Makara -->  3
+Kumbha -->  2
+Meena -->  6
+Sum 39
+RasiGuna 98 , GrahaGuna 65 , Bhuda  Astavarga 
+Mesha -->  6
+Vrishabha -->  2
+Mithuna -->  5
+Kataka -->  6
+Simha -->  5
+Kanya -->  5
+Thula -->  7
+Vrichika -->  3
+Dhanus -->  4
+Makara -->  3
+Kumbha -->  4
+Meena -->  4
+Sum 54
+RasiGuna 89 , GrahaGuna 71 , Guru  Astavarga 
+Mesha -->  2
+Vrishabha -->  3
+Mithuna -->  5
+Kataka -->  7
+Simha -->  4
+Kanya -->  6
+Thula -->  3
+Vrichika -->  6
+Dhanus -->  5
+Makara -->  4
+Kumbha -->  6
+Meena -->  5
+Sum 56
+RasiGuna 94 , GrahaGuna 84 , Sukra  Astavarga 
+Mesha -->  6
+Vrishabha -->  6
+Mithuna -->  4
+Kataka -->  5
+Simha -->  3
+Kanya -->  4
+Thula -->  4
+Vrichika -->  5
+Dhanus -->  4
+Makara -->  6
+Kumbha -->  3
+Meena -->  2
+Sum 52
+RasiGuna 80 , GrahaGuna 55 , Sani  Astavarga 
+Mesha -->  2
+Vrishabha -->  2
+Mithuna -->  4
+Kataka -->  4
+Simha -->  4
+Kanya -->  5
+Thula -->  2
+Vrichika -->  5
+Dhanus -->  2
+Makara -->  2
+Kumbha -->  5
+Meena -->  2
+Sum 39
+RasiGuna 100 , GrahaGuna 75 , Asc  Astavarga 
+Mesha -->  26
+Vrishabha -->  21
+Mithuna -->  34
+Kataka -->  37
+Simha -->  28
+Kanya -->  35
+Thula -->  23
+Vrichika -->  28
+Dhanus -->  23
+Makara -->  27
+Kumbha -->  28
+Meena -->  27
+Sum 337
+RasiGuna 214 , GrahaGuna 271 , 
+Total 674
+ShadBala 
+Sun --> 3
+Sun --> 45.05245007639058
+OchachaBala:-->Sun :-> 15.1522577304641
+OjaYugmarasyamsaBala:-->Sun :-> 15.0
+KendraBala:-->Sun :-> 15.0
+DrekkanaBala:-->Sun :-> 0.0
+SapthavargaBala:-->Sun :-> 116.25
+SthanaBala:-->Sun :-> 161.4022577304641
+DigBala:-->Sun :-> 7.035535509827203
+NaisargikaBala:-->Sun :-> 60.0
+AbdaBala:-->Sun :-> 0.0
+MasaBala:-->Sun :-> 0.0
+VaraBala:-->Sun :-> 0.0
+PakshaBala:-->Sun :-> 47.46037868163351
+TribhagaBala:-->Sun :-> 0.0
+HoraBala:-->Sun :-> 60.0
+NatonnataBala:-->Sun :-> 8.092091634294112
+AyanaBala:-->Sun :-> 1.5959504951509018
+YuddhaBala:-->Sun :-> 0.0
+KalaBala:-->Sun :-> 117.14842081107851
+DrikBala:-->Sun :-> -10.979612164569502
+ChestaBala:-->Sun :-> 3.6829626811174685
+IshtaBala:-->Sun :-> 7.470287796060668
+KashtaBala:-->Sun :-> 50.256263043138006
+ShadBala:-->Sun :-> 5.576776698113338
+ShadBala Per:-->Sun :-> 111.53553396226677
+ShadBala Rank:-->Sun :-> 4
+Moon --> 5
+Moon --> 11.283719784216595
+OchachaBala:-->Moon :-> 20.025212382163925
+OjaYugmarasyamsaBala:-->Moon :-> 30.0
+KendraBala:-->Moon :-> 30.0
+DrekkanaBala:-->Moon :-> 0.0
+SapthavargaBala:-->Moon :-> 90.0
+SthanaBala:-->Moon :-> 170.02521238216394
+DigBala:-->Moon :-> 54.49591419146071
+NaisargikaBala:-->Moon :-> 51.43
+AbdaBala:-->Moon :-> 0.0
+MasaBala:-->Moon :-> 0.0
+VaraBala:-->Moon :-> 0.0
+PakshaBala:-->Moon :-> 25.07924263673298
+TribhagaBala:-->Moon :-> 0.0
+HoraBala:-->Moon :-> 0.0
+NatonnataBala:-->Moon :-> 51.907908365705886
+AyanaBala:-->Moon :-> 56.50625501838602
+YuddhaBala:-->Moon :-> 0.0
+KalaBala:-->Moon :-> 133.4934060208249
+DrikBala:-->Moon :-> 1.7506253813615267
+ChestaBala:-->Moon :-> 12.53962131836649
+IshtaBala:-->Moon :-> 15.846405904563955
+KashtaBala:-->Moon :-> 43.55707242297598
+ShadBala:-->Moon :-> 6.853252632930184
+ShadBala Per:-->Moon :-> 114.22087721550307
+ShadBala Rank:-->Moon :-> 3
+Mars --> 4
+Mars --> 71.00299298231866
+OchachaBala:-->Mars :-> 47.62198339070691
+OjaYugmarasyamsaBala:-->Mars :-> 30.0
+KendraBala:-->Mars :-> 60.0
+DrekkanaBala:-->Mars :-> 0.0
+SapthavargaBala:-->Mars :-> 142.5
+SthanaBala:-->Mars :-> 280.1219833907069
+DigBala:-->Mars :-> 1.4341901504156074
+NaisargikaBala:-->Mars :-> 17.14
+AbdaBala:-->Mars :-> 0.0
+MasaBala:-->Mars :-> 0.0
+VaraBala:-->Mars :-> 0.0
+PakshaBala:-->Mars :-> 47.46037868163351
+TribhagaBala:-->Mars :-> 0.0
+HoraBala:-->Mars :-> 0.0
+NatonnataBala:-->Mars :-> 51.907908365705886
+AyanaBala:-->Mars :-> 1.0371319788104927
+YuddhaBala:-->Mars :-> 0.0
+KalaBala:-->Mars :-> 100.40541902614989
+DrikBala:-->Mars :-> 1.9779633707771502
+ChestaBala:-->Mars :-> 12.262134150075534
+IshtaBala:-->Mars :-> 24.164998423950227
+KashtaBala:-->Mars :-> 24.30843673259493
+ShadBala:-->Mars :-> 6.889028168135417
+ShadBala Per:-->Mars :-> 137.78056336270836
+ShadBala Rank:-->Mars :-> 1
+Mercury --> 3
+Mercury --> 77.88893144711793
+OchachaBala:-->Mercury :-> 40.273088195114504
+OjaYugmarasyamsaBala:-->Mercury :-> 0.0
+KendraBala:-->Mercury :-> 15.0
+DrekkanaBala:-->Mercury :-> 15.0
+SapthavargaBala:-->Mercury :-> 90.0
+SthanaBala:-->Mercury :-> 160.2730881951145
+DigBala:-->Mercury :-> 41.092499046054655
+NaisargikaBala:-->Mercury :-> 25.7
+AbdaBala:-->Mercury :-> 0.0
+MasaBala:-->Mercury :-> 0.0
+VaraBala:-->Mercury :-> 45.0
+PakshaBala:-->Mercury :-> 47.46037868163351
+TribhagaBala:-->Mercury :-> 0.0
+HoraBala:-->Mercury :-> 0.0
+NatonnataBala:-->Mercury :-> 60.0
+AyanaBala:-->Mercury :-> 57.390640454148276
+YuddhaBala:-->Mercury :-> 0.0
+KalaBala:-->Mercury :-> 209.85101913578177
+DrikBala:-->Mercury :-> 0.17184535324287964
+ChestaBala:-->Mercury :-> 11.73801421653991
+IshtaBala:-->Mercury :-> 21.742264872322284
+KashtaBala:-->Mercury :-> 30.855468511739613
+ShadBala:-->Mercury :-> 7.4804410991122285
+ShadBala Per:-->Mercury :-> 106.86344427303185
+ShadBala Rank:-->Mercury :-> 5
+Jupiter --> 1
+Jupiter --> 76.57351425703271
+OchachaBala:-->Jupiter :-> 37.037492023188186
+OjaYugmarasyamsaBala:-->Jupiter :-> 0.0
+KendraBala:-->Jupiter :-> 60.0
+DrekkanaBala:-->Jupiter :-> 0.0
+SapthavargaBala:-->Jupiter :-> 67.5
+SthanaBala:-->Jupiter :-> 164.53749202318818
+DigBala:-->Jupiter :-> 58.80976379253833
+NaisargikaBala:-->Jupiter :-> 34.28
+AbdaBala:-->Jupiter :-> 0.0
+MasaBala:-->Jupiter :-> 0.0
+VaraBala:-->Jupiter :-> 0.0
+PakshaBala:-->Jupiter :-> 12.53962131836649
+TribhagaBala:-->Jupiter :-> 60.0
+HoraBala:-->Jupiter :-> 0.0
+NatonnataBala:-->Jupiter :-> 8.092091634294112
+AyanaBala:-->Jupiter :-> 26.28856347799994
+YuddhaBala:-->Jupiter :-> 0.0
+KalaBala:-->Jupiter :-> 106.92027643066054
+DrikBala:-->Jupiter :-> 0.04340327864914073
+ChestaBala:-->Jupiter :-> 25.406597145399587
+IshtaBala:-->Jupiter :-> 30.675668519350854
+KashtaBala:-->Jupiter :-> 28.18423830785261
+ShadBala:-->Jupiter :-> 6.499958877840596
+ShadBala Per:-->Jupiter :-> 99.99936735139379
+ShadBala Rank:-->Jupiter :-> 6
+Venus --> 2
+Venus --> 36.05124079473262
+OchachaBala:-->Venus :-> 10.091825702239097
+OjaYugmarasyamsaBala:-->Venus :-> 0.0
+KendraBala:-->Venus :-> 30.0
+DrekkanaBala:-->Venus :-> 15.0
+SapthavargaBala:-->Venus :-> 150.0
+SthanaBala:-->Venus :-> 205.0918257022391
+DigBala:-->Venus :-> 43.57069912861446
+NaisargikaBala:-->Venus :-> 42.85
+AbdaBala:-->Venus :-> 0.0
+MasaBala:-->Venus :-> 30.0
+VaraBala:-->Venus :-> 0.0
+PakshaBala:-->Venus :-> 12.53962131836649
+TribhagaBala:-->Venus :-> 60.0
+HoraBala:-->Venus :-> 0.0
+NatonnataBala:-->Venus :-> 8.092091634294112
+AyanaBala:-->Venus :-> 7.233782575297876
+YuddhaBala:-->Venus :-> 0.0
+KalaBala:-->Venus :-> 117.86549552795849
+DrikBala:-->Venus :-> 0.8602139226870591
+ChestaBala:-->Venus :-> 17.573979579105337
+IshtaBala:-->Venus :-> 13.317414869524802
+KashtaBala:-->Venus :-> 46.015271616349004
+ShadBala:-->Venus :-> 7.130203564343408
+ShadBala Per:-->Venus :-> 129.6400648062438
+ShadBala Rank:-->Venus :-> 2
+Saturn --> 1
+Saturn --> 83.66928984854924
+OchachaBala:-->Saturn :-> 48.32302509071914
+OjaYugmarasyamsaBala:-->Saturn :-> 0.0
+KendraBala:-->Saturn :-> 60.0
+DrekkanaBala:-->Saturn :-> 15.0
+SapthavargaBala:-->Saturn :-> 133.125
+SthanaBala:-->Saturn :-> 256.44802509071917
+DigBala:-->Saturn :-> 0.8297190935543503
+NaisargikaBala:-->Saturn :-> 8.57
+AbdaBala:-->Saturn :-> 15.0
+MasaBala:-->Saturn :-> 0.0
+VaraBala:-->Saturn :-> 0.0
+PakshaBala:-->Saturn :-> 47.46037868163351
+TribhagaBala:-->Saturn :-> 0.0
+HoraBala:-->Saturn :-> 0.0
+NatonnataBala:-->Saturn :-> 51.907908365705886
+AyanaBala:-->Saturn :-> 34.25521650214362
+YuddhaBala:-->Saturn :-> 0.0
+KalaBala:-->Saturn :-> 148.62350354948302
+DrikBala:-->Saturn :-> 0.21524863189202037
+ChestaBala:-->Saturn :-> 26.136496194077875
+IshtaBala:-->Saturn :-> 35.53863477076617
+KashtaBala:-->Saturn :-> 19.8852529348281
+ShadBala:-->Saturn :-> 7.34704987599544
+ShadBala Per:-->Saturn :-> 146.94099751990882
+ShadBala Rank:-->Saturn :-> 0
+BhavaAdhipathiBala: 1 : -->7.4804410991122285
+BhavaDigBala: 1 : -->60.0
+BhavaDrishtiBala: 1 : -->0.5263932919749017
+BhavaBala: 1 : -->509.3528592387086
+BhavaBala Rank: 1 : -->3
+BhavaAdhipathiBala: 2 : -->7.130203564343408
+BhavaDigBala: 2 : -->50.0
+BhavaDrishtiBala: 2 : -->3.123867685469893
+BhavaBala: 2 : -->480.93608154607443
+BhavaBala Rank: 2 : -->7
+BhavaAdhipathiBala: 3 : -->6.889028168135417
+BhavaDigBala: 3 : -->20.0
+BhavaDrishtiBala: 3 : -->2.950754323086798
+BhavaBala: 3 : -->436.2924444112119
+BhavaBala Rank: 3 : -->9
+BhavaAdhipathiBala: 4 : -->6.499958877840596
+BhavaDigBala: 4 : -->0.0
+BhavaDrishtiBala: 4 : -->36.21367014074862
+BhavaBala: 4 : -->426.21120281118436
+BhavaBala Rank: 4 : -->10
+BhavaAdhipathiBala: 5 : -->7.34704987599544
+BhavaDigBala: 5 : -->50.0
+BhavaDrishtiBala: 5 : -->73.41750036893464
+BhavaBala: 5 : -->564.2404929286611
+BhavaBala Rank: 5 : -->1
+BhavaAdhipathiBala: 6 : -->7.34704987599544
+BhavaDigBala: 6 : -->10.0
+BhavaDrishtiBala: 6 : -->46.90593690059049
+BhavaBala: 6 : -->497.72892946031686
+BhavaBala Rank: 6 : -->5
+BhavaAdhipathiBala: 7 : -->6.499958877840596
+BhavaDigBala: 7 : -->30.0
+BhavaDrishtiBala: 7 : -->61.15036502578637
+BhavaBala: 7 : -->481.1478976962221
+BhavaBala Rank: 7 : -->6
+BhavaAdhipathiBala: 8 : -->6.889028168135417
+BhavaDigBala: 8 : -->40.0
+BhavaDrishtiBala: 8 : -->45.480570089994615
+BhavaBala: 8 : -->498.8222601781197
+BhavaBala Rank: 8 : -->4
+BhavaAdhipathiBala: 9 : -->7.130203564343408
+BhavaDigBala: 9 : -->50.0
+BhavaDrishtiBala: 9 : -->113.91121937018912
+BhavaBala: 9 : -->591.7234332307936
+BhavaBala Rank: 9 : -->0
+BhavaAdhipathiBala: 10 : -->7.4804410991122285
+BhavaDigBala: 10 : -->30.0
+BhavaDrishtiBala: 10 : -->33.042532509991695
+BhavaBala: 10 : -->511.8689984567254
+BhavaBala Rank: 10 : -->2
+BhavaAdhipathiBala: 11 : -->6.853252632930184
+BhavaDigBala: 11 : -->10.0
+BhavaDrishtiBala: 11 : -->26.974245503273146
+BhavaBala: 11 : -->448.1694034790842
+BhavaBala Rank: 11 : -->8
+BhavaAdhipathiBala: 12 : -->5.576776698113338
+BhavaDigBala: 12 : -->40.0
+BhavaDrishtiBala: 12 : -->7.856986685609819
+BhavaBala: 12 : -->382.4635885724101
+BhavaBala Rank: 12 : -->11
+
+Dasas
+Su/Su/Su: 23-Jan-1978	Su/Su/Mo: 28-Jan-1978	Su/Su/Ma: 07-Feb-1978	Su/Su/Ra: 13-Feb-1978	Su/Su/Ju: 01-Mar-1978	Su/Su/Sa: 15-Mar-1978	Su/Su/Me: 01-Apr-1978	Su/Su/Ke: 17-Apr-1978	Su/Su/Ve: 23-Apr-1978	
+Su/Mo/Mo: 12-May-1978	Su/Mo/Ma: 27-May-1978	Su/Mo/Ra: 07-Jun-1978	Su/Mo/Ju: 04-Jul-1978	Su/Mo/Sa: 29-Jul-1978	Su/Mo/Me: 26-Aug-1978	Su/Mo/Ke: 21-Sep-1978	Su/Mo/Ve: 02-Oct-1978	Su/Mo/Su: 02-Nov-1978	
+Su/Ma/Ma: 11-Nov-1978	Su/Ma/Ra: 18-Nov-1978	Su/Ma/Ju: 07-Dec-1978	Su/Ma/Sa: 25-Dec-1978	Su/Ma/Me: 14-Jan-1979	Su/Ma/Ke: 01-Feb-1979	Su/Ma/Ve: 08-Feb-1979	Su/Ma/Su: 01-Mar-1979	Su/Ma/Mo: 07-Mar-1979	
+Su/Ra/Ra: 18-Mar-1979	Su/Ra/Ju: 06-May-1979	Su/Ra/Sa: 19-Jun-1979	Su/Ra/Me: 10-Aug-1979	Su/Ra/Ke: 26-Sep-1979	Su/Ra/Ve: 15-Oct-1979	Su/Ra/Su: 09-Dec-1979	Su/Ra/Mo: 26-Dec-1979	Su/Ra/Ma: 22-Jan-1980	
+Su/Ju/Ju: 10-Feb-1980	Su/Ju/Sa: 20-Mar-1980	Su/Ju/Me: 06-May-1980	Su/Ju/Ke: 16-Jun-1980	Su/Ju/Ve: 03-Jul-1980	Su/Ju/Su: 21-Aug-1980	Su/Ju/Mo: 05-Sep-1980	Su/Ju/Ma: 29-Sep-1980	Su/Ju/Ra: 16-Oct-1980	
+Su/Sa/Sa: 29-Nov-1980	Su/Sa/Me: 23-Jan-1981	Su/Sa/Ke: 12-Mar-1981	Su/Sa/Ve: 02-Apr-1981	Su/Sa/Su: 30-May-1981	Su/Sa/Mo: 16-Jun-1981	Su/Sa/Ma: 15-Jul-1981	Su/Sa/Ra: 04-Aug-1981	Su/Sa/Ju: 25-Sep-1981	
+Su/Me/Me: 11-Nov-1981	Su/Me/Ke: 25-Dec-1981	Su/Me/Ve: 12-Jan-1982	Su/Me/Su: 04-Mar-1982	Su/Me/Mo: 19-Mar-1982	Su/Me/Ma: 14-Apr-1982	Su/Me/Ra: 02-May-1982	Su/Me/Ju: 18-Jun-1982	Su/Me/Sa: 30-Jul-1982	
+Su/Ke/Ke: 17-Sep-1982	Su/Ke/Ve: 24-Sep-1982	Su/Ke/Su: 16-Oct-1982	Su/Ke/Mo: 22-Oct-1982	Su/Ke/Ma: 02-Nov-1982	Su/Ke/Ra: 09-Nov-1982	Su/Ke/Ju: 28-Nov-1982	Su/Ke/Sa: 16-Dec-1982	Su/Ke/Me: 05-Jan-1983	
+Su/Ve/Ve: 23-Jan-1983	Su/Ve/Su: 24-Mar-1983	Su/Ve/Mo: 11-Apr-1983	Su/Ve/Ma: 12-May-1983	Su/Ve/Ra: 02-Jun-1983	Su/Ve/Ju: 27-Jul-1983	Su/Ve/Sa: 14-Sep-1983	Su/Ve/Me: 11-Nov-1983	Su/Ve/Ke: 02-Jan-1984	
+
+Mo/Mo/Mo: 23-Jan-1984	Mo/Mo/Ma: 17-Feb-1984	Mo/Mo/Ra: 06-Mar-1984	Mo/Mo/Ju: 21-Apr-1984	Mo/Mo/Sa: 01-Jun-1984	Mo/Mo/Me: 19-Jul-1984	Mo/Mo/Ke: 31-Aug-1984	Mo/Mo/Ve: 18-Sep-1984	Mo/Mo/Su: 08-Nov-1984	
+Mo/Ma/Ma: 23-Nov-1984	Mo/Ma/Ra: 05-Dec-1984	Mo/Ma/Ju: 06-Jan-1985	Mo/Ma/Sa: 04-Feb-1985	Mo/Ma/Me: 09-Mar-1985	Mo/Ma/Ke: 08-Apr-1985	Mo/Ma/Ve: 20-Apr-1985	Mo/Ma/Su: 26-May-1985	Mo/Ma/Mo: 06-Jun-1985	
+Mo/Ra/Ra: 23-Jun-1985	Mo/Ra/Ju: 14-Sep-1985	Mo/Ra/Sa: 26-Nov-1985	Mo/Ra/Me: 21-Feb-1986	Mo/Ra/Ke: 09-May-1986	Mo/Ra/Ve: 10-Jun-1986	Mo/Ra/Su: 09-Sep-1986	Mo/Ra/Mo: 07-Oct-1986	Mo/Ra/Ma: 21-Nov-1986	
+Mo/Ju/Ju: 23-Dec-1986	Mo/Ju/Sa: 27-Feb-1987	Mo/Ju/Me: 14-May-1987	Mo/Ju/Ke: 22-Jul-1987	Mo/Ju/Ve: 19-Aug-1987	Mo/Ju/Su: 09-Nov-1987	Mo/Ju/Mo: 03-Dec-1987	Mo/Ju/Ma: 13-Jan-1988	Mo/Ju/Ra: 10-Feb-1988	
+Mo/Sa/Sa: 23-Apr-1988	Mo/Sa/Me: 24-Jul-1988	Mo/Sa/Ke: 14-Oct-1988	Mo/Sa/Ve: 17-Nov-1988	Mo/Sa/Su: 22-Feb-1989	Mo/Sa/Mo: 22-Mar-1989	Mo/Sa/Ma: 09-May-1989	Mo/Sa/Ra: 12-Jun-1989	Mo/Sa/Ju: 07-Sep-1989	
+Mo/Me/Me: 23-Nov-1989	Mo/Me/Ke: 04-Feb-1990	Mo/Me/Ve: 06-Mar-1990	Mo/Me/Su: 31-May-1990	Mo/Me/Mo: 26-Jun-1990	Mo/Me/Ma: 08-Aug-1990	Mo/Me/Ra: 07-Sep-1990	Mo/Me/Ju: 24-Nov-1990	Mo/Me/Sa: 01-Feb-1991	
+Mo/Ke/Ke: 23-Apr-1991	Mo/Ke/Ve: 06-May-1991	Mo/Ke/Su: 10-Jun-1991	Mo/Ke/Mo: 21-Jun-1991	Mo/Ke/Ma: 09-Jul-1991	Mo/Ke/Ra: 21-Jul-1991	Mo/Ke/Ju: 22-Aug-1991	Mo/Ke/Sa: 20-Sep-1991	Mo/Ke/Me: 24-Oct-1991	
+Mo/Ve/Ve: 23-Nov-1991	Mo/Ve/Su: 04-Mar-1992	Mo/Ve/Mo: 03-Apr-1992	Mo/Ve/Ma: 24-May-1992	Mo/Ve/Ra: 29-Jun-1992	Mo/Ve/Ju: 28-Sep-1992	Mo/Ve/Sa: 18-Dec-1992	Mo/Ve/Me: 24-Mar-1993	Mo/Ve/Ke: 18-Jun-1993	
+Mo/Su/Su: 24-Jul-1993	Mo/Su/Mo: 02-Aug-1993	Mo/Su/Ma: 17-Aug-1993	Mo/Su/Ra: 28-Aug-1993	Mo/Su/Ju: 24-Sep-1993	Mo/Su/Sa: 19-Oct-1993	Mo/Su/Me: 17-Nov-1993	Mo/Su/Ke: 13-Dec-1993	Mo/Su/Ve: 23-Dec-1993	
+
+Ma/Ma/Ma: 23-Jan-1994	Ma/Ma/Ra: 01-Feb-1994	Ma/Ma/Ju: 23-Feb-1994	Ma/Ma/Sa: 14-Mar-1994	Ma/Ma/Me: 07-Apr-1994	Ma/Ma/Ke: 28-Apr-1994	Ma/Ma/Ve: 07-May-1994	Ma/Ma/Su: 31-May-1994	Ma/Ma/Mo: 08-Jun-1994	
+Ma/Ra/Ra: 20-Jun-1994	Ma/Ra/Ju: 17-Aug-1994	Ma/Ra/Sa: 07-Oct-1994	Ma/Ra/Me: 07-Dec-1994	Ma/Ra/Ke: 31-Jan-1995	Ma/Ra/Ve: 22-Feb-1995	Ma/Ra/Su: 26-Apr-1995	Ma/Ra/Mo: 15-May-1995	Ma/Ra/Ma: 16-Jun-1995	
+Ma/Ju/Ju: 09-Jul-1995	Ma/Ju/Sa: 23-Aug-1995	Ma/Ju/Me: 16-Oct-1995	Ma/Ju/Ke: 04-Dec-1995	Ma/Ju/Ve: 24-Dec-1995	Ma/Ju/Su: 19-Feb-1996	Ma/Ju/Mo: 07-Mar-1996	Ma/Ju/Ma: 04-Apr-1996	Ma/Ju/Ra: 24-Apr-1996	
+Ma/Sa/Sa: 14-Jun-1996	Ma/Sa/Me: 18-Aug-1996	Ma/Sa/Ke: 14-Oct-1996	Ma/Sa/Ve: 07-Nov-1996	Ma/Sa/Su: 13-Jan-1997	Ma/Sa/Mo: 03-Feb-1997	Ma/Sa/Ma: 07-Mar-1997	Ma/Sa/Ra: 31-Mar-1997	Ma/Sa/Ju: 31-May-1997	
+Ma/Me/Me: 24-Jul-1997	Ma/Me/Ke: 13-Sep-1997	Ma/Me/Ve: 05-Oct-1997	Ma/Me/Su: 04-Dec-1997	Ma/Me/Mo: 22-Dec-1997	Ma/Me/Ma: 21-Jan-1998	Ma/Me/Ra: 12-Feb-1998	Ma/Me/Ju: 06-Apr-1998	Ma/Me/Sa: 24-May-1998	
+Ma/Ke/Ke: 21-Jul-1998	Ma/Ke/Ve: 30-Jul-1998	Ma/Ke/Su: 24-Aug-1998	Ma/Ke/Mo: 31-Aug-1998	Ma/Ke/Ma: 12-Sep-1998	Ma/Ke/Ra: 21-Sep-1998	Ma/Ke/Ju: 14-Oct-1998	Ma/Ke/Sa: 03-Nov-1998	Ma/Ke/Me: 26-Nov-1998	
+Ma/Ve/Ve: 17-Dec-1998	Ma/Ve/Su: 27-Feb-1999	Ma/Ve/Mo: 19-Mar-1999	Ma/Ve/Ma: 23-Apr-1999	Ma/Ve/Ra: 18-May-1999	Ma/Ve/Ju: 21-Jul-1999	Ma/Ve/Sa: 16-Sep-1999	Ma/Ve/Me: 23-Nov-1999	Ma/Ve/Ke: 22-Jan-2000	
+Ma/Su/Su: 16-Feb-2000	Ma/Su/Mo: 23-Feb-2000	Ma/Su/Ma: 04-Mar-2000	Ma/Su/Ra: 12-Mar-2000	Ma/Su/Ju: 31-Mar-2000	Ma/Su/Sa: 17-Apr-2000	Ma/Su/Me: 07-May-2000	Ma/Su/Ke: 26-May-2000	Ma/Su/Ve: 02-Jun-2000	
+Ma/Mo/Mo: 23-Jun-2000	Ma/Mo/Ma: 11-Jul-2000	Ma/Mo/Ra: 24-Jul-2000	Ma/Mo/Ju: 25-Aug-2000	Ma/Mo/Sa: 22-Sep-2000	Ma/Mo/Me: 26-Oct-2000	Ma/Mo/Ke: 25-Nov-2000	Ma/Mo/Ve: 08-Dec-2000	Ma/Mo/Su: 12-Jan-2001	
+
+Ra/Ra/Ra: 23-Jan-2001	Ra/Ra/Ju: 19-Jun-2001	Ra/Ra/Sa: 29-Oct-2001	Ra/Ra/Me: 02-Apr-2002	Ra/Ra/Ke: 20-Aug-2002	Ra/Ra/Ve: 17-Oct-2002	Ra/Ra/Su: 30-Mar-2003	Ra/Ra/Mo: 18-May-2003	Ra/Ra/Ma: 08-Aug-2003	
+Ra/Ju/Ju: 05-Oct-2003	Ra/Ju/Sa: 30-Jan-2004	Ra/Ju/Me: 17-Jun-2004	Ra/Ju/Ke: 20-Oct-2004	Ra/Ju/Ve: 10-Dec-2004	Ra/Ju/Su: 04-May-2005	Ra/Ju/Mo: 17-Jun-2005	Ra/Ju/Ma: 30-Aug-2005	Ra/Ju/Ra: 20-Oct-2005	
+Ra/Sa/Sa: 01-Mar-2006	Ra/Sa/Me: 12-Aug-2006	Ra/Sa/Ke: 06-Jan-2007	Ra/Sa/Ve: 07-Mar-2007	Ra/Sa/Su: 28-Aug-2007	Ra/Sa/Mo: 19-Oct-2007	Ra/Sa/Ma: 14-Jan-2008	Ra/Sa/Ra: 15-Mar-2008	Ra/Sa/Ju: 19-Aug-2008	
+Ra/Me/Me: 05-Jan-2009	Ra/Me/Ke: 16-May-2009	Ra/Me/Ve: 09-Jul-2009	Ra/Me/Su: 12-Dec-2009	Ra/Me/Mo: 28-Jan-2010	Ra/Me/Ma: 14-Apr-2010	Ra/Me/Ra: 08-Jun-2010	Ra/Me/Ju: 26-Oct-2010	Ra/Me/Sa: 27-Feb-2011	
+Ra/Ke/Ke: 24-Jul-2011	Ra/Ke/Ve: 15-Aug-2011	Ra/Ke/Su: 18-Oct-2011	Ra/Ke/Mo: 07-Nov-2011	Ra/Ke/Ma: 09-Dec-2011	Ra/Ke/Ra: 31-Dec-2011	Ra/Ke/Ju: 27-Feb-2012	Ra/Ke/Sa: 18-Apr-2012	Ra/Ke/Me: 18-Jun-2012	
+Ra/Ve/Ve: 11-Aug-2012	Ra/Ve/Su: 10-Feb-2013	Ra/Ve/Mo: 05-Apr-2013	Ra/Ve/Ma: 06-Jul-2013	Ra/Ve/Ra: 08-Sep-2013	Ra/Ve/Ju: 19-Feb-2014	Ra/Ve/Sa: 15-Jul-2014	Ra/Ve/Me: 05-Jan-2015	Ra/Ve/Ke: 08-Jun-2015	
+Ra/Su/Su: 11-Aug-2015	Ra/Su/Mo: 28-Aug-2015	Ra/Su/Ma: 24-Sep-2015	Ra/Su/Ra: 13-Oct-2015	Ra/Su/Ju: 02-Dec-2015	Ra/Su/Sa: 15-Jan-2016	Ra/Su/Me: 07-Mar-2016	Ra/Su/Ke: 23-Apr-2016	Ra/Su/Ve: 12-May-2016	
+Ra/Mo/Mo: 06-Jul-2016	Ra/Mo/Ma: 20-Aug-2016	Ra/Mo/Ra: 21-Sep-2016	Ra/Mo/Ju: 13-Dec-2016	Ra/Mo/Sa: 24-Feb-2017	Ra/Mo/Me: 21-May-2017	Ra/Mo/Ke: 07-Aug-2017	Ra/Mo/Ve: 08-Sep-2017	Ra/Mo/Su: 08-Dec-2017	
+Ra/Ma/Ma: 05-Jan-2018	Ra/Ma/Ra: 27-Jan-2018	Ra/Ma/Ju: 25-Mar-2018	Ra/Ma/Sa: 15-May-2018	Ra/Ma/Me: 15-Jul-2018	Ra/Ma/Ke: 07-Sep-2018	Ra/Ma/Ve: 30-Sep-2018	Ra/Ma/Su: 03-Dec-2018	Ra/Ma/Mo: 22-Dec-2018	
+
+Ju/Ju/Ju: 23-Jan-2019	Ju/Ju/Sa: 06-May-2019	Ju/Ju/Me: 07-Sep-2019	Ju/Ju/Ke: 26-Dec-2019	Ju/Ju/Ve: 10-Feb-2020	Ju/Ju/Su: 19-Jun-2020	Ju/Ju/Mo: 28-Jul-2020	Ju/Ju/Ma: 01-Oct-2020	Ju/Ju/Ra: 16-Nov-2020	
+Ju/Sa/Sa: 12-Mar-2021	Ju/Sa/Me: 06-Aug-2021	Ju/Sa/Ke: 15-Dec-2021	Ju/Sa/Ve: 07-Feb-2022	Ju/Sa/Su: 11-Jul-2022	Ju/Sa/Mo: 26-Aug-2022	Ju/Sa/Ma: 11-Nov-2022	Ju/Sa/Ra: 04-Jan-2023	Ju/Sa/Ju: 22-May-2023	
+Ju/Me/Me: 23-Sep-2023	Ju/Me/Ke: 18-Jan-2024	Ju/Me/Ve: 07-Mar-2024	Ju/Me/Su: 23-Jul-2024	Ju/Me/Mo: 03-Sep-2024	Ju/Me/Ma: 11-Nov-2024	Ju/Me/Ra: 29-Dec-2024	Ju/Me/Ju: 02-May-2025	Ju/Me/Sa: 20-Aug-2025	
+Ju/Ke/Ke: 30-Dec-2025	Ju/Ke/Ve: 18-Jan-2026	Ju/Ke/Su: 15-Mar-2026	Ju/Ke/Mo: 01-Apr-2026	Ju/Ke/Ma: 30-Apr-2026	Ju/Ke/Ra: 20-May-2026	Ju/Ke/Ju: 10-Jul-2026	Ju/Ke/Sa: 25-Aug-2026	Ju/Ke/Me: 18-Oct-2026	
+Ju/Ve/Ve: 05-Dec-2026	Ju/Ve/Su: 16-May-2027	Ju/Ve/Mo: 04-Jul-2027	Ju/Ve/Ma: 23-Sep-2027	Ju/Ve/Ra: 19-Nov-2027	Ju/Ve/Ju: 13-Apr-2028	Ju/Ve/Sa: 21-Aug-2028	Ju/Ve/Me: 23-Jan-2029	Ju/Ve/Ke: 09-Jun-2029	
+Ju/Su/Su: 05-Aug-2029	Ju/Su/Mo: 20-Aug-2029	Ju/Su/Ma: 13-Sep-2029	Ju/Su/Ra: 30-Sep-2029	Ju/Su/Ju: 13-Nov-2029	Ju/Su/Sa: 22-Dec-2029	Ju/Su/Me: 07-Feb-2030	Ju/Su/Ke: 19-Mar-2030	Ju/Su/Ve: 05-Apr-2030	
+Ju/Mo/Mo: 24-May-2030	Ju/Mo/Ma: 04-Jul-2030	Ju/Mo/Ra: 01-Aug-2030	Ju/Mo/Ju: 13-Oct-2030	Ju/Mo/Sa: 17-Dec-2030	Ju/Mo/Me: 04-Mar-2031	Ju/Mo/Ke: 12-May-2031	Ju/Mo/Ve: 09-Jun-2031	Ju/Mo/Su: 30-Aug-2031	
+Ju/Ma/Ma: 23-Sep-2031	Ju/Ma/Ra: 13-Oct-2031	Ju/Ma/Ju: 03-Dec-2031	Ju/Ma/Sa: 18-Jan-2032	Ju/Ma/Me: 12-Mar-2032	Ju/Ma/Ke: 29-Apr-2032	Ju/Ma/Ve: 19-May-2032	Ju/Ma/Su: 15-Jul-2032	Ju/Ma/Mo: 01-Aug-2032	
+Ju/Ra/Ra: 30-Aug-2032	Ju/Ra/Ju: 08-Jan-2033	Ju/Ra/Sa: 04-May-2033	Ju/Ra/Me: 21-Sep-2033	Ju/Ra/Ke: 23-Jan-2034	Ju/Ra/Ve: 14-Mar-2034	Ju/Ra/Su: 08-Aug-2034	Ju/Ra/Mo: 21-Sep-2034	Ju/Ra/Ma: 03-Dec-2034	
+
+Sa/Sa/Sa: 23-Jan-2035	Sa/Sa/Me: 15-Jul-2035	Sa/Sa/Ke: 18-Dec-2035	Sa/Sa/Ve: 20-Feb-2036	Sa/Sa/Su: 22-Aug-2036	Sa/Sa/Mo: 16-Oct-2036	Sa/Sa/Ma: 16-Jan-2037	Sa/Sa/Ra: 20-Mar-2037	Sa/Sa/Ju: 01-Sep-2037	
+Sa/Me/Me: 26-Jan-2038	Sa/Me/Ke: 14-Jun-2038	Sa/Me/Ve: 10-Aug-2038	Sa/Me/Su: 21-Jan-2039	Sa/Me/Mo: 10-Mar-2039	Sa/Me/Ma: 01-Jun-2039	Sa/Me/Ra: 28-Jul-2039	Sa/Me/Ju: 23-Dec-2039	Sa/Me/Sa: 02-May-2040	
+Sa/Ke/Ke: 05-Oct-2040	Sa/Ke/Ve: 29-Oct-2040	Sa/Ke/Su: 04-Jan-2041	Sa/Ke/Mo: 25-Jan-2041	Sa/Ke/Ma: 01-Mar-2041	Sa/Ke/Ra: 22-Mar-2041	Sa/Ke/Ju: 22-May-2041	Sa/Ke/Sa: 15-Jul-2041	Sa/Ke/Me: 17-Sep-2041	
+Sa/Ve/Ve: 14-Nov-2041	Sa/Ve/Su: 25-May-2042	Sa/Ve/Mo: 22-Jul-2042	Sa/Ve/Ma: 26-Oct-2042	Sa/Ve/Ra: 02-Jan-2043	Sa/Ve/Ju: 24-Jun-2043	Sa/Ve/Sa: 25-Nov-2043	Sa/Ve/Me: 27-May-2044	Sa/Ve/Ke: 07-Nov-2044	
+Sa/Su/Su: 14-Jan-2045	Sa/Su/Mo: 31-Jan-2045	Sa/Su/Ma: 01-Mar-2045	Sa/Su/Ra: 20-Mar-2045	Sa/Su/Ju: 12-May-2045	Sa/Su/Sa: 27-Jun-2045	Sa/Su/Me: 21-Aug-2045	Sa/Su/Ke: 09-Oct-2045	Sa/Su/Ve: 30-Oct-2045	
+Sa/Mo/Mo: 26-Dec-2045	Sa/Mo/Ma: 13-Feb-2046	Sa/Mo/Ra: 18-Mar-2046	Sa/Mo/Ju: 13-Jun-2046	Sa/Mo/Sa: 29-Aug-2046	Sa/Mo/Me: 29-Nov-2046	Sa/Mo/Ke: 19-Feb-2047	Sa/Mo/Ve: 23-Mar-2047	Sa/Mo/Su: 28-Jun-2047	
+Sa/Ma/Ma: 27-Jul-2047	Sa/Ma/Ra: 20-Aug-2047	Sa/Ma/Ju: 20-Oct-2047	Sa/Ma/Sa: 13-Dec-2047	Sa/Ma/Me: 15-Feb-2048	Sa/Ma/Ke: 12-Apr-2048	Sa/Ma/Ve: 06-May-2048	Sa/Ma/Su: 13-Jul-2048	Sa/Ma/Mo: 02-Aug-2048	
+Sa/Ra/Ra: 05-Sep-2048	Sa/Ra/Ju: 08-Feb-2049	Sa/Ra/Sa: 26-Jun-2049	Sa/Ra/Me: 08-Dec-2049	Sa/Ra/Ke: 04-May-2050	Sa/Ra/Ve: 04-Jul-2050	Sa/Ra/Su: 25-Dec-2050	Sa/Ra/Mo: 15-Feb-2051	Sa/Ra/Ma: 12-May-2051	
+Sa/Ju/Ju: 12-Jul-2051	Sa/Ju/Sa: 12-Nov-2051	Sa/Ju/Me: 07-Apr-2052	Sa/Ju/Ke: 17-Aug-2052	Sa/Ju/Ve: 10-Oct-2052	Sa/Ju/Su: 12-Mar-2053	Sa/Ju/Mo: 28-Apr-2053	Sa/Ju/Ma: 14-Jul-2053	Sa/Ju/Ra: 06-Sep-2053	
+
+Me/Me/Me: 23-Jan-2054	Me/Me/Ke: 27-May-2054	Me/Me/Ve: 17-Jul-2054	Me/Me/Su: 11-Dec-2054	Me/Me/Mo: 24-Jan-2055	Me/Me/Ma: 07-Apr-2055	Me/Me/Ra: 28-May-2055	Me/Me/Ju: 07-Oct-2055	Me/Me/Sa: 02-Feb-2056	
+Me/Ke/Ke: 20-Jun-2056	Me/Ke/Ve: 12-Jul-2056	Me/Ke/Su: 10-Sep-2056	Me/Ke/Mo: 28-Sep-2056	Me/Ke/Ma: 28-Oct-2056	Me/Ke/Ra: 19-Nov-2056	Me/Ke/Ju: 12-Jan-2057	Me/Ke/Sa: 01-Mar-2057	Me/Ke/Me: 27-Apr-2057	
+Me/Ve/Ve: 17-Jun-2057	Me/Ve/Su: 07-Dec-2057	Me/Ve/Mo: 28-Jan-2058	Me/Ve/Ma: 23-Apr-2058	Me/Ve/Ra: 23-Jun-2058	Me/Ve/Ju: 25-Nov-2058	Me/Ve/Sa: 12-Apr-2059	Me/Ve/Me: 23-Sep-2059	Me/Ve/Ke: 17-Feb-2060	
+Me/Su/Su: 17-Apr-2060	Me/Su/Mo: 03-May-2060	Me/Su/Ma: 29-May-2060	Me/Su/Ra: 16-Jun-2060	Me/Su/Ju: 02-Aug-2060	Me/Su/Sa: 12-Sep-2060	Me/Su/Me: 31-Oct-2060	Me/Su/Ke: 14-Dec-2060	Me/Su/Ve: 02-Jan-2061	
+Me/Mo/Mo: 22-Feb-2061	Me/Mo/Ma: 06-Apr-2061	Me/Mo/Ra: 06-May-2061	Me/Mo/Ju: 23-Jul-2061	Me/Mo/Sa: 30-Sep-2061	Me/Mo/Me: 21-Dec-2061	Me/Mo/Ke: 03-Mar-2062	Me/Mo/Ve: 03-Apr-2062	Me/Mo/Su: 28-Jun-2062	
+Me/Ma/Ma: 24-Jul-2062	Me/Ma/Ra: 14-Aug-2062	Me/Ma/Ju: 08-Oct-2062	Me/Ma/Sa: 25-Nov-2062	Me/Ma/Me: 21-Jan-2063	Me/Ma/Ke: 13-Mar-2063	Me/Ma/Ve: 03-Apr-2063	Me/Ma/Su: 02-Jun-2063	Me/Ma/Mo: 21-Jun-2063	
+Me/Ra/Ra: 21-Jul-2063	Me/Ra/Ju: 08-Dec-2063	Me/Ra/Sa: 10-Apr-2064	Me/Ra/Me: 05-Sep-2064	Me/Ra/Ke: 15-Jan-2065	Me/Ra/Ve: 10-Mar-2065	Me/Ra/Su: 12-Aug-2065	Me/Ra/Mo: 28-Sep-2065	Me/Ra/Ma: 15-Dec-2065	
+Me/Ju/Ju: 07-Feb-2066	Me/Ju/Sa: 28-May-2066	Me/Ju/Me: 06-Oct-2066	Me/Ju/Ke: 01-Feb-2067	Me/Ju/Ve: 20-Mar-2067	Me/Ju/Su: 05-Aug-2067	Me/Ju/Mo: 16-Sep-2067	Me/Ju/Ma: 24-Nov-2067	Me/Ju/Ra: 11-Jan-2068	
+Me/Sa/Sa: 15-May-2068	Me/Sa/Me: 18-Oct-2068	Me/Sa/Ke: 05-Mar-2069	Me/Sa/Ve: 02-May-2069	Me/Sa/Su: 13-Oct-2069	Me/Sa/Mo: 01-Dec-2069	Me/Sa/Ma: 21-Feb-2070	Me/Sa/Ra: 19-Apr-2070	Me/Sa/Ju: 14-Sep-2070	
+
+Ke/Ke/Ke: 23-Jan-2071	Ke/Ke/Ve: 01-Feb-2071	Ke/Ke/Su: 26-Feb-2071	Ke/Ke/Mo: 04-Mar-2071	Ke/Ke/Ma: 16-Mar-2071	Ke/Ke/Ra: 25-Mar-2071	Ke/Ke/Ju: 17-Apr-2071	Ke/Ke/Sa: 07-May-2071	Ke/Ke/Me: 30-May-2071	
+Ke/Ve/Ve: 20-Jun-2071	Ke/Ve/Su: 31-Aug-2071	Ke/Ve/Mo: 21-Sep-2071	Ke/Ve/Ma: 26-Oct-2071	Ke/Ve/Ra: 20-Nov-2071	Ke/Ve/Ju: 23-Jan-2072	Ke/Ve/Sa: 20-Mar-2072	Ke/Ve/Me: 27-May-2072	Ke/Ve/Ke: 26-Jul-2072	
+Ke/Su/Su: 20-Aug-2072	Ke/Su/Mo: 27-Aug-2072	Ke/Su/Ma: 06-Sep-2072	Ke/Su/Ra: 14-Sep-2072	Ke/Su/Ju: 03-Oct-2072	Ke/Su/Sa: 20-Oct-2072	Ke/Su/Me: 10-Nov-2072	Ke/Su/Ke: 28-Nov-2072	Ke/Su/Ve: 05-Dec-2072	
+Ke/Mo/Mo: 26-Dec-2072	Ke/Mo/Ma: 13-Jan-2073	Ke/Mo/Ra: 26-Jan-2073	Ke/Mo/Ju: 27-Feb-2073	Ke/Mo/Sa: 26-Mar-2073	Ke/Mo/Me: 29-Apr-2073	Ke/Mo/Ke: 29-May-2073	Ke/Mo/Ve: 11-Jun-2073	Ke/Mo/Su: 16-Jul-2073	
+Ke/Ma/Ma: 27-Jul-2073	Ke/Ma/Ra: 05-Aug-2073	Ke/Ma/Ju: 27-Aug-2073	Ke/Ma/Sa: 16-Sep-2073	Ke/Ma/Me: 10-Oct-2073	Ke/Ma/Ke: 31-Oct-2073	Ke/Ma/Ve: 09-Nov-2073	Ke/Ma/Su: 04-Dec-2073	Ke/Ma/Mo: 11-Dec-2073	
+Ke/Ra/Ra: 23-Dec-2073	Ke/Ra/Ju: 19-Feb-2074	Ke/Ra/Sa: 10-Apr-2074	Ke/Ra/Me: 10-Jun-2074	Ke/Ra/Ke: 04-Aug-2074	Ke/Ra/Ve: 26-Aug-2074	Ke/Ra/Su: 29-Oct-2074	Ke/Ra/Mo: 17-Nov-2074	Ke/Ra/Ma: 19-Dec-2074	
+Ke/Ju/Ju: 11-Jan-2075	Ke/Ju/Sa: 25-Feb-2075	Ke/Ju/Me: 19-Apr-2075	Ke/Ju/Ke: 07-Jun-2075	Ke/Ju/Ve: 27-Jun-2075	Ke/Ju/Su: 23-Aug-2075	Ke/Ju/Mo: 09-Sep-2075	Ke/Ju/Ma: 07-Oct-2075	Ke/Ju/Ra: 27-Oct-2075	
+Ke/Sa/Sa: 17-Dec-2075	Ke/Sa/Me: 20-Feb-2076	Ke/Sa/Ke: 17-Apr-2076	Ke/Sa/Ve: 11-May-2076	Ke/Sa/Su: 17-Jul-2076	Ke/Sa/Mo: 07-Aug-2076	Ke/Sa/Ma: 09-Sep-2076	Ke/Sa/Ra: 03-Oct-2076	Ke/Sa/Ju: 03-Dec-2076	
+Ke/Me/Me: 26-Jan-2077	Ke/Me/Ke: 17-Mar-2077	Ke/Me/Ve: 08-Apr-2077	Ke/Me/Su: 07-Jun-2077	Ke/Me/Mo: 25-Jun-2077	Ke/Me/Ma: 25-Jul-2077	Ke/Me/Ra: 16-Aug-2077	Ke/Me/Ju: 09-Oct-2077	Ke/Me/Sa: 26-Nov-2077	
+
+Ve/Ve/Ve: 23-Jan-2078	Ve/Ve/Su: 13-Aug-2078	Ve/Ve/Mo: 13-Oct-2078	Ve/Ve/Ma: 23-Jan-2079	Ve/Ve/Ra: 03-Apr-2079	Ve/Ve/Ju: 03-Oct-2079	Ve/Ve/Sa: 14-Mar-2080	Ve/Ve/Me: 23-Sep-2080	Ve/Ve/Ke: 14-Mar-2081	
+Ve/Su/Su: 24-May-2081	Ve/Su/Mo: 11-Jun-2081	Ve/Su/Ma: 12-Jul-2081	Ve/Su/Ra: 02-Aug-2081	Ve/Su/Ju: 26-Sep-2081	Ve/Su/Sa: 14-Nov-2081	Ve/Su/Me: 11-Jan-2082	Ve/Su/Ke: 03-Mar-2082	Ve/Su/Ve: 24-Mar-2082	
+Ve/Mo/Mo: 24-May-2082	Ve/Mo/Ma: 14-Jul-2082	Ve/Mo/Ra: 18-Aug-2082	Ve/Mo/Ju: 18-Nov-2082	Ve/Mo/Sa: 07-Feb-2083	Ve/Mo/Me: 14-May-2083	Ve/Mo/Ke: 08-Aug-2083	Ve/Mo/Ve: 13-Sep-2083	Ve/Mo/Su: 23-Dec-2083	
+Ve/Ma/Ma: 23-Jan-2084	Ve/Ma/Ra: 17-Feb-2084	Ve/Ma/Ju: 21-Apr-2084	Ve/Ma/Sa: 17-Jun-2084	Ve/Ma/Me: 23-Aug-2084	Ve/Ma/Ke: 23-Oct-2084	Ve/Ma/Ve: 17-Nov-2084	Ve/Ma/Su: 27-Jan-2085	Ve/Ma/Mo: 17-Feb-2085	
+Ve/Ra/Ra: 24-Mar-2085	Ve/Ra/Ju: 05-Sep-2085	Ve/Ra/Sa: 29-Jan-2086	Ve/Ra/Me: 21-Jul-2086	Ve/Ra/Ke: 23-Dec-2086	Ve/Ra/Ve: 25-Feb-2087	Ve/Ra/Su: 26-Aug-2087	Ve/Ra/Mo: 20-Oct-2087	Ve/Ra/Ma: 20-Jan-2088	
+Ve/Ju/Ju: 24-Mar-2088	Ve/Ju/Sa: 01-Aug-2088	Ve/Ju/Me: 03-Jan-2089	Ve/Ju/Ke: 20-May-2089	Ve/Ju/Ve: 16-Jul-2089	Ve/Ju/Su: 25-Dec-2089	Ve/Ju/Mo: 12-Feb-2090	Ve/Ju/Ma: 04-May-2090	Ve/Ju/Ra: 30-Jun-2090	
+Ve/Sa/Sa: 23-Nov-2090	Ve/Sa/Me: 24-May-2091	Ve/Sa/Ke: 05-Nov-2091	Ve/Sa/Ve: 11-Jan-2092	Ve/Sa/Su: 22-Jul-2092	Ve/Sa/Mo: 18-Sep-2092	Ve/Sa/Ma: 24-Dec-2092	Ve/Sa/Ra: 01-Mar-2093	Ve/Sa/Ju: 21-Aug-2093	
+Ve/Me/Me: 23-Jan-2094	Ve/Me/Ke: 18-Jun-2094	Ve/Me/Ve: 17-Aug-2094	Ve/Me/Su: 06-Feb-2095	Ve/Me/Mo: 29-Mar-2095	Ve/Me/Ma: 23-Jun-2095	Ve/Me/Ra: 23-Aug-2095	Ve/Me/Ju: 25-Jan-2096	Ve/Me/Sa: 12-Jun-2096	
+Ve/Ke/Ke: 23-Nov-2096	Ve/Ke/Ve: 18-Dec-2096	Ve/Ke/Su: 27-Feb-2097	Ve/Ke/Mo: 19-Mar-2097	Ve/Ke/Ma: 24-Apr-2097	Ve/Ke/Ra: 19-May-2097	Ve/Ke/Ju: 22-Jul-2097	Ve/Ke/Sa: 17-Sep-2097	Ve/Ke/Me: 23-Nov-2097	
+
+
+
+
+
+
+
+
+
+
+
+----------------------Elango----------------------
+Sun --> 03 : 37 : 01 Dir -->false
+Moon --> 216 : 48 : 24 Dir -->false
+Mars --> 55 : 47 : 49 Dir -->false
+Mercury --> 23 : 01 : 15 Dir -->false
+Jupiter --> 150 : 11 : 04 Dir -->true
+Venus --> 04 : 15 : 56 Dir -->false
+Saturn --> 230 : 40 : 14 Dir -->true
+Rahu --> 206 : 34 : 03 Dir -->false
+Ketu --> 26 : 34 : 03 Dir -->false
+Sun --> 20 : 13 : 17 Dir -->false
+
+cp Ve/Ju/Sa
+Bhava
+0 --> 00 : 00 : 00 sandi 02 : 57 : 09
+1 --> 20 : 13 : 17 sandi 34 : 40 : 17
+2 --> 49 : 07 : 17 sandi 62 : 15 : 04
+3 --> 75 : 22 : 51 sandi 88 : 45 : 25
+4 --> 102 : 07 : 59 sandi 117 : 04 : 24
+5 --> 132 : 00 : 49 sandi 148 : 50 : 55
+6 --> 165 : 41 : 00 sandi 182 : 57 : 09
+7 --> 200 : 13 : 17 sandi 214 : 40 : 17
+8 --> 229 : 07 : 17 sandi 242 : 15 : 04
+9 --> 255 : 22 : 51 sandi 268 : 45 : 25
+10 --> 282 : 07 : 59 sandi 297 : 04 : 24
+11 --> 312 : 00 : 49 sandi 328 : 50 : 55
+12 --> 345 : 41 : 00 sandi 02 : 57 : 09
+
+Sun --> Mesha - 1
+Moon --> Vrichika - 8
+Mars --> Vrishabha - 2
+Mercury --> Mesha - 1
+Jupiter --> Kanya - 6
+Venus --> Mesha - 1
+Saturn --> Vrichika - 8
+Rahu --> Thula - 7
+Ketu --> Mesha - 1
+Sun --> Mesha - 1
+
+Thithi Thrithiyai Paksha Krishna
+0 --> 2<--> GnatiKaraka
+1 --> 3<--> MatruKaraka
+2 --> 6<--> AtmaKaraka
+3 --> 1<--> AmatyaKaraka
+4 --> 5<--> DaraKaraka
+5 --> 0<--> PuthraKaraka
+6 --> 4<--> BhratruKaraka
+Charts
+Rasi -> 1 , 8 , 2 , 1 , 6 , 1 , 8 , 7 , 1 , 1 , 
+Hora -> 5 , 4 , 5 , 4 , 4 , 5 , 5 , 4 , 4 , 4 , 
+Drekkana -> 1 , 8 , 10 , 9 , 6 , 1 , 4 , 3 , 9 , 9 , 
+Chaturtamsa -> 1 , 8 , 11 , 10 , 6 , 1 , 2 , 4 , 10 , 7 , 
+Navamsa -> 2 , 6 , 5 , 7 , 10 , 2 , 10 , 2 , 8 , 7 , 
+Saptamsa -> 1 , 3 , 2 , 6 , 12 , 1 , 6 , 1 , 7 , 5 , 
+Dasamsa -> 2 , 6 , 6 , 8 , 2 , 2 , 10 , 3 , 9 , 7 , 
+Dwadasamsa -> 2 , 10 , 12 , 10 , 6 , 2 , 4 , 5 , 11 , 9 , 
+Shodasamsa -> 2 , 8 , 6 , 1 , 9 , 3 , 4 , 3 , 3 , 11 , 
+Vimshamsa -> 3 , 1 , 2 , 4 , 5 , 3 , 10 , 6 , 6 , 2 , 
+ChaturVimshamsa -> 7 , 9 , 12 , 11 , 4 , 8 , 8 , 2 , 2 , 9 , 
+Bhamsa -> 4 , 4 , 3 , 9 , 4 , 4 , 4 , 6 , 12 , 7 , 
+Trimshamsa -> 1 , 6 , 8 , 3 , 2 , 1 , 10 , 7 , 7 , 3 , 
+Khavedamsa -> 5 , 4 , 5 , 7 , 7 , 6 , 10 , 12 , 12 , 3 , 
+Akshvedamsa -> 6 , 3 , 7 , 11 , 9 , 7 , 12 , 4 , 4 , 7 , 
+Shastiamsa -> 8 , 9 , 5 , 11 , 6 , 9 , 1 , 12 , 6 , 5 , 
+Panchamsa -> 1 , 6 , 8 , 3 , 2 , 1 , 10 , 7 , 7 , 3 , 
+Shashtamsa -> 1 , 8 , 12 , 5 , 7 , 1 , 11 , 6 , 6 , 5 , 
+Ashtamsa -> 1 , 6 , 11 , 7 , 9 , 2 , 10 , 8 , 8 , 6 , 
+Ekadamsa -> 11 , 10 , 3 , 4 , 12 , 11 , 5 , 3 , 3 , 5 , 
+Bhava -> 1 , 8 , 2 , 1 , 6 , 1 , 8 , 7 , 1 , 1 , 
+
+Ashtavarga
+Sun  Astavarga 
+Mesha -->  2
+Vrishabha -->  4
+Mithuna -->  4
+Kataka -->  4
+Simha -->  4
+Kanya -->  5
+Thula -->  2
+Vrichika -->  3
+Dhanus -->  4
+Makara -->  6
+Kumbha -->  6
+Meena -->  4
+Sum 48
+RasiGuna 90 , GrahaGuna 10 , Moon  Astavarga 
+Mesha -->  4
+Vrishabha -->  1
+Mithuna -->  6
+Kataka -->  4
+Simha -->  4
+Kanya -->  6
+Thula -->  4
+Vrichika -->  3
+Dhanus -->  2
+Makara -->  7
+Kumbha -->  5
+Meena -->  3
+Sum 49
+RasiGuna 79 , GrahaGuna 84 , Mars  Astavarga 
+Mesha -->  2
+Vrishabha -->  2
+Mithuna -->  6
+Kataka -->  2
+Simha -->  5
+Kanya -->  6
+Thula -->  0
+Vrichika -->  3
+Dhanus -->  1
+Makara -->  3
+Kumbha -->  7
+Meena -->  2
+Sum 39
+RasiGuna 123 , GrahaGuna 67 , Bhuda  Astavarga 
+Mesha -->  5
+Vrishabha -->  4
+Mithuna -->  5
+Kataka -->  4
+Simha -->  7
+Kanya -->  5
+Thula -->  0
+Vrichika -->  4
+Dhanus -->  6
+Makara -->  3
+Kumbha -->  8
+Meena -->  3
+Sum 54
+RasiGuna 165 , GrahaGuna 38 , Guru  Astavarga 
+Mesha -->  5
+Vrishabha -->  6
+Mithuna -->  3
+Kataka -->  5
+Simha -->  4
+Kanya -->  5
+Thula -->  4
+Vrichika -->  3
+Dhanus -->  7
+Makara -->  5
+Kumbha -->  5
+Meena -->  4
+Sum 56
+RasiGuna 68 , GrahaGuna 25 , Sukra  Astavarga 
+Mesha -->  4
+Vrishabha -->  3
+Mithuna -->  6
+Kataka -->  6
+Simha -->  4
+Kanya -->  4
+Thula -->  2
+Vrichika -->  4
+Dhanus -->  4
+Makara -->  5
+Kumbha -->  6
+Meena -->  4
+Sum 52
+RasiGuna 53 , GrahaGuna 10 , Sani  Astavarga 
+Mesha -->  5
+Vrishabha -->  1
+Mithuna -->  1
+Kataka -->  4
+Simha -->  1
+Kanya -->  6
+Thula -->  2
+Vrichika -->  2
+Dhanus -->  1
+Makara -->  6
+Kumbha -->  6
+Meena -->  4
+Sum 39
+RasiGuna 92 , GrahaGuna 118 , Asc  Astavarga 
+Mesha -->  27
+Vrishabha -->  21
+Mithuna -->  31
+Kataka -->  29
+Simha -->  29
+Kanya -->  37
+Thula -->  14
+Vrichika -->  22
+Dhanus -->  25
+Makara -->  35
+Kumbha -->  43
+Meena -->  24
+Sum 337
+RasiGuna 354 , GrahaGuna 198 , 
+Total 674
+ShadBala 
+Sun --> 1
+Sun --> 3.847686161008186
+OchachaBala:-->Sun :-> 57.87232811169199
+OjaYugmarasyamsaBala:-->Sun :-> 15.0
+KendraBala:-->Sun :-> 60.0
+DrekkanaBala:-->Sun :-> 15.0
+SapthavargaBala:-->Sun :-> 123.75
+SthanaBala:-->Sun :-> 271.622328111692
+DigBala:-->Sun :-> 32.838724341322404
+NaisargikaBala:-->Sun :-> 60.0
+AbdaBala:-->Sun :-> 0.0
+MasaBala:-->Sun :-> 0.0
+VaraBala:-->Sun :-> 0.0
+PakshaBala:-->Sun :-> 11.063300931005521
+TribhagaBala:-->Sun :-> 0.0
+HoraBala:-->Sun :-> 0.0
+NatonnataBala:-->Sun :-> 35.80776460542953
+AyanaBala:-->Sun :-> 86.24252145027913
+YuddhaBala:-->Sun :-> 0.0
+KalaBala:-->Sun :-> 133.11358698671418
+DrikBala:-->Sun :-> 5.760021962192752
+ChestaBala:-->Sun :-> 38.926987020626086
+IshtaBala:-->Sun :-> 47.463621493278914
+KashtaBala:-->Sun :-> 6.6960030852863
+ShadBala:-->Sun :-> 8.388911023365354
+ShadBala Per:-->Sun :-> 167.77822046730705
+ShadBala Rank:-->Sun :-> 0
+Moon --> 8
+Moon --> 14.776881651915112
+OchachaBala:-->Moon :-> 1.2689623760308468
+OjaYugmarasyamsaBala:-->Moon :-> 30.0
+KendraBala:-->Moon :-> 30.0
+DrekkanaBala:-->Moon :-> 0.0
+SapthavargaBala:-->Moon :-> 63.75
+SthanaBala:-->Moon :-> 125.01896237603084
+DigBala:-->Moon :-> 21.775423410316886
+NaisargikaBala:-->Moon :-> 51.43
+AbdaBala:-->Moon :-> 0.0
+MasaBala:-->Moon :-> 0.0
+VaraBala:-->Moon :-> 0.0
+PakshaBala:-->Moon :-> 22.126601862011043
+TribhagaBala:-->Moon :-> 0.0
+HoraBala:-->Moon :-> 60.0
+NatonnataBala:-->Moon :-> 24.192235394570464
+AyanaBala:-->Moon :-> 55.78211648577108
+YuddhaBala:-->Moon :-> 0.0
+KalaBala:-->Moon :-> 162.10095374235257
+DrikBala:-->Moon :-> -13.295047656987787
+ChestaBala:-->Moon :-> 48.93669906899448
+IshtaBala:-->Moon :-> 7.880281081642822
+KashtaBala:-->Moon :-> 25.49037354030298
+ShadBala:-->Moon :-> 5.7838381978618765
+ShadBala Per:-->Moon :-> 96.39730329769793
+ShadBala Rank:-->Moon :-> 6
+Mars --> 2
+Mars --> 49.158149309045264
+OchachaBala:-->Mars :-> 20.734330026808966
+OjaYugmarasyamsaBala:-->Mars :-> 15.0
+KendraBala:-->Mars :-> 30.0
+DrekkanaBala:-->Mars :-> 0.0
+SapthavargaBala:-->Mars :-> 116.25
+SthanaBala:-->Mars :-> 181.98433002680898
+DigBala:-->Mars :-> 15.445382479823364
+NaisargikaBala:-->Mars :-> 17.14
+AbdaBala:-->Mars :-> 0.0
+MasaBala:-->Mars :-> 0.0
+VaraBala:-->Mars :-> 0.0
+PakshaBala:-->Mars :-> 11.063300931005521
+TribhagaBala:-->Mars :-> 0.0
+HoraBala:-->Mars :-> 0.0
+NatonnataBala:-->Mars :-> 24.192235394570464
+AyanaBala:-->Mars :-> 59.20273792446045
+YuddhaBala:-->Mars :-> 0.0
+KalaBala:-->Mars :-> 94.45827425003644
+DrikBala:-->Mars :-> -15.615097261367094
+ChestaBala:-->Mars :-> 21.46372165122428
+IshtaBala:-->Mars :-> 21.095873727344152
+KashtaBala:-->Mars :-> 38.899264615646075
+ShadBala:-->Mars :-> 5.247943519108765
+ShadBala Per:-->Mars :-> 104.9588703821753
+ShadBala Rank:-->Mars :-> 4
+Mercury --> 1
+Mercury --> 80.6270536336058
+OchachaBala:-->Mercury :-> 12.673660517099904
+OjaYugmarasyamsaBala:-->Mercury :-> 30.0
+KendraBala:-->Mercury :-> 60.0
+DrekkanaBala:-->Mercury :-> 0.0
+SapthavargaBala:-->Mercury :-> 91.875
+SthanaBala:-->Mercury :-> 194.5486605170999
+DigBala:-->Mercury :-> 59.06686725045427
+NaisargikaBala:-->Mercury :-> 25.7
+AbdaBala:-->Mercury :-> 0.0
+MasaBala:-->Mercury :-> 30.0
+VaraBala:-->Mercury :-> 45.0
+PakshaBala:-->Mercury :-> 11.063300931005521
+TribhagaBala:-->Mercury :-> 60.0
+HoraBala:-->Mercury :-> 0.0
+NatonnataBala:-->Mercury :-> 60.0
+AyanaBala:-->Mercury :-> 51.26340299115564
+YuddhaBala:-->Mercury :-> 0.0
+KalaBala:-->Mercury :-> 257.3267039221612
+DrikBala:-->Mercury :-> -0.8866791074916769
+ChestaBala:-->Mercury :-> 37.635040003903555
+IshtaBala:-->Mercury :-> 21.8397280330353
+KashtaBala:-->Mercury :-> 32.53385451029036
+ShadBala:-->Mercury :-> 9.556509876435456
+ShadBala Per:-->Mercury :-> 136.52156966336366
+ShadBala Rank:-->Mercury :-> 2
+Jupiter --> 6
+Jupiter --> 7.935612505814741
+OchachaBala:-->Jupiter :-> 41.60512816817868
+OjaYugmarasyamsaBala:-->Jupiter :-> 0.0
+KendraBala:-->Jupiter :-> 15.0
+DrekkanaBala:-->Jupiter :-> 15.0
+SapthavargaBala:-->Jupiter :-> 75.0
+SthanaBala:-->Jupiter :-> 146.60512816817868
+DigBala:-->Jupiter :-> 16.678989269066182
+NaisargikaBala:-->Jupiter :-> 34.28
+AbdaBala:-->Jupiter :-> 15.0
+MasaBala:-->Jupiter :-> 0.0
+VaraBala:-->Jupiter :-> 0.0
+PakshaBala:-->Jupiter :-> 48.93669906899448
+TribhagaBala:-->Jupiter :-> 60.0
+HoraBala:-->Jupiter :-> 0.0
+NatonnataBala:-->Jupiter :-> 35.80776460542953
+AyanaBala:-->Jupiter :-> 33.34418002158281
+YuddhaBala:-->Jupiter :-> 0.0
+KalaBala:-->Jupiter :-> 193.0886436960068
+DrikBala:-->Jupiter :-> -34.63702930927209
+ChestaBala:-->Jupiter :-> 50.478448248335816
+IshtaBala:-->Jupiter :-> 45.827527852839566
+KashtaBala:-->Jupiter :-> 13.23433882413158
+ShadBala:-->Jupiter :-> 6.774903001205257
+ShadBala Per:-->Jupiter :-> 104.22927694161935
+ShadBala Rank:-->Jupiter :-> 5
+Venus --> 1
+Venus --> 7.603992563732494
+OchachaBala:-->Venus :-> 57.578112309599526
+OjaYugmarasyamsaBala:-->Venus :-> 15.0
+KendraBala:-->Venus :-> 60.0
+DrekkanaBala:-->Venus :-> 0.0
+SapthavargaBala:-->Venus :-> 121.875
+SthanaBala:-->Venus :-> 254.45311230959953
+DigBala:-->Venus :-> 27.377501904052735
+NaisargikaBala:-->Venus :-> 42.85
+AbdaBala:-->Venus :-> 0.0
+MasaBala:-->Venus :-> 0.0
+VaraBala:-->Venus :-> 0.0
+PakshaBala:-->Venus :-> 48.93669906899448
+TribhagaBala:-->Venus :-> 0.0
+HoraBala:-->Venus :-> 0.0
+NatonnataBala:-->Venus :-> 35.80776460542953
+AyanaBala:-->Venus :-> 43.42848218211009
+YuddhaBala:-->Venus :-> 0.0
+KalaBala:-->Venus :-> 128.1729458565341
+DrikBala:-->Venus :-> 6.003276488239795
+ChestaBala:-->Venus :-> 2.121190837624359
+IshtaBala:-->Venus :-> 11.051432679921135
+KashtaBala:-->Venus :-> 11.839593550683897
+ShadBala:-->Venus :-> 7.682967123267509
+ShadBala Per:-->Venus :-> 139.69031133213653
+ShadBala Rank:-->Venus :-> 1
+Saturn --> 8
+Saturn --> 88.20112967470925
+OchachaBala:-->Saturn :-> 49.7763969088392
+OjaYugmarasyamsaBala:-->Saturn :-> 0.0
+KendraBala:-->Saturn :-> 30.0
+DrekkanaBala:-->Saturn :-> 0.0
+SapthavargaBala:-->Saturn :-> 75.0
+SthanaBala:-->Saturn :-> 154.77639690883922
+DigBala:-->Saturn :-> 49.8502580097267
+NaisargikaBala:-->Saturn :-> 8.57
+AbdaBala:-->Saturn :-> 0.0
+MasaBala:-->Saturn :-> 0.0
+VaraBala:-->Saturn :-> 0.0
+PakshaBala:-->Saturn :-> 11.063300931005521
+TribhagaBala:-->Saturn :-> 0.0
+HoraBala:-->Saturn :-> 0.0
+NatonnataBala:-->Saturn :-> 24.192235394570464
+AyanaBala:-->Saturn :-> 58.673913750059306
+YuddhaBala:-->Saturn :-> 0.0
+KalaBala:-->Saturn :-> 93.92945007563529
+DrikBala:-->Saturn :-> -15.028037925161524
+ChestaBala:-->Saturn :-> 45.40852039915649
+IshtaBala:-->Saturn :-> 47.54232361203578
+KashtaBala:-->Saturn :-> 12.213823969248674
+ShadBala:-->Saturn :-> 5.625109791136603
+ShadBala Per:-->Saturn :-> 112.50219582273205
+ShadBala Rank:-->Saturn :-> 3
+BhavaAdhipathiBala: 1 : -->5.247943519108765
+BhavaDigBala: 1 : -->30.0
+BhavaDrishtiBala: 1 : -->28.161861516410767
+BhavaBala: 1 : -->373.03847266293667
+BhavaBala Rank: 1 : -->10
+BhavaAdhipathiBala: 2 : -->7.682967123267509
+BhavaDigBala: 2 : -->20.0
+BhavaDrishtiBala: 2 : -->22.764313524304157
+BhavaBala: 2 : -->503.7423409203547
+BhavaBala Rank: 2 : -->5
+BhavaAdhipathiBala: 3 : -->9.556509876435456
+BhavaDigBala: 3 : -->40.0
+BhavaDrishtiBala: 3 : -->-3.6698322994455133
+BhavaBala: 3 : -->609.7207602866819
+BhavaBala Rank: 3 : -->0
+BhavaAdhipathiBala: 4 : -->5.7838381978618765
+BhavaDigBala: 4 : -->60.0
+BhavaDrishtiBala: 4 : -->16.74981950938936
+BhavaBala: 4 : -->423.7801113811019
+BhavaBala Rank: 4 : -->9
+BhavaAdhipathiBala: 5 : -->8.388911023365354
+BhavaDigBala: 5 : -->10.0
+BhavaDrishtiBala: 5 : -->19.93026307133193
+BhavaBala: 5 : -->533.2649244732532
+BhavaBala Rank: 5 : -->2
+BhavaAdhipathiBala: 6 : -->9.556509876435456
+BhavaDigBala: 6 : -->10.0
+BhavaDrishtiBala: 6 : -->-17.374435501961962
+BhavaBala: 6 : -->566.0161570841653
+BhavaBala Rank: 6 : -->1
+BhavaAdhipathiBala: 7 : -->7.682967123267509
+BhavaDigBala: 7 : -->0.0
+BhavaDrishtiBala: 7 : -->63.10691559411296
+BhavaBala: 7 : -->524.0849429901635
+BhavaBala Rank: 7 : -->3
+BhavaAdhipathiBala: 8 : -->5.247943519108765
+BhavaDigBala: 8 : -->50.0
+BhavaDrishtiBala: 8 : -->69.30546508198812
+BhavaBala: 8 : -->434.18207622851406
+BhavaBala Rank: 8 : -->8
+BhavaAdhipathiBala: 9 : -->6.774903001205257
+BhavaDigBala: 9 : -->50.0
+BhavaDrishtiBala: 9 : -->57.679188165660065
+BhavaBala: 9 : -->514.1733682379755
+BhavaBala Rank: 9 : -->4
+BhavaAdhipathiBala: 10 : -->5.625109791136603
+BhavaDigBala: 10 : -->60.0
+BhavaDrishtiBala: 10 : -->47.8541124360657
+BhavaBala: 10 : -->445.3606999042618
+BhavaBala Rank: 10 : -->7
+BhavaAdhipathiBala: 11 : -->5.625109791136603
+BhavaDigBala: 11 : -->40.0
+BhavaDrishtiBala: 11 : -->-7.245711573728695
+BhavaBala: 11 : -->370.26087589446746
+BhavaBala Rank: 11 : -->11
+BhavaAdhipathiBala: 12 : -->6.774903001205257
+BhavaDigBala: 12 : -->20.0
+BhavaDrishtiBala: 12 : -->37.582108566576906
+BhavaBala: 12 : -->464.0762886388923
+BhavaBala Rank: 12 : -->6
+
+Dasas
+Sa/Sa/Sa: 06-May-1952	Sa/Sa/Me: 27-Oct-1952	Sa/Sa/Ke: 31-Mar-1953	Sa/Sa/Ve: 03-Jun-1953	Sa/Sa/Su: 03-Dec-1953	Sa/Sa/Mo: 27-Jan-1954	Sa/Sa/Ma: 29-Apr-1954	Sa/Sa/Ra: 02-Jul-1954	Sa/Sa/Ju: 13-Dec-1954	
+Sa/Me/Me: 09-May-1955	Sa/Me/Ke: 25-Sep-1955	Sa/Me/Ve: 21-Nov-1955	Sa/Me/Su: 04-May-1956	Sa/Me/Mo: 22-Jun-1956	Sa/Me/Ma: 12-Sep-1956	Sa/Me/Ra: 08-Nov-1956	Sa/Me/Ju: 05-Apr-1957	Sa/Me/Sa: 14-Aug-1957	
+Sa/Ke/Ke: 16-Jan-1958	Sa/Ke/Ve: 09-Feb-1958	Sa/Ke/Su: 17-Apr-1958	Sa/Ke/Mo: 08-May-1958	Sa/Ke/Ma: 10-Jun-1958	Sa/Ke/Ra: 04-Jul-1958	Sa/Ke/Ju: 03-Sep-1958	Sa/Ke/Sa: 26-Oct-1958	Sa/Ke/Me: 30-Dec-1958	
+Sa/Ve/Ve: 25-Feb-1959	Sa/Ve/Su: 05-Sep-1959	Sa/Ve/Mo: 02-Nov-1959	Sa/Ve/Ma: 07-Feb-1960	Sa/Ve/Ra: 15-Apr-1960	Sa/Ve/Ju: 05-Oct-1960	Sa/Ve/Sa: 09-Mar-1961	Sa/Ve/Me: 08-Sep-1961	Sa/Ve/Ke: 18-Feb-1962	
+Sa/Su/Su: 27-Apr-1962	Sa/Su/Mo: 14-May-1962	Sa/Su/Ma: 12-Jun-1962	Sa/Su/Ra: 02-Jul-1962	Sa/Su/Ju: 23-Aug-1962	Sa/Su/Sa: 08-Oct-1962	Sa/Su/Me: 02-Dec-1962	Sa/Su/Ke: 20-Jan-1963	Sa/Su/Ve: 10-Feb-1963	
+Sa/Mo/Mo: 08-Apr-1963	Sa/Mo/Ma: 27-May-1963	Sa/Mo/Ra: 29-Jun-1963	Sa/Mo/Ju: 24-Sep-1963	Sa/Mo/Sa: 10-Dec-1963	Sa/Mo/Me: 12-Mar-1964	Sa/Mo/Ke: 01-Jun-1964	Sa/Mo/Ve: 05-Jul-1964	Sa/Mo/Su: 09-Oct-1964	
+Sa/Ma/Ma: 07-Nov-1964	Sa/Ma/Ra: 01-Dec-1964	Sa/Ma/Ju: 31-Jan-1965	Sa/Ma/Sa: 26-Mar-1965	Sa/Ma/Me: 29-May-1965	Sa/Ma/Ke: 25-Jul-1965	Sa/Ma/Ve: 18-Aug-1965	Sa/Ma/Su: 24-Oct-1965	Sa/Ma/Mo: 13-Nov-1965	
+Sa/Ra/Ra: 17-Dec-1965	Sa/Ra/Ju: 22-May-1966	Sa/Ra/Sa: 08-Oct-1966	Sa/Ra/Me: 21-Mar-1967	Sa/Ra/Ke: 16-Aug-1967	Sa/Ra/Ve: 15-Oct-1967	Sa/Ra/Su: 07-Apr-1968	Sa/Ra/Mo: 29-May-1968	Sa/Ra/Ma: 23-Aug-1968	
+Sa/Ju/Ju: 23-Oct-1968	Sa/Ju/Sa: 23-Feb-1969	Sa/Ju/Me: 20-Jul-1969	Sa/Ju/Ke: 28-Nov-1969	Sa/Ju/Ve: 21-Jan-1970	Sa/Ju/Su: 24-Jun-1970	Sa/Ju/Mo: 09-Aug-1970	Sa/Ju/Ma: 25-Oct-1970	Sa/Ju/Ra: 18-Dec-1970	
+
+Me/Me/Me: 06-May-1971	Me/Me/Ke: 07-Sep-1971	Me/Me/Ve: 29-Oct-1971	Me/Me/Su: 24-Mar-1972	Me/Me/Mo: 07-May-1972	Me/Me/Ma: 19-Jul-1972	Me/Me/Ra: 09-Sep-1972	Me/Me/Ju: 18-Jan-1973	Me/Me/Sa: 16-May-1973	
+Me/Ke/Ke: 02-Oct-1973	Me/Ke/Ve: 23-Oct-1973	Me/Ke/Su: 22-Dec-1973	Me/Ke/Mo: 09-Jan-1974	Me/Ke/Ma: 09-Feb-1974	Me/Ke/Ra: 02-Mar-1974	Me/Ke/Ju: 25-Apr-1974	Me/Ke/Sa: 12-Jun-1974	Me/Ke/Me: 09-Aug-1974	
+Me/Ve/Ve: 29-Sep-1974	Me/Ve/Su: 20-Mar-1975	Me/Ve/Mo: 11-May-1975	Me/Ve/Ma: 05-Aug-1975	Me/Ve/Ra: 04-Oct-1975	Me/Ve/Ju: 09-Mar-1976	Me/Ve/Sa: 24-Jul-1976	Me/Ve/Me: 04-Jan-1977	Me/Ve/Ke: 31-May-1977	
+Me/Su/Su: 30-Jul-1977	Me/Su/Mo: 14-Aug-1977	Me/Su/Ma: 09-Sep-1977	Me/Su/Ra: 27-Sep-1977	Me/Su/Ju: 13-Nov-1977	Me/Su/Sa: 24-Dec-1977	Me/Su/Me: 11-Feb-1978	Me/Su/Ke: 27-Mar-1978	Me/Su/Ve: 15-Apr-1978	
+Me/Mo/Mo: 05-Jun-1978	Me/Mo/Ma: 18-Jul-1978	Me/Mo/Ra: 17-Aug-1978	Me/Mo/Ju: 03-Nov-1978	Me/Mo/Sa: 11-Jan-1979	Me/Mo/Me: 03-Apr-1979	Me/Mo/Ke: 15-Jun-1979	Me/Mo/Ve: 15-Jul-1979	Me/Mo/Su: 09-Oct-1979	
+Me/Ma/Ma: 04-Nov-1979	Me/Ma/Ra: 25-Nov-1979	Me/Ma/Ju: 19-Jan-1980	Me/Ma/Sa: 08-Mar-1980	Me/Ma/Me: 04-May-1980	Me/Ma/Ke: 25-Jun-1980	Me/Ma/Ve: 16-Jul-1980	Me/Ma/Su: 14-Sep-1980	Me/Ma/Mo: 02-Oct-1980	
+Me/Ra/Ra: 01-Nov-1980	Me/Ra/Ju: 21-Mar-1981	Me/Ra/Sa: 23-Jul-1981	Me/Ra/Me: 17-Dec-1981	Me/Ra/Ke: 28-Apr-1982	Me/Ra/Ve: 22-Jun-1982	Me/Ra/Su: 24-Nov-1982	Me/Ra/Mo: 09-Jan-1983	Me/Ra/Ma: 28-Mar-1983	
+Me/Ju/Ju: 21-May-1983	Me/Ju/Sa: 08-Sep-1983	Me/Ju/Me: 17-Jan-1984	Me/Ju/Ke: 15-May-1984	Me/Ju/Ve: 02-Jul-1984	Me/Ju/Su: 17-Nov-1984	Me/Ju/Mo: 28-Dec-1984	Me/Ju/Ma: 07-Mar-1985	Me/Ju/Ra: 24-Apr-1985	
+Me/Sa/Sa: 26-Aug-1985	Me/Sa/Me: 29-Jan-1986	Me/Sa/Ke: 17-Jun-1986	Me/Sa/Ve: 13-Aug-1986	Me/Sa/Su: 24-Jan-1987	Me/Sa/Mo: 14-Mar-1987	Me/Sa/Ma: 04-Jun-1987	Me/Sa/Ra: 31-Jul-1987	Me/Sa/Ju: 26-Dec-1987	
+
+Ke/Ke/Ke: 06-May-1988	Ke/Ke/Ve: 15-May-1988	Ke/Ke/Su: 08-Jun-1988	Ke/Ke/Mo: 16-Jun-1988	Ke/Ke/Ma: 28-Jun-1988	Ke/Ke/Ra: 07-Jul-1988	Ke/Ke/Ju: 29-Jul-1988	Ke/Ke/Sa: 18-Aug-1988	Ke/Ke/Me: 11-Sep-1988	
+Ke/Ve/Ve: 02-Oct-1988	Ke/Ve/Su: 12-Dec-1988	Ke/Ve/Mo: 02-Jan-1989	Ke/Ve/Ma: 07-Feb-1989	Ke/Ve/Ra: 03-Mar-1989	Ke/Ve/Ju: 06-May-1989	Ke/Ve/Sa: 02-Jul-1989	Ke/Ve/Me: 08-Sep-1989	Ke/Ve/Ke: 07-Nov-1989	
+Ke/Su/Su: 02-Dec-1989	Ke/Su/Mo: 08-Dec-1989	Ke/Su/Ma: 19-Dec-1989	Ke/Su/Ra: 26-Dec-1989	Ke/Su/Ju: 14-Jan-1990	Ke/Su/Sa: 31-Jan-1990	Ke/Su/Me: 21-Feb-1990	Ke/Su/Ke: 11-Mar-1990	Ke/Su/Ve: 18-Mar-1990	
+Ke/Mo/Mo: 08-Apr-1990	Ke/Mo/Ma: 26-Apr-1990	Ke/Mo/Ra: 09-May-1990	Ke/Mo/Ju: 10-Jun-1990	Ke/Mo/Sa: 08-Jul-1990	Ke/Mo/Me: 11-Aug-1990	Ke/Mo/Ke: 10-Sep-1990	Ke/Mo/Ve: 22-Sep-1990	Ke/Mo/Su: 28-Oct-1990	
+Ke/Ma/Ma: 07-Nov-1990	Ke/Ma/Ra: 16-Nov-1990	Ke/Ma/Ju: 08-Dec-1990	Ke/Ma/Sa: 28-Dec-1990	Ke/Ma/Me: 21-Jan-1991	Ke/Ma/Ke: 11-Feb-1991	Ke/Ma/Ve: 20-Feb-1991	Ke/Ma/Su: 17-Mar-1991	Ke/Ma/Mo: 24-Mar-1991	
+Ke/Ra/Ra: 05-Apr-1991	Ke/Ra/Ju: 02-Jun-1991	Ke/Ra/Sa: 23-Jul-1991	Ke/Ra/Me: 22-Sep-1991	Ke/Ra/Ke: 15-Nov-1991	Ke/Ra/Ve: 07-Dec-1991	Ke/Ra/Su: 09-Feb-1992	Ke/Ra/Mo: 01-Mar-1992	Ke/Ra/Ma: 01-Apr-1992	
+Ke/Ju/Ju: 24-Apr-1992	Ke/Ju/Sa: 08-Jun-1992	Ke/Ju/Me: 01-Aug-1992	Ke/Ju/Ke: 18-Sep-1992	Ke/Ju/Ve: 08-Oct-1992	Ke/Ju/Su: 04-Dec-1992	Ke/Ju/Mo: 21-Dec-1992	Ke/Ju/Ma: 18-Jan-1993	Ke/Ju/Ra: 07-Feb-1993	
+Ke/Sa/Sa: 30-Mar-1993	Ke/Sa/Me: 02-Jun-1993	Ke/Sa/Ke: 30-Jul-1993	Ke/Sa/Ve: 22-Aug-1993	Ke/Sa/Su: 29-Oct-1993	Ke/Sa/Mo: 18-Nov-1993	Ke/Sa/Ma: 22-Dec-1993	Ke/Sa/Ra: 14-Jan-1994	Ke/Sa/Ju: 16-Mar-1994	
+Ke/Me/Me: 09-May-1994	Ke/Me/Ke: 29-Jun-1994	Ke/Me/Ve: 20-Jul-1994	Ke/Me/Su: 19-Sep-1994	Ke/Me/Mo: 07-Oct-1994	Ke/Me/Ma: 06-Nov-1994	Ke/Me/Ra: 27-Nov-1994	Ke/Me/Ju: 20-Jan-1995	Ke/Me/Sa: 10-Mar-1995	
+
+Ve/Ve/Ve: 06-May-1995	Ve/Ve/Su: 25-Nov-1995	Ve/Ve/Mo: 24-Jan-1996	Ve/Ve/Ma: 06-May-1996	Ve/Ve/Ra: 16-Jul-1996	Ve/Ve/Ju: 14-Jan-1997	Ve/Ve/Sa: 26-Jun-1997	Ve/Ve/Me: 04-Jan-1998	Ve/Ve/Ke: 26-Jun-1998	
+Ve/Su/Su: 04-Sep-1998	Ve/Su/Mo: 23-Sep-1998	Ve/Su/Ma: 23-Oct-1998	Ve/Su/Ra: 13-Nov-1998	Ve/Su/Ju: 07-Jan-1999	Ve/Su/Sa: 25-Feb-1999	Ve/Su/Me: 24-Apr-1999	Ve/Su/Ke: 14-Jun-1999	Ve/Su/Ve: 06-Jul-1999	
+Ve/Mo/Mo: 04-Sep-1999	Ve/Mo/Ma: 25-Oct-1999	Ve/Mo/Ra: 30-Nov-1999	Ve/Mo/Ju: 01-Mar-2000	Ve/Mo/Sa: 21-May-2000	Ve/Mo/Me: 25-Aug-2000	Ve/Mo/Ke: 20-Nov-2000	Ve/Mo/Ve: 25-Dec-2000	Ve/Mo/Su: 05-Apr-2001	
+Ve/Ma/Ma: 06-May-2001	Ve/Ma/Ra: 31-May-2001	Ve/Ma/Ju: 03-Aug-2001	Ve/Ma/Sa: 28-Sep-2001	Ve/Ma/Me: 05-Dec-2001	Ve/Ma/Ke: 03-Feb-2002	Ve/Ma/Ve: 01-Mar-2002	Ve/Ma/Su: 10-May-2002	Ve/Ma/Mo: 31-May-2002	
+Ve/Ra/Ra: 06-Jul-2002	Ve/Ra/Ju: 17-Dec-2002	Ve/Ra/Sa: 12-May-2003	Ve/Ra/Me: 01-Nov-2003	Ve/Ra/Ke: 05-Apr-2004	Ve/Ra/Ve: 08-Jun-2004	Ve/Ra/Su: 08-Dec-2004	Ve/Ra/Mo: 01-Feb-2005	Ve/Ra/Ma: 03-May-2005	
+Ve/Ju/Ju: 06-Jul-2005	Ve/Ju/Sa: 12-Nov-2005	Ve/Ju/Me: 16-Apr-2006	Ve/Ju/Ke: 31-Aug-2006	Ve/Ju/Ve: 27-Oct-2006	Ve/Ju/Su: 07-Apr-2007	Ve/Ju/Mo: 26-May-2007	Ve/Ju/Ma: 15-Aug-2007	Ve/Ju/Ra: 11-Oct-2007	
+Ve/Sa/Sa: 06-Mar-2008	Ve/Sa/Me: 05-Sep-2008	Ve/Sa/Ke: 16-Feb-2009	Ve/Sa/Ve: 24-Apr-2009	Ve/Sa/Su: 03-Nov-2009	Ve/Sa/Mo: 31-Dec-2009	Ve/Sa/Ma: 06-Apr-2010	Ve/Sa/Ra: 12-Jun-2010	Ve/Sa/Ju: 03-Dec-2010	
+Ve/Me/Me: 06-May-2011	Ve/Me/Ke: 29-Sep-2011	Ve/Me/Ve: 29-Nov-2011	Ve/Me/Su: 20-May-2012	Ve/Me/Mo: 11-Jul-2012	Ve/Me/Ma: 05-Oct-2012	Ve/Me/Ra: 04-Dec-2012	Ve/Me/Ju: 08-May-2013	Ve/Me/Sa: 23-Sep-2013	
+Ve/Ke/Ke: 06-Mar-2014	Ve/Ke/Ve: 31-Mar-2014	Ve/Ke/Su: 10-Jun-2014	Ve/Ke/Mo: 01-Jul-2014	Ve/Ke/Ma: 06-Aug-2014	Ve/Ke/Ra: 30-Aug-2014	Ve/Ke/Ju: 02-Nov-2014	Ve/Ke/Sa: 29-Dec-2014	Ve/Ke/Me: 06-Mar-2015	
+
+Su/Su/Su: 06-May-2015	Su/Su/Mo: 11-May-2015	Su/Su/Ma: 20-May-2015	Su/Su/Ra: 27-May-2015	Su/Su/Ju: 12-Jun-2015	Su/Su/Sa: 27-Jun-2015	Su/Su/Me: 14-Jul-2015	Su/Su/Ke: 30-Jul-2015	Su/Su/Ve: 05-Aug-2015	
+Su/Mo/Mo: 23-Aug-2015	Su/Mo/Ma: 08-Sep-2015	Su/Mo/Ra: 18-Sep-2015	Su/Mo/Ju: 16-Oct-2015	Su/Mo/Sa: 09-Nov-2015	Su/Mo/Me: 08-Dec-2015	Su/Mo/Ke: 03-Jan-2016	Su/Mo/Ve: 13-Jan-2016	Su/Mo/Su: 13-Feb-2016	
+Su/Ma/Ma: 22-Feb-2016	Su/Ma/Ra: 01-Mar-2016	Su/Ma/Ju: 20-Mar-2016	Su/Ma/Sa: 06-Apr-2016	Su/Ma/Me: 27-Apr-2016	Su/Ma/Ke: 15-May-2016	Su/Ma/Ve: 22-May-2016	Su/Ma/Su: 13-Jun-2016	Su/Ma/Mo: 19-Jun-2016	
+Su/Ra/Ra: 30-Jun-2016	Su/Ra/Ju: 18-Aug-2016	Su/Ra/Sa: 01-Oct-2016	Su/Ra/Me: 22-Nov-2016	Su/Ra/Ke: 07-Jan-2017	Su/Ra/Ve: 26-Jan-2017	Su/Ra/Su: 22-Mar-2017	Su/Ra/Mo: 08-Apr-2017	Su/Ra/Ma: 05-May-2017	
+Su/Ju/Ju: 24-May-2017	Su/Ju/Sa: 02-Jul-2017	Su/Ju/Me: 17-Aug-2017	Su/Ju/Ke: 28-Sep-2017	Su/Ju/Ve: 15-Oct-2017	Su/Ju/Su: 02-Dec-2017	Su/Ju/Mo: 17-Dec-2017	Su/Ju/Ma: 10-Jan-2018	Su/Ju/Ra: 27-Jan-2018	
+Su/Sa/Sa: 12-Mar-2018	Su/Sa/Me: 06-May-2018	Su/Sa/Ke: 24-Jun-2018	Su/Sa/Ve: 14-Jul-2018	Su/Sa/Su: 10-Sep-2018	Su/Sa/Mo: 27-Sep-2018	Su/Sa/Ma: 26-Oct-2018	Su/Sa/Ra: 16-Nov-2018	Su/Sa/Ju: 07-Jan-2019	
+Su/Me/Me: 22-Feb-2019	Su/Me/Ke: 07-Apr-2019	Su/Me/Ve: 25-Apr-2019	Su/Me/Su: 16-Jun-2019	Su/Me/Mo: 01-Jul-2019	Su/Me/Ma: 27-Jul-2019	Su/Me/Ra: 14-Aug-2019	Su/Me/Ju: 30-Sep-2019	Su/Me/Sa: 10-Nov-2019	
+Su/Ke/Ke: 29-Dec-2019	Su/Ke/Ve: 06-Jan-2020	Su/Ke/Su: 27-Jan-2020	Su/Ke/Mo: 02-Feb-2020	Su/Ke/Ma: 13-Feb-2020	Su/Ke/Ra: 20-Feb-2020	Su/Ke/Ju: 11-Mar-2020	Su/Ke/Sa: 28-Mar-2020	Su/Ke/Me: 18-Apr-2020	
+Su/Ve/Ve: 06-May-2020	Su/Ve/Su: 06-Jul-2020	Su/Ve/Mo: 24-Jul-2020	Su/Ve/Ma: 23-Aug-2020	Su/Ve/Ra: 14-Sep-2020	Su/Ve/Ju: 07-Nov-2020	Su/Ve/Sa: 26-Dec-2020	Su/Ve/Me: 22-Feb-2021	Su/Ve/Ke: 15-Apr-2021	
+
+Mo/Mo/Mo: 06-May-2021	Mo/Mo/Ma: 31-May-2021	Mo/Mo/Ra: 18-Jun-2021	Mo/Mo/Ju: 03-Aug-2021	Mo/Mo/Sa: 12-Sep-2021	Mo/Mo/Me: 30-Oct-2021	Mo/Mo/Ke: 12-Dec-2021	Mo/Mo/Ve: 30-Dec-2021	Mo/Mo/Su: 19-Feb-2022	
+Mo/Ma/Ma: 06-Mar-2022	Mo/Ma/Ra: 18-Mar-2022	Mo/Ma/Ju: 19-Apr-2022	Mo/Ma/Sa: 18-May-2022	Mo/Ma/Me: 20-Jun-2022	Mo/Ma/Ke: 21-Jul-2022	Mo/Ma/Ve: 02-Aug-2022	Mo/Ma/Su: 07-Sep-2022	Mo/Ma/Mo: 17-Sep-2022	
+Mo/Ra/Ra: 05-Oct-2022	Mo/Ra/Ju: 26-Dec-2022	Mo/Ra/Sa: 09-Mar-2023	Mo/Ra/Me: 04-Jun-2023	Mo/Ra/Ke: 20-Aug-2023	Mo/Ra/Ve: 21-Sep-2023	Mo/Ra/Su: 21-Dec-2023	Mo/Ra/Mo: 18-Jan-2024	Mo/Ra/Ma: 04-Mar-2024	
+Mo/Ju/Ju: 05-Apr-2024	Mo/Ju/Sa: 09-Jun-2024	Mo/Ju/Me: 25-Aug-2024	Mo/Ju/Ke: 02-Nov-2024	Mo/Ju/Ve: 01-Dec-2024	Mo/Ju/Su: 20-Feb-2025	Mo/Ju/Mo: 16-Mar-2025	Mo/Ju/Ma: 26-Apr-2025	Mo/Ju/Ra: 24-May-2025	
+Mo/Sa/Sa: 05-Aug-2025	Mo/Sa/Me: 05-Nov-2025	Mo/Sa/Ke: 25-Jan-2026	Mo/Sa/Ve: 01-Mar-2026	Mo/Sa/Su: 04-Jun-2026	Mo/Sa/Mo: 03-Jul-2026	Mo/Sa/Ma: 21-Aug-2026	Mo/Sa/Ra: 23-Sep-2026	Mo/Sa/Ju: 19-Dec-2026	
+Mo/Me/Me: 06-Mar-2027	Mo/Me/Ke: 18-May-2027	Mo/Me/Ve: 17-Jun-2027	Mo/Me/Su: 12-Sep-2027	Mo/Me/Mo: 07-Oct-2027	Mo/Me/Ma: 20-Nov-2027	Mo/Me/Ra: 20-Dec-2027	Mo/Me/Ju: 07-Mar-2028	Mo/Me/Sa: 15-May-2028	
+Mo/Ke/Ke: 05-Aug-2028	Mo/Ke/Ve: 17-Aug-2028	Mo/Ke/Su: 22-Sep-2028	Mo/Ke/Mo: 03-Oct-2028	Mo/Ke/Ma: 20-Oct-2028	Mo/Ke/Ra: 02-Nov-2028	Mo/Ke/Ju: 04-Dec-2028	Mo/Ke/Sa: 01-Jan-2029	Mo/Ke/Me: 04-Feb-2029	
+Mo/Ve/Ve: 06-Mar-2029	Mo/Ve/Su: 15-Jun-2029	Mo/Ve/Mo: 16-Jul-2029	Mo/Ve/Ma: 04-Sep-2029	Mo/Ve/Ra: 10-Oct-2029	Mo/Ve/Ju: 09-Jan-2030	Mo/Ve/Sa: 31-Mar-2030	Mo/Ve/Me: 06-Jul-2030	Mo/Ve/Ke: 30-Sep-2030	
+Mo/Su/Su: 04-Nov-2030	Mo/Su/Mo: 13-Nov-2030	Mo/Su/Ma: 29-Nov-2030	Mo/Su/Ra: 09-Dec-2030	Mo/Su/Ju: 06-Jan-2031	Mo/Su/Sa: 30-Jan-2031	Mo/Su/Me: 01-Mar-2031	Mo/Su/Ke: 26-Mar-2031	Mo/Su/Ve: 05-Apr-2031	
+
+Ma/Ma/Ma: 06-May-2031	Ma/Ma/Ra: 15-May-2031	Ma/Ma/Ju: 06-Jun-2031	Ma/Ma/Sa: 26-Jun-2031	Ma/Ma/Me: 19-Jul-2031	Ma/Ma/Ke: 09-Aug-2031	Ma/Ma/Ve: 18-Aug-2031	Ma/Ma/Su: 12-Sep-2031	Ma/Ma/Mo: 19-Sep-2031	
+Ma/Ra/Ra: 02-Oct-2031	Ma/Ra/Ju: 28-Nov-2031	Ma/Ra/Sa: 18-Jan-2032	Ma/Ra/Me: 20-Mar-2032	Ma/Ra/Ke: 13-May-2032	Ma/Ra/Ve: 05-Jun-2032	Ma/Ra/Su: 08-Aug-2032	Ma/Ra/Mo: 27-Aug-2032	Ma/Ra/Ma: 28-Sep-2032	
+Ma/Ju/Ju: 20-Oct-2032	Ma/Ju/Sa: 05-Dec-2032	Ma/Ju/Me: 27-Jan-2033	Ma/Ju/Ke: 17-Mar-2033	Ma/Ju/Ve: 06-Apr-2033	Ma/Ju/Su: 01-Jun-2033	Ma/Ju/Mo: 18-Jun-2033	Ma/Ju/Ma: 17-Jul-2033	Ma/Ju/Ra: 06-Aug-2033	
+Ma/Sa/Sa: 26-Sep-2033	Ma/Sa/Me: 29-Nov-2033	Ma/Sa/Ke: 25-Jan-2034	Ma/Sa/Ve: 18-Feb-2034	Ma/Sa/Su: 26-Apr-2034	Ma/Sa/Mo: 16-May-2034	Ma/Sa/Ma: 19-Jun-2034	Ma/Sa/Ra: 13-Jul-2034	Ma/Sa/Ju: 11-Sep-2034	
+Ma/Me/Me: 04-Nov-2034	Ma/Me/Ke: 26-Dec-2034	Ma/Me/Ve: 16-Jan-2035	Ma/Me/Su: 17-Mar-2035	Ma/Me/Mo: 04-Apr-2035	Ma/Me/Ma: 04-May-2035	Ma/Me/Ra: 25-May-2035	Ma/Me/Ju: 19-Jul-2035	Ma/Me/Sa: 05-Sep-2035	
+Ma/Ke/Ke: 01-Nov-2035	Ma/Ke/Ve: 10-Nov-2035	Ma/Ke/Su: 05-Dec-2035	Ma/Ke/Mo: 12-Dec-2035	Ma/Ke/Ma: 25-Dec-2035	Ma/Ke/Ra: 02-Jan-2036	Ma/Ke/Ju: 25-Jan-2036	Ma/Ke/Sa: 14-Feb-2036	Ma/Ke/Me: 09-Mar-2036	
+Ma/Ve/Ve: 30-Mar-2036	Ma/Ve/Su: 09-Jun-2036	Ma/Ve/Mo: 01-Jul-2036	Ma/Ve/Ma: 05-Aug-2036	Ma/Ve/Ra: 30-Aug-2036	Ma/Ve/Ju: 02-Nov-2036	Ma/Ve/Sa: 29-Dec-2036	Ma/Ve/Me: 06-Mar-2037	Ma/Ve/Ke: 05-May-2037	
+Ma/Su/Su: 30-May-2037	Ma/Su/Mo: 06-Jun-2037	Ma/Su/Ma: 16-Jun-2037	Ma/Su/Ra: 24-Jun-2037	Ma/Su/Ju: 13-Jul-2037	Ma/Su/Sa: 30-Jul-2037	Ma/Su/Me: 19-Aug-2037	Ma/Su/Ke: 06-Sep-2037	Ma/Su/Ve: 14-Sep-2037	
+Ma/Mo/Mo: 05-Oct-2037	Ma/Mo/Ma: 23-Oct-2037	Ma/Mo/Ra: 04-Nov-2037	Ma/Mo/Ju: 06-Dec-2037	Ma/Mo/Sa: 03-Jan-2038	Ma/Mo/Me: 06-Feb-2038	Ma/Mo/Ke: 08-Mar-2038	Ma/Mo/Ve: 21-Mar-2038	Ma/Mo/Su: 25-Apr-2038	
+
+Ra/Ra/Ra: 06-May-2038	Ra/Ra/Ju: 01-Oct-2038	Ra/Ra/Sa: 09-Feb-2039	Ra/Ra/Me: 15-Jul-2039	Ra/Ra/Ke: 02-Dec-2039	Ra/Ra/Ve: 28-Jan-2040	Ra/Ra/Su: 11-Jul-2040	Ra/Ra/Mo: 30-Aug-2040	Ra/Ra/Ma: 20-Nov-2040	
+Ra/Ju/Ju: 16-Jan-2041	Ra/Ju/Sa: 13-May-2041	Ra/Ju/Me: 29-Sep-2041	Ra/Ju/Ke: 31-Jan-2042	Ra/Ju/Ve: 23-Mar-2042	Ra/Ju/Su: 16-Aug-2042	Ra/Ju/Mo: 29-Sep-2042	Ra/Ju/Ma: 11-Dec-2042	Ra/Ju/Ra: 31-Jan-2043	
+Ra/Sa/Sa: 11-Jun-2043	Ra/Sa/Me: 23-Nov-2043	Ra/Sa/Ke: 19-Apr-2044	Ra/Sa/Ve: 19-Jun-2044	Ra/Sa/Su: 09-Dec-2044	Ra/Sa/Mo: 30-Jan-2045	Ra/Sa/Ma: 27-Apr-2045	Ra/Sa/Ra: 27-Jun-2045	Ra/Sa/Ju: 30-Nov-2045	
+Ra/Me/Me: 18-Apr-2046	Ra/Me/Ke: 27-Aug-2046	Ra/Me/Ve: 21-Oct-2046	Ra/Me/Su: 25-Mar-2047	Ra/Me/Mo: 10-May-2047	Ra/Me/Ma: 27-Jul-2047	Ra/Me/Ra: 19-Sep-2047	Ra/Me/Ju: 06-Feb-2048	Ra/Me/Sa: 10-Jun-2048	
+Ra/Ke/Ke: 04-Nov-2048	Ra/Ke/Ve: 27-Nov-2048	Ra/Ke/Su: 30-Jan-2049	Ra/Ke/Mo: 18-Feb-2049	Ra/Ke/Ma: 22-Mar-2049	Ra/Ke/Ra: 13-Apr-2049	Ra/Ke/Ju: 09-Jun-2049	Ra/Ke/Sa: 31-Jul-2049	Ra/Ke/Me: 29-Sep-2049	
+Ra/Ve/Ve: 23-Nov-2049	Ra/Ve/Su: 24-May-2050	Ra/Ve/Mo: 18-Jul-2050	Ra/Ve/Ma: 17-Oct-2050	Ra/Ve/Ra: 20-Dec-2050	Ra/Ve/Ju: 02-Jun-2051	Ra/Ve/Sa: 26-Oct-2051	Ra/Ve/Me: 18-Apr-2052	Ra/Ve/Ke: 20-Sep-2052	
+Ra/Su/Su: 23-Nov-2052	Ra/Su/Mo: 09-Dec-2052	Ra/Su/Ma: 05-Jan-2053	Ra/Su/Ra: 25-Jan-2053	Ra/Su/Ju: 15-Mar-2053	Ra/Su/Sa: 28-Apr-2053	Ra/Su/Me: 19-Jun-2053	Ra/Su/Ke: 04-Aug-2053	Ra/Su/Ve: 23-Aug-2053	
+Ra/Mo/Mo: 17-Oct-2053	Ra/Mo/Ma: 02-Dec-2053	Ra/Mo/Ra: 03-Jan-2054	Ra/Mo/Ju: 26-Mar-2054	Ra/Mo/Sa: 07-Jun-2054	Ra/Mo/Me: 01-Sep-2054	Ra/Mo/Ke: 18-Nov-2054	Ra/Mo/Ve: 20-Dec-2054	Ra/Mo/Su: 21-Mar-2055	
+Ra/Ma/Ma: 18-Apr-2055	Ra/Ma/Ra: 10-May-2055	Ra/Ma/Ju: 06-Jul-2055	Ra/Ma/Sa: 27-Aug-2055	Ra/Ma/Me: 26-Oct-2055	Ra/Ma/Ke: 19-Dec-2055	Ra/Ma/Ve: 11-Jan-2056	Ra/Ma/Su: 16-Mar-2056	Ra/Ma/Mo: 04-Apr-2056	
+
+Ju/Ju/Ju: 06-May-2056	Ju/Ju/Sa: 18-Aug-2056	Ju/Ju/Me: 19-Dec-2056	Ju/Ju/Ke: 08-Apr-2057	Ju/Ju/Ve: 24-May-2057	Ju/Ju/Su: 30-Sep-2057	Ju/Ju/Mo: 08-Nov-2057	Ju/Ju/Ma: 12-Jan-2058	Ju/Ju/Ra: 27-Feb-2058	
+Ju/Sa/Sa: 23-Jun-2058	Ju/Sa/Me: 17-Nov-2058	Ju/Sa/Ke: 28-Mar-2059	Ju/Sa/Ve: 21-May-2059	Ju/Sa/Su: 22-Oct-2059	Ju/Sa/Mo: 07-Dec-2059	Ju/Sa/Ma: 22-Feb-2060	Ju/Sa/Ra: 17-Apr-2060	Ju/Sa/Ju: 03-Sep-2060	
+Ju/Me/Me: 04-Jan-2061	Ju/Me/Ke: 01-May-2061	Ju/Me/Ve: 19-Jun-2061	Ju/Me/Su: 04-Nov-2061	Ju/Me/Mo: 15-Dec-2061	Ju/Me/Ma: 22-Feb-2062	Ju/Me/Ra: 11-Apr-2062	Ju/Me/Ju: 13-Aug-2062	Ju/Me/Sa: 01-Dec-2062	
+Ju/Ke/Ke: 11-Apr-2063	Ju/Ke/Ve: 01-May-2063	Ju/Ke/Su: 27-Jun-2063	Ju/Ke/Mo: 14-Jul-2063	Ju/Ke/Ma: 12-Aug-2063	Ju/Ke/Ra: 31-Aug-2063	Ju/Ke/Ju: 22-Oct-2063	Ju/Ke/Sa: 06-Dec-2063	Ju/Ke/Me: 29-Jan-2064	
+Ju/Ve/Ve: 18-Mar-2064	Ju/Ve/Su: 27-Aug-2064	Ju/Ve/Mo: 15-Oct-2064	Ju/Ve/Ma: 04-Jan-2065	Ju/Ve/Ra: 02-Mar-2065	Ju/Ve/Ju: 26-Jul-2065	Ju/Ve/Sa: 03-Dec-2065	Ju/Ve/Me: 06-May-2066	Ju/Ve/Ke: 21-Sep-2066	
+Ju/Su/Su: 16-Nov-2066	Ju/Su/Mo: 01-Dec-2066	Ju/Su/Ma: 25-Dec-2066	Ju/Su/Ra: 11-Jan-2067	Ju/Su/Ju: 24-Feb-2067	Ju/Su/Sa: 04-Apr-2067	Ju/Su/Me: 20-May-2067	Ju/Su/Ke: 01-Jul-2067	Ju/Su/Ve: 18-Jul-2067	
+Ju/Mo/Mo: 04-Sep-2067	Ju/Mo/Ma: 15-Oct-2067	Ju/Mo/Ra: 12-Nov-2067	Ju/Mo/Ju: 24-Jan-2068	Ju/Mo/Sa: 30-Mar-2068	Ju/Mo/Me: 15-Jun-2068	Ju/Mo/Ke: 23-Aug-2068	Ju/Mo/Ve: 21-Sep-2068	Ju/Mo/Su: 11-Dec-2068	
+Ju/Ma/Ma: 04-Jan-2069	Ju/Ma/Ra: 24-Jan-2069	Ju/Ma/Ju: 16-Mar-2069	Ju/Ma/Sa: 01-May-2069	Ju/Ma/Me: 23-Jun-2069	Ju/Ma/Ke: 11-Aug-2069	Ju/Ma/Ve: 31-Aug-2069	Ju/Ma/Su: 26-Oct-2069	Ju/Ma/Mo: 12-Nov-2069	
+Ju/Ra/Ra: 11-Dec-2069	Ju/Ra/Ju: 21-Apr-2070	Ju/Ra/Sa: 16-Aug-2070	Ju/Ra/Me: 02-Jan-2071	Ju/Ra/Ke: 06-May-2071	Ju/Ra/Ve: 26-Jun-2071	Ju/Ra/Su: 19-Nov-2071	Ju/Ra/Mo: 02-Jan-2072	Ju/Ra/Ma: 16-Mar-2072	
+
+
+
+
+
+
+
+
+
+
+
+----------------------Mani----------------------
+Sun --> 114 : 08 : 48 Dir -->false
+Moon --> 333 : 07 : 52 Dir -->false
+Mars --> 41 : 55 : 10 Dir -->false
+Mercury --> 95 : 46 : 24 Dir -->false
+Jupiter --> 240 : 44 : 42 Dir -->true
+Venus --> 127 : 27 : 47 Dir -->false
+Saturn --> 259 : 39 : 40 Dir -->true
+Rahu --> 142 : 28 : 47 Dir -->false
+Ketu --> 322 : 28 : 47 Dir -->false
+Sun --> 104 : 24 : 48 Dir -->false
+
+cp Ve/Ve/Sa
+Bhava
+0 --> 00 : 00 : 00 sandi 89 : 57 : 49
+1 --> 104 : 24 : 48 sandi 118 : 26 : 35
+2 --> 132 : 28 : 22 sandi 147 : 54 : 58
+3 --> 163 : 21 : 35 sandi 179 : 22 : 06
+4 --> 195 : 22 : 38 sandi 210 : 47 : 47
+5 --> 226 : 12 : 57 sandi 240 : 51 : 53
+6 --> 255 : 30 : 49 sandi 269 : 57 : 49
+7 --> 284 : 24 : 48 sandi 298 : 26 : 35
+8 --> 312 : 28 : 22 sandi 327 : 54 : 58
+9 --> 343 : 21 : 35 sandi 359 : 22 : 06
+10 --> 15 : 22 : 38 sandi 30 : 47 : 47
+11 --> 46 : 12 : 57 sandi 60 : 51 : 53
+12 --> 75 : 30 : 49 sandi 89 : 57 : 49
+
+Sun --> Kataka - 4
+Moon --> Meena - 12
+Mars --> Vrishabha - 2
+Mercury --> Kataka - 4
+Jupiter --> Dhanus - 9
+Venus --> Simha - 5
+Saturn --> Dhanus - 9
+Rahu --> Simha - 5
+Ketu --> Kumbha - 11
+Sun --> Kataka - 4
+
+Thithi Chathruthi Paksha Krishna
+0 --> 0<--> AtmaKaraka
+1 --> 6<--> GnatiKaraka
+2 --> 2<--> BhratruKaraka
+3 --> 5<--> PuthraKaraka
+4 --> 3<--> DaraKaraka
+5 --> 1<--> MatruKaraka
+6 --> 4<--> AmatyaKaraka
+Charts
+Rasi -> 4 , 12 , 2 , 4 , 9 , 5 , 9 , 5 , 11 , 4 , 
+Hora -> 5 , 4 , 4 , 4 , 5 , 5 , 4 , 4 , 4 , 4 , 
+Drekkana -> 12 , 12 , 6 , 4 , 9 , 5 , 1 , 1 , 7 , 8 , 
+Chaturtamsa -> 1 , 12 , 5 , 4 , 9 , 5 , 3 , 11 , 5 , 7 , 
+Navamsa -> 11 , 4 , 1 , 5 , 1 , 3 , 6 , 7 , 1 , 8 , 
+Saptamsa -> 3 , 6 , 10 , 11 , 9 , 6 , 1 , 10 , 4 , 1 , 
+Dasamsa -> 8 , 9 , 1 , 1 , 9 , 7 , 3 , 12 , 6 , 4 , 
+Dwadasamsa -> 1 , 1 , 6 , 6 , 9 , 7 , 4 , 1 , 7 , 9 , 
+Shodasamsa -> 1 , 10 , 11 , 4 , 9 , 8 , 7 , 4 , 4 , 8 , 
+Vimshamsa -> 5 , 7 , 4 , 4 , 5 , 1 , 6 , 11 , 11 , 10 , 
+ChaturVimshamsa -> 11 , 6 , 1 , 8 , 5 , 10 , 8 , 10 , 10 , 3 , 
+Bhamsa -> 7 , 12 , 2 , 3 , 1 , 7 , 6 , 9 , 3 , 10 , 
+Trimshamsa -> 10 , 2 , 6 , 6 , 1 , 11 , 3 , 3 , 3 , 12 , 
+Khavedamsa -> 3 , 11 , 10 , 2 , 1 , 10 , 3 , 6 , 6 , 2 , 
+Akshvedamsa -> 1 , 1 , 10 , 9 , 10 , 4 , 2 , 2 , 2 , 10 , 
+Shastiamsa -> 4 , 6 , 1 , 3 , 10 , 7 , 12 , 1 , 7 , 8 , 
+Panchamsa -> 8 , 2 , 6 , 2 , 1 , 11 , 3 , 3 , 3 , 12 , 
+Shashtamsa -> 11 , 7 , 9 , 8 , 1 , 2 , 4 , 5 , 5 , 9 , 
+Ashtamsa -> 7 , 9 , 8 , 2 , 9 , 6 , 2 , 10 , 10 , 4 , 
+Ekadamsa -> 4 , 11 , 8 , 10 , 12 , 10 , 5 , 4 , 4 , 7 , 
+Bhava -> 4 , 12 , 2 , 4 , 8 , 5 , 9 , 5 , 11 , 4 , 
+
+Ashtavarga
+Sun  Astavarga 
+Mesha -->  4
+Vrishabha -->  6
+Mithuna -->  4
+Kataka -->  3
+Simha -->  5
+Kanya -->  3
+Thula -->  4
+Vrichika -->  2
+Dhanus -->  5
+Makara -->  5
+Kumbha -->  3
+Meena -->  4
+Sum 48
+RasiGuna 95 , GrahaGuna 66 , Moon  Astavarga 
+Mesha -->  5
+Vrishabha -->  6
+Mithuna -->  3
+Kataka -->  3
+Simha -->  1
+Kanya -->  6
+Thula -->  5
+Vrichika -->  3
+Dhanus -->  5
+Makara -->  4
+Kumbha -->  5
+Meena -->  3
+Sum 49
+RasiGuna 116 , GrahaGuna 76 , Mars  Astavarga 
+Mesha -->  2
+Vrishabha -->  6
+Mithuna -->  3
+Kataka -->  3
+Simha -->  3
+Kanya -->  5
+Thula -->  2
+Vrichika -->  4
+Dhanus -->  5
+Makara -->  2
+Kumbha -->  1
+Meena -->  3
+Sum 39
+RasiGuna 111 , GrahaGuna 84 , Bhuda  Astavarga 
+Mesha -->  4
+Vrishabha -->  5
+Mithuna -->  6
+Kataka -->  4
+Simha -->  5
+Kanya -->  3
+Thula -->  5
+Vrichika -->  5
+Dhanus -->  7
+Makara -->  3
+Kumbha -->  2
+Meena -->  5
+Sum 54
+RasiGuna 123 , GrahaGuna 73 , Guru  Astavarga 
+Mesha -->  6
+Vrishabha -->  6
+Mithuna -->  3
+Kataka -->  5
+Simha -->  4
+Kanya -->  4
+Thula -->  4
+Vrichika -->  5
+Dhanus -->  5
+Makara -->  5
+Kumbha -->  4
+Meena -->  5
+Sum 56
+RasiGuna 43 , GrahaGuna 31 , Sukra  Astavarga 
+Mesha -->  5
+Vrishabha -->  5
+Mithuna -->  3
+Kataka -->  5
+Simha -->  4
+Kanya -->  6
+Thula -->  6
+Vrichika -->  4
+Dhanus -->  2
+Makara -->  2
+Kumbha -->  4
+Meena -->  6
+Sum 52
+RasiGuna 130 , GrahaGuna 58 , Sani  Astavarga 
+Mesha -->  6
+Vrishabha -->  6
+Mithuna -->  2
+Kataka -->  4
+Simha -->  2
+Kanya -->  2
+Thula -->  5
+Vrichika -->  1
+Dhanus -->  2
+Makara -->  3
+Kumbha -->  4
+Meena -->  2
+Sum 39
+RasiGuna 108 , GrahaGuna 67 , Asc  Astavarga 
+Mesha -->  32
+Vrishabha -->  40
+Mithuna -->  24
+Kataka -->  27
+Simha -->  24
+Kanya -->  29
+Thula -->  31
+Vrichika -->  24
+Dhanus -->  31
+Makara -->  24
+Kumbha -->  23
+Meena -->  28
+Sum 337
+RasiGuna 393 , GrahaGuna 187 , 
+Total 674
+ShadBala 
+Sun --> 1
+Sun --> 30.624093522413997
+OchachaBala:-->Sun :-> 25.28440617556701
+OjaYugmarasyamsaBala:-->Sun :-> 15.0
+KendraBala:-->Sun :-> 60.0
+DrekkanaBala:-->Sun :-> 0.0
+SapthavargaBala:-->Sun :-> 75.0
+SthanaBala:-->Sun :-> 175.28440617556703
+DigBala:-->Sun :-> 27.076824996004888
+NaisargikaBala:-->Sun :-> 60.0
+AbdaBala:-->Sun :-> 0.0
+MasaBala:-->Sun :-> 0.0
+VaraBala:-->Sun :-> 0.0
+PakshaBala:-->Sun :-> 12.994824415377536
+TribhagaBala:-->Sun :-> 0.0
+HoraBala:-->Sun :-> 0.0
+NatonnataBala:-->Sun :-> 27.94354938417668
+AyanaBala:-->Sun :-> 99.79232719069263
+YuddhaBala:-->Sun :-> 0.0
+KalaBala:-->Sun :-> 140.73070099024685
+DrikBala:-->Sun :-> -11.417393103021926
+ChestaBala:-->Sun :-> 44.21431191599705
+IshtaBala:-->Sun :-> 33.435499416896434
+KashtaBala:-->Sun :-> 23.409603494366113
+ShadBala:-->Sun :-> 6.527908984313281
+ShadBala Per:-->Sun :-> 130.55817968626562
+ShadBala Rank:-->Sun :-> 1
+Moon --> 9
+Moon --> 33.76794265408854
+OchachaBala:-->Moon :-> 40.04375157314386
+OjaYugmarasyamsaBala:-->Moon :-> 30.0
+KendraBala:-->Moon :-> 15.0
+DrekkanaBala:-->Moon :-> 0.0
+SapthavargaBala:-->Moon :-> 116.25
+SthanaBala:-->Moon :-> 201.29375157314385
+DigBala:-->Moon :-> 14.08200058062736
+NaisargikaBala:-->Moon :-> 51.43
+AbdaBala:-->Moon :-> 0.0
+MasaBala:-->Moon :-> 0.0
+VaraBala:-->Moon :-> 0.0
+PakshaBala:-->Moon :-> 25.989648830755073
+TribhagaBala:-->Moon :-> 0.0
+HoraBala:-->Moon :-> 0.0
+NatonnataBala:-->Moon :-> 32.056450615823316
+AyanaBala:-->Moon :-> 31.839393646767764
+YuddhaBala:-->Moon :-> 0.0
+KalaBala:-->Moon :-> 89.88549309334616
+DrikBala:-->Moon :-> -14.680046712081474
+ChestaBala:-->Moon :-> 47.005175584622464
+IshtaBala:-->Moon :-> 43.38506164295067
+KashtaBala:-->Moon :-> 16.103662449786064
+ShadBala:-->Moon :-> 5.700186642250598
+ShadBala Per:-->Moon :-> 95.00311070417663
+ShadBala Rank:-->Moon :-> 6
+Mars --> 11
+Mars --> 72.13751252650904
+OchachaBala:-->Mars :-> 25.360104092868823
+OjaYugmarasyamsaBala:-->Mars :-> 15.0
+KendraBala:-->Mars :-> 30.0
+DrekkanaBala:-->Mars :-> 0.0
+SapthavargaBala:-->Mars :-> 93.75
+SthanaBala:-->Mars :-> 164.11010409286882
+DigBala:-->Mars :-> 51.152522913306704
+NaisargikaBala:-->Mars :-> 17.14
+AbdaBala:-->Mars :-> 15.0
+MasaBala:-->Mars :-> 0.0
+VaraBala:-->Mars :-> 45.0
+PakshaBala:-->Mars :-> 12.994824415377536
+TribhagaBala:-->Mars :-> 60.0
+HoraBala:-->Mars :-> 0.0
+NatonnataBala:-->Mars :-> 32.056450615823316
+AyanaBala:-->Mars :-> 56.86041052085488
+YuddhaBala:-->Mars :-> 0.0
+KalaBala:-->Mars :-> 221.91168555205573
+DrikBala:-->Mars :-> -0.6307496691994245
+ChestaBala:-->Mars :-> 27.322763539490705
+IshtaBala:-->Mars :-> 26.323148129855692
+KashtaBala:-->Mars :-> 33.64425760103429
+ShadBala:-->Mars :-> 8.016772107142042
+ShadBala Per:-->Mars :-> 160.33544214284083
+ShadBala Rank:-->Mars :-> 0
+Mercury --> 1
+Mercury --> 40.20735318972092
+OchachaBala:-->Mercury :-> 36.92452416409871
+OjaYugmarasyamsaBala:-->Mercury :-> 15.0
+KendraBala:-->Mercury :-> 60.0
+DrekkanaBala:-->Mercury :-> 0.0
+SapthavargaBala:-->Mercury :-> 76.875
+SthanaBala:-->Mercury :-> 188.79952416409873
+DigBala:-->Mercury :-> 57.11999353185456
+NaisargikaBala:-->Mercury :-> 25.7
+AbdaBala:-->Mercury :-> 0.0
+MasaBala:-->Mercury :-> 0.0
+VaraBala:-->Mercury :-> 0.0
+PakshaBala:-->Mercury :-> 12.994824415377536
+TribhagaBala:-->Mercury :-> 0.0
+HoraBala:-->Mercury :-> 0.0
+NatonnataBala:-->Mercury :-> 60.0
+AyanaBala:-->Mercury :-> 56.003363485207075
+YuddhaBala:-->Mercury :-> 0.0
+KalaBala:-->Mercury :-> 128.9981879005846
+DrikBala:-->Mercury :-> -12.185657506659098
+ChestaBala:-->Mercury :-> 22.738377459639384
+IshtaBala:-->Mercury :-> 28.97591703399311
+KashtaBala:-->Mercury :-> 29.32285236017407
+ShadBala:-->Mercury :-> 6.852840425825303
+ShadBala Per:-->Mercury :-> 97.8977203689329
+ShadBala Rank:-->Mercury :-> 5
+Jupiter --> 6
+Jupiter --> 0.8158379489371227
+OchachaBala:-->Jupiter :-> 11.418246088810927
+OjaYugmarasyamsaBala:-->Jupiter :-> 30.0
+KendraBala:-->Jupiter :-> 15.0
+DrekkanaBala:-->Jupiter :-> 15.0
+SapthavargaBala:-->Jupiter :-> 157.5
+SthanaBala:-->Jupiter :-> 228.91824608881092
+DigBala:-->Jupiter :-> 14.556110054388407
+NaisargikaBala:-->Jupiter :-> 34.28
+AbdaBala:-->Jupiter :-> 0.0
+MasaBala:-->Jupiter :-> 0.0
+VaraBala:-->Jupiter :-> 0.0
+PakshaBala:-->Jupiter :-> 47.005175584622464
+TribhagaBala:-->Jupiter :-> 60.0
+HoraBala:-->Jupiter :-> 0.0
+NatonnataBala:-->Jupiter :-> 27.94354938417668
+AyanaBala:-->Jupiter :-> 0.4365440074466509
+YuddhaBala:-->Jupiter :-> 0.0
+KalaBala:-->Jupiter :-> 135.3852689762458
+DrikBala:-->Jupiter :-> -15.462778231413877
+ChestaBala:-->Jupiter :-> 44.82639020144584
+IshtaBala:-->Jupiter :-> 22.623853663626175
+KashtaBala:-->Jupiter :-> 27.15070122810395
+ShadBala:-->Jupiter :-> 7.375053951491284
+ShadBala Per:-->Jupiter :-> 113.4623684844813
+ShadBala Rank:-->Jupiter :-> 4
+Venus --> 2
+Venus --> 64.29163387340913
+OchachaBala:-->Venus :-> 16.51229471571061
+OjaYugmarasyamsaBala:-->Venus :-> 0.0
+KendraBala:-->Venus :-> 30.0
+DrekkanaBala:-->Venus :-> 0.0
+SapthavargaBala:-->Venus :-> 105.0
+SthanaBala:-->Venus :-> 151.5122947157106
+DigBala:-->Venus :-> 37.36195313051818
+NaisargikaBala:-->Venus :-> 42.85
+AbdaBala:-->Venus :-> 0.0
+MasaBala:-->Venus :-> 0.0
+VaraBala:-->Venus :-> 0.0
+PakshaBala:-->Venus :-> 47.005175584622464
+TribhagaBala:-->Venus :-> 0.0
+HoraBala:-->Venus :-> 60.0
+NatonnataBala:-->Venus :-> 27.94354938417668
+AyanaBala:-->Venus :-> 44.326904259210956
+YuddhaBala:-->Venus :-> 0.0
+KalaBala:-->Venus :-> 179.2756292280101
+DrikBala:-->Venus :-> -7.377481873170876
+ChestaBala:-->Venus :-> 9.005357187671203
+IshtaBala:-->Venus :-> 12.194224530615703
+KashtaBala:-->Venus :-> 47.09182516849566
+ShadBala:-->Venus :-> 6.877129206478987
+ShadBala Per:-->Venus :-> 125.03871284507248
+ShadBala Rank:-->Venus :-> 2
+Saturn --> 6
+Saturn --> 71.29668562745454
+OchachaBala:-->Saturn :-> 40.112909146111164
+OjaYugmarasyamsaBala:-->Saturn :-> 15.0
+KendraBala:-->Saturn :-> 15.0
+DrekkanaBala:-->Saturn :-> 15.0
+SapthavargaBala:-->Saturn :-> 37.5
+SthanaBala:-->Saturn :-> 122.61290914611116
+DigBala:-->Saturn :-> 51.74922688831136
+NaisargikaBala:-->Saturn :-> 8.57
+AbdaBala:-->Saturn :-> 0.0
+MasaBala:-->Saturn :-> 30.0
+VaraBala:-->Saturn :-> 0.0
+PakshaBala:-->Saturn :-> 12.994824415377536
+TribhagaBala:-->Saturn :-> 0.0
+HoraBala:-->Saturn :-> 0.0
+NatonnataBala:-->Saturn :-> 32.056450615823316
+AyanaBala:-->Saturn :-> 59.0703876698617
+YuddhaBala:-->Saturn :-> 0.0
+KalaBala:-->Saturn :-> 134.12166270106255
+DrikBala:-->Saturn :-> -19.33081610447941
+ChestaBala:-->Saturn :-> 48.646880224221604
+IshtaBala:-->Saturn :-> 44.17428988309776
+KashtaBala:-->Saturn :-> 15.02599495727278
+ShadBala:-->Saturn :-> 5.77283104758712
+ShadBala Per:-->Saturn :-> 115.45662095174241
+ShadBala Rank:-->Saturn :-> 3
+BhavaAdhipathiBala: 1 : -->5.700186642250598
+BhavaDigBala: 1 : -->30.0
+BhavaDrishtiBala: 1 : -->17.206983085791116
+BhavaBala: 1 : -->389.218181620827
+BhavaBala Rank: 1 : -->11
+BhavaAdhipathiBala: 2 : -->6.527908984313281
+BhavaDigBala: 2 : -->20.0
+BhavaDrishtiBala: 2 : -->29.485634222296294
+BhavaBala: 2 : -->441.16017328109314
+BhavaBala Rank: 2 : -->8
+BhavaAdhipathiBala: 3 : -->6.852840425825303
+BhavaDigBala: 3 : -->40.0
+BhavaDrishtiBala: 3 : -->4.215297368002931
+BhavaBala: 3 : -->455.3857229175211
+BhavaBala Rank: 3 : -->7
+BhavaAdhipathiBala: 4 : -->6.877129206478987
+BhavaDigBala: 4 : -->30.0
+BhavaDrishtiBala: 4 : -->13.635538255830028
+BhavaBala: 4 : -->456.2632906445692
+BhavaBala Rank: 4 : -->6
+BhavaAdhipathiBala: 5 : -->8.016772107142042
+BhavaDigBala: 5 : -->40.0
+BhavaDrishtiBala: 5 : -->0.894826436022969
+BhavaBala: 5 : -->521.9011528645455
+BhavaBala Rank: 5 : -->1
+BhavaAdhipathiBala: 6 : -->7.375053951491284
+BhavaDigBala: 6 : -->20.0
+BhavaDrishtiBala: 6 : -->6.056288489926317
+BhavaBala: 6 : -->468.5595255794034
+BhavaBala Rank: 6 : -->5
+BhavaAdhipathiBala: 7 : -->5.77283104758712
+BhavaDigBala: 7 : -->30.0
+BhavaDrishtiBala: 7 : -->48.667726211497225
+BhavaBala: 7 : -->425.0375890667244
+BhavaBala Rank: 7 : -->9
+BhavaAdhipathiBala: 8 : -->5.77283104758712
+BhavaDigBala: 8 : -->10.0
+BhavaDrishtiBala: 8 : -->63.510199860406196
+BhavaBala: 8 : -->419.8800627156334
+BhavaBala Rank: 8 : -->10
+BhavaAdhipathiBala: 9 : -->7.375053951491284
+BhavaDigBala: 9 : -->10.0
+BhavaDrishtiBala: 9 : -->45.639566261485456
+BhavaBala: 9 : -->498.14280335096254
+BhavaBala Rank: 9 : -->2
+BhavaAdhipathiBala: 10 : -->8.016772107142042
+BhavaDigBala: 10 : -->60.0
+BhavaDrishtiBala: 10 : -->47.66445285491159
+BhavaBala: 10 : -->588.6707792834341
+BhavaBala Rank: 10 : -->0
+BhavaAdhipathiBala: 11 : -->6.877129206478987
+BhavaDigBala: 11 : -->50.0
+BhavaDrishtiBala: 11 : -->24.723300666062755
+BhavaBala: 11 : -->487.351053054802
+BhavaBala Rank: 11 : -->4
+BhavaAdhipathiBala: 12 : -->6.852840425825303
+BhavaDigBala: 12 : -->50.0
+BhavaDrishtiBala: 12 : -->29.538168968537903
+BhavaBala: 12 : -->490.70859451805603
+BhavaBala Rank: 12 : -->3
+
+Dasas
+Ju/Ju/Ju: 07-Nov-1944	Ju/Ju/Sa: 19-Feb-1945	Ju/Ju/Me: 22-Jun-1945	Ju/Ju/Ke: 11-Oct-1945	Ju/Ju/Ve: 25-Nov-1945	Ju/Ju/Su: 03-Apr-1946	Ju/Ju/Mo: 12-May-1946	Ju/Ju/Ma: 16-Jul-1946	Ju/Ju/Ra: 31-Aug-1946	
+Ju/Sa/Sa: 26-Dec-1946	Ju/Sa/Me: 21-May-1947	Ju/Sa/Ke: 29-Sep-1947	Ju/Sa/Ve: 22-Nov-1947	Ju/Sa/Su: 25-Apr-1948	Ju/Sa/Mo: 10-Jun-1948	Ju/Sa/Ma: 26-Aug-1948	Ju/Sa/Ra: 20-Oct-1948	Ju/Sa/Ju: 07-Mar-1949	
+Ju/Me/Me: 08-Jul-1949	Ju/Me/Ke: 03-Nov-1949	Ju/Me/Ve: 21-Dec-1949	Ju/Me/Su: 07-May-1950	Ju/Me/Mo: 18-Jun-1950	Ju/Me/Ma: 26-Aug-1950	Ju/Me/Ra: 13-Oct-1950	Ju/Me/Ju: 15-Feb-1951	Ju/Me/Sa: 04-Jun-1951	
+Ju/Ke/Ke: 14-Oct-1951	Ju/Ke/Ve: 03-Nov-1951	Ju/Ke/Su: 30-Dec-1951	Ju/Ke/Mo: 16-Jan-1952	Ju/Ke/Ma: 13-Feb-1952	Ju/Ke/Ra: 04-Mar-1952	Ju/Ke/Ju: 24-Apr-1952	Ju/Ke/Sa: 09-Jun-1952	Ju/Ke/Me: 02-Aug-1952	
+Ju/Ve/Ve: 19-Sep-1952	Ju/Ve/Su: 01-Mar-1953	Ju/Ve/Mo: 18-Apr-1953	Ju/Ve/Ma: 08-Jul-1953	Ju/Ve/Ra: 03-Sep-1953	Ju/Ve/Ju: 28-Jan-1954	Ju/Ve/Sa: 06-Jun-1954	Ju/Ve/Me: 07-Nov-1954	Ju/Ve/Ke: 25-Mar-1955	
+Ju/Su/Su: 20-May-1955	Ju/Su/Mo: 04-Jun-1955	Ju/Su/Ma: 28-Jun-1955	Ju/Su/Ra: 16-Jul-1955	Ju/Su/Ju: 28-Aug-1955	Ju/Su/Sa: 07-Oct-1955	Ju/Su/Me: 22-Nov-1955	Ju/Su/Ke: 02-Jan-1956	Ju/Su/Ve: 19-Jan-1956	
+Ju/Mo/Mo: 08-Mar-1956	Ju/Mo/Ma: 18-Apr-1956	Ju/Mo/Ra: 16-May-1956	Ju/Mo/Ju: 29-Jul-1956	Ju/Mo/Sa: 02-Oct-1956	Ju/Mo/Me: 18-Dec-1956	Ju/Mo/Ke: 25-Feb-1957	Ju/Mo/Ve: 25-Mar-1957	Ju/Mo/Su: 14-Jun-1957	
+Ju/Ma/Ma: 08-Jul-1957	Ju/Ma/Ra: 28-Jul-1957	Ju/Ma/Ju: 17-Sep-1957	Ju/Ma/Sa: 02-Nov-1957	Ju/Ma/Me: 26-Dec-1957	Ju/Ma/Ke: 12-Feb-1958	Ju/Ma/Ve: 03-Mar-1958	Ju/Ma/Su: 29-Apr-1958	Ju/Ma/Mo: 16-May-1958	
+Ju/Ra/Ra: 14-Jun-1958	Ju/Ra/Ju: 24-Oct-1958	Ju/Ra/Sa: 18-Feb-1959	Ju/Ra/Me: 06-Jul-1959	Ju/Ra/Ke: 07-Nov-1959	Ju/Ra/Ve: 28-Dec-1959	Ju/Ra/Su: 23-May-1960	Ju/Ra/Mo: 06-Jul-1960	Ju/Ra/Ma: 17-Sep-1960	
+
+Sa/Sa/Sa: 07-Nov-1960	Sa/Sa/Me: 30-Apr-1961	Sa/Sa/Ke: 03-Oct-1961	Sa/Sa/Ve: 06-Dec-1961	Sa/Sa/Su: 06-Jun-1962	Sa/Sa/Mo: 31-Jul-1962	Sa/Sa/Ma: 31-Oct-1962	Sa/Sa/Ra: 03-Jan-1963	Sa/Sa/Ju: 16-Jun-1963	
+Sa/Me/Me: 10-Nov-1963	Sa/Me/Ke: 29-Mar-1964	Sa/Me/Ve: 25-May-1964	Sa/Me/Su: 06-Nov-1964	Sa/Me/Mo: 25-Dec-1964	Sa/Me/Ma: 16-Mar-1965	Sa/Me/Ra: 12-May-1965	Sa/Me/Ju: 07-Oct-1965	Sa/Me/Sa: 15-Feb-1966	
+Sa/Ke/Ke: 20-Jul-1966	Sa/Ke/Ve: 13-Aug-1966	Sa/Ke/Su: 20-Oct-1966	Sa/Ke/Mo: 09-Nov-1966	Sa/Ke/Ma: 13-Dec-1966	Sa/Ke/Ra: 05-Jan-1967	Sa/Ke/Ju: 06-Mar-1967	Sa/Ke/Sa: 29-Apr-1967	Sa/Ke/Me: 03-Jul-1967	
+Sa/Ve/Ve: 29-Aug-1967	Sa/Ve/Su: 09-Mar-1968	Sa/Ve/Mo: 06-May-1968	Sa/Ve/Ma: 11-Aug-1968	Sa/Ve/Ra: 17-Oct-1968	Sa/Ve/Ju: 08-Apr-1969	Sa/Ve/Sa: 10-Sep-1969	Sa/Ve/Me: 11-Mar-1970	Sa/Ve/Ke: 22-Aug-1970	
+Sa/Su/Su: 29-Oct-1970	Sa/Su/Mo: 15-Nov-1970	Sa/Su/Ma: 14-Dec-1970	Sa/Su/Ra: 04-Jan-1971	Sa/Su/Ju: 25-Feb-1971	Sa/Su/Sa: 11-Apr-1971	Sa/Su/Me: 05-Jun-1971	Sa/Su/Ke: 25-Jul-1971	Sa/Su/Ve: 14-Aug-1971	
+Sa/Mo/Mo: 11-Oct-1971	Sa/Mo/Ma: 28-Nov-1971	Sa/Mo/Ra: 01-Jan-1972	Sa/Mo/Ju: 28-Mar-1972	Sa/Mo/Sa: 13-Jun-1972	Sa/Mo/Me: 13-Sep-1972	Sa/Mo/Ke: 04-Dec-1972	Sa/Mo/Ve: 07-Jan-1973	Sa/Mo/Su: 12-Apr-1973	
+Sa/Ma/Ma: 11-May-1973	Sa/Ma/Ra: 04-Jun-1973	Sa/Ma/Ju: 04-Aug-1973	Sa/Ma/Sa: 27-Sep-1973	Sa/Ma/Me: 30-Nov-1973	Sa/Ma/Ke: 27-Jan-1974	Sa/Ma/Ve: 19-Feb-1974	Sa/Ma/Su: 27-Apr-1974	Sa/Ma/Mo: 17-May-1974	
+Sa/Ra/Ra: 20-Jun-1974	Sa/Ra/Ju: 23-Nov-1974	Sa/Ra/Sa: 10-Apr-1975	Sa/Ra/Me: 23-Sep-1975	Sa/Ra/Ke: 17-Feb-1976	Sa/Ra/Ve: 18-Apr-1976	Sa/Ra/Su: 09-Oct-1976	Sa/Ra/Mo: 30-Nov-1976	Sa/Ra/Ma: 25-Feb-1977	
+Sa/Ju/Ju: 26-Apr-1977	Sa/Ju/Sa: 28-Aug-1977	Sa/Ju/Me: 21-Jan-1978	Sa/Ju/Ke: 01-Jun-1978	Sa/Ju/Ve: 25-Jul-1978	Sa/Ju/Su: 26-Dec-1978	Sa/Ju/Mo: 11-Feb-1979	Sa/Ju/Ma: 28-Apr-1979	Sa/Ju/Ra: 21-Jun-1979	
+
+Me/Me/Me: 07-Nov-1979	Me/Me/Ke: 11-Mar-1980	Me/Me/Ve: 02-May-1980	Me/Me/Su: 25-Sep-1980	Me/Me/Mo: 09-Nov-1980	Me/Me/Ma: 21-Jan-1981	Me/Me/Ra: 12-Mar-1981	Me/Me/Ju: 23-Jul-1981	Me/Me/Sa: 17-Nov-1981	
+Me/Ke/Ke: 05-Apr-1982	Me/Ke/Ve: 26-Apr-1982	Me/Ke/Su: 25-Jun-1982	Me/Ke/Mo: 14-Jul-1982	Me/Ke/Ma: 13-Aug-1982	Me/Ke/Ra: 03-Sep-1982	Me/Ke/Ju: 27-Oct-1982	Me/Ke/Sa: 15-Dec-1982	Me/Ke/Me: 10-Feb-1983	
+Me/Ve/Ve: 02-Apr-1983	Me/Ve/Su: 21-Sep-1983	Me/Ve/Mo: 12-Nov-1983	Me/Ve/Ma: 07-Feb-1984	Me/Ve/Ra: 07-Apr-1984	Me/Ve/Ju: 10-Sep-1984	Me/Ve/Sa: 26-Jan-1985	Me/Ve/Me: 08-Jul-1985	Me/Ve/Ke: 02-Dec-1985	
+Me/Su/Su: 01-Feb-1986	Me/Su/Mo: 16-Feb-1986	Me/Su/Ma: 13-Mar-1986	Me/Su/Ra: 31-Mar-1986	Me/Su/Ju: 17-May-1986	Me/Su/Sa: 27-Jun-1986	Me/Su/Me: 16-Aug-1986	Me/Su/Ke: 29-Sep-1986	Me/Su/Ve: 17-Oct-1986	
+Me/Mo/Mo: 08-Dec-1986	Me/Mo/Ma: 20-Jan-1987	Me/Mo/Ra: 19-Feb-1987	Me/Mo/Ju: 07-May-1987	Me/Mo/Sa: 15-Jul-1987	Me/Mo/Me: 05-Oct-1987	Me/Mo/Ke: 18-Dec-1987	Me/Mo/Ve: 17-Jan-1988	Me/Mo/Su: 12-Apr-1988	
+Me/Ma/Ma: 08-May-1988	Me/Ma/Ra: 29-May-1988	Me/Ma/Ju: 23-Jul-1988	Me/Ma/Sa: 09-Sep-1988	Me/Ma/Me: 06-Nov-1988	Me/Ma/Ke: 27-Dec-1988	Me/Ma/Ve: 17-Jan-1989	Me/Ma/Su: 18-Mar-1989	Me/Ma/Mo: 05-Apr-1989	
+Me/Ra/Ra: 05-May-1989	Me/Ra/Ju: 22-Sep-1989	Me/Ra/Sa: 25-Jan-1990	Me/Ra/Me: 20-Jun-1990	Me/Ra/Ke: 31-Oct-1990	Me/Ra/Ve: 24-Dec-1990	Me/Ra/Su: 28-May-1991	Me/Ra/Mo: 13-Jul-1991	Me/Ra/Ma: 29-Sep-1991	
+Me/Ju/Ju: 23-Nov-1991	Me/Ju/Sa: 12-Mar-1992	Me/Ju/Me: 21-Jul-1992	Me/Ju/Ke: 16-Nov-1992	Me/Ju/Ve: 03-Jan-1993	Me/Ju/Su: 21-May-1993	Me/Ju/Mo: 01-Jul-1993	Me/Ju/Ma: 08-Sep-1993	Me/Ju/Ra: 27-Oct-1993	
+Me/Sa/Sa: 01-Mar-1994	Me/Sa/Me: 02-Aug-1994	Me/Sa/Ke: 20-Dec-1994	Me/Sa/Ve: 15-Feb-1995	Me/Sa/Su: 28-Jul-1995	Me/Sa/Mo: 16-Sep-1995	Me/Sa/Ma: 07-Dec-1995	Me/Sa/Ra: 02-Feb-1996	Me/Sa/Ju: 29-Jun-1996	
+
+Ke/Ke/Ke: 07-Nov-1996	Ke/Ke/Ve: 16-Nov-1996	Ke/Ke/Su: 11-Dec-1996	Ke/Ke/Mo: 18-Dec-1996	Ke/Ke/Ma: 31-Dec-1996	Ke/Ke/Ra: 09-Jan-1997	Ke/Ke/Ju: 31-Jan-1997	Ke/Ke/Sa: 20-Feb-1997	Ke/Ke/Me: 15-Mar-1997	
+Ke/Ve/Ve: 05-Apr-1997	Ke/Ve/Su: 15-Jun-1997	Ke/Ve/Mo: 06-Jul-1997	Ke/Ve/Ma: 11-Aug-1997	Ke/Ve/Ra: 05-Sep-1997	Ke/Ve/Ju: 08-Nov-1997	Ke/Ve/Sa: 04-Jan-1998	Ke/Ve/Me: 11-Mar-1998	Ke/Ve/Ke: 11-May-1998	
+Ke/Su/Su: 05-Jun-1998	Ke/Su/Mo: 11-Jun-1998	Ke/Su/Ma: 22-Jun-1998	Ke/Su/Ra: 29-Jun-1998	Ke/Su/Ju: 18-Jul-1998	Ke/Su/Sa: 05-Aug-1998	Ke/Su/Me: 25-Aug-1998	Ke/Su/Ke: 12-Sep-1998	Ke/Su/Ve: 19-Sep-1998	
+Ke/Mo/Mo: 11-Oct-1998	Ke/Mo/Ma: 29-Oct-1998	Ke/Mo/Ra: 10-Nov-1998	Ke/Mo/Ju: 12-Dec-1998	Ke/Mo/Sa: 10-Jan-1999	Ke/Mo/Me: 12-Feb-1999	Ke/Mo/Ke: 14-Mar-1999	Ke/Mo/Ve: 26-Mar-1999	Ke/Mo/Su: 01-May-1999	
+Ke/Ma/Ma: 11-May-1999	Ke/Ma/Ra: 20-May-1999	Ke/Ma/Ju: 11-Jun-1999	Ke/Ma/Sa: 01-Jul-1999	Ke/Ma/Me: 25-Jul-1999	Ke/Ma/Ke: 15-Aug-1999	Ke/Ma/Ve: 24-Aug-1999	Ke/Ma/Su: 18-Sep-1999	Ke/Ma/Mo: 25-Sep-1999	
+Ke/Ra/Ra: 08-Oct-1999	Ke/Ra/Ju: 04-Dec-1999	Ke/Ra/Sa: 25-Jan-2000	Ke/Ra/Me: 25-Mar-2000	Ke/Ra/Ke: 19-May-2000	Ke/Ra/Ve: 10-Jun-2000	Ke/Ra/Su: 13-Aug-2000	Ke/Ra/Mo: 02-Sep-2000	Ke/Ra/Ma: 04-Oct-2000	
+Ke/Ju/Ju: 26-Oct-2000	Ke/Ju/Sa: 11-Dec-2000	Ke/Ju/Me: 03-Feb-2001	Ke/Ju/Ke: 22-Mar-2001	Ke/Ju/Ve: 11-Apr-2001	Ke/Ju/Su: 07-Jun-2001	Ke/Ju/Mo: 24-Jun-2001	Ke/Ju/Ma: 22-Jul-2001	Ke/Ju/Ra: 11-Aug-2001	
+Ke/Sa/Sa: 02-Oct-2001	Ke/Sa/Me: 05-Dec-2001	Ke/Sa/Ke: 31-Jan-2002	Ke/Sa/Ve: 24-Feb-2002	Ke/Sa/Su: 02-May-2002	Ke/Sa/Mo: 22-May-2002	Ke/Sa/Ma: 25-Jun-2002	Ke/Sa/Ra: 18-Jul-2002	Ke/Sa/Ju: 17-Sep-2002	
+Ke/Me/Me: 10-Nov-2002	Ke/Me/Ke: 01-Jan-2003	Ke/Me/Ve: 22-Jan-2003	Ke/Me/Su: 22-Mar-2003	Ke/Me/Mo: 10-Apr-2003	Ke/Me/Ma: 10-May-2003	Ke/Me/Ra: 31-May-2003	Ke/Me/Ju: 24-Jul-2003	Ke/Me/Sa: 11-Sep-2003	
+
+Ve/Ve/Ve: 07-Nov-2003	Ve/Ve/Su: 29-May-2004	Ve/Ve/Mo: 29-Jul-2004	Ve/Ve/Ma: 07-Nov-2004	Ve/Ve/Ra: 17-Jan-2005	Ve/Ve/Ju: 18-Jul-2005	Ve/Ve/Sa: 28-Dec-2005	Ve/Ve/Me: 08-Jul-2006	Ve/Ve/Ke: 28-Dec-2006	
+Ve/Su/Su: 08-Mar-2007	Ve/Su/Mo: 27-Mar-2007	Ve/Su/Ma: 26-Apr-2007	Ve/Su/Ra: 17-May-2007	Ve/Su/Ju: 11-Jul-2007	Ve/Su/Sa: 29-Aug-2007	Ve/Su/Me: 26-Oct-2007	Ve/Su/Ke: 17-Dec-2007	Ve/Su/Ve: 07-Jan-2008	
+Ve/Mo/Mo: 08-Mar-2008	Ve/Mo/Ma: 28-Apr-2008	Ve/Mo/Ra: 03-Jun-2008	Ve/Mo/Ju: 02-Sep-2008	Ve/Mo/Sa: 23-Nov-2008	Ve/Mo/Me: 27-Feb-2009	Ve/Mo/Ke: 24-May-2009	Ve/Mo/Ve: 28-Jun-2009	Ve/Mo/Su: 08-Oct-2009	
+Ve/Ma/Ma: 07-Nov-2009	Ve/Ma/Ra: 02-Dec-2009	Ve/Ma/Ju: 04-Feb-2010	Ve/Ma/Sa: 01-Apr-2010	Ve/Ma/Me: 08-Jun-2010	Ve/Ma/Ke: 07-Aug-2010	Ve/Ma/Ve: 01-Sep-2010	Ve/Ma/Su: 11-Nov-2010	Ve/Ma/Mo: 03-Dec-2010	
+Ve/Ra/Ra: 07-Jan-2011	Ve/Ra/Ju: 20-Jun-2011	Ve/Ra/Sa: 13-Nov-2011	Ve/Ra/Me: 05-May-2012	Ve/Ra/Ke: 08-Oct-2012	Ve/Ra/Ve: 11-Dec-2012	Ve/Ra/Su: 11-Jun-2013	Ve/Ra/Mo: 05-Aug-2013	Ve/Ra/Ma: 04-Nov-2013	
+Ve/Ju/Ju: 07-Jan-2014	Ve/Ju/Sa: 16-May-2014	Ve/Ju/Me: 18-Oct-2014	Ve/Ju/Ke: 04-Mar-2015	Ve/Ju/Ve: 30-Apr-2015	Ve/Ju/Su: 10-Oct-2015	Ve/Ju/Mo: 28-Nov-2015	Ve/Ju/Ma: 17-Feb-2016	Ve/Ju/Ra: 14-Apr-2016	
+Ve/Sa/Sa: 07-Sep-2016	Ve/Sa/Me: 09-Mar-2017	Ve/Sa/Ke: 20-Aug-2017	Ve/Sa/Ve: 27-Oct-2017	Ve/Sa/Su: 07-May-2018	Ve/Sa/Mo: 04-Jul-2018	Ve/Sa/Ma: 08-Oct-2018	Ve/Sa/Ra: 15-Dec-2018	Ve/Sa/Ju: 06-Jun-2019	
+Ve/Me/Me: 07-Nov-2019	Ve/Me/Ke: 02-Apr-2020	Ve/Me/Ve: 02-Jun-2020	Ve/Me/Su: 21-Nov-2020	Ve/Me/Mo: 12-Jan-2021	Ve/Me/Ma: 08-Apr-2021	Ve/Me/Ra: 07-Jun-2021	Ve/Me/Ju: 10-Nov-2021	Ve/Me/Sa: 27-Mar-2022	
+Ve/Ke/Ke: 07-Sep-2022	Ve/Ke/Ve: 02-Oct-2022	Ve/Ke/Su: 12-Dec-2022	Ve/Ke/Mo: 03-Jan-2023	Ve/Ke/Ma: 07-Feb-2023	Ve/Ke/Ra: 03-Mar-2023	Ve/Ke/Ju: 06-May-2023	Ve/Ke/Sa: 02-Jul-2023	Ve/Ke/Me: 08-Sep-2023	
+
+Su/Su/Su: 07-Nov-2023	Su/Su/Mo: 13-Nov-2023	Su/Su/Ma: 22-Nov-2023	Su/Su/Ra: 28-Nov-2023	Su/Su/Ju: 15-Dec-2023	Su/Su/Sa: 29-Dec-2023	Su/Su/Me: 16-Jan-2024	Su/Su/Ke: 31-Jan-2024	Su/Su/Ve: 07-Feb-2024	
+Su/Mo/Mo: 25-Feb-2024	Su/Mo/Ma: 11-Mar-2024	Su/Mo/Ra: 22-Mar-2024	Su/Mo/Ju: 18-Apr-2024	Su/Mo/Sa: 13-May-2024	Su/Mo/Me: 11-Jun-2024	Su/Mo/Ke: 07-Jul-2024	Su/Mo/Ve: 17-Jul-2024	Su/Mo/Su: 17-Aug-2024	
+Su/Ma/Ma: 26-Aug-2024	Su/Ma/Ra: 03-Sep-2024	Su/Ma/Ju: 22-Sep-2024	Su/Ma/Sa: 09-Oct-2024	Su/Ma/Me: 29-Oct-2024	Su/Ma/Ke: 16-Nov-2024	Su/Ma/Ve: 24-Nov-2024	Su/Ma/Su: 15-Dec-2024	Su/Ma/Mo: 21-Dec-2024	
+Su/Ra/Ra: 01-Jan-2025	Su/Ra/Ju: 20-Feb-2025	Su/Ra/Sa: 03-Apr-2025	Su/Ra/Me: 26-May-2025	Su/Ra/Ke: 11-Jul-2025	Su/Ra/Ve: 31-Jul-2025	Su/Ra/Su: 23-Sep-2025	Su/Ra/Mo: 10-Oct-2025	Su/Ra/Ma: 06-Nov-2025	
+Su/Ju/Ju: 26-Nov-2025	Su/Ju/Sa: 04-Jan-2026	Su/Ju/Me: 19-Feb-2026	Su/Ju/Ke: 31-Mar-2026	Su/Ju/Ve: 18-Apr-2026	Su/Ju/Su: 05-Jun-2026	Su/Ju/Mo: 20-Jun-2026	Su/Ju/Ma: 14-Jul-2026	Su/Ju/Ra: 31-Jul-2026	
+Su/Sa/Sa: 13-Sep-2026	Su/Sa/Me: 07-Nov-2026	Su/Sa/Ke: 27-Dec-2026	Su/Sa/Ve: 16-Jan-2027	Su/Sa/Su: 14-Mar-2027	Su/Sa/Mo: 31-Mar-2027	Su/Sa/Ma: 29-Apr-2027	Su/Sa/Ra: 20-May-2027	Su/Sa/Ju: 11-Jul-2027	
+Su/Me/Me: 26-Aug-2027	Su/Me/Ke: 09-Oct-2027	Su/Me/Ve: 27-Oct-2027	Su/Me/Su: 18-Dec-2027	Su/Me/Mo: 03-Jan-2028	Su/Me/Ma: 29-Jan-2028	Su/Me/Ra: 16-Feb-2028	Su/Me/Ju: 02-Apr-2028	Su/Me/Sa: 14-May-2028	
+Su/Ke/Ke: 02-Jul-2028	Su/Ke/Ve: 10-Jul-2028	Su/Ke/Su: 31-Jul-2028	Su/Ke/Mo: 06-Aug-2028	Su/Ke/Ma: 17-Aug-2028	Su/Ke/Ra: 25-Aug-2028	Su/Ke/Ju: 13-Sep-2028	Su/Ke/Sa: 30-Sep-2028	Su/Ke/Me: 20-Oct-2028	
+Su/Ve/Ve: 07-Nov-2028	Su/Ve/Su: 07-Jan-2029	Su/Ve/Mo: 26-Jan-2029	Su/Ve/Ma: 25-Feb-2029	Su/Ve/Ra: 17-Mar-2029	Su/Ve/Ju: 11-May-2029	Su/Ve/Sa: 29-Jun-2029	Su/Ve/Me: 26-Aug-2029	Su/Ve/Ke: 17-Oct-2029	
+
+Mo/Mo/Mo: 07-Nov-2029	Mo/Mo/Ma: 03-Dec-2029	Mo/Mo/Ra: 20-Dec-2029	Mo/Mo/Ju: 04-Feb-2030	Mo/Mo/Sa: 16-Mar-2030	Mo/Mo/Me: 03-May-2030	Mo/Mo/Ke: 15-Jun-2030	Mo/Mo/Ve: 03-Jul-2030	Mo/Mo/Su: 23-Aug-2030	
+Mo/Ma/Ma: 07-Sep-2030	Mo/Ma/Ra: 20-Sep-2030	Mo/Ma/Ju: 22-Oct-2030	Mo/Ma/Sa: 19-Nov-2030	Mo/Ma/Me: 23-Dec-2030	Mo/Ma/Ke: 22-Jan-2031	Mo/Ma/Ve: 04-Feb-2031	Mo/Ma/Su: 10-Mar-2031	Mo/Ma/Mo: 21-Mar-2031	
+Mo/Ra/Ra: 08-Apr-2031	Mo/Ra/Ju: 29-Jun-2031	Mo/Ra/Sa: 10-Sep-2031	Mo/Ra/Me: 06-Dec-2031	Mo/Ra/Ke: 22-Feb-2032	Mo/Ra/Ve: 25-Mar-2032	Mo/Ra/Su: 25-Jun-2032	Mo/Ra/Mo: 22-Jul-2032	Mo/Ra/Ma: 06-Sep-2032	
+Mo/Ju/Ju: 08-Oct-2032	Mo/Ju/Sa: 12-Dec-2032	Mo/Ju/Me: 27-Feb-2033	Mo/Ju/Ke: 06-May-2033	Mo/Ju/Ve: 04-Jun-2033	Mo/Ju/Su: 24-Aug-2033	Mo/Ju/Mo: 17-Sep-2033	Mo/Ju/Ma: 28-Oct-2033	Mo/Ju/Ra: 26-Nov-2033	
+Mo/Sa/Sa: 07-Feb-2034	Mo/Sa/Me: 09-May-2034	Mo/Sa/Ke: 30-Jul-2034	Mo/Sa/Ve: 01-Sep-2034	Mo/Sa/Su: 07-Dec-2034	Mo/Sa/Mo: 05-Jan-2035	Mo/Sa/Ma: 22-Feb-2035	Mo/Sa/Ra: 27-Mar-2035	Mo/Sa/Ju: 22-Jun-2035	
+Mo/Me/Me: 07-Sep-2035	Mo/Me/Ke: 20-Nov-2035	Mo/Me/Ve: 20-Dec-2035	Mo/Me/Su: 15-Mar-2036	Mo/Me/Mo: 10-Apr-2036	Mo/Me/Ma: 24-May-2036	Mo/Me/Ra: 23-Jun-2036	Mo/Me/Ju: 09-Sep-2036	Mo/Me/Sa: 17-Nov-2036	
+Mo/Ke/Ke: 07-Feb-2037	Mo/Ke/Ve: 19-Feb-2037	Mo/Ke/Su: 26-Mar-2037	Mo/Ke/Mo: 05-Apr-2037	Mo/Ke/Ma: 23-Apr-2037	Mo/Ke/Ra: 06-May-2037	Mo/Ke/Ju: 07-Jun-2037	Mo/Ke/Sa: 05-Jul-2037	Mo/Ke/Me: 08-Aug-2037	
+Mo/Ve/Ve: 07-Sep-2037	Mo/Ve/Su: 18-Dec-2037	Mo/Ve/Mo: 17-Jan-2038	Mo/Ve/Ma: 08-Mar-2038	Mo/Ve/Ra: 13-Apr-2038	Mo/Ve/Ju: 13-Jul-2038	Mo/Ve/Sa: 03-Oct-2038	Mo/Ve/Me: 07-Jan-2039	Mo/Ve/Ke: 03-Apr-2039	
+Mo/Su/Su: 08-May-2039	Mo/Su/Mo: 17-May-2039	Mo/Su/Ma: 02-Jun-2039	Mo/Su/Ra: 12-Jun-2039	Mo/Su/Ju: 10-Jul-2039	Mo/Su/Sa: 03-Aug-2039	Mo/Su/Me: 01-Sep-2039	Mo/Su/Ke: 27-Sep-2039	Mo/Su/Ve: 08-Oct-2039	
+
+Ma/Ma/Ma: 07-Nov-2039	Ma/Ma/Ra: 16-Nov-2039	Ma/Ma/Ju: 08-Dec-2039	Ma/Ma/Sa: 28-Dec-2039	Ma/Ma/Me: 21-Jan-2040	Ma/Ma/Ke: 11-Feb-2040	Ma/Ma/Ve: 20-Feb-2040	Ma/Ma/Su: 16-Mar-2040	Ma/Ma/Mo: 23-Mar-2040	
+Ma/Ra/Ra: 05-Apr-2040	Ma/Ra/Ju: 01-Jun-2040	Ma/Ra/Sa: 23-Jul-2040	Ma/Ra/Me: 21-Sep-2040	Ma/Ra/Ke: 15-Nov-2040	Ma/Ra/Ve: 07-Dec-2040	Ma/Ra/Su: 09-Feb-2041	Ma/Ra/Mo: 01-Mar-2041	Ma/Ra/Ma: 01-Apr-2041	
+Ma/Ju/Ju: 23-Apr-2041	Ma/Ju/Sa: 08-Jun-2041	Ma/Ju/Me: 01-Aug-2041	Ma/Ju/Ke: 18-Sep-2041	Ma/Ju/Ve: 08-Oct-2041	Ma/Ju/Su: 04-Dec-2041	Ma/Ju/Mo: 21-Dec-2041	Ma/Ju/Ma: 18-Jan-2042	Ma/Ju/Ra: 07-Feb-2042	
+Ma/Sa/Sa: 30-Mar-2042	Ma/Sa/Me: 02-Jun-2042	Ma/Sa/Ke: 29-Jul-2042	Ma/Sa/Ve: 22-Aug-2042	Ma/Sa/Su: 29-Oct-2042	Ma/Sa/Mo: 18-Nov-2042	Ma/Sa/Ma: 22-Dec-2042	Ma/Sa/Ra: 14-Jan-2043	Ma/Sa/Ju: 15-Mar-2043	
+Ma/Me/Me: 08-May-2043	Ma/Me/Ke: 29-Jun-2043	Ma/Me/Ve: 20-Jul-2043	Ma/Me/Su: 18-Sep-2043	Ma/Me/Mo: 06-Oct-2043	Ma/Me/Ma: 06-Nov-2043	Ma/Me/Ra: 27-Nov-2043	Ma/Me/Ju: 20-Jan-2044	Ma/Me/Sa: 09-Mar-2044	
+Ma/Ke/Ke: 05-May-2044	Ma/Ke/Ve: 14-May-2044	Ma/Ke/Su: 08-Jun-2044	Ma/Ke/Mo: 15-Jun-2044	Ma/Ke/Ma: 28-Jun-2044	Ma/Ke/Ra: 06-Jul-2044	Ma/Ke/Ju: 29-Jul-2044	Ma/Ke/Sa: 18-Aug-2044	Ma/Ke/Me: 10-Sep-2044	
+Ma/Ve/Ve: 02-Oct-2044	Ma/Ve/Su: 12-Dec-2044	Ma/Ve/Mo: 02-Jan-2045	Ma/Ve/Ma: 07-Feb-2045	Ma/Ve/Ra: 03-Mar-2045	Ma/Ve/Ju: 06-May-2045	Ma/Ve/Sa: 02-Jul-2045	Ma/Ve/Me: 07-Sep-2045	Ma/Ve/Ke: 07-Nov-2045	
+Ma/Su/Su: 02-Dec-2045	Ma/Su/Mo: 08-Dec-2045	Ma/Su/Ma: 19-Dec-2045	Ma/Su/Ra: 26-Dec-2045	Ma/Su/Ju: 14-Jan-2046	Ma/Su/Sa: 01-Feb-2046	Ma/Su/Me: 21-Feb-2046	Ma/Su/Ke: 10-Mar-2046	Ma/Su/Ve: 17-Mar-2046	
+Ma/Mo/Mo: 08-Apr-2046	Ma/Mo/Ma: 26-Apr-2046	Ma/Mo/Ra: 08-May-2046	Ma/Mo/Ju: 09-Jun-2046	Ma/Mo/Sa: 07-Jul-2046	Ma/Mo/Me: 10-Aug-2046	Ma/Mo/Ke: 10-Sep-2046	Ma/Mo/Ve: 22-Sep-2046	Ma/Mo/Su: 28-Oct-2046	
+
+Ra/Ra/Ra: 07-Nov-2046	Ra/Ra/Ju: 03-Apr-2047	Ra/Ra/Sa: 13-Aug-2047	Ra/Ra/Me: 17-Jan-2048	Ra/Ra/Ke: 05-Jun-2048	Ra/Ra/Ve: 01-Aug-2048	Ra/Ra/Su: 13-Jan-2049	Ra/Ra/Mo: 02-Mar-2049	Ra/Ra/Ma: 24-May-2049	
+Ra/Ju/Ju: 20-Jul-2049	Ra/Ju/Sa: 15-Nov-2049	Ra/Ju/Me: 02-Apr-2050	Ra/Ju/Ke: 04-Aug-2050	Ra/Ju/Ve: 24-Sep-2050	Ra/Ju/Su: 18-Feb-2051	Ra/Ju/Mo: 02-Apr-2051	Ra/Ju/Ma: 14-Jun-2051	Ra/Ju/Ra: 04-Aug-2051	
+Ra/Sa/Sa: 14-Dec-2051	Ra/Sa/Me: 27-May-2052	Ra/Sa/Ke: 22-Oct-2052	Ra/Sa/Ve: 22-Dec-2052	Ra/Sa/Su: 12-Jun-2053	Ra/Sa/Mo: 04-Aug-2053	Ra/Sa/Ma: 30-Oct-2053	Ra/Sa/Ra: 29-Dec-2053	Ra/Sa/Ju: 03-Jun-2054	
+Ra/Me/Me: 20-Oct-2054	Ra/Me/Ke: 01-Mar-2055	Ra/Me/Ve: 24-Apr-2055	Ra/Me/Su: 26-Sep-2055	Ra/Me/Mo: 12-Nov-2055	Ra/Me/Ma: 29-Jan-2056	Ra/Me/Ra: 23-Mar-2056	Ra/Me/Ju: 10-Aug-2056	Ra/Me/Sa: 12-Dec-2056	
+Ra/Ke/Ke: 08-May-2057	Ra/Ke/Ve: 31-May-2057	Ra/Ke/Su: 03-Aug-2057	Ra/Ke/Mo: 22-Aug-2057	Ra/Ke/Ma: 23-Sep-2057	Ra/Ke/Ra: 15-Oct-2057	Ra/Ke/Ju: 12-Dec-2057	Ra/Ke/Sa: 01-Feb-2058	Ra/Ke/Me: 02-Apr-2058	
+Ra/Ve/Ve: 27-May-2058	Ra/Ve/Su: 26-Nov-2058	Ra/Ve/Mo: 19-Jan-2059	Ra/Ve/Ma: 20-Apr-2059	Ra/Ve/Ra: 23-Jun-2059	Ra/Ve/Ju: 05-Dec-2059	Ra/Ve/Sa: 29-Apr-2060	Ra/Ve/Me: 20-Oct-2060	Ra/Ve/Ke: 24-Mar-2061	
+Ra/Su/Su: 27-May-2061	Ra/Su/Mo: 12-Jun-2061	Ra/Su/Ma: 09-Jul-2061	Ra/Su/Ra: 29-Jul-2061	Ra/Su/Ju: 16-Sep-2061	Ra/Su/Sa: 30-Oct-2061	Ra/Su/Me: 21-Dec-2061	Ra/Su/Ke: 06-Feb-2062	Ra/Su/Ve: 25-Feb-2062	
+Ra/Mo/Mo: 20-Apr-2062	Ra/Mo/Ma: 05-Jun-2062	Ra/Mo/Ra: 07-Jul-2062	Ra/Mo/Ju: 27-Sep-2062	Ra/Mo/Sa: 09-Dec-2062	Ra/Mo/Me: 05-Mar-2063	Ra/Mo/Ke: 22-May-2063	Ra/Mo/Ve: 23-Jun-2063	Ra/Mo/Su: 23-Sep-2063	
+Ra/Ma/Ma: 20-Oct-2063	Ra/Ma/Ra: 11-Nov-2063	Ra/Ma/Ju: 08-Jan-2064	Ra/Ma/Sa: 01-Mar-2064	Ra/Ma/Me: 29-Apr-2064	Ra/Ma/Ke: 23-Jun-2064	Ra/Ma/Ve: 15-Jul-2064	Ra/Ma/Su: 17-Sep-2064	Ra/Ma/Mo: 06-Oct-2064	
+
+
+
+
+
+
+
+
+
+
+
+----------------------Suba----------------------
+Sun --> 347 : 25 : 13 Dir -->false
+Moon --> 146 : 39 : 13 Dir -->false
+Mars --> 272 : 06 : 29 Dir -->false
+Mercury --> 328 : 51 : 32 Dir -->false
+Jupiter --> 11 : 25 : 55 Dir -->false
+Venus --> 33 : 14 : 52 Dir -->false
+Saturn --> 248 : 51 : 53 Dir -->false
+Rahu --> 329 : 31 : 17 Dir -->false
+Ketu --> 149 : 31 : 17 Dir -->false
+Sun --> 163 : 15 : 15 Dir -->false
+
+cp Ma/Ju/Ke
+Bhava
+0 --> 00 : 00 : 00 sandi 147 : 59 : 16
+1 --> 163 : 15 : 15 sandi 178 : 28 : 06
+2 --> 193 : 40 : 57 sandi 208 : 36 : 52
+3 --> 223 : 32 : 46 sandi 238 : 06 : 49
+4 --> 252 : 40 : 51 sandi 267 : 25 : 50
+5 --> 282 : 10 : 49 sandi 297 : 27 : 03
+6 --> 312 : 43 : 17 sandi 327 : 59 : 16
+7 --> 343 : 15 : 15 sandi 358 : 28 : 06
+8 --> 13 : 40 : 57 sandi 28 : 36 : 52
+9 --> 43 : 32 : 46 sandi 58 : 06 : 49
+10 --> 72 : 40 : 51 sandi 87 : 25 : 50
+11 --> 102 : 10 : 49 sandi 117 : 27 : 03
+12 --> 132 : 43 : 17 sandi 147 : 59 : 16
+
+Sun --> Meena - 12
+Moon --> Simha - 5
+Mars --> Makara - 10
+Mercury --> Kumbha - 11
+Jupiter --> Mesha - 1
+Venus --> Vrishabha - 2
+Saturn --> Dhanus - 9
+Rahu --> Kumbha - 11
+Ketu --> Simha - 5
+Sun --> Kanya - 6
+
+Thithi Chathurdasi Paksha Shukla
+0 --> 3<--> BhratruKaraka
+1 --> 1<--> AmatyaKaraka
+2 --> 0<--> DaraKaraka
+3 --> 4<--> AtmaKaraka
+4 --> 6<--> MatruKaraka
+5 --> 5<--> GnatiKaraka
+6 --> 2<--> PuthraKaraka
+Charts
+Rasi -> 12 , 5 , 10 , 11 , 1 , 2 , 9 , 11 , 5 , 6 , 
+Hora -> 5 , 4 , 4 , 4 , 5 , 4 , 5 , 4 , 4 , 4 , 
+Drekkana -> 4 , 1 , 10 , 7 , 5 , 2 , 9 , 7 , 1 , 10 , 
+Chaturtamsa -> 6 , 2 , 10 , 8 , 4 , 2 , 12 , 8 , 2 , 9 , 
+Navamsa -> 9 , 8 , 10 , 3 , 4 , 10 , 3 , 3 , 9 , 1 , 
+Saptamsa -> 10 , 11 , 4 , 5 , 3 , 8 , 11 , 5 , 11 , 3 , 
+Dasamsa -> 1 , 1 , 6 , 8 , 4 , 11 , 11 , 8 , 2 , 6 , 
+Dwadasamsa -> 6 , 3 , 10 , 10 , 5 , 3 , 12 , 10 , 4 , 11 , 
+Shodasamsa -> 6 , 7 , 2 , 8 , 7 , 6 , 1 , 8 , 8 , 4 , 
+Vimshamsa -> 4 , 2 , 2 , 4 , 8 , 11 , 10 , 4 , 4 , 1 , 
+ChaturVimshamsa -> 5 , 2 , 5 , 4 , 2 , 6 , 12 , 4 , 4 , 2 , 
+Bhamsa -> 1 , 12 , 5 , 8 , 11 , 6 , 8 , 9 , 3 , 3 , 
+Trimshamsa -> 12 , 7 , 2 , 7 , 9 , 2 , 11 , 7 , 7 , 12 , 
+Khavedamsa -> 6 , 12 , 9 , 3 , 4 , 11 , 12 , 4 , 4 , 12 , 
+Akshvedamsa -> 11 , 8 , 4 , 12 , 6 , 9 , 10 , 1 , 1 , 4 , 
+Shastiamsa -> 10 , 10 , 2 , 8 , 11 , 8 , 2 , 10 , 4 , 8 , 
+Panchamsa -> 12 , 7 , 2 , 7 , 11 , 2 , 11 , 7 , 7 , 12 , 
+Shashtamsa -> 10 , 6 , 7 , 6 , 3 , 7 , 2 , 6 , 6 , 9 , 
+Ashtamsa -> 1 , 12 , 1 , 12 , 4 , 5 , 11 , 12 , 12 , 12 , 
+Ekadamsa -> 6 , 3 , 12 , 2 , 8 , 11 , 9 , 2 , 2 , 8 , 
+Bhava -> 12 , 5 , 10 , 12 , 1 , 2 , 9 , 12 , 6 , 6 , 
+
+Ashtavarga
+Sun  Astavarga 
+Mesha -->  4
+Vrishabha -->  1
+Mithuna -->  5
+Kataka -->  4
+Simha -->  4
+Kanya -->  4
+Thula -->  6
+Vrichika -->  5
+Dhanus -->  5
+Makara -->  5
+Kumbha -->  3
+Meena -->  2
+Sum 48
+RasiGuna 97 , GrahaGuna 37 , Moon  Astavarga 
+Mesha -->  3
+Vrishabha -->  5
+Mithuna -->  4
+Kataka -->  3
+Simha -->  4
+Kanya -->  4
+Thula -->  5
+Vrichika -->  5
+Dhanus -->  2
+Makara -->  4
+Kumbha -->  7
+Meena -->  3
+Sum 49
+RasiGuna 78 , GrahaGuna 42 , Mars  Astavarga 
+Mesha -->  3
+Vrishabha -->  1
+Mithuna -->  4
+Kataka -->  5
+Simha -->  3
+Kanya -->  3
+Thula -->  4
+Vrichika -->  2
+Dhanus -->  4
+Makara -->  4
+Kumbha -->  3
+Meena -->  3
+Sum 39
+RasiGuna 65 , GrahaGuna 34 , Bhuda  Astavarga 
+Mesha -->  3
+Vrishabha -->  2
+Mithuna -->  5
+Kataka -->  6
+Simha -->  4
+Kanya -->  6
+Thula -->  4
+Vrichika -->  5
+Dhanus -->  4
+Makara -->  6
+Kumbha -->  5
+Meena -->  4
+Sum 54
+RasiGuna 86 , GrahaGuna 47 , Guru  Astavarga 
+Mesha -->  5
+Vrishabha -->  5
+Mithuna -->  6
+Kataka -->  4
+Simha -->  1
+Kanya -->  4
+Thula -->  6
+Vrichika -->  5
+Dhanus -->  4
+Makara -->  5
+Kumbha -->  7
+Meena -->  4
+Sum 56
+RasiGuna 81 , GrahaGuna 75 , Sukra  Astavarga 
+Mesha -->  4
+Vrishabha -->  3
+Mithuna -->  4
+Kataka -->  5
+Simha -->  4
+Kanya -->  5
+Thula -->  5
+Vrichika -->  4
+Dhanus -->  6
+Makara -->  4
+Kumbha -->  4
+Meena -->  4
+Sum 52
+RasiGuna 44 , GrahaGuna 18 , Sani  Astavarga 
+Mesha -->  3
+Vrishabha -->  2
+Mithuna -->  4
+Kataka -->  2
+Simha -->  1
+Kanya -->  4
+Thula -->  6
+Vrichika -->  3
+Dhanus -->  4
+Makara -->  3
+Kumbha -->  3
+Meena -->  4
+Sum 39
+RasiGuna 101 , GrahaGuna 53 , Asc  Astavarga 
+Mesha -->  25
+Vrishabha -->  19
+Mithuna -->  32
+Kataka -->  29
+Simha -->  21
+Kanya -->  30
+Thula -->  36
+Vrichika -->  29
+Dhanus -->  29
+Makara -->  31
+Kumbha -->  32
+Meena -->  24
+Sum 337
+RasiGuna 343 , GrahaGuna 115 , 
+Total 674
+ShadBala 
+Sun --> 7
+Sun --> 72.61734956783664
+OchachaBala:-->Sun :-> 52.47345929120528
+OjaYugmarasyamsaBala:-->Sun :-> 15.0
+KendraBala:-->Sun :-> 60.0
+DrekkanaBala:-->Sun :-> 0.0
+SapthavargaBala:-->Sun :-> 127.5
+SthanaBala:-->Sun :-> 254.97345929120527
+DigBala:-->Sun :-> 31.579772648040063
+NaisargikaBala:-->Sun :-> 60.0
+AbdaBala:-->Sun :-> 0.0
+MasaBala:-->Sun :-> 0.0
+VaraBala:-->Sun :-> 0.0
+PakshaBala:-->Sun :-> 6.92222306152059
+TribhagaBala:-->Sun :-> 0.0
+HoraBala:-->Sun :-> 0.0
+NatonnataBala:-->Sun :-> 28.82589316303326
+AyanaBala:-->Sun :-> 60.0
+YuddhaBala:-->Sun :-> 0.0
+KalaBala:-->Sun :-> 95.74811622455385
+DrikBala:-->Sun :-> -5.354396568076062
+ChestaBala:-->Sun :-> 33.6722468726983
+IshtaBala:-->Sun :-> 42.03450101426147
+KashtaBala:-->Sun :-> 14.076821576042432
+ShadBala:-->Sun :-> 7.282449193262051
+ShadBala Per:-->Sun :-> 145.64898386524104
+ShadBala Rank:-->Sun :-> 1
+Moon --> 12
+Moon --> 8.739099402506106
+OchachaBala:-->Moon :-> 22.115430436981978
+OjaYugmarasyamsaBala:-->Moon :-> 15.0
+KendraBala:-->Moon :-> 15.0
+DrekkanaBala:-->Moon :-> 15.0
+SapthavargaBala:-->Moon :-> 71.25
+SthanaBala:-->Moon :-> 138.36543043698197
+DigBala:-->Moon :-> 24.65754958651947
+NaisargikaBala:-->Moon :-> 51.43
+AbdaBala:-->Moon :-> 0.0
+MasaBala:-->Moon :-> 30.0
+VaraBala:-->Moon :-> 0.0
+PakshaBala:-->Moon :-> 106.15555387695882
+TribhagaBala:-->Moon :-> 0.0
+HoraBala:-->Moon :-> 0.0
+NatonnataBala:-->Moon :-> 31.17410683696674
+AyanaBala:-->Moon :-> 25.097952581859705
+YuddhaBala:-->Moon :-> 0.0
+KalaBala:-->Moon :-> 192.42761329578528
+DrikBala:-->Moon :-> -16.2033369277754
+ChestaBala:-->Moon :-> 53.07777693847941
+IshtaBala:-->Moon :-> 34.261317599190306
+KashtaBala:-->Moon :-> 16.193993982489445
+ShadBala:-->Moon :-> 6.511287606525189
+ShadBala Per:-->Moon :-> 108.52146010875315
+ShadBala Rank:-->Moon :-> 4
+Mars --> 5
+Mars --> 31.713545067405843
+OchachaBala:-->Mars :-> 51.369433018147525
+OjaYugmarasyamsaBala:-->Mars :-> 0.0
+KendraBala:-->Mars :-> 30.0
+DrekkanaBala:-->Mars :-> 15.0
+SapthavargaBala:-->Mars :-> 78.75
+SthanaBala:-->Mars :-> 175.11943301814753
+DigBala:-->Mars :-> 6.475746374982303
+NaisargikaBala:-->Mars :-> 17.14
+AbdaBala:-->Mars :-> 15.0
+MasaBala:-->Mars :-> 0.0
+VaraBala:-->Mars :-> 0.0
+PakshaBala:-->Mars :-> 6.92222306152059
+TribhagaBala:-->Mars :-> 0.0
+HoraBala:-->Mars :-> 0.0
+NatonnataBala:-->Mars :-> 31.17410683696674
+AyanaBala:-->Mars :-> 3.3134712081086715
+YuddhaBala:-->Mars :-> 0.0
+KalaBala:-->Mars :-> 56.409801106596
+DrikBala:-->Mars :-> 24.28028498997541
+ChestaBala:-->Mars :-> 29.535061840185524
+IshtaBala:-->Mars :-> 38.95124363722236
+KashtaBala:-->Mars :-> 16.21510682623683
+ShadBala:-->Mars :-> 5.149338788831446
+ShadBala Per:-->Mars :-> 102.98677577662892
+ShadBala Rank:-->Mars :-> 5
+Mercury --> 6
+Mercury --> 5.70612044015178
+OchachaBala:-->Mercury :-> 5.380338848296124
+OjaYugmarasyamsaBala:-->Mercury :-> 30.0
+KendraBala:-->Mercury :-> 15.0
+DrekkanaBala:-->Mercury :-> 0.0
+SapthavargaBala:-->Mercury :-> 129.375
+SthanaBala:-->Mercury :-> 179.75533884829613
+DigBala:-->Mercury :-> 4.7984481014480975
+NaisargikaBala:-->Mercury :-> 25.7
+AbdaBala:-->Mercury :-> 0.0
+MasaBala:-->Mercury :-> 0.0
+VaraBala:-->Mercury :-> 0.0
+PakshaBala:-->Mercury :-> 6.92222306152059
+TribhagaBala:-->Mercury :-> 0.0
+HoraBala:-->Mercury :-> 60.0
+NatonnataBala:-->Mercury :-> 60.0
+AyanaBala:-->Mercury :-> 33.793284271872466
+YuddhaBala:-->Mercury :-> 0.0
+KalaBala:-->Mercury :-> 160.71550733339305
+DrikBala:-->Mercury :-> -8.069430912285522
+ChestaBala:-->Mercury :-> 7.125274622423983
+IshtaBala:-->Mercury :-> 6.191638866714228
+KashtaBala:-->Mercury :-> 53.74011149609387
+ShadBala:-->Mercury :-> 6.167085633221262
+ShadBala Per:-->Mercury :-> 88.10122333173231
+ShadBala Rank:-->Mercury :-> 6
+Jupiter --> 8
+Jupiter --> 85.20725463165982
+OchachaBala:-->Jupiter :-> 32.144040845164454
+OjaYugmarasyamsaBala:-->Jupiter :-> 15.0
+KendraBala:-->Jupiter :-> 30.0
+DrekkanaBala:-->Jupiter :-> 0.0
+SapthavargaBala:-->Jupiter :-> 135.0
+SthanaBala:-->Jupiter :-> 212.14404084516445
+DigBala:-->Jupiter :-> 9.392598258679149
+NaisargikaBala:-->Jupiter :-> 34.28
+AbdaBala:-->Jupiter :-> 0.0
+MasaBala:-->Jupiter :-> 0.0
+VaraBala:-->Jupiter :-> 45.0
+PakshaBala:-->Jupiter :-> 53.07777693847941
+TribhagaBala:-->Jupiter :-> 60.0
+HoraBala:-->Jupiter :-> 0.0
+NatonnataBala:-->Jupiter :-> 28.82589316303326
+AyanaBala:-->Jupiter :-> 46.73405152598855
+YuddhaBala:-->Jupiter :-> 0.0
+KalaBala:-->Jupiter :-> 233.63772162750124
+DrikBala:-->Jupiter :-> -12.861616445676937
+ChestaBala:-->Jupiter :-> 9.390876673063758
+IshtaBala:-->Jupiter :-> 17.37413949957993
+KashtaBala:-->Jupiter :-> 37.54684636899843
+ShadBala:-->Jupiter :-> 8.099727015978862
+ShadBala Per:-->Jupiter :-> 124.61118486121325
+ShadBala Rank:-->Jupiter :-> 3
+Venus --> 9
+Venus --> 31.031635387690244
+OchachaBala:-->Venus :-> 47.917328318951554
+OjaYugmarasyamsaBala:-->Venus :-> 30.0
+KendraBala:-->Venus :-> 15.0
+DrekkanaBala:-->Venus :-> 0.0
+SapthavargaBala:-->Venus :-> 131.25
+SthanaBala:-->Venus :-> 224.16732831895155
+DigBala:-->Venus :-> 13.144348295450113
+NaisargikaBala:-->Venus :-> 42.85
+AbdaBala:-->Venus :-> 0.0
+MasaBala:-->Venus :-> 0.0
+VaraBala:-->Venus :-> 0.0
+PakshaBala:-->Venus :-> 53.07777693847941
+TribhagaBala:-->Venus :-> 0.0
+HoraBala:-->Venus :-> 0.0
+NatonnataBala:-->Venus :-> 28.82589316303326
+AyanaBala:-->Venus :-> 54.75732383038798
+YuddhaBala:-->Venus :-> 0.0
+KalaBala:-->Venus :-> 136.66099393190066
+DrikBala:-->Venus :-> -8.769248978327987
+ChestaBala:-->Venus :-> 21.723461994503793
+IshtaBala:-->Venus :-> 32.2634508479007
+KashtaBala:-->Venus :-> 21.505414244035933
+ShadBala:-->Venus :-> 7.162948059374636
+ShadBala Per:-->Venus :-> 130.235419261357
+ShadBala Rank:-->Venus :-> 2
+Saturn --> 4
+Saturn --> 73.80227848936586
+OchachaBala:-->Saturn :-> 43.71175880156133
+OjaYugmarasyamsaBala:-->Saturn :-> 30.0
+KendraBala:-->Saturn :-> 60.0
+DrekkanaBala:-->Saturn :-> 0.0
+SapthavargaBala:-->Saturn :-> 101.25
+SthanaBala:-->Saturn :-> 234.96175880156133
+DigBala:-->Saturn :-> 28.536798611953355
+NaisargikaBala:-->Saturn :-> 8.57
+AbdaBala:-->Saturn :-> 0.0
+MasaBala:-->Saturn :-> 0.0
+VaraBala:-->Saturn :-> 0.0
+PakshaBala:-->Saturn :-> 6.92222306152059
+TribhagaBala:-->Saturn :-> 60.0
+HoraBala:-->Saturn :-> 0.0
+NatonnataBala:-->Saturn :-> 31.17410683696674
+AyanaBala:-->Saturn :-> 59.822254875459244
+YuddhaBala:-->Saturn :-> 0.0
+KalaBala:-->Saturn :-> 157.91858477394658
+DrikBala:-->Saturn :-> 20.773720167956164
+ChestaBala:-->Saturn :-> 34.06994883614171
+IshtaBala:-->Saturn :-> 38.59089770796945
+KashtaBala:-->Saturn :-> 20.551275572206684
+ShadBala:-->Saturn :-> 8.080513519859318
+ShadBala Per:-->Saturn :-> 161.61027039718638
+ShadBala Rank:-->Saturn :-> 0
+BhavaAdhipathiBala: 1 : -->6.167085633221262
+BhavaDigBala: 1 : -->60.0
+BhavaDrishtiBala: 1 : -->27.97013928239941
+BhavaBala: 1 : -->457.99527727567516
+BhavaBala Rank: 1 : -->7
+BhavaAdhipathiBala: 2 : -->7.162948059374636
+BhavaDigBala: 2 : -->50.0
+BhavaDrishtiBala: 2 : -->89.78840729488832
+BhavaBala: 2 : -->569.5652908573664
+BhavaBala Rank: 2 : -->1
+BhavaAdhipathiBala: 3 : -->5.149338788831446
+BhavaDigBala: 3 : -->20.0
+BhavaDrishtiBala: 3 : -->80.30093963467431
+BhavaBala: 3 : -->409.26126696456106
+BhavaBala Rank: 3 : -->10
+BhavaAdhipathiBala: 4 : -->8.099727015978862
+BhavaDigBala: 4 : -->30.0
+BhavaDrishtiBala: 4 : -->82.43952880694282
+BhavaBala: 4 : -->598.4231497656746
+BhavaBala Rank: 4 : -->0
+BhavaAdhipathiBala: 5 : -->8.080513519859318
+BhavaDigBala: 5 : -->10.0
+BhavaDrishtiBala: 5 : -->23.558282073241628
+BhavaBala: 5 : -->518.3890932648007
+BhavaBala Rank: 5 : -->3
+BhavaAdhipathiBala: 6 : -->8.080513519859318
+BhavaDigBala: 6 : -->10.0
+BhavaDrishtiBala: 6 : -->-6.69113418349955
+BhavaBala: 6 : -->488.13967700805955
+BhavaBala Rank: 6 : -->6
+BhavaAdhipathiBala: 7 : -->8.099727015978862
+BhavaDigBala: 7 : -->30.0
+BhavaDrishtiBala: 7 : -->-4.31288403953608
+BhavaBala: 7 : -->511.6707369191957
+BhavaBala Rank: 7 : -->4
+BhavaAdhipathiBala: 8 : -->5.149338788831446
+BhavaDigBala: 8 : -->40.0
+BhavaDrishtiBala: 8 : -->-3.3154565618435896
+BhavaBala: 8 : -->345.6448707680432
+BhavaBala Rank: 8 : -->11
+BhavaAdhipathiBala: 9 : -->7.162948059374636
+BhavaDigBala: 9 : -->50.0
+BhavaDrishtiBala: 9 : -->25.88569091093061
+BhavaBala: 9 : -->505.66257447340877
+BhavaBala Rank: 9 : -->5
+BhavaAdhipathiBala: 10 : -->6.167085633221262
+BhavaDigBala: 10 : -->30.0
+BhavaDrishtiBala: 10 : -->27.389101952824802
+BhavaBala: 10 : -->427.41423994610057
+BhavaBala Rank: 10 : -->9
+BhavaAdhipathiBala: 11 : -->6.511287606525189
+BhavaDigBala: 11 : -->10.0
+BhavaDrishtiBala: 11 : -->34.556114434275905
+BhavaBala: 11 : -->435.23337082578723
+BhavaBala Rank: 11 : -->8
+BhavaAdhipathiBala: 12 : -->7.282449193262051
+BhavaDigBala: 12 : -->40.0
+BhavaDrishtiBala: 12 : -->74.63535075526588
+BhavaBala: 12 : -->551.5823023509889
+BhavaBala Rank: 12 : -->2
+
+Dasas
+Ve/Ve/Ve: 08-Apr-1968	Ve/Ve/Su: 28-Oct-1968	Ve/Ve/Mo: 28-Dec-1968	Ve/Ve/Ma: 08-Apr-1969	Ve/Ve/Ra: 18-Jun-1969	Ve/Ve/Ju: 18-Dec-1969	Ve/Ve/Sa: 28-May-1970	Ve/Ve/Me: 08-Dec-1970	Ve/Ve/Ke: 28-May-1971	
+Ve/Su/Su: 08-Aug-1971	Ve/Su/Mo: 26-Aug-1971	Ve/Su/Ma: 25-Sep-1971	Ve/Su/Ra: 17-Oct-1971	Ve/Su/Ju: 11-Dec-1971	Ve/Su/Sa: 28-Jan-1972	Ve/Su/Me: 26-Mar-1972	Ve/Su/Ke: 17-May-1972	Ve/Su/Ve: 08-Jun-1972	
+Ve/Mo/Mo: 08-Aug-1972	Ve/Mo/Ma: 27-Sep-1972	Ve/Mo/Ra: 02-Nov-1972	Ve/Mo/Ju: 02-Feb-1973	Ve/Mo/Sa: 23-Apr-1973	Ve/Mo/Me: 28-Jul-1973	Ve/Mo/Ke: 23-Oct-1973	Ve/Mo/Ve: 27-Nov-1973	Ve/Mo/Su: 08-Mar-1974	
+Ve/Ma/Ma: 08-Apr-1974	Ve/Ma/Ra: 03-May-1974	Ve/Ma/Ju: 06-Jul-1974	Ve/Ma/Sa: 01-Sep-1974	Ve/Ma/Me: 07-Nov-1974	Ve/Ma/Ke: 07-Jan-1975	Ve/Ma/Ve: 01-Feb-1975	Ve/Ma/Su: 12-Apr-1975	Ve/Ma/Mo: 03-May-1975	
+Ve/Ra/Ra: 08-Jun-1975	Ve/Ra/Ju: 19-Nov-1975	Ve/Ra/Sa: 14-Apr-1976	Ve/Ra/Me: 05-Oct-1976	Ve/Ra/Ke: 08-Mar-1977	Ve/Ra/Ve: 11-May-1977	Ve/Ra/Su: 10-Nov-1977	Ve/Ra/Mo: 04-Jan-1978	Ve/Ra/Ma: 05-Apr-1978	
+Ve/Ju/Ju: 08-Jun-1978	Ve/Ju/Sa: 16-Oct-1978	Ve/Ju/Me: 18-Mar-1979	Ve/Ju/Ke: 04-Aug-1979	Ve/Ju/Ve: 29-Sep-1979	Ve/Ju/Su: 10-Mar-1980	Ve/Ju/Mo: 28-Apr-1980	Ve/Ju/Ma: 18-Jul-1980	Ve/Ju/Ra: 13-Sep-1980	
+Ve/Sa/Sa: 07-Feb-1981	Ve/Sa/Me: 08-Aug-1981	Ve/Sa/Ke: 19-Jan-1982	Ve/Sa/Ve: 27-Mar-1982	Ve/Sa/Su: 06-Oct-1982	Ve/Sa/Mo: 03-Dec-1982	Ve/Sa/Ma: 09-Mar-1983	Ve/Sa/Ra: 15-May-1983	Ve/Sa/Ju: 05-Nov-1983	
+Ve/Me/Me: 08-Apr-1984	Ve/Me/Ke: 02-Sep-1984	Ve/Me/Ve: 01-Nov-1984	Ve/Me/Su: 22-Apr-1985	Ve/Me/Mo: 13-Jun-1985	Ve/Me/Ma: 07-Sep-1985	Ve/Me/Ra: 07-Nov-1985	Ve/Me/Ju: 10-Apr-1986	Ve/Me/Sa: 26-Aug-1986	
+Ve/Ke/Ke: 07-Feb-1987	Ve/Ke/Ve: 03-Mar-1987	Ve/Ke/Su: 13-May-1987	Ve/Ke/Mo: 03-Jun-1987	Ve/Ke/Ma: 09-Jul-1987	Ve/Ke/Ra: 03-Aug-1987	Ve/Ke/Ju: 06-Oct-1987	Ve/Ke/Sa: 02-Dec-1987	Ve/Ke/Me: 07-Feb-1988	
+
+Su/Su/Su: 08-Apr-1988	Su/Su/Mo: 13-Apr-1988	Su/Su/Ma: 22-Apr-1988	Su/Su/Ra: 29-Apr-1988	Su/Su/Ju: 15-May-1988	Su/Su/Sa: 30-May-1988	Su/Su/Me: 16-Jun-1988	Su/Su/Ke: 02-Jul-1988	Su/Su/Ve: 08-Jul-1988	
+Su/Mo/Mo: 26-Jul-1988	Su/Mo/Ma: 11-Aug-1988	Su/Mo/Ra: 21-Aug-1988	Su/Mo/Ju: 18-Sep-1988	Su/Mo/Sa: 12-Oct-1988	Su/Mo/Me: 10-Nov-1988	Su/Mo/Ke: 06-Dec-1988	Su/Mo/Ve: 17-Dec-1988	Su/Mo/Su: 16-Jan-1989	
+Su/Ma/Ma: 25-Jan-1989	Su/Ma/Ra: 02-Feb-1989	Su/Ma/Ju: 21-Feb-1989	Su/Ma/Sa: 09-Mar-1989	Su/Ma/Me: 29-Mar-1989	Su/Ma/Ke: 17-Apr-1989	Su/Ma/Ve: 24-Apr-1989	Su/Ma/Su: 15-May-1989	Su/Ma/Mo: 22-May-1989	
+Su/Ra/Ra: 02-Jun-1989	Su/Ra/Ju: 21-Jul-1989	Su/Ra/Sa: 03-Sep-1989	Su/Ra/Me: 25-Oct-1989	Su/Ra/Ke: 11-Dec-1989	Su/Ra/Ve: 30-Dec-1989	Su/Ra/Su: 23-Feb-1990	Su/Ra/Mo: 10-Mar-1990	Su/Ra/Ma: 07-Apr-1990	
+Su/Ju/Ju: 26-Apr-1990	Su/Ju/Sa: 04-Jun-1990	Su/Ju/Me: 20-Jul-1990	Su/Ju/Ke: 31-Aug-1990	Su/Ju/Ve: 17-Sep-1990	Su/Ju/Su: 05-Nov-1990	Su/Ju/Mo: 19-Nov-1990	Su/Ju/Ma: 14-Dec-1990	Su/Ju/Ra: 31-Dec-1990	
+Su/Sa/Sa: 13-Feb-1991	Su/Sa/Me: 08-Apr-1991	Su/Sa/Ke: 27-May-1991	Su/Sa/Ve: 16-Jun-1991	Su/Sa/Su: 13-Aug-1991	Su/Sa/Mo: 31-Aug-1991	Su/Sa/Ma: 29-Sep-1991	Su/Sa/Ra: 19-Oct-1991	Su/Sa/Ju: 10-Dec-1991	
+Su/Me/Me: 25-Jan-1992	Su/Me/Ke: 09-Mar-1992	Su/Me/Ve: 28-Mar-1992	Su/Me/Su: 18-May-1992	Su/Me/Mo: 03-Jun-1992	Su/Me/Ma: 29-Jun-1992	Su/Me/Ra: 17-Jul-1992	Su/Me/Ju: 02-Sep-1992	Su/Me/Sa: 13-Oct-1992	
+Su/Ke/Ke: 02-Dec-1992	Su/Ke/Ve: 09-Dec-1992	Su/Ke/Su: 30-Dec-1992	Su/Ke/Mo: 06-Jan-1993	Su/Ke/Ma: 16-Jan-1993	Su/Ke/Ra: 24-Jan-1993	Su/Ke/Ju: 12-Feb-1993	Su/Ke/Sa: 01-Mar-1993	Su/Ke/Me: 20-Mar-1993	
+Su/Ve/Ve: 08-Apr-1993	Su/Ve/Su: 08-Jun-1993	Su/Ve/Mo: 26-Jun-1993	Su/Ve/Ma: 26-Jul-1993	Su/Ve/Ra: 17-Aug-1993	Su/Ve/Ju: 11-Oct-1993	Su/Ve/Sa: 28-Nov-1993	Su/Ve/Me: 25-Jan-1994	Su/Ve/Ke: 17-Mar-1994	
+
+Mo/Mo/Mo: 08-Apr-1994	Mo/Mo/Ma: 03-May-1994	Mo/Mo/Ra: 21-May-1994	Mo/Mo/Ju: 06-Jul-1994	Mo/Mo/Sa: 15-Aug-1994	Mo/Mo/Me: 03-Oct-1994	Mo/Mo/Ke: 15-Nov-1994	Mo/Mo/Ve: 03-Dec-1994	Mo/Mo/Su: 22-Jan-1995	
+Mo/Ma/Ma: 07-Feb-1995	Mo/Ma/Ra: 19-Feb-1995	Mo/Ma/Ju: 22-Mar-1995	Mo/Ma/Sa: 20-Apr-1995	Mo/Ma/Me: 23-May-1995	Mo/Ma/Ke: 23-Jun-1995	Mo/Ma/Ve: 05-Jul-1995	Mo/Ma/Su: 10-Aug-1995	Mo/Ma/Mo: 20-Aug-1995	
+Mo/Ra/Ra: 07-Sep-1995	Mo/Ra/Ju: 28-Nov-1995	Mo/Ra/Sa: 10-Feb-1996	Mo/Ra/Me: 07-May-1996	Mo/Ra/Ke: 23-Jul-1996	Mo/Ra/Ve: 24-Aug-1996	Mo/Ra/Su: 24-Nov-1996	Mo/Ra/Mo: 21-Dec-1996	Mo/Ra/Ma: 05-Feb-1997	
+Mo/Ju/Ju: 08-Mar-1997	Mo/Ju/Sa: 12-May-1997	Mo/Ju/Me: 28-Jul-1997	Mo/Ju/Ke: 06-Oct-1997	Mo/Ju/Ve: 03-Nov-1997	Mo/Ju/Su: 23-Jan-1998	Mo/Ju/Mo: 17-Feb-1998	Mo/Ju/Ma: 28-Mar-1998	Mo/Ju/Ra: 26-Apr-1998	
+Mo/Sa/Sa: 08-Jul-1998	Mo/Sa/Me: 08-Oct-1998	Mo/Sa/Ke: 29-Dec-1998	Mo/Sa/Ve: 01-Feb-1999	Mo/Sa/Su: 07-May-1999	Mo/Sa/Mo: 05-Jun-1999	Mo/Sa/Ma: 24-Jul-1999	Mo/Sa/Ra: 26-Aug-1999	Mo/Sa/Ju: 21-Nov-1999	
+Mo/Me/Me: 07-Feb-2000	Mo/Me/Ke: 20-Apr-2000	Mo/Me/Ve: 20-May-2000	Mo/Me/Su: 15-Aug-2000	Mo/Me/Mo: 10-Sep-2000	Mo/Me/Ma: 23-Oct-2000	Mo/Me/Ra: 22-Nov-2000	Mo/Me/Ju: 08-Feb-2001	Mo/Me/Sa: 17-Apr-2001	
+Mo/Ke/Ke: 08-Jul-2001	Mo/Ke/Ve: 21-Jul-2001	Mo/Ke/Su: 25-Aug-2001	Mo/Ke/Mo: 05-Sep-2001	Mo/Ke/Ma: 23-Sep-2001	Mo/Ke/Ra: 05-Oct-2001	Mo/Ke/Ju: 06-Nov-2001	Mo/Ke/Sa: 05-Dec-2001	Mo/Ke/Me: 07-Jan-2002	
+Mo/Ve/Ve: 07-Feb-2002	Mo/Ve/Su: 18-May-2002	Mo/Ve/Mo: 18-Jun-2002	Mo/Ve/Ma: 08-Aug-2002	Mo/Ve/Ra: 12-Sep-2002	Mo/Ve/Ju: 13-Dec-2002	Mo/Ve/Sa: 03-Mar-2003	Mo/Ve/Me: 08-Jun-2003	Mo/Ve/Ke: 02-Sep-2003	
+Mo/Su/Su: 08-Oct-2003	Mo/Su/Mo: 17-Oct-2003	Mo/Su/Ma: 01-Nov-2003	Mo/Su/Ra: 12-Nov-2003	Mo/Su/Ju: 09-Dec-2003	Mo/Su/Sa: 03-Jan-2004	Mo/Su/Me: 01-Feb-2004	Mo/Su/Ke: 26-Feb-2004	Mo/Su/Ve: 08-Mar-2004	
+
+Ma/Ma/Ma: 08-Apr-2004	Ma/Ma/Ra: 16-Apr-2004	Ma/Ma/Ju: 09-May-2004	Ma/Ma/Sa: 29-May-2004	Ma/Ma/Me: 21-Jun-2004	Ma/Ma/Ke: 13-Jul-2004	Ma/Ma/Ve: 21-Jul-2004	Ma/Ma/Su: 15-Aug-2004	Ma/Ma/Mo: 23-Aug-2004	
+Ma/Ra/Ra: 04-Sep-2004	Ma/Ra/Ju: 01-Nov-2004	Ma/Ra/Sa: 22-Dec-2004	Ma/Ra/Me: 21-Feb-2005	Ma/Ra/Ke: 15-Apr-2005	Ma/Ra/Ve: 08-May-2005	Ma/Ra/Su: 11-Jul-2005	Ma/Ra/Mo: 30-Jul-2005	Ma/Ra/Ma: 31-Aug-2005	
+Ma/Ju/Ju: 22-Sep-2005	Ma/Ju/Sa: 07-Nov-2005	Ma/Ju/Me: 31-Dec-2005	Ma/Ju/Ke: 17-Feb-2006	Ma/Ju/Ve: 08-Mar-2006	Ma/Ju/Su: 04-May-2006	Ma/Ju/Mo: 21-May-2006	Ma/Ju/Ma: 19-Jun-2006	Ma/Ju/Ra: 09-Jul-2006	
+Ma/Sa/Sa: 29-Aug-2006	Ma/Sa/Me: 01-Nov-2006	Ma/Sa/Ke: 29-Dec-2006	Ma/Sa/Ve: 21-Jan-2007	Ma/Sa/Su: 29-Mar-2007	Ma/Sa/Mo: 18-Apr-2007	Ma/Sa/Ma: 22-May-2007	Ma/Sa/Ra: 15-Jun-2007	Ma/Sa/Ju: 15-Aug-2007	
+Ma/Me/Me: 08-Oct-2007	Ma/Me/Ke: 28-Nov-2007	Ma/Me/Ve: 19-Dec-2007	Ma/Me/Su: 18-Feb-2008	Ma/Me/Mo: 07-Mar-2008	Ma/Me/Ma: 06-Apr-2008	Ma/Me/Ra: 27-Apr-2008	Ma/Me/Ju: 21-Jun-2008	Ma/Me/Sa: 08-Aug-2008	
+Ma/Ke/Ke: 05-Oct-2008	Ma/Ke/Ve: 13-Oct-2008	Ma/Ke/Su: 07-Nov-2008	Ma/Ke/Mo: 15-Nov-2008	Ma/Ke/Ma: 27-Nov-2008	Ma/Ke/Ra: 06-Dec-2008	Ma/Ke/Ju: 28-Dec-2008	Ma/Ke/Sa: 17-Jan-2009	Ma/Ke/Me: 10-Feb-2009	
+Ma/Ve/Ve: 02-Mar-2009	Ma/Ve/Su: 12-May-2009	Ma/Ve/Mo: 03-Jun-2009	Ma/Ve/Ma: 08-Jul-2009	Ma/Ve/Ra: 02-Aug-2009	Ma/Ve/Ju: 05-Oct-2009	Ma/Ve/Sa: 01-Dec-2009	Ma/Ve/Me: 07-Feb-2010	Ma/Ve/Ke: 07-Apr-2010	
+Ma/Su/Su: 02-May-2010	Ma/Su/Mo: 08-May-2010	Ma/Su/Ma: 19-May-2010	Ma/Su/Ra: 27-May-2010	Ma/Su/Ju: 15-Jun-2010	Ma/Su/Sa: 02-Jul-2010	Ma/Su/Me: 22-Jul-2010	Ma/Su/Ke: 09-Aug-2010	Ma/Su/Ve: 17-Aug-2010	
+Ma/Mo/Mo: 07-Sep-2010	Ma/Mo/Ma: 25-Sep-2010	Ma/Mo/Ra: 07-Oct-2010	Ma/Mo/Ju: 08-Nov-2010	Ma/Mo/Sa: 07-Dec-2010	Ma/Mo/Me: 10-Jan-2011	Ma/Mo/Ke: 09-Feb-2011	Ma/Mo/Ve: 21-Feb-2011	Ma/Mo/Su: 28-Mar-2011	
+
+Ra/Ra/Ra: 08-Apr-2011	Ra/Ra/Ju: 03-Sep-2011	Ra/Ra/Sa: 13-Jan-2012	Ra/Ra/Me: 17-Jun-2012	Ra/Ra/Ke: 04-Nov-2012	Ra/Ra/Ve: 01-Jan-2013	Ra/Ra/Su: 13-Jun-2013	Ra/Ra/Mo: 02-Aug-2013	Ra/Ra/Ma: 23-Oct-2013	
+Ra/Ju/Ju: 20-Dec-2013	Ra/Ju/Sa: 15-Apr-2014	Ra/Ju/Me: 01-Sep-2014	Ra/Ju/Ke: 03-Jan-2015	Ra/Ju/Ve: 24-Feb-2015	Ra/Ju/Su: 19-Jul-2015	Ra/Ju/Mo: 01-Sep-2015	Ra/Ju/Ma: 13-Nov-2015	Ra/Ju/Ra: 03-Jan-2016	
+Ra/Sa/Sa: 14-May-2016	Ra/Sa/Me: 26-Oct-2016	Ra/Sa/Ke: 22-Mar-2017	Ra/Sa/Ve: 22-May-2017	Ra/Sa/Su: 12-Nov-2017	Ra/Sa/Mo: 03-Jan-2018	Ra/Sa/Ma: 30-Mar-2018	Ra/Sa/Ra: 30-May-2018	Ra/Sa/Ju: 02-Nov-2018	
+Ra/Me/Me: 20-Mar-2019	Ra/Me/Ke: 31-Jul-2019	Ra/Me/Ve: 23-Sep-2019	Ra/Me/Su: 26-Feb-2020	Ra/Me/Mo: 12-Apr-2020	Ra/Me/Ma: 29-Jun-2020	Ra/Me/Ra: 22-Aug-2020	Ra/Me/Ju: 09-Jan-2021	Ra/Me/Sa: 13-May-2021	
+Ra/Ke/Ke: 08-Oct-2021	Ra/Ke/Ve: 30-Oct-2021	Ra/Ke/Su: 02-Jan-2022	Ra/Ke/Mo: 21-Jan-2022	Ra/Ke/Ma: 22-Feb-2022	Ra/Ke/Ra: 16-Mar-2022	Ra/Ke/Ju: 12-May-2022	Ra/Ke/Sa: 03-Jul-2022	Ra/Ke/Me: 01-Sep-2022	
+Ra/Ve/Ve: 26-Oct-2022	Ra/Ve/Su: 26-Apr-2023	Ra/Ve/Mo: 20-Jun-2023	Ra/Ve/Ma: 19-Sep-2023	Ra/Ve/Ra: 22-Nov-2023	Ra/Ve/Ju: 05-May-2024	Ra/Ve/Sa: 28-Sep-2024	Ra/Ve/Me: 20-Mar-2025	Ra/Ve/Ke: 23-Aug-2025	
+Ra/Su/Su: 26-Oct-2025	Ra/Su/Mo: 11-Nov-2025	Ra/Su/Ma: 09-Dec-2025	Ra/Su/Ra: 28-Dec-2025	Ra/Su/Ju: 15-Feb-2026	Ra/Su/Sa: 30-Mar-2026	Ra/Su/Me: 22-May-2026	Ra/Su/Ke: 07-Jul-2026	Ra/Su/Ve: 26-Jul-2026	
+Ra/Mo/Mo: 19-Sep-2026	Ra/Mo/Ma: 04-Nov-2026	Ra/Mo/Ra: 06-Dec-2026	Ra/Mo/Ju: 26-Feb-2027	Ra/Mo/Sa: 10-May-2027	Ra/Mo/Me: 05-Aug-2027	Ra/Mo/Ke: 21-Oct-2027	Ra/Mo/Ve: 22-Nov-2027	Ra/Mo/Su: 22-Feb-2028	
+Ra/Ma/Ma: 20-Mar-2028	Ra/Ma/Ra: 12-Apr-2028	Ra/Ma/Ju: 08-Jun-2028	Ra/Ma/Sa: 30-Jul-2028	Ra/Ma/Me: 28-Sep-2028	Ra/Ma/Ke: 22-Nov-2028	Ra/Ma/Ve: 14-Dec-2028	Ra/Ma/Su: 16-Feb-2029	Ra/Ma/Mo: 07-Mar-2029	
+
+Ju/Ju/Ju: 08-Apr-2029	Ju/Ju/Sa: 21-Jul-2029	Ju/Ju/Me: 21-Nov-2029	Ju/Ju/Ke: 11-Mar-2030	Ju/Ju/Ve: 26-Apr-2030	Ju/Ju/Su: 03-Sep-2030	Ju/Ju/Mo: 12-Oct-2030	Ju/Ju/Ma: 16-Dec-2030	Ju/Ju/Ra: 30-Jan-2031	
+Ju/Sa/Sa: 26-May-2031	Ju/Sa/Me: 20-Oct-2031	Ju/Sa/Ke: 01-Mar-2032	Ju/Sa/Ve: 23-Apr-2032	Ju/Sa/Su: 24-Sep-2032	Ju/Sa/Mo: 10-Nov-2032	Ju/Sa/Ma: 26-Jan-2033	Ju/Sa/Ra: 20-Mar-2033	Ju/Sa/Ju: 06-Aug-2033	
+Ju/Me/Me: 08-Dec-2033	Ju/Me/Ke: 03-Apr-2034	Ju/Me/Ve: 22-May-2034	Ju/Me/Su: 07-Oct-2034	Ju/Me/Mo: 17-Nov-2034	Ju/Me/Ma: 25-Jan-2035	Ju/Me/Ra: 14-Mar-2035	Ju/Me/Ju: 16-Jul-2035	Ju/Me/Sa: 04-Nov-2035	
+Ju/Ke/Ke: 14-Mar-2036	Ju/Ke/Ve: 03-Apr-2036	Ju/Ke/Su: 30-May-2036	Ju/Ke/Mo: 16-Jun-2036	Ju/Ke/Ma: 15-Jul-2036	Ju/Ke/Ra: 04-Aug-2036	Ju/Ke/Ju: 24-Sep-2036	Ju/Ke/Sa: 08-Nov-2036	Ju/Ke/Me: 01-Jan-2037	
+Ju/Ve/Ve: 19-Feb-2037	Ju/Ve/Su: 30-Jul-2037	Ju/Ve/Mo: 17-Sep-2037	Ju/Ve/Ma: 08-Dec-2037	Ju/Ve/Ra: 03-Feb-2038	Ju/Ve/Ju: 28-Jun-2038	Ju/Ve/Sa: 05-Nov-2038	Ju/Ve/Me: 08-Apr-2039	Ju/Ve/Ke: 24-Aug-2039	
+Ju/Su/Su: 20-Oct-2039	Ju/Su/Mo: 03-Nov-2039	Ju/Su/Ma: 28-Nov-2039	Ju/Su/Ra: 15-Dec-2039	Ju/Su/Ju: 28-Jan-2040	Ju/Su/Sa: 07-Mar-2040	Ju/Su/Me: 22-Apr-2040	Ju/Su/Ke: 03-Jun-2040	Ju/Su/Ve: 20-Jun-2040	
+Ju/Mo/Mo: 08-Aug-2040	Ju/Mo/Ma: 17-Sep-2040	Ju/Mo/Ra: 16-Oct-2040	Ju/Mo/Ju: 28-Dec-2040	Ju/Mo/Sa: 02-Mar-2041	Ju/Mo/Me: 18-May-2041	Ju/Mo/Ke: 26-Jul-2041	Ju/Mo/Ve: 24-Aug-2041	Ju/Mo/Su: 13-Nov-2041	
+Ju/Ma/Ma: 08-Dec-2041	Ju/Ma/Ra: 28-Dec-2041	Ju/Ma/Ju: 17-Feb-2042	Ju/Ma/Sa: 02-Apr-2042	Ju/Ma/Me: 26-May-2042	Ju/Ma/Ke: 14-Jul-2042	Ju/Ma/Ve: 03-Aug-2042	Ju/Ma/Su: 29-Sep-2042	Ju/Ma/Mo: 16-Oct-2042	
+Ju/Ra/Ra: 13-Nov-2042	Ju/Ra/Ju: 24-Mar-2043	Ju/Ra/Sa: 19-Jul-2043	Ju/Ra/Me: 05-Dec-2043	Ju/Ra/Ke: 08-Apr-2044	Ju/Ra/Ve: 29-May-2044	Ju/Ra/Su: 22-Oct-2044	Ju/Ra/Mo: 05-Dec-2044	Ju/Ra/Ma: 16-Feb-2045	
+
+Sa/Sa/Sa: 08-Apr-2045	Sa/Sa/Me: 29-Sep-2045	Sa/Sa/Ke: 03-Mar-2046	Sa/Sa/Ve: 06-May-2046	Sa/Sa/Su: 06-Nov-2046	Sa/Sa/Mo: 31-Dec-2046	Sa/Sa/Ma: 31-Mar-2047	Sa/Sa/Ra: 04-Jun-2047	Sa/Sa/Ju: 16-Nov-2047	
+Sa/Me/Me: 11-Apr-2048	Sa/Me/Ke: 28-Aug-2048	Sa/Me/Ve: 25-Oct-2048	Sa/Me/Su: 06-Apr-2049	Sa/Me/Mo: 25-May-2049	Sa/Me/Ma: 15-Aug-2049	Sa/Me/Ra: 12-Oct-2049	Sa/Me/Ju: 07-Mar-2050	Sa/Me/Sa: 17-Jul-2050	
+Sa/Ke/Ke: 20-Dec-2050	Sa/Ke/Ve: 12-Jan-2051	Sa/Ke/Su: 20-Mar-2051	Sa/Ke/Mo: 09-Apr-2051	Sa/Ke/Ma: 13-May-2051	Sa/Ke/Ra: 06-Jun-2051	Sa/Ke/Ju: 06-Aug-2051	Sa/Ke/Sa: 29-Sep-2051	Sa/Ke/Me: 02-Dec-2051	
+Sa/Ve/Ve: 28-Jan-2052	Sa/Ve/Su: 09-Aug-2052	Sa/Ve/Mo: 06-Oct-2052	Sa/Ve/Ma: 10-Jan-2053	Sa/Ve/Ra: 18-Mar-2053	Sa/Ve/Ju: 08-Sep-2053	Sa/Ve/Sa: 09-Feb-2054	Sa/Ve/Me: 11-Aug-2054	Sa/Ve/Ke: 22-Jan-2055	
+Sa/Su/Su: 29-Mar-2055	Sa/Su/Mo: 16-Apr-2055	Sa/Su/Ma: 15-May-2055	Sa/Su/Ra: 04-Jun-2055	Sa/Su/Ju: 26-Jul-2055	Sa/Su/Sa: 11-Sep-2055	Sa/Su/Me: 05-Nov-2055	Sa/Su/Ke: 24-Dec-2055	Sa/Su/Ve: 13-Jan-2056	
+Sa/Mo/Mo: 11-Mar-2056	Sa/Mo/Ma: 28-Apr-2056	Sa/Mo/Ra: 01-Jun-2056	Sa/Mo/Ju: 27-Aug-2056	Sa/Mo/Sa: 12-Nov-2056	Sa/Mo/Me: 12-Feb-2057	Sa/Mo/Ke: 04-May-2057	Sa/Mo/Ve: 07-Jun-2057	Sa/Mo/Su: 12-Sep-2057	
+Sa/Ma/Ma: 11-Oct-2057	Sa/Ma/Ra: 03-Nov-2057	Sa/Ma/Ju: 03-Jan-2058	Sa/Ma/Sa: 26-Feb-2058	Sa/Ma/Me: 30-Apr-2058	Sa/Ma/Ke: 27-Jun-2058	Sa/Ma/Ve: 21-Jul-2058	Sa/Ma/Su: 26-Sep-2058	Sa/Ma/Mo: 17-Oct-2058	
+Sa/Ra/Ra: 19-Nov-2058	Sa/Ra/Ju: 24-Apr-2059	Sa/Ra/Sa: 10-Sep-2059	Sa/Ra/Me: 22-Feb-2060	Sa/Ra/Ke: 19-Jul-2060	Sa/Ra/Ve: 18-Sep-2060	Sa/Ra/Su: 09-Mar-2061	Sa/Ra/Mo: 01-May-2061	Sa/Ra/Ma: 27-Jul-2061	
+Sa/Ju/Ju: 25-Sep-2061	Sa/Ju/Sa: 27-Jan-2062	Sa/Ju/Me: 22-Jun-2062	Sa/Ju/Ke: 31-Oct-2062	Sa/Ju/Ve: 24-Dec-2062	Sa/Ju/Su: 27-May-2063	Sa/Ju/Mo: 12-Jul-2063	Sa/Ju/Ma: 27-Sep-2063	Sa/Ju/Ra: 21-Nov-2063	
+
+Me/Me/Me: 08-Apr-2064	Me/Me/Ke: 10-Aug-2064	Me/Me/Ve: 01-Oct-2064	Me/Me/Su: 25-Feb-2065	Me/Me/Mo: 09-Apr-2065	Me/Me/Ma: 21-Jun-2065	Me/Me/Ra: 12-Aug-2065	Me/Me/Ju: 22-Dec-2065	Me/Me/Sa: 18-Apr-2066	
+Me/Ke/Ke: 04-Sep-2066	Me/Ke/Ve: 25-Sep-2066	Me/Ke/Su: 25-Nov-2066	Me/Ke/Mo: 13-Dec-2066	Me/Ke/Ma: 12-Jan-2067	Me/Ke/Ra: 02-Feb-2067	Me/Ke/Ju: 28-Mar-2067	Me/Ke/Sa: 15-May-2067	Me/Ke/Me: 12-Jul-2067	
+Me/Ve/Ve: 01-Sep-2067	Me/Ve/Su: 21-Feb-2068	Me/Ve/Mo: 13-Apr-2068	Me/Ve/Ma: 08-Jul-2068	Me/Ve/Ra: 07-Sep-2068	Me/Ve/Ju: 09-Feb-2069	Me/Ve/Sa: 26-Jun-2069	Me/Ve/Me: 08-Dec-2069	Me/Ve/Ke: 03-May-2070	
+Me/Su/Su: 02-Jul-2070	Me/Su/Mo: 18-Jul-2070	Me/Su/Ma: 12-Aug-2070	Me/Su/Ra: 31-Aug-2070	Me/Su/Ju: 16-Oct-2070	Me/Su/Sa: 27-Nov-2070	Me/Su/Me: 15-Jan-2071	Me/Su/Ke: 01-Mar-2071	Me/Su/Ve: 17-Mar-2071	
+Me/Mo/Mo: 08-May-2071	Me/Mo/Ma: 20-Jun-2071	Me/Mo/Ra: 21-Jul-2071	Me/Mo/Ju: 06-Oct-2071	Me/Mo/Sa: 14-Dec-2071	Me/Mo/Me: 06-Mar-2072	Me/Mo/Ke: 18-May-2072	Me/Mo/Ve: 17-Jun-2072	Me/Mo/Su: 12-Sep-2072	
+Me/Ma/Ma: 08-Oct-2072	Me/Ma/Ra: 29-Oct-2072	Me/Ma/Ju: 22-Dec-2072	Me/Ma/Sa: 09-Feb-2073	Me/Ma/Me: 06-Apr-2073	Me/Ma/Ke: 28-May-2073	Me/Ma/Ve: 18-Jun-2073	Me/Ma/Su: 17-Aug-2073	Me/Ma/Mo: 04-Sep-2073	
+Me/Ra/Ra: 05-Oct-2073	Me/Ra/Ju: 22-Feb-2074	Me/Ra/Sa: 25-Jun-2074	Me/Ra/Me: 20-Nov-2074	Me/Ra/Ke: 31-Mar-2075	Me/Ra/Ve: 24-May-2075	Me/Ra/Su: 27-Oct-2075	Me/Ra/Mo: 13-Dec-2075	Me/Ra/Ma: 01-Mar-2076	
+Me/Ju/Ju: 23-Apr-2076	Me/Ju/Sa: 11-Aug-2076	Me/Ju/Me: 21-Dec-2076	Me/Ju/Ke: 16-Apr-2077	Me/Ju/Ve: 04-Jun-2077	Me/Ju/Su: 20-Oct-2077	Me/Ju/Mo: 30-Nov-2077	Me/Ju/Ma: 08-Feb-2078	Me/Ju/Ra: 27-Mar-2078	
+Me/Sa/Sa: 29-Jul-2078	Me/Sa/Me: 01-Jan-2079	Me/Sa/Ke: 20-May-2079	Me/Sa/Ve: 16-Jul-2079	Me/Sa/Su: 28-Dec-2079	Me/Sa/Mo: 15-Feb-2080	Me/Sa/Ma: 07-May-2080	Me/Sa/Ra: 03-Jul-2080	Me/Sa/Ju: 28-Nov-2080	
+
+Ke/Ke/Ke: 08-Apr-2081	Ke/Ke/Ve: 16-Apr-2081	Ke/Ke/Su: 11-May-2081	Ke/Ke/Mo: 19-May-2081	Ke/Ke/Ma: 31-May-2081	Ke/Ke/Ra: 09-Jun-2081	Ke/Ke/Ju: 01-Jul-2081	Ke/Ke/Sa: 21-Jul-2081	Ke/Ke/Me: 14-Aug-2081	
+Ke/Ve/Ve: 04-Sep-2081	Ke/Ve/Su: 14-Nov-2081	Ke/Ve/Mo: 06-Dec-2081	Ke/Ve/Ma: 10-Jan-2082	Ke/Ve/Ra: 04-Feb-2082	Ke/Ve/Ju: 08-Apr-2082	Ke/Ve/Sa: 04-Jun-2082	Ke/Ve/Me: 11-Aug-2082	Ke/Ve/Ke: 10-Oct-2082	
+Ke/Su/Su: 04-Nov-2082	Ke/Su/Mo: 10-Nov-2082	Ke/Su/Ma: 21-Nov-2082	Ke/Su/Ra: 29-Nov-2082	Ke/Su/Ju: 18-Dec-2082	Ke/Su/Sa: 04-Jan-2083	Ke/Su/Me: 24-Jan-2083	Ke/Su/Ke: 11-Feb-2083	Ke/Su/Ve: 19-Feb-2083	
+Ke/Mo/Mo: 11-Mar-2083	Ke/Mo/Ma: 29-Mar-2083	Ke/Mo/Ra: 10-Apr-2083	Ke/Mo/Ju: 12-May-2083	Ke/Mo/Sa: 10-Jun-2083	Ke/Mo/Me: 14-Jul-2083	Ke/Mo/Ke: 13-Aug-2083	Ke/Mo/Ve: 25-Aug-2083	Ke/Mo/Su: 30-Sep-2083	
+Ke/Ma/Ma: 11-Oct-2083	Ke/Ma/Ra: 19-Oct-2083	Ke/Ma/Ju: 11-Nov-2083	Ke/Ma/Sa: 01-Dec-2083	Ke/Ma/Me: 24-Dec-2083	Ke/Ma/Ke: 15-Jan-2084	Ke/Ma/Ve: 23-Jan-2084	Ke/Ma/Su: 17-Feb-2084	Ke/Ma/Mo: 25-Feb-2084	
+Ke/Ra/Ra: 08-Mar-2084	Ke/Ra/Ju: 05-May-2084	Ke/Ra/Sa: 25-Jun-2084	Ke/Ra/Me: 25-Aug-2084	Ke/Ra/Ke: 18-Oct-2084	Ke/Ra/Ve: 10-Nov-2084	Ke/Ra/Su: 13-Jan-2085	Ke/Ra/Mo: 01-Feb-2085	Ke/Ra/Ma: 04-Mar-2085	
+Ke/Ju/Ju: 26-Mar-2085	Ke/Ju/Sa: 11-May-2085	Ke/Ju/Me: 04-Jul-2085	Ke/Ju/Ke: 21-Aug-2085	Ke/Ju/Ve: 10-Sep-2085	Ke/Ju/Su: 06-Nov-2085	Ke/Ju/Mo: 23-Nov-2085	Ke/Ju/Ma: 22-Dec-2085	Ke/Ju/Ra: 11-Jan-2086	
+Ke/Sa/Sa: 02-Mar-2086	Ke/Sa/Me: 05-May-2086	Ke/Sa/Ke: 02-Jul-2086	Ke/Sa/Ve: 25-Jul-2086	Ke/Sa/Su: 01-Oct-2086	Ke/Sa/Mo: 21-Oct-2086	Ke/Sa/Ma: 24-Nov-2086	Ke/Sa/Ra: 18-Dec-2086	Ke/Sa/Ju: 17-Feb-2087	
+Ke/Me/Me: 11-Apr-2087	Ke/Me/Ke: 01-Jun-2087	Ke/Me/Ve: 22-Jun-2087	Ke/Me/Su: 22-Aug-2087	Ke/Me/Mo: 09-Sep-2087	Ke/Me/Ma: 09-Oct-2087	Ke/Me/Ra: 30-Oct-2087	Ke/Me/Ju: 24-Dec-2087	Ke/Me/Sa: 10-Feb-2088	
+
+
+
+
+
+
+
+
+
+
+
+----------------------Viji----------------------
+Sun --> 110 : 54 : 36 Dir -->false
+Moon --> 317 : 20 : 13 Dir -->false
+Mars --> 188 : 39 : 21 Dir -->false
+Mercury --> 124 : 05 : 55 Dir -->false
+Jupiter --> 189 : 15 : 26 Dir -->false
+Venus --> 87 : 43 : 10 Dir -->false
+Saturn --> 173 : 57 : 24 Dir -->false
+Rahu --> 79 : 31 : 36 Dir -->false
+Ketu --> 259 : 31 : 36 Dir -->false
+Sun --> 192 : 56 : 22 Dir -->false
+
+cp Sa/Me/Ve
+Bhava
+0 --> 00 : 00 : 00 sandi 178 : 16 : 46
+1 --> 192 : 56 : 22 sandi 207 : 37 : 43
+2 --> 222 : 19 : 05 sandi 236 : 49 : 14
+3 --> 251 : 19 : 24 sandi 266 : 12 : 00
+4 --> 281 : 04 : 35 sandi 296 : 40 : 01
+5 --> 312 : 15 : 27 sandi 327 : 56 : 18
+6 --> 343 : 37 : 10 sandi 358 : 16 : 46
+7 --> 12 : 56 : 22 sandi 27 : 37 : 43
+8 --> 42 : 19 : 05 sandi 56 : 49 : 14
+9 --> 71 : 19 : 24 sandi 86 : 12 : 00
+10 --> 101 : 04 : 35 sandi 116 : 40 : 01
+11 --> 132 : 15 : 27 sandi 147 : 56 : 18
+12 --> 163 : 37 : 10 sandi 178 : 16 : 46
+
+Sun --> Kataka - 4
+Moon --> Kumbha - 11
+Mars --> Thula - 7
+Mercury --> Simha - 5
+Jupiter --> Thula - 7
+Venus --> Mithuna - 3
+Saturn --> Kanya - 6
+Rahu --> Mithuna - 3
+Ketu --> Dhanus - 9
+Sun --> Thula - 7
+
+Thithi Thrithiyai Paksha Krishna
+0 --> 5<--> BhratruKaraka
+1 --> 6<--> MatruKaraka
+2 --> 0<--> GnatiKaraka
+3 --> 1<--> DaraKaraka
+4 --> 4<--> PuthraKaraka
+5 --> 2<--> AtmaKaraka
+6 --> 3<--> AmatyaKaraka
+Charts
+Rasi -> 4 , 11 , 7 , 5 , 7 , 3 , 6 , 3 , 9 , 7 , 
+Hora -> 5 , 4 , 5 , 5 , 5 , 4 , 5 , 4 , 4 , 5 , 
+Drekkana -> 12 , 3 , 7 , 5 , 7 , 11 , 2 , 7 , 1 , 11 , 
+Chaturtamsa -> 10 , 5 , 10 , 5 , 10 , 12 , 3 , 9 , 3 , 10 , 
+Navamsa -> 10 , 12 , 9 , 2 , 9 , 3 , 5 , 12 , 6 , 10 , 
+Saptamsa -> 2 , 3 , 9 , 5 , 9 , 9 , 5 , 7 , 1 , 10 , 
+Dasamsa -> 6 , 4 , 9 , 6 , 10 , 12 , 9 , 9 , 3 , 11 , 
+Dwadasamsa -> 12 , 5 , 10 , 6 , 10 , 2 , 3 , 10 , 4 , 12 , 
+Shodasamsa -> 12 , 2 , 5 , 7 , 5 , 11 , 9 , 7 , 7 , 7 , 
+Vimshamsa -> 2 , 8 , 6 , 11 , 7 , 11 , 8 , 6 , 6 , 9 , 
+ChaturVimshamsa -> 8 , 6 , 11 , 8 , 12 , 3 , 11 , 8 , 8 , 3 , 
+Bhamsa -> 4 , 10 , 2 , 4 , 3 , 7 , 1 , 12 , 6 , 6 , 
+Trimshamsa -> 10 , 9 , 11 , 1 , 11 , 7 , 10 , 3 , 3 , 9 , 
+Khavedamsa -> 10 , 12 , 12 , 6 , 1 , 1 , 2 , 3 , 3 , 6 , 
+Akshvedamsa -> 8 , 7 , 1 , 11 , 2 , 2 , 8 , 2 , 2 , 8 , 
+Shastiamsa -> 9 , 9 , 12 , 1 , 1 , 10 , 5 , 6 , 12 , 8 , 
+Panchamsa -> 10 , 9 , 11 , 1 , 11 , 7 , 10 , 3 , 3 , 9 , 
+Shashtamsa -> 11 , 4 , 2 , 1 , 2 , 6 , 11 , 4 , 4 , 3 , 
+Ashtamsa -> 6 , 9 , 3 , 6 , 3 , 4 , 3 , 2 , 2 , 4 , 
+Ekadamsa -> 5 , 6 , 9 , 11 , 9 , 2 , 4 , 5 , 5 , 8 , 
+Bhava -> 4 , 11 , 7 , 5 , 7 , 4 , 6 , 3 , 9 , 7 , 
+
+Ashtavarga
+Sun  Astavarga 
+Mesha -->  5
+Vrishabha -->  5
+Mithuna -->  4
+Kataka -->  6
+Simha -->  4
+Kanya -->  2
+Thula -->  4
+Vrichika -->  3
+Dhanus -->  5
+Makara -->  4
+Kumbha -->  2
+Meena -->  4
+Sum 48
+RasiGuna 79 , GrahaGuna 65 , Moon  Astavarga 
+Mesha -->  4
+Vrishabha -->  3
+Mithuna -->  2
+Kataka -->  5
+Simha -->  6
+Kanya -->  3
+Thula -->  3
+Vrichika -->  4
+Dhanus -->  6
+Makara -->  3
+Kumbha -->  6
+Meena -->  4
+Sum 49
+RasiGuna 93 , GrahaGuna 53 , Mars  Astavarga 
+Mesha -->  5
+Vrishabha -->  4
+Mithuna -->  2
+Kataka -->  5
+Simha -->  3
+Kanya -->  3
+Thula -->  3
+Vrichika -->  3
+Dhanus -->  5
+Makara -->  3
+Kumbha -->  0
+Meena -->  3
+Sum 39
+RasiGuna 77 , GrahaGuna 78 , Bhuda  Astavarga 
+Mesha -->  4
+Vrishabha -->  7
+Mithuna -->  5
+Kataka -->  6
+Simha -->  5
+Kanya -->  4
+Thula -->  5
+Vrichika -->  4
+Dhanus -->  4
+Makara -->  4
+Kumbha -->  1
+Meena -->  5
+Sum 54
+RasiGuna 90 , GrahaGuna 115 , Guru  Astavarga 
+Mesha -->  6
+Vrishabha -->  4
+Mithuna -->  3
+Kataka -->  5
+Simha -->  7
+Kanya -->  2
+Thula -->  6
+Vrichika -->  6
+Dhanus -->  3
+Makara -->  6
+Kumbha -->  4
+Meena -->  4
+Sum 56
+RasiGuna 111 , GrahaGuna 84 , Sukra  Astavarga 
+Mesha -->  4
+Vrishabha -->  5
+Mithuna -->  8
+Kataka -->  3
+Simha -->  4
+Kanya -->  3
+Thula -->  4
+Vrichika -->  2
+Dhanus -->  5
+Makara -->  5
+Kumbha -->  6
+Meena -->  3
+Sum 52
+RasiGuna 78 , GrahaGuna 43 , Sani  Astavarga 
+Mesha -->  4
+Vrishabha -->  3
+Mithuna -->  1
+Kataka -->  6
+Simha -->  4
+Kanya -->  2
+Thula -->  2
+Vrichika -->  2
+Dhanus -->  3
+Makara -->  4
+Kumbha -->  4
+Meena -->  4
+Sum 39
+RasiGuna 97 , GrahaGuna 58 , Asc  Astavarga 
+Mesha -->  32
+Vrishabha -->  31
+Mithuna -->  25
+Kataka -->  36
+Simha -->  33
+Kanya -->  19
+Thula -->  27
+Vrichika -->  24
+Dhanus -->  31
+Makara -->  29
+Kumbha -->  23
+Meena -->  27
+Sum 337
+RasiGuna 161 , GrahaGuna 106 , 
+Total 674
+ShadBala 
+Sun --> 10
+Sun --> 36.92487798230095
+OchachaBala:-->Sun :-> 26.363254860491057
+OjaYugmarasyamsaBala:-->Sun :-> 0.0
+KendraBala:-->Sun :-> 60.0
+DrekkanaBala:-->Sun :-> 0.0
+SapthavargaBala:-->Sun :-> 105.0
+SthanaBala:-->Sun :-> 191.36325486049105
+DigBala:-->Sun :-> 56.72209154929592
+NaisargikaBala:-->Sun :-> 60.0
+AbdaBala:-->Sun :-> 0.0
+MasaBala:-->Sun :-> 0.0
+VaraBala:-->Sun :-> 0.0
+PakshaBala:-->Sun :-> 8.80899347103864
+TribhagaBala:-->Sun :-> 60.0
+HoraBala:-->Sun :-> 0.0
+NatonnataBala:-->Sun :-> 59.23096926472135
+AyanaBala:-->Sun :-> 102.12518134773808
+YuddhaBala:-->Sun :-> 0.0
+KalaBala:-->Sun :-> 230.16514408349806
+DrikBala:-->Sun :-> -13.34211781853179
+ChestaBala:-->Sun :-> 45.19077017681597
+IshtaBala:-->Sun :-> 34.516311962799236
+KashtaBala:-->Sun :-> 22.31892222475934
+ShadBala:-->Sun :-> 8.748472877912555
+ShadBala Per:-->Sun :-> 174.9694575582511
+ShadBala Rank:-->Sun :-> 0
+Moon --> 5
+Moon --> 67.60607661310657
+OchachaBala:-->Moon :-> 34.77907194388092
+OjaYugmarasyamsaBala:-->Moon :-> 15.0
+KendraBala:-->Moon :-> 30.0
+DrekkanaBala:-->Moon :-> 0.0
+SapthavargaBala:-->Moon :-> 63.75
+SthanaBala:-->Moon :-> 143.52907194388092
+DigBala:-->Moon :-> 47.913098078257256
+NaisargikaBala:-->Moon :-> 51.43
+AbdaBala:-->Moon :-> 0.0
+MasaBala:-->Moon :-> 0.0
+VaraBala:-->Moon :-> 0.0
+PakshaBala:-->Moon :-> 17.61798694207728
+TribhagaBala:-->Moon :-> 0.0
+HoraBala:-->Moon :-> 0.0
+NatonnataBala:-->Moon :-> 0.7690307352786476
+AyanaBala:-->Moon :-> 39.50494106945862
+YuddhaBala:-->Moon :-> 0.0
+KalaBala:-->Moon :-> 57.891958746814545
+DrikBala:-->Moon :-> 16.441876308443835
+ChestaBala:-->Moon :-> 51.19100652896136
+IshtaBala:-->Moon :-> 42.19449844411503
+KashtaBala:-->Moon :-> 14.905401389425519
+ShadBala:-->Moon :-> 5.286766751289943
+ShadBala Per:-->Moon :-> 88.11277918816572
+ShadBala Rank:-->Moon :-> 6
+Mars --> 1
+Mars --> 70.77961245497112
+OchachaBala:-->Mars :-> 23.551944829324366
+OjaYugmarasyamsaBala:-->Mars :-> 30.0
+KendraBala:-->Mars :-> 60.0
+DrekkanaBala:-->Mars :-> 15.0
+SapthavargaBala:-->Mars :-> 75.0
+SthanaBala:-->Mars :-> 203.55194482932438
+DigBala:-->Mars :-> 30.806891859480498
+NaisargikaBala:-->Mars :-> 17.14
+AbdaBala:-->Mars :-> 0.0
+MasaBala:-->Mars :-> 0.0
+VaraBala:-->Mars :-> 0.0
+PakshaBala:-->Mars :-> 8.80899347103864
+TribhagaBala:-->Mars :-> 0.0
+HoraBala:-->Mars :-> 0.0
+NatonnataBala:-->Mars :-> 0.7690307352786476
+AyanaBala:-->Mars :-> 14.451648231721519
+YuddhaBala:-->Mars :-> 0.8872602350931613
+KalaBala:-->Mars :-> 24.91693267313197
+DrikBala:-->Mars :-> -1.9992940315122176
+ChestaBala:-->Mars :-> 34.20403951239329
+IshtaBala:-->Mars :-> 28.382594165014538
+KashtaBala:-->Mars :-> 30.662886214980777
+ShadBala:-->Mars :-> 5.143675247380299
+ShadBala Per:-->Mars :-> 102.873504947606
+ShadBala Rank:-->Mars :-> 5
+Mercury --> 11
+Mercury --> 47.6675266129707
+OchachaBala:-->Mercury :-> 46.36620406115922
+OjaYugmarasyamsaBala:-->Mercury :-> 15.0
+KendraBala:-->Mercury :-> 30.0
+DrekkanaBala:-->Mercury :-> 0.0
+SapthavargaBala:-->Mercury :-> 157.5
+SthanaBala:-->Mercury :-> 248.86620406115924
+DigBala:-->Mercury :-> 37.05302766625307
+NaisargikaBala:-->Mercury :-> 25.7
+AbdaBala:-->Mercury :-> 0.0
+MasaBala:-->Mercury :-> 30.0
+VaraBala:-->Mercury :-> 0.0
+PakshaBala:-->Mercury :-> 51.19100652896136
+TribhagaBala:-->Mercury :-> 0.0
+HoraBala:-->Mercury :-> 60.0
+NatonnataBala:-->Mercury :-> 60.0
+AyanaBala:-->Mercury :-> 45.63582804983836
+YuddhaBala:-->Mercury :-> 0.0
+KalaBala:-->Mercury :-> 246.82683457879972
+DrikBala:-->Mercury :-> -7.508118396361613
+ChestaBala:-->Mercury :-> 11.361006483671778
+IshtaBala:-->Mercury :-> 22.9513996296975
+KashtaBala:-->Mercury :-> 25.751390492014572
+ShadBala:-->Mercury :-> 9.371649239892037
+ShadBala Per:-->Mercury :-> 133.8807034270291
+ShadBala Rank:-->Mercury :-> 2
+Jupiter --> 1
+Jupiter --> 74.88360389557587
+OchachaBala:-->Jupiter :-> 28.580840783203694
+OjaYugmarasyamsaBala:-->Jupiter :-> 30.0
+KendraBala:-->Jupiter :-> 60.0
+DrekkanaBala:-->Jupiter :-> 15.0
+SapthavargaBala:-->Jupiter :-> 116.25
+SthanaBala:-->Jupiter :-> 249.83084078320368
+DigBala:-->Jupiter :-> 58.772649488556816
+NaisargikaBala:-->Jupiter :-> 34.28
+AbdaBala:-->Jupiter :-> 0.0
+MasaBala:-->Jupiter :-> 0.0
+VaraBala:-->Jupiter :-> 0.0
+PakshaBala:-->Jupiter :-> 51.19100652896136
+TribhagaBala:-->Jupiter :-> 60.0
+HoraBala:-->Jupiter :-> 0.0
+NatonnataBala:-->Jupiter :-> 59.23096926472135
+AyanaBala:-->Jupiter :-> 14.201799196218282
+YuddhaBala:-->Jupiter :-> -0.8872602350931613
+KalaBala:-->Jupiter :-> 183.73651475480784
+DrikBala:-->Jupiter :-> -1.9992940315122176
+ChestaBala:-->Jupiter :-> 28.306158565568996
+IshtaBala:-->Jupiter :-> 28.443168092648275
+KashtaBala:-->Jupiter :-> 31.55620145423532
+ShadBala:-->Jupiter :-> 9.215447826010417
+ShadBala Per:-->Jupiter :-> 141.77612040016027
+ShadBala Rank:-->Jupiter :-> 1
+Venus --> 9
+Venus --> 10.214676416934838
+OchachaBala:-->Venus :-> 29.760127630184417
+OjaYugmarasyamsaBala:-->Venus :-> 0.0
+KendraBala:-->Venus :-> 15.0
+DrekkanaBala:-->Venus :-> 15.0
+SapthavargaBala:-->Venus :-> 133.125
+SthanaBala:-->Venus :-> 192.88512763018443
+DigBala:-->Venus :-> 4.452297652322599
+NaisargikaBala:-->Venus :-> 42.85
+AbdaBala:-->Venus :-> 15.0
+MasaBala:-->Venus :-> 0.0
+VaraBala:-->Venus :-> 0.0
+PakshaBala:-->Venus :-> 51.19100652896136
+TribhagaBala:-->Venus :-> 0.0
+HoraBala:-->Venus :-> 0.0
+NatonnataBala:-->Venus :-> 59.23096926472135
+AyanaBala:-->Venus :-> 57.61727684156833
+YuddhaBala:-->Venus :-> 0.0
+KalaBala:-->Venus :-> 183.03925263525105
+DrikBala:-->Venus :-> -11.858834994273764
+ChestaBala:-->Venus :-> 13.772307247970465
+IshtaBala:-->Venus :-> 20.24513821789604
+KashtaBala:-->Venus :-> 37.38876206525728
+ShadBala:-->Venus :-> 7.085669169524246
+ShadBala Per:-->Venus :-> 128.83034853680448
+ShadBala Rank:-->Venus :-> 3
+Saturn --> 12
+Saturn --> 29.487373552387574
+OchachaBala:-->Saturn :-> 51.318914260553555
+OjaYugmarasyamsaBala:-->Saturn :-> 15.0
+KendraBala:-->Saturn :-> 15.0
+DrekkanaBala:-->Saturn :-> 0.0
+SapthavargaBala:-->Saturn :-> 120.0
+SthanaBala:-->Saturn :-> 201.31891426055356
+DigBala:-->Saturn :-> 6.327595467685948
+NaisargikaBala:-->Saturn :-> 8.57
+AbdaBala:-->Saturn :-> 0.0
+MasaBala:-->Saturn :-> 0.0
+VaraBala:-->Saturn :-> 45.0
+PakshaBala:-->Saturn :-> 8.80899347103864
+TribhagaBala:-->Saturn :-> 0.0
+HoraBala:-->Saturn :-> 0.0
+NatonnataBala:-->Saturn :-> 0.7690307352786476
+AyanaBala:-->Saturn :-> 38.71347377770264
+YuddhaBala:-->Saturn :-> 0.0
+KalaBala:-->Saturn :-> 93.29149798401993
+DrikBala:-->Saturn :-> -2.14263822920487
+ChestaBala:-->Saturn :-> 19.82734865916865
+IshtaBala:-->Saturn :-> 31.898558052896018
+KashtaBala:-->Saturn :-> 18.67464137997421
+ShadBala:-->Saturn :-> 5.453211969037054
+ShadBala Per:-->Saturn :-> 109.06423938074109
+ShadBala Rank:-->Saturn :-> 4
+BhavaAdhipathiBala: 1 : -->7.085669169524246
+BhavaDigBala: 1 : -->60.0
+BhavaDrishtiBala: 1 : -->15.881393719418401
+BhavaBala: 1 : -->501.02154389087315
+BhavaBala Rank: 1 : -->5
+BhavaAdhipathiBala: 2 : -->5.143675247380299
+BhavaDigBala: 2 : -->10.0
+BhavaDrishtiBala: 2 : -->30.56659130394847
+BhavaBala: 2 : -->349.18710614676644
+BhavaBala Rank: 2 : -->10
+BhavaAdhipathiBala: 3 : -->9.215447826010417
+BhavaDigBala: 3 : -->40.0
+BhavaDrishtiBala: 3 : -->19.736093033237694
+BhavaBala: 3 : -->612.6629625938627
+BhavaBala Rank: 3 : -->2
+BhavaAdhipathiBala: 4 : -->5.453211969037054
+BhavaDigBala: 4 : -->0.0
+BhavaDrishtiBala: 4 : -->37.48608597219554
+BhavaBala: 4 : -->364.67880411441877
+BhavaBala Rank: 4 : -->9
+BhavaAdhipathiBala: 5 : -->5.453211969037054
+BhavaDigBala: 5 : -->20.0
+BhavaDrishtiBala: 5 : -->100.49730697194195
+BhavaBala: 5 : -->447.69002511416517
+BhavaBala Rank: 5 : -->7
+BhavaAdhipathiBala: 6 : -->9.215447826010417
+BhavaDigBala: 6 : -->40.0
+BhavaDrishtiBala: 6 : -->33.75162504287854
+BhavaBala: 6 : -->626.6784946035036
+BhavaBala Rank: 6 : -->0
+BhavaAdhipathiBala: 7 : -->5.143675247380299
+BhavaDigBala: 7 : -->30.0
+BhavaDrishtiBala: 7 : -->50.54770941192076
+BhavaBala: 7 : -->389.16822425473873
+BhavaBala Rank: 7 : -->8
+BhavaAdhipathiBala: 8 : -->7.085669169524246
+BhavaDigBala: 8 : -->40.0
+BhavaDrishtiBala: 8 : -->19.793673815456735
+BhavaBala: 8 : -->484.9338239869115
+BhavaBala Rank: 8 : -->6
+BhavaAdhipathiBala: 9 : -->9.371649239892037
+BhavaDigBala: 9 : -->20.0
+BhavaDrishtiBala: 9 : -->38.21957016385125
+BhavaBala: 9 : -->620.5185245573734
+BhavaBala Rank: 9 : -->1
+BhavaAdhipathiBala: 10 : -->5.286766751289943
+BhavaDigBala: 10 : -->0.0
+BhavaDrishtiBala: 10 : -->-3.7821372914204474
+BhavaBala: 10 : -->313.42386778597614
+BhavaBala Rank: 10 : -->11
+BhavaAdhipathiBala: 11 : -->8.748472877912555
+BhavaDigBala: 11 : -->50.0
+BhavaDrishtiBala: 11 : -->-10.64290865941284
+BhavaBala: 11 : -->564.2654640153405
+BhavaBala Rank: 11 : -->4
+BhavaAdhipathiBala: 12 : -->9.371649239892037
+BhavaDigBala: 12 : -->50.0
+BhavaDrishtiBala: 12 : -->-2.067863562136539
+BhavaBala: 12 : -->610.2310908313857
+BhavaBala Rank: 12 : -->3
+
+Dasas
+Ra/Ra/Ra: 13-Mar-1968	Ra/Ra/Ju: 07-Aug-1968	Ra/Ra/Sa: 17-Dec-1968	Ra/Ra/Me: 22-May-1969	Ra/Ra/Ke: 08-Oct-1969	Ra/Ra/Ve: 05-Dec-1969	Ra/Ra/Su: 18-May-1970	Ra/Ra/Mo: 06-Jul-1970	Ra/Ra/Ma: 27-Sep-1970	
+Ra/Ju/Ju: 23-Nov-1970	Ra/Ju/Sa: 20-Mar-1971	Ra/Ju/Me: 06-Aug-1971	Ra/Ju/Ke: 08-Dec-1971	Ra/Ju/Ve: 28-Jan-1972	Ra/Ju/Su: 23-Jun-1972	Ra/Ju/Mo: 06-Aug-1972	Ra/Ju/Ma: 18-Oct-1972	Ra/Ju/Ra: 08-Dec-1972	
+Ra/Sa/Sa: 18-Apr-1973	Ra/Sa/Me: 30-Sep-1973	Ra/Sa/Ke: 24-Feb-1974	Ra/Sa/Ve: 26-Apr-1974	Ra/Sa/Su: 16-Oct-1974	Ra/Sa/Mo: 07-Dec-1974	Ra/Sa/Ma: 04-Mar-1975	Ra/Sa/Ra: 04-May-1975	Ra/Sa/Ju: 07-Oct-1975	
+Ra/Me/Me: 22-Feb-1976	Ra/Me/Ke: 04-Jul-1976	Ra/Me/Ve: 27-Aug-1976	Ra/Me/Su: 30-Jan-1977	Ra/Me/Mo: 17-Mar-1977	Ra/Me/Ma: 03-Jun-1977	Ra/Me/Ra: 27-Jul-1977	Ra/Me/Ju: 14-Dec-1977	Ra/Me/Sa: 17-Apr-1978	
+Ra/Ke/Ke: 11-Sep-1978	Ra/Ke/Ve: 03-Oct-1978	Ra/Ke/Su: 06-Dec-1978	Ra/Ke/Mo: 25-Dec-1978	Ra/Ke/Ma: 26-Jan-1979	Ra/Ke/Ra: 18-Feb-1979	Ra/Ke/Ju: 16-Apr-1979	Ra/Ke/Sa: 06-Jun-1979	Ra/Ke/Me: 06-Aug-1979	
+Ra/Ve/Ve: 29-Sep-1979	Ra/Ve/Su: 31-Mar-1980	Ra/Ve/Mo: 25-May-1980	Ra/Ve/Ma: 24-Aug-1980	Ra/Ve/Ra: 27-Oct-1980	Ra/Ve/Ju: 09-Apr-1981	Ra/Ve/Sa: 02-Sep-1981	Ra/Ve/Me: 22-Feb-1982	Ra/Ve/Ke: 27-Jul-1982	
+Ra/Su/Su: 29-Sep-1982	Ra/Su/Mo: 16-Oct-1982	Ra/Su/Ma: 12-Nov-1982	Ra/Su/Ra: 01-Dec-1982	Ra/Su/Ju: 20-Jan-1983	Ra/Su/Sa: 04-Mar-1983	Ra/Su/Me: 25-Apr-1983	Ra/Su/Ke: 11-Jun-1983	Ra/Su/Ve: 30-Jun-1983	
+Ra/Mo/Mo: 24-Aug-1983	Ra/Mo/Ma: 08-Oct-1983	Ra/Mo/Ra: 09-Nov-1983	Ra/Mo/Ju: 31-Jan-1984	Ra/Mo/Sa: 14-Apr-1984	Ra/Mo/Me: 09-Jul-1984	Ra/Mo/Ke: 25-Sep-1984	Ra/Mo/Ve: 27-Oct-1984	Ra/Mo/Su: 26-Jan-1985	
+Ra/Ma/Ma: 22-Feb-1985	Ra/Ma/Ra: 17-Mar-1985	Ra/Ma/Ju: 13-May-1985	Ra/Ma/Sa: 03-Jul-1985	Ra/Ma/Me: 02-Sep-1985	Ra/Ma/Ke: 26-Oct-1985	Ra/Ma/Ve: 18-Nov-1985	Ra/Ma/Su: 20-Jan-1986	Ra/Ma/Mo: 09-Feb-1986	
+
+Ju/Ju/Ju: 13-Mar-1986	Ju/Ju/Sa: 24-Jun-1986	Ju/Ju/Me: 26-Oct-1986	Ju/Ju/Ke: 13-Feb-1987	Ju/Ju/Ve: 30-Mar-1987	Ju/Ju/Su: 07-Aug-1987	Ju/Ju/Mo: 15-Sep-1987	Ju/Ju/Ma: 19-Nov-1987	Ju/Ju/Ra: 03-Jan-1988	
+Ju/Sa/Sa: 30-Apr-1988	Ju/Sa/Me: 24-Sep-1988	Ju/Sa/Ke: 02-Feb-1989	Ju/Sa/Ve: 28-Mar-1989	Ju/Sa/Su: 29-Aug-1989	Ju/Sa/Mo: 14-Oct-1989	Ju/Sa/Ma: 30-Dec-1989	Ju/Sa/Ra: 22-Feb-1990	Ju/Sa/Ju: 11-Jul-1990	
+Ju/Me/Me: 11-Nov-1990	Ju/Me/Ke: 08-Mar-1991	Ju/Me/Ve: 25-Apr-1991	Ju/Me/Su: 10-Sep-1991	Ju/Me/Mo: 22-Oct-1991	Ju/Me/Ma: 30-Dec-1991	Ju/Me/Ra: 16-Feb-1992	Ju/Me/Ju: 20-Jun-1992	Ju/Me/Sa: 08-Oct-1992	
+Ju/Ke/Ke: 16-Feb-1993	Ju/Ke/Ve: 08-Mar-1993	Ju/Ke/Su: 04-May-1993	Ju/Ke/Mo: 21-May-1993	Ju/Ke/Ma: 18-Jun-1993	Ju/Ke/Ra: 08-Jul-1993	Ju/Ke/Ju: 28-Aug-1993	Ju/Ke/Sa: 13-Oct-1993	Ju/Ke/Me: 06-Dec-1993	
+Ju/Ve/Ve: 23-Jan-1994	Ju/Ve/Su: 04-Jul-1994	Ju/Ve/Mo: 22-Aug-1994	Ju/Ve/Ma: 11-Nov-1994	Ju/Ve/Ra: 07-Jan-1995	Ju/Ve/Ju: 02-Jun-1995	Ju/Ve/Sa: 09-Oct-1995	Ju/Ve/Me: 13-Mar-1996	Ju/Ve/Ke: 28-Jul-1996	
+Ju/Su/Su: 23-Sep-1996	Ju/Su/Mo: 08-Oct-1996	Ju/Su/Ma: 01-Nov-1996	Ju/Su/Ra: 18-Nov-1996	Ju/Su/Ju: 01-Jan-1997	Ju/Su/Sa: 09-Feb-1997	Ju/Su/Me: 27-Mar-1997	Ju/Su/Ke: 08-May-1997	Ju/Su/Ve: 25-May-1997	
+Ju/Mo/Mo: 12-Jul-1997	Ju/Mo/Ma: 22-Aug-1997	Ju/Mo/Ra: 19-Sep-1997	Ju/Mo/Ju: 01-Dec-1997	Ju/Mo/Sa: 04-Feb-1998	Ju/Mo/Me: 22-Apr-1998	Ju/Mo/Ke: 30-Jun-1998	Ju/Mo/Ve: 28-Jul-1998	Ju/Mo/Su: 18-Oct-1998	
+Ju/Ma/Ma: 11-Nov-1998	Ju/Ma/Ra: 01-Dec-1998	Ju/Ma/Ju: 21-Jan-1999	Ju/Ma/Sa: 07-Mar-1999	Ju/Ma/Me: 30-Apr-1999	Ju/Ma/Ke: 18-Jun-1999	Ju/Ma/Ve: 07-Jul-1999	Ju/Ma/Su: 02-Sep-1999	Ju/Ma/Mo: 19-Sep-1999	
+Ju/Ra/Ra: 18-Oct-1999	Ju/Ra/Ju: 26-Feb-2000	Ju/Ra/Sa: 23-Jun-2000	Ju/Ra/Me: 08-Nov-2000	Ju/Ra/Ke: 13-Mar-2001	Ju/Ra/Ve: 03-May-2001	Ju/Ra/Su: 26-Sep-2001	Ju/Ra/Mo: 08-Nov-2001	Ju/Ra/Ma: 20-Jan-2002	
+
+Sa/Sa/Sa: 13-Mar-2002	Sa/Sa/Me: 02-Sep-2002	Sa/Sa/Ke: 05-Feb-2003	Sa/Sa/Ve: 10-Apr-2003	Sa/Sa/Su: 10-Oct-2003	Sa/Sa/Mo: 04-Dec-2003	Sa/Sa/Ma: 05-Mar-2004	Sa/Sa/Ra: 09-May-2004	Sa/Sa/Ju: 20-Oct-2004	
+Sa/Me/Me: 16-Mar-2005	Sa/Me/Ke: 02-Aug-2005	Sa/Me/Ve: 28-Sep-2005	Sa/Me/Su: 11-Mar-2006	Sa/Me/Mo: 29-Apr-2006	Sa/Me/Ma: 20-Jul-2006	Sa/Me/Ra: 15-Sep-2006	Sa/Me/Ju: 10-Feb-2007	Sa/Me/Sa: 21-Jun-2007	
+Sa/Ke/Ke: 23-Nov-2007	Sa/Ke/Ve: 17-Dec-2007	Sa/Ke/Su: 22-Feb-2008	Sa/Ke/Mo: 14-Mar-2008	Sa/Ke/Ma: 17-Apr-2008	Sa/Ke/Ra: 11-May-2008	Sa/Ke/Ju: 10-Jul-2008	Sa/Ke/Sa: 02-Sep-2008	Sa/Ke/Me: 05-Nov-2008	
+Sa/Ve/Ve: 02-Jan-2009	Sa/Ve/Su: 13-Jul-2009	Sa/Ve/Mo: 09-Sep-2009	Sa/Ve/Ma: 14-Dec-2009	Sa/Ve/Ra: 20-Feb-2010	Sa/Ve/Ju: 12-Aug-2010	Sa/Ve/Sa: 13-Jan-2011	Sa/Ve/Me: 15-Jul-2011	Sa/Ve/Ke: 26-Dec-2011	
+Sa/Su/Su: 03-Mar-2012	Sa/Su/Mo: 21-Mar-2012	Sa/Su/Ma: 19-Apr-2012	Sa/Su/Ra: 09-May-2012	Sa/Su/Ju: 30-Jun-2012	Sa/Su/Sa: 15-Aug-2012	Sa/Su/Me: 09-Oct-2012	Sa/Su/Ke: 27-Nov-2012	Sa/Su/Ve: 17-Dec-2012	
+Sa/Mo/Mo: 13-Feb-2013	Sa/Mo/Ma: 02-Apr-2013	Sa/Mo/Ra: 06-May-2013	Sa/Mo/Ju: 01-Aug-2013	Sa/Mo/Sa: 17-Oct-2013	Sa/Mo/Me: 16-Jan-2014	Sa/Mo/Ke: 08-Apr-2014	Sa/Mo/Ve: 12-May-2014	Sa/Mo/Su: 16-Aug-2014	
+Sa/Ma/Ma: 14-Sep-2014	Sa/Ma/Ra: 08-Oct-2014	Sa/Ma/Ju: 07-Dec-2014	Sa/Ma/Sa: 30-Jan-2015	Sa/Ma/Me: 04-Apr-2015	Sa/Ma/Ke: 01-Jun-2015	Sa/Ma/Ve: 24-Jun-2015	Sa/Ma/Su: 31-Aug-2015	Sa/Ma/Mo: 20-Sep-2015	
+Sa/Ra/Ra: 24-Oct-2015	Sa/Ra/Ju: 29-Mar-2016	Sa/Ra/Sa: 14-Aug-2016	Sa/Ra/Me: 26-Jan-2017	Sa/Ra/Ke: 22-Jun-2017	Sa/Ra/Ve: 22-Aug-2017	Sa/Ra/Su: 12-Feb-2018	Sa/Ra/Mo: 05-Apr-2018	Sa/Ra/Ma: 30-Jun-2018	
+Sa/Ju/Ju: 30-Aug-2018	Sa/Ju/Sa: 31-Dec-2018	Sa/Ju/Me: 27-May-2019	Sa/Ju/Ke: 05-Oct-2019	Sa/Ju/Ve: 28-Nov-2019	Sa/Ju/Su: 01-May-2020	Sa/Ju/Mo: 16-Jun-2020	Sa/Ju/Ma: 01-Sep-2020	Sa/Ju/Ra: 25-Oct-2020	
+
+Me/Me/Me: 13-Mar-2021	Me/Me/Ke: 15-Jul-2021	Me/Me/Ve: 04-Sep-2021	Me/Me/Su: 29-Jan-2022	Me/Me/Mo: 14-Mar-2022	Me/Me/Ma: 26-May-2022	Me/Me/Ra: 16-Jul-2022	Me/Me/Ju: 25-Nov-2022	Me/Me/Sa: 22-Mar-2023	
+Me/Ke/Ke: 09-Aug-2023	Me/Ke/Ve: 30-Aug-2023	Me/Ke/Su: 29-Oct-2023	Me/Ke/Mo: 16-Nov-2023	Me/Ke/Ma: 16-Dec-2023	Me/Ke/Ra: 06-Jan-2024	Me/Ke/Ju: 02-Mar-2024	Me/Ke/Sa: 19-Apr-2024	Me/Ke/Me: 15-Jun-2024	
+Me/Ve/Ve: 06-Aug-2024	Me/Ve/Su: 25-Jan-2025	Me/Ve/Mo: 18-Mar-2025	Me/Ve/Ma: 12-Jun-2025	Me/Ve/Ra: 11-Aug-2025	Me/Ve/Ju: 13-Jan-2026	Me/Ve/Sa: 31-May-2026	Me/Ve/Me: 11-Nov-2026	Me/Ve/Ke: 06-Apr-2027	
+Me/Su/Su: 06-Jun-2027	Me/Su/Mo: 21-Jun-2027	Me/Su/Ma: 17-Jul-2027	Me/Su/Ra: 04-Aug-2027	Me/Su/Ju: 20-Sep-2027	Me/Su/Sa: 31-Oct-2027	Me/Su/Me: 19-Dec-2027	Me/Su/Ke: 01-Feb-2028	Me/Su/Ve: 19-Feb-2028	
+Me/Mo/Mo: 12-Apr-2028	Me/Mo/Ma: 25-May-2028	Me/Mo/Ra: 24-Jun-2028	Me/Mo/Ju: 10-Sep-2028	Me/Mo/Sa: 18-Nov-2028	Me/Mo/Me: 08-Feb-2029	Me/Mo/Ke: 22-Apr-2029	Me/Mo/Ve: 22-May-2029	Me/Mo/Su: 16-Aug-2029	
+Me/Ma/Ma: 11-Sep-2029	Me/Ma/Ra: 02-Oct-2029	Me/Ma/Ju: 25-Nov-2029	Me/Ma/Sa: 13-Jan-2030	Me/Ma/Me: 11-Mar-2030	Me/Ma/Ke: 01-May-2030	Me/Ma/Ve: 22-May-2030	Me/Ma/Su: 22-Jul-2030	Me/Ma/Mo: 09-Aug-2030	
+Me/Ra/Ra: 08-Sep-2030	Me/Ra/Ju: 26-Jan-2031	Me/Ra/Sa: 30-May-2031	Me/Ra/Me: 24-Oct-2031	Me/Ra/Ke: 05-Mar-2032	Me/Ra/Ve: 28-Apr-2032	Me/Ra/Su: 30-Sep-2032	Me/Ra/Mo: 16-Nov-2032	Me/Ra/Ma: 02-Feb-2033	
+Me/Ju/Ju: 28-Mar-2033	Me/Ju/Sa: 16-Jul-2033	Me/Ju/Me: 24-Nov-2033	Me/Ju/Ke: 21-Mar-2034	Me/Ju/Ve: 09-May-2034	Me/Ju/Su: 23-Sep-2034	Me/Ju/Mo: 04-Nov-2034	Me/Ju/Ma: 12-Jan-2035	Me/Ju/Ra: 01-Mar-2035	
+Me/Sa/Sa: 03-Jul-2035	Me/Sa/Me: 06-Dec-2035	Me/Sa/Ke: 24-Apr-2036	Me/Sa/Ve: 20-Jun-2036	Me/Sa/Su: 01-Dec-2036	Me/Sa/Mo: 19-Jan-2037	Me/Sa/Ma: 11-Apr-2037	Me/Sa/Ra: 07-Jun-2037	Me/Sa/Ju: 02-Nov-2037	
+
+Ke/Ke/Ke: 13-Mar-2038	Ke/Ke/Ve: 21-Mar-2038	Ke/Ke/Su: 15-Apr-2038	Ke/Ke/Mo: 23-Apr-2038	Ke/Ke/Ma: 05-May-2038	Ke/Ke/Ra: 14-May-2038	Ke/Ke/Ju: 05-Jun-2038	Ke/Ke/Sa: 25-Jun-2038	Ke/Ke/Me: 19-Jul-2038	
+Ke/Ve/Ve: 09-Aug-2038	Ke/Ve/Su: 19-Oct-2038	Ke/Ve/Mo: 09-Nov-2038	Ke/Ve/Ma: 14-Dec-2038	Ke/Ve/Ra: 08-Jan-2039	Ke/Ve/Ju: 13-Mar-2039	Ke/Ve/Sa: 09-May-2039	Ke/Ve/Me: 15-Jul-2039	Ke/Ve/Ke: 14-Sep-2039	
+Ke/Su/Su: 08-Oct-2039	Ke/Su/Mo: 15-Oct-2039	Ke/Su/Ma: 25-Oct-2039	Ke/Su/Ra: 02-Nov-2039	Ke/Su/Ju: 21-Nov-2039	Ke/Su/Sa: 08-Dec-2039	Ke/Su/Me: 28-Dec-2039	Ke/Su/Ke: 15-Jan-2040	Ke/Su/Ve: 23-Jan-2040	
+Ke/Mo/Mo: 13-Feb-2040	Ke/Mo/Ma: 03-Mar-2040	Ke/Mo/Ra: 15-Mar-2040	Ke/Mo/Ju: 16-Apr-2040	Ke/Mo/Sa: 15-May-2040	Ke/Mo/Me: 17-Jun-2040	Ke/Mo/Ke: 18-Jul-2040	Ke/Mo/Ve: 30-Jul-2040	Ke/Mo/Su: 03-Sep-2040	
+Ke/Ma/Ma: 14-Sep-2040	Ke/Ma/Ra: 23-Sep-2040	Ke/Ma/Ju: 15-Oct-2040	Ke/Ma/Sa: 04-Nov-2040	Ke/Ma/Me: 28-Nov-2040	Ke/Ma/Ke: 19-Dec-2040	Ke/Ma/Ve: 27-Dec-2040	Ke/Ma/Su: 21-Jan-2041	Ke/Ma/Mo: 29-Jan-2041	
+Ke/Ra/Ra: 10-Feb-2041	Ke/Ra/Ju: 09-Apr-2041	Ke/Ra/Sa: 30-May-2041	Ke/Ra/Me: 29-Jul-2041	Ke/Ra/Ke: 22-Sep-2041	Ke/Ra/Ve: 14-Oct-2041	Ke/Ra/Su: 17-Dec-2041	Ke/Ra/Mo: 05-Jan-2042	Ke/Ra/Ma: 06-Feb-2042	
+Ke/Ju/Ju: 01-Mar-2042	Ke/Ju/Sa: 15-Apr-2042	Ke/Ju/Me: 08-Jun-2042	Ke/Ju/Ke: 26-Jul-2042	Ke/Ju/Ve: 15-Aug-2042	Ke/Ju/Su: 11-Oct-2042	Ke/Ju/Mo: 28-Oct-2042	Ke/Ju/Ma: 25-Nov-2042	Ke/Ju/Ra: 15-Dec-2042	
+Ke/Sa/Sa: 04-Feb-2043	Ke/Sa/Me: 09-Apr-2043	Ke/Sa/Ke: 05-Jun-2043	Ke/Sa/Ve: 29-Jun-2043	Ke/Sa/Su: 04-Sep-2043	Ke/Sa/Mo: 25-Sep-2043	Ke/Sa/Ma: 28-Oct-2043	Ke/Sa/Ra: 21-Nov-2043	Ke/Sa/Ju: 21-Jan-2044	
+Ke/Me/Me: 16-Mar-2044	Ke/Me/Ke: 06-May-2044	Ke/Me/Ve: 27-May-2044	Ke/Me/Su: 26-Jul-2044	Ke/Me/Mo: 13-Aug-2044	Ke/Me/Ma: 13-Sep-2044	Ke/Me/Ra: 04-Oct-2044	Ke/Me/Ju: 27-Nov-2044	Ke/Me/Sa: 14-Jan-2045	
+
+Ve/Ve/Ve: 13-Mar-2045	Ve/Ve/Su: 01-Oct-2045	Ve/Ve/Mo: 01-Dec-2045	Ve/Ve/Ma: 13-Mar-2046	Ve/Ve/Ra: 23-May-2046	Ve/Ve/Ju: 21-Nov-2046	Ve/Ve/Sa: 02-May-2047	Ve/Ve/Me: 11-Nov-2047	Ve/Ve/Ke: 02-May-2048	
+Ve/Su/Su: 12-Jul-2048	Ve/Su/Mo: 31-Jul-2048	Ve/Su/Ma: 30-Aug-2048	Ve/Su/Ra: 20-Sep-2048	Ve/Su/Ju: 14-Nov-2048	Ve/Su/Sa: 02-Jan-2049	Ve/Su/Me: 01-Mar-2049	Ve/Su/Ke: 21-Apr-2049	Ve/Su/Ve: 12-May-2049	
+Ve/Mo/Mo: 12-Jul-2049	Ve/Mo/Ma: 01-Sep-2049	Ve/Mo/Ra: 06-Oct-2049	Ve/Mo/Ju: 06-Jan-2050	Ve/Mo/Sa: 28-Mar-2050	Ve/Mo/Me: 02-Jul-2050	Ve/Mo/Ke: 26-Sep-2050	Ve/Mo/Ve: 01-Nov-2050	Ve/Mo/Su: 10-Feb-2051	
+Ve/Ma/Ma: 13-Mar-2051	Ve/Ma/Ra: 06-Apr-2051	Ve/Ma/Ju: 09-Jun-2051	Ve/Ma/Sa: 05-Aug-2051	Ve/Ma/Me: 12-Oct-2051	Ve/Ma/Ke: 11-Dec-2051	Ve/Ma/Ve: 05-Jan-2052	Ve/Ma/Su: 17-Mar-2052	Ve/Ma/Mo: 07-Apr-2052	
+Ve/Ra/Ra: 12-May-2052	Ve/Ra/Ju: 24-Oct-2052	Ve/Ra/Sa: 19-Mar-2053	Ve/Ra/Me: 08-Sep-2053	Ve/Ra/Ke: 10-Feb-2054	Ve/Ra/Ve: 15-Apr-2054	Ve/Ra/Su: 15-Oct-2054	Ve/Ra/Mo: 08-Dec-2054	Ve/Ra/Ma: 10-Mar-2055	
+Ve/Ju/Ju: 12-May-2055	Ve/Ju/Sa: 19-Sep-2055	Ve/Ju/Me: 20-Feb-2056	Ve/Ju/Ke: 08-Jul-2056	Ve/Ju/Ve: 03-Sep-2056	Ve/Ju/Su: 12-Feb-2057	Ve/Ju/Mo: 02-Apr-2057	Ve/Ju/Ma: 22-Jun-2057	Ve/Ju/Ra: 18-Aug-2057	
+Ve/Sa/Sa: 11-Jan-2058	Ve/Sa/Me: 13-Jul-2058	Ve/Sa/Ke: 24-Dec-2058	Ve/Sa/Ve: 01-Mar-2059	Ve/Sa/Su: 10-Sep-2059	Ve/Sa/Mo: 06-Nov-2059	Ve/Sa/Ma: 11-Feb-2060	Ve/Sa/Ra: 19-Apr-2060	Ve/Sa/Ju: 09-Oct-2060	
+Ve/Me/Me: 13-Mar-2061	Ve/Me/Ke: 06-Aug-2061	Ve/Me/Ve: 05-Oct-2061	Ve/Me/Su: 27-Mar-2062	Ve/Me/Mo: 17-May-2062	Ve/Me/Ma: 12-Aug-2062	Ve/Me/Ra: 11-Oct-2062	Ve/Me/Ju: 15-Mar-2063	Ve/Me/Sa: 31-Jul-2063	
+Ve/Ke/Ke: 11-Jan-2064	Ve/Ke/Ve: 05-Feb-2064	Ve/Ke/Su: 17-Apr-2064	Ve/Ke/Mo: 08-May-2064	Ve/Ke/Ma: 12-Jun-2064	Ve/Ke/Ra: 07-Jul-2064	Ve/Ke/Ju: 09-Sep-2064	Ve/Ke/Sa: 05-Nov-2064	Ve/Ke/Me: 11-Jan-2065	
+
+Su/Su/Su: 13-Mar-2065	Su/Su/Mo: 18-Mar-2065	Su/Su/Ma: 27-Mar-2065	Su/Su/Ra: 03-Apr-2065	Su/Su/Ju: 19-Apr-2065	Su/Su/Sa: 04-May-2065	Su/Su/Me: 21-May-2065	Su/Su/Ke: 05-Jun-2065	Su/Su/Ve: 12-Jun-2065	
+Su/Mo/Mo: 30-Jun-2065	Su/Mo/Ma: 15-Jul-2065	Su/Mo/Ra: 26-Jul-2065	Su/Mo/Ju: 22-Aug-2065	Su/Mo/Sa: 16-Sep-2065	Su/Mo/Me: 15-Oct-2065	Su/Mo/Ke: 09-Nov-2065	Su/Mo/Ve: 20-Nov-2065	Su/Mo/Su: 20-Dec-2065	
+Su/Ma/Ma: 30-Dec-2065	Su/Ma/Ra: 06-Jan-2066	Su/Ma/Ju: 25-Jan-2066	Su/Ma/Sa: 11-Feb-2066	Su/Ma/Me: 03-Mar-2066	Su/Ma/Ke: 22-Mar-2066	Su/Ma/Ve: 29-Mar-2066	Su/Ma/Su: 19-Apr-2066	Su/Ma/Mo: 26-Apr-2066	
+Su/Ra/Ra: 06-May-2066	Su/Ra/Ju: 25-Jun-2066	Su/Ra/Sa: 07-Aug-2066	Su/Ra/Me: 28-Sep-2066	Su/Ra/Ke: 14-Nov-2066	Su/Ra/Ve: 03-Dec-2066	Su/Ra/Su: 27-Jan-2067	Su/Ra/Mo: 12-Feb-2067	Su/Ra/Ma: 12-Mar-2067	
+Su/Ju/Ju: 31-Mar-2067	Su/Ju/Sa: 09-May-2067	Su/Ju/Me: 24-Jun-2067	Su/Ju/Ke: 04-Aug-2067	Su/Ju/Ve: 21-Aug-2067	Su/Ju/Su: 09-Oct-2067	Su/Ju/Mo: 24-Oct-2067	Su/Ju/Ma: 17-Nov-2067	Su/Ju/Ra: 04-Dec-2067	
+Su/Sa/Sa: 17-Jan-2068	Su/Sa/Me: 13-Mar-2068	Su/Sa/Ke: 01-May-2068	Su/Sa/Ve: 21-May-2068	Su/Sa/Su: 18-Jul-2068	Su/Sa/Mo: 04-Aug-2068	Su/Sa/Ma: 02-Sep-2068	Su/Sa/Ra: 22-Sep-2068	Su/Sa/Ju: 13-Nov-2068	
+Su/Me/Me: 30-Dec-2068	Su/Me/Ke: 12-Feb-2069	Su/Me/Ve: 02-Mar-2069	Su/Me/Su: 22-Apr-2069	Su/Me/Mo: 08-May-2069	Su/Me/Ma: 03-Jun-2069	Su/Me/Ra: 21-Jun-2069	Su/Me/Ju: 06-Aug-2069	Su/Me/Sa: 17-Sep-2069	
+Su/Ke/Ke: 05-Nov-2069	Su/Ke/Ve: 12-Nov-2069	Su/Ke/Su: 04-Dec-2069	Su/Ke/Mo: 10-Dec-2069	Su/Ke/Ma: 21-Dec-2069	Su/Ke/Ra: 28-Dec-2069	Su/Ke/Ju: 16-Jan-2070	Su/Ke/Sa: 02-Feb-2070	Su/Ke/Me: 22-Feb-2070	
+Su/Ve/Ve: 13-Mar-2070	Su/Ve/Su: 12-May-2070	Su/Ve/Mo: 31-May-2070	Su/Ve/Ma: 30-Jun-2070	Su/Ve/Ra: 21-Jul-2070	Su/Ve/Ju: 14-Sep-2070	Su/Ve/Sa: 02-Nov-2070	Su/Ve/Me: 30-Dec-2070	Su/Ve/Ke: 19-Feb-2071	
+
+Mo/Mo/Mo: 13-Mar-2071	Mo/Mo/Ma: 07-Apr-2071	Mo/Mo/Ra: 25-Apr-2071	Mo/Mo/Ju: 09-Jun-2071	Mo/Mo/Sa: 20-Jul-2071	Mo/Mo/Me: 06-Sep-2071	Mo/Mo/Ke: 19-Oct-2071	Mo/Mo/Ve: 06-Nov-2071	Mo/Mo/Su: 27-Dec-2071	
+Mo/Ma/Ma: 11-Jan-2072	Mo/Ma/Ra: 23-Jan-2072	Mo/Ma/Ju: 24-Feb-2072	Mo/Ma/Sa: 25-Mar-2072	Mo/Ma/Me: 27-Apr-2072	Mo/Ma/Ke: 27-May-2072	Mo/Ma/Ve: 09-Jun-2072	Mo/Ma/Su: 14-Jul-2072	Mo/Ma/Mo: 25-Jul-2072	
+Mo/Ra/Ra: 12-Aug-2072	Mo/Ra/Ju: 02-Nov-2072	Mo/Ra/Sa: 14-Jan-2073	Mo/Ra/Me: 10-Apr-2073	Mo/Ra/Ke: 27-Jun-2073	Mo/Ra/Ve: 29-Jul-2073	Mo/Ra/Su: 28-Oct-2073	Mo/Ra/Mo: 25-Nov-2073	Mo/Ra/Ma: 09-Jan-2074	
+Mo/Ju/Ju: 10-Feb-2074	Mo/Ju/Sa: 16-Apr-2074	Mo/Ju/Me: 02-Jul-2074	Mo/Ju/Ke: 09-Sep-2074	Mo/Ju/Ve: 07-Oct-2074	Mo/Ju/Su: 28-Dec-2074	Mo/Ju/Mo: 21-Jan-2075	Mo/Ju/Ma: 02-Mar-2075	Mo/Ju/Ra: 31-Mar-2075	
+Mo/Sa/Sa: 12-Jun-2075	Mo/Sa/Me: 11-Sep-2075	Mo/Sa/Ke: 02-Dec-2075	Mo/Sa/Ve: 05-Jan-2076	Mo/Sa/Su: 11-Apr-2076	Mo/Sa/Mo: 10-May-2076	Mo/Sa/Ma: 27-Jun-2076	Mo/Sa/Ra: 31-Jul-2076	Mo/Sa/Ju: 26-Oct-2076	
+Mo/Me/Me: 11-Jan-2077	Mo/Me/Ke: 25-Mar-2077	Mo/Me/Ve: 24-Apr-2077	Mo/Me/Su: 19-Jul-2077	Mo/Me/Mo: 14-Aug-2077	Mo/Me/Ma: 26-Sep-2077	Mo/Me/Ra: 26-Oct-2077	Mo/Me/Ju: 12-Jan-2078	Mo/Me/Sa: 22-Mar-2078	
+Mo/Ke/Ke: 12-Jun-2078	Mo/Ke/Ve: 24-Jun-2078	Mo/Ke/Su: 30-Jul-2078	Mo/Ke/Mo: 09-Aug-2078	Mo/Ke/Ma: 27-Aug-2078	Mo/Ke/Ra: 09-Sep-2078	Mo/Ke/Ju: 10-Oct-2078	Mo/Ke/Sa: 08-Nov-2078	Mo/Ke/Me: 12-Dec-2078	
+Mo/Ve/Ve: 11-Jan-2079	Mo/Ve/Su: 22-Apr-2079	Mo/Ve/Mo: 23-May-2079	Mo/Ve/Ma: 12-Jul-2079	Mo/Ve/Ra: 17-Aug-2079	Mo/Ve/Ju: 16-Nov-2079	Mo/Ve/Sa: 05-Feb-2080	Mo/Ve/Me: 12-May-2080	Mo/Ve/Ke: 07-Aug-2080	
+Mo/Su/Su: 11-Sep-2080	Mo/Su/Mo: 20-Sep-2080	Mo/Su/Ma: 05-Oct-2080	Mo/Su/Ra: 16-Oct-2080	Mo/Su/Ju: 12-Nov-2080	Mo/Su/Sa: 07-Dec-2080	Mo/Su/Me: 05-Jan-2081	Mo/Su/Ke: 31-Jan-2081	Mo/Su/Ve: 10-Feb-2081	
+
+Ma/Ma/Ma: 13-Mar-2081	Ma/Ma/Ra: 21-Mar-2081	Ma/Ma/Ju: 13-Apr-2081	Ma/Ma/Sa: 03-May-2081	Ma/Ma/Me: 26-May-2081	Ma/Ma/Ke: 16-Jun-2081	Ma/Ma/Ve: 25-Jun-2081	Ma/Ma/Su: 20-Jul-2081	Ma/Ma/Mo: 27-Jul-2081	
+Ma/Ra/Ra: 09-Aug-2081	Ma/Ra/Ju: 05-Oct-2081	Ma/Ra/Sa: 25-Nov-2081	Ma/Ra/Me: 25-Jan-2082	Ma/Ra/Ke: 20-Mar-2082	Ma/Ra/Ve: 12-Apr-2082	Ma/Ra/Su: 14-Jun-2082	Ma/Ra/Mo: 04-Jul-2082	Ma/Ra/Ma: 05-Aug-2082	
+Ma/Ju/Ju: 27-Aug-2082	Ma/Ju/Sa: 11-Oct-2082	Ma/Ju/Me: 04-Dec-2082	Ma/Ju/Ke: 22-Jan-2083	Ma/Ju/Ve: 10-Feb-2083	Ma/Ju/Su: 08-Apr-2083	Ma/Ju/Mo: 25-Apr-2083	Ma/Ju/Ma: 24-May-2083	Ma/Ju/Ra: 12-Jun-2083	
+Ma/Sa/Sa: 03-Aug-2083	Ma/Sa/Me: 06-Oct-2083	Ma/Sa/Ke: 02-Dec-2083	Ma/Sa/Ve: 26-Dec-2083	Ma/Sa/Su: 03-Mar-2084	Ma/Sa/Mo: 23-Mar-2084	Ma/Sa/Ma: 26-Apr-2084	Ma/Sa/Ra: 19-May-2084	Ma/Sa/Ju: 19-Jul-2084	
+Ma/Me/Me: 11-Sep-2084	Ma/Me/Ke: 01-Nov-2084	Ma/Me/Ve: 22-Nov-2084	Ma/Me/Su: 22-Jan-2085	Ma/Me/Mo: 09-Feb-2085	Ma/Me/Ma: 11-Mar-2085	Ma/Me/Ra: 01-Apr-2085	Ma/Me/Ju: 25-May-2085	Ma/Me/Sa: 13-Jul-2085	
+Ma/Ke/Ke: 08-Sep-2085	Ma/Ke/Ve: 17-Sep-2085	Ma/Ke/Su: 12-Oct-2085	Ma/Ke/Mo: 19-Oct-2085	Ma/Ke/Ma: 31-Oct-2085	Ma/Ke/Ra: 09-Nov-2085	Ma/Ke/Ju: 02-Dec-2085	Ma/Ke/Sa: 21-Dec-2085	Ma/Ke/Me: 14-Jan-2086	
+Ma/Ve/Ve: 04-Feb-2086	Ma/Ve/Su: 16-Apr-2086	Ma/Ve/Mo: 07-May-2086	Ma/Ve/Ma: 12-Jun-2086	Ma/Ve/Ra: 07-Jul-2086	Ma/Ve/Ju: 09-Sep-2086	Ma/Ve/Sa: 04-Nov-2086	Ma/Ve/Me: 11-Jan-2087	Ma/Ve/Ke: 12-Mar-2087	
+Ma/Su/Su: 06-Apr-2087	Ma/Su/Mo: 12-Apr-2087	Ma/Su/Ma: 23-Apr-2087	Ma/Su/Ra: 30-Apr-2087	Ma/Su/Ju: 20-May-2087	Ma/Su/Sa: 06-Jun-2087	Ma/Su/Me: 26-Jun-2087	Ma/Su/Ke: 14-Jul-2087	Ma/Su/Ve: 21-Jul-2087	
+Ma/Mo/Mo: 12-Aug-2087	Ma/Mo/Ma: 29-Aug-2087	Ma/Mo/Ra: 11-Sep-2087	Ma/Mo/Ju: 13-Oct-2087	Ma/Mo/Sa: 10-Nov-2087	Ma/Mo/Me: 14-Dec-2087	Ma/Mo/Ke: 13-Jan-2088	Ma/Mo/Ve: 25-Jan-2088	Ma/Mo/Su: 02-Mar-2088	
+
+
+

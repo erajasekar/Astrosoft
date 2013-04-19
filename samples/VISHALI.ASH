@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>VAISHALI</Name><DateTime>Mar 31 1989, 06:10:00 PM</DateTime><Place><City>Chennai</City><Longitude dir="E">80.15</Longitude><Latitude dir="N">13.03</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

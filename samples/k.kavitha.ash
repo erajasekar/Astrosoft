@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>k.kavitha</Name><DateTime>Apr 10 1981, 02:33:00 PM</DateTime><Place><City>Erode</City><Longitude dir="E">80.15</Longitude><Latitude dir="N">13.00</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

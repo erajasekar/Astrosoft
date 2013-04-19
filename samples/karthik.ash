@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Kathik</Name><DateTime>May 5 1981, 08:20:00 AM</DateTime><Place><City>Vellore </City><Longitude dir="E">79.11</Longitude><Latitude dir="N">12.54</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

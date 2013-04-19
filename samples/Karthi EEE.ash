@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Karthi EEE</Name><DateTime>Aug 22 1983, 01:30:00 AM</DateTime><Place><City>Chidambaram</City><Longitude dir="E">79.44</Longitude><Latitude dir="N">11.24</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

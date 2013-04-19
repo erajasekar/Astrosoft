@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>V.KAMESWER</Name><DateTime>Jun 17 1984, 06:04:00 AM</DateTime><Place><City>salem  </City><Longitude dir="E">78.12</Longitude><Latitude dir="N">11.39</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

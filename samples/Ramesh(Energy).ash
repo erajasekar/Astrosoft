@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Ramesh(Energy)</Name><DateTime>Dec 2 1983, 04:53:00 AM</DateTime><Place><City>Trichy</City><Longitude dir="E">78.42</Longitude><Latitude dir="N">10.48</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

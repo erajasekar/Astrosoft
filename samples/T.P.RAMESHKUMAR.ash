@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>T.P.RAMESHKUMAR</Name><DateTime>Mar 10 1960, 01:50:00 AM</DateTime><Place><City>Thalaserry  </City><Longitude dir="E">75.30</Longitude><Latitude dir="N">11.45</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

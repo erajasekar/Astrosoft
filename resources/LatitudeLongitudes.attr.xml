@@ -1,0 +1,4124 @@
+<world>
+<country name="india" ><state name="Andaman" ><city name="Andaman" ><latitude dir="N" >12.00</latitude>
+<longitude dir="E" >92.40</longitude>
+</city>
+</state>
+<state name="Andhra Pradesh" ><city name="Andhra Pradesh" ><latitude dir="N" >16.00</latitude>
+<longitude dir="E" >80.00</longitude>
+</city>
+<city name="Adilabad" ><latitude dir="N" >19.37</latitude>
+<longitude dir="E" >78.30</longitude>
+</city>
+<city name="Adoni" ><latitude dir="N" >15.38</latitude>
+<longitude dir="E" >77.19</longitude>
+</city>
+<city name="Alampur" ><latitude dir="N" >15.54</latitude>
+<longitude dir="E" >78.11</longitude>
+</city>
+<city name="Allur" ><latitude dir="N" >14.41</latitude>
+<longitude dir="E" >80.05</longitude>
+</city>
+<city name="Alur" ><latitude dir="N" >15.24</latitude>
+<longitude dir="E" >77.16</longitude>
+</city>
+<city name="Amaravati" ><latitude dir="N" >16.50</latitude>
+<longitude dir="E" >80.15</longitude>
+</city>
+<city name="Anakapalle" ><latitude dir="N" >17.41</latitude>
+<longitude dir="E" >83.03</longitude>
+</city>
+<city name="Anantapur" ><latitude dir="N" >14.41</latitude>
+<longitude dir="E" >77.39</longitude>
+</city>
+<city name="Armur" ><latitude dir="N" >18.48</latitude>
+<longitude dir="E" >78.16</longitude>
+</city>
+<city name="Atmakur" ><latitude dir="N" >14.37</latitude>
+<longitude dir="E" >79.40</longitude>
+</city>
+<city name="Balkonda" ><latitude dir="N" >19.05</latitude>
+<longitude dir="E" >78.20</longitude>
+</city>
+<city name="Banganpalle" ><latitude dir="N" >15.19</latitude>
+<longitude dir="E" >78.17</longitude>
+</city>
+<city name="Bapatala" ><latitude dir="N" >15.54</latitude>
+<longitude dir="E" >80.30</longitude>
+</city>
+<city name="Bhadrachalam" ><latitude dir="N" >17.40</latitude>
+<longitude dir="E" >80.56</longitude>
+</city>
+<city name="Bhainsa" ><latitude dir="N" >19.10</latitude>
+<longitude dir="E" >77.58</longitude>
+</city>
+<city name="Bimlipatnam" ><latitude dir="N" >17.53</latitude>
+<longitude dir="E" >83.30</longitude>
+</city>
+<city name="Bobbili" ><latitude dir="N" >18.34</latitude>
+<longitude dir="E" >83.25</longitude>
+</city>
+<city name="Bodhan" ><latitude dir="N" >18.39</latitude>
+<longitude dir="E" >77.50</longitude>
+</city>
+<city name="Chinnur" ><latitude dir="N" >19.07</latitude>
+<longitude dir="E" >79.43</longitude>
+</city>
+<city name="Chipurupalle" ><latitude dir="N" >17.30</latitude>
+<longitude dir="E" >83.12</longitude>
+</city>
+<city name="Chittoor" ><latitude dir="N" >13.13</latitude>
+<longitude dir="E" >79.08</longitude>
+</city>
+<city name="Circars, Northern" ><latitude dir="N" >17.00</latitude>
+<longitude dir="E" >83.30</longitude>
+</city>
+<city name="Colait L." ><latitude dir="N" >16.40</latitude>
+<longitude dir="E" >18.10</longitude>
+</city>
+<city name="Coringa" ><latitude dir="N" >16.48</latitude>
+<longitude dir="E" >82.16</longitude>
+</city>
+<city name="Cuddapah" ><latitude dir="N" >14.28</latitude>
+<longitude dir="E" >78.52</longitude>
+</city>
+<city name="Cumbum" ><latitude dir="N" >15.34</latitude>
+<longitude dir="E" >79.09</longitude>
+</city>
+<city name="Darsi" ><latitude dir="N" >15.46</latitude>
+<longitude dir="E" >79.44</longitude>
+</city>
+<city name="Devarkonda" ><latitude dir="N" >16.42</latitude>
+<longitude dir="E" >78.58</longitude>
+</city>
+<city name="Dharmavaram " ><latitude dir="N" >14.24</latitude>
+<longitude dir="E" >77.00</longitude>
+</city>
+<city name="Eluru" ><latitude dir="N" >16.43</latitude>
+<longitude dir="E" >81.09</longitude>
+</city>
+<city name="Erramala Range" ><latitude dir="N" >15.20</latitude>
+<longitude dir="E" >78.00</longitude>
+</city>
+<city name="Gadwal" ><latitude dir="N" >16.13</latitude>
+<longitude dir="E" >77.48</longitude>
+</city>
+<city name="Godavari R." ><latitude dir="N" >16.35</latitude>
+<longitude dir="E" >82.15</longitude>
+</city>
+<city name="Golconda" ><latitude dir="N" >17.23</latitude>
+<longitude dir="E" >78.27</longitude>
+</city>
+<city name="Gooty" ><latitude dir="N" >15.07</latitude>
+<longitude dir="E" >77.41</longitude>
+</city>
+<city name="Gudur" ><latitude dir="N" >14.09</latitude>
+<longitude dir="E" >79.54</longitude>
+</city>
+<city name="Guntakal" ><latitude dir="N" >15.11</latitude>
+<longitude dir="E" >77.25</longitude>
+</city>
+<city name="Guntur" ><latitude dir="N" >16.18</latitude>
+<longitude dir="E" >80.29</longitude>
+</city>
+<city name="Gurramkonda" ><latitude dir="N" >13.47</latitude>
+<longitude dir="E" >78.38</longitude>
+</city>
+<city name="Gurzalla" ><latitude dir="N" >16.30</latitude>
+<longitude dir="E" >78.56</longitude>
+</city>
+<city name="Hanamkonda " ><latitude dir="N" >18.03</latitude>
+<longitude dir="E" >79.32</longitude>
+</city>
+<city name="Hasanparti " ><latitude dir="N" >18.10</latitude>
+<longitude dir="E" >79.46</longitude>
+</city>
+<city name="Hindupur " ><latitude dir="N" >13.49</latitude>
+<longitude dir="E" >77.32</longitude>
+</city>
+<city name="Hyderabad" ><latitude dir="N" >17.20</latitude>
+<longitude dir="E" >78.30</longitude>
+</city>
+<city name="Ichchapuram " ><latitude dir="N" >19.07</latitude>
+<longitude dir="E" >84.44</longitude>
+</city>
+<city name="Jaggayyapeta " ><latitude dir="N" >16.52</latitude>
+<longitude dir="E" >80.09</longitude>
+</city>
+<city name="Jagtiyal " ><latitude dir="N" >18.48</latitude>
+<longitude dir="E" >79.09</longitude>
+</city>
+<city name="Jammalamadugu " ><latitude dir="N" >14.51</latitude>
+<longitude dir="E" >78.25</longitude>
+</city>
+<city name="Kadiri " ><latitude dir="N" >14.07</latitude>
+<longitude dir="E" >78.14</longitude>
+</city>
+<city name="Kakinada " ><latitude dir="N" >16.57</latitude>
+<longitude dir="E" >82.15</longitude>
+</city>
+<city name="Kalahasti " ><latitude dir="N" >13.45</latitude>
+<longitude dir="E" >79.44</longitude>
+</city>
+<city name="Kalingapatnam " ><latitude dir="N" >18.20</latitude>
+<longitude dir="E" >84.10</longitude>
+</city>
+<city name="Kamareddi " ><latitude dir="N" >18.18</latitude>
+<longitude dir="E" >78.22</longitude>
+</city>
+<city name="Kampli " ><latitude dir="N" >15.25</latitude>
+<longitude dir="E" >76.39</longitude>
+</city>
+<city name="Kandi " ><latitude dir="N" >17.36</latitude>
+<longitude dir="E" >78.05</longitude>
+</city>
+<city name="Kandukur " ><latitude dir="N" >15.12</latitude>
+<longitude dir="E" >79.57</longitude>
+</city>
+<city name="Kanigiri " ><latitude dir="N" >15.23</latitude>
+<longitude dir="E" >79.32</longitude>
+</city>
+<city name="Karimnagar" ><latitude dir="N" >18.28</latitude>
+<longitude dir="E" >79.06</longitude>
+</city>
+<city name="Kavali" ><latitude dir="N" >14.55</latitude>
+<longitude dir="E" >80.03</longitude>
+</city>
+<city name="Khammam" ><latitude dir="N" >17.15</latitude>
+<longitude dir="E" >80.11</longitude>
+</city>
+<city name="Kodangal" ><latitude dir="N" >17.08</latitude>
+<longitude dir="E" >77.36</longitude>
+</city>
+<city name="Kohir" ><latitude dir="N" >17.35</latitude>
+<longitude dir="E" >77.40</longitude>
+</city>
+<city name="Koilkonda" ><latitude dir="N" >16.45</latitude>
+<longitude dir="E" >77.50</longitude>
+</city>
+<city name="Koilkuntla" ><latitude dir="N" >15.27</latitude>
+<longitude dir="E" >78.18</longitude>
+</city>
+<city name="Kondapalli" ><latitude dir="N" >16.38</latitude>
+<longitude dir="E" >80.36</longitude>
+</city>
+<city name="Koratla" ><latitude dir="N" >18.43</latitude>
+<longitude dir="E" >78.41</longitude>
+</city>
+<city name="Kosgi" ><latitude dir="N" >17.00</latitude>
+<longitude dir="E" >77.43</longitude>
+</city>
+<city name="Kotagudem" ><latitude dir="N" >17.30</latitude>
+<longitude dir="E" >80.40</longitude>
+</city>
+<city name="Kistna" ><latitude dir="N" >15.55</latitude>
+<longitude dir="E" >81.10</longitude>
+</city>
+<city name="Kurnool" ><latitude dir="N" >15.50</latitude>
+<longitude dir="E" >78.05</longitude>
+</city>
+<city name="Machilipatnam" ><latitude dir="N" >16.09</latitude>
+<longitude dir="E" >81.12</longitude>
+</city>
+<city name="Madakasira" ><latitude dir="N" >13.57</latitude>
+<longitude dir="E" >77.19</longitude>
+</city>
+<city name="Mahbubnagar" ><latitude dir="N" >16.42</latitude>
+<longitude dir="E" >77.58</longitude>
+</city>
+<city name="Mangalagiri" ><latitude dir="N" >16.26</latitude>
+<longitude dir="E" >80.36</longitude>
+</city>
+<city name="Markapur" ><latitude dir="N" >15.44</latitude>
+<longitude dir="E" >79.19</longitude>
+</city>
+<city name="Medak" ><latitude dir="N" >18.03</latitude>
+<longitude dir="E" >78.18</longitude>
+</city>
+<city name="Mudhol" ><latitude dir="N" >19.00</latitude>
+<longitude dir="E" >77.52</longitude>
+</city>
+<city name="Nagar Karnul " ><latitude dir="N" >16.30</latitude>
+<longitude dir="E" >78.19</longitude>
+</city>
+<city name="Nalgonda " ><latitude dir="N" >17.03</latitude>
+<longitude dir="E" >79.02</longitude>
+</city>
+<city name="Nallamalai Range " ><latitude dir="N" >15.00</latitude>
+<longitude dir="E" >78.38</longitude>
+</city>
+<city name="Nandigama " ><latitude dir="N" >16.46</latitude>
+<longitude dir="E" >80.20</longitude>
+</city>
+<city name="Nandikotkur " ><latitude dir="N" >15.52</latitude>
+<longitude dir="E" >78.18</longitude>
+</city>
+<city name="Nandyal " ><latitude dir="N" >15.29</latitude>
+<longitude dir="E" >78.32</longitude>
+</city>
+<city name="Narasapur " ><latitude dir="N" >16.26</latitude>
+<longitude dir="E" >81.45</longitude>
+</city>
+<city name="Narasaraopet " ><latitude dir="N" >16.14</latitude>
+<longitude dir="E" >77.27</longitude>
+</city>
+<city name="Narayanpet " ><latitude dir="N" >16.46</latitude>
+<longitude dir="E" >77.27</longitude>
+</city>
+<city name="Narsipatnam " ><latitude dir="N" >17.40</latitude>
+<longitude dir="E" >82.39</longitude>
+</city>
+<city name="Nellore " ><latitude dir="N" >14.27</latitude>
+<longitude dir="E" >80.02</longitude>
+</city>
+<city name="Nirmal " ><latitude dir="N" >19.06</latitude>
+<longitude dir="E" >78.25</longitude>
+</city>
+<city name="Nizamabad " ><latitude dir="N" >18.40</latitude>
+<longitude dir="E" >78.10</longitude>
+</city>
+<city name="Nizampatnam " ><latitude dir="N" >15.54</latitude>
+<longitude dir="E" >80.43</longitude>
+</city>
+<city name="Pakala" ><latitude dir="N" >13.30</latitude>
+<longitude dir="E" >79.00</longitude>
+</city>
+<city name="Palakollu" ><latitude dir="N" >16.31</latitude>
+<longitude dir="E" >81.46</longitude>
+</city>
+<city name="Palkonda" ><latitude dir="N" >18.36</latitude>
+<longitude dir="E" >83.48</longitude>
+</city>
+<city name="Palkonda Range" ><latitude dir="N" >13.50</latitude>
+<longitude dir="E" >79.20</longitude>
+</city>
+<city name="Patancheru " ><latitude dir="N" >17.36</latitude>
+<longitude dir="E" >78.20</longitude>
+</city>
+<city name="Pattikonda " ><latitude dir="N" >15.24</latitude>
+<longitude dir="E" >77.04</longitude>
+</city>
+<city name="Peddapuram " ><latitude dir="N" >17.05</latitude>
+<longitude dir="E" >82.11</longitude>
+</city>
+<city name="Penukonda " ><latitude dir="N" >14.05</latitude>
+<longitude dir="E" >77.38</longitude>
+</city>
+<city name="Pithapuram " ><latitude dir="N" >17.07</latitude>
+<longitude dir="E" >82.19</longitude>
+</city>
+<city name="Podili " ><latitude dir="N" >15.36</latitude>
+<longitude dir="E" >79.39</longitude>
+</city>
+<city name="Port Blair " ><latitude dir="N" >11.41</latitude>
+<longitude dir="E" >92.43</longitude>
+</city>
+<city name="Proddatur" ><latitude dir="N" >14.45</latitude>
+<longitude dir="E" >78.35</longitude>
+</city>
+<city name="Pullivendla" ><latitude dir="N" >14.26</latitude>
+<longitude dir="E" >78.16</longitude>
+</city>
+<city name="Punganuru" ><latitude dir="N" >13.25</latitude>
+<longitude dir="E" >78.37</longitude>
+</city>
+<city name="Pyapalli" ><latitude dir="N" >15.14</latitude>
+<longitude dir="E" >77.47</longitude>
+</city>
+<city name="Rajahumundry" ><latitude dir="N" >17.00</latitude>
+<longitude dir="E" >81.48</longitude>
+</city>
+<city name="Ramallakota" ><latitude dir="N" >15.35</latitude>
+<longitude dir="E" >78.02</longitude>
+</city>
+<city name="Rapur" ><latitude dir="N" >14.12</latitude>
+<longitude dir="E" >79.36</longitude>
+</city>
+<city name="Rauachoti" ><latitude dir="N" >14.04</latitude>
+<longitude dir="E" >78.50</longitude>
+</city>
+<city name="Rayadrug" ><latitude dir="N" >14.42</latitude>
+<longitude dir="E" >76.53</longitude>
+</city>
+<city name="Rekapalle" ><latitude dir="N" >17.34</latitude>
+<longitude dir="E" >81.20</longitude>
+</city>
+<city name="Repalle" ><latitude dir="N" >16.02</latitude>
+<longitude dir="E" >80.53</longitude>
+</city>
+<city name="Sadaseopet" ><latitude dir="N" >17.40</latitude>
+<longitude dir="E" >77.58</longitude>
+</city>
+<city name="Samalkot" ><latitude dir="N" >17.03</latitude>
+<longitude dir="E" >82.13</longitude>
+</city>
+<city name="Sangareddipet" ><latitude dir="N" >17.35</latitude>
+<longitude dir="E" >78.02</longitude>
+</city>
+<city name="Sattenapalle" ><latitude dir="N" >16.24</latitude>
+<longitude dir="E" >80.11</longitude>
+</city>
+<city name="Satur" ><latitude dir="N" >18.31</latitude>
+<longitude dir="E" >83.15</longitude>
+</city>
+<city name="Secunderabad" ><latitude dir="N" >17.27</latitude>
+<longitude dir="E" >78.33</longitude>
+</city>
+<city name="Seshachalam Hills" ><latitude dir="N" >14.10</latitude>
+<longitude dir="E" >78.30</longitude>
+</city>
+<city name="Sidhout" ><latitude dir="N" >14.28</latitude>
+<longitude dir="E" >79.01</longitude>
+</city>
+<city name="Sidipett" ><latitude dir="N" >18.07</latitude>
+<longitude dir="E" >78.50</longitude>
+</city>
+<city name="Tadpatri" ><latitude dir="N" >14.56</latitude>
+<longitude dir="E" >78.02</longitude>
+</city>
+<city name="Tandur" ><latitude dir="N" >17.17</latitude>
+<longitude dir="E" >77.30</longitude>
+</city>
+<city name="Tanuku" ><latitude dir="N" >16.45</latitude>
+<longitude dir="E" >81.44</longitude>
+</city>
+<city name="Tenali" ><latitude dir="N" >16.15</latitude>
+<longitude dir="E" >80.35</longitude>
+</city>
+<city name="Tirupati" ><latitude dir="N" >13.40</latitude>
+<longitude dir="E" >79.20</longitude>
+</city>
+<city name="Tungabhadra R." ><latitude dir="N" >15.58</latitude>
+<longitude dir="E" >78.18</longitude>
+</city>
+<city name="Tuni" ><latitude dir="N" >17.21</latitude>
+<longitude dir="E" >42.35</longitude>
+</city>
+<city name="Udayagiri" ><latitude dir="N" >14.52</latitude>
+<longitude dir="E" >79.19</longitude>
+</city>
+<city name="Vayalpad" ><latitude dir="N" >13.48</latitude>
+<longitude dir="E" >78.40</longitude>
+</city>
+<city name="Vemalwada" ><latitude dir="N" >18.30</latitude>
+<longitude dir="E" >78.56</longitude>
+</city>
+<city name="Venkatagiri" ><latitude dir="N" >13.57</latitude>
+<longitude dir="E" >69.37</longitude>
+</city>
+<city name="Venkatapuram" ><latitude dir="N" >18.17</latitude>
+<longitude dir="E" >80.36</longitude>
+</city>
+<city name="Vijayawada " ><latitude dir="N" >16.31</latitude>
+<longitude dir="E" >80.39</longitude>
+</city>
+<city name="Vinukonda" ><latitude dir="N" >16.04</latitude>
+<longitude dir="E" >79.47</longitude>
+</city>
+<city name="Vizianagram" ><latitude dir="N" >18.07</latitude>
+<longitude dir="E" >83.27</longitude>
+</city>
+<city name="Waltair" ><latitude dir="N" >17.44</latitude>
+<longitude dir="E" >83.23</longitude>
+</city>
+<city name="Warangal" ><latitude dir="N" >17.58</latitude>
+<longitude dir="E" >79.40</longitude>
+</city>
+<city name="Yaham" ><latitude dir="N" >16.44</latitude>
+<longitude dir="E" >82.16</longitude>
+</city>
+<city name="Yellandu" ><latitude dir="N" >17.37</latitude>
+<longitude dir="E" >80.23</longitude>
+</city>
+<city name="Yemmiganur" ><latitude dir="N" >15.46</latitude>
+<longitude dir="E" >77.31</longitude>
+</city>
+<city name="Yernagudem" ><latitude dir="N" >16.59</latitude>
+<longitude dir="E" >81.33</longitude>
+</city>
+</state>
+<state name="Arunachal Pradesh" ><city name="Arunachal Pradesh" ><latitude dir="N" >28.00</latitude>
+<longitude dir="E" >95.00</longitude>
+</city>
+<city name="Itanagar" ><latitude dir="N" >27.08</latitude>
+<longitude dir="E" >93.40</longitude>
+</city>
+<city name="Patkal Hills " ><latitude dir="N" >27.00</latitude>
+<longitude dir="E" >95.30</longitude>
+</city>
+<city name="Tawang" ><latitude dir="N" >27.33</latitude>
+<longitude dir="E" >91.48</longitude>
+</city>
+</state>
+<state name="Assam" ><city name="Assam" ><latitude dir="N" >26.00</latitude>
+<longitude dir="E" >93.00</longitude>
+</city>
+<city name="Bishnath" ><latitude dir="N" >26.36</latitude>
+<longitude dir="E" >93.10</longitude>
+</city>
+<city name="Brahmaputra R." ><latitude dir="N" >26.45</latitude>
+<longitude dir="E" >92.00</longitude>
+</city>
+<city name="Slichar" ><latitude dir="N" >24.50</latitude>
+<longitude dir="E" >92.51</longitude>
+</city>
+<city name="Darrang " ><latitude dir="N" >26.45</latitude>
+<longitude dir="E" >92.40</longitude>
+</city>
+<city name="Dhuburi" ><latitude dir="N" >26.02</latitude>
+<longitude dir="E" >90.02</longitude>
+</city>
+<city name="Dibrugarh" ><latitude dir="N" >27.29</latitude>
+<longitude dir="E" >94.58</longitude>
+</city>
+<city name="Digboi" ><latitude dir="N" >27.33</latitude>
+<longitude dir="E" >95.40</longitude>
+</city>
+<city name="Dispur" ><latitude dir="N" >26.09</latitude>
+<longitude dir="E" >91.50</longitude>
+</city>
+<city name="Goalpara" ><latitude dir="N" >26.11</latitude>
+<longitude dir="E" >90.41</longitude>
+</city>
+<city name="Golaghat" ><latitude dir="N" >26.30</latitude>
+<longitude dir="E" >94.00</longitude>
+</city>
+<city name="Guwahati" ><latitude dir="N" >26.11</latitude>
+<longitude dir="E" >91.47</longitude>
+</city>
+<city name="Jaipur " ><latitude dir="N" >27.15</latitude>
+<longitude dir="E" >95.26</longitude>
+</city>
+<city name="Jorhat " ><latitude dir="N" >26.46</latitude>
+<longitude dir="E" >94.16</longitude>
+</city>
+<city name="Karimganj" ><latitude dir="N" >24.40</latitude>
+<longitude dir="E" >92.30</longitude>
+</city>
+<city name="Mangaldai" ><latitude dir="N" >26.27</latitude>
+<longitude dir="E" >92.05</longitude>
+</city>
+<city name="Pandu" ><latitude dir="N" >26.10</latitude>
+<longitude dir="E" >09.14</longitude>
+</city>
+<city name="Sadiya" ><latitude dir="N" >27.50</latitude>
+<longitude dir="E" >95.42</longitude>
+</city>
+<city name="Silchar" ><latitude dir="N" >24.50</latitude>
+<longitude dir="E" >82.51</longitude>
+</city>
+<city name="Tezpur" ><latitude dir="N" >26.37</latitude>
+<longitude dir="E" >92.50</longitude>
+</city>
+</state>
+<state name="Bihar" ><city name="Bihar" ><latitude dir="N" >25.11</latitude>
+<longitude dir="E" >85.32</longitude>
+</city>
+<city name="Arrah" ><latitude dir="N" >25.34</latitude>
+<longitude dir="E" >84.32</longitude>
+</city>
+<city name="Aurangabad" ><latitude dir="N" >24.45</latitude>
+<longitude dir="E" >84.25</longitude>
+</city>
+<city name="Bankipore" ><latitude dir="N" >25.40</latitude>
+<longitude dir="E" >85.12</longitude>
+</city>
+<city name="Barakar R." ><latitude dir="N" >24.10</latitude>
+<longitude dir="E" >86.20</longitude>
+</city>
+<city name="Barwa" ><latitude dir="N" >23.10</latitude>
+<longitude dir="E" >84.13</longitude>
+</city>
+<city name="Basia" ><latitude dir="N" >22.52</latitude>
+<longitude dir="E" >84.53</longitude>
+</city>
+<city name="Bettiah" ><latitude dir="N" >26.48</latitude>
+<longitude dir="E" >84.33</longitude>
+</city>
+<city name="Bhagalpur" ><latitude dir="N" >25.15</latitude>
+<longitude dir="E" >80.20</longitude>
+</city>
+<city name="Buddh Gaya" ><latitude dir="N" >24.41</latitude>
+<longitude dir="E" >85.02</longitude>
+</city>
+<city name="Buxar" ><latitude dir="N" >25.34</latitude>
+<longitude dir="E" >84.01</longitude>
+</city>
+<city name="Chaibassa" ><latitude dir="N" >22.33</latitude>
+<longitude dir="E" >85.51</longitude>
+</city>
+<city name="Chatra" ><latitude dir="N" >24.12</latitude>
+<longitude dir="E" >84.56</longitude>
+</city>
+<city name="Chhapra" ><latitude dir="N" >25.47</latitude>
+<longitude dir="E" >84.47</longitude>
+</city>
+<city name="Chota Nagpur" ><latitude dir="N" >23.00</latitude>
+<longitude dir="E" >85.00</longitude>
+</city>
+<city name="Colgong" ><latitude dir="N" >25.16</latitude>
+<longitude dir="E" >87.17</longitude>
+</city>
+<city name="Daltenganj" ><latitude dir="N" >24.02</latitude>
+<longitude dir="E" >84.04</longitude>
+</city>
+<city name="Darbhanga" ><latitude dir="N" >26.10</latitude>
+<longitude dir="E" >85.57</longitude>
+</city>
+<city name="Dhanbad" ><latitude dir="N" >23.47</latitude>
+<longitude dir="E" >86.30</longitude>
+</city>
+<city name="Dhankkgain" ><latitude dir="N" >25.14</latitude>
+<longitude dir="E" >84.17</longitude>
+</city>
+<city name="Dinapore" ><latitude dir="N" >25.38</latitude>
+<longitude dir="E" >85.05</longitude>
+</city>
+<city name="Doranda" ><latitude dir="N" >23.22</latitude>
+<longitude dir="E" >85.22</longitude>
+</city>
+<city name="Dumraon" ><latitude dir="N" >25.33</latitude>
+<longitude dir="E" >84.12</longitude>
+</city>
+<city name="Gandak R." ><latitude dir="N" >26.30</latitude>
+<longitude dir="E" >84.30</longitude>
+</city>
+<city name="Garhwa" ><latitude dir="N" >24.10</latitude>
+<longitude dir="E" >83.52</longitude>
+</city>
+<city name="Garwa" ><latitude dir="N" >24.10</latitude>
+<longitude dir="E" >83.52</longitude>
+</city>
+<city name="Gaya" ><latitude dir="N" >42.49</latitude>
+<longitude dir="E" >85.01</longitude>
+</city>
+<city name="Giridih" ><latitude dir="N" >24.10</latitude>
+<longitude dir="E" >86.21</longitude>
+</city>
+<city name="Gobindpur" ><latitude dir="N" >23.51</latitude>
+<longitude dir="E" >86.34</longitude>
+</city>
+<city name="Gogri" ><latitude dir="N" >25.28</latitude>
+<longitude dir="E" >86.38</longitude>
+</city>
+<city name="Gopalganj" ><latitude dir="N" >26.28</latitude>
+<longitude dir="E" >84.26</longitude>
+</city>
+<city name="Hajipur " ><latitude dir="N" >25.41</latitude>
+<longitude dir="E" >85.57</longitude>
+</city>
+<city name="Hazaribagh " ><latitude dir="N" >23.59</latitude>
+<longitude dir="E" >85.25</longitude>
+</city>
+<city name="Ichak" ><latitude dir="N" >24.05</latitude>
+<longitude dir="E" >85.25</longitude>
+</city>
+<city name="Jamalpur " ><latitude dir="N" >25.19</latitude>
+<longitude dir="E" >85.32</longitude>
+</city>
+<city name="Jamshedpur " ><latitude dir="N" >22.50</latitude>
+<longitude dir="E" >86.10</longitude>
+</city>
+<city name="Jharia " ><latitude dir="N" >23.50</latitude>
+<longitude dir="E" >86.33</longitude>
+</city>
+<city name="Jyanagar" ><latitude dir="N" >26.35</latitude>
+<longitude dir="E" >86.09</longitude>
+</city>
+<city name="Kantai " ><latitude dir="N" >26.31</latitude>
+<longitude dir="E" >85.21</longitude>
+</city>
+<city name="Kathihar" ><latitude dir="N" >25.30</latitude>
+<longitude dir="E" >87.40</longitude>
+</city>
+<city name="Kharsawan" ><latitude dir="N" >22.48</latitude>
+<longitude dir="E" >85.52</longitude>
+</city>
+<city name="Kishanganj" ><latitude dir="N" >26.10</latitude>
+<longitude dir="E" >87.02</longitude>
+</city>
+<city name="Lohardaga" ><latitude dir="N" >23.26</latitude>
+<longitude dir="E" >84.42</longitude>
+</city>
+<city name="Mankheri" ><latitude dir="N" >23.40</latitude>
+<longitude dir="E" >84.33</longitude>
+</city>
+<city name="Messanjore" ><latitude dir="N" >24.05</latitude>
+<longitude dir="E" >87.21</longitude>
+</city>
+<city name="Mokameh" ><latitude dir="N" >25.24</latitude>
+<longitude dir="E" >85.55</longitude>
+</city>
+<city name="Motihari" ><latitude dir="N" >26.40</latitude>
+<longitude dir="E" >85.14</longitude>
+</city>
+<city name="Munger" ><latitude dir="N" >25.23</latitude>
+<longitude dir="E" >86.30</longitude>
+</city>
+<city name="Muzaffarpur" ><latitude dir="N" >26.07</latitude>
+<longitude dir="E" >85.27</longitude>
+</city>
+<city name="Nawada " ><latitude dir="N" >24.53</latitude>
+<longitude dir="E" >85.35</longitude>
+</city>
+<city name="Naya Dumka " ><latitude dir="N" >24.30</latitude>
+<longitude dir="E" >87.20</longitude>
+</city>
+<city name="Pakaur" ><latitude dir="N" >24.38</latitude>
+<longitude dir="E" >87.54</longitude>
+</city>
+<city name="Palamau" ><latitude dir="N" >23.52</latitude>
+<longitude dir="E" >84.17</longitude>
+</city>
+<city name="Palkot" ><latitude dir="N" >22.52</latitude>
+<longitude dir="E" >84.41</longitude>
+</city>
+<city name="Parasnath Mt." ><latitude dir="N" >22.00</latitude>
+<longitude dir="E" >86.11</longitude>
+</city>
+<city name="Patna " ><latitude dir="N" >25.37</latitude>
+<longitude dir="E" >85.13</longitude>
+</city>
+<city name="Porahat " ><latitude dir="N" >22.36</latitude>
+<longitude dir="E" >85.58</longitude>
+</city>
+<city name="Purnia" ><latitude dir="N" >25.49</latitude>
+<longitude dir="E" >87.31</longitude>
+</city>
+<city name="Rajmahal" ><latitude dir="N" >25.03</latitude>
+<longitude dir="E" >87.53</longitude>
+</city>
+<city name="Ramgarh" ><latitude dir="N" >23.38</latitude>
+<longitude dir="E" >85.34</longitude>
+</city>
+<city name="Ranchi" ><latitude dir="N" >23.23</latitude>
+<longitude dir="E" >85.23</longitude>
+</city>
+<city name="Safanda" ><latitude dir="N" >22.16</latitude>
+<longitude dir="E" >85.15</longitude>
+</city>
+<city name="Sagaull" ><latitude dir="N" >26.47</latitude>
+<longitude dir="E" >84.48</longitude>
+</city>
+<city name="Saharsa" ><latitude dir="N" >25.55</latitude>
+<longitude dir="E" >86.35</longitude>
+</city>
+<city name="Sahibganj" ><latitude dir="N" >25.13</latitude>
+<longitude dir="E" >87.40</longitude>
+</city>
+<city name="Samastipur" ><latitude dir="N" >25.55</latitude>
+<longitude dir="E" >85.50</longitude>
+</city>
+<city name="Santal Parganas" ><latitude dir="N" >24.30</latitude>
+<longitude dir="E" >87.00</longitude>
+</city>
+<city name="Saraikela" ><latitude dir="N" >22.42</latitude>
+<longitude dir="E" >85.58</longitude>
+</city>
+<city name="Sasaram" ><latitude dir="N" >24.57</latitude>
+<longitude dir="E" >84.03</longitude>
+</city>
+<city name="shelkhupura" ><latitude dir="N" >25.09</latitude>
+<longitude dir="E" >85.53</longitude>
+</city>
+<city name="Simaria" ><latitude dir="N" >24.05</latitude>
+<longitude dir="E" >84.58</longitude>
+</city>
+<city name="Tekari" ><latitude dir="N" >24.57</latitude>
+<longitude dir="E" >84.53</longitude>
+</city>
+<city name="Tilaiya" ><latitude dir="N" >24.20</latitude>
+<longitude dir="E" >85.31</longitude>
+</city>
+</state>
+<state name="Chandigarh" ><city name="Chandigarh" ><latitude dir="N" >30.42</latitude>
+<longitude dir="E" >76.54</longitude>
+</city>
+</state>
+<state name="Dadra" ><city name="Dadra" ><latitude dir="N" >30.42</latitude>
+<longitude dir="E" >76.54</longitude>
+</city>
+<city name="Silvassa" ><latitude dir="N" >20.12</latitude>
+<longitude dir="E" >07.00</longitude>
+</city>
+</state>
+<state name="Daman" ><city name="Daman" ><latitude dir="N" >20.25</latitude>
+<longitude dir="E" >72.53</longitude>
+</city>
+<city name="Diu" ><latitude dir="N" >20.42</latitude>
+<longitude dir="E" >71.01</longitude>
+</city>
+</state>
+<state name="Delhi" ><city name="Delhi" ><latitude dir="N" >28.38</latitude>
+<longitude dir="E" >77.12</longitude>
+</city>
+<city name="shahdara" ><latitude dir="N" >28.40</latitude>
+<longitude dir="E" >77.20</longitude>
+</city>
+</state>
+<state name="Goa" ><city name="Goa" ><latitude dir="N" >28.38</latitude>
+<longitude dir="E" >72.12</longitude>
+</city>
+<city name="Marmagao" ><latitude dir="N" >15.25</latitude>
+<longitude dir="E" >73.43</longitude>
+</city>
+<city name="Nova Goa" ><latitude dir="N" >15.30</latitude>
+<longitude dir="E" >73.55</longitude>
+</city>
+</state>
+<state name="Gujarat" ><city name="Gujarat" ><latitude dir="N" >23.00</latitude>
+<longitude dir="E" >72.00</longitude>
+</city>
+<city name="Ahmadabad" ><latitude dir="N" >23.03</latitude>
+<longitude dir="E" >72.40</longitude>
+</city>
+<city name="Amreli" ><latitude dir="N" >21.36</latitude>
+<longitude dir="E" >71.15</longitude>
+</city>
+<city name="Anand" ><latitude dir="N" >22.32</latitude>
+<longitude dir="E" >73.00</longitude>
+</city>
+<city name="Anklesvar" ><latitude dir="N" >21.38</latitude>
+<longitude dir="E" >73.02</longitude>
+</city>
+<city name="Bansda" ><latitude dir="N" >20.45</latitude>
+<longitude dir="E" >73.28</longitude>
+</city>
+<city name="Baroda" ><latitude dir="N" >25.25</latitude>
+<longitude dir="E" >76.70</longitude>
+</city>
+<city name="Bedi" ><latitude dir="N" >22.32</latitude>
+<longitude dir="E" >70.02</longitude>
+</city>
+<city name="Bela I." ><latitude dir="N" >23.48</latitude>
+<longitude dir="E" >70.50</longitude>
+</city>
+<city name="Bharuch" ><latitude dir="N" >21.41</latitude>
+<longitude dir="E" >73.01</longitude>
+</city>
+<city name="Bhavnagar" ><latitude dir="N" >21.46</latitude>
+<longitude dir="E" >72.11</longitude>
+</city>
+<city name="Bhuj" ><latitude dir="N" >23.15</latitude>
+<longitude dir="E" >69.49</longitude>
+</city>
+<city name="Bulsar" ><latitude dir="N" >20.36</latitude>
+<longitude dir="E" >72.59</longitude>
+</city>
+<city name="Chota Udaipur" ><latitude dir="N" >22.18</latitude>
+<longitude dir="E" >74.08</longitude>
+</city>
+<city name="Dabhoi" ><latitude dir="N" >22.11</latitude>
+<longitude dir="E" >73.25</longitude>
+</city>
+<city name="Dahej" ><latitude dir="N" >21.42</latitude>
+<longitude dir="E" >72.38</longitude>
+</city>
+<city name="Datha" ><latitude dir="N" >21.12</latitude>
+<longitude dir="E" >72.00</longitude>
+</city>
+<city name="Dedan" ><latitude dir="N" >21.00</latitude>
+<longitude dir="E" >71.22</longitude>
+</city>
+<city name="Dhandhuka" ><latitude dir="N" >22.21</latitude>
+<longitude dir="E" >72.02</longitude>
+</city>
+<city name="Dharampur" ><latitude dir="N" >20.32</latitude>
+<longitude dir="E" >73.13</longitude>
+</city>
+<city name="Dholera" ><latitude dir="N" >22.15</latitude>
+<longitude dir="E" >72.15</longitude>
+</city>
+<city name="Dholka" ><latitude dir="N" >22.44</latitude>
+<longitude dir="E" >72.29</longitude>
+</city>
+<city name="Dhoraji" ><latitude dir="N" >21.45</latitude>
+<longitude dir="E" >70.37</longitude>
+</city>
+<city name="Dhrangadhra" ><latitude dir="N" >22.59</latitude>
+<longitude dir="E" >71.31</longitude>
+</city>
+<city name="Disa" ><latitude dir="N" >24.14</latitude>
+<longitude dir="E" >72.13</longitude>
+</city>
+<city name="Dohad" ><latitude dir="N" >22.53</latitude>
+<longitude dir="E" >74.19</longitude>
+</city>
+<city name="Dwarka" ><latitude dir="N" >22.14</latitude>
+<longitude dir="E" >69.01</longitude>
+</city>
+<city name="Ghantila" ><latitude dir="N" >23.10</latitude>
+<longitude dir="E" >71.10</longitude>
+</city>
+<city name="Gir Forest" ><latitude dir="N" >21.00</latitude>
+<longitude dir="E" >71.00</longitude>
+</city>
+<city name="Godhra" ><latitude dir="N" >22.45</latitude>
+<longitude dir="E" >73.40</longitude>
+</city>
+<city name="Gondal" ><latitude dir="N" >21.55</latitude>
+<longitude dir="E" >70.52</longitude>
+</city>
+<city name="Himadnagar " ><latitude dir="N" >23.42</latitude>
+<longitude dir="E" >73.02</longitude>
+</city>
+<city name="Idar " ><latitude dir="N" >23.50</latitude>
+<longitude dir="E" >73.02</longitude>
+</city>
+<city name="Jafarabad " ><latitude dir="N" >20.52</latitude>
+<longitude dir="E" >71.25</longitude>
+</city>
+<city name="Jakhau " ><latitude dir="N" >23.14</latitude>
+<longitude dir="E" >68.45</longitude>
+</city>
+<city name="Jamnagar" ><latitude dir="N" >22.27</latitude>
+<longitude dir="E" >70.07</longitude>
+</city>
+<city name="Jasdan " ><latitude dir="N" >22.04</latitude>
+<longitude dir="E" >71.91</longitude>
+</city>
+<city name="Junagadh " ><latitude dir="N" >21.31</latitude>
+<longitude dir="E" >70.36</longitude>
+</city>
+<city name="Kachchh, Gt. Rann of " ><latitude dir="N" >24.00</latitude>
+<longitude dir="E" >70.00</longitude>
+</city>
+<city name="Kachchh, Gulf of " ><latitude dir="N" >22.35</latitude>
+<longitude dir="E" >69.40</longitude>
+</city>
+<city name="Kachchh, Little Rann of " ><latitude dir="N" >23.26</latitude>
+<longitude dir="E" >71.20</longitude>
+</city>
+<city name="Kadi" ><latitude dir="N" >23.18</latitude>
+<longitude dir="E" >72.23</longitude>
+</city>
+<city name="Kalol " ><latitude dir="N" >23.15</latitude>
+<longitude dir="E" >72.33</longitude>
+</city>
+<city name="Kandia " ><latitude dir="N" >23.00</latitude>
+<longitude dir="E" >70.10</longitude>
+</city>
+<city name="Kathiawar Peninsula" ><latitude dir="N" >22.00</latitude>
+<longitude dir="E" >71.00</longitude>
+</city>
+<city name="Khadir I." ><latitude dir="N" >23.50</latitude>
+<longitude dir="E" >70.42</longitude>
+</city>
+<city name="Khambhat, Gulf of" ><latitude dir="N" >21.00</latitude>
+<longitude dir="E" >72.30</longitude>
+</city>
+<city name="Kharaghoda" ><latitude dir="N" >23.12</latitude>
+<longitude dir="E" >72.15</longitude>
+</city>
+<city name="Kheda" ><latitude dir="N" >22.45</latitude>
+<longitude dir="E" >72.45</longitude>
+</city>
+<city name="Khedrahma" ><latitude dir="N" >24.03</latitude>
+<longitude dir="E" >73.04</longitude>
+</city>
+<city name="Kheralu" ><latitude dir="N" >23.54</latitude>
+<longitude dir="E" >72.40</longitude>
+</city>
+<city name="Khmbhat" ><latitude dir="N" >22.19</latitude>
+<longitude dir="E" >72.38</longitude>
+</city>
+<city name="Lakhpat" ><latitude dir="N" >23.49</latitude>
+<longitude dir="E" >68.48</longitude>
+</city>
+<city name="Lakhtar" ><latitude dir="N" >22.52</latitude>
+<longitude dir="E" >71.51</longitude>
+</city>
+<city name="Limbdi" ><latitude dir="N" >22.34</latitude>
+<longitude dir="E" >71.53</longitude>
+</city>
+<city name="Lunavada" ><latitude dir="N" >22.08</latitude>
+<longitude dir="E" >73.37</longitude>
+</city>
+<city name="Magori" ><latitude dir="N" >23.18</latitude>
+<longitude dir="E" >73.24</longitude>
+</city>
+<city name="Mahesana" ><latitude dir="N" >23.42</latitude>
+<longitude dir="E" >72.37</longitude>
+</city>
+<city name="Mahi R." ><latitude dir="N" >22.20</latitude>
+<longitude dir="E" >73.05</longitude>
+</city>
+<city name="Mahuva" ><latitude dir="N" >21.10</latitude>
+<longitude dir="E" >71.45</longitude>
+</city>
+<city name="Malia" ><latitude dir="N" >23.09</latitude>
+<longitude dir="E" >70.82</longitude>
+</city>
+<city name="Mandvi" ><latitude dir="N" >22.51</latitude>
+<longitude dir="E" >68.32</longitude>
+</city>
+<city name="Mangral" ><latitude dir="N" >21.08</latitude>
+<longitude dir="E" >70.14</longitude>
+</city>
+<city name="Mehmadabad" ><latitude dir="N" >22.50</latitude>
+<longitude dir="E" >72.48</longitude>
+</city>
+<city name="Modasa" ><latitude dir="N" >23.28</latitude>
+<longitude dir="E" >73.21</longitude>
+</city>
+<city name="Morbi" ><latitude dir="N" >22.49</latitude>
+<longitude dir="E" >70.54</longitude>
+</city>
+<city name="Mundra" ><latitude dir="N" >22.49</latitude>
+<longitude dir="E" >69.52</longitude>
+</city>
+<city name="Naenwa " ><latitude dir="N" >22.41</latitude>
+<longitude dir="E" >72.55</longitude>
+</city>
+<city name="Nandod " ><latitude dir="N" >21.54</latitude>
+<longitude dir="E" >73.34</longitude>
+</city>
+<city name="Jamnagar" ><latitude dir="N" >22.27</latitude>
+<longitude dir="E" >70.07</longitude>
+</city>
+<city name="Navsari " ><latitude dir="N" >21.07</latitude>
+<longitude dir="E" >73.40</longitude>
+</city>
+<city name="Pachham" ><latitude dir="N" >23.56</latitude>
+<longitude dir="E" >69.50</longitude>
+</city>
+<city name="Padra" ><latitude dir="N" >22.15</latitude>
+<longitude dir="E" >73.07</longitude>
+</city>
+<city name="Palanpur" ><latitude dir="N" >24.12</latitude>
+<longitude dir="E" >72.28</longitude>
+</city>
+<city name="Palitana" ><latitude dir="N" >21.31</latitude>
+<longitude dir="E" >71.53</longitude>
+</city>
+<city name="Parantij" ><latitude dir="N" >23.26</latitude>
+<longitude dir="E" >72.55</longitude>
+</city>
+<city name="Patan" ><latitude dir="N" >23.52</latitude>
+<longitude dir="E" >72.10</longitude>
+</city>
+<city name="somnath" ><latitude dir="N" >21.04</latitude>
+<longitude dir="E" >70.26</longitude>
+</city>
+<city name="Petlad " ><latitude dir="N" >22.29</latitude>
+<longitude dir="E" >72.50</longitude>
+</city>
+<city name="Porbandar " ><latitude dir="N" >21.37</latitude>
+<longitude dir="E" >69.49</longitude>
+</city>
+<city name="Port Okha" ><latitude dir="N" >22.15</latitude>
+<longitude dir="E" >69.10</longitude>
+</city>
+<city name="Radhanpur" ><latitude dir="N" >23.50</latitude>
+<longitude dir="E" >71.38</longitude>
+</city>
+<city name="Rajkot" ><latitude dir="N" >22.18</latitude>
+<longitude dir="E" >70.56</longitude>
+</city>
+<city name="Rapar" ><latitude dir="N" >23.32</latitude>
+<longitude dir="E" >70.40</longitude>
+</city>
+<city name="Sachin" ><latitude dir="N" >21.05</latitude>
+<longitude dir="E" >72.59</longitude>
+</city>
+<city name="Sadra" ><latitude dir="N" >23.20</latitude>
+<longitude dir="E" >73.47</longitude>
+</city>
+<city name="Saradiya" ><latitude dir="N" >21.35</latitude>
+<longitude dir="E" >70.05</longitude>
+</city>
+<city name="Satpura Range" ><latitude dir="N" >21.40</latitude>
+<longitude dir="E" >75.00</longitude>
+</city>
+<city name="Sidhpur" ><latitude dir="N" >23.45</latitude>
+<longitude dir="E" >72.37</longitude>
+</city>
+<city name="Tapi R." ><latitude dir="N" >21.20</latitude>
+<longitude dir="E" >74.30</longitude>
+</city>
+<city name="Taranga Hill" ><latitude dir="N" >24.03</latitude>
+<longitude dir="E" >72.44</longitude>
+</city>
+<city name="Tharad" ><latitude dir="N" >24.23</latitude>
+<longitude dir="E" >71.37</longitude>
+</city>
+<city name="Vadodara" ><latitude dir="N" >22.00</latitude>
+<longitude dir="E" >73.16</longitude>
+</city>
+<city name="Vankaner" ><latitude dir="N" >22.33</latitude>
+<longitude dir="E" >71.00</longitude>
+</city>
+<city name="Veraval" ><latitude dir="N" >20.53</latitude>
+<longitude dir="E" >73.26</longitude>
+</city>
+<city name="Viramgam" ><latitude dir="N" >23.08</latitude>
+<longitude dir="E" >72.07</longitude>
+</city>
+<city name="Visavadar" ><latitude dir="N" >21.22</latitude>
+<longitude dir="E" >70.52</longitude>
+</city>
+<city name="Surendranagar" ><latitude dir="N" >22.43</latitude>
+<longitude dir="E" >71.43</longitude>
+</city>
+</state>
+<state name="Haryana" ><city name="Haryana" ><latitude dir="N" >30.30</latitude>
+<longitude dir="E" >74.60</longitude>
+</city>
+<city name="Ambala" ><latitude dir="N" >30.21</latitude>
+<longitude dir="E" >76.52</longitude>
+</city>
+<city name="Bhiwani" ><latitude dir="N" >28.46</latitude>
+<longitude dir="E" >76.18</longitude>
+</city>
+<city name="Ellenabad" ><latitude dir="N" >29.26</latitude>
+<longitude dir="E" >74.54</longitude>
+</city>
+<city name="Faridabad " ><latitude dir="N" >28.25</latitude>
+<longitude dir="E" >77.22</longitude>
+</city>
+<city name="Fatehabad" ><latitude dir="N" >29.31</latitude>
+<longitude dir="E" >75.30</longitude>
+</city>
+<city name="Firozpur Jhirka" ><latitude dir="N" >27.47</latitude>
+<longitude dir="E" >76.59</longitude>
+</city>
+<city name="Gurgaon" ><latitude dir="N" >28.37</latitude>
+<longitude dir="E" >77.04</longitude>
+</city>
+<city name="Hansi " ><latitude dir="N" >29.06</latitude>
+<longitude dir="E" >76.00</longitude>
+</city>
+<city name="Hisar " ><latitude dir="N" >29.10</latitude>
+<longitude dir="E" >75.46</longitude>
+</city>
+<city name="Jind" ><latitude dir="N" >29.19</latitude>
+<longitude dir="E" >76.23</longitude>
+</city>
+<city name="Kaithal " ><latitude dir="N" >29.48</latitude>
+<longitude dir="E" >78.26</longitude>
+</city>
+<city name="Karnal" ><latitude dir="N" >29.42</latitude>
+<longitude dir="E" >77.02</longitude>
+</city>
+<city name="Ladwa" ><latitude dir="N" >29.59</latitude>
+<longitude dir="E" >77.05</longitude>
+</city>
+<city name="Loharu" ><latitude dir="N" >28.16</latitude>
+<longitude dir="E" >75.45</longitude>
+</city>
+<city name="Narnaul " ><latitude dir="N" >28.02</latitude>
+<longitude dir="E" >76.14</longitude>
+</city>
+<city name="Pataudi " ><latitude dir="N" >28.18</latitude>
+<longitude dir="E" >76.48</longitude>
+</city>
+<city name="Pehowa " ><latitude dir="N" >29.57</latitude>
+<longitude dir="E" >76.37</longitude>
+</city>
+<city name="Rania" ><latitude dir="N" >29.28</latitude>
+<longitude dir="E" >74.54</longitude>
+</city>
+<city name="Rewari" ><latitude dir="N" >28.12</latitude>
+<longitude dir="E" >76.40</longitude>
+</city>
+<city name="Rohtak" ><latitude dir="N" >28.54</latitude>
+<longitude dir="E" >76.38</longitude>
+</city>
+<city name="Rori" ><latitude dir="N" >29.44</latitude>
+<longitude dir="E" >75.17</longitude>
+</city>
+<city name="Shahabad" ><latitude dir="N" >30.10</latitude>
+<longitude dir="E" >76.55</longitude>
+</city>
+<city name="Thanesar" ><latitude dir="N" >29.58</latitude>
+<longitude dir="E" >76.56</longitude>
+</city>
+</state>
+<state name="Himachal Pradesh" ><city name="Himachal Pradesh" ><latitude dir="N" >32.29</latitude>
+<longitude dir="E" >75.10</longitude>
+</city>
+<city name="Baned" ><latitude dir="N" >31.30</latitude>
+<longitude dir="E" >76.55</longitude>
+</city>
+<city name="Bhakra Gorge Dam " ><latitude dir="N" >32.05</latitude>
+<longitude dir="E" >76.50</longitude>
+</city>
+<city name="Biiaspur" ><latitude dir="N" >31.19</latitude>
+<longitude dir="E" >76.50</longitude>
+</city>
+<city name="Chamba" ><latitude dir="N" >32.29</latitude>
+<longitude dir="E" >76.10</longitude>
+</city>
+<city name="Chhachrauli" ><latitude dir="N" >30.18</latitude>
+<longitude dir="E" >77.27</longitude>
+</city>
+<city name="Dagshai " ><latitude dir="N" >30.53</latitude>
+<longitude dir="E" >77.06</longitude>
+</city>
+<city name="Dharmsala" ><latitude dir="N" >32.16</latitude>
+<longitude dir="E" >76.23</longitude>
+</city>
+<city name="Jawalamukhi " ><latitude dir="N" >31.53</latitude>
+<longitude dir="E" >76.22</longitude>
+</city>
+<city name="Jogindernagar" ><latitude dir="N" >31.50</latitude>
+<longitude dir="E" >76.45</longitude>
+</city>
+<city name="Kangra " ><latitude dir="N" >32.05</latitude>
+<longitude dir="E" >76.18</longitude>
+</city>
+<city name="Kasauli" ><latitude dir="N" >30.53</latitude>
+<longitude dir="E" >77.01</longitude>
+</city>
+<city name="Kothkhai" ><latitude dir="N" >31.08</latitude>
+<longitude dir="E" >77.36</longitude>
+</city>
+<city name="Mandi" ><latitude dir="N" >31.43</latitude>
+<longitude dir="E" >76.58</longitude>
+</city>
+<city name="Nagrota " ><latitude dir="N" >32.07</latitude>
+<longitude dir="E" >76.23</longitude>
+</city>
+<city name="Nahan " ><latitude dir="N" >30.33</latitude>
+<longitude dir="E" >77.21</longitude>
+</city>
+<city name="Nalagarh " ><latitude dir="N" >30.57</latitude>
+<longitude dir="E" >76.22</longitude>
+</city>
+<city name="Nurpur " ><latitude dir="N" >32.18</latitude>
+<longitude dir="E" >75.56</longitude>
+</city>
+<city name="Shimla" ><latitude dir="N" >31.06</latitude>
+<longitude dir="E" >77.13</longitude>
+</city>
+<city name="Yol" ><latitude dir="N" >32.11</latitude>
+<longitude dir="E" >76.23</longitude>
+</city>
+</state>
+<state name="Jammu and Kashmir" ><city name="Jammu and Kashmir" ><latitude dir="N" >32.44</latitude>
+<longitude dir="E" >74.54</longitude>
+</city>
+<city name="Baltistan" ><latitude dir="N" >35.30</latitude>
+<longitude dir="E" >76.00</longitude>
+</city>
+<city name="Baramula" ><latitude dir="N" >34.10</latitude>
+<longitude dir="E" >74.30</longitude>
+</city>
+<city name="Bhadarwah" ><latitude dir="N" >33.04</latitude>
+<longitude dir="E" >75.40</longitude>
+</city>
+<city name="Dras" ><latitude dir="N" >34.22</latitude>
+<longitude dir="E" >75.50</longitude>
+</city>
+<city name="Godwin Austen" ><latitude dir="N" >35.30</latitude>
+<longitude dir="E" >76.32</longitude>
+</city>
+<city name="Gulmarg" ><latitude dir="N" >34.15</latitude>
+<longitude dir="E" >74.25</longitude>
+</city>
+<city name="Gurais" ><latitude dir="N" >34.38</latitude>
+<longitude dir="E" >74.56</longitude>
+</city>
+<city name="Jammu " ><latitude dir="N" >32.43</latitude>
+<longitude dir="E" >74.54</longitude>
+</city>
+<city name="Kapalu " ><latitude dir="N" >35.10</latitude>
+<longitude dir="E" >76.20</longitude>
+</city>
+<city name="Kargil" ><latitude dir="N" >34.30</latitude>
+<longitude dir="E" >76.13</longitude>
+</city>
+<city name="Kathua" ><latitude dir="N" >32.17</latitude>
+<longitude dir="E" >75.36</longitude>
+</city>
+<city name="Khartaksho" ><latitude dir="N" >34.53</latitude>
+<longitude dir="E" >76.10</longitude>
+</city>
+<city name="Kishtwar" ><latitude dir="N" >33.19</latitude>
+<longitude dir="E" >75.48</longitude>
+</city>
+<city name="Kotli" ><latitude dir="N" >33.30</latitude>
+<longitude dir="E" >73.57</longitude>
+</city>
+<city name="Ladakh Range" ><latitude dir="N" >32.00</latitude>
+<longitude dir="E" >80.00</longitude>
+</city>
+<city name="Leh" ><latitude dir="N" >34.10</latitude>
+<longitude dir="E" >77.40</longitude>
+</city>
+<city name="Mirpur" ><latitude dir="N" >33.12</latitude>
+<longitude dir="E" >73.51</longitude>
+</city>
+<city name="Muzaffarabad" ><latitude dir="N" >34.24</latitude>
+<longitude dir="E" >73.22</longitude>
+</city>
+<city name="Nanga Parbat, Mt. " ><latitude dir="N" >35.20</latitude>
+<longitude dir="E" >74.40</longitude>
+</city>
+<city name="Naoshera" ><latitude dir="N" >33.13</latitude>
+<longitude dir="E" >74.17</longitude>
+</city>
+<city name="Padam" ><latitude dir="N" >33.28</latitude>
+<longitude dir="E" >76.54</longitude>
+</city>
+<city name="Pir Panjal Pass " ><latitude dir="N" >33.36</latitude>
+<longitude dir="E" >74.22</longitude>
+</city>
+<city name="Punch" ><latitude dir="N" >33.51</latitude>
+<longitude dir="E" >74.08</longitude>
+</city>
+<city name="Ramnagar" ><latitude dir="N" >32.52</latitude>
+<longitude dir="E" >75.22</longitude>
+</city>
+<city name="Udampur" ><latitude dir="N" >32.55</latitude>
+<longitude dir="E" >75.09</longitude>
+</city>
+<city name="Zangla" ><latitude dir="N" >30.40</latitude>
+<longitude dir="E" >77.00</longitude>
+</city>
+<city name="Zaskar" ><latitude dir="N" >33.30</latitude>
+<longitude dir="E" >77.00</longitude>
+</city>
+<city name="Anantnar" ><latitude dir="N" >33.43</latitude>
+<longitude dir="E" >75.17</longitude>
+</city>
+<city name="Karakoram Range" ><latitude dir="N" >36.10</latitude>
+<longitude dir="E" >75.00</longitude>
+</city>
+</state>
+<state name="Karnataka" ><city name="Karnataka" ><latitude dir="N" >15.00</latitude>
+<longitude dir="E" >75.00</longitude>
+</city>
+<city name="Aland" ><latitude dir="N" >17.36</latitude>
+<longitude dir="E" >76.35</longitude>
+</city>
+<city name="Anagundi" ><latitude dir="N" >15.21</latitude>
+<longitude dir="E" >76.33</longitude>
+</city>
+<city name="Athni" ><latitude dir="N" >16.44</latitude>
+<longitude dir="E" >75.06</longitude>
+</city>
+<city name="Bagalkot" ><latitude dir="N" >16.12</latitude>
+<longitude dir="E" >75.45</longitude>
+</city>
+<city name="Bagevadi" ><latitude dir="N" >16.33</latitude>
+<longitude dir="E" >76.05</longitude>
+</city>
+<city name="Bangalore" ><latitude dir="N" >12.58</latitude>
+<longitude dir="E" >77.38</longitude>
+</city>
+<city name="Bantval" ><latitude dir="N" >12.53</latitude>
+<longitude dir="E" >75.05</longitude>
+</city>
+<city name="Belgaum" ><latitude dir="N" >15.52</latitude>
+<longitude dir="E" >74.34</longitude>
+</city>
+<city name="Bellary" ><latitude dir="N" >15.09</latitude>
+<longitude dir="E" >76.55</longitude>
+</city>
+<city name="Bhadravati" ><latitude dir="N" >13.52</latitude>
+<longitude dir="E" >75.40</longitude>
+</city>
+<city name="Bhalki" ><latitude dir="N" >18.04</latitude>
+<longitude dir="E" >77.10</longitude>
+</city>
+<city name="Bidar" ><latitude dir="N" >178.57</latitude>
+<longitude dir="E" >77.39</longitude>
+</city>
+<city name="Bijapur" ><latitude dir="N" >16.50</latitude>
+<longitude dir="E" >75.47</longitude>
+</city>
+<city name="Chamrajnagar" ><latitude dir="N" >11.56</latitude>
+<longitude dir="E" >77.00</longitude>
+</city>
+<city name="Channapatna" ><latitude dir="N" >12.38</latitude>
+<longitude dir="E" >77.13</longitude>
+</city>
+<city name="Chickballapur" ><latitude dir="N" >13.26</latitude>
+<longitude dir="E" >77.46</longitude>
+</city>
+<city name="Chikmagalur" ><latitude dir="N" >13.18</latitude>
+<longitude dir="E" >75.49</longitude>
+</city>
+<city name="Chiknayakanhalli" ><latitude dir="N" >13.25</latitude>
+<longitude dir="E" >76.40</longitude>
+</city>
+<city name="Chitradurga" ><latitude dir="N" >14.14</latitude>
+<longitude dir="E" >76.26</longitude>
+</city>
+<city name="Coondapoor" ><latitude dir="N" >13.38</latitude>
+<longitude dir="E" >74.42</longitude>
+</city>
+<city name="Davangere" ><latitude dir="N" >14.31</latitude>
+<longitude dir="E" >75.58</longitude>
+</city>
+<city name="Deodrug" ><latitude dir="N" >16.25</latitude>
+<longitude dir="E" >77.00</longitude>
+</city>
+<city name="Dharwar" ><latitude dir="N" >15.27</latitude>
+<longitude dir="E" >75.05</longitude>
+</city>
+<city name="Dod-Ballapur" ><latitude dir="N" >13.14</latitude>
+<longitude dir="E" >77.23</longitude>
+</city>
+<city name="Gadag" ><latitude dir="N" >15.25</latitude>
+<longitude dir="E" >75.42</longitude>
+</city>
+<city name="Gangawati" ><latitude dir="N" >15.30</latitude>
+<longitude dir="E" >76.36</longitude>
+</city>
+<city name="Gersoppa" ><latitude dir="N" >14.18</latitude>
+<longitude dir="E" >74.55</longitude>
+</city>
+<city name="Gokak" ><latitude dir="N" >16.11</latitude>
+<longitude dir="E" >74.52</longitude>
+</city>
+<city name="Gulbarga" ><latitude dir="N" >17.19</latitude>
+<longitude dir="E" >76.54</longitude>
+</city>
+<city name="Vijanagar" ><latitude dir="N" >15.20</latitude>
+<longitude dir="E" >76.30</longitude>
+</city>
+<city name="Hangai " ><latitude dir="N" >14.46</latitude>
+<longitude dir="E" >75.12</longitude>
+</city>
+<city name="Harihar " ><latitude dir="N" >14.31</latitude>
+<longitude dir="E" >75.52</longitude>
+</city>
+<city name="Harnhalli " ><latitude dir="N" >13.15</latitude>
+<longitude dir="E" >76.12</longitude>
+</city>
+<city name="Harpanahalli " ><latitude dir="N" >14.47</latitude>
+<longitude dir="E" >75.58</longitude>
+</city>
+<city name="Hassan " ><latitude dir="N" >13.01</latitude>
+<longitude dir="E" >76.10</longitude>
+</city>
+<city name="Hiriyur " ><latitude dir="N" >13.57</latitude>
+<longitude dir="E" >76.40</longitude>
+</city>
+<city name="Hole Narsipur " ><latitude dir="N" >12.47</latitude>
+<longitude dir="E" >76.17</longitude>
+</city>
+<city name="Homnabad " ><latitude dir="N" >17.43</latitude>
+<longitude dir="E" >77.12</longitude>
+</city>
+<city name="Honavar" ><latitude dir="N" >14.17</latitude>
+<longitude dir="E" >74.29</longitude>
+</city>
+<city name="Honnali " ><latitude dir="N" >14.15</latitude>
+<longitude dir="E" >75.41</longitude>
+</city>
+<city name="Hosdurga " ><latitude dir="N" >13.48</latitude>
+<longitude dir="E" >76.20</longitude>
+</city>
+<city name="Hospet " ><latitude dir="N" >15.16</latitude>
+<longitude dir="E" >76.26</longitude>
+</city>
+<city name="Hubli " ><latitude dir="N" >15.20</latitude>
+<longitude dir="E" >75.12</longitude>
+</city>
+<city name="Hunsur " ><latitude dir="N" >12.18</latitude>
+<longitude dir="E" >76.19</longitude>
+</city>
+<city name="Jamkhandi " ><latitude dir="N" >16.30</latitude>
+<longitude dir="E" >75.20</longitude>
+</city>
+<city name="Kadur " ><latitude dir="N" >13.33</latitude>
+<longitude dir="E" >76.03</longitude>
+</city>
+<city name="Kallur " ><latitude dir="N" >16.12</latitude>
+<longitude dir="E" >77.08</longitude>
+</city>
+<city name="Kalyani " ><latitude dir="N" >17.53</latitude>
+<longitude dir="E" >76.59</longitude>
+</city>
+<city name="Karkala" ><latitude dir="N" >13.12</latitude>
+<longitude dir="E" >75.00</longitude>
+</city>
+<city name="Karwar" ><latitude dir="N" >14.48</latitude>
+<longitude dir="E" >74.11</longitude>
+</city>
+<city name="Khanpur" ><latitude dir="N" >15.42</latitude>
+<longitude dir="E" >74.35</longitude>
+</city>
+<city name="Kolar" ><latitude dir="N" >13.09</latitude>
+<longitude dir="E" >78.11</longitude>
+</city>
+<city name="Kollegal" ><latitude dir="N" >12.09</latitude>
+<longitude dir="E" >77.09</longitude>
+</city>
+<city name="Kollur" ><latitude dir="N" >13.53</latitude>
+<longitude dir="E" >74.53</longitude>
+</city>
+<city name="Kopbal" ><latitude dir="N" >15.20</latitude>
+<longitude dir="E" >76.13</longitude>
+</city>
+<city name="Kotturu" ><latitude dir="N" >14.49</latitude>
+<longitude dir="E" >76.16</longitude>
+</city>
+<city name="Krishnaraj Res." ><latitude dir="N" >12.20</latitude>
+<longitude dir="E" >76.32</longitude>
+</city>
+<city name="Kudremukh" ><latitude dir="N" >13.10</latitude>
+<longitude dir="E" >75.15</longitude>
+</city>
+<city name="Kumta" ><latitude dir="N" >14.26</latitude>
+<longitude dir="E" >74.27</longitude>
+</city>
+<city name="Lingsugur" ><latitude dir="N" >16.07</latitude>
+<longitude dir="E" >76.34</longitude>
+</city>
+<city name="Londa" ><latitude dir="N" >15.60</latitude>
+<longitude dir="E" >74.50</longitude>
+</city>
+<city name="Mangalore" ><latitude dir="N" >12.52</latitude>
+<longitude dir="E" >74.53</longitude>
+</city>
+<city name="Manvi" ><latitude dir="N" >19.18</latitude>
+<longitude dir="E" >76.30</longitude>
+</city>
+<city name="Mercara" ><latitude dir="N" >12.26</latitude>
+<longitude dir="E" >75.47</longitude>
+</city>
+<city name="Muddebihal" ><latitude dir="N" >16.20</latitude>
+<longitude dir="E" >76.10</longitude>
+</city>
+<city name="Mudhol" ><latitude dir="N" >16.20</latitude>
+<longitude dir="E" >75.20</longitude>
+</city>
+<city name="Mulbagal" ><latitude dir="N" >13.11</latitude>
+<longitude dir="E" >78.14</longitude>
+</city>
+<city name="Mysore" ><latitude dir="N" >12.18</latitude>
+<longitude dir="E" >76.42</longitude>
+</city>
+<city name="Nanjangud " ><latitude dir="N" >12.07</latitude>
+<longitude dir="E" >76.44</longitude>
+</city>
+<city name="Puttur" ><latitude dir="N" >12.45</latitude>
+<longitude dir="E" >75.10</longitude>
+</city>
+<city name="Ramanagaram" ><latitude dir="N" >12.54</latitude>
+<longitude dir="E" >78.02</longitude>
+</city>
+<city name="Ramdurg" ><latitude dir="N" >15.58</latitude>
+<longitude dir="E" >75.22</longitude>
+</city>
+<city name="Ranibennur" ><latitude dir="N" >14.33</latitude>
+<longitude dir="E" >75.41</longitude>
+</city>
+<city name="Robertosonpet" ><latitude dir="N" >12.58</latitude>
+<longitude dir="E" >78.16</longitude>
+</city>
+<city name="Sagar" ><latitude dir="N" >16.37</latitude>
+<longitude dir="E" >76.51</longitude>
+</city>
+<city name="Sandur" ><latitude dir="N" >15.02</latitude>
+<longitude dir="E" >76.36</longitude>
+</city>
+<city name="Savanur" ><latitude dir="N" >14.58</latitude>
+<longitude dir="E" >75.19</longitude>
+</city>
+<city name="Shahabad" ><latitude dir="N" >17.10</latitude>
+<longitude dir="E" >78.11</longitude>
+</city>
+<city name="shahapur" ><latitude dir="N" >15.50</latitude>
+<longitude dir="E" >74.34</longitude>
+</city>
+<city name="shikarpur" ><latitude dir="N" >14.16</latitude>
+<longitude dir="E" >75.24</longitude>
+</city>
+<city name="Shimoga" ><latitude dir="N" >13.56</latitude>
+<longitude dir="E" >75.38</longitude>
+</city>
+<city name="Talguppa" ><latitude dir="N" >14.10</latitude>
+<longitude dir="E" >74.52</longitude>
+</city>
+<city name="Tarikere " ><latitude dir="N" >13.42</latitude>
+<longitude dir="E" >75.51</longitude>
+</city>
+<city name="Tumkur" ><latitude dir="N" >13.20</latitude>
+<longitude dir="E" >77.08</longitude>
+</city>
+<city name="Udipi" ><latitude dir="N" >13.20</latitude>
+<longitude dir="E" >74.45</longitude>
+</city>
+<city name="Vanivilas Sagar" ><latitude dir="N" >13.50</latitude>
+<longitude dir="E" >76.25</longitude>
+</city>
+<city name="Wadi" ><latitude dir="N" >17.00</latitude>
+<longitude dir="E" >76.57</longitude>
+</city>
+<city name="Yelandur" ><latitude dir="N" >12.05</latitude>
+<longitude dir="E" >77.00</longitude>
+</city>
+</state>
+<state name="Kerala" ><city name="Kerala" ><latitude dir="N" >10.00</latitude>
+<longitude dir="E" >76.25</longitude>
+</city>
+<city name="Alleppey" ><latitude dir="N" >09.30</latitude>
+<longitude dir="E" >76.23</longitude>
+</city>
+<city name="Alwaye" ><latitude dir="N" >10.07</latitude>
+<longitude dir="E" >76.24</longitude>
+</city>
+<city name="Anjengo" ><latitude dir="N" >08.40</latitude>
+<longitude dir="E" >76.48</longitude>
+</city>
+<city name="Beypore" ><latitude dir="N" >11.10</latitude>
+<longitude dir="E" >75.50</longitude>
+</city>
+<city name="Calicut" ><latitude dir="N" >11.15</latitude>
+<longitude dir="E" >75.49</longitude>
+</city>
+<city name="Cannonore" ><latitude dir="N" >11.52</latitude>
+<longitude dir="E" >75.25</longitude>
+</city>
+<city name="Cardamon Hills" ><latitude dir="N" >09.27</latitude>
+<longitude dir="E" >76.52</longitude>
+</city>
+<city name="Chittur" ><latitude dir="N" >10.42</latitude>
+<longitude dir="E" >76.47</longitude>
+</city>
+<city name="Cochin" ><latitude dir="N" >09.58</latitude>
+<longitude dir="E" >76.17</longitude>
+</city>
+<city name="Ernakulam" ><latitude dir="N" >10.00</latitude>
+<longitude dir="E" >76.15</longitude>
+</city>
+<city name="Kasaragod" ><latitude dir="N" >12.30</latitude>
+<longitude dir="E" >75.00</longitude>
+</city>
+<city name="Kottayam" ><latitude dir="N" >09.36</latitude>
+<longitude dir="E" >76.34</longitude>
+</city>
+<city name="Mahe" ><latitude dir="N" >11.42</latitude>
+<longitude dir="E" >75.34</longitude>
+</city>
+<city name="Mattancheri" ><latitude dir="N" >09.57</latitude>
+<longitude dir="E" >76.17</longitude>
+</city>
+<city name="Nilgiri Hills " ><latitude dir="N" >11.28</latitude>
+<longitude dir="E" >76.47</longitude>
+</city>
+<city name="Palghat" ><latitude dir="N" >10.46</latitude>
+<longitude dir="E" >76.42</longitude>
+</city>
+<city name="Permad" ><latitude dir="N" >09.30</latitude>
+<longitude dir="E" >77.02</longitude>
+</city>
+<city name="Periyar R. " ><latitude dir="N" >10.00</latitude>
+<longitude dir="E" >76.52</longitude>
+</city>
+<city name="Ponnani " ><latitude dir="N" >10.47</latitude>
+<longitude dir="E" >75.58</longitude>
+</city>
+<city name="Kollam" ><latitude dir="N" >08.54</latitude>
+<longitude dir="E" >76.38</longitude>
+</city>
+<city name="Thalaserry" ><latitude dir="N" >11.45</latitude>
+<longitude dir="E" >75.32</longitude>
+</city>
+<city name="Trichur" ><latitude dir="N" >10.30</latitude>
+<longitude dir="E" >76.15</longitude>
+</city>
+<city name="Trivandrum" ><latitude dir="N" >08.29</latitude>
+<longitude dir="E" >76.59</longitude>
+</city>
+<city name="Vaikam" ><latitude dir="N" >09.45</latitude>
+<longitude dir="E" >76.27</longitude>
+</city>
+<city name="Vypin I." ><latitude dir="N" >09.58</latitude>
+<longitude dir="E" >79.17</longitude>
+</city>
+</state>
+<state name="Lakshadweep" ><city name="Lakshadweep" ><latitude dir="N" >10.00</latitude>
+<longitude dir="E" >73.00</longitude>
+</city>
+</state>
+<state name="Madhya Pradesh" ><city name="Madhya Pradesh" ><latitude dir="N" >23.30</latitude>
+<longitude dir="E" >80.00</longitude>
+</city>
+<city name="Adegaon" ><latitude dir="N" >22.38</latitude>
+<longitude dir="E" >79.32</longitude>
+</city>
+<city name="Agar" ><latitude dir="N" >23.44</latitude>
+<longitude dir="E" >76.04</longitude>
+</city>
+<city name="Ajaigarh" ><latitude dir="N" >24.53</latitude>
+<longitude dir="E" >80.13</longitude>
+</city>
+<city name="Ali Rajpur" ><latitude dir="N" >22.11</latitude>
+<longitude dir="E" >74.24</longitude>
+</city>
+<city name="Alipura" ><latitude dir="N" >25.10</latitude>
+<longitude dir="E" >79.22</longitude>
+</city>
+<city name="Ambikapur" ><latitude dir="N" >23.10</latitude>
+<longitude dir="E" >83.15</longitude>
+</city>
+<city name="Amjhera" ><latitude dir="N" >22.32</latitude>
+<longitude dir="E" >75.10</longitude>
+</city>
+<city name="Ashta" ><latitude dir="N" >23.01</latitude>
+<longitude dir="E" >76.38</longitude>
+</city>
+<city name="Badnur" ><latitude dir="N" >21.80</latitude>
+<longitude dir="E" >77.90</longitude>
+</city>
+<city name="Baghelkhand" ><latitude dir="N" >24.10</latitude>
+<longitude dir="E" >82.00</longitude>
+</city>
+<city name="Balaghat" ><latitude dir="N" >21.48</latitude>
+<longitude dir="E" >80.15</longitude>
+</city>
+<city name="Banka Pahari" ><latitude dir="N" >25.14</latitude>
+<longitude dir="E" >80.50</longitude>
+</city>
+<city name="Barannda" ><latitude dir="N" >25.03</latitude>
+<longitude dir="E" >80.40</longitude>
+</city>
+<city name="Bardi" ><latitude dir="N" >24.30</latitude>
+<longitude dir="E" >82.26</longitude>
+</city>
+<city name="Barwani" ><latitude dir="N" >22.03</latitude>
+<longitude dir="E" >74.57</longitude>
+</city>
+<city name="Bastar, district" ><latitude dir="N" >19.10</latitude>
+<longitude dir="E" >81.30</longitude>
+</city>
+<city name="Beri" ><latitude dir="N" >25.55</latitude>
+<longitude dir="E" >79.55</longitude>
+</city>
+<city name="Betul" ><latitude dir="N" >21.88</latitude>
+<longitude dir="E" >77.98</longitude>
+</city>
+<city name="Bhadaura" ><latitude dir="N" >24.48</latitude>
+<longitude dir="E" >77.26</longitude>
+</city>
+<city name="Bhainsdehi" ><latitude dir="N" >21.39</latitude>
+<longitude dir="E" >77.40</longitude>
+</city>
+<city name="Bhind" ><latitude dir="N" >26.36</latitude>
+<longitude dir="E" >78.46</longitude>
+</city>
+<city name="Bhopal" ><latitude dir="N" >23.16</latitude>
+<longitude dir="E" >77.36</longitude>
+</city>
+<city name="Bhopalpatnam" ><latitude dir="N" >18.50</latitude>
+<longitude dir="E" >80.24</longitude>
+</city>
+<city name="Biaora" ><latitude dir="N" >23.55</latitude>
+<longitude dir="E" >76.57</longitude>
+</city>
+<city name="Bijawar" ><latitude dir="N" >24.38</latitude>
+<longitude dir="E" >79.32</longitude>
+</city>
+<city name="Bijji" ><latitude dir="N" >18.02</latitude>
+<longitude dir="E" >81.24</longitude>
+</city>
+<city name="Bijna" ><latitude dir="N" >25.27</latitude>
+<longitude dir="E" >79.05</longitude>
+</city>
+<city name="Bilaspur" ><latitude dir="N" >22.05</latitude>
+<longitude dir="E" >82.13</longitude>
+</city>
+<city name="Bundelkhand" ><latitude dir="N" >24.40</latitude>
+<longitude dir="E" >80.00</longitude>
+</city>
+<city name="Burhanpur" ><latitude dir="N" >21.17</latitude>
+<longitude dir="E" >76.17</longitude>
+</city>
+<city name="Chalgali" ><latitude dir="N" >23.18</latitude>
+<longitude dir="E" >83.42</longitude>
+</city>
+<city name="Chambal R." ><latitude dir="N" >25.40</latitude>
+<longitude dir="E" >76.20</longitude>
+</city>
+<city name="Champa" ><latitude dir="N" >22.02</latitude>
+<longitude dir="E" >82.43</longitude>
+</city>
+<city name="Chanderi" ><latitude dir="N" >24.42</latitude>
+<longitude dir="E" >78.11</longitude>
+</city>
+<city name="Chhatarpur" ><latitude dir="N" >24.54</latitude>
+<longitude dir="E" >79.38</longitude>
+</city>
+<city name="Chhindwara" ><latitude dir="N" >22.03</latitude>
+<longitude dir="E" >78.59</longitude>
+</city>
+<city name="Chintalnar" ><latitude dir="N" >18.20</latitude>
+<longitude dir="E" >81.18</longitude>
+</city>
+<city name="Damoh" ><latitude dir="N" >23.50</latitude>
+<longitude dir="E" >79.29</longitude>
+</city>
+<city name="Datia" ><latitude dir="N" >25.39</latitude>
+<longitude dir="E" >78.27</longitude>
+</city>
+<city name="Deogarh" ><latitude dir="N" >21.51</latitude>
+<longitude dir="E" >78.50</longitude>
+</city>
+<city name="Dewas" ><latitude dir="N" >22.58</latitude>
+<longitude dir="E" >78.06</longitude>
+</city>
+<city name="Dhamtari" ><latitude dir="N" >20.42</latitude>
+<longitude dir="E" >81.34</longitude>
+</city>
+<city name="Dhar" ><latitude dir="N" >22.35</latitude>
+<longitude dir="E" >75.20</longitude>
+</city>
+<city name="Rabkob" ><latitude dir="N" >22.28</latitude>
+<longitude dir="E" >83.15</longitude>
+</city>
+<city name="Dhurwai" ><latitude dir="N" >25.28</latitude>
+<longitude dir="E" >79.07</longitude>
+</city>
+<city name="Dindori" ><latitude dir="N" >22.57</latitude>
+<longitude dir="E" >81.41</longitude>
+</city>
+<city name="Dongargarh" ><latitude dir="N" >21.12</latitude>
+<longitude dir="E" >80.50</longitude>
+</city>
+<city name="Durg (Drug)" ><latitude dir="N" >21.11</latitude>
+<longitude dir="E" >81.21</longitude>
+</city>
+<city name="Gadarwara" ><latitude dir="N" >22.56</latitude>
+<longitude dir="E" >78.50</longitude>
+</city>
+<city name="Garha" ><latitude dir="N" >24.25</latitude>
+<longitude dir="E" >78.03</longitude>
+</city>
+<city name="Garrauli" ><latitude dir="N" >25.05</latitude>
+<longitude dir="E" >79.24</longitude>
+</city>
+<city name="Gaurihar" ><latitude dir="N" >25.16</latitude>
+<longitude dir="E" >80.12</longitude>
+</city>
+<city name="Guna" ><latitude dir="N" >24.40</latitude>
+<longitude dir="E" >77.20</longitude>
+</city>
+<city name="Gwalior" ><latitude dir="N" >26.14</latitude>
+<longitude dir="E" >78.10</longitude>
+</city>
+<city name="Harai " ><latitude dir="N" >22.37</latitude>
+<longitude dir="E" >79.18</longitude>
+</city>
+<city name="Hoshangabad " ><latitude dir="N" >22.46</latitude>
+<longitude dir="E" >77.45</longitude>
+</city>
+<city name="Indore" ><latitude dir="N" >22.44</latitude>
+<longitude dir="E" >75.50</longitude>
+</city>
+<city name="Indravati R. " ><latitude dir="N" >19.03</latitude>
+<longitude dir="E" >81.00</longitude>
+</city>
+<city name="Itarsi " ><latitude dir="N" >22.30</latitude>
+<longitude dir="E" >77.55</longitude>
+</city>
+<city name="Jabalpur " ><latitude dir="N" >23.10</latitude>
+<longitude dir="E" >79.59</longitude>
+</city>
+<city name="Jagdalpur " ><latitude dir="N" >19.05</latitude>
+<longitude dir="E" >82.04</longitude>
+</city>
+<city name="Janakpur " ><latitude dir="N" >23.43</latitude>
+<longitude dir="E" >81.50</longitude>
+</city>
+<city name="Jaora " ><latitude dir="N" >23.43</latitude>
+<longitude dir="E" >75.09</longitude>
+</city>
+<city name="Jashpurnagar" ><latitude dir="N" >22.53</latitude>
+<longitude dir="E" >84.12</longitude>
+</city>
+<city name="Jaso " ><latitude dir="N" >24.30</latitude>
+<longitude dir="E" >80.32</longitude>
+</city>
+<city name="Jhabua " ><latitude dir="N" >22.45</latitude>
+<longitude dir="E" >74.38</longitude>
+</city>
+<city name="Jobat " ><latitude dir="N" >22.29</latitude>
+<longitude dir="E" >74.37</longitude>
+</city>
+<city name="Kaimur " ><latitude dir="N" >24.30</latitude>
+<longitude dir="E" >81.16</longitude>
+</city>
+<city name="Kanker " ><latitude dir="N" >20.15</latitude>
+<longitude dir="E" >81.32</longitude>
+</city>
+<city name="Katangi" ><latitude dir="N" >21.47</latitude>
+<longitude dir="E" >79.51</longitude>
+</city>
+<city name="Katni" ><latitude dir="N" >23.47</latitude>
+<longitude dir="E" >80.27</longitude>
+</city>
+<city name="Kawardha" ><latitude dir="N" >22.00</latitude>
+<longitude dir="E" >81.17</longitude>
+</city>
+<city name="Khachrod" ><latitude dir="N" >23.25</latitude>
+<longitude dir="E" >75.20</longitude>
+</city>
+<city name="Khairagarh" ><latitude dir="N" >21.26</latitude>
+<longitude dir="E" >81.02</longitude>
+</city>
+<city name="Khaniadhana" ><latitude dir="N" >25.01</latitude>
+<longitude dir="E" >78.07</longitude>
+</city>
+<city name="Khilchipur" ><latitude dir="N" >24.02</latitude>
+<longitude dir="E" >76.37</longitude>
+</city>
+<city name="Khurai" ><latitude dir="N" >24.03</latitude>
+<longitude dir="E" >78.23</longitude>
+</city>
+<city name="Korwai" ><latitude dir="N" >24.07</latitude>
+<longitude dir="E" >78.05</longitude>
+</city>
+<city name="Kothi" ><latitude dir="N" >24.45</latitude>
+<longitude dir="E" >80.40</longitude>
+</city>
+<city name="Kukshi" ><latitude dir="N" >22.13</latitude>
+<longitude dir="E" >74.48</longitude>
+</city>
+<city name="Kutru" ><latitude dir="N" >19.03</latitude>
+<longitude dir="E" >80.53</longitude>
+</city>
+<city name="Lakhnadon" ><latitude dir="N" >22.36</latitude>
+<longitude dir="E" >79.39</longitude>
+</city>
+<city name="Lashkar" ><latitude dir="N" >26.10</latitude>
+<longitude dir="E" >78.10</longitude>
+</city>
+<city name="Lugasi" ><latitude dir="N" >25.05</latitude>
+<longitude dir="E" >79.37</longitude>
+</city>
+<city name="Mahadeo Hills" ><latitude dir="N" >22.24</latitude>
+<longitude dir="E" >78.00</longitude>
+</city>
+<city name="Maheshwar" ><latitude dir="N" >22.11</latitude>
+<longitude dir="E" >75.37</longitude>
+</city>
+<city name="Maihar" ><latitude dir="N" >24.16</latitude>
+<longitude dir="E" >80.49</longitude>
+</city>
+<city name="Makrai" ><latitude dir="N" >22.04</latitude>
+<longitude dir="E" >77.08</longitude>
+</city>
+<city name="Makri" ><latitude dir="N" >19.45</latitude>
+<longitude dir="E" >81.58</longitude>
+</city>
+<city name="Mandla" ><latitude dir="N" >22.43</latitude>
+<longitude dir="E" >80.35</longitude>
+</city>
+<city name="Mandsaur" ><latitude dir="N" >24.03</latitude>
+<longitude dir="E" >75.08</longitude>
+</city>
+<city name="Manohar Thana" ><latitude dir="N" >24.17</latitude>
+<longitude dir="E" >76.45</longitude>
+</city>
+<city name="Manpur" ><latitude dir="N" >22.24</latitude>
+<longitude dir="E" >75.40</longitude>
+</city>
+<city name="Mau" ><latitude dir="N" >22.15</latitude>
+<longitude dir="E" >80.13</longitude>
+</city>
+<city name="Mauganj" ><latitude dir="N" >24.40</latitude>
+<longitude dir="E" >81.56</longitude>
+</city>
+<city name="Mehidpur" ><latitude dir="N" >23.29</latitude>
+<longitude dir="E" >75.42</longitude>
+</city>
+<city name="Mhow" ><latitude dir="N" >22.34</latitude>
+<longitude dir="E" >75.47</longitude>
+</city>
+<city name="Mmahendragarh" ><latitude dir="N" >23.21</latitude>
+<longitude dir="E" >82.21</longitude>
+</city>
+<city name="Muhammadgarh" ><latitude dir="N" >23.39</latitude>
+<longitude dir="E" >78.13</longitude>
+</city>
+<city name="Murwara" ><latitude dir="N" >23.51</latitude>
+<longitude dir="E" >80.02</longitude>
+</city>
+<city name="Unchahra" ><latitude dir="N" >22.33</latitude>
+<longitude dir="E" >80.37</longitude>
+</city>
+<city name="Narsimhapur " ><latitude dir="N" >22.57</latitude>
+<longitude dir="E" >79.15</longitude>
+</city>
+<city name="Narsinghgarh " ><latitude dir="N" >23.44</latitude>
+<longitude dir="E" >77.08</longitude>
+</city>
+<city name="Narwar " ><latitude dir="N" >25.39</latitude>
+<longitude dir="E" >77.53</longitude>
+</city>
+<city name="Nawab Basoda " ><latitude dir="N" >23.37</latitude>
+<longitude dir="E" >78.14</longitude>
+</city>
+<city name="Neemuch " ><latitude dir="N" >24.27</latitude>
+<longitude dir="E" >74.52</longitude>
+</city>
+<city name="Nemawar " ><latitude dir="N" >22.30</latitude>
+<longitude dir="E" >77.00</longitude>
+</city>
+<city name="Nowgon " ><latitude dir="N" >25.03</latitude>
+<longitude dir="E" >79.03</longitude>
+</city>
+<city name="Orchha" ><latitude dir="N" >25.21</latitude>
+<longitude dir="E" >78.38</longitude>
+</city>
+<city name="Pachapahar" ><latitude dir="N" >24.25</latitude>
+<longitude dir="E" >75.50</longitude>
+</city>
+<city name="Pachmarhi" ><latitude dir="N" >22.30</latitude>
+<longitude dir="E" >78.22</longitude>
+</city>
+<city name="Pandaria" ><latitude dir="N" >22.15</latitude>
+<longitude dir="E" >81.27</longitude>
+</city>
+<city name="Panna" ><latitude dir="N" >24.44</latitude>
+<longitude dir="E" >80.14</longitude>
+</city>
+<city name="Panth Piploda" ><latitude dir="N" >23.37</latitude>
+<longitude dir="E" >75.20</longitude>
+</city>
+<city name="Parlakot" ><latitude dir="N" >19.45</latitude>
+<longitude dir="E" >80.48</longitude>
+</city>
+<city name="Paron" ><latitude dir="N" >24.57</latitude>
+<longitude dir="E" >76.50</longitude>
+</city>
+<city name="Partabpur" ><latitude dir="N" >19.59</latitude>
+<longitude dir="E" >80.50</longitude>
+</city>
+<city name="Pathari " ><latitude dir="N" >23.56</latitude>
+<longitude dir="E" >78.15</longitude>
+</city>
+<city name="Pathri " ><latitude dir="N" >19.20</latitude>
+<longitude dir="E" >76.30</longitude>
+</city>
+<city name="Penganga R. " ><latitude dir="N" >20.00</latitude>
+<longitude dir="E" >77.00</longitude>
+</city>
+<city name="Phuljhar " ><latitude dir="N" >21.14</latitude>
+<longitude dir="E" >82.54</longitude>
+</city>
+<city name="Pirawa " ><latitude dir="N" >24.12</latitude>
+<longitude dir="E" >76.06</longitude>
+</city>
+<city name="Pitihra " ><latitude dir="N" >23.04</latitude>
+<longitude dir="E" >79.20</longitude>
+</city>
+<city name="Dharmajaygarh" ><latitude dir="N" >22.28</latitude>
+<longitude dir="E" >83.15</longitude>
+</city>
+<city name="Raghugarh" ><latitude dir="N" >24.26</latitude>
+<longitude dir="E" >77.15</longitude>
+</city>
+<city name="Raipur" ><latitude dir="N" >21.15</latitude>
+<longitude dir="E" >81.41</longitude>
+</city>
+<city name="Raisen" ><latitude dir="N" >23.15</latitude>
+<longitude dir="E" >77.50</longitude>
+</city>
+<city name="Raj Nandgaon" ><latitude dir="N" >21.05</latitude>
+<longitude dir="E" >81.05</longitude>
+</city>
+<city name="Rajgarh" ><latitude dir="N" >24.00</latitude>
+<longitude dir="E" >76.47</longitude>
+</city>
+<city name="Rajim" ><latitude dir="N" >20.59</latitude>
+<longitude dir="E" >81.55</longitude>
+</city>
+<city name="Ramkola" ><latitude dir="N" >23.40</latitude>
+<longitude dir="E" >83.08</longitude>
+</city>
+<city name="Ramnagar" ><latitude dir="N" >24.11</latitude>
+<longitude dir="E" >81.12</longitude>
+</city>
+<city name="Ramnagar" ><latitude dir="N" >22.36</latitude>
+<longitude dir="E" >80.33</longitude>
+</city>
+<city name="Rampura" ><latitude dir="N" >23.28</latitude>
+<longitude dir="E" >75.30</longitude>
+</city>
+<city name="Ratlam" ><latitude dir="N" >23.31</latitude>
+<longitude dir="E" >75.07</longitude>
+</city>
+<city name="Rehli" ><latitude dir="N" >23.38</latitude>
+<longitude dir="E" >79.05</longitude>
+</city>
+<city name="Sagar" ><latitude dir="N" >23.50</latitude>
+<longitude dir="E" >78.50</longitude>
+</city>
+<city name="Sailana" ><latitude dir="N" >23.31</latitude>
+<longitude dir="E" >75.01</longitude>
+</city>
+<city name="Sakti" ><latitude dir="N" >22.01</latitude>
+<longitude dir="E" >83.00</longitude>
+</city>
+<city name="Salbai" ><latitude dir="N" >25.51</latitude>
+<longitude dir="E" >78.19</longitude>
+</city>
+<city name="Samthar" ><latitude dir="N" >25.51</latitude>
+<longitude dir="E" >78.49</longitude>
+</city>
+<city name="Sarangpur" ><latitude dir="N" >21.36</latitude>
+<longitude dir="E" >83.07</longitude>
+</city>
+<city name="Satna" ><latitude dir="N" >24.34</latitude>
+<longitude dir="E" >80.55</longitude>
+</city>
+<city name="Sehore" ><latitude dir="N" >23.12</latitude>
+<longitude dir="E" >77.00</longitude>
+</city>
+<city name="Seoni" ><latitude dir="N" >22.06</latitude>
+<longitude dir="E" >79.35</longitude>
+</city>
+<city name="Seoni-Malwa" ><latitude dir="N" >22.28</latitude>
+<longitude dir="E" >77.29</longitude>
+</city>
+<city name="shahdol" ><latitude dir="N" >23.00</latitude>
+<longitude dir="E" >81.30</longitude>
+</city>
+<city name="shahpur" ><latitude dir="N" >21.13</latitude>
+<longitude dir="E" >76.15</longitude>
+</city>
+<city name="shahpura" ><latitude dir="N" >23.10</latitude>
+<longitude dir="E" >80.45</longitude>
+</city>
+<city name="shajapur" ><latitude dir="N" >23.26</latitude>
+<longitude dir="E" >76.18</longitude>
+</city>
+<city name="sheopur" ><latitude dir="N" >25.39</latitude>
+<longitude dir="E" >76.41</longitude>
+</city>
+<city name="Shivpuri" ><latitude dir="N" >25.40</latitude>
+<longitude dir="E" >77.44</longitude>
+</city>
+<city name="Shujalpur" ><latitude dir="N" >23.24</latitude>
+<longitude dir="E" >76.34</longitude>
+</city>
+<city name="Sidhi" ><latitude dir="N" >24.20</latitude>
+<longitude dir="E" >82.39</longitude>
+</city>
+<city name="Sihora" ><latitude dir="N" >23.29</latitude>
+<longitude dir="E" >80.09</longitude>
+</city>
+<city name="Tehri" ><latitude dir="N" >24.45</latitude>
+<longitude dir="E" >78.53</longitude>
+</city>
+<city name="Tori Fathpur" ><latitude dir="N" >25.28</latitude>
+<longitude dir="E" >79.08</longitude>
+</city>
+<city name="Ujjain" ><latitude dir="N" >23.09</latitude>
+<longitude dir="E" >75.43</longitude>
+</city>
+<city name="Umaria" ><latitude dir="N" >23.30</latitude>
+<longitude dir="E" >80.53</longitude>
+</city>
+<city name="Nagod" ><latitude dir="N" >24.33</latitude>
+<longitude dir="E" >80.37</longitude>
+</city>
+<city name="Vidisha " ><latitude dir="N" >23.32</latitude>
+<longitude dir="E" >77.51</longitude>
+</city>
+<city name="Vindhya Mts." ><latitude dir="N" >22.30</latitude>
+<longitude dir="E" >76.00</longitude>
+</city>
+</state>
+<state name="Maharashtra" ><city name="Maharashtra" ><latitude dir="N" >20.00</latitude>
+<longitude dir="E" >76.00</longitude>
+</city>
+<city name="Achalpur" ><latitude dir="N" >21.18</latitude>
+<longitude dir="E" >77.33</longitude>
+</city>
+<city name="Ahiri" ><latitude dir="N" >19.30</latitude>
+<longitude dir="E" >80.30</longitude>
+</city>
+<city name="Ahmadnagar" ><latitude dir="N" >19.05</latitude>
+<longitude dir="E" >74.48</longitude>
+</city>
+<city name="Ajanta" ><latitude dir="N" >20.33</latitude>
+<longitude dir="E" >75.48</longitude>
+</city>
+<city name="Ajanta Range" ><latitude dir="N" >20.20</latitude>
+<longitude dir="E" >77.10</longitude>
+</city>
+<city name="Akalkot" ><latitude dir="N" >17.31</latitude>
+<longitude dir="E" >76.51</longitude>
+</city>
+<city name="Akola" ><latitude dir="N" >20.42</latitude>
+<longitude dir="E" >77.02</longitude>
+</city>
+<city name="Akot" ><latitude dir="N" >21.06</latitude>
+<longitude dir="E" >77.06</longitude>
+</city>
+<city name="Alibag" ><latitude dir="N" >18.39</latitude>
+<longitude dir="E" >72.55</longitude>
+</city>
+<city name="Ambgaon" ><latitude dir="N" >20.38</latitude>
+<longitude dir="E" >80.00</longitude>
+</city>
+<city name="Amravati" ><latitude dir="N" >20.56</latitude>
+<longitude dir="E" >77.48</longitude>
+</city>
+<city name="Armoi" ><latitude dir="N" >20.28</latitude>
+<longitude dir="E" >80.02</longitude>
+</city>
+<city name="Ashti" ><latitude dir="N" >18.50</latitude>
+<longitude dir="E" >75.15</longitude>
+</city>
+<city name="Ashti" ><latitude dir="N" >21.12</latitude>
+<longitude dir="E" >78.14</longitude>
+</city>
+<city name="Assaye" ><latitude dir="N" >20.15</latitude>
+<longitude dir="E" >75.58</longitude>
+</city>
+<city name="Aundh" ><latitude dir="N" >17.33</latitude>
+<longitude dir="E" >7423.00</longitude>
+</city>
+<city name="Aurangabad" ><latitude dir="N" >19.53</latitude>
+<longitude dir="E" >75.23</longitude>
+</city>
+<city name="Badnera" ><latitude dir="N" >20.52</latitude>
+<longitude dir="E" >77.46</longitude>
+</city>
+<city name="Balapur" ><latitude dir="N" >20.42</latitude>
+<longitude dir="E" >76.52</longitude>
+</city>
+<city name="Balharshah" ><latitude dir="N" >19.55</latitude>
+<longitude dir="E" >79.23</longitude>
+</city>
+<city name="Bandra" ><latitude dir="N" >19.03</latitude>
+<longitude dir="E" >75.52</longitude>
+</city>
+<city name="Bankot" ><latitude dir="N" >17.58</latitude>
+<longitude dir="E" >73.05</longitude>
+</city>
+<city name="Barsi" ><latitude dir="N" >18.13</latitude>
+<longitude dir="E" >75.44</longitude>
+</city>
+<city name="Basim" ><latitude dir="N" >20.05</latitude>
+<longitude dir="E" >77.10</longitude>
+</city>
+<city name="Basmat" ><latitude dir="N" >19.22</latitude>
+<longitude dir="E" >77.12</longitude>
+</city>
+<city name="Bassein " ><latitude dir="N" >19.22</latitude>
+<longitude dir="E" >72.56</longitude>
+</city>
+<city name="Bhandara" ><latitude dir="N" >21.09</latitude>
+<longitude dir="E" >79.42</longitude>
+</city>
+<city name="Bhor" ><latitude dir="N" >18.09</latitude>
+<longitude dir="E" >73.54</longitude>
+</city>
+<city name="Bhusawal" ><latitude dir="N" >21.02</latitude>
+<longitude dir="E" >75.47</longitude>
+</city>
+<city name="Bir" ><latitude dir="N" >19.00</latitude>
+<longitude dir="E" >75.50</longitude>
+</city>
+<city name="Mumbai" ><latitude dir="N" >18.55</latitude>
+<longitude dir="E" >72.54</longitude>
+</city>
+<city name="Bori" ><latitude dir="N" >20.55</latitude>
+<longitude dir="E" >79.05</longitude>
+</city>
+<city name="Bramhapuri" ><latitude dir="N" >20.40</latitude>
+<longitude dir="E" >79.56</longitude>
+</city>
+<city name="Buldana" ><latitude dir="N" >20.32</latitude>
+<longitude dir="E" >76.14</longitude>
+</city>
+<city name="Chalisgaon" ><latitude dir="N" >20.33</latitude>
+<longitude dir="E" >75.10</longitude>
+</city>
+<city name="Chandor" ><latitude dir="N" >20.20</latitude>
+<longitude dir="E" >74.19</longitude>
+</city>
+<city name="Chandrapur" ><latitude dir="N" >19.57</latitude>
+<longitude dir="E" >79.21</longitude>
+</city>
+<city name="Chikalda" ><latitude dir="N" >21.24</latitude>
+<longitude dir="E" >77.22</longitude>
+</city>
+<city name="Chopda" ><latitude dir="N" >21.15</latitude>
+<longitude dir="E" >75.20</longitude>
+</city>
+<city name="Daulatabad" ><latitude dir="N" >19.57</latitude>
+<longitude dir="E" >75.15</longitude>
+</city>
+<city name="Deglur" ><latitude dir="N" >18.34</latitude>
+<longitude dir="E" >77.33</longitude>
+</city>
+<city name="Deoli" ><latitude dir="N" >20.39</latitude>
+<longitude dir="E" >78.32</longitude>
+</city>
+<city name="Dhond" ><latitude dir="N" >18.32</latitude>
+<longitude dir="E" >74.40</longitude>
+</city>
+<city name="Dhule" ><latitude dir="N" >20.58</latitude>
+<longitude dir="E" >74.47</longitude>
+</city>
+<city name="Ellora" ><latitude dir="N" >20.02</latitude>
+<longitude dir="E" >75.13</longitude>
+</city>
+<city name="Gangakher" ><latitude dir="N" >18.52</latitude>
+<longitude dir="E" >76.43</longitude>
+</city>
+<city name="Gawilgarh" ><latitude dir="N" >21.22</latitude>
+<longitude dir="E" >77.25</longitude>
+</city>
+<city name="Gondia" ><latitude dir="N" >21.28</latitude>
+<longitude dir="E" >80.29</longitude>
+</city>
+<city name="Hinganghat " ><latitude dir="N" >20.34</latitude>
+<longitude dir="E" >78.53</longitude>
+</city>
+<city name="Hingoli " ><latitude dir="N" >19.43</latitude>
+<longitude dir="E" >77.11</longitude>
+</city>
+<city name="Igatpur " ><latitude dir="N" >19.40</latitude>
+<longitude dir="E" >73.35</longitude>
+</city>
+<city name="Jalgaon " ><latitude dir="N" >21.05</latitude>
+<longitude dir="E" >75.40</longitude>
+</city>
+<city name="Jalna " ><latitude dir="N" >19.51</latitude>
+<longitude dir="E" >75.56</longitude>
+</city>
+<city name="Jamkhed " ><latitude dir="N" >18.43</latitude>
+<longitude dir="E" >75.24</longitude>
+</city>
+<city name="Janjira " ><latitude dir="N" >18.18</latitude>
+<longitude dir="E" >73.00</longitude>
+</city>
+<city name="Jath " ><latitude dir="N" >17.03</latitude>
+<longitude dir="E" >75.15</longitude>
+</city>
+<city name="Jawhar " ><latitude dir="N" >19.52</latitude>
+<longitude dir="E" >73.21</longitude>
+</city>
+<city name="Junnar " ><latitude dir="N" >19.12</latitude>
+<longitude dir="E" >73.58</longitude>
+</city>
+<city name="Kadirabad " ><latitude dir="N" >19.51</latitude>
+<longitude dir="E" >75.56</longitude>
+</city>
+<city name="Kalyan " ><latitude dir="N" >19.14</latitude>
+<longitude dir="E" >73.10</longitude>
+</city>
+<city name="Kamptee " ><latitude dir="N" >21.14</latitude>
+<longitude dir="E" >79.15</longitude>
+</city>
+<city name="Karad " ><latitude dir="N" >17.15</latitude>
+<longitude dir="E" >74.12</longitude>
+</city>
+<city name="Karanja" ><latitude dir="N" >20.29</latitude>
+<longitude dir="E" >77.32</longitude>
+</city>
+<city name="Karmala" ><latitude dir="N" >18.24</latitude>
+<longitude dir="E" >75.15</longitude>
+</city>
+<city name="Khamgaon" ><latitude dir="N" >20.42</latitude>
+<longitude dir="E" >76.37</longitude>
+</city>
+<city name="Khapa" ><latitude dir="N" >21.25</latitude>
+<longitude dir="E" >79.02</longitude>
+</city>
+<city name="Khed" ><latitude dir="N" >18.51</latitude>
+<longitude dir="E" >73.56</longitude>
+</city>
+<city name="Khuldabad Rauza" ><latitude dir="N" >20.01</latitude>
+<longitude dir="E" >75.15</longitude>
+</city>
+<city name="Kirkee" ><latitude dir="N" >18.33</latitude>
+<longitude dir="E" >73.54</longitude>
+</city>
+<city name="Kolhapur" ><latitude dir="N" >16.42</latitude>
+<longitude dir="E" >74.16</longitude>
+</city>
+<city name="Kondalwadi" ><latitude dir="N" >18.15</latitude>
+<longitude dir="E" >77.43</longitude>
+</city>
+<city name="Kopargaon" ><latitude dir="N" >19.54</latitude>
+<longitude dir="E" >74.33</longitude>
+</city>
+<city name="Koyna, R." ><latitude dir="N" >17.30</latitude>
+<longitude dir="E" >73.45</longitude>
+</city>
+<city name="Kurundvad" ><latitude dir="N" >16.40</latitude>
+<longitude dir="E" >74.40</longitude>
+</city>
+<city name="Latur" ><latitude dir="N" >18.24</latitude>
+<longitude dir="E" >76.36</longitude>
+</city>
+<city name="Lonavla" ><latitude dir="N" >18.44</latitude>
+<longitude dir="E" >73.28</longitude>
+</city>
+<city name="Mahabaleshwar" ><latitude dir="N" >17.58</latitude>
+<longitude dir="E" >73.43</longitude>
+</city>
+<city name="Malegaon" ><latitude dir="N" >20.30</latitude>
+<longitude dir="E" >74.40</longitude>
+</city>
+<city name="Malkapur" ><latitude dir="N" >20.53</latitude>
+<longitude dir="E" >76.17</longitude>
+</city>
+<city name="Malvan" ><latitude dir="N" >16.03</latitude>
+<longitude dir="E" >73.30</longitude>
+</city>
+<city name="Mangaon" ><latitude dir="N" >18.15</latitude>
+<longitude dir="E" >73.20</longitude>
+</city>
+<city name="Manmad" ><latitude dir="N" >20.15</latitude>
+<longitude dir="E" >74.29</longitude>
+</city>
+<city name="Mansar" ><latitude dir="N" >21.24</latitude>
+<longitude dir="E" >79.19</longitude>
+</city>
+<city name="Matheran" ><latitude dir="N" >18.59</latitude>
+<longitude dir="E" >73.18</longitude>
+</city>
+<city name="Mazalgaon" ><latitude dir="N" >19.08</latitude>
+<longitude dir="E" >76.13</longitude>
+</city>
+<city name="Miraj" ><latitude dir="N" >16.49</latitude>
+<longitude dir="E" >74.43</longitude>
+</city>
+<city name="Amba" ><latitude dir="N" >18.44</latitude>
+<longitude dir="E" >76.23</longitude>
+</city>
+<city name="Mukher" ><latitude dir="N" >18.42</latitude>
+<longitude dir="E" >77.24</longitude>
+</city>
+<city name="Mul" ><latitude dir="N" >20.04</latitude>
+<longitude dir="E" >79.43</longitude>
+</city>
+<city name="Mulshi" ><latitude dir="N" >18.50</latitude>
+<longitude dir="E" >73.50</longitude>
+</city>
+<city name="Murud" ><latitude dir="N" >18.18</latitude>
+<longitude dir="E" >72.59</longitude>
+</city>
+<city name="Nagpur " ><latitude dir="N" >21.09</latitude>
+<longitude dir="E" >79.09</longitude>
+</city>
+<city name="Naldurg " ><latitude dir="N" >17.49</latitude>
+<longitude dir="E" >76.20</longitude>
+</city>
+<city name="Nanded " ><latitude dir="N" >19.09</latitude>
+<longitude dir="E" >77.27</longitude>
+</city>
+<city name="Nandurbar " ><latitude dir="N" >21.23</latitude>
+<longitude dir="E" >74.19</longitude>
+</city>
+<city name="Nasik " ><latitude dir="N" >20.02</latitude>
+<longitude dir="E" >73.50</longitude>
+</city>
+<city name="Osmanabad" ><latitude dir="N" >18.08</latitude>
+<longitude dir="E" >76.06</longitude>
+</city>
+<city name="Pachora" ><latitude dir="N" >20.38</latitude>
+<longitude dir="E" >75.29</longitude>
+</city>
+<city name="Paithan" ><latitude dir="N" >19.29</latitude>
+<longitude dir="E" >75.26</longitude>
+</city>
+<city name="Pandharpur" ><latitude dir="N" >17.41</latitude>
+<longitude dir="E" >75.23</longitude>
+</city>
+<city name="Parbhani" ><latitude dir="N" >19.08</latitude>
+<longitude dir="E" >76.50</longitude>
+</city>
+<city name="Parenda" ><latitude dir="N" >18.16</latitude>
+<longitude dir="E" >75.30</longitude>
+</city>
+<city name="Parli" ><latitude dir="N" >18.53</latitude>
+<longitude dir="E" >76.36</longitude>
+</city>
+<city name="Pauni " ><latitude dir="N" >20.48</latitude>
+<longitude dir="E" >79.40</longitude>
+</city>
+<city name="Phaltan " ><latitude dir="N" >18.00</latitude>
+<longitude dir="E" >74.29</longitude>
+</city>
+<city name="Pune" ><latitude dir="N" >18.31</latitude>
+<longitude dir="E" >73.55</longitude>
+</city>
+<city name="Rahuri" ><latitude dir="N" >19.23</latitude>
+<longitude dir="E" >74.42</longitude>
+</city>
+<city name="Rajapur" ><latitude dir="N" >16.39</latitude>
+<longitude dir="E" >73.33</longitude>
+</city>
+<city name="Rajur" ><latitude dir="N" >20.08</latitude>
+<longitude dir="E" >78.50</longitude>
+</city>
+<city name="Rajura" ><latitude dir="N" >20.08</latitude>
+<longitude dir="E" >78.50</longitude>
+</city>
+<city name="Ramtek" ><latitude dir="N" >21.24</latitude>
+<longitude dir="E" >79.20</longitude>
+</city>
+<city name="Ratnagiri" ><latitude dir="N" >17.08</latitude>
+<longitude dir="E" >73.19</longitude>
+</city>
+<city name="khuldabad" ><latitude dir="N" >20.01</latitude>
+<longitude dir="E" >75.15</longitude>
+</city>
+<city name="Sahyadriparvat Range" ><latitude dir="N" >20.30</latitude>
+<longitude dir="E" >76.00</longitude>
+</city>
+<city name="Sakoli" ><latitude dir="N" >21.05</latitude>
+<longitude dir="E" >80.01</longitude>
+</city>
+<city name="Sangamner" ><latitude dir="N" >19.35</latitude>
+<longitude dir="E" >74.16</longitude>
+</city>
+<city name="Sangli" ><latitude dir="N" >16.52</latitude>
+<longitude dir="E" >74.36</longitude>
+</city>
+<city name="Satara" ><latitude dir="N" >17.42</latitude>
+<longitude dir="E" >74.02</longitude>
+</city>
+<city name="Savantvadi" ><latitude dir="N" >15.54</latitude>
+<longitude dir="E" >73.52</longitude>
+</city>
+<city name="shegaon" ><latitude dir="N" >20.48</latitude>
+<longitude dir="E" >76.46</longitude>
+</city>
+<city name="Shrigonda" ><latitude dir="N" >18.41</latitude>
+<longitude dir="E" >74.44</longitude>
+</city>
+<city name="Taloda" ><latitude dir="N" >21.34</latitude>
+<longitude dir="E" >74.19</longitude>
+</city>
+<city name="Tarapur" ><latitude dir="N" >19.52</latitude>
+<longitude dir="E" >72.42</longitude>
+</city>
+<city name="Thane" ><latitude dir="N" >19.12</latitude>
+<longitude dir="E" >73.02</longitude>
+</city>
+<city name="Tuljapur" ><latitude dir="N" >18.02</latitude>
+<longitude dir="E" >76.10</longitude>
+</city>
+<city name="Tumsar" ><latitude dir="N" >20.15</latitude>
+<longitude dir="E" >80.19</longitude>
+</city>
+<city name="Udgir" ><latitude dir="N" >18.25</latitude>
+<longitude dir="E" >77.10</longitude>
+</city>
+<city name="Ulhasnagar" ><latitude dir="N" >19.20</latitude>
+<longitude dir="E" >73.10</longitude>
+</city>
+<city name="Umrer" ><latitude dir="N" >20.18</latitude>
+<longitude dir="E" >79.21</longitude>
+</city>
+<city name="Vaijapur" ><latitude dir="N" >19.59</latitude>
+<longitude dir="E" >74.48</longitude>
+</city>
+<city name="Vengurla" ><latitude dir="N" >15.52</latitude>
+<longitude dir="E" >73.40</longitude>
+</city>
+<city name="Vijayadurg" ><latitude dir="N" >16.26</latitude>
+<longitude dir="E" >73.26</longitude>
+</city>
+<city name="Wai" ><latitude dir="N" >17.57</latitude>
+<longitude dir="E" >73.56</longitude>
+</city>
+<city name="Wardha dist." ><latitude dir="N" >20.45</latitude>
+<longitude dir="E" >78.39</longitude>
+</city>
+<city name="Warora" ><latitude dir="N" >20.14</latitude>
+<longitude dir="E" >79.02</longitude>
+</city>
+<city name="Yeola" ><latitude dir="N" >20.04</latitude>
+<longitude dir="E" >74.31</longitude>
+</city>
+<city name="Yeotmal" ><latitude dir="N" >20.23</latitude>
+<longitude dir="E" >78.11</longitude>
+</city>
+</state>
+<state name="Manipur" ><city name="Manipur" ><latitude dir="N" >24.44</latitude>
+<longitude dir="E" >93.58</longitude>
+</city>
+<city name="Imphat " ><latitude dir="N" >24.44</latitude>
+<longitude dir="E" >93.58</longitude>
+</city>
+<city name="Loktak L." ><latitude dir="N" >24.30</latitude>
+<longitude dir="E" >93.55</longitude>
+</city>
+</state>
+<state name="Meghalaya" ><city name="Meghalaya" ><latitude dir="N" >25.30</latitude>
+<longitude dir="E" >91.00</longitude>
+</city>
+<city name="Garo Hills" ><latitude dir="N" >25.30</latitude>
+<longitude dir="E" >90.30</longitude>
+</city>
+<city name="Khasi and Jaintia Hills" ><latitude dir="N" >25.30</latitude>
+<longitude dir="E" >91.30</longitude>
+</city>
+<city name="Tura" ><latitude dir="N" >25.30</latitude>
+<longitude dir="E" >90.16</longitude>
+</city>
+</state>
+<state name="Mizoram" ><city name="Mizoram" ><latitude dir="N" >23.30</latitude>
+<longitude dir="E" >20.52</longitude>
+</city>
+<city name="Aizawl" ><latitude dir="N" >23.36</latitude>
+<longitude dir="E" >93.00</longitude>
+</city>
+</state>
+<state name="Nagaland" ><city name="Nagaland" ><latitude dir="N" >26.00</latitude>
+<longitude dir="E" >94.20</longitude>
+</city>
+<city name="Japvot" ><latitude dir="N" >25.32</latitude>
+<longitude dir="E" >94.10</longitude>
+</city>
+<city name="Kohima" ><latitude dir="N" >25.40</latitude>
+<longitude dir="E" >94.08</longitude>
+</city>
+<city name="Naga Hills " ><latitude dir="N" >26.00</latitude>
+<longitude dir="E" >94.20</longitude>
+</city>
+</state>
+<state name="Orissa" ><city name="Orissa" ><latitude dir="N" >26.00</latitude>
+<longitude dir="E" >94.20</longitude>
+</city>
+<city name="Athgarh" ><latitude dir="N" >20.32</latitude>
+<longitude dir="E" >85.41</longitude>
+</city>
+<city name="Athmallik" ><latitude dir="N" >20.55</latitude>
+<longitude dir="E" >84.30</longitude>
+</city>
+<city name="Baleshwar" ><latitude dir="N" >21.30</latitude>
+<longitude dir="E" >86.54</longitude>
+</city>
+<city name="Banki" ><latitude dir="N" >20.21</latitude>
+<longitude dir="E" >85.33</longitude>
+</city>
+<city name="Baramba" ><latitude dir="N" >20.25</latitude>
+<longitude dir="E" >85.23</longitude>
+</city>
+<city name="Baripada" ><latitude dir="N" >21.56</latitude>
+<longitude dir="E" >86.46</longitude>
+</city>
+<city name="Baudh" ><latitude dir="N" >20.50</latitude>
+<longitude dir="E" >84.52</longitude>
+</city>
+<city name="Berhampur" ><latitude dir="N" >19.18</latitude>
+<longitude dir="E" >84.51</longitude>
+</city>
+<city name="Bhadrakh" ><latitude dir="N" >21.03</latitude>
+<longitude dir="E" >86.33</longitude>
+</city>
+<city name="Bhawani Patna" ><latitude dir="N" >19.58</latitude>
+<longitude dir="E" >83.12</longitude>
+</city>
+<city name="Bhuban" ><latitude dir="N" >21.05</latitude>
+<longitude dir="E" >85.52</longitude>
+</city>
+<city name="Bhubaneshwar" ><latitude dir="N" >20.15</latitude>
+<longitude dir="E" >85.52</longitude>
+</city>
+<city name="Konarak" ><latitude dir="N" >19.53</latitude>
+<longitude dir="E" >86.08</longitude>
+</city>
+<city name="Bolangir" ><latitude dir="N" >20.40</latitude>
+<longitude dir="E" >83.30</longitude>
+</city>
+<city name="Bonaigarh" ><latitude dir="N" >21.49</latitude>
+<longitude dir="E" >85.00</longitude>
+</city>
+<city name="Borasambar" ><latitude dir="N" >20.58</latitude>
+<longitude dir="E" >83.00</longitude>
+</city>
+<city name="Chatrapur " ><latitude dir="N" >19.21</latitude>
+<longitude dir="E" >85.03</longitude>
+</city>
+<city name="Chilka Lake" ><latitude dir="N" >19.50</latitude>
+<longitude dir="E" >85.30</longitude>
+</city>
+<city name="Cuttack" ><latitude dir="N" >20.28</latitude>
+<longitude dir="E" >85.54</longitude>
+</city>
+<city name="Daspalla" ><latitude dir="N" >20.19</latitude>
+<longitude dir="E" >84.56</longitude>
+</city>
+<city name="Daspur" ><latitude dir="N" >21.58</latitude>
+<longitude dir="E" >86.07</longitude>
+</city>
+<city name="Deograh" ><latitude dir="N" >21.32</latitude>
+<longitude dir="E" >84.46</longitude>
+</city>
+<city name="Dhamra" ><latitude dir="N" >20.48</latitude>
+<longitude dir="E" >86.56</longitude>
+</city>
+<city name="Dhenkanal" ><latitude dir="N" >20.40</latitude>
+<longitude dir="E" >85.38</longitude>
+</city>
+<city name="False Point" ><latitude dir="N" >20.20</latitude>
+<longitude dir="E" >86.46</longitude>
+</city>
+<city name="Ganjam" ><latitude dir="N" >19.22</latitude>
+<longitude dir="E" >85.06</longitude>
+</city>
+<city name="Gopalpur" ><latitude dir="N" >19.16</latitude>
+<longitude dir="E" >84.57</longitude>
+</city>
+<city name="Hindol" ><latitude dir="N" >20.36</latitude>
+<longitude dir="E" >85.14</longitude>
+</city>
+<city name="Hirakund Dam and Res. " ><latitude dir="N" >21.30</latitude>
+<longitude dir="E" >84.00</longitude>
+</city>
+<city name="Jaypore " ><latitude dir="N" >18.52</latitude>
+<longitude dir="E" >82.38</longitude>
+</city>
+<city name="Junagarh " ><latitude dir="N" >19.52</latitude>
+<longitude dir="E" >82.59</longitude>
+</city>
+<city name="Kainitira " ><latitude dir="N" >20.45</latitude>
+<longitude dir="E" >84.37</longitude>
+</city>
+<city name="Kalahandi Karond " ><latitude dir="N" >19.40</latitude>
+<longitude dir="E" >83.00</longitude>
+</city>
+<city name="Karanjia" ><latitude dir="N" >21.43</latitude>
+<longitude dir="E" >87.07</longitude>
+</city>
+<city name="Karond Kalahandi" ><latitude dir="N" >19.40</latitude>
+<longitude dir="E" >83.00</longitude>
+</city>
+<city name="Kendrapara" ><latitude dir="N" >20.30</latitude>
+<longitude dir="E" >86.28</longitude>
+</city>
+<city name="Nijgarh" ><latitude dir="N" >21.30</latitude>
+<longitude dir="E" >85.30</longitude>
+</city>
+<city name="Khandpara" ><latitude dir="N" >20.16</latitude>
+<longitude dir="E" >85.13</longitude>
+</city>
+<city name="Khondmals" ><latitude dir="N" >20.42</latitude>
+<longitude dir="E" >84.20</longitude>
+</city>
+<city name="Khurda" ><latitude dir="N" >20.11</latitude>
+<longitude dir="E" >85.40</longitude>
+</city>
+<city name="Kolabira" ><latitude dir="N" >21.49</latitude>
+<longitude dir="E" >84.15</longitude>
+</city>
+<city name="Konarak Black Pagoda" ><latitude dir="N" >19.53</latitude>
+<longitude dir="E" >86.08</longitude>
+</city>
+<city name="Kotapad" ><latitude dir="N" >19.04</latitude>
+<longitude dir="E" >82.24</longitude>
+</city>
+<city name="Lahara" ><latitude dir="N" >21.26</latitude>
+<longitude dir="E" >85.14</longitude>
+</city>
+<city name="Mahanadi R." ><latitude dir="N" >20.19</latitude>
+<longitude dir="E" >86.45</longitude>
+</city>
+<city name="Malkangiri" ><latitude dir="N" >18.22</latitude>
+<longitude dir="E" >81.56</longitude>
+</city>
+<city name="Narsinghpur " ><latitude dir="N" >20.28</latitude>
+<longitude dir="E" >85.07</longitude>
+</city>
+<city name="Nayagarh " ><latitude dir="N" >20.08</latitude>
+<longitude dir="E" >85.08</longitude>
+</city>
+<city name="Keonjhar" ><latitude dir="N" >21.30</latitude>
+<longitude dir="E" >85.30</longitude>
+</city>
+<city name="Nilgiri " ><latitude dir="N" >21.27</latitude>
+<longitude dir="E" >86.49</longitude>
+</city>
+<city name="Palmyras Point" ><latitude dir="N" >20.45</latitude>
+<longitude dir="E" >87.02</longitude>
+</city>
+<city name="Paradip" ><latitude dir="N" >20.30</latitude>
+<longitude dir="E" >86.55</longitude>
+</city>
+<city name="Parlakimidi" ><latitude dir="N" >18.47</latitude>
+<longitude dir="E" >84.08</longitude>
+</city>
+<city name="Patna " ><latitude dir="N" >20.00</latitude>
+<longitude dir="E" >83.12</longitude>
+</city>
+<city name="Puri" ><latitude dir="N" >19.48</latitude>
+<longitude dir="E" >85.52</longitude>
+</city>
+<city name="Ramagiri-Udayagiri" ><latitude dir="N" >19.04</latitude>
+<longitude dir="E" >83.55</longitude>
+</city>
+<city name="Rampur" ><latitude dir="N" >21.05</latitude>
+<longitude dir="E" >84.22</longitude>
+</city>
+<city name="Ranpur" ><latitude dir="N" >20.04</latitude>
+<longitude dir="E" >85.23</longitude>
+</city>
+<city name="Rayagada" ><latitude dir="N" >19.09</latitude>
+<longitude dir="E" >83.27</longitude>
+</city>
+<city name="Rourkela" ><latitude dir="N" >22.25</latitude>
+<longitude dir="E" >85.00</longitude>
+</city>
+<city name="Sambalpur" ><latitude dir="N" >21.28</latitude>
+<longitude dir="E" >84.01</longitude>
+</city>
+<city name="Talcher" ><latitude dir="N" >20.57</latitude>
+<longitude dir="E" >85.16</longitude>
+</city>
+<city name="Tigiria" ><latitude dir="N" >20.28</latitude>
+<longitude dir="E" >84.34</longitude>
+</city>
+</state>
+<state name="Pondicherry" ><city name="Pondicherry" ><latitude dir="N" >11.56</latitude>
+<longitude dir="E" >79.53</longitude>
+</city>
+<city name="Karaikal" ><latitude dir="N" >10.55</latitude>
+<longitude dir="E" >79.52</longitude>
+</city>
+</state>
+<state name="Punjab" ><city name="Punjab" ><latitude dir="N" >30.40</latitude>
+<longitude dir="E" >75.50</longitude>
+</city>
+<city name="Amritsar" ><latitude dir="N" >31.37</latitude>
+<longitude dir="E" >74.55</longitude>
+</city>
+<city name="Anandpur" ><latitude dir="N" >31.15</latitude>
+<longitude dir="E" >76.34</longitude>
+</city>
+<city name="Batala" ><latitude dir="N" >31.49</latitude>
+<longitude dir="E" >75.14</longitude>
+</city>
+<city name="Bathinda" ><latitude dir="N" >30.11</latitude>
+<longitude dir="E" >75.00</longitude>
+</city>
+<city name="Charkhi Dadri" ><latitude dir="N" >28.37</latitude>
+<longitude dir="E" >76.19</longitude>
+</city>
+<city name="Dasuya" ><latitude dir="N" >31.49</latitude>
+<longitude dir="E" >75.42</longitude>
+</city>
+<city name="Derababa Nanak" ><latitude dir="N" >32.02</latitude>
+<longitude dir="E" >75.04</longitude>
+</city>
+<city name="Dharmkot" ><latitude dir="N" >30.56</latitude>
+<longitude dir="E" >75.14</longitude>
+</city>
+<city name="Dinanagar " ><latitude dir="N" >32.08</latitude>
+<longitude dir="E" >75.31</longitude>
+</city>
+<city name="Dujana" ><latitude dir="N" >28.41</latitude>
+<longitude dir="E" >76.40</longitude>
+</city>
+<city name="Fazilka" ><latitude dir="N" >30.25</latitude>
+<longitude dir="E" >74.04</longitude>
+</city>
+<city name="Firozpur" ><latitude dir="N" >30.55</latitude>
+<longitude dir="E" >74.40</longitude>
+</city>
+<city name="Garshankar" ><latitude dir="N" >31.13</latitude>
+<longitude dir="E" >76.11</longitude>
+</city>
+<city name="Gurdaspur" ><latitude dir="N" >32.03</latitude>
+<longitude dir="E" >75.27</longitude>
+</city>
+<city name="Hoshiarpur" ><latitude dir="N" >31.32</latitude>
+<longitude dir="E" >75.57</longitude>
+</city>
+<city name="Jalandhar" ><latitude dir="N" >31.19</latitude>
+<longitude dir="E" >35.18</longitude>
+</city>
+<city name="Jandiala " ><latitude dir="N" >31.51</latitude>
+<longitude dir="E" >75.37</longitude>
+</city>
+<city name="Kandaghat " ><latitude dir="N" >30.57</latitude>
+<longitude dir="E" >77.06</longitude>
+</city>
+<city name="Kapurthala " ><latitude dir="N" >31.23</latitude>
+<longitude dir="E" >75.25</longitude>
+</city>
+<city name="Kartarpur" ><latitude dir="N" >31.27</latitude>
+<longitude dir="E" >75.32</longitude>
+</city>
+<city name="Kot Kapura" ><latitude dir="N" >30.34</latitude>
+<longitude dir="E" >74.52</longitude>
+</city>
+<city name="Ludhiana" ><latitude dir="N" >30.55</latitude>
+<longitude dir="E" >75.54</longitude>
+</city>
+<city name="Machhiwara" ><latitude dir="N" >30.55</latitude>
+<longitude dir="E" >76.15</longitude>
+</city>
+<city name="Majitha" ><latitude dir="N" >31.46</latitude>
+<longitude dir="E" >75.01</longitude>
+</city>
+<city name="Maler Kotla" ><latitude dir="N" >30.31</latitude>
+<longitude dir="E" >75.59</longitude>
+</city>
+<city name="Mohindergarh" ><latitude dir="N" >28.17</latitude>
+<longitude dir="E" >76.14</longitude>
+</city>
+<city name="Muktsar" ><latitude dir="N" >30.30</latitude>
+<longitude dir="E" >74.43</longitude>
+</city>
+<city name="Nabha" ><latitude dir="N" >30.25</latitude>
+<longitude dir="E" >76.09</longitude>
+</city>
+<city name="Rupar" ><latitude dir="N" >30.57</latitude>
+<longitude dir="E" >76.32</longitude>
+</city>
+<city name="Sanawar" ><latitude dir="N" >30.18</latitude>
+<longitude dir="E" >76.30</longitude>
+</city>
+<city name="Sangrur" ><latitude dir="N" >30.12</latitude>
+<longitude dir="E" >75.53</longitude>
+</city>
+<city name="Tanda Urmar" ><latitude dir="N" >31.40</latitude>
+<longitude dir="E" >76.41</longitude>
+</city>
+<city name="Tarn Taran" ><latitude dir="N" >31.28</latitude>
+<longitude dir="E" >74.58</longitude>
+</city>
+<city name="Una" ><latitude dir="N" >31.32</latitude>
+<longitude dir="E" >76.18</longitude>
+</city>
+<city name="Paiala " ><latitude dir="N" >30.20</latitude>
+<longitude dir="E" >76.25</longitude>
+</city>
+<city name="Pathankot" ><latitude dir="N" >32.17</latitude>
+<longitude dir="E" >75.42</longitude>
+</city>
+</state>
+<state name="Rajasthan" ><city name="Rajasthan" ><latitude dir="N" >27.00</latitude>
+<longitude dir="E" >74.00</longitude>
+</city>
+<city name="Abu" ><latitude dir="N" >24.40</latitude>
+<longitude dir="E" >72.45</longitude>
+</city>
+<city name="Ajmer" ><latitude dir="N" >26.27</latitude>
+<longitude dir="E" >74.42</longitude>
+</city>
+<city name="Alwar" ><latitude dir="N" >27.34</latitude>
+<longitude dir="E" >76.38</longitude>
+</city>
+<city name="Amet" ><latitude dir="N" >25.20</latitude>
+<longitude dir="E" >73.59</longitude>
+</city>
+<city name="Anupgarh" ><latitude dir="N" >29.07</latitude>
+<longitude dir="E" >73.06</longitude>
+</city>
+<city name="Aravali Range" ><latitude dir="N" >25.00</latitude>
+<longitude dir="E" >73.10</longitude>
+</city>
+<city name="Asop" ><latitude dir="N" >26.48</latitude>
+<longitude dir="E" >73.44</longitude>
+</city>
+<city name="Bakhasar" ><latitude dir="N" >24.43</latitude>
+<longitude dir="E" >71.09</longitude>
+</city>
+<city name="Balahera" ><latitude dir="N" >26.45</latitude>
+<longitude dir="E" >76.50</longitude>
+</city>
+<city name="Balotra" ><latitude dir="N" >25.49</latitude>
+<longitude dir="E" >72.21</longitude>
+</city>
+<city name="Banas R." ><latitude dir="N" >26.13</latitude>
+<longitude dir="E" >76.13</longitude>
+</city>
+<city name="Banswara" ><latitude dir="N" >23.30</latitude>
+<longitude dir="E" >74.24</longitude>
+</city>
+<city name="Bap" ><latitude dir="N" >27.22</latitude>
+<longitude dir="E" >72.22</longitude>
+</city>
+<city name="Baran" ><latitude dir="N" >25.05</latitude>
+<longitude dir="E" >76.33</longitude>
+</city>
+<city name="Barmer" ><latitude dir="N" >25.45</latitude>
+<longitude dir="E" >71.25</longitude>
+</city>
+<city name="Baswa" ><latitude dir="N" >27.06</latitude>
+<longitude dir="E" >76.32</longitude>
+</city>
+<city name="Beawar" ><latitude dir="N" >26.06</latitude>
+<longitude dir="E" >74.21</longitude>
+</city>
+<city name="Bedla" ><latitude dir="N" >25.20</latitude>
+<longitude dir="E" >73.45</longitude>
+</city>
+<city name="Bhadra" ><latitude dir="N" >29.15</latitude>
+<longitude dir="E" >75.30</longitude>
+</city>
+<city name="Bhadrajan" ><latitude dir="N" >25.36</latitude>
+<longitude dir="E" >72.54</longitude>
+</city>
+<city name="Bharatpur" ><latitude dir="N" >27.15</latitude>
+<longitude dir="E" >77.30</longitude>
+</city>
+<city name="Bhhainsror" ><latitude dir="N" >24.58</latitude>
+<longitude dir="E" >75.36</longitude>
+</city>
+<city name="Bhilwara" ><latitude dir="N" >25.21</latitude>
+<longitude dir="E" >74.40</longitude>
+</city>
+<city name="Bhinmal" ><latitude dir="N" >25.00</latitude>
+<longitude dir="E" >72.19</longitude>
+</city>
+<city name="Bikampur" ><latitude dir="N" >27.45</latitude>
+<longitude dir="E" >72.10</longitude>
+</city>
+<city name="Bikaner" ><latitude dir="N" >28.01</latitude>
+<longitude dir="E" >73.22</longitude>
+</city>
+<city name="Birilpur" ><latitude dir="N" >28.11</latitude>
+<longitude dir="E" >72.15</longitude>
+</city>
+<city name="Bissau" ><latitude dir="N" >28.17</latitude>
+<longitude dir="E" >75.08</longitude>
+</city>
+<city name="Bundi" ><latitude dir="N" >25.27</latitude>
+<longitude dir="E" >75.41</longitude>
+</city>
+<city name="Chatsu" ><latitude dir="N" >26.36</latitude>
+<longitude dir="E" >75.59</longitude>
+</city>
+<city name="Chhabra" ><latitude dir="N" >24.40</latitude>
+<longitude dir="E" >76.54</longitude>
+</city>
+<city name="Chhoti Sadri" ><latitude dir="N" >22.24</latitude>
+<longitude dir="E" >74.34</longitude>
+</city>
+<city name="Chittaurgarh" ><latitude dir="N" >24.54</latitude>
+<longitude dir="E" >74.42</longitude>
+</city>
+<city name="Chomu" ><latitude dir="N" >27.07</latitude>
+<longitude dir="E" >75.47</longitude>
+</city>
+<city name="Chotan" ><latitude dir="N" >25.28</latitude>
+<longitude dir="E" >71.06</longitude>
+</city>
+<city name="Churu" ><latitude dir="N" >28.19</latitude>
+<longitude dir="E" >75.01</longitude>
+</city>
+<city name="Dag" ><latitude dir="N" >23.56</latitude>
+<longitude dir="E" >75.52</longitude>
+</city>
+<city name="Deoli" ><latitude dir="N" >25.46</latitude>
+<longitude dir="E" >75.25</longitude>
+</city>
+<city name="Deolia" ><latitude dir="N" >24.38</latitude>
+<longitude dir="E" >74.42</longitude>
+</city>
+<city name="Devikot" ><latitude dir="N" >26.38</latitude>
+<longitude dir="E" >71.07</longitude>
+</city>
+<city name="Dhebar L." ><latitude dir="N" >24.30</latitude>
+<longitude dir="E" >74.00</longitude>
+</city>
+<city name="Dholpur" ><latitude dir="N" >26.42</latitude>
+<longitude dir="E" >77.53</longitude>
+</city>
+<city name="Didwana" ><latitude dir="N" >27.17</latitude>
+<longitude dir="E" >74.25</longitude>
+</city>
+<city name="Dig" ><latitude dir="N" >27.28</latitude>
+<longitude dir="E" >77.20</longitude>
+</city>
+<city name="Dungarpur" ><latitude dir="N" >23.50</latitude>
+<longitude dir="E" >73.50</longitude>
+</city>
+<city name="Eklingji" ><latitude dir="N" >24.43</latitude>
+<longitude dir="E" >73.46</longitude>
+</city>
+<city name="Erinpura" ><latitude dir="N" >25.09</latitude>
+<longitude dir="E" >73.06</longitude>
+</city>
+<city name="Jaipur" ><latitude dir="N" >28.00</latitude>
+<longitude dir="E" >75.02</longitude>
+</city>
+<city name="Ganganagar" ><latitude dir="N" >29.49</latitude>
+<longitude dir="E" >73.50</longitude>
+</city>
+<city name="Gangapur" ><latitude dir="N" >26.29</latitude>
+<longitude dir="E" >75.46</longitude>
+</city>
+<city name="Gangrar" ><latitude dir="N" >23.56</latitude>
+<longitude dir="E" >75.41</longitude>
+</city>
+<city name="Gogundra" ><latitude dir="N" >24.46</latitude>
+<longitude dir="E" >73.34</longitude>
+</city>
+<city name="Gotaru" ><latitude dir="N" >27.22</latitude>
+<longitude dir="E" >70.02</longitude>
+</city>
+<city name="Great Indian Desert" ><latitude dir="N" >27.00</latitude>
+<longitude dir="E" >71.00</longitude>
+</city>
+<city name="Gurha" ><latitude dir="N" >25.12</latitude>
+<longitude dir="E" >71.48</longitude>
+</city>
+<city name="Hanumangarh " ><latitude dir="N" >29.35</latitude>
+<longitude dir="E" >74.21</longitude>
+</city>
+<city name="Indargarh" ><latitude dir="N" >25.40</latitude>
+<longitude dir="E" >76.15</longitude>
+</city>
+<city name="Jahazpur " ><latitude dir="N" >25.38</latitude>
+<longitude dir="E" >75.19</longitude>
+</city>
+<city name="Jaipur " ><latitude dir="N" >26.55</latitude>
+<longitude dir="E" >75.52</longitude>
+</city>
+<city name="Jaislmer " ><latitude dir="N" >26.55</latitude>
+<longitude dir="E" >70.57</longitude>
+</city>
+<city name="Jalor " ><latitude dir="N" >25.22</latitude>
+<longitude dir="E" >72.58</longitude>
+</city>
+<city name="Jhairapatan Chhaoni " ><latitude dir="N" >24.32</latitude>
+<longitude dir="E" >76.12</longitude>
+</city>
+<city name="Jhunjhunu " ><latitude dir="N" >28.06</latitude>
+<longitude dir="E" >75.20</longitude>
+</city>
+<city name="Jodhpur " ><latitude dir="N" >26.18</latitude>
+<longitude dir="E" >73.04</longitude>
+</city>
+<city name="Karauli" ><latitude dir="N" >26.30</latitude>
+<longitude dir="E" >77.04</longitude>
+</city>
+<city name="Kekri" ><latitude dir="N" >25.56</latitude>
+<longitude dir="E" >75.20</longitude>
+</city>
+<city name="Kerwara" ><latitude dir="N" >24.04</latitude>
+<longitude dir="E" >73.40</longitude>
+</city>
+<city name="Khandela" ><latitude dir="N" >27.36</latitude>
+<longitude dir="E" >75.32</longitude>
+</city>
+<city name="Kishangarh" ><latitude dir="N" >27.53</latitude>
+<longitude dir="E" >70.37</longitude>
+</city>
+<city name="Kota" ><latitude dir="N" >25.10</latitude>
+<longitude dir="E" >75.52</longitude>
+</city>
+<city name="Kotra" ><latitude dir="N" >24.22</latitude>
+<longitude dir="E" >73.15</longitude>
+</city>
+<city name="Lachmangarh Sikar" ><latitude dir="N" >27.50</latitude>
+<longitude dir="E" >75.04</longitude>
+</city>
+<city name="Lalsot" ><latitude dir="N" >26.34</latitude>
+<longitude dir="E" >76.23</longitude>
+</city>
+<city name="Luni and R." ><latitude dir="N" >26.01</latitude>
+<longitude dir="E" >73.02</longitude>
+</city>
+<city name="Malpura" ><latitude dir="N" >26.18</latitude>
+<longitude dir="E" >75.25</longitude>
+</city>
+<city name="Mandalgarh" ><latitude dir="N" >25.12</latitude>
+<longitude dir="E" >75.09</longitude>
+</city>
+<city name="Marwar Junctioin" ><latitude dir="N" >25.43</latitude>
+<longitude dir="E" >73.45</longitude>
+</city>
+<city name="Metra" ><latitude dir="N" >26.39</latitude>
+<longitude dir="E" >74.06</longitude>
+</city>
+<city name="Mohangarh" ><latitude dir="N" >27.17</latitude>
+<longitude dir="E" >71.18</longitude>
+</city>
+<city name="Nachana" ><latitude dir="N" >27.09</latitude>
+<longitude dir="E" >71.45</longitude>
+</city>
+<city name="Nagaur " ><latitude dir="N" >27.00</latitude>
+<longitude dir="E" >73.40</longitude>
+</city>
+<city name="Naraina " ><latitude dir="N" >26.50</latitude>
+<longitude dir="E" >74.11</longitude>
+</city>
+<city name="Nasirabad " ><latitude dir="N" >26.18</latitude>
+<longitude dir="E" >74.46</longitude>
+</city>
+<city name="Nathdwara " ><latitude dir="N" >25.56</latitude>
+<longitude dir="E" >73.52</longitude>
+</city>
+<city name="Nawalgarh" ><latitude dir="N" >27.51</latitude>
+<longitude dir="E" >75.18</longitude>
+</city>
+<city name="Nimbahera " ><latitude dir="N" >24.37</latitude>
+<longitude dir="E" >74.45</longitude>
+</city>
+<city name="Nohar " ><latitude dir="N" >29.11</latitude>
+<longitude dir="E" >74.49</longitude>
+</city>
+<city name="Pachbhandra" ><latitude dir="N" >25.55</latitude>
+<longitude dir="E" >62.21</longitude>
+</city>
+<city name="Pali" ><latitude dir="N" >25.46</latitude>
+<longitude dir="E" >73.25</longitude>
+</city>
+<city name="Partabgarh " ><latitude dir="N" >24.02</latitude>
+<longitude dir="E" >74.40</longitude>
+</city>
+<city name="Patan" ><latitude dir="N" >27.49</latitude>
+<longitude dir="E" >76.01</longitude>
+</city>
+<city name="Phalodi" ><latitude dir="N" >27.09</latitude>
+<longitude dir="E" >72.24</longitude>
+</city>
+<city name="Phulera " ><latitude dir="N" >26.52</latitude>
+<longitude dir="E" >75.16</longitude>
+</city>
+<city name="Pipar " ><latitude dir="N" >26.22</latitude>
+<longitude dir="E" >73.35</longitude>
+</city>
+<city name="Pokaran " ><latitude dir="N" >26.55</latitude>
+<longitude dir="E" >71.58</longitude>
+</city>
+<city name="Pugal" ><latitude dir="N" >28.31</latitude>
+<longitude dir="E" >72.51</longitude>
+</city>
+<city name="Rajgarh" ><latitude dir="N" >28.39</latitude>
+<longitude dir="E" >75.26</longitude>
+</city>
+<city name="Ramgarh" ><latitude dir="N" >28.10</latitude>
+<longitude dir="E" >75.00</longitude>
+</city>
+<city name="Ratangarh" ><latitude dir="N" >28.05</latitude>
+<longitude dir="E" >74.39</longitude>
+</city>
+<city name="Reni" ><latitude dir="N" >28.41</latitude>
+<longitude dir="E" >75.05</longitude>
+</city>
+<city name="Rewatsar" ><latitude dir="N" >29.16</latitude>
+<longitude dir="E" >74.26</longitude>
+</city>
+<city name="Rupnagar" ><latitude dir="N" >26.48</latitude>
+<longitude dir="E" >74.54</longitude>
+</city>
+<city name="Salumbar" ><latitude dir="N" >24.09</latitude>
+<longitude dir="E" >74.05</longitude>
+</city>
+<city name="Sambhar L." ><latitude dir="N" >26.54</latitude>
+<longitude dir="E" >75.13</longitude>
+</city>
+<city name="Sanchor" ><latitude dir="N" >24.36</latitude>
+<longitude dir="E" >71.54</longitude>
+</city>
+<city name="Sanganer" ><latitude dir="N" >26.49</latitude>
+<longitude dir="E" >75.49</longitude>
+</city>
+<city name="Sardarshahr" ><latitude dir="N" >28.27</latitude>
+<longitude dir="E" >74.32</longitude>
+</city>
+<city name="Sawai Mahopur" ><latitude dir="N" >25.58</latitude>
+<longitude dir="E" >76.30</longitude>
+</city>
+<city name="Shahabad" ><latitude dir="N" >25.10</latitude>
+<longitude dir="E" >77.20</longitude>
+</city>
+<city name="shahgarh" ><latitude dir="N" >27.08</latitude>
+<longitude dir="E" >69.57</longitude>
+</city>
+<city name="shahpura" ><latitude dir="N" >25.40</latitude>
+<longitude dir="E" >75.01</longitude>
+</city>
+<city name="shergarh" ><latitude dir="N" >24.40</latitude>
+<longitude dir="E" >76.32</longitude>
+</city>
+<city name="Sikar" ><latitude dir="N" >27.36</latitude>
+<longitude dir="E" >75.15</longitude>
+</city>
+<city name="Tantpur" ><latitude dir="N" >26.51</latitude>
+<longitude dir="E" >77.32</longitude>
+</city>
+<city name="Toda Rai Singh" ><latitude dir="N" >26.00</latitude>
+<longitude dir="E" >75.42</longitude>
+</city>
+<city name="Tonk" ><latitude dir="N" >26.11</latitude>
+<longitude dir="E" >75.50</longitude>
+</city>
+<city name="Udaipur" ><latitude dir="N" >27.42</latitude>
+<longitude dir="E" >75.33</longitude>
+</city>
+</state>
+<state name="Sikkim" ><city name="Sikkim" ><latitude dir="N" >27.30</latitude>
+<longitude dir="E" >88.30</longitude>
+</city>
+<city name="Gangtok" ><latitude dir="N" >27.20</latitude>
+<longitude dir="E" >88.40</longitude>
+</city>
+</state>
+<state name="Tamil Nadu" ><city name="Tamilnadu" ><latitude dir="N" >11.00</latitude>
+<longitude dir="E" >78.00</longitude>
+</city>
+<city name="Adirampattinam" ><latitude dir="N" >10.21</latitude>
+<longitude dir="E" >79.25</longitude>
+</city>
+<city name="Ambasamudram" ><latitude dir="N" >08.43</latitude>
+<longitude dir="E" >77.29</longitude>
+</city>
+<city name="Ambur" ><latitude dir="N" >21.50</latitude>
+<longitude dir="E" >78.45</longitude>
+</city>
+<city name="Anaimalai Hills" ><latitude dir="N" >10.24</latitude>
+<longitude dir="E" >76.40</longitude>
+</city>
+<city name="Arakkonam" ><latitude dir="N" >13.05</latitude>
+<longitude dir="E" >79.43</longitude>
+</city>
+<city name="Arantangi " ><latitude dir="N" >10.10</latitude>
+<longitude dir="E" >79.02</longitude>
+</city>
+<city name="Arcot" ><latitude dir="N" >12.56</latitude>
+<longitude dir="E" >79.24</longitude>
+</city>
+<city name="Arni" ><latitude dir="N" >12.40</latitude>
+<longitude dir="E" >79.19</longitude>
+</city>
+<city name="Aruppukkotai" ><latitude dir="N" >09.31</latitude>
+<longitude dir="E" >78.08</longitude>
+</city>
+<city name="Attur" ><latitude dir="N" >11.36</latitude>
+<longitude dir="E" >78.39</longitude>
+</city>
+<city name="Atur" ><latitude dir="N" >10.16</latitude>
+<longitude dir="E" >77.53</longitude>
+</city>
+<city name="Bodinayakkanur" ><latitude dir="N" >10.01</latitude>
+<longitude dir="E" >77.24</longitude>
+</city>
+<city name="Calimere, Point" ><latitude dir="N" >10.18</latitude>
+<longitude dir="E" >79.52</longitude>
+</city>
+<city name="Carnatic" ><latitude dir="N" >12.00</latitude>
+<longitude dir="E" >80.00</longitude>
+</city>
+<city name="Chidambaram" ><latitude dir="N" >11.24</latitude>
+<longitude dir="E" >79.44</longitude>
+</city>
+<city name="Chingleput" ><latitude dir="N" >12.42</latitude>
+<longitude dir="E" >80.01</longitude>
+</city>
+<city name="Coimbatore" ><latitude dir="N" >11.00</latitude>
+<longitude dir="E" >77.00</longitude>
+</city>
+<city name="Comorin, C." ><latitude dir="N" >08.04</latitude>
+<longitude dir="E" >77.36</longitude>
+</city>
+<city name="Coromandel Coast" ><latitude dir="N" >12.00</latitude>
+<longitude dir="E" >80.30</longitude>
+</city>
+<city name="Cuddalore" ><latitude dir="N" >11.43</latitude>
+<longitude dir="E" >79.49</longitude>
+</city>
+<city name="Devakottai" ><latitude dir="N" >09.57</latitude>
+<longitude dir="E" >78.53</longitude>
+</city>
+<city name="Dhanushkodi" ><latitude dir="N" >09.10</latitude>
+<longitude dir="E" >79.28</longitude>
+</city>
+<city name="Dharapuram" ><latitude dir="N" >10.45</latitude>
+<longitude dir="E" >77.34</longitude>
+</city>
+<city name="Dharmapuri" ><latitude dir="N" >12.08</latitude>
+<longitude dir="E" >78.13</longitude>
+</city>
+<city name="Dindigul" ><latitude dir="N" >10.22</latitude>
+<longitude dir="E" >78.00</longitude>
+</city>
+<city name="Dodabetta. Mt." ><latitude dir="N" >11.25</latitude>
+<longitude dir="E" >76.46</longitude>
+</city>
+<city name="Ennore" ><latitude dir="N" >13.14</latitude>
+<longitude dir="E" >80.22</longitude>
+</city>
+<city name="Erode" ><latitude dir="N" >11.20</latitude>
+<longitude dir="E" >77.46</longitude>
+</city>
+<city name="Fort St David" ><latitude dir="N" >11.45</latitude>
+<longitude dir="E" >79.50</longitude>
+</city>
+<city name="Fort St George" ><latitude dir="N" >13.04</latitude>
+<longitude dir="E" >80.17</longitude>
+</city>
+<city name="Gudiyatam" ><latitude dir="N" >12.57</latitude>
+<longitude dir="E" >78.55</longitude>
+</city>
+<city name="Hospur " ><latitude dir="N" >12.44</latitude>
+<longitude dir="E" >77.52</longitude>
+</city>
+<city name="Jalarpet " ><latitude dir="N" >12.34</latitude>
+<longitude dir="E" >78.37</longitude>
+</city>
+<city name="Javadi hills " ><latitude dir="N" >12.40</latitude>
+<longitude dir="E" >78.40</longitude>
+</city>
+<city name="Kanchipuram " ><latitude dir="N" >12.50</latitude>
+<longitude dir="E" >79.45</longitude>
+</city>
+<city name="Karur" ><latitude dir="N" >10.58</latitude>
+<longitude dir="E" >78.07</longitude>
+</city>
+<city name="Kaveri R." ><latitude dir="N" >11.20</latitude>
+<longitude dir="E" >77.50</longitude>
+</city>
+<city name="Kayalpatnam" ><latitude dir="N" >08.34</latitude>
+<longitude dir="E" >78.10</longitude>
+</city>
+<city name="Kilakarai" ><latitude dir="N" >09.14</latitude>
+<longitude dir="E" >78.50</longitude>
+</city>
+<city name="Kodaikanal" ><latitude dir="N" >10.13</latitude>
+<longitude dir="E" >77.32</longitude>
+</city>
+<city name="Krishnagiri" ><latitude dir="N" >12.32</latitude>
+<longitude dir="E" >78.16</longitude>
+</city>
+<city name="Kumbakonam" ><latitude dir="N" >10.58</latitude>
+<longitude dir="E" >79.25</longitude>
+</city>
+<city name="Chennai" ><latitude dir="N" >13.04</latitude>
+<longitude dir="E" >80.17</longitude>
+</city>
+<city name="Madurai" ><latitude dir="N" >09.58</latitude>
+<longitude dir="E" >78.10</longitude>
+</city>
+<city name="Madurantakam" ><latitude dir="N" >12.30</latitude>
+<longitude dir="E" >79.56</longitude>
+</city>
+<city name="Mahabalipuram" ><latitude dir="N" >12.37</latitude>
+<longitude dir="E" >80.14</longitude>
+</city>
+<city name="Mannargudi" ><latitude dir="N" >10.40</latitude>
+<longitude dir="E" >79.29</longitude>
+</city>
+<city name="Mayuram" ><latitude dir="N" >11.06</latitude>
+<longitude dir="E" >79.42</longitude>
+</city>
+<city name="Mettupalaiyam" ><latitude dir="N" >11.18</latitude>
+<longitude dir="E" >76.59</longitude>
+</city>
+<city name="Mettur Dam" ><latitude dir="N" >11.52</latitude>
+<longitude dir="E" >77.50</longitude>
+</city>
+<city name="Nagarjunasagar Dam " ><latitude dir="N" >16.50</latitude>
+<longitude dir="E" >79.20</longitude>
+</city>
+<city name="Nagercoil " ><latitude dir="N" >08.11</latitude>
+<longitude dir="E" >77.29</longitude>
+</city>
+<city name="Namakkal " ><latitude dir="N" >11.13</latitude>
+<longitude dir="E" >78.13</longitude>
+</city>
+<city name="Nanguneri " ><latitude dir="N" >08.29</latitude>
+<longitude dir="E" >77.44</longitude>
+</city>
+<city name="Neiveli " ><latitude dir="N" >10.31</latitude>
+<longitude dir="E" >79.24</longitude>
+</city>
+<city name="Pachaimalai Hills" ><latitude dir="N" >11.15</latitude>
+<longitude dir="E" >78.30</longitude>
+</city>
+<city name="Padmanabhapuram" ><latitude dir="N" >09.06</latitude>
+<longitude dir="E" >76.50</longitude>
+</city>
+<city name="Palayankottal" ><latitude dir="N" >08.43</latitude>
+<longitude dir="E" >77.46</longitude>
+</city>
+<city name="Palladam" ><latitude dir="N" >10.59</latitude>
+<longitude dir="E" >77.20</longitude>
+</city>
+<city name="Pallavaram" ><latitude dir="N" >12.58</latitude>
+<longitude dir="E" >80.13</longitude>
+</city>
+<city name="Pallivasal" ><latitude dir="N" >09.55</latitude>
+<longitude dir="E" >77.00</longitude>
+</city>
+<city name="Palni Hills" ><latitude dir="N" >10.00</latitude>
+<longitude dir="E" >77.00</longitude>
+</city>
+<city name="Panruti" ><latitude dir="N" >11.47</latitude>
+<longitude dir="E" >79.35</longitude>
+</city>
+<city name="Paramakkudi" ><latitude dir="N" >09.31</latitude>
+<longitude dir="E" >78.39</longitude>
+</city>
+<city name="Pattukkottal " ><latitude dir="N" >10.26</latitude>
+<longitude dir="E" >79.22</longitude>
+</city>
+<city name="Perambalur " ><latitude dir="N" >11.14</latitude>
+<longitude dir="E" >78.56</longitude>
+</city>
+<city name="Periyakulam " ><latitude dir="N" >10.07</latitude>
+<longitude dir="E" >77.35</longitude>
+</city>
+<city name="Pollachi " ><latitude dir="N" >10.39</latitude>
+<longitude dir="E" >77.03</longitude>
+</city>
+<city name="Ponneri " ><latitude dir="N" >13.20</latitude>
+<longitude dir="E" >80.15</longitude>
+</city>
+<city name="Porto Novo" ><latitude dir="N" >11.30</latitude>
+<longitude dir="E" >79.48</longitude>
+</city>
+<city name="Pudukkottal" ><latitude dir="N" >10.23</latitude>
+<longitude dir="E" >78.52</longitude>
+</city>
+<city name="Pulicat" ><latitude dir="N" >13.25</latitude>
+<longitude dir="E" >80.21</longitude>
+</city>
+<city name="Rajapalayam" ><latitude dir="N" >09.27</latitude>
+<longitude dir="E" >77.36</longitude>
+</city>
+<city name="Ramanathapuram" ><latitude dir="N" >09.22</latitude>
+<longitude dir="E" >78.52</longitude>
+</city>
+<city name="Rameswaram" ><latitude dir="N" >09.17</latitude>
+<longitude dir="E" >79.22</longitude>
+</city>
+<city name="Salem" ><latitude dir="N" >11.39</latitude>
+<longitude dir="E" >78.12</longitude>
+</city>
+<city name="Sankaranayinarkovil" ><latitude dir="N" >09.10</latitude>
+<longitude dir="E" >77.35</longitude>
+</city>
+<city name="Sattur" ><latitude dir="N" >09.21</latitude>
+<longitude dir="E" >77.58</longitude>
+</city>
+<city name="Satyamangalam" ><latitude dir="N" >11.30</latitude>
+<longitude dir="E" >77.17</longitude>
+</city>
+<city name="Seven Pagodas" ><latitude dir="N" >12.37</latitude>
+<longitude dir="E" >80.14</longitude>
+</city>
+<city name="shencottah" ><latitude dir="N" >08.59</latitude>
+<longitude dir="E" >77.18</longitude>
+</city>
+<city name="shevaroy Hills" ><latitude dir="N" >12.00</latitude>
+<longitude dir="E" >78.30</longitude>
+</city>
+<city name="St. Thomas Mount" ><latitude dir="N" >13.00</latitude>
+<longitude dir="E" >80.14</longitude>
+</city>
+<city name="Tenkasi" ><latitude dir="N" >08.58</latitude>
+<longitude dir="E" >77.21</longitude>
+</city>
+<city name="Thanjavur" ><latitude dir="N" >10.47</latitude>
+<longitude dir="E" >79.10</longitude>
+</city>
+<city name="Tindivanam" ><latitude dir="N" >12.14</latitude>
+<longitude dir="E" >79.42</longitude>
+</city>
+<city name="Tiruchchirappalli" ><latitude dir="N" >10.50</latitude>
+<longitude dir="E" >78.46</longitude>
+</city>
+<city name="Tiruchendur" ><latitude dir="N" >08.30</latitude>
+<longitude dir="E" >78.11</longitude>
+</city>
+<city name="Tiruchengodu" ><latitude dir="N" >11.23</latitude>
+<longitude dir="E" >77.56</longitude>
+</city>
+<city name="Tirukkoyilur" ><latitude dir="N" >11.58</latitude>
+<longitude dir="E" >79.15</longitude>
+</city>
+<city name="Tirumangalam" ><latitude dir="N" >09.49</latitude>
+<longitude dir="E" >79.01</longitude>
+</city>
+<city name="Tirunelveli" ><latitude dir="N" >08.44</latitude>
+<longitude dir="E" >77.44</longitude>
+</city>
+<city name="Tiruppur" ><latitude dir="N" >11.05</latitude>
+<longitude dir="E" >77.20</longitude>
+</city>
+<city name="Tiruvallur" ><latitude dir="N" >13.09</latitude>
+<longitude dir="E" >79.57</longitude>
+</city>
+<city name="Tiruvannamalai" ><latitude dir="N" >12.15</latitude>
+<longitude dir="E" >79.07</longitude>
+</city>
+<city name="Tondi" ><latitude dir="N" >09.45</latitude>
+<longitude dir="E" >79.04</longitude>
+</city>
+<city name="Tranquebar" ><latitude dir="N" >11.01</latitude>
+<longitude dir="E" >79.54</longitude>
+</city>
+<city name="Turaiyur " ><latitude dir="N" >11.09</latitude>
+<longitude dir="E" >78.38</longitude>
+</city>
+<city name="Tuticorin " ><latitude dir="N" >08.48</latitude>
+<longitude dir="E" >78.11</longitude>
+</city>
+<city name="Udagamandalam" ><latitude dir="N" >11.24</latitude>
+<longitude dir="E" >76.44</longitude>
+</city>
+<city name="Udamalpet" ><latitude dir="N" >10.36</latitude>
+<longitude dir="E" >77.17</longitude>
+</city>
+<city name="Udiyarpalaiyam" ><latitude dir="N" >11.11</latitude>
+<longitude dir="E" >79.20</longitude>
+</city>
+<city name="Uttangarai" ><latitude dir="N" >12.16</latitude>
+<longitude dir="E" >78.35</longitude>
+</city>
+<city name="Vaniyambadi" ><latitude dir="N" >12.41</latitude>
+<longitude dir="E" >78.39</longitude>
+</city>
+<city name="Vellore" ><latitude dir="N" >12.55</latitude>
+<longitude dir="E" >79.11</longitude>
+</city>
+<city name="Villupuram" ><latitude dir="N" >11.57</latitude>
+<longitude dir="E" >79.32</longitude>
+</city>
+<city name="Virudhunagar" ><latitude dir="N" >09.35</latitude>
+<longitude dir="E" >77.57</longitude>
+</city>
+<city name="Vriddhachalam" ><latitude dir="N" >11.32</latitude>
+<longitude dir="E" >79.24</longitude>
+</city>
+<city name="Wandiwash" ><latitude dir="N" >12.30</latitude>
+<longitude dir="E" >79.30</longitude>
+</city>
+<city name="Yercaud" ><latitude dir="N" >11.48</latitude>
+<longitude dir="E" >78.13</longitude>
+</city>
+</state>
+<state name="Tripura" ><city name="Tripura" ><latitude dir="N" >23.45</latitude>
+<longitude dir="E" >91.30</longitude>
+</city>
+<city name="Agartala" ><latitude dir="N" >23.50</latitude>
+<longitude dir="E" >91.25</longitude>
+</city>
+<city name="Udaipur" ><latitude dir="N" >23.31</latitude>
+<longitude dir="E" >91.31</longitude>
+</city>
+</state>
+<state name="Uttar Pradesh" ><city name="Uttar Pradesh" ><latitude dir="N" >27.40</latitude>
+<longitude dir="E" >80.00</longitude>
+</city>
+<city name="Agra" ><latitude dir="N" >27.10</latitude>
+<longitude dir="E" >78.05</longitude>
+</city>
+<city name="Ahraura" ><latitude dir="N" >24.59</latitude>
+<longitude dir="E" >83.02</longitude>
+</city>
+<city name="Akbarpur" ><latitude dir="N" >26.26</latitude>
+<longitude dir="E" >52.33</longitude>
+</city>
+<city name="Aligarh" ><latitude dir="N" >27.30</latitude>
+<longitude dir="E" >79.40</longitude>
+</city>
+<city name="Allahabad" ><latitude dir="N" >25.28</latitude>
+<longitude dir="E" >81.54</longitude>
+</city>
+<city name="Almora" ><latitude dir="N" >29.37</latitude>
+<longitude dir="E" >79.40</longitude>
+</city>
+<city name="Amethi" ><latitude dir="N" >26.08</latitude>
+<longitude dir="E" >81.50</longitude>
+</city>
+<city name="Amroha" ><latitude dir="N" >28.54</latitude>
+<longitude dir="E" >78.31</longitude>
+</city>
+<city name="Ayodhya" ><latitude dir="N" >26.48</latitude>
+<longitude dir="E" >82.14</longitude>
+</city>
+<city name="Azamgarh" ><latitude dir="N" >26.03</latitude>
+<longitude dir="E" >83.13</longitude>
+</city>
+<city name="Badrinath" ><latitude dir="N" >30.44</latitude>
+<longitude dir="E" >79.32</longitude>
+</city>
+<city name="Bahraich" ><latitude dir="N" >27.34</latitude>
+<longitude dir="E" >81.38</longitude>
+</city>
+<city name="Ballia" ><latitude dir="N" >25.44</latitude>
+<longitude dir="E" >84.11</longitude>
+</city>
+<city name="Banda" ><latitude dir="N" >25.20</latitude>
+<longitude dir="E" >80.22</longitude>
+</city>
+<city name="Bansi" ><latitude dir="N" >27.10</latitude>
+<longitude dir="E" >82.56</longitude>
+</city>
+<city name="Barabanki" ><latitude dir="N" >26.56</latitude>
+<longitude dir="E" >81.13</longitude>
+</city>
+<city name="Bareilly" ><latitude dir="N" >28.22</latitude>
+<longitude dir="E" >79.27</longitude>
+</city>
+<city name="Barhaj" ><latitude dir="N" >26.16</latitude>
+<longitude dir="E" >83.46</longitude>
+</city>
+<city name="Basti" ><latitude dir="N" >26.48</latitude>
+<longitude dir="E" >82.46</longitude>
+</city>
+<city name="Belagunj" ><latitude dir="N" >25.56</latitude>
+<longitude dir="E" >82.02</longitude>
+</city>
+<city name="Benares " ><latitude dir="N" >25.20</latitude>
+<longitude dir="E" >83.00</longitude>
+</city>
+<city name="Bhadohi" ><latitude dir="N" >25.24</latitude>
+<longitude dir="E" >82.38</longitude>
+</city>
+<city name="Bijnor" ><latitude dir="N" >29.23</latitude>
+<longitude dir="E" >79.11</longitude>
+</city>
+<city name="Bindki" ><latitude dir="N" >26.02</latitude>
+<longitude dir="E" >80.33</longitude>
+</city>
+<city name="Bithur" ><latitude dir="N" >26.37</latitude>
+<longitude dir="E" >80.19</longitude>
+</city>
+<city name="Brindaban" ><latitude dir="N" >27.33</latitude>
+<longitude dir="E" >77.44</longitude>
+</city>
+<city name="Budaun" ><latitude dir="N" >28.02</latitude>
+<longitude dir="E" >79.10</longitude>
+</city>
+<city name="Bulandshahr" ><latitude dir="N" >28.24</latitude>
+<longitude dir="E" >77.54</longitude>
+</city>
+<city name="Chandausi" ><latitude dir="N" >28.27</latitude>
+<longitude dir="E" >78.49</longitude>
+</city>
+<city name="Charkhari" ><latitude dir="N" >25.26</latitude>
+<longitude dir="E" >79.45</longitude>
+</city>
+<city name="Dalmau" ><latitude dir="N" >26.07</latitude>
+<longitude dir="E" >81.05</longitude>
+</city>
+<city name="Dehra Dun" ><latitude dir="N" >30.19</latitude>
+<longitude dir="E" >78.04</longitude>
+</city>
+<city name="Deoband" ><latitude dir="N" >29.42</latitude>
+<longitude dir="E" >77.43</longitude>
+</city>
+<city name="Deoria" ><latitude dir="N" >26.23</latitude>
+<longitude dir="E" >83.42</longitude>
+</city>
+<city name="Etah " ><latitude dir="N" >27.35</latitude>
+<longitude dir="E" >78.40</longitude>
+</city>
+<city name="Etawah" ><latitude dir="N" >26.47</latitude>
+<longitude dir="E" >79.02</longitude>
+</city>
+<city name="Faizabad" ><latitude dir="N" >26.47</latitude>
+<longitude dir="E" >82.12</longitude>
+</city>
+<city name="Farrukhabad" ><latitude dir="N" >27.24</latitude>
+<longitude dir="E" >79.37</longitude>
+</city>
+<city name="Fatehgarh" ><latitude dir="N" >27.23</latitude>
+<longitude dir="E" >79.40</longitude>
+</city>
+<city name="Fatehpur" ><latitude dir="N" >25.55</latitude>
+<longitude dir="E" >80.52</longitude>
+</city>
+<city name="Firozabad" ><latitude dir="N" >27.09</latitude>
+<longitude dir="E" >78.24</longitude>
+</city>
+<city name="Garhwal" ><latitude dir="N" >30.13</latitude>
+<longitude dir="E" >79.30</longitude>
+</city>
+<city name="Ghaghara R." ><latitude dir="N" >27.30</latitude>
+<longitude dir="E" >81.20</longitude>
+</city>
+<city name="Ghatampur" ><latitude dir="N" >26.08</latitude>
+<longitude dir="E" >80.13</longitude>
+</city>
+<city name="Ghaziabad" ><latitude dir="N" >28.40</latitude>
+<longitude dir="E" >77.28</longitude>
+</city>
+<city name="Ghazipur" ><latitude dir="N" >25.34</latitude>
+<longitude dir="E" >83.35</longitude>
+</city>
+<city name="Gomatin R." ><latitude dir="N" >27.15</latitude>
+<longitude dir="E" >80.38</longitude>
+</city>
+<city name="Gonda" ><latitude dir="N" >27.28</latitude>
+<longitude dir="E" >82.01</longitude>
+</city>
+<city name="Gorakhpur" ><latitude dir="N" >26.45</latitude>
+<longitude dir="E" >83.24</longitude>
+</city>
+<city name="Hamirpur " ><latitude dir="N" >25.58</latitude>
+<longitude dir="E" >80.12</longitude>
+</city>
+<city name="Hapur " ><latitude dir="N" >28.43</latitude>
+<longitude dir="E" >77.50</longitude>
+</city>
+<city name="Hardoi " ><latitude dir="N" >27.23</latitude>
+<longitude dir="E" >80.10</longitude>
+</city>
+<city name="Haridwar " ><latitude dir="N" >29.58</latitude>
+<longitude dir="E" >78.13</longitude>
+</city>
+<city name="Hathras " ><latitude dir="N" >37.36</latitude>
+<longitude dir="E" >78.06</longitude>
+</city>
+<city name="Jalalpur" ><latitude dir="N" >26.18</latitude>
+<longitude dir="E" >82.44</longitude>
+</city>
+<city name="Jalaun " ><latitude dir="N" >26.08</latitude>
+<longitude dir="E" >79.23</longitude>
+</city>
+<city name="Jaunpur" ><latitude dir="N" >25.46</latitude>
+<longitude dir="E" >82.44</longitude>
+</city>
+<city name="Jhansi " ><latitude dir="N" >25.27</latitude>
+<longitude dir="E" >78.37</longitude>
+</city>
+<city name="Jigni " ><latitude dir="N" >25.44</latitude>
+<longitude dir="E" >79.25</longitude>
+</city>
+<city name="Kadaura " ><latitude dir="N" >25.59</latitude>
+<longitude dir="E" >79.52</longitude>
+</city>
+<city name="Kamasin " ><latitude dir="N" >25.31</latitude>
+<longitude dir="E" >80.56</longitude>
+</city>
+<city name="Kamet, Mt. " ><latitude dir="N" >30.56</latitude>
+<longitude dir="E" >79.36</longitude>
+</city>
+<city name="Kannauj " ><latitude dir="N" >27.03</latitude>
+<longitude dir="E" >79.58</longitude>
+</city>
+<city name="Kanpur " ><latitude dir="N" >26.28</latitude>
+<longitude dir="E" >80.24</longitude>
+</city>
+<city name="Kheri" ><latitude dir="N" >27.54</latitude>
+<longitude dir="E" >80.48</longitude>
+</city>
+<city name="Khurja" ><latitude dir="N" >28.15</latitude>
+<longitude dir="E" >77.50</longitude>
+</city>
+<city name="Koil Aligarh" ><latitude dir="N" >27.54</latitude>
+<longitude dir="E" >78.06</longitude>
+</city>
+<city name="Lakhimpur" ><latitude dir="N" >27.57</latitude>
+<longitude dir="E" >80.49</longitude>
+</city>
+<city name="Lalitpur" ><latitude dir="N" >24.22</latitude>
+<longitude dir="E" >78.28</longitude>
+</city>
+<city name="Lucknow" ><latitude dir="N" >26.55</latitude>
+<longitude dir="E" >80.59</longitude>
+</city>
+<city name="Machhlishahr" ><latitude dir="N" >25.41</latitude>
+<longitude dir="E" >82.27</longitude>
+</city>
+<city name="Mahoba" ><latitude dir="N" >25.18</latitude>
+<longitude dir="E" >79.55</longitude>
+</city>
+<city name="Mainpuri" ><latitude dir="N" >27.14</latitude>
+<longitude dir="E" >79.03</longitude>
+</city>
+<city name="Mathura" ><latitude dir="N" >27.28</latitude>
+<longitude dir="E" >77.41</longitude>
+</city>
+<city name="Mau" ><latitude dir="N" >25.57</latitude>
+<longitude dir="E" >83.36</longitude>
+</city>
+<city name="Meerut" ><latitude dir="N" >29.01</latitude>
+<longitude dir="E" >77.45</longitude>
+</city>
+<city name="Mehndawal" ><latitude dir="N" >26.58</latitude>
+<longitude dir="E" >83.10</longitude>
+</city>
+<city name="Mirzapur" ><latitude dir="N" >25.10</latitude>
+<longitude dir="E" >82.37</longitude>
+</city>
+<city name="Moradabad" ><latitude dir="N" >28.51</latitude>
+<longitude dir="E" >78.49</longitude>
+</city>
+<city name="Mughal Serai " ><latitude dir="N" >25.17</latitude>
+<longitude dir="E" >83.11</longitude>
+</city>
+<city name="Mussoorie" ><latitude dir="N" >30.27</latitude>
+<longitude dir="E" >78.06</longitude>
+</city>
+<city name="Muzaffarnagar" ><latitude dir="N" >29.28</latitude>
+<longitude dir="E" >77.44</longitude>
+</city>
+<city name="Nagina " ><latitude dir="N" >29.27</latitude>
+<longitude dir="E" >77.29</longitude>
+</city>
+<city name="Naini Tal " ><latitude dir="N" >29.23</latitude>
+<longitude dir="E" >789.30</longitude>
+</city>
+<city name="Nand Devi Mt." ><latitude dir="N" >30.23</latitude>
+<longitude dir="E" >06.15</longitude>
+</city>
+<city name="Nanpapa " ><latitude dir="N" >27.52</latitude>
+<longitude dir="E" >81.33</longitude>
+</city>
+<city name="Nawabganj " ><latitude dir="N" >26.56</latitude>
+<longitude dir="E" >82.12</longitude>
+</city>
+<city name="Nihasan " ><latitude dir="N" >28.14</latitude>
+<longitude dir="E" >80.55</longitude>
+</city>
+<city name="Orai" ><latitude dir="N" >25.59</latitude>
+<longitude dir="E" >79.30</longitude>
+</city>
+<city name="Padrauna" ><latitude dir="N" >26.54</latitude>
+<longitude dir="E" >84.01</longitude>
+</city>
+<city name="Pertabgarh" ><latitude dir="N" >25.34</latitude>
+<longitude dir="E" >81.59</longitude>
+</city>
+<city name="Phulpur " ><latitude dir="N" >25.32</latitude>
+<longitude dir="E" >82.07</longitude>
+</city>
+<city name="Pillbhit " ><latitude dir="N" >28.38</latitude>
+<longitude dir="E" >79.51</longitude>
+</city>
+<city name="Pratapgarh" ><latitude dir="N" >25.34</latitude>
+<longitude dir="E" >81.59</longitude>
+</city>
+<city name="Rae Bareli" ><latitude dir="N" >26.14</latitude>
+<longitude dir="E" >81.16</longitude>
+</city>
+<city name="Rampur" ><latitude dir="N" >28.48</latitude>
+<longitude dir="E" >79.05</longitude>
+</city>
+<city name="Ranikhet" ><latitude dir="N" >29.40</latitude>
+<longitude dir="E" >79.33</longitude>
+</city>
+<city name="Rohikhand" ><latitude dir="N" >28.30</latitude>
+<longitude dir="E" >79.00</longitude>
+</city>
+<city name="Roorkee" ><latitude dir="N" >29.52</latitude>
+<longitude dir="E" >77.53</longitude>
+</city>
+<city name="Saharanpur" ><latitude dir="N" >29.58</latitude>
+<longitude dir="E" >77.23</longitude>
+</city>
+<city name="Saidpur" ><latitude dir="N" >25.32</latitude>
+<longitude dir="E" >83.16</longitude>
+</city>
+<city name="Sambhal" ><latitude dir="N" >28.35</latitude>
+<longitude dir="E" >78.37</longitude>
+</city>
+<city name="Sarila" ><latitude dir="N" >25.46</latitude>
+<longitude dir="E" >79.43</longitude>
+</city>
+<city name="Shahabad" ><latitude dir="N" >27.30</latitude>
+<longitude dir="E" >80.05</longitude>
+</city>
+<city name="shahjahanpur" ><latitude dir="N" >27.54</latitude>
+<longitude dir="E" >79.57</longitude>
+</city>
+<city name="Sidhauli" ><latitude dir="N" >27.18</latitude>
+<longitude dir="E" >80.50</longitude>
+</city>
+<city name="Sikandara" ><latitude dir="N" >27.13</latitude>
+<longitude dir="E" >77.58</longitude>
+</city>
+<city name="Tanakpur" ><latitude dir="N" >29.10</latitude>
+<longitude dir="E" >80.18</longitude>
+</city>
+<city name="Tanda" ><latitude dir="N" >26.33</latitude>
+<longitude dir="E" >82.42</longitude>
+</city>
+<city name="Tehri" ><latitude dir="N" >30.20</latitude>
+<longitude dir="E" >78.53</longitude>
+</city>
+<city name="Terai Swamp " ><latitude dir="N" >29.00</latitude>
+<longitude dir="E" >80.00</longitude>
+</city>
+<city name="Unnao" ><latitude dir="N" >26.48</latitude>
+<longitude dir="E" >80.43</longitude>
+</city>
+<city name="Uska " ><latitude dir="N" >27.14</latitude>
+<longitude dir="E" >83.12</longitude>
+</city>
+<city name="Utaraula" ><latitude dir="N" >27.19</latitude>
+<longitude dir="E" >82.28</longitude>
+</city>
+<city name="Varanasi" ><latitude dir="N" >25.20</latitude>
+<longitude dir="E" >83.00</longitude>
+</city>
+<city name="Varuna" ><latitude dir="N" >25.25</latitude>
+<longitude dir="E" >83.00</longitude>
+</city>
+<city name="Vrindavan" ><latitude dir="N" >27.33</latitude>
+<longitude dir="E" >77.44</longitude>
+</city>
+<city name="Yamuna" ><latitude dir="N" >25.30</latitude>
+<longitude dir="E" >81.10</longitude>
+</city>
+</state>
+<state name="West Bengal" ><city name="West Bengal" ><latitude dir="N" >23.00</latitude>
+<longitude dir="E" >87.00</longitude>
+</city>
+<city name="Alipur" ><latitude dir="N" >22.32</latitude>
+<longitude dir="E" >88.24</longitude>
+</city>
+<city name="Alipurduar" ><latitude dir="N" >26.30</latitude>
+<longitude dir="E" >89.35</longitude>
+</city>
+<city name="Arambagh" ><latitude dir="N" >22.53</latitude>
+<longitude dir="E" >87.50</longitude>
+</city>
+<city name="Asansol" ><latitude dir="N" >23.42</latitude>
+<longitude dir="E" >87.01</longitude>
+</city>
+<city name="Baharampur" ><latitude dir="N" >24.06</latitude>
+<longitude dir="E" >88.19</longitude>
+</city>
+<city name="Baksa Duar" ><latitude dir="N" >26.45</latitude>
+<longitude dir="E" >89.35</longitude>
+</city>
+<city name="Balurghat" ><latitude dir="N" >25.14</latitude>
+<longitude dir="E" >88.47</longitude>
+</city>
+<city name="Bankura" ><latitude dir="N" >23.14</latitude>
+<longitude dir="E" >87.07</longitude>
+</city>
+<city name="Barackpore" ><latitude dir="N" >22.46</latitude>
+<longitude dir="E" >88.24</longitude>
+</city>
+<city name="Baranagar" ><latitude dir="N" >22.38</latitude>
+<longitude dir="E" >88.22</longitude>
+</city>
+<city name="Barddhaman" ><latitude dir="N" >23.16</latitude>
+<longitude dir="E" >87.54</longitude>
+</city>
+<city name="Beldanga" ><latitude dir="N" >23.58</latitude>
+<longitude dir="E" >88.20</longitude>
+</city>
+<city name="Benapol" ><latitude dir="N" >23.04</latitude>
+<longitude dir="E" >88.32</longitude>
+</city>
+<city name="Bhadreswar" ><latitude dir="N" >22.49</latitude>
+<longitude dir="E" >88.20</longitude>
+</city>
+<city name="Bhatpara" ><latitude dir="N" >22.54</latitude>
+<longitude dir="E" >88.25</longitude>
+</city>
+<city name="Bishnupur" ><latitude dir="N" >23.05</latitude>
+<longitude dir="E" >87.23</longitude>
+</city>
+<city name="Calcutta" ><latitude dir="N" >22.34</latitude>
+<longitude dir="E" >88.24</longitude>
+</city>
+<city name="Chandernagore" ><latitude dir="N" >22.52</latitude>
+<longitude dir="E" >88.25</longitude>
+</city>
+<city name="Chandrakona" ><latitude dir="N" >22.44</latitude>
+<longitude dir="E" >87.33</longitude>
+</city>
+<city name="Chanduria" ><latitude dir="N" >22.56</latitude>
+<longitude dir="E" >88.55</longitude>
+</city>
+<city name="Chinsura" ><latitude dir="N" >22.53</latitude>
+<longitude dir="E" >88.27</longitude>
+</city>
+<city name="Chittaranjan" ><latitude dir="N" >23.50</latitude>
+<longitude dir="E" >87.00</longitude>
+</city>
+<city name="Contai" ><latitude dir="N" >21.50</latitude>
+<longitude dir="E" >87.48</longitude>
+</city>
+<city name="Damodar" ><latitude dir="N" >23.17</latitude>
+<longitude dir="E" >87.35</longitude>
+</city>
+<city name="Darjilling" ><latitude dir="N" >27.03</latitude>
+<longitude dir="E" >88.18</longitude>
+</city>
+<city name="Diamond Harbour" ><latitude dir="N" >22.11</latitude>
+<longitude dir="E" >88.14</longitude>
+</city>
+<city name="Dum-Dum" ><latitude dir="N" >22.38</latitude>
+<longitude dir="E" >88.38</longitude>
+</city>
+<city name="Duragapur" ><latitude dir="N" >23.30</latitude>
+<longitude dir="E" >87.20</longitude>
+</city>
+<city name="Haora " ><latitude dir="N" >22.35</latitude>
+<longitude dir="E" >88.23</longitude>
+</city>
+<city name="Ingraj Bazar " ><latitude dir="N" >25.00</latitude>
+<longitude dir="E" >88.11</longitude>
+</city>
+<city name="Jalpaiguri " ><latitude dir="N" >26.32</latitude>
+<longitude dir="E" >88.46</longitude>
+</city>
+<city name="Jangipur " ><latitude dir="N" >24.28</latitude>
+<longitude dir="E" >88.05</longitude>
+</city>
+<city name="Katoya" ><latitude dir="N" >23.39</latitude>
+<longitude dir="E" >88.11</longitude>
+</city>
+<city name="Kharagpur" ><latitude dir="N" >22.30</latitude>
+<longitude dir="E" >87.20</longitude>
+</city>
+<city name="Koch Bihar" ><latitude dir="N" >26.20</latitude>
+<longitude dir="E" >89.29</longitude>
+</city>
+<city name="Kotalpur" ><latitude dir="N" >23.01</latitude>
+<longitude dir="E" >87.38</longitude>
+</city>
+<city name="Krishnanagar" ><latitude dir="N" >23.24</latitude>
+<longitude dir="E" >88.33</longitude>
+</city>
+<city name="Lalbagh" ><latitude dir="N" >24.13</latitude>
+<longitude dir="E" >88.19</longitude>
+</city>
+<city name="Mehinipur" ><latitude dir="N" >22.25</latitude>
+<longitude dir="E" >87.21</longitude>
+</city>
+<city name="Murshidabad" ><latitude dir="N" >24.11</latitude>
+<longitude dir="E" >88.19</longitude>
+</city>
+<city name="Nabadwip" ><latitude dir="N" >23.24</latitude>
+<longitude dir="E" >88.23</longitude>
+</city>
+<city name="Nalhati " ><latitude dir="N" >22.54</latitude>
+<longitude dir="E" >88.28</longitude>
+</city>
+<city name="Purulliya" ><latitude dir="N" >23.20</latitude>
+<longitude dir="E" >88.28</longitude>
+</city>
+<city name="Raghunathpur" ><latitude dir="N" >23.32</latitude>
+<longitude dir="E" >86.43</longitude>
+</city>
+<city name="Ramaghat" ><latitude dir="N" >23.11</latitude>
+<longitude dir="E" >88.37</longitude>
+</city>
+<city name="Raniganj" ><latitude dir="N" >25.52</latitude>
+<longitude dir="E" >87.52</longitude>
+</city>
+<city name="Sagar I." ><latitude dir="N" >21.40</latitude>
+<longitude dir="E" >88.10</longitude>
+</city>
+<city name="Santipur" ><latitude dir="N" >23.14</latitude>
+<longitude dir="E" >88.29</longitude>
+</city>
+<city name="Serampore" ><latitude dir="N" >22.45</latitude>
+<longitude dir="E" >88.23</longitude>
+</city>
+<city name="Siliguri" ><latitude dir="N" >26.42</latitude>
+<longitude dir="E" >88.25</longitude>
+</city>
+<city name="Tamluk" ><latitude dir="N" >22.18</latitude>
+<longitude dir="E" >87.58</longitude>
+</city>
+<city name="Tilpara" ><latitude dir="N" >23.58</latitude>
+<longitude dir="E" >87.32</longitude>
+</city>
+</state>
+</country>
+</world>

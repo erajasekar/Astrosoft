@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>C/O RAJA</Name><DateTime>Feb 20 1979, 12:30:00 PM</DateTime><Place><City>Akot</City><Longitude dir="E">77.03</Longitude><Latitude dir="N">21.06</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

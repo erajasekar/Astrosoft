@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>H.SATHISKUMAR</Name><DateTime>Jul 8 1981, 07:30:00 PM</DateTime><Place><City>Erode</City><Longitude dir="E">78.10</Longitude><Latitude dir="N">09.58</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

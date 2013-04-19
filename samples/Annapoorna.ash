@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Annapoorna</Name><DateTime>May 9 1984, 09:00:44 PM</DateTime><Place><City>Guntur </City><Longitude dir="E">80.29</Longitude><Latitude dir="N">16.18</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><BirthData><Name>kumaresan</Name><DateTime>Nov 26 1959, 02:15:00 AM</DateTime><Place><City>coimbatore</City><Longitude dir="E">77.00</Longitude><Latitude dir="N">11.00</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

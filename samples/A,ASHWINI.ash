@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>A.ASHWINI</Name><DateTime>Jul 28 1986, 07:04:00 PM</DateTime><Place><City>OTTAPPALAM</City><Longitude dir="E">76.24</Longitude><Latitude dir="N">10.46</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

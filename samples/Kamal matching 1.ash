@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Kamal Maching 1</Name><DateTime>Jul 12 1983, 03:50:00 AM</DateTime><Place><City>Chennai </City><Longitude dir="E">80.15</Longitude><Latitude dir="N">13.03</Latitude><TimeZone>IST</TimeZone></Place></BirthData>
