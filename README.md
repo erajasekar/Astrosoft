@@ -33,3 +33,7 @@ Ayanamsa:  Supports Lahari, Raman and Krishnamoorthy ayanamsa.
 Location:  All calculations can be computed for any place in world by providing latitude / longitude. It also has built-in latitudes / longitudes for all cities in India. 
 
 Language:  Available in English and Tamil. 
+
+License:
+---------
+Astrosoft source code is licensed under MIT License. Please see LICENSE.txt for details.
