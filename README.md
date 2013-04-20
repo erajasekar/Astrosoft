@@ -36,4 +36,4 @@ Language:  Available in English and Tamil.
 
 License:
 ---------
-Astrosoft source code is licensed under MIT License. Please see LICENSE.txt for details.
+Astrosoft source code is licensed under [GNU public license version 2] (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
