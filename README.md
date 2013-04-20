@@ -6,11 +6,11 @@ Astrosoft is a free indian astrology software program for astrologers
 Features:
 ---------
 
-+ Birth Chart:   Provides Birth chart of individual with details of Lagna, Rasi, Nakshata, Thithi, Paksha, Siderial Time, Dasa Balance. 
++ *Birth Chart:*   Provides Birth chart of individual with details of Lagna, Rasi, Nakshata, Thithi, Paksha, Siderial Time, Dasa Balance. 
 
-+ Planetary Positions:   Provides Longitudes, Rasi, Nakshathra Pada postion of all planets and jaimini karakas. 
++ *Planetary Positions:*   Provides Longitudes, Rasi, Nakshathra Pada postion of all planets and jaimini karakas. 
 
-Bhava Positions:   Provides Start , Mid and End Positions for all bhavas. 
++ Bhava Positions:   Provides Start , Mid and End Positions for all bhavas. 
 
 Divisional charts:  Computes Bhava, Navamsa and all 16 shodasha varga charts. 
 
@@ -37,7 +37,7 @@ Language:  Available in English and Tamil.
 Development Setup:
 -------------------
 
-1. Install [JDK](www.oracle.com/technetwork/java/javase/downloads/index.html), [apache ant](http://ant.apache.org/bindownload.cgi) and add to system PATH.
+1. Install [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html), [apache ant](http://ant.apache.org/bindownload.cgi) and add to system PATH.
 2. cd to Astrosoft dir `cd Astrosoft`
 3. Run ant target to deploy and run astrosoft application `ant deploy-run`
 
