@@ -136,7 +136,7 @@ public class PrintDialog extends AstrosoftDialog {
 		
 		printPanel.add(createPrintTypePanel());
 		
-		boolean isPrintPanchang = ((Type)printTypes.getSelectedItem()).equals(Type.Panchang);
+		boolean isPrintPanchang = ((Type)printTypes.getSelectedItem()).equals(AstrosoftExporter.Type.Panchang);
 		
 		if (isPrintPanchang){
 			arrow.setEnabled(true);
@@ -191,15 +191,15 @@ public class PrintDialog extends AstrosoftDialog {
 		print.setEnabled(false);
 		cancel.setEnabled(false);
 		
-		Type type = (Type)printTypes.getSelectedItem();
+		AstrosoftExporter.Type type = (AstrosoftExporter.Type)printTypes.getSelectedItem();
 		
 		FutureTask<Object> printTask = null;
 		
-		if (type.equals(Type.Horosocope)){
+		if (type.equals(AstrosoftExporter.Type.Horosocope)){
 			printTask = AstrosoftExporter.export2Pdf(AstrosoftExporter.Type.Horosocope, parent.getHoroscope(), outputFile);
-		}else if (type.equals(Type.Compactibility)){
+		}else if (type.equals(AstrosoftExporter.Type.Compactibility)){
 			printTask = AstrosoftExporter.export2Pdf(AstrosoftExporter.Type.Compactibility, parent.getCompactibility(), outputFile);
-		}else if (type.equals(Type.Panchang)){
+		}else if (type.equals(AstrosoftExporter.Type.Panchang)){
 			
 			closePanInputWindow();
 			PanchangList panchang = null;
@@ -289,7 +289,7 @@ public class PrintDialog extends AstrosoftDialog {
 
 			public void itemStateChanged(ItemEvent e) {
 				
-				if (((Type)printTypes.getSelectedItem()).equals(Type.Panchang)){
+				if (((Type)printTypes.getSelectedItem()).equals(AstrosoftExporter.Type.Panchang)){
 					arrow.setEnabled(true);
 				}else{
 					arrow.setEnabled(false);
@@ -310,14 +310,14 @@ public class PrintDialog extends AstrosoftDialog {
 		});
 		
 		if (parent.getHoroscope() != null){
-			printTypes.addItem(Type.Horosocope);
+			printTypes.addItem(AstrosoftExporter.Type.Horosocope);
 		}
 		
 		if(parent.getCompactibility() != null) {
-			printTypes.addItem(Type.Compactibility);
+			printTypes.addItem(AstrosoftExporter.Type.Compactibility);
 		}
 		
-		printTypes.addItem(Type.Panchang);
+		printTypes.addItem(AstrosoftExporter.Type.Panchang);
 		
 		arrow.addActionListener(new ActionListener(){
 
@@ -389,11 +389,11 @@ public class PrintDialog extends AstrosoftDialog {
 		Type type = (Type)printTypes.getSelectedItem();
 		
 		if (type != null) {
-			if (type.equals(Type.Horosocope)){
+			if (type.equals(AstrosoftExporter.Type.Horosocope)){
 				return parent.getHoroscope().createDocumentName();
-			}else if (type.equals(Type.Compactibility)){
+			}else if (type.equals(AstrosoftExporter.Type.Compactibility)){
 				return parent.getCompactibility().createDocumentName();
-			}else if (type.equals(Type.Panchang)) {
+			}else if (type.equals(AstrosoftExporter.Type.Panchang)) {
 				return getPanchangOutputFile(null);
 			}
 		}

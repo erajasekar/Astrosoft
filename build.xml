@@ -43,7 +43,7 @@
 	<target name="build" description="Builds Astrosoft Application" depends="compile,copy-resources" />
 
 	<target name="compile" description="Compiles source files" depends="clean">
-		<javac srcdir="${src_dir}" destdir="${deploy_dir}" target="1.5" classpathref="libraries">
+		<javac srcdir="${src_dir}" destdir="${deploy_dir}" target="1.6" classpathref="libraries">
 		</javac>
 	</target>
 

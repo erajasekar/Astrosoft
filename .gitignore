@@ -13,3 +13,4 @@
 \.classpath$
 ^release$
 ^lib-unused$
+^deploy\
