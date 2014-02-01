@@ -28,6 +28,7 @@ import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.TableStyle;
 import app.astrosoft.core.Dasa;
 import app.astrosoft.core.Vimshottari;
+import static app.astrosoft.core.Vimshottari.getVimDasaTableColumnMetaData;
 import app.astrosoft.ui.comp.TitleLabel;
 import app.astrosoft.ui.comp.TitledTable;
 import app.astrosoft.ui.table.AstrosoftTable;
@@ -37,6 +38,9 @@ import app.astrosoft.ui.tree.DasaTreeCellRenderer;
 import app.astrosoft.ui.tree.DasaTreeListener;
 import app.astrosoft.ui.tree.DasaTreeSelectionHandler;
 import app.astrosoft.ui.util.UIUtil;
+import static javax.swing.BorderFactory.createEmptyBorder;
+import static javax.swing.BorderFactory.createEtchedBorder;
+import static javax.swing.ToolTipManager.sharedInstance;
 
 public class VimDasaView extends AstrosoftView implements DasaTreeSelectionHandler{
 
@@ -66,13 +70,13 @@ public class VimDasaView extends AstrosoftView implements DasaTreeSelectionHandl
          (TreeSelectionModel.SINGLE_TREE_SELECTION);
 		
 		dasaTree.setCellRenderer(new DasaTreeCellRenderer());
-		ToolTipManager.sharedInstance().registerComponent(dasaTree);
+		sharedInstance().registerComponent(dasaTree);
 		
 		JScrollPane treePane = new JScrollPane(dasaTree);
 		treePane.setPreferredSize(treeSize);
 		
 		dasaTableModel = new AstrosoftTableModel(
-				v.getVimDasaTableData(), Vimshottari.getVimDasaTableColumnMetaData());
+				v.getVimDasaTableData(), getVimDasaTableColumnMetaData());
 		dasaTable = new AstrosoftTable(dasaTableModel, TableStyle.SCROLL_SINGLE_ROW_SELECT);
 		
 		dasaTable.getTableHeader().setFont(tableFont);
@@ -86,9 +90,9 @@ public class VimDasaView extends AstrosoftView implements DasaTreeSelectionHandl
 		JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, treePane, dasaPanel);
 		
 		//splitPane.setBackground(Color.WHITE);
-		treePane.setBorder(BorderFactory.createEtchedBorder());
-		dasaPanel.setBorder(BorderFactory.createEmptyBorder());
-		splitPane.setBorder(BorderFactory.createEtchedBorder());
+		treePane.setBorder(createEtchedBorder());
+		dasaPanel.setBorder(createEmptyBorder());
+		splitPane.setBorder(createEtchedBorder());
 		
 		add(splitPane,BorderLayout.CENTER);
 		

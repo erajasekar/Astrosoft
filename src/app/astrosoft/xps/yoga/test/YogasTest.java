@@ -35,6 +35,12 @@ import app.astrosoft.xps.beans.PlanetChart;
 import app.astrosoft.xps.beans.YogaFacts;
 import app.astrosoft.xps.yoga.YogaResults;
 import static app.astrosoft.consts.Varga.*;
+import static app.astrosoft.test.SampleHoroscopes.getElangoHoroscope;
+import static app.astrosoft.test.SampleHoroscopes.getManiHoroscope;
+import static app.astrosoft.test.SampleHoroscopes.getMuthuHoroscope;
+import static app.astrosoft.test.SampleHoroscopes.getMyHoroscope;
+import static app.astrosoft.test.SampleHoroscopes.getSubaHoroscope;
+import static app.astrosoft.xps.XpsUtil.getRuleAsStream;
 
 public class YogasTest {
 	
@@ -53,15 +59,15 @@ public class YogasTest {
         	System.out.println(r.getLhs());
         }*/
        
-        System.out.println("Raja -->" + findYogas(ruleBase, SampleHoroscopes.getMyHoroscope()));
+        System.out.println("Raja -->" + findYogas(ruleBase, getMyHoroscope()));
         
-        System.out.println("Elango -->" + findYogas(ruleBase, SampleHoroscopes.getElangoHoroscope()));
+        System.out.println("Elango -->" + findYogas(ruleBase, getElangoHoroscope()));
         
-        System.out.println("Mani -->" + findYogas(ruleBase, SampleHoroscopes.getManiHoroscope()));
+        System.out.println("Mani -->" + findYogas(ruleBase, getManiHoroscope()));
         
-        System.out.println("Muthu -->" + findYogas(ruleBase, SampleHoroscopes.getMuthuHoroscope()));
+        System.out.println("Muthu -->" + findYogas(ruleBase, getMuthuHoroscope()));
         
-        System.out.println("Suba -->" + findYogas(ruleBase, SampleHoroscopes.getSubaHoroscope()));
+        System.out.println("Suba -->" + findYogas(ruleBase, getSubaHoroscope()));
 	}
 	
 	public static YogaResults findYogas(RuleBase ruleBase, Horoscope h){
@@ -127,8 +133,8 @@ public class YogasTest {
 
 	private static Package buildPackage() throws DroolsParserException, IOException {
 		
-		final Reader rule = new InputStreamReader( XpsUtil.getRuleAsStream(RULE_FILE));
-		final Reader dsl = new InputStreamReader( XpsUtil.getRuleAsStream(DSL_FILE));
+		final Reader rule = new InputStreamReader( getRuleAsStream(RULE_FILE));
+		final Reader dsl = new InputStreamReader( getRuleAsStream(DSL_FILE));
 		
 		final PackageBuilder builder = new PackageBuilder();
 

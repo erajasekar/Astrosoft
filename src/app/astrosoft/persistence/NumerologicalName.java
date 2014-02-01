@@ -15,6 +15,8 @@ import app.astrosoft.ui.table.ColumnMetaData;
 import app.astrosoft.ui.table.DefaultColumnMetaData;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.computeNumeroVal;
+import static app.astrosoft.util.AstroUtil.toNumeroNum;
 
 @NamedQueries({
 	@NamedQuery(
@@ -52,7 +54,7 @@ public class NumerologicalName implements Serializable, TableRowData {
 	
 	public NumerologicalName(String name) {
 		this.setName(name);
-		setNumeroVal(AstroUtil.computeNumeroVal(name));
+		setNumeroVal(computeNumeroVal(name));
 	}
 
 	public void setNameId(Long nameId) {
@@ -73,7 +75,7 @@ public class NumerologicalName implements Serializable, TableRowData {
 
 	private void setNumeroVal(int numerologicalValue) {
 		this.numeroVal = numerologicalValue;
-		this.numeroNum = AstroUtil.toNumeroNum(numerologicalValue);
+		this.numeroNum = toNumeroNum(numerologicalValue);
 	}
 
 	public int getNumeroVal() {

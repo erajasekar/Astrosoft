@@ -12,6 +12,7 @@ import java.awt.Component;
 import java.awt.Dimension;
 
 import javax.swing.BorderFactory;
+import static javax.swing.BorderFactory.createEtchedBorder;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 
@@ -31,7 +32,7 @@ public class AstrosoftTabbedPane extends JTabbedPane {
 		/*JPanel panel = new JPanel(new BorderLayout());
 		panel.add(component, BorderLayout.CENTER);*/
 
-		panel.setBorder(BorderFactory.createEtchedBorder());
+		panel.setBorder(createEtchedBorder());
 		super.addTab(title, panel);
 	}
 	

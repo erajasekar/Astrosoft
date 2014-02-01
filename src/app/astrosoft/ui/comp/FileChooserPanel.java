@@ -18,9 +18,12 @@ import javax.swing.SpringLayout;
 import app.astrosoft.pref.AstrosoftPref;
 import app.astrosoft.ui.AstroSoft;
 import app.astrosoft.ui.util.SpringUtilities;
+import static app.astrosoft.ui.util.SpringUtilities.makeCompactGrid;
 import app.astrosoft.ui.util.UIConsts;
+import static app.astrosoft.ui.util.UIConsts.getTitleBorder;
 import app.astrosoft.util.AstrosoftFileFilter;
 import app.astrosoft.util.FileOps;
+import static app.astrosoft.util.FileOps.openFileDialog;
 
 public class FileChooserPanel extends JPanel {
 
@@ -59,21 +62,15 @@ public class FileChooserPanel extends JPanel {
 		
 		add(filePath);
 		add(browse);
-		SpringUtilities.makeCompactGrid(this, 1, 2, 5,5,5,5);
+		makeCompactGrid(this, 1, 2, 5,5,5,5);
 		
-		browse.addActionListener(new ActionListener() {
-
-			public void actionPerformed(ActionEvent e) {
-				
-				String selectedFile = FileOps.openFileDialog(FileChooserPanel.this, mode, fileFilter);
-				
-				if (selectedFile != null) {
-					filePath.setText(selectedFile);
-				}
-			}
-			
-		});
-		setBorder(UIConsts.getTitleBorder(title));
+		browse.addActionListener((ActionEvent e) -> {
+                    String selectedFile = openFileDialog(FileChooserPanel.this, mode, fileFilter);
+            if (selectedFile != null) {
+                filePath.setText(selectedFile);
+            }
+        });
+		setBorder(getTitleBorder(title));
 	}
 	
 	public String getFilePath() {

@@ -10,7 +10,9 @@ import java.util.EnumMap;
 
 import app.astrosoft.beans.HousePosition;
 import app.astrosoft.consts.Planet;
+import static app.astrosoft.consts.Planet.planetsAsc;
 import app.astrosoft.consts.Varga;
+import static app.astrosoft.consts.Varga.values;
 
 public class VargaCharts {
 
@@ -28,9 +30,9 @@ public class VargaCharts {
 
     public EnumMap<Planet,Integer> genCharts( Varga varga ) {
 
-        EnumMap<Planet,Integer> pos = new EnumMap<Planet,Integer>(Planet.class);
+        EnumMap<Planet,Integer> pos = new EnumMap<>(Planet.class);
 
-        for ( Planet p : Planet.planetsAsc() ) {
+        for ( Planet p : planetsAsc() ) {
 
             pos.put(p, findPosition( planetaryPosition.get(p), varga.division()));
         }
@@ -352,9 +354,9 @@ public class VargaCharts {
     public EnumMap<Varga,EnumMap<Planet,Integer>> getAllCharts(  ) {
 
     	
-    	divChart = new EnumMap<Varga,EnumMap<Planet,Integer>>(Varga.class);
+    	divChart = new EnumMap<>(Varga.class);
       
-    	for ( Varga v : Varga.values() ) {
+    	for ( Varga v : values() ) {
 
             divChart.put(v, genCharts( v ));
 
@@ -483,9 +485,9 @@ public class VargaCharts {
     	
     	StringBuilder sb = new StringBuilder();
     	
-    	for(Varga v : Varga.values()){
+    	for(Varga v : values()){
     		sb.append(v + " -> ");
-    		for (Planet p : Planet.planetsAsc()) {
+    		for (Planet p : planetsAsc()) {
 				sb.append(divChart.get(v).get(p) + " , ");
 			}
     		sb.append("\n");
@@ -497,7 +499,7 @@ public class VargaCharts {
     	Horoscope h = new Horoscope("Raja", 11, 12, 1980, 1, 44,
 				77 + (44.00 / 60.00), 11 + (22.00 / 60.00), 5.5, "Erode");
     	
-    	System.out.println(VargaCharts.toString(h.getDivChart()));
+    	System.out.println(toString(h.getDivChart()));
 	}
 
 }

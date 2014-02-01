@@ -10,12 +10,13 @@ import java.util.Arrays;
 import java.util.List;
 
 import app.astrosoft.consts.AstrosoftTableColumn;
+import static java.util.Arrays.asList;
 
 public class MapTableRowHelper{
 	List <AstrosoftTableColumn> keys;
 	
 	public MapTableRowHelper(AstrosoftTableColumn... cols) {
-		keys = Arrays.asList(cols);
+		keys = asList(cols);
 	}
 	
 	public MapTableRowHelper(ColumnMetaData colMetaData) {

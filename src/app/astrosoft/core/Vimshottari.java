@@ -27,14 +27,22 @@ import app.astrosoft.consts.AstroConsts;
 import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.DisplayFormat;
 import app.astrosoft.consts.Planet;
+import static app.astrosoft.consts.Planet.dasaLords;
+import static app.astrosoft.consts.Planet.ofDasaNo;
 import app.astrosoft.core.VimDasa.DasaIterator;
+import static app.astrosoft.core.VimDasa.generateSubDasas;
 import app.astrosoft.export.Exportable;
 import app.astrosoft.export.Exporter;
 import app.astrosoft.ui.table.DefaultColumnMetaData;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableDataFactory;
+import static app.astrosoft.ui.table.TableDataFactory.getTableData;
+import static app.astrosoft.ui.table.TableDataFactory.getTableData;
+import static app.astrosoft.ui.table.TableDataFactory.toCSV;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.dateToDecimalYear;
+import static app.astrosoft.util.AstroUtil.decimalYearToDate;
 
 public class Vimshottari implements Exportable {
 
@@ -62,10 +70,10 @@ public class Vimshottari implements Exportable {
 		
 		GregorianCalendar cal = new GregorianCalendar();
 		cal.setTime(bday.getTime());
-		double birth = AstroUtil.dateToDecimalYear(cal);
+		double birth = dateToDecimalYear(cal);
 		
 		double start = ( birth + balance ) - startLord.dasaPeriod();
-		dasa = VimDasa.generateSubDasas(startLord, null, start, 0);
+		dasa = generateSubDasas(startLord, null, start, 0);
 		currentDasa = getCurrent();
 	}
 
@@ -83,7 +91,7 @@ public class Vimshottari implements Exportable {
 
 		}
 
-		return Planet.ofDasaNo((int) (i + 7));
+		return ofDasaNo((int) (i + 7));
 
 	}
 	
@@ -109,7 +117,7 @@ public class Vimshottari implements Exportable {
 		sb.append(" Dasa ");
 		
 		GregorianCalendar cal = new GregorianCalendar();
-		cal.setTime(AstroUtil.decimalYearToDate(balance));
+		cal.setTime(decimalYearToDate(balance));
 		
 		int year = balance < 1 ? 0 : cal.get(Calendar.YEAR);
 		sb.append(year + "y ");
@@ -199,12 +207,12 @@ public class Vimshottari implements Exportable {
 	
 	public TableData<Dasa> getVimDasaTableData(Dasa dasa){
 		
-		return TableDataFactory.getTableData(dasa.subDasas());
+		return getTableData(dasa.subDasas());
 	}
 	
 	public TableData<Dasa> getVimDasaTableData() {
 		
-		return TableDataFactory.getTableData(dasas());
+		return getTableData(dasas());
 	}
 	
 	public static DefaultColumnMetaData getVimDasaTableColumnMetaData() {
@@ -230,11 +238,11 @@ public class Vimshottari implements Exportable {
 		
 		EnumMap<Planet, Dasa> dasa = v.getDasa();
 		
-		for(Planet p : Planet.dasaLords(v.getStartLord())){
+		for(Planet p : dasaLords(v.getStartLord())){
 			
 			Dasa d = dasa.get(p);
 			for(Dasa sb : d.subDasas()) {
-				System.out.println(TableDataFactory.toCSV(v.getVimDasaTableData(sb),getVimDasaTableColumnMetaData()));
+				System.out.println(toCSV(v.getVimDasaTableData(sb),getVimDasaTableColumnMetaData()));
 				System.out.println("**********************************************************");
 			}
 			System.out.println("---------------------------------------------------------");

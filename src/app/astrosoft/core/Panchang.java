@@ -24,24 +24,33 @@ import app.astrosoft.beans.ChartData;
 import app.astrosoft.beans.Place;
 import app.astrosoft.beans.PlanetChartData;
 import app.astrosoft.beans.PlanetaryInfo;
+import static app.astrosoft.beans.PlanetaryInfo.positionToRasiNum;
 import app.astrosoft.consts.AstroConsts;
 import app.astrosoft.consts.AstrosoftTableColumn;
+import static app.astrosoft.consts.AstrosoftTableColumn.keyvalCols;
 import app.astrosoft.consts.Ayanamsa;
 import app.astrosoft.consts.DisplayConsts;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Karana;
+import static app.astrosoft.consts.Karana.ofDeg;
 import app.astrosoft.consts.Nakshathra;
+import static app.astrosoft.consts.Nakshathra.ofDeg;
 import app.astrosoft.consts.Paksha;
+import static app.astrosoft.consts.Paksha.ofDeg;
 import app.astrosoft.consts.Planet;
 import app.astrosoft.consts.Rasi;
 import app.astrosoft.consts.Thithi;
+import static app.astrosoft.consts.Thithi.ofDeg;
 import app.astrosoft.consts.Varga;
 import app.astrosoft.consts.WeekDay;
+import static app.astrosoft.consts.WeekDay.ofCalendar;
 import app.astrosoft.consts.Yoga;
+import static app.astrosoft.consts.Yoga.ofDeg;
 import app.astrosoft.export.Exportable;
 import app.astrosoft.export.Exporter;
 import app.astrosoft.pref.AstrosoftPref;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.table.DefaultColumnMetaData;
 import app.astrosoft.ui.table.DefaultTable;
 import app.astrosoft.ui.table.MapTableRow;
@@ -49,17 +58,34 @@ import app.astrosoft.ui.table.MapTableRowHelper;
 import app.astrosoft.ui.table.Table;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableDataFactory;
+import static app.astrosoft.ui.table.TableDataFactory.getTableData;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.dateToTimeDouble;
+import static app.astrosoft.util.AstroUtil.endTime;
+import static app.astrosoft.util.AstroUtil.formatDate;
+import static app.astrosoft.util.AstroUtil.getCalendar;
+import static app.astrosoft.util.AstroUtil.getSunRise;
+import static app.astrosoft.util.AstroUtil.getSunSet;
+import static app.astrosoft.util.AstroUtil.nakEndPosition;
+import static app.astrosoft.util.AstroUtil.timeFormat;
+import static app.astrosoft.util.AstroUtil.timeFormat;
+import static app.astrosoft.util.AstroUtil.timeFormat;
+import static app.astrosoft.util.AstroUtil.timeFormat;
+import static app.astrosoft.util.AstroUtil.todegmin;
 import app.astrosoft.util.Mod;
 import app.astrosoft.util.SwissHelper;
 import app.astrosoft.util.TransitHelper;
+import static java.lang.Math.abs;
+import static java.lang.Math.abs;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
 
 import swisseph.*;
 
 
 public class Panchang {
 
-    private static final AstrosoftPref preferences = AstroSoft.getPreferences();
+    private static final AstrosoftPref preferences = getPreferences();
 	private static final double PAN_APPROXIMATION = 0.01;
     
 	private SwissHelper swissHelper;
@@ -90,12 +116,12 @@ public class Panchang {
     /** Creates a new instance of Panchang */
     public Panchang(Calendar cal ) {
 
-        this.cal = AstroUtil.getCalendar(cal.getTime());
+        this.cal = getCalendar(cal.getTime());
         calcPanchang();
     }
     
     public Panchang(Date date) {
-    	cal = AstroUtil.getCalendar(date); 
+    	cal = getCalendar(date); 
     	calcPanchang();
 	}
 
@@ -128,7 +154,7 @@ public class Panchang {
     	EnumMap<Planet, Double> planetPosition = swissHelper.getPlanetaryPosition();
     	sun = planetPosition.get(Planet.Sun);
     	moon = planetPosition.get(Planet.Moon);
-    	rasi = PlanetaryInfo.positionToRasiNum(planetPosition);
+    	rasi = positionToRasiNum(planetPosition);
     	rasi.put(Planet.Ascendant, swissHelper.getAscendant(place.longitude(), place.latitude()).ordinal() + 1);
     	
     	dir = swissHelper.getPlanetDirection();
@@ -148,33 +174,33 @@ public class Panchang {
     	
     	TransitHelper transitHelper = swissHelper.getTransitHelper(Planet.Moon);
     	
-    	Date nakEndDate = transitHelper.getTransitDate(AstroUtil.nakEndPosition(moon), swissHelper.getSweDate().getJulDay());
+    	Date nakEndDate = transitHelper.getTransitDate(nakEndPosition(moon), swissHelper.getSweDate().getJulDay());
     	
-    	double nakEndTime = AstroUtil.dateToTimeDouble(nakEndDate);
+    	double nakEndTime = dateToTimeDouble(nakEndDate);
     	
     	if (((nakEndDate.getTime() - cal.getTimeInMillis()) / AstroConsts.MILLIS_IN_DAY) > 1){
     		nakEndTime = nakEndTime + 24.00;
     	}
 
-    	nakshathra = new PanEvent(Nakshathra.ofDeg(moon).toString(), nakEndTime);
+    	nakshathra = new PanEvent(ofDeg(moon).toString(), nakEndTime);
     	
-    	thithi = new PanEvent(Thithi.ofDeg( sun, moon ).toString(), findThithiEnd( sun, moon, diffSpeed ));
+    	thithi = new PanEvent(ofDeg( sun, moon ).toString(), findThithiEnd( sun, moon, diffSpeed ));
     	
-        yoga = new PanEvent(Yoga.ofDeg( sun , moon ).toString(), findYogaEnd( ( sun + moon ) % 360, totalSpeed ));
+        yoga = new PanEvent(ofDeg( sun , moon ).toString(), findYogaEnd( ( sun + moon ) % 360, totalSpeed ));
         
         karana = calcKarana();
 
-        pak = Paksha.ofDeg( sun, moon );       
-        weekday = WeekDay.ofCalendar( cal );
-        sunrise = AstroUtil.getSunRise( cal, place );
-        sunset = AstroUtil.getSunSet( cal, place );
+        pak = ofDeg( sun, moon );       
+        weekday = ofCalendar( cal );
+        sunrise = getSunRise( cal, place );
+        sunset = getSunSet( cal, place );
     }
 
     private KaranaEvent calcKarana() {
 		
     	KaranaEvent karanaEvent;
     	
-    	Karana[] karanas = Karana.ofDeg(sun, moon);
+    	Karana[] karanas = ofDeg(sun, moon);
 		
 		double position = getMoonSunDiff(sun, moon);
 		double time = 0;
@@ -192,11 +218,11 @@ public class Panchang {
 			firstTime = thithi.getEnding();
 			
 			double secondBal = firstBal + AstroConsts.karanaLength;
-	        time = AstroUtil.endTime( diffSpeed, secondBal );
+	        time = endTime( diffSpeed, secondBal );
 	        secondTime = time + timeZone + computeCorrection(position + AstroConsts.karanaLength, expected + AstroConsts.karanaLength, time, AstroConsts.karanaLength);
 	        
 		}else {
-			time = AstroUtil.endTime( diffSpeed, firstBal );
+			time = endTime( diffSpeed, firstBal );
 	        firstTime = time + timeZone + computeCorrection(position, expected, time, AstroConsts.karanaLength);
 	        secondTime = thithi.getEnding();
 		}
@@ -209,7 +235,7 @@ public class Panchang {
 	private double findYogaEnd( double position, double speed ) {
 
         double bal = AstroConsts.yogaLength - ( position % AstroConsts.yogaLength );
-        double time = AstroUtil.endTime( speed, bal );
+        double time = endTime( speed, bal );
         return time + timeZone + yogaCorrection(position, position + bal, time);
     }
     
@@ -219,7 +245,7 @@ public class Panchang {
     	 
     	SwissHelper swissHelper = new SwissHelper(new SweDate( cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH), caltime));
  	    
- 	    EnumMap<Planet, Double> planetPosition = swissHelper.getPlanetaryPosition(EnumSet.of(Planet.Sun, Planet.Moon));
+ 	    EnumMap<Planet, Double> planetPosition = swissHelper.getPlanetaryPosition(of(Planet.Sun, Planet.Moon));
  		
  	    double newmoon = planetPosition.get(Planet.Moon);
  	    double newsun = planetPosition.get(Planet.Sun);
@@ -241,9 +267,9 @@ public class Panchang {
 	    System.out.println("Bal " + bal);
 	    System.out.println("New Pos" + newposition + "\n");*/
  	   
- 	    correction = AstroUtil.endTime(totalSpeed, bal);
+ 	    correction = endTime(totalSpeed, bal);
  	    
- 	    if (Math.abs(bal) > PAN_APPROXIMATION) {
+ 	    if (abs(bal) > PAN_APPROXIMATION) {
  	    	correction = correction + yogaCorrection(newposition, expected, caltime + correction);
  	    }
     	return correction;
@@ -255,7 +281,7 @@ public class Panchang {
         double diff = getMoonSunDiff(sun, moon);
 
         double bal = AstroConsts.thithiLength - ( diff % AstroConsts.thithiLength );
-        double time = AstroUtil.endTime( diffSpeed, bal );
+        double time = endTime( diffSpeed, bal );
         //System.out.println(sun + " - " + moon + " - " + time + " - " + speed);
         return (timeZone + time + computeCorrection(getMoonSunDiff(sun, moon), diff + bal, time, AstroConsts.thithiLength));
     }
@@ -266,7 +292,7 @@ public class Panchang {
 	    
 	    SwissHelper swissHelper = new SwissHelper(new SweDate( cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH), caltime));
 	    
-	    EnumMap<Planet, Double> planetPosition = swissHelper.getPlanetaryPosition(EnumSet.of(Planet.Sun, Planet.Moon));
+	    EnumMap<Planet, Double> planetPosition = swissHelper.getPlanetaryPosition(of(Planet.Sun, Planet.Moon));
 		
 	    double newmoon = planetPosition.get(Planet.Moon);
 	    double newsun = planetPosition.get(Planet.Sun);
@@ -287,12 +313,12 @@ public class Panchang {
 	        //System.out.println("new bal > " + newbal);
 	    }
 	
-	    correction = AstroUtil.endTime( diffSpeed, newbal );
+	    correction = endTime( diffSpeed, newbal );
 	    /*System.out.println( 
 	        "Correction : " + correction + " Bal: " + newbal + " Expected : "
 	        + expected );*/
 	
-	    if (Math.abs(newbal) > PAN_APPROXIMATION){
+	    if (abs(newbal) > PAN_APPROXIMATION){
 	    	
 	    	correction = correction + computeCorrection(getMoonSunDiff(newsun, newmoon), expected , caltime + correction, length);
 	    }
@@ -331,7 +357,7 @@ public class Panchang {
 	private static DefaultColumnMetaData getPanchangColumnMetaData() {
 		
 		if (panchangColumnMetaData == null){
-			panchangColumnMetaData = new DefaultColumnMetaData(AstrosoftTableColumn.keyvalCols());
+			panchangColumnMetaData = new DefaultColumnMetaData(keyvalCols());
 			panchangColumnMetaData.localizeColumns();
 		}
 		return panchangColumnMetaData;
@@ -339,25 +365,25 @@ public class Panchang {
 	
 	public TableData<MapTableRow> getPanchangTableData() {
 		
-		List<MapTableRow> rows = new ArrayList<MapTableRow>();
+		List<MapTableRow> rows = new ArrayList<>();
 		
 		MapTableRowHelper helper = new MapTableRowHelper(getPanchangColumnMetaData());
 		
-		rows.add(helper.createRow(DisplayStrings.DATE_STR, AstroUtil.formatDate(cal.getTime())));
+		rows.add(helper.createRow(DisplayStrings.DATE_STR, formatDate(cal.getTime())));
 		rows.add(helper.createRow(DisplayStrings.DAY_STR, weekday));
 		rows.add(helper.createRow(DisplayStrings.NAK_STR + " ( " + AstrosoftTableColumn.End.toString() + " ) ", nakshathra));
 		rows.add(helper.createRow(DisplayStrings.THITHI_STR + " ( " + AstrosoftTableColumn.End.toString() + " ) ", thithi));
 		rows.add(helper.createRow(DisplayStrings.PAKSHA_STR, pak));
 		rows.add(helper.createRow(DisplayStrings.YOGA_STR + " ( " + AstrosoftTableColumn.End.toString() + " ) ", yoga));
 		rows.add(helper.createRow(DisplayStrings.KARANA_STR + " ( " + AstrosoftTableColumn.End.toString() + " ) ", karana));
-		rows.add(helper.createRow(DisplayStrings.SUNRISE_STR, AstroUtil.timeFormat(sunrise)));
-		rows.add(helper.createRow(DisplayStrings.SUNSET_STR, AstroUtil.timeFormat(sunset)));
+		rows.add(helper.createRow(DisplayStrings.SUNRISE_STR, timeFormat(sunrise)));
+		rows.add(helper.createRow(DisplayStrings.SUNSET_STR, timeFormat(sunset)));
 		String auspiciousTime = Arrays.toString(auspiciousTime());
 		rows.add(helper.createRow(DisplayStrings.AUS_TIME_STR, auspiciousTime.substring(1, auspiciousTime.length() - 1)));
 		rows.add(helper.createRow(DisplayStrings.RAHU_KALA_STR, rahuKala()));
 		rows.add(helper.createRow(DisplayStrings.YAMA_KANDA_STR, yamaKanda()));
 		
-		return TableDataFactory.getTableData(rows);
+		return getTableData(rows);
 	}
 	
 	public Table getPanchangTable() {
@@ -420,7 +446,7 @@ public class Panchang {
     	sb.append(this.pak + "\n");
     	sb.append(this.yoga + "\n");
     	sb.append(this.karana + "\n");
-    	sb.append(AstroUtil.timeFormat(this.sunrise) + " - " + AstroUtil.timeFormat(this.sunset) + "\n");
+    	sb.append(timeFormat(this.sunrise) + " - " + timeFormat(this.sunset) + "\n");
     	return sb.toString();
     }
     
@@ -439,7 +465,7 @@ public class Panchang {
 		}
     	
     	public String toString(){
-    		return event + " ( " + AstroUtil.todegmin(ending, ":") + " ) ";
+    		return event + " ( " + todegmin(ending, ":") + " ) ";
     	}
     }
 

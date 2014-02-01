@@ -23,8 +23,17 @@ import javax.swing.SwingConstants;
 
 import app.astrosoft.consts.Command;
 import app.astrosoft.consts.Ayanamsa;
+import static app.astrosoft.consts.Command.ayanamsaOptions;
+import static app.astrosoft.consts.Command.computeMenuItems;
+import static app.astrosoft.consts.Command.editMenuItems;
+import static app.astrosoft.consts.Command.exportMenuItems;
+import static app.astrosoft.consts.Command.fileMenuItems;
+import static app.astrosoft.consts.Command.langOptions;
+import static app.astrosoft.consts.Command.numeroMenuItems;
+import static app.astrosoft.consts.Command.optionMenuItems;
 import app.astrosoft.pref.AstrosoftPref;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.AstrosoftActionManager;
 
 public class AstrosoftMenuBar extends JMenuBar
@@ -47,12 +56,12 @@ public class AstrosoftMenuBar extends JMenuBar
         
     	this.actionMgr = actionMgr;
     	
-    	menus = new ArrayList<JMenu>();
+    	menus = new ArrayList<>();
 
     	// File Menu
     	JMenu menu = new JMenu( "File" );
     	
-    	EnumSet<Command> fileItems = Command.fileMenuItems();
+    	EnumSet<Command> fileItems = fileMenuItems();
     	fileMenuItems = new JMenuItem[fileItems.size()];
 
     	int i = 0;
@@ -64,7 +73,7 @@ public class AstrosoftMenuBar extends JMenuBar
     	addMenuItems(menu, fileMenuItems);
     	
     	// Edit Menu
-    	EnumSet<Command> editItems = Command.editMenuItems();
+    	EnumSet<Command> editItems = editMenuItems();
         menu = new JMenu( "Edit " );
         editMenuItems = new JMenuItem[editItems.size()];
     	
@@ -104,7 +113,7 @@ public class AstrosoftMenuBar extends JMenuBar
         // Compute Menu
         menu = new JMenu( "Compute" );
 
-        EnumSet<Command> compItems = Command.computeMenuItems();
+        EnumSet<Command> compItems = computeMenuItems();
         computeMenuItems = new JMenuItem[compItems.size()];
         
         i = 0;
@@ -129,7 +138,7 @@ public class AstrosoftMenuBar extends JMenuBar
 
         ButtonGroup ayaBtnGrp = new ButtonGroup(  );
         
-        EnumSet<Command> ayaOptions = Command.ayanamsaOptions();
+        EnumSet<Command> ayaOptions = ayanamsaOptions();
         ayaMenuItems = new JRadioButtonMenuItem[ayaOptions.size()];
 
         i = 0;
@@ -147,10 +156,10 @@ public class AstrosoftMenuBar extends JMenuBar
 
         ButtonGroup langBtnGrp = new ButtonGroup(  );
 
-        EnumSet<Command> langOptions = Command.langOptions();
+        EnumSet<Command> langOptions = langOptions();
         langMenuItems = new JRadioButtonMenuItem[langOptions.size()];
         i = 0;
-        for ( Command lang : Command.langOptions() ) {
+        for ( Command lang : langOptions() ) {
 
         	langMenuItems[i] = new JRadioButtonMenuItem( actionMgr.getAction( lang) );
             optionSubMenus[1].add( langMenuItems[i] );
@@ -162,7 +171,7 @@ public class AstrosoftMenuBar extends JMenuBar
         addSubMenus(menu, optionSubMenus);
         
         //Rest of option menuitems
-        EnumSet<Command> optionItems = Command.optionMenuItems();
+        EnumSet<Command> optionItems = optionMenuItems();
         JMenuItem []optionMenuItems = new JMenuItem[optionItems.size()];
         i = 0;
         for(Command optionItem : optionItems){
@@ -173,7 +182,7 @@ public class AstrosoftMenuBar extends JMenuBar
         
         menus.add(menu);
 
-        AstrosoftPref preferences = AstroSoft.getPreferences();
+        AstrosoftPref preferences = getPreferences();
         ayaMenuItems[preferences.getAyanamsa().ordinal()].setSelected( true );
         langMenuItems[preferences.getLanguage().ordinal()].setSelected( true );
         
@@ -211,7 +220,7 @@ public class AstrosoftMenuBar extends JMenuBar
     	
     	JMenu menu = new JMenu(" Numerology ");
     	
-    	EnumSet<Command> numeroItems = Command.numeroMenuItems();
+    	EnumSet<Command> numeroItems = numeroMenuItems();
     	JMenuItem[] numeroMenuItems = new JMenuItem[numeroItems.size()];
 
     	int i = 0;
@@ -228,7 +237,7 @@ public class AstrosoftMenuBar extends JMenuBar
     	
     	JMenu menu = new JMenu(" Export ");
     	
-    	EnumSet<Command> exporItems = Command.exportMenuItems();
+    	EnumSet<Command> exporItems = exportMenuItems();
     	JMenuItem[] exportMenuItems = new JMenuItem[exporItems.size()];
 
     	int i = 0;

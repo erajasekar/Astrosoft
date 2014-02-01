@@ -13,6 +13,7 @@ import javax.swing.SpringLayout;
 
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.ui.util.SpringUtilities;
+import static app.astrosoft.ui.util.SpringUtilities.makeCompactGrid;
 
 public class ComputeNumberPanel extends NumeroNamePanel{
 	
@@ -37,13 +38,13 @@ public class ComputeNumberPanel extends NumeroNamePanel{
 		
 		setLayout(new SpringLayout());
 		
-		add(SpringUtilities.makeCompactGrid(1, 2, 5,5,5,5, l_name, name));
+		add(makeCompactGrid(1, 2, 5,5,5,5, l_name, name));
 		
-		add(SpringUtilities.makeCompactGrid(1, 2, 5,5,5,5, l_numeroVal, numeroVal));
+		add(makeCompactGrid(1, 2, 5,5,5,5, l_numeroVal, numeroVal));
 		
-		add(SpringUtilities.makeCompactGrid(1, 2, 5,5,5,5, l_numeroNum, numeroNum));
+		add(makeCompactGrid(1, 2, 5,5,5,5, l_numeroNum, numeroNum));
 		
-		SpringUtilities.makeCompactGrid(this, getPanelCount(), 1, 5,5,10,10);
+		makeCompactGrid(this, getPanelCount(), 1, 5,5,10,10);
 		
 		//setBorder(BorderFactory.createEtchedBorder());
 		

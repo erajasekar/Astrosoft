@@ -16,7 +16,7 @@ public class MapTableRow implements TableRowData {
 	Map<AstrosoftTableColumn, Object> row;
 	
 	public MapTableRow() {
-		row = new HashMap<AstrosoftTableColumn, Object>();
+		row = new HashMap<>();
 	}
 	
 	public MapTableRow(Map<AstrosoftTableColumn, Object> row){

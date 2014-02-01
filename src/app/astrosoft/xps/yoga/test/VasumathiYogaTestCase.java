@@ -21,6 +21,7 @@ import app.astrosoft.consts.Planet;
 import app.astrosoft.consts.Rasi;
 import app.astrosoft.consts.YogaCombination;
 import app.astrosoft.xps.beans.PlanetChart;
+import static app.astrosoft.xps.yoga.test.YogaAnalysisTestHelper.getCharacter2;
 
 @SuppressWarnings("unchecked")
 public class VasumathiYogaTestCase extends YogaAnalysisTestCase {
@@ -69,7 +70,7 @@ public class VasumathiYogaTestCase extends YogaAnalysisTestCase {
 				newEntry(Planet.Jupiter, Rasi.Meena));
 	
 		setUp("Vasumathi Yoga");
-		loadFacts(chart,YogaAnalysisTestHelper.getCharacter2());
+		loadFacts(chart,getCharacter2());
 		getSession().fireAllRules();
 		testYogaPresent(YogaCombination.VasumathiYoga, "100%");
 	}

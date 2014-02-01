@@ -24,8 +24,10 @@ import java.util.Vector;
 
 import app.astrosoft.consts.Language;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.table.AstrosoftTableModel;
 import app.astrosoft.ui.table.Cell;
+import static java.awt.Toolkit.getDefaultToolkit;
 
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
@@ -77,7 +79,7 @@ public class UIUtil {
 
 	/** Returns font depending on prefered language option. * */
 	public static Font getFont(int style, int size) {
-		Language language = AstroSoft.getPreferences().getLanguage();
+		Language language = getPreferences().getLanguage();
 		Font font = new Font(language.font(), style, size);
 		return font;
 	}
@@ -110,7 +112,7 @@ public class UIUtil {
 	 * @return
 	 */
 	public static Font getFont(String name, int style, int size) {
-		Language language = AstroSoft.getPreferences().getLanguage();
+		Language language = getPreferences().getLanguage();
 		if (language == Language.TAMIL) {
 			return new Font(language.font(), style, size);
 		}
@@ -125,7 +127,7 @@ public class UIUtil {
 	 * @return
 	 */
 	public static Font getFont(String name, int style, int en_size, int ta_size) {
-		Language language = AstroSoft.getPreferences().getLanguage();
+		Language language = getPreferences().getLanguage();
 		if (language == Language.TAMIL) {
 			return new Font(language.font(), style, ta_size);
 		}
@@ -134,7 +136,7 @@ public class UIUtil {
 
 	public static Font getFont(int en_style, int en_size, int ta_style,
 			int ta_size) {
-		Language language = AstroSoft.getPreferences().getLanguage();
+		Language language = getPreferences().getLanguage();
 		if (language == Language.TAMIL) {
 			return new Font(language.font(), ta_style, ta_size);
 		}
@@ -194,7 +196,7 @@ public class UIUtil {
         Dimension size = parentComponent.getSize(  );
         Dimension windowSize = window.getSize(  );
         Dimension screenSize =
-            Toolkit.getDefaultToolkit(  ).getScreenSize(  );
+            getDefaultToolkit(  ).getScreenSize(  );
 
         if ( 
             ( ( comboLocation.x

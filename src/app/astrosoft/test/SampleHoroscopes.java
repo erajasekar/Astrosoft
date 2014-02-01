@@ -7,11 +7,12 @@
 package app.astrosoft.test;
 
 import app.astrosoft.core.Horoscope;
+import static app.astrosoft.core.Horoscope.createFromFile;
 
 public class SampleHoroscopes {
 
 	public static Horoscope getHoroscope(String file) {
-		return Horoscope.createFromFile(file);
+		return createFromFile(file);
 	}
 	
 	public static Horoscope getMyHoroscope(){

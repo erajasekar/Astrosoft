@@ -6,6 +6,8 @@
 
 package app.astrosoft.beans;
 
+import static app.astrosoft.beans.Place.Direction.ofChar;
+import static app.astrosoft.beans.Place.Direction.ofVal;
 import java.util.EnumSet;
 
 import org.w3c.dom.Document;
@@ -16,8 +18,20 @@ import org.w3c.dom.NodeList;
 import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.XmlConsts;
 import app.astrosoft.export.XMLHelper;
+import static app.astrosoft.export.XMLHelper.addAttribute;
+import static app.astrosoft.export.XMLHelper.addElement;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.decimal;
+import static app.astrosoft.util.AstroUtil.int_dms;
+import static app.astrosoft.util.AstroUtil.toDouble;
+import static app.astrosoft.util.AstroUtil.toDouble;
+import static app.astrosoft.util.AstroUtil.twoDigit;
 import app.astrosoft.util.AstrosoftTimeZone;
+import static app.astrosoft.util.AstrosoftTimeZone.offset;
+import static java.lang.Integer.parseInt;
+import static java.lang.Integer.parseInt;
+import static java.lang.Math.abs;
+import static java.lang.String.format;
 
 public class Place {
 
@@ -76,19 +90,19 @@ public class Place {
 		}
 		
 		public Location(String deg, String min, Direction dir) {
-			this(Integer.parseInt(deg), Integer.parseInt(min), dir);
+			this(parseInt(deg), parseInt(min), dir);
 		}
 		
 		public Location(double value, LocationType type) {
-			int []degmin = AstroUtil.int_dms(value);
+			int []degmin = int_dms(value);
 			
-			deg = Math.abs(degmin[0]);
-			min = Math.abs(degmin[1]);
-			dir = Direction.ofVal(value, type);
+			deg = abs(degmin[0]);
+			min = abs(degmin[1]);
+			dir = ofVal(value, type);
 		}
 		
 		public double value(){
-			return AstroUtil.decimal(deg, min, 0) * dir.val;
+			return decimal(deg, min, 0) * dir.val;
 		}
 		
 		public int deg(){
@@ -111,7 +125,7 @@ public class Place {
 		
 		public String format(){
 			
-			return AstroUtil.twoDigit(deg) + "." + AstroUtil.twoDigit(min);
+			return twoDigit(deg) + "." + twoDigit(min);
 		}
 	}
 	
@@ -133,7 +147,7 @@ public class Place {
 	}
 	
 	public Place(String city, String state, String country, double latitude, double longitude, String timeZoneId) {
-		this(city, state, country, latitude, longitude, AstrosoftTimeZone.offset(timeZoneId));
+		this(city, state, country, latitude, longitude, offset(timeZoneId));
 		this.timeZoneId = timeZoneId;
 	}
 	
@@ -142,7 +156,7 @@ public class Place {
 	}
 	
 	public Place(String city, String state, String country, String latitude, char latDir, String longitude, char longDir, String timeZoneId) {
-		this(city, state, country, AstroUtil.toDouble(latitude,"\\."), Direction.ofChar(latDir), AstroUtil.toDouble(longitude, "\\."), Direction.ofChar(longDir), AstrosoftTimeZone.offset(timeZoneId));
+		this(city, state, country, toDouble(latitude,"\\."), ofChar(latDir), toDouble(longitude, "\\."), ofChar(longDir), offset(timeZoneId));
 		this.timeZoneId = timeZoneId;
 	}
 	
@@ -155,7 +169,7 @@ public class Place {
 	}
 	
 	public Place(String city, String state, String country, Location latitude, Location longitude, String timeZoneId) {
-		this(city, state, country , latitude.value(), longitude.value(), AstrosoftTimeZone.offset(timeZoneId));
+		this(city, state, country , latitude.value(), longitude.value(), offset(timeZoneId));
 		this.timeZoneId = timeZoneId;
 	}
 	
@@ -176,7 +190,7 @@ public class Place {
 	}
 
 	public String display(){
-		return String.format("[%s , %s , %s, %s, %s, %s]", city, state, country, longitude, latitude, timeZone) ;
+		return format("[%s , %s , %s, %s, %s, %s]", city, state, country, longitude, latitude, timeZone) ;
 	}
 	
 	public String toString(){
@@ -229,22 +243,22 @@ public class Place {
 		Location longitudeLoc = longitudeLocation();
 		Location latitudeLoc = latitudeLocation();
 		
-		XMLHelper.addElement(doc, placeElement, XmlConsts.City, this.city);
+		addElement(doc, placeElement, XmlConsts.City, this.city);
 		
-		Element longitudeElement = XMLHelper.addElement(doc, placeElement, XmlConsts.Longitude, longitudeLoc.format());
-		XMLHelper.addAttribute(longitudeElement, XmlConsts.dir, longitudeLoc.dir().charVal());
+		Element longitudeElement = addElement(doc, placeElement, XmlConsts.Longitude, longitudeLoc.format());
+		addAttribute(longitudeElement, XmlConsts.dir, longitudeLoc.dir().charVal());
 		
-		Element latitudeElement = XMLHelper.addElement(doc, placeElement, XmlConsts.Latitude, latitudeLoc.format());
-		XMLHelper.addAttribute(latitudeElement, XmlConsts.dir, latitudeLoc.dir().charVal());
+		Element latitudeElement = addElement(doc, placeElement, XmlConsts.Latitude, latitudeLoc.format());
+		addAttribute(latitudeElement, XmlConsts.dir, latitudeLoc.dir().charVal());
 		
 		//TODO: Remove null check once GetInput is fixed.
-		XMLHelper.addElement(doc, placeElement, XmlConsts.TimeZone, this.timeZoneId != null ? this.timeZoneId : "IST");
+		addElement(doc, placeElement, XmlConsts.TimeZone, this.timeZoneId != null ? this.timeZoneId : "IST");
 		
 		return placeElement;
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(Place.getDefault());
+		System.out.println(getDefault());
 	}
 
 	public static Place valueOfXMLNode(Node placeNode) {
@@ -264,26 +278,28 @@ public class Place {
 		
 			Node child = children.item(i);
 			
-			if (child.getNodeName().equals(XmlConsts.City)){
-				city = child.getTextContent();
-			}
-			else if (child.getNodeName().equals(XmlConsts.State)){
-				state = child.getTextContent();
-			}
-			else if (child.getNodeName().equals(XmlConsts.Country)){
-				country = child.getTextContent();
-			}
-			else if (child.getNodeName().equals(XmlConsts.Longitude)){
-				longitude = child.getTextContent();
-				longDir = child.getAttributes().getNamedItem(XmlConsts.dir).getNodeValue().charAt(0);
-			}
-			else if (child.getNodeName().equals(XmlConsts.Latitude)){
-				latitude = child.getTextContent();
-				latDir = child.getAttributes().getNamedItem(XmlConsts.dir).getNodeValue().charAt(0);
-			}
-			else if (child.getNodeName().equals(XmlConsts.TimeZone)){
-				timeZoneId = child.getTextContent();
-			}
+            switch (child.getNodeName()) {
+                case XmlConsts.City:
+                    city = child.getTextContent();
+                    break;
+                case XmlConsts.State:
+                    state = child.getTextContent();
+                    break;
+                case XmlConsts.Country:
+                    country = child.getTextContent();
+                    break;
+                case XmlConsts.Longitude:
+                    longitude = child.getTextContent();
+                    longDir = child.getAttributes().getNamedItem(XmlConsts.dir).getNodeValue().charAt(0);
+                    break;
+                case XmlConsts.Latitude:
+                    latitude = child.getTextContent();
+                    latDir = child.getAttributes().getNamedItem(XmlConsts.dir).getNodeValue().charAt(0);
+                    break;
+                case XmlConsts.TimeZone:
+                    timeZoneId = child.getTextContent();
+                    break;
+            }
 		}
 		return new Place(city, state, country, latitude, latDir, longitude, longDir, timeZoneId);
 	}

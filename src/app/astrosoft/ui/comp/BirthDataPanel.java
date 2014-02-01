@@ -26,29 +26,41 @@ import javax.swing.SwingWorker;
 import javax.swing.UIDefaults;
 
 import app.astrosoft.beans.BirthData;
+import static app.astrosoft.beans.BirthData.valueOfXMLNode;
 import app.astrosoft.beans.Place;
 import app.astrosoft.consts.Command;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Language;
 import app.astrosoft.export.XMLHelper;
+import static app.astrosoft.export.XMLHelper.parseXML;
 import app.astrosoft.ui.cal.JCalendarCombo;
+import static app.astrosoft.ui.comp.CalendarChooser.getTimeChooser;
 import app.astrosoft.ui.util.SpringUtilities;
+import static app.astrosoft.ui.util.SpringUtilities.makeCompactGrid;
 import app.astrosoft.ui.util.UIConsts;
+import static app.astrosoft.ui.util.UIConsts.getTitleBorder;
 import app.astrosoft.ui.util.UIUtil;
+import static app.astrosoft.ui.util.UIUtil.createImageIcon;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.getCalendar;
 import app.astrosoft.util.AstrosoftFileFilter;
 import app.astrosoft.util.FileOps;
+import static app.astrosoft.util.FileOps.openFileDialog;
 import app.astrosoft.util.Timer;
+import static java.lang.Integer.parseInt;
+import static java.lang.Integer.parseInt;
+import static java.lang.Integer.parseInt;
+import static java.util.logging.Logger.getLogger;
 
 public class BirthDataPanel extends JPanel {
 	
-	private static final Logger log = Logger.getLogger(BirthDataPanel.class.getName());
+	private static final Logger log = getLogger(BirthDataPanel.class.getName());
 	
 	private JLabel l_name = new JLabel(DisplayStrings.NAME_STR.toString(Language.ENGLISH));
 	private JLabel l_date = new JLabel(DisplayStrings.DATE_STR.toString(Language.ENGLISH));
 	
 	private JTextField name = new JTextField();
-	private JButton openButton = new JButton(UIUtil.createImageIcon(Command.OPEN.name()));
+	private JButton openButton = new JButton(createImageIcon(Command.OPEN.name()));
 	
 	private CalendarChooser timeChooser;
 	private JCalendarCombo jCalendarCombo;
@@ -89,13 +101,9 @@ public class BirthDataPanel extends JPanel {
 		
 		w.execute();
 		
-		openButton.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				browseHoroscope();
-			}
-			
-		});
+		openButton.addActionListener((ActionEvent e) -> {
+                    browseHoroscope();
+        });
 		
 		addComponents();
 		setPreferredSize(panelSize);
@@ -105,7 +113,7 @@ public class BirthDataPanel extends JPanel {
 		
 		setLayout(new SpringLayout());
 		
-		timeChooser = CalendarChooser.getTimeChooser();
+		timeChooser = getTimeChooser();
 		
 		
 		jCalendarCombo = new JCalendarCombo( 0, false, 1801, 2099 );
@@ -119,7 +127,7 @@ public class BirthDataPanel extends JPanel {
 		namePanel.add(openButton);
 		openButton.setPreferredSize(UIConsts.BUTTON_ICON_SIZE);
 		
-		SpringUtilities.makeCompactGrid(namePanel, 1, 2, 0,0,1,1);
+		makeCompactGrid(namePanel, 1, 2, 0,0,1,1);
 		
 		birthPanel.add(l_name, 0);
 		birthPanel.add(namePanel, 1);
@@ -129,7 +137,7 @@ public class BirthDataPanel extends JPanel {
 		birthPanel.add(jCalendarCombo, 3);
 		
 		
-		SpringUtilities.makeCompactGrid(birthPanel, 3, 2, 5,5,10,15);
+		makeCompactGrid(birthPanel, 3, 2, 5,5,10,15);
 		
 		add(birthPanel);
 		
@@ -144,9 +152,9 @@ public class BirthDataPanel extends JPanel {
 		
 		add(placeChooser);
 		
-		SpringUtilities.makeCompactGrid(this, 2, 1, 5,5,0,0);
+		makeCompactGrid(this, 2, 1, 5,5,0,0);
 		
-		setBorder(UIConsts.getTitleBorder(title));
+		setBorder(getTitleBorder(title));
 	}
 	
 	public String getPersonName() {
@@ -159,12 +167,12 @@ public class BirthDataPanel extends JPanel {
 	
 	public Calendar getBirthTime(){
 		
-		Calendar birthTime = AstroUtil.getCalendar(timeChooser.getSelectedDate());
+		Calendar birthTime = getCalendar(timeChooser.getSelectedDate());
 		
 		Calendar birthCal = new GregorianCalendar(
-				Integer.parseInt(jCalendarCombo.getSelectedYear()), 
-				Integer.parseInt(jCalendarCombo.getSelectedMonth()) - 1,
-				Integer.parseInt(jCalendarCombo.getSelectedDay()),
+				parseInt(jCalendarCombo.getSelectedYear()), 
+				parseInt(jCalendarCombo.getSelectedMonth()) - 1,
+				parseInt(jCalendarCombo.getSelectedDay()),
 		 		birthTime.get(Calendar.HOUR_OF_DAY),birthTime.get(Calendar.MINUTE),
 				birthTime.get(Calendar.SECOND) );
 		
@@ -198,9 +206,9 @@ public class BirthDataPanel extends JPanel {
 	
 	private void browseHoroscope(){
 		
-		String file = FileOps.openFileDialog(this, FileOps.FileDialogMode.OPEN, AstrosoftFileFilter.HOROSCOPE_EXTN);
+		String file = openFileDialog(this, FileOps.FileDialogMode.OPEN, AstrosoftFileFilter.HOROSCOPE_EXTN);
 		if (file != null) {
-			setBirthData(BirthData.valueOfXMLNode(XMLHelper.parseXML(file).getChildNodes().item(0)));
+			setBirthData(valueOfXMLNode(parseXML(file).getChildNodes().item(0)));
 		}
 	}
 }

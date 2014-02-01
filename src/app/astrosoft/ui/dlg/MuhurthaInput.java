@@ -16,6 +16,7 @@ import app.astrosoft.core.Muhurtha;
 import app.astrosoft.ui.comp.RasiNakshathraChooser;
 import app.astrosoft.ui.util.LocationGenerator;
 import app.astrosoft.ui.util.UIConsts;
+import static app.astrosoft.ui.util.UIConsts.getTitleBorder;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -58,11 +59,9 @@ public class MuhurthaInput extends AstrosoftDialog {
         chandraFilter = new JCheckBox(DisplayStrings.FILTER_BY_CHANDRA_STR.toString(), true);
         nakFilter = new JCheckBox(DisplayStrings.FILTER_BY_MUHURTHA_STR.toString());
         okButton = new JButton("Ok");
-        filterPanel.setBorder(UIConsts.getTitleBorder(DisplayStrings.FILTER_STR.toString()));
-        okButton.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                okButtonClicked();
-            }
+        filterPanel.setBorder(getTitleBorder(DisplayStrings.FILTER_STR.toString()));
+        okButton.addActionListener((ActionEvent e) -> {
+            okButtonClicked();
         });
         
         //Create filter panel

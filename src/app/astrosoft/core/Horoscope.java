@@ -21,6 +21,7 @@ import org.w3c.dom.Document;
 
 import swisseph.SweDate;
 import app.astrosoft.beans.BirthData;
+import static app.astrosoft.beans.BirthData.valueOfXMLNode;
 import app.astrosoft.beans.HousePosition;
 import app.astrosoft.beans.NakshathraPada;
 import app.astrosoft.beans.Place;
@@ -29,17 +30,24 @@ import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.Ayanamsa;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Paksha;
+import static app.astrosoft.consts.Paksha.ofDeg;
 import app.astrosoft.consts.Planet;
 import app.astrosoft.consts.Rasi;
 import app.astrosoft.consts.Sex;
 import app.astrosoft.consts.Thithi;
+import static app.astrosoft.consts.Thithi.ofDeg;
 import app.astrosoft.consts.Varga;
 import app.astrosoft.consts.Yoga;
+import static app.astrosoft.consts.Yoga.ofDeg;
 import app.astrosoft.export.Exportable;
 import app.astrosoft.export.Exporter;
 import app.astrosoft.export.XMLHelper;
+import static app.astrosoft.export.XMLHelper.createDOM;
+import static app.astrosoft.export.XMLHelper.parseXML;
+import static app.astrosoft.export.XMLHelper.saveXML;
 import app.astrosoft.pref.AstrosoftPref;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.table.DefaultColumnMetaData;
 import app.astrosoft.ui.table.DefaultTable;
 import app.astrosoft.ui.table.MapTableRow;
@@ -47,14 +55,30 @@ import app.astrosoft.ui.table.MapTableRowHelper;
 import app.astrosoft.ui.table.Table;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableDataFactory;
+import static app.astrosoft.ui.table.TableDataFactory.getTableData;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.dms;
+import static app.astrosoft.util.AstroUtil.getSunRise;
+import static app.astrosoft.util.AstroUtil.getSunSet;
+import static app.astrosoft.util.AstroUtil.timeFormat;
+import static app.astrosoft.util.AstroUtil.timeFormat;
+import static app.astrosoft.util.AstroUtil.timeFormat;
+import static app.astrosoft.util.AstroUtil.timeFormat;
 import app.astrosoft.util.SwissHelper;
 import app.astrosoft.xps.yoga.YogaFinder;
+import static app.astrosoft.xps.yoga.YogaFinder.getInstance;
 import app.astrosoft.xps.yoga.YogaResults;
+import static java.lang.Double.parseDouble;
+import static java.lang.Integer.parseInt;
+import static java.lang.Integer.parseInt;
+import static java.lang.Integer.parseInt;
+import static java.lang.Integer.parseInt;
+import static java.lang.Integer.parseInt;
+import static java.util.logging.Logger.getLogger;
 
 public class Horoscope implements  PreferenceChangeListener , Exportable {
 
-	private static final Logger log = Logger.getLogger(Horoscope.class.getName());
+	private static final Logger log = getLogger(Horoscope.class.getName());
 
 	private BirthData birthData;
 
@@ -109,7 +133,7 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 		this.birthData = birthData;
 		swissHelper = new SwissHelper(birthData.birthSD());
 
-		AstroSoft.getPreferences().addPreferenceChangeListener(this);
+		getPreferences().addPreferenceChangeListener(this);
 
 		// sw.swe_set_ephe_path( "d\\:\\\\AstroSoft" );
 		calculate();
@@ -127,7 +151,7 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 
 		try{
 			//h = valueOfXMLNode(XMLHelper.parseXML(file).getChildNodes().item(0));
-			h = new Horoscope(BirthData.valueOfXMLNode(XMLHelper.parseXML(file).getChildNodes().item(0)));
+			h = new Horoscope(valueOfXMLNode(parseXML(file).getChildNodes().item(0)));
 		}catch(NullPointerException e){
 			System.out.println(e);
 		}
@@ -144,21 +168,27 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 			}
 
 			File f = new File(file);
-			FileInputStream fis = new FileInputStream(f);
-			BufferedReader br = new BufferedReader(new InputStreamReader(fis));
-			String name = br.readLine();
-			int date = Integer.parseInt(br.readLine());
-			int month = Integer.parseInt(br.readLine());
-			int year = Integer.parseInt(br.readLine());
-			int hr = Integer.parseInt(br.readLine());
-			int min = Integer.parseInt(br.readLine());
-			double longi = Double.parseDouble(br.readLine());
-			double lati = Double.parseDouble(br.readLine());
-			double tz = Double.parseDouble(br.readLine());
-			String city = br.readLine();
-			Place place = new Place(city, lati, longi, tz);
-
-			fis.close();
+                        String name;
+                        int date;
+                        int month;
+                        int year;
+                        int hr;
+                        int min;
+                        Place place;
+            try (FileInputStream fis = new FileInputStream(f)) {
+                BufferedReader br = new BufferedReader(new InputStreamReader(fis));
+                name = br.readLine();
+                date = parseInt(br.readLine());
+                month = parseInt(br.readLine());
+                year = parseInt(br.readLine());
+                hr = parseInt(br.readLine());
+                min = parseInt(br.readLine());
+                double longi = parseDouble(br.readLine());
+                double lati = parseDouble(br.readLine());
+                double tz = parseDouble(br.readLine());
+                String city = br.readLine();
+                place = new Place(city, lati, longi, tz);
+            }
 			h = new Horoscope(name, date, month, year, hr, min, place);
 
 			//Save as new format.
@@ -187,12 +217,12 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 
 	public void saveToFile(String fileName) {
 
-		Document doc = XMLHelper.createDOM();
+		Document doc = createDOM();
 
 		//doc.appendChild(toXMLElement(doc, StringConsts.Horoscope.toString()));
 		doc.appendChild(birthData.toXMLElement(doc));
 
-		XMLHelper.saveXML(doc, fileName);
+		saveXML(doc, fileName);
 
 		}
 
@@ -226,9 +256,9 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 
 	private void calcSunRiseSet() {
 
-		sunrise = AstroUtil.getSunRise(birthData.year(), birthData.month(), birthData.date(),
+		sunrise = getSunRise(birthData.year(), birthData.month(), birthData.date(),
 				birthData.longitude(), birthData.latitude(), birthData.timeZone());
-		sunset = AstroUtil.getSunSet(birthData.year(), birthData.month(), birthData.date(),
+		sunset = getSunSet(birthData.year(), birthData.month(), birthData.date(),
 				birthData.longitude(), birthData.latitude(), birthData.timeZone());
 		
 		if ((birthData.birthTime() > sunrise)
@@ -273,9 +303,9 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 
 		calcSunRiseSet();
 
-		thithi = Thithi.ofDeg(getPlanetaryPosition(Planet.Sun), getPlanetaryPosition(Planet.Moon));
-		pak = Paksha.ofDeg(getPlanetaryPosition(Planet.Sun), getPlanetaryPosition(Planet.Moon));
-		yoga = Yoga.ofDeg(getPlanetaryPosition(Planet.Sun), getPlanetaryPosition(Planet.Moon));
+		thithi = ofDeg(getPlanetaryPosition(Planet.Sun), getPlanetaryPosition(Planet.Moon));
+		pak = ofDeg(getPlanetaryPosition(Planet.Sun), getPlanetaryPosition(Planet.Moon));
+		yoga = ofDeg(getPlanetaryPosition(Planet.Sun), getPlanetaryPosition(Planet.Moon));
 	}
 
 	private void calcShadBala() {
@@ -450,7 +480,7 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 		
 		if (yogaCombinations == null){
 			
-			yogaCombinations = YogaFinder.getInstance().findYogas(this);
+			yogaCombinations = getInstance().findYogas(this);
 		}
 		return yogaCombinations;
 	}
@@ -515,16 +545,16 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 
 		if(infoTableData == null){
 
-			List<MapTableRow> rows = new ArrayList<MapTableRow>();
+			List<MapTableRow> rows = new ArrayList<>();
 
 			MapTableRowHelper helper = new MapTableRowHelper(getInfoTableColumnMetaData());
 
 			rows.add(helper.createRow(DisplayStrings.NAME_STR, birthData.name()));
 			rows.add(helper.createRow(DisplayStrings.DOB_STR, birthData.birthDayString()));
-			rows.add(helper.createRow(DisplayStrings.TOB_STR, AstroUtil.timeFormat(birthData.birthTime(),true)));
+			rows.add(helper.createRow(DisplayStrings.TOB_STR, timeFormat(birthData.birthTime(),true)));
 			rows.add(helper.createRow(DisplayStrings.PLACE_STR, birthData.place()));
-			rows.add(helper.createRow(DisplayStrings.SID_TIME_STR, AstroUtil.dms(this.getHousePosition().getSiderealTime())));
-			rows.add(helper.createRow(DisplayStrings.SUNRISE_SET_STR, AstroUtil.timeFormat(getSunrise()) + "/" + AstroUtil.timeFormat(getSunset())));
+			rows.add(helper.createRow(DisplayStrings.SID_TIME_STR, dms(this.getHousePosition().getSiderealTime())));
+			rows.add(helper.createRow(DisplayStrings.SUNRISE_SET_STR, timeFormat(getSunrise()) + "/" + timeFormat(getSunset())));
 			rows.add(helper.createRow(DisplayStrings.NAK_STR, getNakshathra()));
 			rows.add(helper.createRow(DisplayStrings.RASI_STR, getRasi()));
 
@@ -533,11 +563,11 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 			//rows.add(helper.createRow(DisplayStrings.RASI_STR, getRasi()));
 			rows.add(helper.createRow(DisplayStrings.THITHI_STR, getThithi()));
 
-			rows.add(helper.createRow(DisplayStrings.AYANAMSA_STR, AstroUtil.dms(getAyanamsa())));
+			rows.add(helper.createRow(DisplayStrings.AYANAMSA_STR, dms(getAyanamsa())));
 			rows.add(helper.createRow(DisplayStrings.CURR_PD_STR, getCurrentDasa()));
 			rows.add(helper.createRow(DisplayStrings.DASA_STR, getDasaBal()));
 
-			infoTableData = TableDataFactory.getTableData(rows);
+			infoTableData = getTableData(rows);
 		}
 		return infoTableData;
 	}
@@ -562,7 +592,7 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 			sb.append(birthData.name());
 			sb.append(" born on ");
 			sb.append(birthData.birthDayString());
-			sb.append(" " + AstroUtil.timeFormat(birthData.birthTime()));
+			sb.append(" " + timeFormat(birthData.birthTime()));
 			sb.append(" at ");
 			sb.append(birthData.place());
 			title = sb.toString();
@@ -653,7 +683,7 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 
 	public static void runTests(){
 
-		AstroSoft.getPreferences().setAyanamsa(Ayanamsa.LAHARI);
+		getPreferences().setAyanamsa(Ayanamsa.LAHARI);
 		Horoscope h = new Horoscope("Raja", 11, 12, 1980, 1, 44,
 				77 + (44.00 / 60.00), 11 + (22.00 / 60.00), 5.5, "Erode");
 
@@ -685,7 +715,7 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 
 	public String createDocumentName() {
 
-		return AstroSoft.getPreferences().getAstrosoftFilesDir() + birthData.name() + "_Horoscope.pdf";
+		return getPreferences().getAstrosoftFilesDir() + birthData.name() + "_Horoscope.pdf";
 	}
 
 

@@ -23,6 +23,7 @@ import app.astrosoft.ui.table.MapTableRow;
 import app.astrosoft.ui.table.Table;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableDataFactory;
+import static app.astrosoft.ui.table.TableDataFactory.splitTableData;
 import app.astrosoft.ui.table.TableRowData;
 
 public class InfoView extends AstrosoftView {
@@ -37,7 +38,7 @@ public class InfoView extends AstrosoftView {
     	ColumnMetaData infoColMetaData = horoscopeInfo.getColumnMetaData();
     	
     	JPanel infoPanel = new JPanel(new GridLayout(1, 3 , 20, 20));
-    	List<ListTableData<MapTableRow>> splittedData = TableDataFactory.splitTableData(allData, 7);
+    	List<ListTableData<MapTableRow>> splittedData = splitTableData(allData, 7);
     	
     	for(ListTableData<MapTableRow> data : splittedData){
     		AstrosoftTable infoTable = new AstrosoftTable(new AstrosoftTableModel(data, infoColMetaData), TableStyle.NONE );

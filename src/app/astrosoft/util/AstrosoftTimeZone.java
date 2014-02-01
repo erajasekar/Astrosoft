@@ -12,6 +12,9 @@ import java.util.TimeZone;
 
 import app.astrosoft.consts.AstroConsts;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.util.AstroUtil.todegmin;
+import static java.lang.System.currentTimeMillis;
+import static java.util.TimeZone.getAvailableIDs;
 
 public class AstrosoftTimeZone {
 
@@ -42,11 +45,11 @@ public class AstrosoftTimeZone {
 	public String toString() {
 		double offset = offset();
 		String sign = offset < 0 ? "-" : "+";
-		return tzId + " (GMT " + sign +  AstroUtil.todegmin(offset(), ":", true) + ")";
+		return tzId + " (GMT " + sign +  todegmin(offset(), ":", true) + ")";
 	}
 	
 	public static AstrosoftTimeZone[] availableTimeZones(){
-		String ids[] = TimeZone.getAvailableIDs();
+		String ids[] = getAvailableIDs();
 		AstrosoftTimeZone tzs[] = new AstrosoftTimeZone[ids.length];
 		
 		int i = 0;
@@ -65,13 +68,13 @@ public class AstrosoftTimeZone {
 	
 	@Override
 	public int hashCode() {
-		System.out.println( "Hashcode tzId -> " + System.currentTimeMillis());
+		System.out.println( "Hashcode tzId -> " + currentTimeMillis());
 		return tzId.hashCode();
 	}
 	
 	public static void main(String[] args) {
 		
-		for(AstrosoftTimeZone tz : AstrosoftTimeZone.availableTimeZones()){
+		for(AstrosoftTimeZone tz : availableTimeZones()){
 			System.out.println(tz);
 		}
 	}

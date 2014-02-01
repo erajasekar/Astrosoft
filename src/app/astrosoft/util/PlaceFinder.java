@@ -19,6 +19,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
 import app.astrosoft.beans.Place;
+import static javax.xml.xpath.XPathFactory.newInstance;
 
 public class PlaceFinder {
 
@@ -28,11 +29,11 @@ public class PlaceFinder {
 	private static final String DIR_ATTRIB = "dir";
 	
 	private static final String XML_SOURCE = "/resources/LatitudeLongitudes.xml";
-	private static XPath xpath = XPathFactory.newInstance().newXPath();
+	private static XPath xpath = newInstance().newXPath();
 	
 	public static List<Place> findPlace(String place){
 		
-		List<Place> placeList = new ArrayList<Place>();
+		List<Place> placeList = new ArrayList<>();
 		
 		String expression = "//world/country/state/city[name='" + place + "']";
 		InputSource inputSource = new InputSource(PlaceFinder.class.getResourceAsStream(XML_SOURCE));
@@ -59,12 +60,16 @@ public class PlaceFinder {
 			for(int i = 0; i < cityChilds.getLength(); i++){
 				Node child = cityChilds.item(i);
 				
-				if (child.getNodeName().equals(NAME_NODE)){
-					city = child.getTextContent();
-				}else if (child.getNodeName().equals(LOGITUDE_NODE)){
-					longitude = child.getTextContent();
-					longDir = child.getAttributes().getNamedItem(DIR_ATTRIB).getNodeValue().charAt(0);
-				}if (child.getNodeName().equals(LATITUDE_NODE)){
+                switch (child.getNodeName()) {
+                    case NAME_NODE:
+                        city = child.getTextContent();
+                        break;
+                    case LOGITUDE_NODE:
+                        longitude = child.getTextContent();
+                        longDir = child.getAttributes().getNamedItem(DIR_ATTRIB).getNodeValue().charAt(0);
+                        break;
+                }
+if (child.getNodeName().equals(LATITUDE_NODE)){
 					latitude = child.getTextContent();
 					latDir = child.getAttributes().getNamedItem(DIR_ATTRIB).getNodeValue().charAt(0);
 				}

@@ -27,6 +27,8 @@ import app.astrosoft.ui.table.AstrosoftTableModel;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.ui.util.UIConsts;
 import app.astrosoft.ui.util.UIUtil;
+import static app.astrosoft.ui.util.UIUtil.createImageIcon;
+import static javax.swing.BorderFactory.createEtchedBorder;
 
 public class PagingPanel<E extends TableRowData> extends JPanel {
 
@@ -62,49 +64,29 @@ public class PagingPanel<E extends TableRowData> extends JPanel {
 			showCombo.addItem(page);
 		}
 		
-		prevBtn.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				previousButtonClicked();
-				
-			}
-			
-		});
+		prevBtn.addActionListener((ActionEvent e) -> {
+                    previousButtonClicked();
+        });
 		
-		nextBtn.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				nextButtonClicked();
-				
-			}
-			
-		});
+		nextBtn.addActionListener((ActionEvent e) -> {
+                    nextButtonClicked();
+        });
 		
-		pageCombo.addItemListener(new ItemListener(){
-
-			public void itemStateChanged(ItemEvent e) {
-				pageChanged((Integer)e.getItem());
-				
-			}
-			
-		});
+		pageCombo.addItemListener((ItemEvent e) -> {
+                    pageChanged((Integer)e.getItem());
+        });
 		
-		showCombo.addItemListener(new ItemListener(){
-
-			public void itemStateChanged(ItemEvent e) {
-				pageLengthChanged((Integer)e.getItem());
-				
-			}
-			
-		});
+		showCombo.addItemListener((ItemEvent e) -> {
+                    pageLengthChanged((Integer)e.getItem());
+        });
 		
 		showCombo.setSelectedItem(pagination.getPageLength());
 		
-		prevBtn.setIcon(UIUtil.createImageIcon("prev"));
-		nextBtn.setIcon(UIUtil.createImageIcon("next"));
+		prevBtn.setIcon(createImageIcon("prev"));
+		nextBtn.setIcon(createImageIcon("next"));
 		
-		nextBtn.setBorder(BorderFactory.createEtchedBorder());
-		prevBtn.setBorder(BorderFactory.createEtchedBorder());
+		nextBtn.setBorder(createEtchedBorder());
+		prevBtn.setBorder(createEtchedBorder());
 		
 		nextBtn.setPreferredSize(btnSize);
 		prevBtn.setPreferredSize(btnSize);

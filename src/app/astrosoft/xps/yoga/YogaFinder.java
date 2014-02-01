@@ -28,14 +28,17 @@ import app.astrosoft.consts.Varga;
 import app.astrosoft.core.Horoscope;
 import app.astrosoft.exception.AstrosoftException;
 import app.astrosoft.test.SampleHoroscopes;
+import static app.astrosoft.test.SampleHoroscopes.getMyHoroscope;
 import app.astrosoft.util.Timer;
 import app.astrosoft.xps.XpsUtil;
+import static app.astrosoft.xps.XpsUtil.getRuleAsStream;
 import app.astrosoft.xps.beans.PlanetChart;
 import app.astrosoft.xps.beans.YogaFacts;
+import static java.util.logging.Logger.getLogger;
 
 public class YogaFinder {
 	
-	private static final Logger log = Logger.getLogger(YogaFinder.class.getName());
+	private static final Logger log = getLogger(YogaFinder.class.getName());
 
 	private static String RULE_FILE = "YogaCombinations.dslr";
 	private static String DSL_FILE = "YogaCombinations.dsl";
@@ -122,8 +125,8 @@ public class YogaFinder {
 	
 	private static Package buildPackage() throws DroolsParserException, IOException {
 		
-		final Reader rule = new InputStreamReader( XpsUtil.getRuleAsStream(RULE_FILE));
-		final Reader dsl = new InputStreamReader( XpsUtil.getRuleAsStream(DSL_FILE));
+		final Reader rule = new InputStreamReader( getRuleAsStream(RULE_FILE));
+		final Reader dsl = new InputStreamReader( getRuleAsStream(DSL_FILE));
 		
 		final PackageBuilder builder = new PackageBuilder();
 
@@ -157,7 +160,7 @@ public class YogaFinder {
 		
 		try {
 
-			ObjectInputStream in = new ObjectInputStream(XpsUtil.getRuleAsStream(PACKAGE_FILE));
+			ObjectInputStream in = new ObjectInputStream(getRuleAsStream(PACKAGE_FILE));
 			pkg = (Package) in.readObject();
 		}catch(Exception e){
 			log.log(Level.SEVERE,"Exception in Serializing Package");
@@ -182,14 +185,14 @@ public class YogaFinder {
 		//System.out.println("Yogas Found --> " + h.getYogaCombinations());
 
 		// Ignore first construction 
-		Horoscope h = SampleHoroscopes.getMyHoroscope();
+		Horoscope h = getMyHoroscope();
 		
 		Timer t = new Timer();
-		h = SampleHoroscopes.getMyHoroscope();
+		h = getMyHoroscope();
 		t.print("Default Horoscope construction time ");
 		
 		t.reset();
-		h = SampleHoroscopes.getMyHoroscope();
+		h = getMyHoroscope();
 		h.calculateAll();
 		t.print("Full Horoscope construction time ");
 		

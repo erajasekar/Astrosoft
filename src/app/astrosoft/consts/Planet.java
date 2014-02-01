@@ -311,7 +311,7 @@ public enum Planet {
 	
 	public static List<AstrosoftTableColumn> toTableColumn(Set<Planet> planets){
 		
-		List<AstrosoftTableColumn> cols = new ArrayList<AstrosoftTableColumn>();
+		List<AstrosoftTableColumn> cols = new ArrayList<>();
 		
 		for(Planet p : planets){
 			cols.add(AstrosoftTableColumn.valueOf(p.name()));
@@ -346,14 +346,7 @@ public enum Planet {
 	}
 	
 	public static Iterable<Planet> dasaLords(final Planet startWith){
-		return new Iterable<Planet>(){
-			
-			public Iterator<Planet> iterator() {
-				
-				return new DasaIterator(startWith) ;
-			}
-			
-		};
+		return () -> new DasaIterator(startWith);
 	}
 	
 	private static class DasaIterator implements Iterator<Planet>{

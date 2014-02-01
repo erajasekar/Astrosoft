@@ -42,15 +42,21 @@ import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.Language;
 import app.astrosoft.consts.Planet;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.ofIndex;
+import static app.astrosoft.consts.Rasi.values;
 import app.astrosoft.consts.TableStyle;
 import app.astrosoft.ui.table.AstrosoftTable;
 import app.astrosoft.ui.table.AstrosoftTableModel;
 import app.astrosoft.ui.table.PlanetCellRenderer;
 import app.astrosoft.ui.table.Table;
 import app.astrosoft.ui.util.UIConsts;
+import static app.astrosoft.ui.util.UIConsts.getChartBackground;
+import static app.astrosoft.ui.util.UIConsts.getChartBorder;
 import app.astrosoft.ui.window.AstrosoftWindow;
 import app.astrosoft.ui.window.DefaultWindowLabelModel;
 import app.astrosoft.ui.window.WindowLabelModel;
+import static java.lang.String.valueOf;
+import static javax.swing.ToolTipManager.sharedInstance;
 
 public class Chart extends JPanel{
 
@@ -77,7 +83,7 @@ public class Chart extends JPanel{
 		rowHeight = tableSize.height / 3;
 		
 		//Thirteen-th fills center
-		housePanel = new ArrayList<JPanel>();
+		housePanel = new ArrayList<>();
 		
 		title = new TitleLabel(chartData.getChartName());
 		
@@ -94,10 +100,10 @@ public class Chart extends JPanel{
 		boolean isPlanetChart = (chartData instanceof PlanetChartData);
 		int houseNo;
 		String toolTip;
-		ToolTipManager toolTipManager =  ToolTipManager.sharedInstance();
+		ToolTipManager toolTipManager =  sharedInstance();
 		Rasi ascendant = chartData.getAscendant();
 		
-		for(Rasi house : Rasi.values()){
+		for(Rasi house : values()){
 			
 			houseNo = house.ordinal();
 			
@@ -112,7 +118,7 @@ public class Chart extends JPanel{
 				//houseTable.setDefaultRenderer(Planet.class, new PlanetCellRenderer());
 				houseTable.setRowHeight(rowHeight);
 				houseTable.setPreferredSize(tableSize);
-				houseTable.setBackground(UIConsts.getChartBackground());
+				houseTable.setBackground(getChartBackground());
 	
 				if (isPlanetChart){
 					decoratePlanetChart(table, houseTable);
@@ -123,9 +129,9 @@ public class Chart extends JPanel{
 				//houseTable.addMouseListener(new ChartHouseMouseListener());
 			}
 			panel.setPreferredSize(houseSize);
-			panel.setBackground(UIConsts.getChartBackground());
+			panel.setBackground(getChartBackground());
 			
-			panel.setBorder(UIConsts.getChartBorder());
+			panel.setBorder(getChartBorder());
 			add(panel, getConstrains(houseNo));
 			
 			if (isPlanetChart){
@@ -198,9 +204,9 @@ public class Chart extends JPanel{
 			
 			if (ascendant != null){
 				
-				int bhava = Rasi.ofIndex(housePanel.indexOf(source)).bhava(ascendant);
+				int bhava = ofIndex(housePanel.indexOf(source)).bhava(ascendant);
 				
-				WindowLabelModel windowModel = new DefaultWindowLabelModel(String.valueOf(bhava));
+				WindowLabelModel windowModel = new DefaultWindowLabelModel(valueOf(bhava));
 				
 				window = new AstrosoftWindow(windowModel);
 				window.setPreferredSize(new Dimension(30,20));

@@ -6,6 +6,7 @@
 
 package app.astrosoft.beans;
 
+import static app.astrosoft.beans.Place.getDefault;
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.EnumSet;
@@ -23,10 +24,13 @@ import javax.xml.stream.XMLEventWriter;
 import javax.xml.stream.events.XMLEvent;
 
 import app.astrosoft.consts.AstrosoftTableColumn;
+import static app.astrosoft.consts.AstrosoftTableColumn.chartHouseCols;
 import app.astrosoft.consts.DisplayFormat;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Planet;
+import static app.astrosoft.consts.Planet.planetsAsc;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.ofIndex;
 import app.astrosoft.consts.Varga;
 import app.astrosoft.consts.XmlConsts;
 import app.astrosoft.core.Horoscope;
@@ -41,10 +45,11 @@ import app.astrosoft.ui.table.Table;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.util.Utils;
+import static java.util.logging.Logger.getLogger;
 
 public class PlanetChartData extends AbstractChartData implements Exportable {
 
-	private static final Logger log = Logger.getLogger(PlanetChartData.class.getName());
+	private static final Logger log = getLogger(PlanetChartData.class.getName());
 	
 	private EnumMap<Planet, Boolean> planetDir;
 	
@@ -61,24 +66,24 @@ public class PlanetChartData extends AbstractChartData implements Exportable {
 		super(varga.toString());
 		this.varga = varga; 
 		this.planetDir = planetDir;
-		this.ascendant = Rasi.ofIndex(planetPos.get(Planet.Ascendant) - 1);
+		this.ascendant = ofIndex(planetPos.get(Planet.Ascendant) - 1);
 		planetsInRasi = calcPlanetsInRasi(planetPos);
 	}
 	
 	public static EnumMap<Rasi, List<Planet>> calcPlanetsInRasi(EnumMap<Planet, Integer> planetPosition){
 		
-		EnumMap<Rasi, List<Planet>> planetsInRasi = new EnumMap<Rasi, List<Planet>>(Rasi.class);
+		EnumMap<Rasi, List<Planet>> planetsInRasi = new EnumMap<>(Rasi.class);
 		
 		List<Planet> planetList = null;
 		
-		for (Planet p : Planet.planetsAsc()) {
-			Rasi r = Rasi.ofIndex(planetPosition.get(p) - 1);
+		for (Planet p : planetsAsc()) {
+			Rasi r = ofIndex(planetPosition.get(p) - 1);
 			
 			if (planetsInRasi.containsKey(r)){
 				planetList = planetsInRasi.get(r);
 				planetList.add(p);
 			}else{
-				planetList = new ArrayList<Planet>();
+				planetList = new ArrayList<>();
 				planetList.add(p);
 				planetsInRasi.put(r, planetList);
 			}	
@@ -96,7 +101,7 @@ public class PlanetChartData extends AbstractChartData implements Exportable {
 
 	public Map<Cell, Planet> getCells(List<Planet> planets){
 		
-		Map<Cell, Planet> cells = new HashMap<Cell, Planet>();
+		Map<Cell, Planet> cells = new HashMap<>();
 		
 		if(planets == null || planets.size() == 0){
 			return cells;
@@ -188,7 +193,7 @@ public class PlanetChartData extends AbstractChartData implements Exportable {
 
 	@Override
 	public DefaultColumnMetaData getHouseTableColMetaData() {
-		return new DefaultColumnMetaData(AstrosoftTableColumn.chartHouseCols()){
+		return new DefaultColumnMetaData(chartHouseCols()){
 			@Override
 			public Class getColumnClass(AstrosoftTableColumn col) {
 				
@@ -284,9 +289,9 @@ public class PlanetChartData extends AbstractChartData implements Exportable {
 	}
 	
 	public static void main(String[] args) {
-		Horoscope h = new Horoscope("Raja" , 11, 12, 1980, 1, 44, Place.getDefault());
+		Horoscope h = new Horoscope("Raja" , 11, 12, 1980, 1, 44, getDefault());
 		
-		EnumMap<Planet, Integer> pos = new EnumMap<Planet, Integer>(Planet.class);
+		EnumMap<Planet, Integer> pos = new EnumMap<>(Planet.class);
 		
 		pos.put(Planet.Sun, 1);
     	pos.put(Planet.Moon, 1);

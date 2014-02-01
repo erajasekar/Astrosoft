@@ -21,7 +21,24 @@ import app.astrosoft.consts.Rasi;
 import app.astrosoft.consts.Varga;
 import app.astrosoft.core.Horoscope;
 import app.astrosoft.test.SampleHoroscopes;
+import static app.astrosoft.test.SampleHoroscopes.getMyHoroscope;
 import app.astrosoft.xps.beans.PlanetChart;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
 
 public class PlanetChartTestCase {
 
@@ -40,7 +57,7 @@ public class PlanetChartTestCase {
 	
 	private static void setUpChart2() {
 		
-		EnumMap<Planet, Integer> planetLoc = new EnumMap<Planet, Integer>(Planet.class);
+		EnumMap<Planet, Integer> planetLoc = new EnumMap<>(Planet.class);
 		
 		planetLoc.put(Planet.Sun, 1);
     	planetLoc.put(Planet.Moon, 4);
@@ -53,7 +70,7 @@ public class PlanetChartTestCase {
     	planetLoc.put(Planet.Ketu, 2);
     	planetLoc.put(Planet.Ascendant, 1);
     	
-    	EnumMap<Planet, Rasi> planetHouse = new EnumMap<Planet, Rasi>(Planet.class);
+    	EnumMap<Planet, Rasi> planetHouse = new EnumMap<>(Planet.class);
     	
     	planetHouse.put(Planet.Sun, Rasi.Mesha); //Exalted
     	planetHouse.put(Planet.Moon, Rasi.Kataka); // Own
@@ -71,7 +88,7 @@ public class PlanetChartTestCase {
 	}
 
 	private static void setUpChart1() {
-		Horoscope h = SampleHoroscopes.getMyHoroscope();
+		Horoscope h = getMyHoroscope();
 		chart1 = new PlanetChart(Varga.Rasi, h.getPlanetaryInfo());
 		character1 = new PlanetCharacter(h.getPlanetaryInfo().getPlanetCharacter());
 	}
@@ -79,29 +96,29 @@ public class PlanetChartTestCase {
 	@Test
 	public void testIsPlanetsAtLocation(){
 		
-		assertTrue("testIsPlanetsAtLocation() sucess", chart1.isPlanetsAt(EnumSet.of(Planet.Sun,Planet.Mercury),3));
+		assertTrue("testIsPlanetsAtLocation() sucess", chart1.isPlanetsAt(of(Planet.Sun,Planet.Mercury),3));
 	}
 	
 	@Test
 	public void testIsPlanetsAtHouse1(){
 		
-		assertTrue("testIsPlanetsAtHouse() sucess", chart1.isPlanetsAt(EnumSet.of(Planet.Sun,Planet.Mercury),Rasi.Vrichika));
+		assertTrue("testIsPlanetsAtHouse() sucess", chart1.isPlanetsAt(of(Planet.Sun,Planet.Mercury),Rasi.Vrichika));
 	}
 	
 	@Test
 	public void testIsPlanetsAtHouse2(){
 		
-		assertFalse("testIsPlanetsAtLocation() sucess", chart1.isPlanetsAt(EnumSet.of(Planet.Sun,Planet.Mercury, Planet.Moon),Rasi.Mesha));
+		assertFalse("testIsPlanetsAtLocation() sucess", chart1.isPlanetsAt(of(Planet.Sun,Planet.Mercury, Planet.Moon),Rasi.Mesha));
 	}
 	
 	@Test
 	public void testIsPlanetWithAll(){
-		assertTrue(chart1.isPlanetWithAll(Planet.Ascendant, EnumSet.of(Planet.Saturn,Planet.Jupiter)));
+		assertTrue(chart1.isPlanetWithAll(Planet.Ascendant, of(Planet.Saturn,Planet.Jupiter)));
 	}
 	
 	@Test
 	public void testIsPlanetWithAny(){
-		assertTrue(chart1.isPlanetWithAny(Planet.Ascendant, EnumSet.of(Planet.Sun,Planet.Jupiter)));
+		assertTrue(chart1.isPlanetWithAny(Planet.Ascendant, of(Planet.Sun,Planet.Jupiter)));
 	}
 	
 	@Test
@@ -256,17 +273,17 @@ public class PlanetChartTestCase {
 	
 	@Test
 	public void testPlanetsAt1(){
-		assertTrue(chart1.planetsAt(Planet.Moon, 1).containsAll(EnumSet.of(Planet.Moon, Planet.Ketu)));
+		assertTrue(chart1.planetsAt(Planet.Moon, 1).containsAll(of(Planet.Moon, Planet.Ketu)));
 	}
 	
 	@Test
 	public void testPlanetsAt2(){
-		assertTrue(chart1.planetsAt(Planet.Saturn, 5).containsAll(EnumSet.of(Planet.Moon, Planet.Ketu)));
+		assertTrue(chart1.planetsAt(Planet.Saturn, 5).containsAll(of(Planet.Moon, Planet.Ketu)));
 	}
 	
 	@Test
 	public void testPlanetsAt3(){
-		assertTrue(chart1.planetsAt(Planet.Mars, 12).containsAll(EnumSet.of(Planet.Sun, Planet.Mercury)));
+		assertTrue(chart1.planetsAt(Planet.Mars, 12).containsAll(of(Planet.Sun, Planet.Mercury)));
 	}
 	
 	@Test
@@ -276,42 +293,42 @@ public class PlanetChartTestCase {
 	
 	@Test
 	public void testIsAllBenefic(){
-		assertTrue(character1.isAllBenefics(EnumSet.of(Planet.Moon, Planet.Jupiter,Planet.Venus,Planet.Mercury)));
+		assertTrue(character1.isAllBenefics(of(Planet.Moon, Planet.Jupiter,Planet.Venus,Planet.Mercury)));
 	}
 	
 	@Test
 	public void testIsAllBenefic2(){
-		assertFalse(character1.isAllBenefics(EnumSet.of(Planet.Moon, Planet.Saturn,Planet.Venus,Planet.Mercury)));
+		assertFalse(character1.isAllBenefics(of(Planet.Moon, Planet.Saturn,Planet.Venus,Planet.Mercury)));
 	}
 	
 	@Test
 	public void testIsAnyBenefic1(){
-		assertTrue(character1.isAnyBenefics(EnumSet.of(Planet.Moon, Planet.Sun,Planet.Rahu,Planet.Ketu)));
+		assertTrue(character1.isAnyBenefics(of(Planet.Moon, Planet.Sun,Planet.Rahu,Planet.Ketu)));
 	}
 	
 	@Test
 	public void testIsAnyBenefic2(){
-		assertFalse(character1.isAnyBenefics(EnumSet.of(Planet.Mars, Planet.Sun,Planet.Rahu,Planet.Ketu)));
+		assertFalse(character1.isAnyBenefics(of(Planet.Mars, Planet.Sun,Planet.Rahu,Planet.Ketu)));
 	}
 	
 	@Test
 	public void testIsAllMalefic1(){
-		assertTrue(character1.isAllMalefics(EnumSet.of(Planet.Mars, Planet.Sun,Planet.Rahu,Planet.Ketu)));
+		assertTrue(character1.isAllMalefics(of(Planet.Mars, Planet.Sun,Planet.Rahu,Planet.Ketu)));
 	}
 	
 	@Test
 	public void testIsAllMalefic2(){
-		assertFalse(character1.isAllMalefics(EnumSet.of(Planet.Jupiter, Planet.Sun,Planet.Rahu,Planet.Ketu)));
+		assertFalse(character1.isAllMalefics(of(Planet.Jupiter, Planet.Sun,Planet.Rahu,Planet.Ketu)));
 	}
 	
 	@Test
 	public void testIsAnyMalefic1(){
-		assertTrue(character1.isAnyMalefics(EnumSet.of(Planet.Mars, Planet.Jupiter,Planet.Rahu,Planet.Ketu)));
+		assertTrue(character1.isAnyMalefics(of(Planet.Mars, Planet.Jupiter,Planet.Rahu,Planet.Ketu)));
 	}
 	
 	@Test
 	public void testIsAnyMalefic2(){
-		assertFalse(character1.isAnyMalefics(EnumSet.of(Planet.Moon, Planet.Jupiter,Planet.Venus,Planet.Mercury)));
+		assertFalse(character1.isAnyMalefics(of(Planet.Moon, Planet.Jupiter,Planet.Venus,Planet.Mercury)));
 	}
 	
 	@Test

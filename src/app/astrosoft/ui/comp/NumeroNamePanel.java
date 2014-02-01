@@ -25,8 +25,16 @@ import javax.swing.SpringLayout;
 
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.ui.util.SpringUtilities;
+import static app.astrosoft.ui.util.SpringUtilities.makeCompactGrid;
 import app.astrosoft.ui.util.UIConsts;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.computeNumeroVal;
+import static app.astrosoft.util.AstroUtil.toNumeroNum;
+import static java.lang.String.valueOf;
+import static java.lang.String.valueOf;
+import static java.lang.String.valueOf;
+import static java.lang.String.valueOf;
+import static javax.swing.BorderFactory.createEtchedBorder;
 
 public abstract class NumeroNamePanel extends JPanel {
 
@@ -52,10 +60,10 @@ public abstract class NumeroNamePanel extends JPanel {
 		@Override
 		public void keyReleased(KeyEvent e) {
 			
-			int val = AstroUtil.computeNumeroVal(name.getText());
-			numeroVal.setText(val == 0 ? "" : String.valueOf(val));
-			int num = AstroUtil.toNumeroNum(val);
-			numeroNum.setText(val == 0 ? "" : String.valueOf(num));
+			int val = computeNumeroVal(name.getText());
+			numeroVal.setText(val == 0 ? "" : valueOf(val));
+			int num = toNumeroNum(val);
+			numeroNum.setText(val == 0 ? "" : valueOf(num));
 		}
 	};
 
@@ -73,13 +81,7 @@ public abstract class NumeroNamePanel extends JPanel {
 			button = new JButton(title);
 			
 			if (l != null) {
-				button.addActionListener(new ActionListener(){
-		
-					public void actionPerformed(ActionEvent e) {
-						l.actionPerformed(e);
-					}
-					
-				});
+				button.addActionListener(l::actionPerformed);
 			}
 		}
 		
@@ -100,21 +102,21 @@ public abstract class NumeroNamePanel extends JPanel {
 		setLayout(new SpringLayout());
 		
 		
-		add(SpringUtilities.makeCompactGrid(2, 1, 0,0,4,4, l_name, name));
+		add(makeCompactGrid(2, 1, 0,0,4,4, l_name, name));
 		
 		addOperatorPanel1();
 		
-		add(SpringUtilities.makeCompactGrid(2, 1, 0,0,4,4, l_numeroVal, numeroVal));
+		add(makeCompactGrid(2, 1, 0,0,4,4, l_numeroVal, numeroVal));
 	
 		addOperatorPanel2();
 		
-		add(SpringUtilities.makeCompactGrid(2, 1, 0,0,4,4, l_numeroNum, numeroNum));
+		add(makeCompactGrid(2, 1, 0,0,4,4, l_numeroNum, numeroNum));
 		
-		add(SpringUtilities.makeCompactGrid(2, 1, 0,0,4,4, l_blank, button));
+		add(makeCompactGrid(2, 1, 0,0,4,4, l_blank, button));
 		
-		SpringUtilities.makeCompactGrid(this, 1, getPanelCount(), 5,5,10,10);
+		makeCompactGrid(this, 1, getPanelCount(), 5,5,10,10);
 		
-		setBorder(BorderFactory.createEtchedBorder());
+		setBorder(createEtchedBorder());
 		//setBorder(UIConsts.getTitleBorder(""));
 		
 	}
@@ -151,7 +153,7 @@ public abstract class NumeroNamePanel extends JPanel {
 	public void setValues(String n, int v, int num){
 		
 		name.setText(n);
-		numeroVal.setText(String.valueOf(v));
-		numeroNum.setText(String.valueOf(num));
+		numeroVal.setText(valueOf(v));
+		numeroNum.setText(valueOf(num));
 	}
 }

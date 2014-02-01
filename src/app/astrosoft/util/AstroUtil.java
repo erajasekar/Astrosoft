@@ -15,20 +15,37 @@ import java.util.logging.Logger;
 import swisseph.SweDate;
 import app.astrosoft.beans.Place;
 import app.astrosoft.consts.Alphabet;
+import static app.astrosoft.consts.Alphabet.numeroValOf;
 import app.astrosoft.consts.AstroConsts;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Language;
 import app.astrosoft.consts.Planet;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.values;
 import app.astrosoft.ui.AstroSoft;
 
 import com.web_tomorrow.utils.suntimes.SunTimes;
 import com.web_tomorrow.utils.suntimes.Time;
+import static java.lang.Character.isDigit;
+import static java.lang.Character.isLetter;
+import static java.lang.Integer.parseInt;
+import static java.lang.Integer.parseInt;
+import static java.lang.Integer.parseInt;
+import static java.lang.Integer.valueOf;
+import static java.lang.Math.abs;
+import static java.lang.String.valueOf;
+import static java.lang.String.valueOf;
+import static java.lang.String.valueOf;
+import static java.lang.String.valueOf;
+import static java.lang.String.valueOf;
+import static java.util.EnumSet.noneOf;
+import static java.util.EnumSet.of;
+import static java.util.logging.Logger.getLogger;
 
 
 public class AstroUtil {
 
-	private static final Logger log = Logger.getLogger(AstroUtil.class.getName());
+	private static final Logger log = getLogger(AstroUtil.class.getName());
 	
 	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("MMM d yyyy");
 	private static final SimpleDateFormat dateTimeFormat = new SimpleDateFormat("MMM d yyyy, hh:mm:ss a");
@@ -39,7 +56,7 @@ public class AstroUtil {
 
         if ( val < 0 ) {
 
-            val = Math.abs( val );
+            val = abs( val );
             result = result + "-";
 
         }
@@ -81,7 +98,7 @@ public class AstroUtil {
 
     private static double decimal(String deg, String min, String sec) {
 		
-		return decimal(Integer.parseInt(deg), Integer.parseInt(min), Integer.parseInt(sec));
+		return decimal(parseInt(deg), parseInt(min), parseInt(sec));
 	}
 
 	public static String todegmin( double val, String dlm, boolean ignoreSign ) {
@@ -126,9 +143,9 @@ public class AstroUtil {
 
         String res = new String(  );
         if ( val < 10 ) {
-            res = "0" + String.valueOf( val );
+            res = "0" + valueOf( val );
         } else {
-            res = String.valueOf( val );
+            res = valueOf( val );
         }
 
         return res;
@@ -139,11 +156,11 @@ public class AstroUtil {
 
         String res = new String(  );
         if ( val < 10 ) {
-            res = "00" + String.valueOf( val );
+            res = "00" + valueOf( val );
         }else if ( val < 100 ) {
-            res = "0" + String.valueOf( val );
+            res = "0" + valueOf( val );
         } else {
-            res = String.valueOf( val );
+            res = valueOf( val );
         }
 
         return res;
@@ -215,7 +232,7 @@ public class AstroUtil {
                     yr, mon, date, lg, lt, SunTimes.ZENITH );
 
             sunrise =
-                AstroUtil.decimal( 
+                decimal( 
                     t1.getHour(  ), t1.getMinute(  ), t1.getSecond(  ) ) + tz;
 
         } catch ( Exception e ) {
@@ -241,7 +258,7 @@ public class AstroUtil {
                     yr, mon, date, lg, lt, SunTimes.ZENITH );
             
             sunset =
-                AstroUtil.decimal( 
+                decimal( 
                     t2.getHour(  ), t2.getMinute(  ), t2.getSecond(  ) ) + tz;
 
         } catch ( Exception e ) {
@@ -367,7 +384,7 @@ public class AstroUtil {
     	cal.add(Calendar.YEAR, year);
     	cal.add(Calendar.MONTH, month);
     	cal.add(Calendar.DATE, days);
-    	SweDate sd = new SweDate(cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DATE), AstroUtil.decimal(cal.get(Calendar.HOUR), cal.get(Calendar.MINUTE), cal.get(Calendar.SECOND)));
+    	SweDate sd = new SweDate(cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DATE), decimal(cal.get(Calendar.HOUR), cal.get(Calendar.MINUTE), cal.get(Calendar.SECOND)));
     	return sd.getJulDay();
     }
     
@@ -457,8 +474,8 @@ public class AstroUtil {
    }
    
    public static double dateToTimeDouble(Date date){
-	   Calendar cal = AstroUtil.getCalendar(date);
-	   return AstroUtil.decimal(cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE), cal.get(Calendar.SECOND));
+	   Calendar cal = getCalendar(date);
+	   return decimal(cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE), cal.get(Calendar.SECOND));
    }
    
    /*public static Date doubleTimeToDateCurrentTZ(double time){
@@ -489,10 +506,10 @@ public class AstroUtil {
 	   
 	   for(char c : chars){
 		   
-		   if (Character.isLetter(c)){
-			   val = val + Alphabet.numeroValOf(c);
-		   }else if (Character.isDigit(c)){
-			   val = val + Integer.valueOf(Character.toString(c));
+		   if (isLetter(c)){
+			   val = val + numeroValOf(c);
+		   }else if (isDigit(c)){
+			   val = val + valueOf(Character.toString(c));
 		   }
 	   }
 	   
@@ -512,7 +529,7 @@ public class AstroUtil {
    
    public static Map<Rasi, Set<Planet>> calcPlanetInHouses(Map<Planet,Rasi> planetHouses){
 	
-	   Map <Rasi, Set<Planet>> planetInHouses = new EnumMap<Rasi, Set<Planet>>(Rasi.class);
+	   Map <Rasi, Set<Planet>> planetInHouses = new EnumMap<>(Rasi.class);
 	   
 	   for(Planet p : planetHouses.keySet()){
 	   
@@ -521,15 +538,15 @@ public class AstroUtil {
 		   if (planetInHouses.containsKey(h)){
 			   planetInHouses.get(h).add(p);
 		   }else{
-			   planetInHouses.put(h, EnumSet.of(p));
+			   planetInHouses.put(h, of(p));
 		   }
 	   }
 	   
 	   // Initialize empty set for empty houses
-	   for (Rasi house : Rasi.values()){
+	   for (Rasi house : values()){
 		   
 		   if (!planetInHouses.containsKey(house)) {
-			   planetInHouses.put(house, EnumSet.noneOf(Planet.class));
+			   planetInHouses.put(house, noneOf(Planet.class));
 		   }
 	   }
 	   
@@ -546,7 +563,7 @@ public class AstroUtil {
 		
 		log.fine("Lagna "  + lagna);
 		
-		EnumMap<Planet, Integer> location = new EnumMap<Planet, Integer>(Planet.class);
+		EnumMap<Planet, Integer> location = new EnumMap<>(Planet.class);
 		
 		for (Planet p : planetHouses.keySet()) {
 			

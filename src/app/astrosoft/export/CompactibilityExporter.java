@@ -15,13 +15,19 @@ import app.astrosoft.consts.Language;
 import app.astrosoft.consts.Varga;
 import app.astrosoft.consts.XmlConsts;
 import app.astrosoft.core.Compactibility;
+import static app.astrosoft.core.Compactibility.getDoshaTableColumnMetaData;
+import static app.astrosoft.core.Compactibility.getKutaTableColumnMetaData;
 import app.astrosoft.core.Horoscope;
+import static app.astrosoft.export.FOPTransformer.exportToPDF;
 import app.astrosoft.pref.AstrosoftPref;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
+import static java.lang.String.valueOf;
+import static java.util.logging.Logger.getLogger;
 
 public class CompactibilityExporter extends AbstractExporter {
 
-	private static final Logger log = Logger.getLogger(CompactibilityExporter.class.getName());
+	private static final Logger log = getLogger(CompactibilityExporter.class.getName());
 
 	public CompactibilityExporter(String file) {
 		super(file);
@@ -37,7 +43,7 @@ public class CompactibilityExporter extends AbstractExporter {
 			xmlWriter.add(xmlef.createNamespace("xsi",XmlConsts.XML_NS));
 			xmlWriter.add(xmlef.createStartElement(XmlConsts.COMPACTIBILITY_TAG, null,null));
 			xmlWriter.add(xmlef.createAttribute(XmlConsts.Title, compactibility.getTitle()));
-			xmlWriter.add(xmlef.createAttribute(XmlConsts.hasHoroscope, String.valueOf(compactibility.hasHoroscope())));
+			xmlWriter.add(xmlef.createAttribute(XmlConsts.hasHoroscope, valueOf(compactibility.hasHoroscope())));
 
 			xmlWriter.add(xmlef.createStartElement(XmlConsts.BOY_TAG, null,null));
 			exportTableData(compactibility.getBoyInfo(), XmlConsts.HOROSCOPE_INFO_TAG, XmlConsts.INFO_TAG);
@@ -57,10 +63,10 @@ public class CompactibilityExporter extends AbstractExporter {
 			xmlWriter.add(xmlef.createEndElement(XmlConsts.GIRL_TAG, null));
 
 
-			exportTableData(compactibility.getKutaTableData(), Compactibility.getKutaTableColumnMetaData(), XmlConsts.KUTA_ANALYSIS_TAG, XmlConsts.KUTA_MATCH_TAG);
+			exportTableData(compactibility.getKutaTableData(), getKutaTableColumnMetaData(), XmlConsts.KUTA_ANALYSIS_TAG, XmlConsts.KUTA_MATCH_TAG);
 
 			if (compactibility.hasHoroscope()){
-				exportTableData(compactibility.getDoshaTableData(), Compactibility.getDoshaTableColumnMetaData(), XmlConsts.DOSHA_ANALYSIS_TAG, XmlConsts.PLANET_DOSHA_TAG);
+				exportTableData(compactibility.getDoshaTableData(), getDoshaTableColumnMetaData(), XmlConsts.DOSHA_ANALYSIS_TAG, XmlConsts.PLANET_DOSHA_TAG);
 			}
 
 			xmlWriter.add(xmlef.createEndElement(XmlConsts.COMPACTIBILITY_TAG, null));
@@ -76,7 +82,7 @@ public class CompactibilityExporter extends AbstractExporter {
 	public static void main(String[] args) {
 
 
-		AstrosoftPref pref = AstroSoft.getPreferences();
+		AstrosoftPref pref = getPreferences();
 		pref.setAyanamsa(Ayanamsa.KRISHNAMURTHI);
 
 		Language currLang = pref.getLanguage();
@@ -98,7 +104,7 @@ public class CompactibilityExporter extends AbstractExporter {
 
 		compactibilityExporter.export2Xml(c);
 
-		FOPTransformer.exportToPDF(file, "C:/AstroSoft/resources/export/compactibility2pdf.xsl", "C:/AstroSoft/resources/export/compactibility.pdf");
+		exportToPDF(file, "C:/AstroSoft/resources/export/compactibility2pdf.xsl", "C:/AstroSoft/resources/export/compactibility.pdf");
 
 		pref.setLanguage(currLang);
 	}

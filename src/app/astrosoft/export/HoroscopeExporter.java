@@ -29,27 +29,36 @@ import app.astrosoft.beans.HousePosition;
 import app.astrosoft.beans.PlanetChartData;
 import app.astrosoft.beans.PlanetaryInfo;
 import app.astrosoft.consts.AshtavargaName;
+import static app.astrosoft.consts.AshtavargaName.ashtavargas;
 import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.Ayanamsa;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Language;
 import app.astrosoft.consts.Planet;
+import static app.astrosoft.consts.Planet.dasaLords;
 import app.astrosoft.consts.Rasi;
 import app.astrosoft.consts.Varga;
+import static app.astrosoft.consts.Varga.values;
 import app.astrosoft.consts.XmlConsts;
 import app.astrosoft.core.Ashtavarga;
 import app.astrosoft.core.Dasa;
 import app.astrosoft.core.Horoscope;
 import app.astrosoft.core.ShadBala;
 import app.astrosoft.core.Vimshottari;
+import static app.astrosoft.core.Vimshottari.getVimDasaTableColumnMetaData;
+import static app.astrosoft.export.FOPTransformer.exportToPDF;
 import app.astrosoft.pref.AstrosoftPref;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.table.ColumnMetaData;
 import app.astrosoft.ui.table.Table;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableDataFactory;
+import static app.astrosoft.ui.table.TableDataFactory.getReversedTable;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.util.AstroUtil;
+import static java.lang.String.valueOf;
+import static java.util.logging.Logger.getLogger;
 
 
 /**
@@ -66,7 +75,7 @@ import app.astrosoft.util.AstroUtil;
  */
 public class HoroscopeExporter extends AbstractExporter {
 	
-	private static final Logger log = Logger.getLogger(HoroscopeExporter.class.getName());
+	private static final Logger log = getLogger(HoroscopeExporter.class.getName());
 	
 	public HoroscopeExporter(String file) {
 		
@@ -87,7 +96,7 @@ public class HoroscopeExporter extends AbstractExporter {
 				
 				xmlWriter.add(xmlef.createStartElement(XmlConsts.ASHTVARGA_HOUSE_TAG, null,null));
 				
-				xmlWriter.add(xmlef.createAttribute(XmlConsts.Number, String.valueOf(rasi.ordinal()+1)));
+				xmlWriter.add(xmlef.createAttribute(XmlConsts.Number, valueOf(rasi.ordinal()+1)));
 				
 				xmlWriter.add(xmlef.createCharacters(varga.get(rasi).toString()));
 				
@@ -119,7 +128,7 @@ public class HoroscopeExporter extends AbstractExporter {
 			
 			xmlWriter.add(xmlef.createStartElement(XmlConsts.ASHTAVARGAS_TAG, null,null));
 			
-			for(AshtavargaName name : AshtavargaName.ashtavargas()){
+			for(AshtavargaName name : ashtavargas()){
 				
 				xmlWriter.add(xmlef.createStartElement(XmlConsts.ASHTAVARGA_TAG, null,null));
 				xmlWriter.add(xmlef.createAttribute(XmlConsts.Name, name.name()));
@@ -149,10 +158,10 @@ public class HoroscopeExporter extends AbstractExporter {
 			
 			xmlWriter.add(xmlef.createStartElement(XmlConsts.SHADBALAS_TAG, null,null));
 			
-			exportTableData(TableDataFactory.getReversedTable(shadBala.getPlanetBalaTableData(), shadBala.getPlanetBalaColumnMetaData(), AstrosoftTableColumn.Planet, AstrosoftTableColumn.Name), XmlConsts.SHADBALA, XmlConsts.BALA_TAG);
+			exportTableData(getReversedTable(shadBala.getPlanetBalaTableData(), shadBala.getPlanetBalaColumnMetaData(), AstrosoftTableColumn.Planet, AstrosoftTableColumn.Name), XmlConsts.SHADBALA, XmlConsts.BALA_TAG);
 			
-			exportTableData(TableDataFactory.getReversedTable(shadBala.getPlanetBalaTableData(), shadBala.getSthanaBalaColumnMetaData(), AstrosoftTableColumn.Planet, AstrosoftTableColumn.Name), XmlConsts.STHANABALA_TAG, XmlConsts.BALA_TAG);
-			exportTableData(TableDataFactory.getReversedTable(shadBala.getPlanetBalaTableData(), shadBala.getKalaBalaColumnMetaData(), AstrosoftTableColumn.Planet, AstrosoftTableColumn.Name), XmlConsts.KALABALA_TAG, XmlConsts.BALA_TAG);
+			exportTableData(getReversedTable(shadBala.getPlanetBalaTableData(), shadBala.getSthanaBalaColumnMetaData(), AstrosoftTableColumn.Planet, AstrosoftTableColumn.Name), XmlConsts.STHANABALA_TAG, XmlConsts.BALA_TAG);
+			exportTableData(getReversedTable(shadBala.getPlanetBalaTableData(), shadBala.getKalaBalaColumnMetaData(), AstrosoftTableColumn.Planet, AstrosoftTableColumn.Name), XmlConsts.KALABALA_TAG, XmlConsts.BALA_TAG);
 			
 			exportTableData(shadBala.getBhavaBalaTableData(), shadBala.getBhavaBalaColumnMetaData(), XmlConsts.BHAVABALA_TAG, XmlConsts.BALA_TAG);
 			
@@ -171,7 +180,7 @@ public class HoroscopeExporter extends AbstractExporter {
 			
 			xmlWriter.add(xmlef.createStartElement(XmlConsts.VARGA_CHART_TAG, null,null));
 			
-			for(Varga varga : Varga.values()) {
+			for(Varga varga : values()) {
 				
 				new PlanetChartData(varga,planetaryInfo).doExport(this);
 				
@@ -195,7 +204,7 @@ public class HoroscopeExporter extends AbstractExporter {
 			
 			StringBuilder attrVal = null;
 			
-			for(Planet p : Planet.dasaLords(v.getStartLord())){
+			for(Planet p : dasaLords(v.getStartLord())){
 				
 				Dasa d = dasa.get(p);
 				
@@ -223,7 +232,7 @@ public class HoroscopeExporter extends AbstractExporter {
 					
 					Attribute subDasa = xmlef.createAttribute(XmlConsts.Dasa, attrVal.toString() );
 					
-					exportTableData(v.getVimDasaTableData(sd),Vimshottari.getVimDasaTableColumnMetaData(), XmlConsts.SUB_DASA_TAG, subDasa, XmlConsts.ANTHARA_DASA_TAG);
+					exportTableData(v.getVimDasaTableData(sd),getVimDasaTableColumnMetaData(), XmlConsts.SUB_DASA_TAG, subDasa, XmlConsts.ANTHARA_DASA_TAG);
 					
 				}
 				xmlWriter.add(xmlef.createEndElement(XmlConsts.MAJOR_DASA_TAG, null));
@@ -275,8 +284,8 @@ public class HoroscopeExporter extends AbstractExporter {
 	
 	public static void main(String[] args) {
 		
-		AstroSoft.getPreferences().setAyanamsa(Ayanamsa.KRISHNAMURTHI);
-		AstroSoft.getPreferences().setLanguage(Language.TAMIL);
+		getPreferences().setAyanamsa(Ayanamsa.KRISHNAMURTHI);
+		getPreferences().setLanguage(Language.TAMIL);
 		
 		Horoscope h = new Horoscope("Raja", 11, 12, 1980, 1, 44,
 				77 + (44.00 / 60.00), 11 + (22.00 / 60.00), 5.5, "Erode");
@@ -294,7 +303,7 @@ public class HoroscopeExporter extends AbstractExporter {
 		horoscopeExporter.export2Xml(h);
 		
 		
-		FOPTransformer.exportToPDF(file, "C:/AstroSoft/resources/export/horoscope2pdf.xsl", "C:/AstroSoft/resources/export/astrosoft.pdf");
+		exportToPDF(file, "C:/AstroSoft/resources/export/horoscope2pdf.xsl", "C:/AstroSoft/resources/export/astrosoft.pdf");
 	}
 
 	

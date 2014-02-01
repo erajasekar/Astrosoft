@@ -25,7 +25,7 @@ public class ButtonItemListener extends Observable
             calendar.setDay(button.getText());
             Integer temp = (Integer)calendar.yearCombo.getSelectedItem();
             calendar.setYear(temp.toString());
-            temp = new Integer(calendar.monthCombo.getSelectedIndex() + 1);
+            temp = calendar.monthCombo.getSelectedIndex() + 1;
             calendar.setMonth(temp.toString());
             setChanged();
             notifyObservers();

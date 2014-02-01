@@ -54,14 +54,10 @@ public class BirthInputDialog extends AstrosoftDialog {
 		
 		add(dlgPanel);
 		
-		okButton.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				parent.computeHoroscope(birthDataPanel.getBirthData());
-				closeDialog();
-			}
-			
-		});
+		okButton.addActionListener((ActionEvent e) -> {
+                    parent.computeHoroscope(birthDataPanel.getBirthData());
+                    closeDialog();
+                });
 		
 		setBackground(UIConsts.THEME_CLR);
 	}

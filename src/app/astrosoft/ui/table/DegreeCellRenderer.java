@@ -12,6 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.table.DefaultTableCellRenderer;
 
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.dms;
 
 public class DegreeCellRenderer extends DefaultTableCellRenderer {
 	
@@ -25,7 +26,7 @@ public class DegreeCellRenderer extends DefaultTableCellRenderer {
 	protected void setValue(Object value) {
 		
 		if (value instanceof Double) {
-			setValue(AstroUtil.dms((Double)value));
+			setValue(dms((Double)value));
 		}else{
 			super.setValue(value);
 		}

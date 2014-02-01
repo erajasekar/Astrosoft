@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import static java.util.logging.Logger.getLogger;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -23,7 +24,7 @@ import org.hibernate.tool.hbm2ddl.SchemaExport;
 
 public class JPAUtil {
 	
-	private static final Logger log = Logger.getLogger(JPAUtil.class.getName());
+	private static final Logger log = getLogger(JPAUtil.class.getName());
 	
 	public static final String PERSISTENT_UNIT_NAME = "astrosoft";
 

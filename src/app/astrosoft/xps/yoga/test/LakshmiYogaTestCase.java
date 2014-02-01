@@ -26,6 +26,7 @@ import app.astrosoft.consts.YogaCombination;
 import app.astrosoft.test.SampleHoroscopes;
 import app.astrosoft.xps.beans.PlanetChart;
 import app.astrosoft.xps.yoga.test.YogaAnalysisTestHelper.SAMPLE_HOROSCOPE;
+import static java.util.EnumSet.of;
 
 @SuppressWarnings("unchecked")
 public class LakshmiYogaTestCase extends YogaAnalysisTestCase {
@@ -41,7 +42,7 @@ public class LakshmiYogaTestCase extends YogaAnalysisTestCase {
 	
 		setUp("Lakshmi Yoga");
 		
-		Set<Planet> powerful = EnumSet.of(Planet.Mercury);
+		Set<Planet> powerful = of(Planet.Mercury);
 		
 		loadFacts(chart, powerful);
 		getSession().fireAllRules();
@@ -59,7 +60,7 @@ public class LakshmiYogaTestCase extends YogaAnalysisTestCase {
 	
 		setUp("Lakshmi Yoga");
 		
-		Set<Planet> powerful = EnumSet.of(Planet.Mercury);
+		Set<Planet> powerful = of(Planet.Mercury);
 		
 		loadFacts(chart, powerful);
 		getSession().fireAllRules();
@@ -77,7 +78,7 @@ public class LakshmiYogaTestCase extends YogaAnalysisTestCase {
 	
 		setUp("Lakshmi Yoga");
 		
-		Set<Planet> powerful = EnumSet.of(Planet.Mercury);
+		Set<Planet> powerful = of(Planet.Mercury);
 		
 		loadFacts(chart, powerful);
 		getSession().fireAllRules();
@@ -95,7 +96,7 @@ public class LakshmiYogaTestCase extends YogaAnalysisTestCase {
 	
 		setUp("Lakshmi Yoga");
 		
-		Set<Planet> powerful = EnumSet.of(Planet.Venus);
+		Set<Planet> powerful = of(Planet.Venus);
 		
 		loadFacts(chart, powerful);
 		getSession().fireAllRules();
@@ -113,7 +114,7 @@ public class LakshmiYogaTestCase extends YogaAnalysisTestCase {
 	
 		setUp("Lakshmi Yoga");
 		
-		Set<Planet> powerful = EnumSet.of(Planet.Venus);
+		Set<Planet> powerful = of(Planet.Venus);
 		
 		loadFacts(chart, powerful);
 		getSession().fireAllRules();

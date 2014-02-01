@@ -18,15 +18,18 @@ import app.astrosoft.ui.table.ColumnMetaData;
 import app.astrosoft.ui.table.Table;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableRowData;
+import static java.util.Collections.reverseOrder;
+import static java.util.Collections.sort;
+import static java.util.Collections.sort;
 
 public class Utils {
 
 	public static <K,V extends Comparable<V>> List<ComparableEntry<K,V>> sortMap(Set<Map.Entry<K,V>> entrySet, boolean isDesc, Comparator<ComparableEntry> comparator){
 		
-		List<ComparableEntry<K,V>> entries = new ArrayList<ComparableEntry<K,V>>();
+		List<ComparableEntry<K,V>> entries = new ArrayList<>();
 		
 		for (Map.Entry<K,V> entry : entrySet) {
-			entries.add(new ComparableEntry<K,V>(entry));
+			entries.add(new ComparableEntry<>(entry));
 		}
 	
 		return sortEntryList(entries, isDesc, comparator);
@@ -45,12 +48,12 @@ public class Utils {
 
 		if (comparator == null){
 			if (isDesc){
-				Collections.sort(entries, Collections.reverseOrder());
+				sort(entries, reverseOrder());
 			}else{
-				Collections.sort(entries);
+				sort(entries);
 			}
 		}else{
-			Collections.sort(entries, comparator);
+			sort(entries, comparator);
 		}
 		
 		return entries;

@@ -17,13 +17,21 @@ import java.util.prefs.PreferenceChangeListener;
 import java.util.prefs.Preferences;
 
 import app.astrosoft.beans.Place;
+import static app.astrosoft.beans.Place.getDefault;
 import app.astrosoft.consts.Ayanamsa;
+import static app.astrosoft.consts.Ayanamsa.getDefault;
 import app.astrosoft.consts.Language;
+import static app.astrosoft.consts.Language.getDefault;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.dateToTimeDouble;
+import static java.lang.Enum.valueOf;
+import static java.lang.System.getProperty;
+import static java.util.logging.Logger.getLogger;
+import static java.util.prefs.Preferences.systemNodeForPackage;
 
 public class AstrosoftPref {
 
-	private static final Logger log = Logger.getLogger(AstrosoftPref.class.getName());
+	private static final Logger log = getLogger(AstrosoftPref.class.getName());
 
 	public static enum Preference {
 
@@ -39,13 +47,13 @@ public class AstrosoftPref {
 	
 	public static String defaultAcrobatExecutable = "";
 	
-	private static String defaultAstrosoftFilesDir = System.getProperty("user.home") + File.separator;
+	private static String defaultAstrosoftFilesDir = getProperty("user.home") + File.separator;
 
-	Preferences root = Preferences.systemNodeForPackage(AstrosoftPref.class);
+	Preferences root = systemNodeForPackage(AstrosoftPref.class);
 
 	public AstrosoftPref() {
 
-		if (System.getProperty("os.name").toLowerCase().indexOf("windows") >= 0) {
+		if (getProperty("os.name").toLowerCase().indexOf("windows") >= 0) {
 			defaultAstrosoftFilesDir = defaultAstrosoftFilesDir + File.separator + "My Documents" + File.separator;
 		}
 		if (root.getBoolean(Preference.IsInitialized.name(),
@@ -109,12 +117,12 @@ public class AstrosoftPref {
 	
 	private void setDefaults() {
 
-		setLanguage(Language.getDefault());
+		setLanguage(getDefault());
 		setIsInitialized(true);
 		setPanCalcTime(defaultPanCalcTime);
 		setEphCalcTime(defaultEphCalcTime);
-		setAyanamsa(Ayanamsa.getDefault());
-		setPlace(Place.getDefault());
+		setAyanamsa(getDefault());
+		setPlace(getDefault());
 		setAcrobatExecutable(defaultAcrobatExecutable);
 		setAstrosoftFilesDir(defaultAstrosoftFilesDir);
 		
@@ -129,12 +137,12 @@ public class AstrosoftPref {
 	}
 	
 	public Ayanamsa getAyanamsa(){
-		return Enum.valueOf(Ayanamsa.class,root.get(Preference.Ayanamsa.name(), Ayanamsa.getDefault().name()));
+		return valueOf(Ayanamsa.class,root.get(Preference.Ayanamsa.name(), getDefault().name()));
 	}
 
 	public Language getLanguage() {
 
-		return Enum.valueOf(Language.class,root.get(Preference.Language.name(), Language.getDefault().name()));
+		return valueOf(Language.class,root.get(Preference.Language.name(), getDefault().name()));
 	}
 
 	public double getEphCalcTime(){
@@ -147,7 +155,7 @@ public class AstrosoftPref {
 
 	public Place getPlace() {
 
-		Place defaultPlace = Place.getDefault();
+		Place defaultPlace = getDefault();
 
 		Preferences placeNode = root.node("Place");
 
@@ -205,11 +213,11 @@ public class AstrosoftPref {
 
 		case PanCalcTime:
 
-			setPanCalcTime(AstroUtil.dateToTimeDouble((Date)value));
+			setPanCalcTime(dateToTimeDouble((Date)value));
 			break;
 		case EphCalcTime:
 
-			setEphCalcTime(AstroUtil.dateToTimeDouble((Date)value));
+			setEphCalcTime(dateToTimeDouble((Date)value));
 			break;
 		case Place:
 			setPlace((Place) value);

@@ -23,7 +23,7 @@ public class ComboBoxItemListener
             String monthSelected = calendar.getMonth();
             String yearSelected = calendar.getYear();*/
             Integer year = (Integer)calendar.yearCombo.getSelectedItem();
-            calendar.showCalendarForDate(year.intValue(), month + 1);
+            calendar.showCalendarForDate(year, month + 1);
             
             /*calendar.setDay(daySelected);
             //System.out.println(monthSelected + " , " + month);

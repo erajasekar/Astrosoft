@@ -16,6 +16,7 @@ import app.astrosoft.consts.Roman;
 import app.astrosoft.consts.TableStyle;
 import app.astrosoft.core.Ephemeris.EphData;
 import app.astrosoft.ui.util.UIUtil;
+import static app.astrosoft.ui.util.UIUtil.getSourceTableCell;
 import app.astrosoft.ui.window.AstrosoftWindow;
 import app.astrosoft.ui.window.TablePopupWindowModel;
 
@@ -126,7 +127,7 @@ public class AstrosoftTable extends JTable {
         	Cell source;
         	public void mousePressed(MouseEvent e) {
         		
-        		source = UIUtil.getSourceTableCell(e); 
+        		source = getSourceTableCell(e); 
         		
         		if (!source.isAny() && cell.equals(source) ){
         			listener.showPopup(source, e.getPoint());
@@ -135,7 +136,7 @@ public class AstrosoftTable extends JTable {
         	
         	public void mouseReleased(MouseEvent e) {
         		
-        		source = UIUtil.getSourceTableCell(e);
+        		source = getSourceTableCell(e);
         		
         		if (!source.isAny() && cell.equals(source) ){
         			listener.hidePopup(source, e.getPoint());
@@ -307,15 +308,10 @@ public class AstrosoftTable extends JTable {
     	
     	ListSelectionModel listSelectionModel = getSelectionModel();
     	listSelectionModel.addListSelectionListener(
-                new ListSelectionListener(){
-
-					public void valueChanged(ListSelectionEvent e) {
-						
-						TableData<E> data = getSelectedData();
-						l.selectionChanged(data);
-					}
-                	
-                });
+                (ListSelectionEvent e) -> {
+                    TableData<E> data = getSelectedData();
+                    l.selectionChanged(data);
+        });
     	
     	setSelectionModel(listSelectionModel);
     }
@@ -324,7 +320,7 @@ public class AstrosoftTable extends JTable {
     	
     	ListSelectionModel lsm = getSelectionModel();
     	
-    	List<Integer> indexes = new ArrayList<Integer>();
+    	List<Integer> indexes = new ArrayList<>();
     	
     	int start = lsm.getMinSelectionIndex();
     	int end = lsm.getMaxSelectionIndex();

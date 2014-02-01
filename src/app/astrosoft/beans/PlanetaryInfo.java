@@ -18,8 +18,15 @@ import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.Paksha;
 import app.astrosoft.consts.Varga;
 import app.astrosoft.consts.Karaka;
+import static app.astrosoft.consts.Karaka.ofIndex;
+import static app.astrosoft.consts.Paksha.ofDeg;
 import app.astrosoft.consts.Planet;
+import static app.astrosoft.consts.Planet.papaPlanets;
+import static app.astrosoft.consts.Planet.planetsAsc;
+import static app.astrosoft.consts.Planet.subaPlanets;
+import static app.astrosoft.consts.Planet.values;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.ofIndex;
 import app.astrosoft.core.VargaCharts;
 import app.astrosoft.export.Exportable;
 import app.astrosoft.export.Exporter;
@@ -27,13 +34,16 @@ import app.astrosoft.ui.table.DefaultColumnMetaData;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.dms;
 import app.astrosoft.util.ComparableEntry;
 import app.astrosoft.util.Mod;
 import app.astrosoft.util.Utils;
+import static app.astrosoft.util.Utils.sortEntryList;
+import static java.util.logging.Logger.getLogger;
 
 public class PlanetaryInfo implements Exportable{
 
-	private static final Logger log = Logger.getLogger(PlanetaryInfo.class.getName());
+	private static final Logger log = getLogger(PlanetaryInfo.class.getName());
 	
 	/*
 	 * public static enum Info{ Position, Direction, Rasi, Location,
@@ -78,41 +88,41 @@ public class PlanetaryInfo implements Exportable{
 
 		divChart = vc.getAllCharts();
 
-		planetRasi = new EnumMap<Planet, Rasi>(Planet.class);
+		planetRasi = new EnumMap<>(Planet.class);
 
-		planetNakshathra = new EnumMap<Planet, NakshathraPada>(Planet.class);
+		planetNakshathra = new EnumMap<>(Planet.class);
 
-		planetBhava = new EnumMap<Planet, Bhava>(Planet.class);
+		planetBhava = new EnumMap<>(Planet.class);
 
-		planetLocation = new EnumMap<Planet, Integer>(Planet.class);
+		planetLocation = new EnumMap<>(Planet.class);
 
-		planetRasiPosition = new EnumMap<Planet, Double>(Planet.class);
+		planetRasiPosition = new EnumMap<>(Planet.class);
 
-		planetKaraka = new EnumMap<Planet, Karaka>(Planet.class);
+		planetKaraka = new EnumMap<>(Planet.class);
 
-		List<ComparableEntry<Planet, Double>> rasiPositions = new ArrayList<ComparableEntry<Planet, Double>>();
+		List<ComparableEntry<Planet, Double>> rasiPositions = new ArrayList<>();
 
 		int lagna = housePosition.getAscendant().ordinal() + 1;
 
-		for (Planet p : Planet.planetsAsc()) {
+		for (Planet p : planetsAsc()) {
 
-			planetRasi.put(p, Rasi.ofIndex(divChart.get(Varga.Rasi).get(p) - 1));
+			planetRasi.put(p, ofIndex(divChart.get(Varga.Rasi).get(p) - 1));
 			planetNakshathra.put(p, new NakshathraPada(planetPosition.get(p)));
 			planetLocation.put(p, mod.sub(divChart.get(Varga.Rasi).get(p), lagna) + 1);
 			planetBhava.put(p, housePosition.getBhava(mod.sub(divChart.get(Varga.Bhava).get(p), lagna) + 1));
 			planetRasiPosition.put(p, planetPosition.get(p) % 30);
 			if (!p.isNode() && !p.isAsc()) {
-				rasiPositions.add(new ComparableEntry<Planet, Double>(p,
+				rasiPositions.add(new ComparableEntry<>(p,
 						planetRasiPosition.get(p)));
 			}
 		}
 
-		rasiPositions = Utils.sortEntryList(rasiPositions, true);
+		rasiPositions = sortEntryList(rasiPositions, true);
 
 		int i = 0;
 		for (ComparableEntry<Planet, Double> entry : rasiPositions) {
 
-			planetKaraka.put(entry.getKey(), Karaka.ofIndex(i++));
+			planetKaraka.put(entry.getKey(), ofIndex(i++));
 		}
 		
 		calcPlanetCharacter();
@@ -150,11 +160,11 @@ public class PlanetaryInfo implements Exportable{
 		if (varga.equals(Varga.Rasi)){
 			return planetRasi;
 		}
-		EnumMap<Planet, Rasi> planetInRasi = new EnumMap<Planet, Rasi>(Planet.class);
+		EnumMap<Planet, Rasi> planetInRasi = new EnumMap<>(Planet.class);
 		
-		for (Planet p : Planet.planetsAsc()) {
+		for (Planet p : planetsAsc()) {
 			
-			planetRasi.put(p, Rasi.ofIndex(divChart.get(varga).get(p) - 1));
+			planetRasi.put(p, ofIndex(divChart.get(varga).get(p) - 1));
 		}
 		
 		return planetInRasi;
@@ -177,9 +187,9 @@ public class PlanetaryInfo implements Exportable{
 		
 		log.fine("Lagna "  + lagna);
 		
-		EnumMap<Planet, Integer> location = new EnumMap<Planet, Integer>(Planet.class);
+		EnumMap<Planet, Integer> location = new EnumMap<>(Planet.class);
 		
-		for (Planet p : Planet.planetsAsc()) {
+		for (Planet p : planetsAsc()) {
 			
 			location.put(p, mod.sub(divChart.get(varga).get(p), lagna) + 1);
 		}
@@ -218,7 +228,7 @@ public class PlanetaryInfo implements Exportable{
 
 	public static EnumMap<Planet, Integer> positionToRasiNum(EnumMap<Planet, Double> position){
 		
-		EnumMap<Planet, Integer> planetRasiNum = new EnumMap<Planet, Integer>(Planet.class);
+		EnumMap<Planet, Integer> planetRasiNum = new EnumMap<>(Planet.class);
 		
 		for(Entry<Planet, Double> e : position.entrySet()){
 			planetRasiNum.put(e.getKey(), (int)(e.getValue() / 30) + 1);
@@ -229,15 +239,15 @@ public class PlanetaryInfo implements Exportable{
 	
 	private void calcPlanetCharacter() {
 		
-		planetCharacter = new EnumMap<Planet, Boolean>(Planet.class);
-		for(Planet p : Planet.subaPlanets()){
+		planetCharacter = new EnumMap<>(Planet.class);
+		for(Planet p : subaPlanets()){
 			planetCharacter.put(p, true);
 		}
-		for(Planet p : Planet.papaPlanets()){
+		for(Planet p : papaPlanets()){
 			planetCharacter.put(p, false);
 		}
 		
-		Paksha pak = Paksha.ofDeg(getPlanetPosition(Planet.Sun),getPlanetPosition(Planet.Moon));
+		Paksha pak = ofDeg(getPlanetPosition(Planet.Sun),getPlanetPosition(Planet.Moon));
 		planetCharacter.put(Planet.Moon, pak.isShukla());
 		
 		//System.out.println(planetCharacter);
@@ -309,8 +319,8 @@ public class PlanetaryInfo implements Exportable{
 
 		StringBuilder sb = new StringBuilder();
 
-		for (Planet p : Planet.planetsAsc()) {
-			sb.append(p + "\t" + AstroUtil.dms(planetPosition.get(p)) + "\t"
+		for (Planet p : planetsAsc()) {
+			sb.append(p + "\t" + dms(planetPosition.get(p)) + "\t"
 					+ planetRasiPosition.get(p) + "\t");
 			if (planetKaraka.containsKey(p)) {
 				sb.append(planetKaraka.get(p));
@@ -354,7 +364,7 @@ public class PlanetaryInfo implements Exportable{
 
 		public PlanetaryInfoRow getRow(int index) {
 
-			return new PlanetaryInfoRow(Planet.values()[index]);
+			return new PlanetaryInfoRow(values()[index]);
 		}
 
 		public int getRowCount() {

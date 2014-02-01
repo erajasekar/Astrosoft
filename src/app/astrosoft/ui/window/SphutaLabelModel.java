@@ -7,6 +7,7 @@
 package app.astrosoft.ui.window;
 
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.dms;
 
 public class SphutaLabelModel extends DefaultWindowLabelModel {
 
@@ -15,10 +16,10 @@ public class SphutaLabelModel extends DefaultWindowLabelModel {
 	}
 	
 	public SphutaLabelModel(double deg){
-		super(AstroUtil.dms(deg));
+		super(dms(deg));
 	}
 	
 	public void setSphuta(double deg){
-		super.setText(AstroUtil.dms(deg));
+		super.setText(dms(deg));
 	}
 }

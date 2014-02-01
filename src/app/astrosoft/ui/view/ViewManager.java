@@ -54,7 +54,7 @@ public class ViewManager {
 
 		public static Set<Command> commands(){
 
-			Set<Command> cmds = new HashSet<Command>();
+			Set<Command> cmds = new HashSet<>();
 			for(View v : values()){
 				cmds.add(Command.valueOf(v.name()));
 			}

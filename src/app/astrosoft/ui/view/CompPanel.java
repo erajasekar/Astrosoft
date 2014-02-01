@@ -20,6 +20,9 @@ import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.TableStyle;
 import app.astrosoft.consts.Varga;
 import app.astrosoft.core.Compactibility;
+import static app.astrosoft.core.Compactibility.getDoshaTableColumnMetaData;
+import static app.astrosoft.core.Compactibility.getInfoTableColumnMetaData;
+import static app.astrosoft.core.Compactibility.getKutaTableColumnMetaData;
 import app.astrosoft.ui.comp.Chart;
 import app.astrosoft.ui.comp.TitleLabel;
 import app.astrosoft.ui.table.AstrosoftTable;
@@ -69,10 +72,10 @@ public class CompPanel extends javax.swing.JPanel {
 	private void displayInfo() {
 
 		AstrosoftTableModel boyModel = new AstrosoftTableModel(c
-				.getBoyInfo(), Compactibility.getInfoTableColumnMetaData());
+				.getBoyInfo(), getInfoTableColumnMetaData());
 		
 		AstrosoftTableModel girlModel = new AstrosoftTableModel(c
-				.getGirlInfo(), Compactibility.getInfoTableColumnMetaData());
+				.getGirlInfo(), getInfoTableColumnMetaData());
 		
 		AstrosoftTable boyTable = new AstrosoftTable(boyModel, TableStyle.NONE);
 		
@@ -135,7 +138,7 @@ public class CompPanel extends javax.swing.JPanel {
 	private void displayKutas() {
 
 		SortableTableModel kutaModel = new SortableTableModel(c
-				.getKutaTableData(), Compactibility.getKutaTableColumnMetaData());
+				.getKutaTableData(), getKutaTableColumnMetaData());
 		SortableTable kutaTable = new SortableTable(kutaModel, TableStyle.STANDARD);
 		kutaTable.setColumnWidth(100, AstrosoftTableColumn.Kuta);
 		kutaTable.setRowColor(13, Color.RED);
@@ -154,7 +157,7 @@ public class CompPanel extends javax.swing.JPanel {
 
 		ypos = ypos - 23;
 		final AstrosoftTable doshaTable = new AstrosoftTable( new AstrosoftTableModel(c
-				.getDoshaTableData(), Compactibility.getDoshaTableColumnMetaData()), TableStyle.STANDARD);
+				.getDoshaTableData(), getDoshaTableColumnMetaData()), TableStyle.STANDARD);
 		
 		doshaTable.setRowColor(5, Color.RED);
 		

@@ -20,10 +20,11 @@ import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 
 import app.astrosoft.ui.util.UIConsts;
+import static java.util.logging.Logger.getLogger;
 
 public class ProgressBarPanel extends JPanel {
 	
-	private static final Logger log = Logger.getLogger(ProgressBarPanel.class.getName());
+	private static final Logger log = getLogger(ProgressBarPanel.class.getName());
 
 	private JProgressBar pbar;
 	private FutureTask<Object> task;

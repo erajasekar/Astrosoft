@@ -22,6 +22,7 @@ import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.TitledBorder;
 
 import app.astrosoft.ui.AstroSoft;
+import static javax.swing.BorderFactory.createEtchedBorder;
 
 public class UIConsts {
 
@@ -145,7 +146,7 @@ public class UIConsts {
 	
 	public static Border getChartBorder(){
 		//return BorderFactory.createEtchedBorder(EtchedBorder.RAISED, ROSE, Color.WHITE);
-		return BorderFactory.createEtchedBorder(EtchedBorder.RAISED, Color.ORANGE, Color.WHITE);
+		return createEtchedBorder(EtchedBorder.RAISED, Color.ORANGE, Color.WHITE);
 		//return BorderFactory.createEtchedBorder(EtchedBorder.LOWERED, YELLOWISH_WHITE.brighter(), YELLOWISH_WHITE.darker());
 		//new LineBorder(Color.GRAY, 1, true);
 		//BorderFactory.createBevelBorder(BevelBorder.RAISED);

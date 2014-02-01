@@ -16,7 +16,9 @@ import javax.swing.JOptionPane;
 
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.comp.PlaceChooser;
+import static app.astrosoft.ui.dlg.OptionDialog.showDialog;
 import app.astrosoft.ui.util.UIConsts;
 import app.astrosoft.ui.util.UIUtil;
 import app.astrosoft.util.Timer;
@@ -35,12 +37,9 @@ public class PlaceOptionDialog extends AstrosoftDialog {
 	     
 	     initComponents();
 	     //t.printAndReset();
-	     okButton.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				okClicked();
-			}
-	     });
+	     okButton.addActionListener((ActionEvent e) -> {
+                 okClicked();
+        });
 	     //t.printAndReset();
 	     setVisible(true);
 	     //t.printAndReset();
@@ -70,10 +69,10 @@ public class PlaceOptionDialog extends AstrosoftDialog {
 	private void okClicked() {
 		
 		try{
-		AstroSoft.getPreferences().setPlace(placeChooser.getSelectedPlace());
+		getPreferences().setPlace(placeChooser.getSelectedPlace());
 		closeDialog();
 		}catch(Exception e){
-			OptionDialog.showDialog("Place Enter Valid Latitude/Longitude ", JOptionPane.ERROR_MESSAGE);
+			showDialog("Place Enter Valid Latitude/Longitude ", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 }

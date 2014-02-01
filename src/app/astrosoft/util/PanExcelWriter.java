@@ -7,12 +7,14 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import app.astrosoft.beans.Place;
+import static app.astrosoft.beans.Place.getDefault;
 import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.XmlConsts;
 import app.astrosoft.core.Panchang;
 import app.astrosoft.core.PanchangList;
 import app.astrosoft.pref.AstrosoftPref;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.table.MapTableRow;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableRowData;
@@ -41,8 +43,8 @@ public class PanExcelWriter {
 	
 	public static void main(String[] args) throws Exception {
 
-		AstrosoftPref pref = AstroSoft.getPreferences();
-		pref.setPlace(Place.getDefault());
+		AstrosoftPref pref = getPreferences();
+		pref.setPlace(getDefault());
 		
 		new PanExcelWriter(2009);
 	

@@ -18,9 +18,17 @@ import org.w3c.dom.NodeList;
 
 import app.astrosoft.consts.Sex;
 import app.astrosoft.consts.WeekDay;
+import static app.astrosoft.consts.WeekDay.ofDay;
 import app.astrosoft.consts.XmlConsts;
 import app.astrosoft.export.XMLHelper;
+import static app.astrosoft.export.XMLHelper.addElement;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.decimal;
+import static app.astrosoft.util.AstroUtil.formatDate;
+import static app.astrosoft.util.AstroUtil.formatDateTime;
+import static app.astrosoft.util.AstroUtil.getCalendar;
+import static app.astrosoft.util.AstroUtil.parseDateTime;
+import static java.lang.Enum.valueOf;
 import swisseph.SweDate;
 
 public class BirthData {
@@ -57,11 +65,11 @@ public class BirthData {
         birthSeconds = secs;
         birthPlace = place;
         
-        birthTime = AstroUtil.decimal(hr, min, 0);
-        birthGMT = AstroUtil.decimal(hr, min, 0) - birthPlace.timeZone();
+        birthTime = decimal(hr, min, 0);
+        birthGMT = decimal(hr, min, 0) - birthPlace.timeZone();
         birthSD = new SweDate(year, month, date, birthGMT);
  		birthDay = new GregorianCalendar(year, month - 1, date, birthHour, birthMinutes, birthSeconds);
- 		birthWeekDay = WeekDay.ofDay(year, month, date);
+ 		birthWeekDay = ofDay(year, month, date);
 
     }
     
@@ -145,7 +153,7 @@ public class BirthData {
 		return birthPlace;
 	}
 	public String birthDayString(){
-		return AstroUtil.formatDate(birthDay.getTime());
+		return formatDate(birthDay.getTime());
 	}
 	
 	public Sex sex(){
@@ -156,13 +164,13 @@ public class BirthData {
 		
 		Element bdElement = doc.createElement(elementName);
 		
-		XMLHelper.addElement(doc, bdElement, XmlConsts.Name, this.personName);
+		addElement(doc, bdElement, XmlConsts.Name, this.personName);
 		
 		if (this.sex != null){
-			XMLHelper.addElement(doc, bdElement, XmlConsts.Sex, this.sex.name());
+			addElement(doc, bdElement, XmlConsts.Sex, this.sex.name());
 		}
 		
-		XMLHelper.addElement(doc, bdElement, XmlConsts.DateTime, AstroUtil.formatDateTime(this.birthDay.getTime()));
+		addElement(doc, bdElement, XmlConsts.DateTime, formatDateTime(this.birthDay.getTime()));
 		
 		bdElement.appendChild(birthPlace.toXMLElement(doc));
 		
@@ -188,18 +196,20 @@ public class BirthData {
 		
 			Node child = children.item(i);
 			
-			if (child.getNodeName().equals(XmlConsts.Name)){
-				name = child.getTextContent();
-			}
-			else if (child.getNodeName().equals(XmlConsts.Sex)){
-				sex = Enum.valueOf(Sex.class, child.getTextContent());
-			}
-			else if (child.getNodeName().equals(XmlConsts.DateTime)){
-				birthDay = AstroUtil.getCalendar(AstroUtil.parseDateTime(child.getTextContent()));
-			}
-			else if(child.getNodeName().equals(XmlConsts.Place)){
-				place = Place.valueOfXMLNode(child);
-			}
+            switch (child.getNodeName()) {
+                case XmlConsts.Name:
+                    name = child.getTextContent();
+                    break;
+                case XmlConsts.Sex:
+                    sex = valueOf(Sex.class, child.getTextContent());
+                    break;
+                case XmlConsts.DateTime:
+                    birthDay = getCalendar(parseDateTime(child.getTextContent()));
+                    break;
+                case XmlConsts.Place:
+                    place = Place.valueOfXMLNode(child);
+                    break;
+            }
 			
 		}
 		

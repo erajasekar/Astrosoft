@@ -9,7 +9,9 @@
 package app.astrosoft.ui.table;
 
 import app.astrosoft.consts.AstrosoftTableColumn;
+import static app.astrosoft.ui.table.TableDataFactory.getSortedTableData;
 import java.util.Collections;
+import static java.util.Collections.reverseOrder;
 import java.util.Comparator;
 import java.util.List;
 
@@ -45,10 +47,10 @@ public class SortableTableModel extends AstrosoftTableModel {
 
             // If descending reverse comparator
             if (sortInfo.getSortDir()){
-            	cmp = Collections.reverseOrder(cmp);
+            	cmp = reverseOrder(cmp);
             }
             
-            rows = TableDataFactory.getSortedTableData(rows, cmp);
+            rows = getSortedTableData(rows, cmp);
             //Collections.sort(rows, cmp);
             
         }

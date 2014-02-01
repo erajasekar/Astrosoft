@@ -20,12 +20,16 @@ import javax.swing.SpringLayout;
 
 import app.astrosoft.exception.AstrosoftException;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.comp.FileChooserPanel;
 import app.astrosoft.ui.comp.ProgressBarPanel;
 import app.astrosoft.ui.comp.ProgressListener;
+import static app.astrosoft.ui.dlg.OptionDialog.showDialog;
 import app.astrosoft.ui.util.SpringUtilities;
+import static app.astrosoft.ui.util.SpringUtilities.makeCompactGrid;
 import app.astrosoft.ui.util.UIConsts;
 import app.astrosoft.util.FileOps;
+import static app.astrosoft.util.FileOps.openDocument;
 
 public class ExportDialog extends AstrosoftDialog{
 	
@@ -56,18 +60,12 @@ public class ExportDialog extends AstrosoftDialog{
 		
 		dlgPanel.setLayout(new SpringLayout());
 		
-		ProgressListener listener = new ProgressListener(){
-
-			public void completed() {
-				exportCompleted();	
-			}
-			
-		};
+		ProgressListener listener = this::exportCompleted;
 		
 		ProgressBarPanel pbarPanel = new ProgressBarPanel(progressSize, task, "Exporting", listener);
 		dlgPanel.add(pbarPanel);
 		
-		acrobatPanel = new FileChooserPanel(acrobatSize,AstroSoft.getPreferences().getAcrobatExecutable(), "Acrobat Executable", FileOps.FileDialogMode.OPEN);
+		acrobatPanel = new FileChooserPanel(acrobatSize,getPreferences().getAcrobatExecutable(), "Acrobat Executable", FileOps.FileDialogMode.OPEN);
 		dlgPanel.add(acrobatPanel);
 		
 		JPanel p = new JPanel();
@@ -79,7 +77,7 @@ public class ExportDialog extends AstrosoftDialog{
 		open.setEnabled(false);
 		close.setEnabled(false);
 		
-		SpringUtilities.makeCompactGrid(dlgPanel, 3, 1, 30,30,30,30);
+		makeCompactGrid(dlgPanel, 3, 1, 30,30,30,30);
 		
 		add(dlgPanel);
 			
@@ -89,24 +87,13 @@ public class ExportDialog extends AstrosoftDialog{
 	}
 
 	private void addListeners() {
-		open.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				
-				openClicked();
-				
-			}
-	    	
-	    });
+		open.addActionListener((ActionEvent e) -> {
+                    openClicked();
+        });
 		
-		close.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				
-				dispose();
-			}
-	    	
-	    });
+		close.addActionListener((ActionEvent e) -> {
+                    dispose();
+        });
 		
 	}
 
@@ -119,11 +106,11 @@ public class ExportDialog extends AstrosoftDialog{
 	protected void openClicked() {
 		
 		try {
-			AstroSoft.getPreferences().setAcrobatExecutable(acrobatPanel.getFilePath());
-			FileOps.openDocument(outputFile);
+			getPreferences().setAcrobatExecutable(acrobatPanel.getFilePath());
+			openDocument(outputFile);
 		}catch(AstrosoftException e){
 			
-			OptionDialog.showDialog(e.getMessage(),JOptionPane.ERROR_MESSAGE);
+			showDialog(e.getMessage(),JOptionPane.ERROR_MESSAGE);
 			//JOptionPane.showMessageDialog (this, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 			
 		}

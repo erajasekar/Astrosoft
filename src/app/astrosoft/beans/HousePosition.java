@@ -8,15 +8,19 @@ package app.astrosoft.beans;
 
 import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.ofDeg;
 import app.astrosoft.consts.Roman;
+import static app.astrosoft.consts.Roman.of;
 import app.astrosoft.export.Exportable;
 import app.astrosoft.export.Exporter;
 import app.astrosoft.ui.table.ColumnMetaData;
 import app.astrosoft.ui.table.DefaultColumnMetaData;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableDataFactory;
+import static app.astrosoft.ui.table.TableDataFactory.getTableData;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.dms;
 import app.astrosoft.util.Mod;
 
 public class HousePosition implements Exportable {
@@ -41,7 +45,7 @@ public class HousePosition implements Exportable {
 			this.mid = mid;
 			this.end = end;
 			this.length = mod.sub(end, start);
-			house = Rasi.ofDeg(mid);
+			house = ofDeg(mid);
 		}
 
 		public int bhava() {
@@ -72,7 +76,7 @@ public class HousePosition implements Exportable {
 
 			switch (col) {
 				case House :
-					return Roman.of(bhava());
+					return of(bhava());
 				case Bhava:
 					return house;
 				case Start :
@@ -94,10 +98,10 @@ public class HousePosition implements Exportable {
 			StringBuilder sb = new StringBuilder();
 
 			sb.append(bhava + "\t");
-			sb.append(AstroUtil.dms(start) + "\t");
-			sb.append(AstroUtil.dms(mid) + "\t");
-			sb.append(AstroUtil.dms(end) + "\t");
-			sb.append(AstroUtil.dms(length) + "\n");
+			sb.append(dms(start) + "\t");
+			sb.append(dms(mid) + "\t");
+			sb.append(dms(end) + "\t");
+			sb.append(dms(length) + "\n");
 			return sb.toString();
 		}
 	}
@@ -140,7 +144,7 @@ public class HousePosition implements Exportable {
 
 		int house = -1;
 		// FIXME: See if we can get it from somewhere
-		Rasi lagna = Rasi.ofDeg(ascendant);
+		Rasi lagna = ofDeg(ascendant);
 		double start = housePositions[0].start();
 		double end = 0;
 		// System.out.println("deg: " + deg + " start: " + start);
@@ -177,7 +181,7 @@ public class HousePosition implements Exportable {
 	}
 	
 	public Rasi getAscendant(){
-		return Rasi.ofDeg(ascendant);
+		return ofDeg(ascendant);
 	}
 
 	/**
@@ -198,7 +202,7 @@ public class HousePosition implements Exportable {
 	public TableData<Bhava> getBhavaTableData() {
 
 		if (bhavaTableData == null) {
-			bhavaTableData = TableDataFactory.getTableData(housePositions);
+			bhavaTableData = getTableData(housePositions);
 		}
 		return bhavaTableData;
 	}
@@ -238,8 +242,8 @@ public class HousePosition implements Exportable {
 
 		StringBuilder sb = new StringBuilder();
 
-		sb.append("Ascendant: " + AstroUtil.dms(ascendant) + "\n");
-		sb.append("Sidereal Time: " + AstroUtil.dms(siderealTime) + "\n");
+		sb.append("Ascendant: " + dms(ascendant) + "\n");
+		sb.append("Sidereal Time: " + dms(siderealTime) + "\n");
 
 		for (Bhava b : housePositions) {
 			sb.append(b + "\n");

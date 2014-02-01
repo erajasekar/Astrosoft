@@ -21,6 +21,7 @@ import javax.swing.JButton;
 import javax.swing.SwingConstants;
 
 import app.astrosoft.consts.Command;
+import static app.astrosoft.consts.Command.toolBarItems;
 import app.astrosoft.core.Horoscope;
 import app.astrosoft.ui.AstrosoftActionManager;
 
@@ -36,9 +37,9 @@ public class AstrosoftToolBar extends JToolBar
     public AstrosoftToolBar(Color mclr, AstrosoftActionManager actionMgr) {
         
     	
-    	buttons = new ArrayList<JButton>();
+    	buttons = new ArrayList<>();
     	
-    	for(Command toolBarItem : Command.toolBarItems()){
+    	for(Command toolBarItem : toolBarItems()){
     		buttons.add(new JButton(actionMgr.getAction(toolBarItem)));
     	}
     	
