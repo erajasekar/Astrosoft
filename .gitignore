@@ -14,3 +14,4 @@
 ^release$
 ^lib-unused$
 ^deploy\
+*.bak

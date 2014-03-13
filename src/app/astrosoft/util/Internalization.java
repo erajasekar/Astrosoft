@@ -71,64 +71,64 @@ public class Internalization  {
 	}
 	private static void addUnSupportedMsgs() {
 		unsupportedMsgs
-				.put(DisplayStrings.NAKPADA_STR.name(), "¿ì„ºò¾¢Ãõ À¡¾õ");
-		unsupportedMsgs.put(DisplayStrings.NAK_STR.name(), "¿ì„ºò¾¢Ãõ");
-		unsupportedMsgs.put(DisplayStrings.THITHI_PAK_STR.name(), "¾¢¾¢/Àì„õ");
+				.put(DisplayStrings.NAKPADA_STR.name(), "Â¿Ã¬Â„ÂºÃ²Â¾Â¢ÃƒÃµ Ã€Â¡Â¾Ãµ");
+		unsupportedMsgs.put(DisplayStrings.NAK_STR.name(), "Â¿Ã¬Â„ÂºÃ²Â¾Â¢ÃƒÃµ");
+		unsupportedMsgs.put(DisplayStrings.THITHI_PAK_STR.name(), "Â¾Â¢Â¾Â¢/Ã€Ã¬Â„Ãµ");
 		unsupportedMsgs.put(DisplayStrings.SARVAASHTAVARGA_STR.name(),
-				"º÷Å¡‰¼Å÷¸õ");
-		unsupportedMsgs.put(DisplayStrings.ASHTAVARGA_STR.name(), "«‰¼Å÷¸õ");
-		unsupportedMsgs.put(DisplayStrings.LONGITUDE_STR.name(), "«ì„¡õºõ");
+				"ÂºÃ·Ã…Â¡Â‰Â¼Ã…Ã·Â¸Ãµ");
+		unsupportedMsgs.put(DisplayStrings.ASHTAVARGA_STR.name(), "Â«Â‰Â¼Ã…Ã·Â¸Ãµ");
+		unsupportedMsgs.put(DisplayStrings.LONGITUDE_STR.name(), "Â«Ã¬Â„Â¡ÃµÂºÃµ");
 		unsupportedMsgs.put(DisplayStrings.SID_TIME_STR.name(),
-				"¿ì„ºò¾¢Ã §†¡¨Ã");
+				"Â¿Ã¬Â„ÂºÃ²Â¾Â¢Ãƒ Â§Â†Â¡Â¨Ãƒ");
 		unsupportedMsgs.put(DisplayStrings.SUNRISE_SET_STR.name(),
-				"İÃ¢Â ¯¾Âõ/«Š¾õ");
-		unsupportedMsgs.put(DisplayStrings.AYANAMSA_STR.name(), "«ÂÉ¡õ…õ");
-		unsupportedMsgs.put(DisplayStrings.THITHI_PAK_STR.name(), "¾¢¾¢/Àì„õ");
-		unsupportedMsgs.put(DisplayStrings.PAKSHA_STR.name(), "Àì„õ");
-		unsupportedMsgs.put(DisplayStrings.SUNSET_STR.name(), "İÃ¢Â «Š¾õ");
-		unsupportedMsgs.put(DisplayStrings.PLACE_STR.name(), "ş¼õ");
+				"ÃÃƒÂ¢Ã‚ Â¯Â¾Ã‚Ãµ/Â«ÂŠÂ¾Ãµ");
+		unsupportedMsgs.put(DisplayStrings.AYANAMSA_STR.name(), "Â«Ã‚Ã‰Â¡ÃµÂ…Ãµ");
+		unsupportedMsgs.put(DisplayStrings.THITHI_PAK_STR.name(), "Â¾Â¢Â¾Â¢/Ã€Ã¬Â„Ãµ");
+		unsupportedMsgs.put(DisplayStrings.PAKSHA_STR.name(), "Ã€Ã¬Â„Ãµ");
+		unsupportedMsgs.put(DisplayStrings.SUNSET_STR.name(), "ÃÃƒÂ¢Ã‚ Â«ÂŠÂ¾Ãµ");
+		unsupportedMsgs.put(DisplayStrings.PLACE_STR.name(), "Ã¾Â¼Ãµ");
 
-		unsupportedMsgs.put(DisplayStrings.DOSHA_STR.name(), "§¾¡„õ");
-		unsupportedMsgs.put(Rasi.Mesha.name(), "§Á„õ");
-		unsupportedMsgs.put(Rasi.Vrishabha.name(), "Ã¢„Àõ");
-		unsupportedMsgs.put(Rasi.Vrishabha.sym(), "Ã¢„");
-		unsupportedMsgs.put(Nakshathra.Ashwini.name(), "«ŠÅ¢É¢");
-		unsupportedMsgs.put(Nakshathra.Mrigasira.name(), "Á¢Õ¸„¢Ã¢¼õ");
-		unsupportedMsgs.put(Nakshathra.Hastam.name(), "†Š¾õ");
-		unsupportedMsgs.put(Kuta.Vasya.name(), "ÅŠÂõ");
-		unsupportedMsgs.put(Kuta.StreeDeergha.name(), "Š¾¢Ã¢¾£÷¸õ");
-		unsupportedMsgs.put(Varga.Hora.name(), "§†¡¨Ã");
-		unsupportedMsgs.put(AshtavargaName.AshtaVarga.name(), "«‰¼Å÷¸õ");
-		unsupportedMsgs.put(AshtavargaName.SarvaAshtavarga.name(), "º÷Å¡‰¼Å÷¸õ");
+		unsupportedMsgs.put(DisplayStrings.DOSHA_STR.name(), "Â§Â¾Â¡Â„Ãµ");
+		unsupportedMsgs.put(Rasi.Mesha.name(), "Â§ÃÂ„Ãµ");
+		unsupportedMsgs.put(Rasi.Vrishabha.name(), "ÃƒÂ¢Â„Ã€Ãµ");
+		unsupportedMsgs.put(Rasi.Vrishabha.sym(), "ÃƒÂ¢Â„");
+		unsupportedMsgs.put(Nakshathra.Ashwini.name(), "Â«ÂŠÃ…Â¢Ã‰Â¢");
+		unsupportedMsgs.put(Nakshathra.Mrigasira.name(), "ÃÂ¢Ã•Â¸Â„Â¢ÃƒÂ¢Â¼Ãµ");
+		unsupportedMsgs.put(Nakshathra.Hastam.name(), "Â†ÂŠÂ¾Ãµ");
+		unsupportedMsgs.put(Kuta.Vasya.name(), "Ã…ÂŠÃ‚Ãµ");
+		unsupportedMsgs.put(Kuta.StreeDeergha.name(), "ÂŠÂ¾Â¢ÃƒÂ¢Â¾Â£Ã·Â¸Ãµ");
+		unsupportedMsgs.put(Varga.Hora.name(), "Â§Â†Â¡Â¨Ãƒ");
+		unsupportedMsgs.put(AshtavargaName.AshtaVarga.name(), "Â«Â‰Â¼Ã…Ã·Â¸Ãµ");
+		unsupportedMsgs.put(AshtavargaName.SarvaAshtavarga.name(), "ÂºÃ·Ã…Â¡Â‰Â¼Ã…Ã·Â¸Ãµ");
 		
-		unsupportedMsgs.put(AstrosoftTableColumn.JaiminiKaraka.name(), "¦ƒöÁ¢É¢ ¸¡Ã¸õ");
-		unsupportedMsgs.put(AstrosoftTableColumn.ResidentialStrength.name(), "¦Ã„¢¦¼ıº¢Âø");
-		unsupportedMsgs.put(AstrosoftTableColumn.SthanaBala.name(), "Š¾¡½");
-		unsupportedMsgs.put(AstrosoftTableColumn.ChestaBala.name(), "§º‰¼");
-		unsupportedMsgs.put(AstrosoftTableColumn.IshtaBala.name(), "ş‰¼");
-		unsupportedMsgs.put(AstrosoftTableColumn.KashtaBala.name(), "¸‰¼");
-		unsupportedMsgs.put(AstrosoftTableColumn.OjaYugmarasyamsaBala.name(), "µƒÔìÁÃ„¡õº");
-		unsupportedMsgs.put(AstrosoftTableColumn.SaptavargajaBala.name(), "ºô¾Å÷ƒ");
-		unsupportedMsgs.put(AstrosoftTableColumn.BhavaDrishtiBala.name(), "À¡Å ¾¢Õ‰Ê");
-		unsupportedMsgs.put(AstrosoftTableColumn.HoraBala.name(), "§†¡Ã");
-		unsupportedMsgs.put(AstrosoftTableColumn.PakshaBala.name(), "Àì„");
-		unsupportedMsgs.put(AstrosoftTableColumn.Beeja.name(), "À£ƒõ");
-		unsupportedMsgs.put(AstrosoftTableColumn.Kshetra.name(), "§¸‰¾¢Ãõ");
+		unsupportedMsgs.put(AstrosoftTableColumn.JaiminiKaraka.name(), "Â¦ÂƒÃ¶ÃÂ¢Ã‰Â¢ Â¸Â¡ÃƒÂ¸Ãµ");
+		unsupportedMsgs.put(AstrosoftTableColumn.ResidentialStrength.name(), "Â¦ÃƒÂ„Â¢Â¦Â¼Ã½ÂºÂ¢Ã‚Ã¸");
+		unsupportedMsgs.put(AstrosoftTableColumn.SthanaBala.name(), "ÂŠÂ¾Â¡Â½");
+		unsupportedMsgs.put(AstrosoftTableColumn.ChestaBala.name(), "Â§ÂºÂ‰Â¼");
+		unsupportedMsgs.put(AstrosoftTableColumn.IshtaBala.name(), "Ã¾Â‰Â¼");
+		unsupportedMsgs.put(AstrosoftTableColumn.KashtaBala.name(), "Â¸Â‰Â¼");
+		unsupportedMsgs.put(AstrosoftTableColumn.OjaYugmarasyamsaBala.name(), "ÂµÂƒÃ”Ã¬ÃÃƒÂ„Â¡ÃµÂº");
+		unsupportedMsgs.put(AstrosoftTableColumn.SaptavargajaBala.name(), "ÂºÃ´Â¾Ã…Ã·Âƒ");
+		unsupportedMsgs.put(AstrosoftTableColumn.BhavaDrishtiBala.name(), "Ã€Â¡Ã… Â¾Â¢Ã•Â‰ÃŠ");
+		unsupportedMsgs.put(AstrosoftTableColumn.HoraBala.name(), "Â§Â†Â¡Ãƒ");
+		unsupportedMsgs.put(AstrosoftTableColumn.PakshaBala.name(), "Ã€Ã¬Â„");
+		unsupportedMsgs.put(AstrosoftTableColumn.Beeja.name(), "Ã€Â£ÂƒÃµ");
+		unsupportedMsgs.put(AstrosoftTableColumn.Kshetra.name(), "Â§Â¸Â‰Â¾Â¢ÃƒÃµ");
 
-		unsupportedMsgs.put(Paksha.Krishna.name(), "¸¢Õ‰½");
-		unsupportedMsgs.put(Thithi.Sashti.name(), "º‰Ê");
-		unsupportedMsgs.put(Thithi.Ashtami.name(), "«‰¼Á¢");
-		unsupportedMsgs.put(Kuta.Rajju.name(), "Ãˆ×");
+		unsupportedMsgs.put(Paksha.Krishna.name(), "Â¸Â¢Ã•Â‰Â½");
+		unsupportedMsgs.put(Thithi.Sashti.name(), "ÂºÂ‰ÃŠ");
+		unsupportedMsgs.put(Thithi.Ashtami.name(), "Â«Â‰Â¼ÃÂ¢");
+		unsupportedMsgs.put(Kuta.Rajju.name(), "ÃƒÂˆÃ—");
 
 		// TODO: Create enum and refer
 		
-		unsupportedMsgs.put("Vishakambha", "Å¢‰¸õÀõ");
-		unsupportedMsgs.put("Ayushman", "¬Ô‰Á¡ı");
-		unsupportedMsgs.put("Harshana", "‹÷„½õ");
-		unsupportedMsgs.put("Vajra", "ÅˆÃõ");
-		unsupportedMsgs.put("Shastiamsa", "º‰ÊÂ¡õºõ");
-		unsupportedMsgs.put("Shashtamsa", "º¡‰¼¡õºõ");
-		unsupportedMsgs.put("Ashtamsa", "«‰¼¡õºõ");
+		unsupportedMsgs.put("Vishakambha", "Ã…Â¢Â‰Â¸ÃµÃ€Ãµ");
+		unsupportedMsgs.put("Ayushman", "Â¬Ã”Â‰ÃÂ¡Ã½");
+		unsupportedMsgs.put("Harshana", "Â‹Ã·Â„Â½Ãµ");
+		unsupportedMsgs.put("Vajra", "Ã…ÂˆÃƒÃµ");
+		unsupportedMsgs.put("Shastiamsa", "ÂºÂ‰ÃŠÃ‚Â¡ÃµÂºÃµ");
+		unsupportedMsgs.put("Shashtamsa", "ÂºÂ¡Â‰Â¼Â¡ÃµÂºÃµ");
+		unsupportedMsgs.put("Ashtamsa", "Â«Â‰Â¼Â¡ÃµÂºÃµ");
 		
 	}
 
