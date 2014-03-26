@@ -27,7 +27,9 @@ public class UIConsts {
 
 	public static final Color LIGHT_YELLOW = new Color(255, 255, 235);
 	public static final Color YELLOWISH_WHITE = new Color(255, 255, 252);
-	
+    public static final Color BLOG_BACKGROUND = new Color(243, 239, 227);
+    public static final Color CHART_BORDER_COLOR =  new Color(255, 126, 0);
+
 	public static final Color GRAY_WHITE = new Color(238,238,238);
 	public static final Color LIGHT_BLUE = new Color(0, 0 , 204);
 	public static final Color DARK_BLUE = new Color(0, 0 , 140);
@@ -73,11 +75,11 @@ public class UIConsts {
 		UIProps.put("Button.rollover", true);
 		//UIProps.put("Button.border", new LineBorder(THEME_CLR));
 
-		UIProps.put("Panel.background", Color.WHITE);
-		//UIProps.put("Panel.background", YELLOWISH_WHITE);
+		//UIProps.put("Panel.background", Color.WHITE);
+		UIProps.put("Panel.background", BLOG_BACKGROUND);
 		UIProps.put("CheckBox.background", Color.WHITE);
 		UIProps.put("Viewport.background", Color.WHITE);
-		UIProps.put("ComboBox.background", Color.WHITE);
+        UIProps.put("ComboBox.background", Color.WHITE);
 		
 		//Tabbed Pane Settings
 		
@@ -140,12 +142,12 @@ public class UIConsts {
 	}
 	
 	public static Color getChartBackground(){
-		return YELLOWISH_WHITE;
+		return BLOG_BACKGROUND;
 	}
 	
 	public static Border getChartBorder(){
 		//return BorderFactory.createEtchedBorder(EtchedBorder.RAISED, ROSE, Color.WHITE);
-		return BorderFactory.createEtchedBorder(EtchedBorder.RAISED, Color.ORANGE, Color.WHITE);
+		return BorderFactory.createEtchedBorder(EtchedBorder.RAISED, CHART_BORDER_COLOR, BLOG_BACKGROUND);
 		//return BorderFactory.createEtchedBorder(EtchedBorder.LOWERED, YELLOWISH_WHITE.brighter(), YELLOWISH_WHITE.darker());
 		//new LineBorder(Color.GRAY, 1, true);
 		//BorderFactory.createBevelBorder(BevelBorder.RAISED);
