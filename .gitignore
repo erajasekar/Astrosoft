@@ -13,5 +13,8 @@
 \.classpath$
 ^release$
 ^lib-unused$
-^deploy\
+deploy\
 *.bak
+samples\
+
+

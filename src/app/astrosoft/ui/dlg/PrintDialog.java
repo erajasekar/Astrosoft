@@ -55,7 +55,7 @@ import app.astrosoft.ui.util.UIUtil;
 import app.astrosoft.util.AstroUtil;
 import app.astrosoft.util.AstrosoftFileFilter;
 import app.astrosoft.util.FileOps;
-
+import app.astrosoft.export.AstrosoftExporter.Type;
 import static app.astrosoft.export.AstrosoftExporter.*;
 
 public class PrintDialog extends AstrosoftDialog {
@@ -136,7 +136,7 @@ public class PrintDialog extends AstrosoftDialog {
 		
 		printPanel.add(createPrintTypePanel());
 		
-		boolean isPrintPanchang = ((Type)printTypes.getSelectedItem()).equals(AstrosoftExporter.Type.Panchang);
+		boolean isPrintPanchang = ((app.astrosoft.export.AstrosoftExporter.Type)printTypes.getSelectedItem()).equals(AstrosoftExporter.Type.Panchang);
 		
 		if (isPrintPanchang){
 			arrow.setEnabled(true);
@@ -289,7 +289,7 @@ public class PrintDialog extends AstrosoftDialog {
 
 			public void itemStateChanged(ItemEvent e) {
 				
-				if (((Type)printTypes.getSelectedItem()).equals(AstrosoftExporter.Type.Panchang)){
+				if (((app.astrosoft.export.AstrosoftExporter.Type)printTypes.getSelectedItem()).equals(AstrosoftExporter.Type.Panchang)){
 					arrow.setEnabled(true);
 				}else{
 					arrow.setEnabled(false);
@@ -386,7 +386,7 @@ public class PrintDialog extends AstrosoftDialog {
 	
 	private String getDefaultFile(){
 		
-		Type type = (Type)printTypes.getSelectedItem();
+	    app.astrosoft.export.AstrosoftExporter.Type type = (app.astrosoft.export.AstrosoftExporter.Type)printTypes.getSelectedItem();
 		
 		if (type != null) {
 			if (type.equals(AstrosoftExporter.Type.Horosocope)){
