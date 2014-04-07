@@ -18,8 +18,7 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import app.astrosoft.beans.PlanetChartData;
-import app.astrosoft.beans.PlanetaryInfo;
+import app.astrosoft.beans.*;
 import app.astrosoft.consts.Varga;
 import app.astrosoft.ui.comp.Chart;
 import app.astrosoft.ui.util.UIConsts;
@@ -37,10 +36,13 @@ public class VargaChartView extends AstrosoftView {
 	
 	private PlanetaryInfo planetaryInfo;
 	
-	public VargaChartView(String title, PlanetaryInfo planetaryInfo) {
+	private BirthData birthData;
+	
+	public VargaChartView(String title, PlanetaryInfo planetaryInfo, BirthData birthData) {
 		
 		super(title, viewSize);
 		this.planetaryInfo = planetaryInfo;
+		this.birthData = birthData;
 		
 		JPanel vargaPanel = new JPanel();
 		
@@ -57,7 +59,7 @@ public class VargaChartView extends AstrosoftView {
 		
 		chartPanel = new JPanel(new BorderLayout());
 		
-		chartPanel.add(new Chart(new PlanetChartData(Varga.Bhava, planetaryInfo), chartSize), BorderLayout.CENTER);
+		chartPanel.add(new Chart(new PlanetChartData(Varga.Bhava, planetaryInfo), chartSize, birthData), BorderLayout.CENTER);
 		
 		final JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, vargaPanel, chartPanel);
 		
@@ -80,6 +82,6 @@ public class VargaChartView extends AstrosoftView {
 	private void vargaChanged(Varga varga) {
 		
 		chartPanel.removeAll();
-		chartPanel.add(new Chart(new PlanetChartData(varga, planetaryInfo), chartSize), BorderLayout.CENTER);
+		chartPanel.add(new Chart(new PlanetChartData(varga, planetaryInfo), chartSize, birthData), BorderLayout.CENTER);
 	}
 }

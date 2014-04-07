@@ -148,6 +148,12 @@ public class BirthData {
 		return AstroUtil.formatDate(birthDay.getTime());
 	}
 	
+	public String getDateTimeString(){
+	    StringBuilder sb = new StringBuilder(birthDayString());
+        sb.append(" " + AstroUtil.timeFormat(birthTime()));
+        return sb.toString();
+	}
+	
 	public Sex sex(){
 		return sex;
 	}

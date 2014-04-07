@@ -626,7 +626,7 @@ public class AstroSoft extends javax.swing.JFrame implements
 				case SHADBALA_VIEW:
 					return createShadbalaView();
 				case DIV_CHART_VIEW:
-					return new VargaChartView(h.getTitle(), h.getPlanetaryInfo());
+					return new VargaChartView(h.getTitle(), h.getPlanetaryInfo(), h.getBirthData());
 				case ASHTAVARGA_VIEW:
 					return new AshtavargaView(h.getTitle(), h.getAshtaVarga(), new Point(30,20));
 				case PANCHANG_VIEW:

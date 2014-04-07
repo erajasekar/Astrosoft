@@ -24,20 +24,12 @@ import java.util.EnumMap;
 import java.util.List;
 import java.util.Set;
 
-import javax.swing.BorderFactory;
-import javax.swing.DefaultSingleSelectionModel;
-import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JPopupMenu;
-import javax.swing.JTable;
-import javax.swing.ToolTipManager;
+import javax.swing.*;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.LineBorder;
 
-import app.astrosoft.beans.ChartData;
-import app.astrosoft.beans.PlanetChartData;
+import app.astrosoft.beans.*;
 import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.Language;
 import app.astrosoft.consts.Planet;
@@ -48,11 +40,16 @@ import app.astrosoft.ui.table.AstrosoftTableModel;
 import app.astrosoft.ui.table.PlanetCellRenderer;
 import app.astrosoft.ui.table.Table;
 import app.astrosoft.ui.util.UIConsts;
+import app.astrosoft.ui.util.UIUtil;
 import app.astrosoft.ui.window.AstrosoftWindow;
 import app.astrosoft.ui.window.DefaultWindowLabelModel;
 import app.astrosoft.ui.window.WindowLabelModel;
 
 public class Chart extends JPanel{
+    
+    private static final boolean SHOW_BIRTH_DETAILS = Boolean.valueOf(System.getProperty("chart.showBirthDetails", "true"));
+    private static final boolean SHOW_HOUSE_NUMBERS = Boolean.valueOf(System.getProperty("chart.showHouseNumbers", "true"));
+    private static final boolean SHOW_HOUSE_NUMBER_BY_ASC = Boolean.valueOf(System.getProperty("chart.showHouseNumberByAsc", "false"));
 
 	private ChartData chartData;
 	
@@ -64,28 +61,36 @@ public class Chart extends JPanel{
 	
 	private int rowHeight;
 	
-	private JLabel title;
+	private JLabel title, placeLabel, dateTimeLabel;
 	
-	public Chart(ChartData chartData, Dimension chartSize) {
+	private BirthData birthData;
+	
+	public Chart(ChartData chartData, Dimension chartSize, BirthData birthData) {
 		
 		this.chartData = chartData;
 		
+		this.birthData = birthData;
+		
 		houseSize = new Dimension(chartSize.width / 4, chartSize.height / 4);
 		
-		tableSize = new Dimension((int)(houseSize.width * 0.75), (int)(houseSize.height * 0.75));
+		tableSize = new Dimension((int)(houseSize.width * 0.75), (int)(houseSize.height * 0.80));
 		
 		rowHeight = tableSize.height / 3;
 		
 		//Thirteen-th fills center
 		housePanel = new ArrayList<JPanel>();
 		
-		title = new TitleLabel(chartData.getChartName());
+		title = new TitleLabel(chartData.getChartName()) ;
 		
 		setLayout(new GridBagLayout());
 		//setPreferredSize(new Dimension(chartSize.width + (3 * 4), chartSize.height + (3 * 4)));
 		setPreferredSize(chartSize);
 		addHouseTables();
 		setVisible(true);
+	}
+	
+	public Chart(ChartData chartData, Dimension chartSize){
+	    this(chartData, chartSize, null);
 	}
 	
 	private void addHouseTables() {
@@ -124,14 +129,11 @@ public class Chart extends JPanel{
 			//}
 			panel.setPreferredSize(houseSize);
 			panel.setBackground(UIConsts.getChartBackground());
-			JPanel houseNoPanel = new JPanel();
-			houseNoPanel.setLayout(new BorderLayout());
-			houseNoPanel.add(new JLabel(" "), BorderLayout.NORTH);
-			houseNoPanel.add(new JLabel(" "), BorderLayout.CENTER);
-			JLabel houseNoLabel = new JLabel(String.valueOf(house.houseNo()));
-			houseNoLabel.setForeground(UIConsts.SLATE_GRAY);
-			houseNoPanel.add(houseNoLabel, BorderLayout.PAGE_END);
-			panel.add(houseNoPanel);
+			
+			if(SHOW_HOUSE_NUMBERS){
+			    panel.add(getHouseNumberPanel(house)); 
+			}
+			
 			panel.setBorder(UIConsts.getChartBorder());
 			add(panel, getConstrains(houseNo));
 			
@@ -148,14 +150,43 @@ public class Chart extends JPanel{
 		
 		// Add ChartName at Center
 		houseNo = 12;
-		JPanel panel = new JPanel();
 		
-		panel.add(title);
-		add(panel, getConstrains(houseNo));
+		add(getCenterPanel(), getConstrains(houseNo));
 	}
 
 	public void setTitleFont(Font font){
 		title.setFont(font);
+	}
+	
+	private JPanel getHouseNumberPanel(Rasi house){
+	    JPanel houseNoPanel = new JPanel();
+        houseNoPanel.setLayout(new BorderLayout());
+        houseNoPanel.add(new JLabel(" "), BorderLayout.NORTH);
+        houseNoPanel.add(new JLabel(" "), BorderLayout.CENTER);
+        int houseNumber = SHOW_HOUSE_NUMBER_BY_ASC ? house.bhava(chartData.getAscendant()) : house.houseNo();
+        JLabel houseNoLabel = new JLabel(String.valueOf(houseNumber));
+        houseNoLabel.setForeground(UIConsts.SLATE_GRAY);
+        houseNoLabel.setFont(UIUtil.getFont(Font.ITALIC, 12));
+        houseNoPanel.add(houseNoLabel, BorderLayout.PAGE_END);
+        return houseNoPanel;
+	}
+	
+	private JPanel getCenterPanel(){
+	    JPanel panel = new JPanel();
+        BoxLayout boxLayout = new BoxLayout(panel, BoxLayout.Y_AXIS);
+        panel.setLayout(boxLayout);
+        if (SHOW_BIRTH_DETAILS && birthData != null ){
+            panel.add(Box.createRigidArea(new Dimension(10,10)));
+            dateTimeLabel = new JLabel(birthData.getDateTimeString());
+            placeLabel = new JLabel(birthData.getBirthPlace().toString());
+            placeLabel.setForeground(UIConsts.DARK_GREEN);
+            dateTimeLabel.setForeground(UIConsts.DARK_GREEN);
+            panel.add(dateTimeLabel);
+            panel.add(placeLabel);
+        }else{
+            panel.add(title);
+        }
+        return panel;
 	}
 	
 	private void decoratePlanetChart(Table table, AstrosoftTable houseTable) {
@@ -290,7 +321,10 @@ public class Chart extends JPanel{
 		
 		this.chartData = chartData;
 		title.setText(chartData.getChartName());
-		//title = new TitleLabel(chartData.getChartName());
+		if (birthData != null){
+		    placeLabel.setText(birthData.getBirthPlace().toString());
+		    dateTimeLabel.setText(birthData.getDateTimeString());
+		}
 		this.removeAll();
 		addHouseTables();
 		
