@@ -124,15 +124,16 @@ public class Chart extends JPanel{
 					toolTip = house.toString(Language.ENGLISH) + ": " + house.bhava(ascendant);
 					houseTable.setToolTipText(toolTip);
 					toolTipManager.registerComponent(houseTable);
+					if(SHOW_HOUSE_NUMBERS){
+		                panel.add(getHouseNumberPanel(house)); 
+		            }
 				}
 				//houseTable.addMouseListener(new ChartHouseMouseListener());
 			//}
 			panel.setPreferredSize(houseSize);
 			panel.setBackground(UIConsts.getChartBackground());
 			
-			if(SHOW_HOUSE_NUMBERS){
-			    panel.add(getHouseNumberPanel(house)); 
-			}
+			
 			
 			panel.setBorder(UIConsts.getChartBorder());
 			add(panel, getConstrains(houseNo));
