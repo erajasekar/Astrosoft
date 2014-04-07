@@ -47,6 +47,10 @@ public enum Rasi {
 	public String sym(){
 		return sym;
 	}
+	
+	public int houseNo(){
+	    return this.ordinal() + 1;
+	}
 
 	public static Interval longitudeForRasi(Rasi rasi){
 		

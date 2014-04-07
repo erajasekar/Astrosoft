@@ -72,7 +72,7 @@ public class Chart extends JPanel{
 		
 		houseSize = new Dimension(chartSize.width / 4, chartSize.height / 4);
 		
-		tableSize = new Dimension((int)(houseSize.width * 0.80), (int)(houseSize.height * 0.80));
+		tableSize = new Dimension((int)(houseSize.width * 0.75), (int)(houseSize.height * 0.75));
 		
 		rowHeight = tableSize.height / 3;
 		
@@ -103,7 +103,7 @@ public class Chart extends JPanel{
 			
 			JPanel panel = new JPanel();
 			
-			if(dataHouses.contains(house)){
+			//if(dataHouses.contains(house)){
 
 				Table table = chartData.getChartHouseTable(house);
 				AstrosoftTable houseTable = new AstrosoftTable(new AstrosoftTableModel(table), TableStyle.NONE);
@@ -121,10 +121,17 @@ public class Chart extends JPanel{
 					toolTipManager.registerComponent(houseTable);
 				}
 				//houseTable.addMouseListener(new ChartHouseMouseListener());
-			}
+			//}
 			panel.setPreferredSize(houseSize);
 			panel.setBackground(UIConsts.getChartBackground());
-			
+			JPanel houseNoPanel = new JPanel();
+			houseNoPanel.setLayout(new BorderLayout());
+			houseNoPanel.add(new JLabel(" "), BorderLayout.NORTH);
+			houseNoPanel.add(new JLabel(" "), BorderLayout.CENTER);
+			JLabel houseNoLabel = new JLabel(String.valueOf(house.houseNo()));
+			houseNoLabel.setForeground(UIConsts.SLATE_GRAY);
+			houseNoPanel.add(houseNoLabel, BorderLayout.PAGE_END);
+			panel.add(houseNoPanel);
 			panel.setBorder(UIConsts.getChartBorder());
 			add(panel, getConstrains(houseNo));
 			

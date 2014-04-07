@@ -39,6 +39,7 @@ public class UIConsts {
 	public static final Color DARK_GREEN = new Color(0, 90, 0);
 	public static final Color LEAF_GREEN = new Color(75, 148,75);
 	public static final Color PEARL_GREEN = new Color(236, 233,216);
+	public static final Color SLATE_GRAY = new Color(112,128,144);
 	public static Color DARK_PEARL_GREEN = new Color(218,216,200);
 	
 	public static final Color DARK_RED = new Color(128, 0, 0);
