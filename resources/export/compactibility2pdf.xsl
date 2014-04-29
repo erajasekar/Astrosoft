@@ -90,6 +90,12 @@ xmlns:fo="http://www.w3.org/1999/XSL/Format" exclude-result-prefixes="fo">
 							<xsl:apply-templates select="Dosha-Analysis" /> 
 	
 						</fo:block>
+
+                        <fo:block text-align="left"  linefeed-treatment="preserve">
+
+                            &#xA;Conclusion (To be filled by Astrologer) :
+
+                        </fo:block>
 	
 					</fo:flow>
 	
