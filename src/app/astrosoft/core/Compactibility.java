@@ -12,20 +12,13 @@ import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
 
+import app.astrosoft.consts.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 import app.astrosoft.beans.BirthData;
 import app.astrosoft.beans.PlanetaryInfo;
-import app.astrosoft.consts.AstroConsts;
-import app.astrosoft.consts.AstrosoftTableColumn;
-import app.astrosoft.consts.DisplayStrings;
-import app.astrosoft.consts.Kuta;
-import app.astrosoft.consts.Nakshathra;
-import app.astrosoft.consts.Planet;
-import app.astrosoft.consts.Rasi;
-import app.astrosoft.consts.XmlConsts;
 import app.astrosoft.export.Exportable;
 import app.astrosoft.export.Exporter;
 import app.astrosoft.export.XMLHelper;
@@ -1386,6 +1379,7 @@ public class Compactibility implements Exportable {
 		return rows;
 	}
 
+
 	private List<TableRowData> constructTotalRow() {
 
 		MapTableRow totalRow = new MapTableRow();
@@ -1523,11 +1517,8 @@ public class Compactibility implements Exportable {
 
 	public static void main(String[] args) {
 
-		/*
-		 * Horoscope b = new
-		 * Horoscope("Raja",11,12,1980,1,44,77+(44.00/60.00),11+(22.00/60.00),5.5,"Erode");
-		 * Horoscope g = new
-		 * Horoscope("V",6,7,1983,2,25,77+(44.00/60.00),11+(22.00/60.00),5.5,"Erode");
+		//Horoscope b = new Horoscope("Raja",11,12,1980,1,44,77+(44.00/60.00),11+(22.00/60.00),5.5,"Erode");
+		//Horoscope g = new Horoscope("V",6,7,1983,2,25,77+(44.00/60.00),11+(22.00/60.00),5.5,"Erode");
 
 		Horoscope b = new Horoscope("Elango", 17, 4, 1957, 7, 10,
 				77 + (44.00 / 60.00), 11 + (22.00 / 60.00), 5.5, "Erode");
@@ -1555,8 +1546,7 @@ public class Compactibility implements Exportable {
 		for (Map.Entry e : c.girlDosha.entrySet()) {
 			System.out.println(e.getKey() + " : " + e.getValue());
 		}
-		*/
-		int cnt = 0;
+		/*int cnt = 0;
 
 		for (int r1 = 0; r1 < 12; r1++) {
 
@@ -1581,15 +1571,15 @@ public class Compactibility implements Exportable {
 								.ofIndex(r1), Rasi.ofIndex(r2));
 
 
-						  /*for (Kuta k : Kuta.values()) {
+						  *//*for (Kuta k : Kuta.values()) {
 
 							  System.out.print(c.kutas.get(k) + "\n");
-						  }*/
+						  }*//*
 
 						System.out.print(c.totalKutaGained+ " , ");
 						//System.out.print(",");
 
-						/*if (c.totalKutaGained >= 25){
+						*//*if (c.totalKutaGained >= 25){
 
 							if (c.totalKutaGained >= 30){
 								System.out.print("Very Good: ");
@@ -1598,7 +1588,7 @@ public class Compactibility implements Exportable {
 							}
 							System.out.println( Rasi.ofIndex(r2) + " , " + Nakshathra.ofIndex(c2));
 
-						}*/
+						}*//*
 
 					}
 
@@ -1609,7 +1599,7 @@ public class Compactibility implements Exportable {
 
 			}
 
-		}
+		}*/
 
 	}
 

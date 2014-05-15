@@ -33,6 +33,7 @@ public enum AstrosoftTableColumn {
 	Kuta,
 	KutaGained,
 	MaxKuta,
+    KutaResult,
 
 	Total {
 		public String toString() {
