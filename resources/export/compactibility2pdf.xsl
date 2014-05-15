@@ -93,7 +93,7 @@ xmlns:fo="http://www.w3.org/1999/XSL/Format" exclude-result-prefixes="fo">
 
                         <fo:block text-align="left"  linefeed-treatment="preserve">
 
-                            &#xA;Conclusion (To be filled by Astrologer) :
+                            &#xA;Conclusion :
 
                         </fo:block>
 	
