@@ -33,6 +33,7 @@ import app.astrosoft.ui.table.TableDataFactory;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.util.FileOps;
 
+
 public class Compactibility implements Exportable {
 
 	private static enum KutaFile {
@@ -61,7 +62,7 @@ public class Compactibility implements Exportable {
 
 	private BirthData girlBirthData;
 
-	private EnumMap<Kuta, Integer> kutas;
+	private EnumMap<Kuta, KutaOutcome> kutas;
 
 	private TableData<? extends TableRowData> kutaTableData;
 
@@ -78,6 +79,8 @@ public class Compactibility implements Exportable {
 	private static DefaultColumnMetaData doshaTableColumnMetaData;
 
 	private int totalKutaGained = 0;
+
+    private int totalKutaPresent = 0;
 
 	private PlanetaryInfo boyPlanetaryInfo;
 
@@ -117,13 +120,14 @@ public class Compactibility implements Exportable {
 		this.girlNak = girlNak.ordinal();
 		this.boyRasi = boyRasi.ordinal();
 		this.girlRasi = girlRasi.ordinal();
-		kutas = new EnumMap<Kuta, Integer>(Kuta.class);
+		kutas = new EnumMap<Kuta, KutaOutcome>(Kuta.class);
 		totalKutaGained = 0;
 		calcKutas();
 
 		for (Kuta k : Kuta.values()) {
 
-			totalKutaGained = totalKutaGained + kutas.get(k);
+            totalKutaGained = totalKutaGained + kutas.get(k).getGained();
+            totalKutaPresent = totalKutaPresent + (kutas.get(k).isPresent() ? 1:0);
 		}
 
 		constructColumnMetaData();
@@ -217,18 +221,18 @@ public class Compactibility implements Exportable {
 
 	private void calcKutas() {
 
-		kutas.put(Kuta.Dina, calcDinaKuta());
-		kutas.put(Kuta.Gana, calcGanaKuta());
-		kutas.put(Kuta.Mahendra, calcMahendraKuta());
-		kutas.put(Kuta.StreeDeergha, calcStreeDeerghaKuta());
-		kutas.put(Kuta.Yoni, calcYoniKuta());
-		kutas.put(Kuta.Rasi, calcRasiKuta());
-		kutas.put(Kuta.RasiAdhipathi, calcRasiAdhipathiKuta());
-		kutas.put(Kuta.Vasya, calcVasyaKuta());
-		kutas.put(Kuta.Rajju, calcRajjuKuta());
-		kutas.put(Kuta.Vedha, calcVedhaKuta());
-		kutas.put(Kuta.Varna, calcVarnaKuta());
-		kutas.put(Kuta.Nadi, calcNadiKuta());
+		kutas.put(Kuta.Dina, new KutaOutcome(calcDinaKuta(), Kuta.Dina));
+		kutas.put(Kuta.Gana, new KutaOutcome(calcGanaKuta(), Kuta.Gana));
+		kutas.put(Kuta.Mahendra, new KutaOutcome(calcMahendraKuta(), Kuta.Mahendra));
+		kutas.put(Kuta.StreeDeergha, new KutaOutcome(calcStreeDeerghaKuta(), Kuta.StreeDeergha));
+		kutas.put(Kuta.Yoni, new KutaOutcome(calcYoniKuta(), Kuta.Yoni ));
+		kutas.put(Kuta.Rasi, new KutaOutcome(calcRasiKuta(), Kuta.Rasi));
+		kutas.put(Kuta.RasiAdhipathi, new KutaOutcome(calcRasiAdhipathiKuta(), Kuta.RasiAdhipathi));
+		kutas.put(Kuta.Vasya, new KutaOutcome(calcVasyaKuta(), Kuta.Vasya));
+		kutas.put(Kuta.Rajju, new KutaOutcome(calcRajjuKuta(), Kuta.Rajju));
+		kutas.put(Kuta.Vedha, new KutaOutcome(calcVedhaKuta(), Kuta.Vedha));
+		kutas.put(Kuta.Varna, new KutaOutcome(calcVarnaKuta(), Kuta.Varna));
+		kutas.put(Kuta.Nadi, new KutaOutcome(calcNadiKuta(), Kuta.Nadi));
 
 	}
 
@@ -1259,9 +1263,6 @@ public class Compactibility implements Exportable {
 		return Nakshathra.ofIndex(girlNak);
 	}
 
-	public EnumMap<Kuta, Integer> getKutas() {
-		return kutas;
-	}
 
 	public PlanetaryInfo getBoyPlanetaryInfo() {
 		return boyPlanetaryInfo;
@@ -1326,23 +1327,25 @@ public class Compactibility implements Exportable {
 	private void constructColumnMetaData() {
 
 		kutaTableColumnMetaData = new DefaultColumnMetaData(
-				AstrosoftTableColumn.Kuta, AstrosoftTableColumn.KutaGained,
-				AstrosoftTableColumn.MaxKuta){
+                AstrosoftTableColumn.Kuta, AstrosoftTableColumn.KutaGained,
+                AstrosoftTableColumn.MaxKuta, AstrosoftTableColumn.KutaResult){
 
 			public Class getColumnClass(AstrosoftTableColumn col) {
 
-				if (col == AstrosoftTableColumn.Kuta){
-					return Kuta.class;
-				}else{
-					return Number.class;
-				}
+                switch (col){
+                    case Kuta:return Kuta.class;
+                    case KutaResult: return KutaOutcome.Result.class;
+                    default: return Number.class;
+
+                }
+
 			}
 		};
 		kutaTableColumnMetaData.localizeColumns();
 
 		doshaTableColumnMetaData = new DefaultColumnMetaData(
-				AstrosoftTableColumn.Dosha, AstrosoftTableColumn.Boy,
-				AstrosoftTableColumn.Girl){
+                AstrosoftTableColumn.Dosha, AstrosoftTableColumn.Boy,
+                AstrosoftTableColumn.Girl){
 
 					public Class getColumnClass(AstrosoftTableColumn col) {
 
@@ -1357,7 +1360,7 @@ public class Compactibility implements Exportable {
 
 		infoTableColumnMetaData = new DefaultColumnMetaData(
 				AstrosoftTableColumn.Key, AstrosoftTableColumn.Value,
-				AstrosoftTableColumn.Beeja, AstrosoftTableColumn.Kshetra);
+                AstrosoftTableColumn.Beeja, AstrosoftTableColumn.Kshetra);
 		infoTableColumnMetaData.setHiddenColumnCount(2);
 		infoTableColumnMetaData.localizeColumns();
 	}
@@ -1372,8 +1375,8 @@ public class Compactibility implements Exportable {
 
 		for (Kuta kuta : Kuta.values()) {
 
-			rows.put(kuta, helper.createRow(kuta, kutas.get(kuta), kuta
-					.maxValue()));
+			rows.put(kuta, helper.createRow(kuta, kutas.get(kuta).getGained(), kuta
+					.maxValue(),kutas.get(kuta).getResult()));
 
 		}
 		return rows;
@@ -1387,6 +1390,7 @@ public class Compactibility implements Exportable {
 		totalRow.addColumn(AstrosoftTableColumn.Kuta, DisplayStrings.TOTAL_STR);
 		totalRow.addColumn(AstrosoftTableColumn.KutaGained, totalKutaGained);
 		totalRow.addColumn(AstrosoftTableColumn.MaxKuta, Kuta.totalValue());
+        totalRow.addColumn(AstrosoftTableColumn.KutaResult, totalKutaPresent);
 
 		List<TableRowData> totalRowData = new ArrayList<TableRowData>();
 		totalRowData.add(totalRow);
@@ -1401,8 +1405,8 @@ public class Compactibility implements Exportable {
 	public TableData<? extends TableRowData> getBoyInfo() {
 
 		MapTableRowHelper helper = new MapTableRowHelper(
-				AstrosoftTableColumn.Key, AstrosoftTableColumn.Value,
-				AstrosoftTableColumn.Beeja);
+                AstrosoftTableColumn.Key, AstrosoftTableColumn.Value,
+                AstrosoftTableColumn.Beeja);
 
 		if (boyInfo == null) {
 
@@ -1437,8 +1441,8 @@ public class Compactibility implements Exportable {
 	public TableData<? extends TableRowData> getGirlInfo() {
 
 		MapTableRowHelper helper = new MapTableRowHelper(
-				AstrosoftTableColumn.Key, AstrosoftTableColumn.Value,
-				AstrosoftTableColumn.Kshetra);
+                AstrosoftTableColumn.Key, AstrosoftTableColumn.Value,
+                AstrosoftTableColumn.Kshetra);
 
 		if (girlInfo == null) {
 
@@ -1536,6 +1540,7 @@ public class Compactibility implements Exportable {
 		}
 
 		System.out.println("Total Kutas: " + c.totalKutaGained);
+        System.out.println("Total Kutas Present: " + c.totalKutaPresent);
 
 		System.out.println("\n Boy Dosha");
 		for (Map.Entry e : c.boyDosha.entrySet()) {
