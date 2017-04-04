@@ -12,6 +12,7 @@ import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.EnumSet;
@@ -134,11 +135,13 @@ public class AstroSoft extends javax.swing.JFrame implements
 	}
 
 	private AstroSoft(String[] args){
+		
 
 		this();
+		
 		System.out.println("Logging properties: " + System.getProperty("java.util.logging.config.file"));
 		
-		if(args.length > 0 && args[0] != null){
+		if(args.length > 0 && args[0] != null && !args[0].trim().isEmpty()){
 			openHoroscope(args[0]);
 		}
 	}
@@ -187,7 +190,7 @@ public class AstroSoft extends javax.swing.JFrame implements
 	 *            the command line arguments
 	 */
 	public static void main(String[] args) {
-
+		
 		try {
 
 			//FIXME:

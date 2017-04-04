@@ -16,5 +16,10 @@
 deploy/
 *.bak
 samples\
-
+.idea/
+.project
+*.iml
+out/
+.classpath
+*.log
 

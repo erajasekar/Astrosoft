@@ -152,12 +152,14 @@ public class UIUtil {
 	}
 
 	public static void setPanelBackground(JComponent panel, Color color) {
-		panel.setBackground(color);
-		for (Component c : panel.getComponents()) {
-			if (c instanceof JPanel) {
-				setPanelBackground((JPanel) c, color);
+		if (panel!=null){
+			panel.setBackground(color);
+			for (Component c : panel.getComponents()) {
+				if (c instanceof JPanel) {
+					setPanelBackground((JPanel) c, color);
+				}
 			}
-		}
+		}	
 	}
 
 	public static String getFontTag() {
