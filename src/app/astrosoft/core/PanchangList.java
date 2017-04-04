@@ -15,6 +15,7 @@ import app.astrosoft.core.Ephemeris.Mode;
 import app.astrosoft.export.Exportable;
 import app.astrosoft.export.Exporter;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.getCalendar;
 
 public class PanchangList implements Iterable<Panchang>, Exportable {
 
@@ -30,7 +31,7 @@ public class PanchangList implements Iterable<Panchang>, Exportable {
     	
     	public PanchangIterator(Calendar start,Mode mode){
     		this.start = start;
-    		this.current = AstroUtil.getCalendar(start.getTime());
+    		this.current = getCalendar(start.getTime());
     		this.mode = mode;
     	}
 		

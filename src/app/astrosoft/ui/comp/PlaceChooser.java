@@ -26,14 +26,27 @@ import javax.swing.SpringLayout;
 
 import app.astrosoft.beans.Place;
 import app.astrosoft.beans.Place.Direction;
+import static app.astrosoft.beans.Place.Direction.EW;
+import static app.astrosoft.beans.Place.Direction.NS;
 import app.astrosoft.beans.Place.Location;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.util.SpringUtilities;
+import static app.astrosoft.ui.util.SpringUtilities.makeCompactGrid;
 import app.astrosoft.ui.util.UIConsts;
+import static app.astrosoft.ui.util.UIConsts.getTitleBorder;
 import app.astrosoft.ui.util.UIUtil;
+import static app.astrosoft.ui.util.UIUtil.createImageIcon;
 import app.astrosoft.util.AstrosoftTimeZone;
+import static app.astrosoft.util.AstrosoftTimeZone.availableTimeZones;
 import app.astrosoft.util.PlaceFinder;
+import static app.astrosoft.util.PlaceFinder.findPlace;
 import app.astrosoft.util.Timer;
+import static java.lang.String.valueOf;
+import static java.lang.String.valueOf;
+import static java.lang.String.valueOf;
+import static java.lang.String.valueOf;
+import static java.util.Arrays.asList;
 
 public class PlaceChooser extends JPanel {
 
@@ -61,7 +74,7 @@ public class PlaceChooser extends JPanel {
 	public PlaceChooser(Dimension size, boolean showTitle) {
 
 		this.showTitle = showTitle;
-		timeZoneCombo = new JComboBox(AstrosoftTimeZone.availableTimeZones());
+		timeZoneCombo = new JComboBox(availableTimeZones());
 		initComponents();
 		addComponents();
 		this.size = size;
@@ -90,9 +103,9 @@ public class PlaceChooser extends JPanel {
 		longitudeComp.add(longitude_min);
 		longitudeComp.add(dir_ew);
 
-		SpringUtilities.makeCompactGrid(placeComp, 1, 2, 5,5,5,5);
-		SpringUtilities.makeCompactGrid(latitudeComp, 1, 3, 5,5,10,10);
-		SpringUtilities.makeCompactGrid(longitudeComp, 1, 3, 5,5,10,10);
+		makeCompactGrid(placeComp, 1, 2, 5,5,5,5);
+		makeCompactGrid(latitudeComp, 1, 3, 5,5,10,10);
+		makeCompactGrid(longitudeComp, 1, 3, 5,5,10,10);
 
 		add(l_place);
 		add(placeComp);
@@ -103,7 +116,7 @@ public class PlaceChooser extends JPanel {
 		add(l_timezone);
 		add(timeZoneCombo);
 		
-		SpringUtilities.makeCompactGrid(this, 4, 2, 5,5,10,10);
+		makeCompactGrid(this, 4, 2, 5,5,10,10);
 
 		
 	}
@@ -124,16 +137,16 @@ public class PlaceChooser extends JPanel {
 		
 		//t.print("AT 2");
 
-		dir_ew = new JComboBox(Direction.EW().toArray());
-		dir_ns = new JComboBox(Direction.NS().toArray());
+		dir_ew = new JComboBox(EW().toArray());
+		dir_ns = new JComboBox(NS().toArray());
 		
 		if (showTitle) {
-			setBorder(UIConsts.getTitleBorder("Place"));
+			setBorder(getTitleBorder("Place"));
 		}
 		
 		setLayout(new SpringLayout());
 		//t.print("AT 2.1");
-		Place defPlace = AstroSoft.getPreferences().getPlace();
+		Place defPlace = getPreferences().getPlace();
 		//t.print("AT 2.2");
 		addPlaces(new Place[]{defPlace});
 		//placeCombo.addItem("New City");
@@ -142,27 +155,21 @@ public class PlaceChooser extends JPanel {
 		
 		searchButton.setEnabled(false);
 		
-		ActionListener searchListener = new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				searchClicked();
-			}
-		};
+		ActionListener searchListener = (ActionEvent e) -> {
+                    searchClicked();
+        };
 		searchButton.addActionListener(searchListener);
-		Icon searchIcon = UIUtil.createImageIcon("Loc_Search");
+		Icon searchIcon = createImageIcon("Loc_Search");
 		searchButton.setIcon(searchIcon);
 		
 		//t.print("AT 4");
 		
-		placeCombo.addItemListener(new ItemListener(){
-
-			public void itemStateChanged(ItemEvent e) {
-				Object item = e.getItem();
-				if (item instanceof Place){
-					setSelectedPlace((Place)item);
-				}
-			}
-		});
+		placeCombo.addItemListener((ItemEvent e) -> {
+                    Object item = e.getItem();
+                    if (item instanceof Place){
+                        setSelectedPlace((Place)item);
+                    }
+        });
 		
 		placeCombo.getEditor().getEditorComponent().addKeyListener(new KeyAdapter(){
 			
@@ -228,26 +235,22 @@ public class PlaceChooser extends JPanel {
 		
 		//t.print("AT 2.2.3.4");
 		
-		latitude_deg.setText(String.valueOf(latitude.deg()));
-		latitude_min.setText(String.valueOf(latitude.min()));
+		latitude_deg.setText(valueOf(latitude.deg()));
+		latitude_min.setText(valueOf(latitude.min()));
 		dir_ns.setSelectedItem(latitude.dir());
 		
 		//t.print("AT 2.2.3.5");
 		
-		longitude_deg.setText(String.valueOf(longitude.deg()));
-		longitude_min.setText(String.valueOf(longitude.min()));
+		longitude_deg.setText(valueOf(longitude.deg()));
+		longitude_min.setText(valueOf(longitude.min()));
 		dir_ew.setSelectedItem(longitude.dir());
 		
 		//t.print("AT 2.2.3.6");
 		
-		new Thread(new Runnable(){
-
-			public void run() {
-				timeZoneCombo.setSelectedItem(p.astrosoftTimeZone());
-				System.out.println("done");
-			}
-			
-		}).start();
+		new Thread(() -> {
+                    timeZoneCombo.setSelectedItem(p.astrosoftTimeZone());
+                    System.out.println("done");
+        }).start();
 		
 		
 		//t.print("AT 2.2.3.7");
@@ -255,7 +258,7 @@ public class PlaceChooser extends JPanel {
 	
 	private void addPlaces(Place[] places) {
 		//t.print("AT 2.2.1");
-		addPlaces(Arrays.asList(places));
+		addPlaces(asList(places));
 		//t.print("AT 2.3");
 	}
 
@@ -280,7 +283,7 @@ public class PlaceChooser extends JPanel {
 		
 		//System.out.println("query->" + query);
 		if (query != null) {
-			List<Place> result = PlaceFinder.findPlace(query.toString()); 
+			List<Place> result = findPlace(query.toString()); 
 			addPlaces(result);
 			placeCombo.showPopup();
 		}

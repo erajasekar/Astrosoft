@@ -32,7 +32,10 @@ import app.astrosoft.ui.comp.BirthDataPanel;
 import app.astrosoft.ui.comp.RasiNakshathraChooser;
 import app.astrosoft.ui.util.SpringUtilities;
 import app.astrosoft.ui.util.UIConsts;
+import static app.astrosoft.ui.util.UIConsts.getTitleBorder;
+import static app.astrosoft.ui.util.UIConsts.getTitleBorder;
 import app.astrosoft.ui.util.UIUtil;
+import static app.astrosoft.ui.util.UIUtil.setPanelBackground;
 
 public class CompactibilityInputDialog extends AstrosoftDialog {
 
@@ -113,32 +116,23 @@ public class CompactibilityInputDialog extends AstrosoftDialog {
 		tabbedPane = new JTabbedPane();
 
 
-		horOkButton.addActionListener(new ActionListener(){
+		horOkButton.addActionListener((ActionEvent e) -> {
+                    Horoscope boyHoroscope = new Horoscope(boyDataPanel.getBirthData());
+                    Horoscope girlHoroscope = new Horoscope(girlDataPanel.getBirthData());
+                    parent.displayCompactibility(boyHoroscope, girlHoroscope);
+                    closeDialog();
+        });
 
-			public void actionPerformed(ActionEvent e) {
-
-				Horoscope boyHoroscope = new Horoscope(boyDataPanel.getBirthData());
-				Horoscope girlHoroscope = new Horoscope(girlDataPanel.getBirthData());
-				parent.displayCompactibility(boyHoroscope, girlHoroscope);
-				closeDialog();
-			}
-
-		});
-
-		starOkButton.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-
-				Rasi bRasi = bRasiNakChooser.getSelectedRasi();
-		        Rasi gRasi = gRasiNakChooser.getSelectedRasi();
-
-		        Nakshathra bNak = bRasiNakChooser.getSelectedNakshathra();
-		        Nakshathra gNak = gRasiNakChooser.getSelectedNakshathra();
-
-		        parent.displayCompactibility(boyName.getText(), girlName.getText(), bRasi, gRasi, bNak, gNak);
-		        closeDialog();
-			}
-		});
+		starOkButton.addActionListener((ActionEvent e) -> {
+                    Rasi bRasi = bRasiNakChooser.getSelectedRasi();
+                    Rasi gRasi = gRasiNakChooser.getSelectedRasi();
+                    
+                    Nakshathra bNak = bRasiNakChooser.getSelectedNakshathra();
+                    Nakshathra gNak = gRasiNakChooser.getSelectedNakshathra();
+                    
+                    parent.displayCompactibility(boyName.getText(), girlName.getText(), bRasi, gRasi, bNak, gNak);
+                    closeDialog();
+        });
 	}
 
 	private void addComponents() {
@@ -171,7 +165,7 @@ public class CompactibilityInputDialog extends AstrosoftDialog {
 		okButtonPanel.add(horOkButton);
 		p.add(okButtonPanel, BorderLayout.PAGE_END);
 
-		UIUtil.setPanelBackground(p, UIConsts.THEME_CLR);
+		setPanelBackground(p, UIConsts.THEME_CLR);
 		return p;
 	}
 
@@ -205,8 +199,8 @@ public class CompactibilityInputDialog extends AstrosoftDialog {
 		girlPanel.add(gNamePanel, BorderLayout.PAGE_START);
 		girlPanel.add(gRasiNakChooser, BorderLayout.CENTER);
 
-		boyPanel.setBorder(UIConsts.getTitleBorder(DisplayStrings.BOY_DATA_STR));
-		girlPanel.setBorder(UIConsts.getTitleBorder(DisplayStrings.GIRL_DATA_STR));
+		boyPanel.setBorder(getTitleBorder(DisplayStrings.BOY_DATA_STR));
+		girlPanel.setBorder(getTitleBorder(DisplayStrings.GIRL_DATA_STR));
 
 		p.add(boyPanel, BorderLayout.WEST);
 		p.add(girlPanel, BorderLayout.EAST);
@@ -214,7 +208,7 @@ public class CompactibilityInputDialog extends AstrosoftDialog {
 		JPanel okButtonPanel = new JPanel();
 		okButtonPanel.add(starOkButton);
 		p.add(okButtonPanel, BorderLayout.PAGE_END);
-		UIUtil.setPanelBackground(p, UIConsts.THEME_CLR);
+		setPanelBackground(p, UIConsts.THEME_CLR);
 		return p;
 	}
 

@@ -21,9 +21,9 @@ public class Attributes extends LinkedList {
 
     public Attributes(Attribute[] attrs) {
 	super();
-	for (int i = 0; i < attrs.length; i++) {
-	    add(attrs[i]);
-	}
+        for (Attribute attr : attrs) {
+            add(attr);
+        }
     }
 
     public Attributes(Attribute attr) {

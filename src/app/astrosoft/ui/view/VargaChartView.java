@@ -21,9 +21,12 @@ import javax.swing.event.ListSelectionListener;
 import app.astrosoft.beans.PlanetChartData;
 import app.astrosoft.beans.PlanetaryInfo;
 import app.astrosoft.consts.Varga;
+import static app.astrosoft.consts.Varga.values;
 import app.astrosoft.ui.comp.Chart;
 import app.astrosoft.ui.util.UIConsts;
 import app.astrosoft.ui.util.UIUtil;
+import static javax.swing.BorderFactory.createEmptyBorder;
+import static javax.swing.BorderFactory.createEtchedBorder;
 
 public class VargaChartView extends AstrosoftView {
 
@@ -44,7 +47,7 @@ public class VargaChartView extends AstrosoftView {
 		
 		JPanel vargaPanel = new JPanel();
 		
-		final JList vargaList = new JList(Varga.values());
+		final JList vargaList = new JList(values());
 		
 		vargaList.setFont(UIUtil.getFont("Tahoma", Font.PLAIN, 11));
 		
@@ -61,18 +64,15 @@ public class VargaChartView extends AstrosoftView {
 		
 		final JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, vargaPanel, chartPanel);
 		
-		vargaPanel.setBorder(BorderFactory.createEtchedBorder());
-		splitPane.setBorder(BorderFactory.createEtchedBorder());
-		chartPanel.setBorder(BorderFactory.createEmptyBorder());
+		vargaPanel.setBorder(createEtchedBorder());
+		splitPane.setBorder(createEtchedBorder());
+		chartPanel.setBorder(createEmptyBorder());
 		
-		vargaList.addListSelectionListener(new ListSelectionListener(){
-
-			public void valueChanged(ListSelectionEvent e) {
-				splitPane.remove(chartPanel);
-				vargaChanged((Varga)vargaList.getSelectedValue());
-				splitPane.add(chartPanel);
-			}
-		});
+		vargaList.addListSelectionListener((ListSelectionEvent e) -> {
+                    splitPane.remove(chartPanel);
+                    vargaChanged((Varga)vargaList.getSelectedValue());
+                    splitPane.add(chartPanel);
+        });
 		
 		add(splitPane,BorderLayout.CENTER);
 	}

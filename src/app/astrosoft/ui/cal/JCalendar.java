@@ -5,6 +5,9 @@ import java.util.Calendar;
 import javax.swing.*;
 
 import app.astrosoft.ui.util.UIConsts;
+import static java.util.Calendar.getInstance;
+import static javax.swing.BorderFactory.createEtchedBorder;
+import static javax.swing.BorderFactory.createLineBorder;
 
 public final class JCalendar extends JPanel
 {
@@ -47,7 +50,7 @@ public final class JCalendar extends JPanel
 
 	    buttonItemListener = new ButtonItemListener(this);
         comboBoxListener = new ComboBoxItemListener(this);
-        calendar = Calendar.getInstance();
+        calendar = getInstance();
         showForYear = calendar.get(1);
         showForMonth = calendar.get(2);
         daySelected = (new Integer(calendar.get(5))).toString();
@@ -71,7 +74,7 @@ public final class JCalendar extends JPanel
             currentDateLabel.setFont(currentDateLabel.getFont().deriveFont(1, 11F));
             currentDatePanel = new JPanel();
             currentDatePanel.setLayout(new FlowLayout(1));
-            currentDatePanel.setBorder(BorderFactory.createEtchedBorder());
+            currentDatePanel.setBorder(createEtchedBorder());
             currentDatePanel.add(currentDateLabel);
             centrePanel.add(currentDatePanel, "South");
         }
@@ -88,7 +91,7 @@ public final class JCalendar extends JPanel
             monthCombo.setSelectedIndex(showForMonth - 1);
         else
             monthCombo.setSelectedIndex(showForMonth);
-        yearCombo.setSelectedItem(new Integer(showForYear));
+        yearCombo.setSelectedItem(showForYear);
         if(showCalendarForDateSelected)
             days = createCalendar(showForYear, showForMonth - 1);
         else
@@ -97,7 +100,7 @@ public final class JCalendar extends JPanel
             centrePanel.remove(daysPanel);
         createDaysPanel();
         centrePanel.add(daysPanel, "Center");
-        setBorder(BorderFactory.createLineBorder(new Color(0,0,0)));
+        setBorder(createLineBorder(new Color(0,0,0)));
         monthCombo.addItemListener(comboBoxListener);
         yearCombo.addItemListener(comboBoxListener);
     }
@@ -106,7 +109,7 @@ public final class JCalendar extends JPanel
     {
         boolean calendarCompleted = false;
         days = new int[7][6];
-        Calendar calendar = Calendar.getInstance();
+        Calendar calendar = getInstance();
         calendar.set(year, month, 1);
         int number = calendar.get(7);
         int k = 1;
@@ -185,7 +188,7 @@ public final class JCalendar extends JPanel
     {
         JComboBox combo = new JComboBox();
         for(int i = startYear; i <= endYear; i++)
-            combo.addItem(new Integer(i));
+            combo.addItem(i);
 		combo. setBackground(new Color(255,255,255));
         return combo;
     }
@@ -213,7 +216,7 @@ public final class JCalendar extends JPanel
     {
         daysPanel = new JPanel();
         daysPanel.setBackground(UIConsts.CAL_COMBO_BACKGROUND);
-        daysPanel.setBorder(BorderFactory.createEtchedBorder());
+        daysPanel.setBorder(createEtchedBorder());
         
         daysPanel.setLayout(new GridLayout(7, 7));
         JDayLabel sunday = new JDayLabel(" Sun ");
@@ -256,7 +259,7 @@ public final class JCalendar extends JPanel
                     JDayButton dayButton = new JDayButton((new Integer(days[k][i])).toString());
                     Integer selectedYear = (Integer)yearCombo.getSelectedItem();
                     //System.out.println(days[k][i] + "," + daySelected  + "," + monthCombo.getSelectedIndex()  + "," +  ((new Integer(monthSelected)).intValue() - 1)  + "," + selectedYear  + "," + yearSelected);
-                    if(days[k][i] == (new Integer(daySelected)).intValue() && monthCombo.getSelectedIndex() == (new Integer(monthSelected)).intValue() - 1 && selectedYear.intValue() == (new Integer(yearSelected)).intValue()){
+                    if(days[k][i] == (new Integer(daySelected)) && monthCombo.getSelectedIndex() == (new Integer(monthSelected)) - 1 && selectedYear == (new Integer(yearSelected))){
                     	dayButton.setForeground(Color.RED);
                     	dayButton.setSelected(true);
                     }

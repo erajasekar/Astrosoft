@@ -17,7 +17,9 @@ import app.astrosoft.core.Panchang;
 import app.astrosoft.core.Ephemeris.EphData;
 import app.astrosoft.ui.util.UIConsts;
 import app.astrosoft.ui.util.UIUtil;
+import static app.astrosoft.ui.util.UIUtil.getFontTag;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.todegmin;
 
  public class EphemerisCellRenderer extends DefaultTableCellRenderer {
  	
@@ -37,16 +39,16 @@ import app.astrosoft.util.AstroUtil;
  			EphData ephValue = (EphData) value;
  			StringBuilder data = new StringBuilder(UIUtil.htmlTag);
  			
- 			String house = UIUtil.getFontTag() + ephValue.getHouse().toString(DisplayFormat.SYMBOL) + UIUtil.closeFontTag ;
+ 			String house = getFontTag() + ephValue.getHouse().toString(DisplayFormat.SYMBOL) + UIUtil.closeFontTag ;
  			
  			//System.out.println(house);
  			//data.append(ephValue.)
- 			data.append(AstroUtil.todegmin(ephValue.getPosition(), house));
+ 			data.append(todegmin(ephValue.getPosition(), house));
  			
  			if (ephValue.isReverse()){
  				
  				//data.append("&nbsp;");
- 				data.append(UIUtil.getFontTag());
+ 				data.append(getFontTag());
  				data.append(DisplayStrings.RETRO_SYM);
  				data.append(UIUtil.closeFontTag);
  			}

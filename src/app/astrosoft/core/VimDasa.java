@@ -19,9 +19,12 @@ import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.DisplayFormat;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Planet;
+import static app.astrosoft.consts.Planet.dasaIterator;
+import static app.astrosoft.consts.Planet.dasaLords;
 import app.astrosoft.ui.AstroSoft;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.decimalYearToDate;
 
 public class VimDasa extends AbstractDasa {
 	
@@ -48,11 +51,11 @@ public class VimDasa extends AbstractDasa {
 
 	public String getStartDate() {
 
-		return Vimshottari.dateFormat.format(AstroUtil.decimalYearToDate(start));
+		return Vimshottari.dateFormat.format(decimalYearToDate(start));
 	}
 
 	public String getEndDate() {
-		return Vimshottari.dateFormat.format(AstroUtil.decimalYearToDate(end));
+		return Vimshottari.dateFormat.format(decimalYearToDate(end));
 	}
 	
 	public Dasa getCurrent(){
@@ -150,8 +153,8 @@ public class VimDasa extends AbstractDasa {
 	
 	public static EnumMap<Planet, Dasa> generateSubDasas(Planet lord, Dasa parent, double start, int level) {
 		
-		EnumMap<Planet, Dasa>subDasas = new EnumMap<Planet, Dasa>(Planet.class);
-		for(Planet subLord : Planet.dasaLords(lord)){
+		EnumMap<Planet, Dasa>subDasas = new EnumMap<>(Planet.class);
+		for(Planet subLord : dasaLords(lord)){
 			Dasa dasa = new VimDasa(subLord, parent, start, level + 1);
 			start = dasa.getEnd();
 			subDasas.put(subLord, dasa);
@@ -191,7 +194,7 @@ public class VimDasa extends AbstractDasa {
 		
 		public DasaIterator(Planet startWith, EnumMap<Planet, Dasa> subDasas) {
 			
-			dasaIterator = Planet.dasaIterator(startWith);
+			dasaIterator = dasaIterator(startWith);
 			this.subDasas = subDasas;
 			if(subDasas == null){
 				dasaIterator = Collections.EMPTY_LIST.iterator();

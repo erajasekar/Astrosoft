@@ -28,9 +28,13 @@ import app.astrosoft.consts.Language;
 import app.astrosoft.consts.TableStyle;
 import app.astrosoft.core.Ephemeris;
 import app.astrosoft.core.Ephemeris.Mode;
+import static app.astrosoft.core.Ephemeris.Mode.valueOf;
+import static app.astrosoft.core.Ephemeris.Mode.values;
 import app.astrosoft.pref.AstrosoftPref;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.comp.CalendarChooser;
+import static app.astrosoft.ui.comp.CalendarChooser.getMonthChooser;
 import app.astrosoft.ui.comp.CalendarSpinner;
 import app.astrosoft.ui.comp.DateListener;
 import app.astrosoft.ui.comp.TitleLabel;
@@ -40,6 +44,9 @@ import app.astrosoft.ui.table.AstrosoftTableModel;
 import app.astrosoft.ui.table.Table;
 import app.astrosoft.ui.util.UIUtil;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.getCalendar;
+import static app.astrosoft.util.AstroUtil.timeFormat;
+import static javax.swing.BorderFactory.createEtchedBorder;
 
 public class EphemerisView extends AstrosoftView {
 
@@ -69,7 +76,7 @@ public class EphemerisView extends AstrosoftView {
 			
 			ephTable.setColumnWidth(60, AstrosoftTableColumn.Sun, AstrosoftTableColumn.Moon, AstrosoftTableColumn.Rahu, AstrosoftTableColumn.Ketu);
 			
-			monthChooser = CalendarChooser.getMonthChooser();
+			monthChooser = getMonthChooser();
 			
 			tablePanel = new TitledTable(ephTable, dailyTableSize);
 		
@@ -78,14 +85,10 @@ public class EphemerisView extends AstrosoftView {
 			
 			add(tablePanel,BorderLayout.PAGE_START);
 			
-			monthChooser.addDateListener(new DateListener(){
-
-				public void dateChanged(Date date) {
-					ephDate = AstroUtil.getCalendar(date); 
-					updateEphTable();
-				}
-				
-			});
+			monthChooser.addDateListener((Date date) -> {
+                            ephDate = getCalendar(date);
+            updateEphTable();
+        });
 	}
 	
 	private void updateEphTable(){
@@ -99,33 +102,27 @@ public class EphemerisView extends AstrosoftView {
 	private JPanel createEphModeSelector(Color bgClr, Color fgClr){
 		JPanel panel = new JPanel();
 		
-		ActionListener modeListener = new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				ephMode = Mode.valueOf(e.getActionCommand());
-				
-				if (ephMode.isMonthly()){
-					
-					tablePanel.setScrollPaneSize(monthyTableSize);
-					((CalendarSpinner) monthChooser).setDateFormat(CalendarSpinner.FMT_YEAR);
-				}else{
-					 tablePanel.setScrollPaneSize(dailyTableSize);
-					 int row = ephTable.getSelectedRow();
-					 if (row != -1){
-						 ephDate.set(Calendar.MONTH, row);
-					 }
-					 
-					 monthChooser.setSelectedDate(ephDate.getTime());
-					((CalendarSpinner) monthChooser).setDateFormat(CalendarSpinner.FMT_MONTH_YEAR);
-				}
-				updateEphTable();
-				
-			}
-			
-		};
+		ActionListener modeListener = (ActionEvent e) -> {
+                    ephMode = valueOf(e.getActionCommand());
+            if (ephMode.isMonthly()){
+                
+                tablePanel.setScrollPaneSize(monthyTableSize);
+                ((CalendarSpinner) monthChooser).setDateFormat(CalendarSpinner.FMT_YEAR);
+            }else{
+                tablePanel.setScrollPaneSize(dailyTableSize);
+                int row = ephTable.getSelectedRow();
+                if (row != -1){
+                    ephDate.set(Calendar.MONTH, row);
+                }
+                
+                monthChooser.setSelectedDate(ephDate.getTime());
+                ((CalendarSpinner) monthChooser).setDateFormat(CalendarSpinner.FMT_MONTH_YEAR);
+            }
+            updateEphTable();
+        };
 		ButtonGroup bg = new ButtonGroup();
 		
-		for(Mode m : Mode.values()){
+		for(Mode m : values()){
 			JRadioButton button = new JRadioButton(m.toString());
 			bg.add(button);
 			button.setActionCommand(m.name());
@@ -147,12 +144,12 @@ public class EphemerisView extends AstrosoftView {
 	private JPanel createEphTitle(Color bgClr, Color fgClr){
 		
 		JPanel panel = new JPanel();
-		AstrosoftPref preferences = AstroSoft.getPreferences();
+		AstrosoftPref preferences = getPreferences();
 		StringBuilder text = new StringBuilder(DisplayStrings.EPHEMERIS_STR.toString());
 		text.append(" For ");
 		text.append(preferences.getPlace().city());
 		text.append(" at ");
-		text.append(AstroUtil.timeFormat(preferences.getEphCalcTime()));
+		text.append(timeFormat(preferences.getEphCalcTime()));
 		
 		JLabel title = new TitleLabel(text.toString());
 		panel.add(title);
@@ -179,7 +176,7 @@ public class EphemerisView extends AstrosoftView {
 		ephSelector.add(createEphTitle(bgClr, fgClr), BorderLayout.CENTER);
 		ephSelector.add(createEphModeSelector(bgClr, fgClr), BorderLayout.EAST);
 		
-		ephSelector.setBorder(BorderFactory.createEtchedBorder());
+		ephSelector.setBorder(createEtchedBorder());
 		return ephSelector;
 	}
 }

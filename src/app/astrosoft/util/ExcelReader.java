@@ -7,8 +7,11 @@
 package app.astrosoft.util;
 
 import java.io.*;
+import static java.lang.Class.forName;
+import static java.lang.Double.parseDouble;
 
 import java.sql.*;
+import static java.sql.DriverManager.getConnection;
 
 import java.text.DecimalFormat;
 
@@ -101,19 +104,17 @@ public class ExcelReader {
 
     private void readAllStates(  ) throws Exception {
 
-        Class.forName( "sun.jdbc.odbc.JdbcOdbcDriver" );
+        forName( "sun.jdbc.odbc.JdbcOdbcDriver" );
 
-        con = DriverManager.getConnection( "jdbc:odbc:readxl" );
+        con = getConnection( "jdbc:odbc:readxl" );
         st = con.createStatement(  );
 
-        for ( int s = 0; s < states.length; s++ ) {
-
+        for (String state : states) {
             /*writeSTag( "state" );
             writeTag( "name", states[s] );*/
-        	writeSTag("state", "name", states[s]);
-            readState( states[s] );
+            writeSTag("state", "name", state);
+            readState(state);
             writeETag( "state" );
-
         }
 
         st.close(  );
@@ -134,11 +135,11 @@ public class ExcelReader {
         	writeSTag("city", "name", rs.getString( 1 ));
 
             String str = rs.getString( 2 );
-            Double d = Double.parseDouble( str.substring( 0, str.indexOf("N") ) );
+            Double d = parseDouble( str.substring( 0, str.indexOf("N") ) );
 
             writeTag( "latitude", df.format( d ), "dir", "N" );
             str = rs.getString( 3 );
-            d = Double.parseDouble( str.substring( 0, str.indexOf("E") ) );
+            d = parseDouble( str.substring( 0, str.indexOf("E") ) );
             writeTag( "longitude", df.format( d ), "dir", "E" );
 
             writeETag( "city" );

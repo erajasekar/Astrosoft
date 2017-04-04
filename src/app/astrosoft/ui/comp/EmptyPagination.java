@@ -8,13 +8,14 @@ package app.astrosoft.ui.comp;
 
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableDataFactory;
+import static app.astrosoft.ui.table.TableDataFactory.emptyTableData;
 
 public class EmptyPagination extends AbstractPagination {
 
 	private static EmptyPagination instance = null;
 	@Override
 	protected TableData getData(int startIndex, int maxRows) {
-		return TableDataFactory.emptyTableData();
+		return emptyTableData();
 	}
 
 	private EmptyPagination(int pageLength){

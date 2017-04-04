@@ -23,16 +23,20 @@ import app.astrosoft.consts.DisplayFormat;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Kuta;
 import app.astrosoft.consts.Language;
+import static app.astrosoft.consts.Language.values;
 import app.astrosoft.consts.Nakshathra;
 import app.astrosoft.consts.Paksha;
 import app.astrosoft.consts.Rasi;
 import app.astrosoft.consts.Thithi;
 import app.astrosoft.pref.AstrosoftPref;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
+import static java.util.ResourceBundle.getBundle;
+import static java.util.logging.Logger.getLogger;
 
 public class Internalization  {
 
-	private static final Logger log = Logger.getLogger(Internalization.class.getName());
+	private static final Logger log = getLogger(Internalization.class.getName());
 	
 	public static String bundleName = "resources.AstrosoftBundle";
 
@@ -40,7 +44,7 @@ public class Internalization  {
 
 	//private static Language language;
 
-	private static Map<String, String> unsupportedMsgs = new HashMap<String, String>();
+	private static Map<String, String> unsupportedMsgs = new HashMap<>();
 
 	static {
 		//setPreferedLanguate();
@@ -61,11 +65,11 @@ public class Internalization  {
 
 	private static void loadBundles(){
 		
-		bundles = new EnumMap<Language,ResourceBundle>(Language.class);
+		bundles = new EnumMap<>(Language.class);
 		
-		for (Language l : Language.values()){
+		for (Language l : values()){
 			
-			ResourceBundle bundle = ResourceBundle.getBundle(bundleName, new Locale(l.isoCode()));
+			ResourceBundle bundle = getBundle(bundleName, new Locale(l.isoCode()));
 			bundles.put(l,bundle);
 		}
 	}
@@ -187,7 +191,7 @@ public class Internalization  {
 		setPreferedLanguate();*/
 		
 		//setLanguage(language);
-		return  getString(AstroSoft.getPreferences().getLanguage(), key);
+		return  getString(getPreferences().getLanguage(), key);
 		//setPreferedLanguate(Ast);
 		//return str;
 	}

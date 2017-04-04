@@ -11,12 +11,14 @@ import java.util.logging.Logger;
 
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableDataFactory;
+import static app.astrosoft.ui.table.TableDataFactory.emptyTableData;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.ui.view.FindNameView;
+import static java.util.logging.Logger.getLogger;
 
 public abstract class AbstractPagination<E extends TableRowData> implements Pagination<E>{
 	
-	private static final Logger log = Logger.getLogger(AbstractPagination.class.getName());
+	private static final Logger log = getLogger(AbstractPagination.class.getName());
 
 	protected int currentPage;
 	protected int pageLength;
@@ -58,7 +60,7 @@ public abstract class AbstractPagination<E extends TableRowData> implements Pagi
 		if (isLastPage){
 			currentPage = totalPages + 1;
 			log.fine("You are in last page ");
-			return TableDataFactory.emptyTableData();
+			return emptyTableData();
 		}
 		
 		currentPage++;
@@ -72,7 +74,7 @@ public abstract class AbstractPagination<E extends TableRowData> implements Pagi
 		if (isFirstPage){
 			currentPage = 0;
 			log.fine("You are in first page ");
-			return TableDataFactory.emptyTableData();
+			return emptyTableData();
 		}
 		currentPage--;
 		return getPage();

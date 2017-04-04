@@ -17,6 +17,7 @@ import javax.swing.JWindow;
 import javax.swing.border.LineBorder;
 
 import app.astrosoft.ui.util.UIConsts;
+import static javax.swing.border.LineBorder.createGrayLineBorder;
 
 public class AstrosoftWindow extends JWindow {
 	
@@ -78,7 +79,7 @@ public class AstrosoftWindow extends JWindow {
 
     	
     	JPanel p = new JPanel(  );
-        p.setBorder(LineBorder.createGrayLineBorder());
+        p.setBorder(createGrayLineBorder());
         p.setBackground(windowBgClr);
         renderer.setFont(windowTextFont);
         renderer.setForeground(windowTextClr);

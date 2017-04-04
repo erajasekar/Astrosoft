@@ -25,6 +25,7 @@ import javax.swing.event.ChangeListener;
 
 import app.astrosoft.ui.AstroSoft;
 import app.astrosoft.ui.util.SpringUtilities;
+import static app.astrosoft.ui.util.SpringUtilities.makeCompactGrid;
 
 public class CalendarSpinner extends CalendarChooser {
 
@@ -71,7 +72,7 @@ public class CalendarSpinner extends CalendarChooser {
 		chooserPanel.add(l);
 		chooserPanel.add(spinner);
 		
-		SpringUtilities.makeCompactGrid(chooserPanel, 1, 2, 5,5,10,10);
+		makeCompactGrid(chooserPanel, 1, 2, 5,5,10,10);
 		
 		return chooserPanel;
 	}
@@ -86,13 +87,7 @@ public class CalendarSpinner extends CalendarChooser {
 		editor = new JSpinner.DateEditor(spinner, dateFormat);
 		spinner.setEditor(editor);
 		
-		spinner.addChangeListener(new ChangeListener(){
-
-			public void stateChanged(ChangeEvent e) {
-				selectionChanged(e);
-			}
-			
-		});
+		spinner.addChangeListener(this::selectionChanged);
 		
 	}
 	

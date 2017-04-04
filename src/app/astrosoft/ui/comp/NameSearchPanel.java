@@ -20,15 +20,18 @@ import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 
 import app.astrosoft.consts.DisplayStrings;
+import static app.astrosoft.consts.Operator.logical;
 import app.astrosoft.ui.util.SpringUtilities;
+import static app.astrosoft.ui.util.SpringUtilities.makeCompactGrid;
+import static app.astrosoft.ui.util.SpringUtilities.makeCompactGrid;
 import app.astrosoft.ui.util.UIConsts;
 
 public class NameSearchPanel extends NumeroNamePanel {
 
 	private static final Dimension comboSize = new Dimension(1,17);
 	
-	private JComboBox op1 = new JComboBox(Operator.logical().toArray());
-	private JComboBox op2 = new JComboBox(Operator.logical().toArray());
+	private JComboBox op1 = new JComboBox(logical().toArray());
+	private JComboBox op2 = new JComboBox(logical().toArray());
 	
 	public NameSearchPanel(final ActionListener l){
 		
@@ -40,11 +43,11 @@ public class NameSearchPanel extends NumeroNamePanel {
 	}
 
 	protected void addOperatorPanel1() {
-		add(SpringUtilities.makeCompactGrid(2, 1, 0,0,4,4, l_blank, op1));
+		add(makeCompactGrid(2, 1, 0,0,4,4, l_blank, op1));
 	}
 	
 	protected void addOperatorPanel2() {
-		add(SpringUtilities.makeCompactGrid(2, 1, 0,0,4,4, l_blank, op2));
+		add(makeCompactGrid(2, 1, 0,0,4,4, l_blank, op2));
 	}
 
 	public int getPanelCount() {

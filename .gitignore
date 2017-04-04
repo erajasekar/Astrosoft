@@ -13,6 +13,9 @@
 \.classpath$
 ^release$
 ^lib-unused$
+^deploy\
+/nbproject/
+nbbuild.xml
 deploy/
 *.bak
 samples\

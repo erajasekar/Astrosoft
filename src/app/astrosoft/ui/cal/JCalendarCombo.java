@@ -13,6 +13,7 @@ import javax.swing.event.AncestorListener;
 import javax.swing.plaf.basic.BasicArrowButton;
 
 import app.astrosoft.ui.util.UIUtil;
+import static app.astrosoft.ui.util.UIUtil.setWindowLocation;
 
 
 public class JCalendarCombo extends JPanel implements Observer {
@@ -75,76 +76,25 @@ public class JCalendarCombo extends JPanel implements Observer {
         add( button, "East" );
         setSelectedDate(  );
         button.addActionListener( 
-            new ActionListener(  ) {
-
-                public void actionPerformed( ActionEvent e ) {
-
-                    if ( !condition ) {
-
-                        condition = true;
-                        window =
-                            new JWindow( 
+            (ActionEvent e) -> {
+            if (!condition) {
+                condition = true;
+                window =
+                        new JWindow( 
                                 ( Window ) textField.getTopLevelAncestor(  ) );
-                        window.getContentPane(  ).setLayout( 
-                            new BorderLayout(  ) );
-
-                        
-                        //window.getContentPane().setBackground(new Color(0,0,0));
-                        
-                        calendar.initializeCalendar(  );
-                        window.getContentPane(  ).add( calendar, "Center" );
-                        window.pack(  );
-                        
-                        UIUtil.setWindowLocation(window, textField);
-
-//                      TODO: Remove later since this is replaced by UIUtil.setWindowLocation();
-                        
-                        /*Point textFieldLocation =
-                            textField.getLocationOnScreen(  );
-                        Dimension size = textField.getSize(  );
-                        Dimension windowSize = window.getSize(  );
-                        Dimension screenSize =
-                            Toolkit.getDefaultToolkit(  ).getScreenSize(  );
-
-                        if ( 
-                            ( ( textFieldLocation.x
-                                - ( windowSize.width - size.width ) ) <= 0 )
-                                && ( ( textFieldLocation.y + size.height
-                                + windowSize.height ) >= screenSize.height ) ) {
-                            window.setLocation( 
-                                0, textFieldLocation.y - windowSize.height );
-                        } else if ( 
-                            ( textFieldLocation.x
-                                - ( windowSize.width - size.width ) ) <= 0 ) {
-                            window.setLocation( 
-                                0, textFieldLocation.y + size.height );
-                        } else if ( 
-                            ( textFieldLocation.y + size.height
-                                + windowSize.height ) >= screenSize.height ) {
-                            window.setLocation( 
-                                textFieldLocation.x
-                                - ( windowSize.width - size.width ),
-                                textFieldLocation.y - windowSize.height );
-                        } else {
-                            window.setLocation( 
-                                textFieldLocation.x
-                                - ( windowSize.width - size.width ),
-                                textFieldLocation.y + size.height );
-                        }*/
-
-                        window.setVisible( true );
-
-                    } else {
-
-                        window.dispose(  );
-                        setSelectedDate(  );
-                        condition = false;
-
-                    }
-
-                }
-
-            } );
+                window.getContentPane(  ).setLayout(
+                        new BorderLayout(  ) );
+                calendar.initializeCalendar(  );
+                window.getContentPane(  ).add( calendar, "Center" );
+                window.pack(  );
+                setWindowLocation(window, textField);
+                window.setVisible( true );
+            } else {
+                window.dispose(  );
+                setSelectedDate(  );
+                condition = false;
+            }
+        });
         addAncestorListener( 
             new AncestorListener(  ) {
 

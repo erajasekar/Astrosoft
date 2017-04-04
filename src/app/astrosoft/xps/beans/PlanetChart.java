@@ -20,12 +20,17 @@ import app.astrosoft.consts.Planet;
 import app.astrosoft.consts.Rasi;
 import app.astrosoft.consts.Varga;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.calcPlanetInHouses;
+import static app.astrosoft.util.AstroUtil.calcPlanetLocation;
 import static app.astrosoft.util.CollectionUtil.*;
 import app.astrosoft.util.Mod;
+import static java.lang.Integer.parseInt;
+import static java.lang.Integer.parseInt;
+import static java.util.logging.Logger.getLogger;
 
 public class PlanetChart {
 	
-	private static final Logger log = Logger.getLogger(PlanetChart.class.getName());
+	private static final Logger log = getLogger(PlanetChart.class.getName());
 
 	private String varga;
 	
@@ -53,12 +58,12 @@ public class PlanetChart {
 		this.varga = varga.name();
 		this.planetLocations = planetLocations;
 		this.planetHouses =planetHouses;
-		this.planetsInHouse = AstroUtil.calcPlanetInHouses(planetHouses);
+		this.planetsInHouse = calcPlanetInHouses(planetHouses);
 	}
 	
 	public PlanetChart(Varga varga, Map<Planet, Rasi> planetHouses ){
 		
-		this(varga, AstroUtil.calcPlanetLocation(planetHouses), planetHouses);
+		this(varga, calcPlanetLocation(planetHouses), planetHouses);
 	}
 	
 	/*private void addPlanetLocations(EnumMap<Planet, Integer> planetPos) {
@@ -216,7 +221,7 @@ public class PlanetChart {
 	}
 	
 	public Planet lordOf(String location){
-		return lordOf(Integer.parseInt(location));
+		return lordOf(parseInt(location));
 	}
 	
 	/** Location : 1 - 12 **/
@@ -226,7 +231,7 @@ public class PlanetChart {
 	}
 	
 	public Rasi houseOf(String location){
-		return houseOf(Integer.parseInt(location));
+		return houseOf(parseInt(location));
 	}
 	
 	public boolean isPlanetStronglyDisposed(Planet planet){

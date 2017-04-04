@@ -2,6 +2,8 @@ package app.astrosoft.ui.cal;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import static java.lang.System.exit;
+import static javax.swing.BorderFactory.createEmptyBorder;
 
 
 public class CalendarTest extends JFrame
@@ -20,7 +22,7 @@ public class CalendarTest extends JFrame
 		JButton cancel = new JButton("Cancel");
 		panel1.setLayout(new GridLayout(4,2,5,5));
 		getContentPane().setLayout(new GridLayout(1,1));
-		panel1.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+		panel1.setBorder(createEmptyBorder(10,10,10,10));
 		panel1.add(label1);
 		panel1.add(name);
 		panel1.add(label2);
@@ -34,31 +36,22 @@ public class CalendarTest extends JFrame
 		setTitle("JCalendarCombo Demo");
 		setVisible(true);
 
-		okay.addActionListener(new ActionListener()
-		{
-			public void actionPerformed(ActionEvent e)
-			{
-				System.out.println(jCalendarCombo.getSelectedDate());
-				System.out.println(jCalendarCombo.getSelectedDay());
-				System.out.println(jCalendarCombo.getSelectedMonth());
-				System.out.println(jCalendarCombo.getSelectedYear());
-			}
+		okay.addActionListener((ActionEvent e) -> {
+                    System.out.println(jCalendarCombo.getSelectedDate());
+                    System.out.println(jCalendarCombo.getSelectedDay());
+                    System.out.println(jCalendarCombo.getSelectedMonth());
+                    System.out.println(jCalendarCombo.getSelectedYear());
+        });
 
-		});
-
-		cancel.addActionListener(new ActionListener()
-		{
-			public void actionPerformed(ActionEvent e)
-			{
-				System.exit(0);
-			}
-		});
+		cancel.addActionListener((ActionEvent e) -> {
+            exit(0);
+        });
 
 		addWindowListener(new WindowAdapter()
 		{
 			public void windowClosing(WindowEvent e)
 			{
-				System.exit(0);
+				exit(0);
 			}
 		});
 

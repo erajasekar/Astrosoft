@@ -33,12 +33,15 @@ import app.astrosoft.consts.Nakshathra;
 import app.astrosoft.consts.Rasi;
 import app.astrosoft.consts.Varga;
 import app.astrosoft.core.Compactibility;
+import static app.astrosoft.core.Compactibility.createFromXML;
 import app.astrosoft.core.Ephemeris;
 import app.astrosoft.core.Horoscope;
 import app.astrosoft.core.Muhurtha;
 import app.astrosoft.core.Panchang;
 import app.astrosoft.core.Ephemeris.Mode;
+import static app.astrosoft.core.Horoscope.createFromFile;
 import app.astrosoft.export.AstrosoftExporter;
+import static app.astrosoft.export.AstrosoftExporter.export2Pdf;
 import app.astrosoft.pref.AstrosoftPref;
 import app.astrosoft.pref.AstrosoftPref.Preference;
 import app.astrosoft.ui.comp.AstrosoftMenuBar;
@@ -51,10 +54,13 @@ import app.astrosoft.ui.dlg.ExportDialog;
 import app.astrosoft.ui.dlg.MuhurthaInput;
 import app.astrosoft.ui.dlg.ComputeNumberDialog;
 import app.astrosoft.ui.dlg.OptionDialog;
+import static app.astrosoft.ui.dlg.OptionDialog.showDialog;
 import app.astrosoft.ui.dlg.PlaceOptionDialog;
 import app.astrosoft.ui.dlg.PrintDialog;
 import app.astrosoft.ui.dlg.TimeInputDialog;
 import app.astrosoft.ui.util.UIConsts;
+import static app.astrosoft.ui.util.UIConsts.getLookAndFeel;
+import static app.astrosoft.ui.util.UIConsts.getUIDefaults;
 import app.astrosoft.ui.view.AshtavargaView;
 import app.astrosoft.ui.view.BhavaView;
 import app.astrosoft.ui.view.CompactibilityView;
@@ -72,8 +78,18 @@ import app.astrosoft.ui.view.VimDasaView;
 import app.astrosoft.ui.view.YogaCombinationsView;
 import app.astrosoft.ui.view.ViewManager.View;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.doubleTimeToDate;
+import static app.astrosoft.util.AstroUtil.getCalendar;
 import app.astrosoft.util.AstrosoftFileFilter;
 import app.astrosoft.util.FileOps;
+import static app.astrosoft.util.FileOps.openFileDialog;
+import static java.awt.Cursor.getPredefinedCursor;
+import static java.awt.Toolkit.getDefaultToolkit;
+import static java.lang.System.exit;
+import static java.lang.System.getProperty;
+import static java.util.EnumSet.of;
+import static javax.swing.UIManager.put;
+import static javax.swing.UIManager.setLookAndFeel;
 
 public class AstroSoft extends javax.swing.JFrame implements
 		AstrosoftActionHandler {
@@ -102,7 +118,7 @@ public class AstroSoft extends javax.swing.JFrame implements
 
 	//public static Calendar today = new GregorianCalendar(); //AstroSoft.getPreferences().getPlace().astrosoftTimeZone().getTimeZone());
 
-	public static Calendar today = new GregorianCalendar(AstroSoft.getPreferences().getPlace().astrosoftTimeZone().getTimeZone());
+	public static Calendar today = new GregorianCalendar(getPreferences().getPlace().astrosoftTimeZone().getTimeZone());
 
 	//Until Abslayout is completely removed:
 
@@ -136,7 +152,7 @@ public class AstroSoft extends javax.swing.JFrame implements
 	private AstroSoft(String[] args){
 
 		this();
-		System.out.println("Logging properties: " + System.getProperty("java.util.logging.config.file"));
+		System.out.println("Logging properties: " + getProperty("java.util.logging.config.file"));
 		
 		if(args.length > 0 && args[0] != null){
 			openHoroscope(args[0]);
@@ -178,7 +194,7 @@ public class AstroSoft extends javax.swing.JFrame implements
 
 	/** Exit the Application */
 	private void exitForm(java.awt.event.WindowEvent evt) { // GEN-FIRST:event_exitForm
-		System.exit(0);
+		exit(0);
 
 	} // GEN-LAST:event_exitForm
 
@@ -237,15 +253,15 @@ public class AstroSoft extends javax.swing.JFrame implements
 	private static void setUIDefaults() {
 
 		try {
-			UIManager.setLookAndFeel(UIConsts.getLookAndFeel());
+			setLookAndFeel(getLookAndFeel());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		//JFrame.setDefaultLookAndFeelDecorated(true);
-		Map defaults = UIConsts.getUIDefaults();
+		Map defaults = getUIDefaults();
 
 		for(Object key : defaults.keySet()){
-			UIManager.put(key, defaults.get(key));
+			put(key, defaults.get(key));
 		}
 	}
 
@@ -297,7 +313,7 @@ public class AstroSoft extends javax.swing.JFrame implements
 		if(h.getShadBala() != null){
 			return new ShadBalaView(h.getTitle(), h.getShadBala(), new Point(30,20));
 		}else{
-			OptionDialog.showDialog("No ShadBala for Birth Year < 1900", JOptionPane.ERROR_MESSAGE);
+			showDialog("No ShadBala for Birth Year < 1900", JOptionPane.ERROR_MESSAGE);
 			return createChartView();
 		}
 	}
@@ -343,7 +359,7 @@ public class AstroSoft extends javax.swing.JFrame implements
 
 	public void openHoroscope() {
 
-		String selectedFile = FileOps.openFileDialog(this, FileOps.FileDialogMode.OPEN, AstrosoftFileFilter.HOROSCOPE_EXTN);
+		String selectedFile = openFileDialog(this, FileOps.FileDialogMode.OPEN, AstrosoftFileFilter.HOROSCOPE_EXTN);
 		
 		if (selectedFile != null) {
 			openHoroscope(selectedFile);
@@ -352,13 +368,13 @@ public class AstroSoft extends javax.swing.JFrame implements
 
 	public void openHoroscope(String horoscopeFile) {
 
-		h = Horoscope.createFromFile(horoscopeFile);
+		h = createFromFile(horoscopeFile);
 
 		if (h != null) {
 			enableActions(true);
 
 		} else {
-			OptionDialog.showDialog(" Invalid File ", JOptionPane.ERROR_MESSAGE);
+			showDialog(" Invalid File ", JOptionPane.ERROR_MESSAGE);
 			this.repaint();
 			this.setVisible(true);
 			return;
@@ -369,7 +385,7 @@ public class AstroSoft extends javax.swing.JFrame implements
 	public void saveHoroscope() {
 
 		if (h != null){
-			String selectedFile = FileOps.openFileDialog(this, FileOps.FileDialogMode.SAVE, AstrosoftFileFilter.HOROSCOPE_EXTN);
+			String selectedFile = openFileDialog(this, FileOps.FileDialogMode.SAVE, AstrosoftFileFilter.HOROSCOPE_EXTN);
 			if (selectedFile != null) {
 				h.saveToFile(selectedFile);
 			}
@@ -377,10 +393,10 @@ public class AstroSoft extends javax.swing.JFrame implements
 	}
 
 	public void openCompactibility(){
-		String fileName = FileOps.openFileDialog(this, FileOps.FileDialogMode.OPEN, AstrosoftFileFilter.COMPACTIBILITY_EXTN);
+		String fileName = openFileDialog(this, FileOps.FileDialogMode.OPEN, AstrosoftFileFilter.COMPACTIBILITY_EXTN);
 		
 		if (fileName != null) {
-			compactibility = Compactibility.createFromXML(fileName);
+			compactibility = createFromXML(fileName);
 		
 			if (compactibility != null){
 				actionMgr.enableAction(Command.PRINT, true);
@@ -409,7 +425,7 @@ public class AstroSoft extends javax.swing.JFrame implements
 	public void saveCompactibility(){
 
 		if (compactibility != null){
-			String selectedFile = FileOps.openFileDialog(this, FileOps.FileDialogMode.SAVE, AstrosoftFileFilter.COMPACTIBILITY_EXTN);
+			String selectedFile = openFileDialog(this, FileOps.FileDialogMode.SAVE, AstrosoftFileFilter.COMPACTIBILITY_EXTN);
 			
 			if (selectedFile != null) {
 				compactibility.saveToXML(selectedFile);
@@ -426,8 +442,8 @@ public class AstroSoft extends javax.swing.JFrame implements
 
 		if (h != null){
 
-			String selectedFile = FileOps.openFileDialog(this, FileOps.FileDialogMode.SAVE, AstrosoftFileFilter.PDF_EXTN);
-			FutureTask<Object> task = AstrosoftExporter.export2Pdf(AstrosoftExporter.Type.Horosocope, h, selectedFile);
+			String selectedFile = openFileDialog(this, FileOps.FileDialogMode.SAVE, AstrosoftFileFilter.PDF_EXTN);
+			FutureTask<Object> task = export2Pdf(AstrosoftExporter.Type.Horosocope, h, selectedFile);
 			
 			ExportDialog exportDlg = new ExportDialog(this,"Export Horosocope ", task,selectedFile);
 		}
@@ -437,17 +453,17 @@ public class AstroSoft extends javax.swing.JFrame implements
 
 		if (compactibility != null){
 
-			String selectedFile = FileOps.openFileDialog(this, FileOps.FileDialogMode.SAVE, AstrosoftFileFilter.PDF_EXTN);
-			AstrosoftExporter.export2Pdf(AstrosoftExporter.Type.Compactibility, compactibility, selectedFile);
+			String selectedFile = openFileDialog(this, FileOps.FileDialogMode.SAVE, AstrosoftFileFilter.PDF_EXTN);
+			export2Pdf(AstrosoftExporter.Type.Compactibility, compactibility, selectedFile);
 		}
 	}
 
 	public void setWaitCursor(){
-		setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+		setCursor(getPredefinedCursor(Cursor.WAIT_CURSOR));
 	}
 	
 	public void setDefaultCursor(){
-		setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		setCursor(getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 	}
 	
 	public void computeNumeroNumber(){
@@ -499,26 +515,24 @@ public class AstroSoft extends javax.swing.JFrame implements
 
 	public void optionChanged(final Preference preference){
 
-		DateListener listener = new DateListener(){
-			public void dateChanged(Date date) {
-				preferences.preferenceChanged(preference, date);
-			}
-		};
+		DateListener listener = (Date date) -> {
+                    preferences.preferenceChanged(preference, date);
+        };
 
 		switch(preference){
 			case Place: new PlaceOptionDialog(this);
 						break;
 			case EphCalcTime:
-							  new TimeInputDialog(DisplayStrings.EPH_TIME_STR, this, AstroUtil.doubleTimeToDate(preferences.getEphCalcTime()), listener);
+							  new TimeInputDialog(DisplayStrings.EPH_TIME_STR, this, doubleTimeToDate(preferences.getEphCalcTime()), listener);
 							  break;
-			case PanCalcTime: new TimeInputDialog(DisplayStrings.PAN_TIME_STR, this, AstroUtil.doubleTimeToDate(preferences.getPanCalcTime()), listener);
+			case PanCalcTime: new TimeInputDialog(DisplayStrings.PAN_TIME_STR, this, doubleTimeToDate(preferences.getPanCalcTime()), listener);
 							  break;
 
 		}
 	}
 	public void enableActions(boolean enable) {
 
-		EnumSet<Command> actions = EnumSet.of(Command.SAVE,Command.SAVE_COMPACTIBILITY,
+		EnumSet<Command> actions = of(Command.SAVE,Command.SAVE_COMPACTIBILITY,
 				Command.EDIT_COMPACTIBILITY,
 				Command.EDIT_CHART,
 				Command.CHART_VIEW, Command.PLANET_POS_VIEW,
@@ -534,7 +548,7 @@ public class AstroSoft extends javax.swing.JFrame implements
 
 		switch(view){
 
-			case EPHEMERIS_VIEW: eph = new Ephemeris(AstroUtil.getCalendar(), Mode.Daily);
+			case EPHEMERIS_VIEW: eph = new Ephemeris(getCalendar(), Mode.Daily);
 								 viewManager.showView(view);
 								 break;
 
@@ -599,7 +613,7 @@ public class AstroSoft extends javax.swing.JFrame implements
 
 	public static Dimension getScreenSize(){
 
-		return java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+		return getDefaultToolkit().getScreenSize();
 		//return new Dimension(800,600);
 	}
 
@@ -635,7 +649,7 @@ public class AstroSoft extends javax.swing.JFrame implements
 					return new EphemerisView(eph, new Point(10,2));
 
 				case COMPACTIBILITY_VIEW:
-					actionMgr.enableActions(EnumSet.of(Command.SAVE_COMPACTIBILITY), true);
+					actionMgr.enableActions(of(Command.SAVE_COMPACTIBILITY), true);
 					return new CompactibilityView(DisplayStrings.MRAG_COMP_STR.toString(Language.ENGLISH), compactibility, new Point(30,20));
 
 				case MUHURTHA_VIEW:

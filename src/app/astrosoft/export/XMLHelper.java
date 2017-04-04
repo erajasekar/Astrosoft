@@ -12,9 +12,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import static java.util.logging.Logger.getLogger;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import static javax.xml.parsers.DocumentBuilderFactory.newInstance;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
@@ -22,6 +24,7 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
+import static javax.xml.transform.TransformerFactory.newInstance;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
@@ -33,12 +36,12 @@ import org.xml.sax.SAXException;
 
 public class XMLHelper {
 
-	private static final Logger log = Logger.getLogger(XMLHelper.class.getName());
+	private static final Logger log = getLogger(XMLHelper.class.getName());
 
 	public static Document createDOM() {
 
 		try {
-			DocumentBuilder db = DocumentBuilderFactory.newInstance()
+			DocumentBuilder db = newInstance()
 					.newDocumentBuilder();
 
 			return db.newDocument();
@@ -78,7 +81,7 @@ public class XMLHelper {
 	}
 
 	public static Map<String, String> getChildElements(Node parent){
-		Map<String, String> elements = new HashMap<String, String>();
+		Map<String, String> elements = new HashMap<>();
 
 		NodeList children = parent.getChildNodes();
 
@@ -111,7 +114,7 @@ public class XMLHelper {
 
 		Document document = null;
 
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance ();
+        DocumentBuilderFactory factory = newInstance ();
 
         // Do not generate comment nodes.
         factory.setIgnoringComments (true);
@@ -127,13 +130,9 @@ public class XMLHelper {
 
            document = factory.newDocumentBuilder ().parse (new File(fileName));
 
-        }catch(ParserConfigurationException e){
+        }catch(ParserConfigurationException | IOException | SAXException e){
         	log.log(Level.SEVERE, "Exception in parsing XML " ,e);
-        }catch(IOException e){
-        	log.log(Level.SEVERE, "Exception in parsing XML " ,e);
-        }catch (SAXException e) {
-        	log.log(Level.SEVERE, "Exception in parsing XML " ,e);
-		}
+        }
 
         return document;
 	}
@@ -149,7 +148,7 @@ public class XMLHelper {
             Result result = new StreamResult(file);
 
             // Write the DOM document to the file
-            Transformer xformer = TransformerFactory.newInstance().newTransformer();
+            Transformer xformer = newInstance().newTransformer();
             xformer.transform(source, result);
         } catch (Exception e) {
         	log.log(Level.SEVERE, "Exception in creating document ", e);

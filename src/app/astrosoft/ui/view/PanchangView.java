@@ -27,6 +27,7 @@ import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.TableStyle;
 import app.astrosoft.core.Panchang;
 import app.astrosoft.ui.comp.CalendarChooser;
+import static app.astrosoft.ui.comp.CalendarChooser.getDateChooser;
 import app.astrosoft.ui.comp.Chart;
 import app.astrosoft.ui.comp.DateListener;
 import app.astrosoft.ui.table.AstrosoftTable;
@@ -34,6 +35,7 @@ import app.astrosoft.ui.table.AstrosoftTableModel;
 import app.astrosoft.ui.table.MultiLineCellRenderer;
 import app.astrosoft.ui.util.UIConsts;
 import app.astrosoft.ui.util.UIUtil;
+import static javax.swing.BorderFactory.createEtchedBorder;
 
 public class PanchangView extends AstrosoftView{
 
@@ -66,22 +68,17 @@ public class PanchangView extends AstrosoftView{
 		final JPanel chartPanel = createChartPanel();
 		panPanel.add(chartPanel, BorderLayout.EAST);
 		
-		dateChooser.addDateListener(new DateListener(){
-
-			public void dateChanged(Date date) {
-				
-				Panchang newPan = new Panchang(date);
-				panTableModel.updateData(newPan.getPanchangTableData());
-				
-				panTable.setRowHeight(Panchang.AUS_TIME_ROW, AusRowHeight);
-				
-				panPanel.remove(chartPanel);
-				chartPanel.removeAll();
-				chartPanel.add(new Chart(newPan.getPlanetChartData(), chartSize));
-				panPanel.add(chartPanel, BorderLayout.EAST);
-			}
-			
-		});
+		dateChooser.addDateListener((Date date) -> {
+                    Panchang newPan = new Panchang(date);
+                    panTableModel.updateData(newPan.getPanchangTableData());
+                    
+                    panTable.setRowHeight(Panchang.AUS_TIME_ROW, AusRowHeight);
+                    
+                    panPanel.remove(chartPanel);
+                    chartPanel.removeAll();
+                    chartPanel.add(new Chart(newPan.getPlanetChartData(), chartSize));
+                    panPanel.add(chartPanel, BorderLayout.EAST);
+        });
 		add(panPanel);
 		
 	}
@@ -134,7 +131,7 @@ public class PanchangView extends AstrosoftView{
 	
 	private JPanel createPanTableHeader(){
 		
-		dateChooser = CalendarChooser.getDateChooser();
+		dateChooser = getDateChooser();
 		JPanel dateChooserPanel = dateChooser.getChooser();
 	
 		JPanel headerPanel = new JPanel(new BorderLayout());
@@ -144,7 +141,7 @@ public class PanchangView extends AstrosoftView{
 		headerPanel.add(label, BorderLayout.WEST);
 		headerPanel.add(dateChooserPanel, BorderLayout.EAST);
 		
-		headerPanel.setBorder(BorderFactory.createEtchedBorder());
+		headerPanel.setBorder(createEtchedBorder());
 		
 		label.setPreferredSize(new Dimension(KeyColWidth , RowHeight));
 		

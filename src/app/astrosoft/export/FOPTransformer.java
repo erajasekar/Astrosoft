@@ -13,11 +13,13 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import static java.util.logging.Logger.getLogger;
 
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
+import static javax.xml.transform.TransformerFactory.newInstance;
 import javax.xml.transform.sax.SAXResult;
 import javax.xml.transform.stream.StreamSource;
 
@@ -28,7 +30,7 @@ import org.apache.fop.apps.MimeConstants;
 
 public class FOPTransformer {
 	
-	private static final Logger log = Logger.getLogger(FOPTransformer.class.getName());
+	private static final Logger log = getLogger(FOPTransformer.class.getName());
 
 	private static FopFactory fopFactory = FopFactory.newInstance();
 
@@ -45,7 +47,7 @@ public class FOPTransformer {
 		  //	Construct fop with desired output format
 		  Fop fop = fopFactory.newFop(MimeConstants.MIME_PDF, out);
 
-		  TransformerFactory factory = TransformerFactory.newInstance();
+		  TransformerFactory factory = newInstance();
 		  Transformer transformer = factory.newTransformer(new StreamSource(xslFile)); // identity transformer
 		           
 		  // Setup input and output for XSLT transformation 

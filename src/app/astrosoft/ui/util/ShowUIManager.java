@@ -6,21 +6,24 @@
 
 package app.astrosoft.ui.util;
 
+import static app.astrosoft.ui.util.UIConsts.getLookAndFeel;
 import javax.swing.*;
 
 import java.util.*;
+import static javax.swing.UIManager.getDefaults;
+import static javax.swing.UIManager.setLookAndFeel;
  
 public class ShowUIManager {
  
     public static void main(String[] args) {
     	
     	try {
-			UIManager.setLookAndFeel(UIConsts.getLookAndFeel());
+			setLookAndFeel(getLookAndFeel());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-        UIDefaults defaults = UIManager.getDefaults();
+        UIDefaults defaults = getDefaults();
         System.out.println("Count Item = " + defaults.size());
         String[ ] colName = {"Key", "Value"};
         String[ ][ ] rowData = new String[ defaults.size() ][ 2 ];

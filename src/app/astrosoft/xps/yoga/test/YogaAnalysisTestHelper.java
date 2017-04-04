@@ -28,16 +28,21 @@ import org.drools.rule.Rule;
 
 import app.astrosoft.beans.PlanetCharacter;
 import app.astrosoft.consts.Planet;
+import static app.astrosoft.consts.Planet.papaPlanets;
+import static app.astrosoft.consts.Planet.subaPlanets;
 import app.astrosoft.consts.Rasi;
 import app.astrosoft.consts.Varga;
 import app.astrosoft.consts.YogaCombination;
 import app.astrosoft.core.Horoscope;
 import app.astrosoft.test.SampleHoroscopes;
+import static app.astrosoft.test.SampleHoroscopes.getMyHoroscope;
+import static app.astrosoft.test.SampleHoroscopes.getSubaHoroscope;
 import app.astrosoft.xps.XpsUtil;
 import app.astrosoft.xps.beans.PlanetChart;
 import app.astrosoft.xps.beans.YogaFacts;
 import app.astrosoft.xps.yoga.YogaResults;
 import static app.astrosoft.util.CollectionUtil.newEnumMap;
+import static app.astrosoft.xps.XpsUtil.getRuleAsStream;
 import static app.astrosoft.xps.yoga.test.YogaAnalysisTestCase.*;
 import static app.astrosoft.xps.yoga.test.YogaAnalysisTestHelper.YOGAS;
 import static app.astrosoft.xps.yoga.test.YogaAnalysisTestHelper.buildPackage;
@@ -70,8 +75,8 @@ public class YogaAnalysisTestHelper {
 	
 	public static Package buildPackage() throws DroolsParserException, IOException {
 		
-		final Reader rule = new InputStreamReader( XpsUtil.getRuleAsStream(RULE_FILE));
-		final Reader dsl = new InputStreamReader( XpsUtil.getRuleAsStream(DSL_FILE));
+		final Reader rule = new InputStreamReader( getRuleAsStream(RULE_FILE));
+		final Reader dsl = new InputStreamReader( getRuleAsStream(DSL_FILE));
 		
 		final PackageBuilder builder = new PackageBuilder();
 	
@@ -106,14 +111,14 @@ public class YogaAnalysisTestHelper {
 	
 	private static void setUpCharacter() {
 		
-		Map<Planet, Boolean> c1 = new EnumMap<Planet, Boolean>(Planet.class);
-		Map<Planet, Boolean> c2 = new EnumMap<Planet, Boolean>(Planet.class);
+		Map<Planet, Boolean> c1 = new EnumMap<>(Planet.class);
+		Map<Planet, Boolean> c2 = new EnumMap<>(Planet.class);
 		
-		for(Planet p : Planet.subaPlanets()){
+		for(Planet p : subaPlanets()){
 			c1.put(p, true);
 			c2.put(p, true);
 		}
-		for(Planet p : Planet.papaPlanets()){
+		for(Planet p : papaPlanets()){
 			c1.put(p, false);
 			c2.put(p, false);
 		}
@@ -128,12 +133,12 @@ public class YogaAnalysisTestHelper {
 
 	private static void setUpHoroscope() {
 		
-		samples = new EnumMap<SAMPLE_HOROSCOPE, Horoscope>(SAMPLE_HOROSCOPE.class);
+		samples = new EnumMap<>(SAMPLE_HOROSCOPE.class);
 		
-		Horoscope h = SampleHoroscopes.getMyHoroscope();
+		Horoscope h = getMyHoroscope();
 		samples.put(SAMPLE_HOROSCOPE.RAJA, h);
 		
-		samples.put(SAMPLE_HOROSCOPE.SUBA, SampleHoroscopes.getSubaHoroscope());
+		samples.put(SAMPLE_HOROSCOPE.SUBA, getSubaHoroscope());
 	}
 	
 	public static void setUp(String ruleName) throws Exception {

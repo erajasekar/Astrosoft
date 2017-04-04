@@ -32,10 +32,13 @@ import app.astrosoft.ui.comp.Chart;
 import app.astrosoft.ui.comp.VargaChartPanel;
 import app.astrosoft.ui.util.UIUtil;
 import app.astrosoft.xps.yoga.YogaResults;
+import static java.util.logging.Logger.getLogger;
+import static javax.swing.BorderFactory.createEmptyBorder;
+import static javax.swing.BorderFactory.createEtchedBorder;
 
 public class YogaCombinationsView extends AstrosoftView{
 	
-	private static final Logger log = Logger.getLogger(YogaCombinationsView.class.getName());
+	private static final Logger log = getLogger(YogaCombinationsView.class.getName());
 	
 
 	private static final Dimension viewSize = new Dimension(790, 470);
@@ -77,17 +80,12 @@ public class YogaCombinationsView extends AstrosoftView{
 		
 		final JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, yogaPanel, createResultPane());
 		
-		yogaPanel.setBorder(BorderFactory.createEtchedBorder());
-		splitPane.setBorder(BorderFactory.createEmptyBorder());
+		yogaPanel.setBorder(createEtchedBorder());
+		splitPane.setBorder(createEmptyBorder());
 		
-		yogaList.addListSelectionListener(new ListSelectionListener(){
-
-			public void valueChanged(ListSelectionEvent e) {
-				//splitPane.remove(chartPanel);
-				yogaChanged((YogaResults.Result)yogaList.getSelectedValue());
-				//splitPane.add(chartPanel);
-			}
-		});
+		yogaList.addListSelectionListener((ListSelectionEvent e) -> {
+                    yogaChanged((YogaResults.Result)yogaList.getSelectedValue());
+        });
 		
 		add(splitPane,BorderLayout.CENTER);
 	}
@@ -114,8 +112,8 @@ public class YogaCombinationsView extends AstrosoftView{
 		
 		final JSplitPane yogaResultPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, chartPanel, createYogaDetailPane());
 		
-		chartPanel.setBorder(BorderFactory.createEtchedBorder());
-		yogaResultPane.setBorder(BorderFactory.createEmptyBorder());
+		chartPanel.setBorder(createEtchedBorder());
+		yogaResultPane.setBorder(createEmptyBorder());
 		
 		return yogaResultPane;
 	}
@@ -131,7 +129,7 @@ public class YogaCombinationsView extends AstrosoftView{
 				
 		yogaChanged((YogaResults.Result)yogaList.getSelectedValue()); 
 		
-		editorPane.setBorder(BorderFactory.createEtchedBorder());
+		editorPane.setBorder(createEtchedBorder());
 		
 		return editorPane;
 		

@@ -21,14 +21,20 @@ import javax.swing.JOptionPane;
 import app.astrosoft.exception.AstrosoftException;
 import app.astrosoft.pref.AstrosoftPref;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.dlg.OptionDialog;
+import static app.astrosoft.ui.dlg.OptionDialog.showDialog;
 import app.astrosoft.ui.util.UIConsts;
 import app.astrosoft.ui.util.UIUtil;
+import static app.astrosoft.ui.util.UIUtil.setPanelBackground;
+import static java.lang.Integer.parseInt;
+import static java.lang.Runtime.getRuntime;
+import static java.util.logging.Logger.getLogger;
 
 
 public class FileOps {
 	
-	private static final Logger log = Logger.getLogger(FileOps.class.getName());
+	private static final Logger log = getLogger(FileOps.class.getName());
 
 	public static enum FileDialogMode {OPEN, SAVE};
     
@@ -41,12 +47,12 @@ public class FileOps {
      */
     public static String openFileDialog( Component parent, FileDialogMode mode, AstrosoftFileFilter astrosoftFileFilter ) {
 
-    	AstrosoftPref pref = AstroSoft.getPreferences();
+    	AstrosoftPref pref = getPreferences();
     	
     	String initialFile = pref.getAstrosoftFilesDir();
     	
         JFileChooser fd = new JFileChooser( initialFile );
-        UIUtil.setPanelBackground(fd, UIConsts.THEME_CLR);
+        setPanelBackground(fd, UIConsts.THEME_CLR);
         fd.setOpaque(true);
         
         fd.setFileFilter( astrosoftFileFilter );
@@ -76,7 +82,7 @@ public class FileOps {
         		String selectedFile = getSelectedFile(fd, fileFilter);
 
                 if (new File(selectedFile).exists()){
-                	int option = OptionDialog.showDialog(selectedFile + " already exists. \n Do you want to overwrite it ? " , JOptionPane.QUESTION_MESSAGE);
+                	int option = showDialog(selectedFile + " already exists. \n Do you want to overwrite it ? " , JOptionPane.QUESTION_MESSAGE);
                 	if (option == JOptionPane.YES_OPTION){
                 		return selectedFile;
                 	}
@@ -104,7 +110,7 @@ public class FileOps {
         		String selectedFile = getSelectedFile(fd, fileFilter);
         		
         		if ( !(new File(selectedFile).exists()) ){
-        			OptionDialog.showDialog(selectedFile + " does not exists. \n Please choose valid file. " , JOptionPane.ERROR_MESSAGE);
+        			showDialog(selectedFile + " does not exists. \n Please choose valid file. " , JOptionPane.ERROR_MESSAGE);
         		}
         		else {
         			return selectedFile;
@@ -157,7 +163,7 @@ public class FileOps {
 
             }
 
-            value = Integer.parseInt( values[col - 1] );
+            value = parseInt( values[col - 1] );
             //fis.close(  );
 
         } catch ( IOException e ) {
@@ -173,7 +179,7 @@ public class FileOps {
     	
     	Process p = null;
     	
-    	String acrobatExecutable = AstroSoft.getPreferences().getAcrobatExecutable();
+    	String acrobatExecutable = getPreferences().getAcrobatExecutable();
     	
     	if (acrobatExecutable == AstrosoftPref.defaultAcrobatExecutable){
     		throw new AstrosoftException("Acrobat Executable not initialized");
@@ -183,7 +189,7 @@ public class FileOps {
     	
     	//String cmd[] = { "open" ,file };
 		try {
-		     p = Runtime.getRuntime().exec(cmd);
+		     p = getRuntime().exec(cmd);
 		} catch (Exception e) {
 			 log.log(Level.SEVERE, "Error executing command " + cmd[0] , e);
 		     throw new AstrosoftException("Could not run acrobat, reason : " + e.getMessage());

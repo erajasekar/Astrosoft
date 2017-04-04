@@ -24,9 +24,15 @@ import app.astrosoft.consts.DisplayFormat;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Planet;
 import app.astrosoft.consts.Month;
+import static app.astrosoft.consts.Month.ofIndex;
+import static app.astrosoft.consts.Planet.allPlanets;
+import static app.astrosoft.consts.Planet.toTableColumn;
+import static app.astrosoft.consts.Planet.valueOf;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.ofDeg;
 import app.astrosoft.pref.AstrosoftPref;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.table.ColumnMetaData;
 import app.astrosoft.ui.table.DefaultColumnMetaData;
 import app.astrosoft.ui.table.MapTableRow;
@@ -36,8 +42,11 @@ import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableDataFactory;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.getCalendar;
+import static app.astrosoft.util.AstroUtil.todegmin;
 import app.astrosoft.util.SwissHelper;
 import app.astrosoft.util.Timer;
+import static java.lang.Enum.valueOf;
 
 import swisseph.*;
 
@@ -71,7 +80,7 @@ public class Ephemeris implements PreferenceChangeListener {
 		}
 	};
 
-	private static AstrosoftPref preferences = AstroSoft.getPreferences();
+	private static AstrosoftPref preferences = getPreferences();
 	
 	private Calendar cal;
     private List<EnumMap<Planet, EphData>> ephemeris;
@@ -112,13 +121,13 @@ public class Ephemeris implements PreferenceChangeListener {
     
    private void calcEphemeris(  ) {
 
-	    ephemeris = new ArrayList<EnumMap<Planet, EphData>>();
+	    ephemeris = new ArrayList<>();
 	    double timeZone = preferences.getPlace().timeZone();
     	double ephTime = preferences.getEphCalcTime() - timeZone;
     	
     	swissHelper = new SwissHelper();
     	
-    	Calendar ephCal = AstroUtil.getCalendar();
+    	Calendar ephCal = getCalendar();
     	
     	ephCal.setTime(cal.getTime());
     	
@@ -146,7 +155,7 @@ public class Ephemeris implements PreferenceChangeListener {
     
     public Table getEphemerisTable(){
         
-    	List<AstrosoftTableColumn> cols = Planet.toTableColumn(Planet.allPlanets());
+    	List<AstrosoftTableColumn> cols = toTableColumn(allPlanets());
     	
     	if (mode.isDaily()){
     		cols.add(0, AstrosoftTableColumn.Date);
@@ -179,19 +188,14 @@ public class Ephemeris implements PreferenceChangeListener {
 					public TableRowData getRow(final int index) {
 						
 						row = ephemeris.get(index);
-						return new TableRowData(){
-
-							public Object getColumnData(AstrosoftTableColumn col) {
-								
-								if (col == AstrosoftTableColumn.Date){
-									return index + 1;
-								}else if (col == AstrosoftTableColumn.Month){
-									return Month.ofIndex(index).toString(DisplayFormat.FULL_NAME);
-								}
-								return row.get(Planet.valueOf(col.name()));
-							}
-							
-						};
+						return (AstrosoftTableColumn col) -> {
+                            if (col == AstrosoftTableColumn.Date) {
+                                return index + 1;
+                            } else if (col == AstrosoftTableColumn.Month) {
+                                return ofIndex(index).toString(DisplayFormat.FULL_NAME);
+                            }
+                            return row.get(valueOf(col.name()));
+                        };
 					}
 
 					public int getRowCount() {
@@ -214,7 +218,7 @@ public class Ephemeris implements PreferenceChangeListener {
     public void preferenceChange(PreferenceChangeEvent evt) {
 
 		if(evt.getKey().equals(AstrosoftPref.Preference.Ayanamsa.name())){
-			setAyanamsa(Enum.valueOf(Ayanamsa.class, evt.getNewValue()));
+			setAyanamsa(valueOf(Ayanamsa.class, evt.getNewValue()));
 		}else if (evt.getKey().equals(AstrosoftPref.Preference.EphCalcTime.name())){
 			calcEphemeris();
 		}else if (evt.getKey().equals(AstrosoftPref.Preference.Place.name())){
@@ -232,8 +236,8 @@ public class Ephemeris implements PreferenceChangeListener {
     	
     	public EphData(double position, Boolean isReverse){
     		this.position = position % 30;
-    		this.house = Rasi.ofDeg(position);
-    		this.isReverse = (isReverse != null) ? isReverse.booleanValue():false;
+    		this.house = ofDeg(position);
+    		this.isReverse = (isReverse != null) ? isReverse:false;
     	}
     	
     	public double getPosition() {
@@ -252,7 +256,7 @@ public class Ephemeris implements PreferenceChangeListener {
     	public String toString() {
     		
     		StringBuilder sb = new StringBuilder();
-    		sb.append(AstroUtil.todegmin(position, " " + house.toString(DisplayFormat.SYMBOL) + " "));
+    		sb.append(todegmin(position, " " + house.toString(DisplayFormat.SYMBOL) + " "));
     		
     		if (isReverse){
     			sb.append(DisplayStrings.RETRO_SYM);

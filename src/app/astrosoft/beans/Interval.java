@@ -17,8 +17,12 @@ import java.text.SimpleDateFormat;
 import java.text.DateFormat;
 
 import app.astrosoft.consts.DisplayFormat;
+import static app.astrosoft.consts.DisplayFormat.intervalFormats;
 import app.astrosoft.ui.AstroSoft;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.dms;
+import static java.lang.Math.max;
+import static java.lang.Math.min;
 import swisseph.SweDate;
 
 public class Interval implements Comparable {
@@ -68,8 +72,8 @@ public class Interval implements Comparable {
 	public static Interval intersection(Interval i1, Interval i2) {
 
 		
-		double start = Math.max(i1.start, i2.start);
-		double end =  Math.min(i1.end, i2.end);
+		double start = max(i1.start, i2.start);
+		double end =  min(i1.end, i2.end);
 			
 		if (end > start){
 			
@@ -83,7 +87,7 @@ public class Interval implements Comparable {
 	public static List<Interval> intersection(List<Interval> l1,
 			List<Interval> l2) {
 
-		List<Interval> result = new ArrayList<Interval>();
+		List<Interval> result = new ArrayList<>();
 
 		for (Interval i1 : l1) {
 			for (Interval i2 : l2) {
@@ -100,7 +104,7 @@ public class Interval implements Comparable {
 	public static List<Interval> common(List<Interval> l1,
 			List<Interval> l2) {
 
-		List<Interval> result = new ArrayList<Interval>();
+		List<Interval> result = new ArrayList<>();
 
 		for (Interval i1 : l1) {
 			for (Interval i2 : l2) {
@@ -122,7 +126,7 @@ public class Interval implements Comparable {
 
 	public String toString(DisplayFormat format) {
 
-		if (!DisplayFormat.intervalFormats().contains(format)){
+		if (!intervalFormats().contains(format)){
 			throw new IllegalArgumentException("Invalid Interval Display Format");
 		}
 		
@@ -130,7 +134,7 @@ public class Interval implements Comparable {
 		switch (format) {
 
 			case DEG:
-				str = AstroUtil.dms(start) + " - " + AstroUtil.dms(end);
+				str = dms(start) + " - " + dms(end);
 				break;
 			case DATE:
 				str = dateFormater.format(SweDate.getDate(start)) + " - "

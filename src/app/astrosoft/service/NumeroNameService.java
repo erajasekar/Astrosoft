@@ -24,19 +24,25 @@ import javax.swing.JOptionPane;
 
 import app.astrosoft.consts.Operator;
 import app.astrosoft.persistence.JPAUtil;
+import static app.astrosoft.persistence.JPAUtil.getEntityManagerFactory;
 import app.astrosoft.persistence.NumerologicalName;
+import static app.astrosoft.persistence.NumerologicalName.getColumnMetaData;
 import app.astrosoft.ui.comp.NumeroNamePagination;
 import app.astrosoft.ui.dlg.OptionDialog;
+import static app.astrosoft.ui.dlg.OptionDialog.showDialog;
 import app.astrosoft.ui.table.ColumnMetaData;
 import app.astrosoft.ui.table.Table;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableDataFactory;
+import static app.astrosoft.ui.table.TableDataFactory.getTableData;
+import static app.astrosoft.ui.table.TableDataFactory.toCSV;
 import app.astrosoft.ui.table.TableRowData;
+import static java.util.logging.Logger.getLogger;
 
 
 public class NumeroNameService {
 	
-	private static final Logger log = Logger.getLogger("app.astrosoft.service");
+	private static final Logger log = getLogger("app.astrosoft.service");
 	
 	private static final int exportPageLen = 25;
 
@@ -47,7 +53,7 @@ public class NumeroNameService {
 	
 	public static void addName(NumerologicalName numeroName){
 		
-		EntityManagerFactory emf = JPAUtil.getEntityManagerFactory();
+		EntityManagerFactory emf = getEntityManagerFactory();
 		
 		EntityManager em = emf.createEntityManager();
 		EntityTransaction tx = em.getTransaction();
@@ -70,7 +76,7 @@ public class NumeroNameService {
 	
 	public static void deleteNames(List<NumerologicalName> names){
 		
-		EntityManagerFactory emf = JPAUtil.getEntityManagerFactory();
+		EntityManagerFactory emf = getEntityManagerFactory();
 		
 		EntityManager em = emf.createEntityManager();
 		EntityTransaction tx = em.getTransaction();
@@ -88,7 +94,7 @@ public class NumeroNameService {
 	
 	public static List queryAllNames(int startIndex, int maxRows){
 		
-		EntityManager em = JPAUtil.getEntityManagerFactory().createEntityManager();
+		EntityManager em = getEntityManagerFactory().createEntityManager();
 		
 		Query q = em.createNamedQuery(NumerologicalName.FIND_ALL_NAMES);
 		
@@ -103,13 +109,13 @@ public class NumeroNameService {
 	
 	public static TableData<NumerologicalName> findAllNames(int startIndex, int maxRows){
 		
-		return TableDataFactory.getTableData(queryAllNames(startIndex, maxRows));
+		return getTableData(queryAllNames(startIndex, maxRows));
 		
 	}
 	
 	public static List queryDynamic(String name, String numeroVal, String numeroNum, Operator op1, Operator op2, int startIndex, int maxRows){
 		
-		EntityManager em = JPAUtil.getEntityManagerFactory().createEntityManager();
+		EntityManager em = getEntityManagerFactory().createEntityManager();
 		
 		Query q = em.createQuery(NumerologicalName.SELECT_NAME_SQL + getSqlWhere(name, numeroVal, numeroNum, op1, op2) + NumerologicalName.ORDER_BY);
 		
@@ -124,7 +130,7 @@ public class NumeroNameService {
 	
 	public static TableData<NumerologicalName> findDynamic(String name, String numeroVal, String numeroNum, Operator op1, Operator op2, int startIndex, int maxRows){
 		
-		return TableDataFactory.getTableData(queryDynamic(name, numeroVal, numeroNum, op1,op2, startIndex, maxRows));
+		return getTableData(queryDynamic(name, numeroVal, numeroNum, op1,op2, startIndex, maxRows));
 	}
 	
 	private static String getSqlWhere(String name, String numeroVal, String numeroNum, Operator op1, Operator op2){
@@ -163,20 +169,18 @@ public class NumeroNameService {
 			return;
 		}
 			
-		ColumnMetaData colData = NumerologicalName.getColumnMetaData();
+		ColumnMetaData colData = getColumnMetaData();
 		
 		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter(file));
-			
-			for(TableData<NumerologicalName> data : new NumeroNamePagination(exportPageLen)){
-				writer.write(TableDataFactory.toCSV(data,colData));
-			}
-		
-			writer.close();
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+                for (TableData<NumerologicalName> data : new NumeroNamePagination(exportPageLen)) {
+                    writer.write(toCSV(data, colData));
+                }
+            }
 		} catch (IOException e) {
 			log.log(Level.SEVERE,"Exception in exporting name ", e);
 		}
-		OptionDialog.showDialog("Exported Successfully.", JOptionPane.INFORMATION_MESSAGE);
+		showDialog("Exported Successfully.", JOptionPane.INFORMATION_MESSAGE);
 	}
 	
 	private static void importNames(String file, boolean isCSV){
@@ -191,7 +195,7 @@ public class NumeroNameService {
 		try {
 			
 			reader = new BufferedReader(new FileReader(file));
-			em = JPAUtil.getEntityManagerFactory().createEntityManager();
+			em = getEntityManagerFactory().createEntityManager();
 			EntityTransaction tx = em.getTransaction();
 			
 			String name;
@@ -225,7 +229,7 @@ public class NumeroNameService {
 			em.close();
 		}
 		
-		OptionDialog.showDialog("Imported Successfully.", JOptionPane.INFORMATION_MESSAGE);
+		showDialog("Imported Successfully.", JOptionPane.INFORMATION_MESSAGE);
 	}
 	
 	public static void importNamesFromCSV(String file){

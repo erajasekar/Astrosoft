@@ -12,8 +12,11 @@ import java.util.Set;
 
 import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.values;
 import app.astrosoft.ui.table.DefaultColumnMetaData;
 import app.astrosoft.util.Utils;
+import static app.astrosoft.util.Utils.printTableData;
+import static java.util.EnumSet.allOf;
 
 public abstract class AbstractChartData implements ChartData {
 
@@ -44,9 +47,9 @@ public abstract class AbstractChartData implements ChartData {
 
 		sb.append("\n");
 
-		for(Rasi r : Rasi.values()){
+		for(Rasi r : values()){
 			sb.append(r + " : \n");
-			sb.append(Utils.printTableData(getChartHouseTable(r)));
+			sb.append(printTableData(getChartHouseTable(r)));
 			sb.append("\n");
 		}
 
@@ -55,7 +58,7 @@ public abstract class AbstractChartData implements ChartData {
 
 	public Set<Rasi> getHouses() {
 
-		return EnumSet.allOf(Rasi.class);
+		return allOf(Rasi.class);
 	}
 
 	public Rasi getAscendant() {

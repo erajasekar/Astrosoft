@@ -69,7 +69,7 @@ public class YogaResults {
 	private List<Result> yogas;
 	
 	public YogaResults() {
-		yogas = new ArrayList<Result>();
+		yogas = new ArrayList<>();
 	}
 	
 	public void addYoga(YogaCombination yoga, String efficacy){

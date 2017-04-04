@@ -8,6 +8,7 @@ package app.astrosoft.beans;
 
 import app.astrosoft.consts.AstroConsts;
 import app.astrosoft.consts.Nakshathra;
+import static app.astrosoft.consts.Nakshathra.ofDeg;
 import app.astrosoft.consts.Rasi;
 
 public class NakshathraPada {
@@ -22,7 +23,7 @@ public class NakshathraPada {
 	}
 	
 	public NakshathraPada(double deg){
-		this.nak = Nakshathra.ofDeg(deg);
+		this.nak = ofDeg(deg);
 		pada = ((int) (deg / AstroConsts.padaLength) % 4) + 1;
 	}
 	

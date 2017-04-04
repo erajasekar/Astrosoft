@@ -17,28 +17,50 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 import app.astrosoft.beans.BirthData;
+import static app.astrosoft.beans.BirthData.valueOfXMLNode;
 import app.astrosoft.beans.PlanetaryInfo;
 import app.astrosoft.consts.AstroConsts;
+import static app.astrosoft.consts.AstroConsts.permanentRel;
 import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Kuta;
+import static app.astrosoft.consts.Kuta.totalValue;
+import static app.astrosoft.consts.Kuta.values;
 import app.astrosoft.consts.Nakshathra;
+import static app.astrosoft.consts.Nakshathra.ofIndex;
+import static app.astrosoft.consts.Nakshathra.valueOf;
 import app.astrosoft.consts.Planet;
+import static app.astrosoft.consts.Planet.doshaPlanets;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.ofDeg;
+import static app.astrosoft.consts.Rasi.ofIndex;
+import static app.astrosoft.consts.Rasi.valueOf;
 import app.astrosoft.consts.XmlConsts;
 import app.astrosoft.export.Exportable;
 import app.astrosoft.export.Exporter;
 import app.astrosoft.export.XMLHelper;
+import static app.astrosoft.export.XMLHelper.addAttribute;
+import static app.astrosoft.export.XMLHelper.addElement;
+import static app.astrosoft.export.XMLHelper.addRootElement;
+import static app.astrosoft.export.XMLHelper.createDOM;
+import static app.astrosoft.export.XMLHelper.getChildElements;
+import static app.astrosoft.export.XMLHelper.parseXML;
+import static app.astrosoft.export.XMLHelper.saveXML;
 import app.astrosoft.util.AstroUtil;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.table.DefaultColumnMetaData;
 import app.astrosoft.ui.table.ColumnMetaData;
 import app.astrosoft.ui.table.MapTableRow;
 import app.astrosoft.ui.table.MapTableRowHelper;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableDataFactory;
+import static app.astrosoft.ui.table.TableDataFactory.getTableData;
 import app.astrosoft.ui.table.TableRowData;
+import static app.astrosoft.util.AstroUtil.timeFormat;
 import app.astrosoft.util.FileOps;
+import static app.astrosoft.util.FileOps.getFromFile;
+import static java.lang.Boolean.valueOf;
 
 public class Compactibility implements Exportable {
 
@@ -124,11 +146,11 @@ public class Compactibility implements Exportable {
 		this.girlNak = girlNak.ordinal();
 		this.boyRasi = boyRasi.ordinal();
 		this.girlRasi = girlRasi.ordinal();
-		kutas = new EnumMap<Kuta, Integer>(Kuta.class);
+		kutas = new EnumMap<>(Kuta.class);
 		totalKutaGained = 0;
 		calcKutas();
 
-		for (Kuta k : Kuta.values()) {
+		for (Kuta k : values()) {
 
 			totalKutaGained = totalKutaGained + kutas.get(k);
 		}
@@ -154,45 +176,45 @@ public class Compactibility implements Exportable {
 
 	public void saveToXML(String fileName){
 
-		Document doc = XMLHelper.createDOM();
-		Element compElement = XMLHelper.addRootElement(doc, XmlConsts.Compactibility);
-		XMLHelper.addAttribute(compElement, XmlConsts.hasHoroscope, "true");
+		Document doc = createDOM();
+		Element compElement = addRootElement(doc, XmlConsts.Compactibility);
+		addAttribute(compElement, XmlConsts.hasHoroscope, "true");
 
 		if (hasHoroscope){
 
 			compElement.appendChild(boyBirthData.toXMLElement(doc, XmlConsts.BoyData));
 			compElement.appendChild(girlBirthData.toXMLElement(doc, XmlConsts.GirlData));
-			XMLHelper.addAttribute(compElement, XmlConsts.hasHoroscope, "true");
+			addAttribute(compElement, XmlConsts.hasHoroscope, "true");
 
 		}else{
 
-			XMLHelper.addAttribute(compElement, XmlConsts.hasHoroscope, "false");
+			addAttribute(compElement, XmlConsts.hasHoroscope, "false");
 
 			Element boyElement = doc.createElement(XmlConsts.BoyData);
 			Element girlElement = doc.createElement(XmlConsts.GirlData);
 
-			XMLHelper.addElement(doc, boyElement, XmlConsts.Name, boyName);
-			XMLHelper.addElement(doc, boyElement, XmlConsts.Name, girlName);
+			addElement(doc, boyElement, XmlConsts.Name, boyName);
+			addElement(doc, boyElement, XmlConsts.Name, girlName);
 
-			XMLHelper.addElement(doc, boyElement, XmlConsts.Rasi, boyRasi().name());
-			XMLHelper.addElement(doc, boyElement, XmlConsts.Nakshathra, boyNak().name());
+			addElement(doc, boyElement, XmlConsts.Rasi, boyRasi().name());
+			addElement(doc, boyElement, XmlConsts.Nakshathra, boyNak().name());
 
-			XMLHelper.addElement(doc, girlElement, XmlConsts.Rasi, girlRasi().name());
-			XMLHelper.addElement(doc, girlElement, XmlConsts.Nakshathra, girlNak().name());
+			addElement(doc, girlElement, XmlConsts.Rasi, girlRasi().name());
+			addElement(doc, girlElement, XmlConsts.Nakshathra, girlNak().name());
 
 			compElement.appendChild(boyElement);
 			compElement.appendChild(girlElement);
 		}
 
-		XMLHelper.saveXML(doc, fileName);
+		saveXML(doc, fileName);
 	}
 
 	public static Compactibility createFromXML(String fileName){
 
-		Document doc = XMLHelper.parseXML(fileName);
+		Document doc = parseXML(fileName);
 
 		Element compElement = (Element) doc.getChildNodes().item(0);
-		boolean hasHorosocope = Boolean.valueOf(compElement.getAttribute(XmlConsts.hasHoroscope));
+		boolean hasHorosocope = valueOf(compElement.getAttribute(XmlConsts.hasHoroscope));
 
 		Node boy = compElement.getChildNodes().item(0);
 
@@ -202,20 +224,20 @@ public class Compactibility implements Exportable {
 
 		if (hasHorosocope){
 
-			c = new Compactibility(new Horoscope(BirthData.valueOfXMLNode(boy)), new Horoscope(BirthData.valueOfXMLNode(girl)));
+			c = new Compactibility(new Horoscope(valueOfXMLNode(boy)), new Horoscope(valueOfXMLNode(girl)));
 
 		}else{
 
-			Map<String, String> boyElements = XMLHelper.getChildElements(boy);
-			Map<String, String> girlElements = XMLHelper.getChildElements(girl);
+			Map<String, String> boyElements = getChildElements(boy);
+			Map<String, String> girlElements = getChildElements(girl);
 
 			c = new Compactibility(
 					boyElements.get(XmlConsts.Name),
 					girlElements.get(XmlConsts.Name),
-					Nakshathra.valueOf(boyElements.get(XmlConsts.Nakshathra)),
-					Nakshathra.valueOf(girlElements.get(XmlConsts.Nakshathra)),
-					Rasi.valueOf(boyElements.get(XmlConsts.Rasi)),
-					Rasi.valueOf(girlElements.get(XmlConsts.Rasi))
+					valueOf(boyElements.get(XmlConsts.Nakshathra)),
+					valueOf(girlElements.get(XmlConsts.Nakshathra)),
+					valueOf(boyElements.get(XmlConsts.Rasi)),
+					valueOf(girlElements.get(XmlConsts.Rasi))
 					);
 			}
 
@@ -412,7 +434,7 @@ public class Compactibility implements Exportable {
 		int boyYoni = findYoni(boyNak);
 		int girlYoni = findYoni(girlNak);
 
-		int yoni = FileOps.getFromFile(KutaFile.YoniKuta.file(), boyYoni,
+		int yoni = getFromFile(KutaFile.YoniKuta.file(), boyYoni,
 				girlYoni);
 
 		return yoni;
@@ -516,7 +538,7 @@ public class Compactibility implements Exportable {
 
 	private int calcRasiKuta() {
 
-		int kuta = FileOps.getFromFile(KutaFile.RasiKuta.file(), girlRasi + 1,
+		int kuta = getFromFile(KutaFile.RasiKuta.file(), girlRasi + 1,
 				boyRasi + 1);
 
 		return kuta;
@@ -527,8 +549,8 @@ public class Compactibility implements Exportable {
 
 		int kuta = 0;
 
-		Planet boyLord = Rasi.ofIndex(boyRasi).owner();
-		Planet girlLord = Rasi.ofIndex(girlRasi).owner();
+		Planet boyLord = ofIndex(boyRasi).owner();
+		Planet girlLord = ofIndex(girlRasi).owner();
 
 		// System.out.println("BL: " + boyLord + " GL: " + girlLord);
 		if (boyLord == girlLord) {
@@ -539,8 +561,8 @@ public class Compactibility implements Exportable {
 
 		}
 
-		int boy_girl_rel = AstroConsts.permanentRel(boyLord,girlLord);
-		int girl_boy_rel = AstroConsts.permanentRel(girlLord,boyLord);
+		int boy_girl_rel = permanentRel(boyLord,girlLord);
+		int girl_boy_rel = permanentRel(girlLord,boyLord);
 
 		// System.out.println("BR: " + boy_girl_rel + " GR: " + girl_boy_rel);
 		if ((boy_girl_rel < 0) || (girl_boy_rel < 0)) {
@@ -910,7 +932,7 @@ public class Compactibility implements Exportable {
 
 	private int calcNadiKuta() {
 
-		int nadi = FileOps.getFromFile(KutaFile.NadiKuta.file(), girlNak + 1,
+		int nadi = getFromFile(KutaFile.NadiKuta.file(), girlNak + 1,
 				boyNak + 1);
 
 		return nadi;
@@ -927,8 +949,8 @@ public class Compactibility implements Exportable {
 
 		EnumMap<Planet, Rasi> girlPlanetRasis = girlPlanetaryInfo.getPlanetRasi();
 
-		boyDosha = new EnumMap<Planet, Double>(Planet.class);
-		girlDosha = new EnumMap<Planet, Double>(Planet.class);
+		boyDosha = new EnumMap<>(Planet.class);
+		girlDosha = new EnumMap<>(Planet.class);
 		boyDosha.put(Planet.Mars, calcMarsDosha(boyPos.get(Planet.Mars), boyPlanetRasis.get(Planet.Mars)));
 		boyDosha.put(Planet.Sun, calcSunDosha(boyPos.get(Planet.Sun), boyPlanetRasis.get(Planet.Sun)));
 		boyDosha.put(Planet.Saturn, calcSatDosha(boyPos.get(Planet.Saturn), boyPlanetRasis.get(Planet.Saturn)));
@@ -1242,28 +1264,28 @@ public class Compactibility implements Exportable {
 		double beeja = (boyPlanetPos.get(Planet.Sun) + boyPlanetPos.get(Planet.Venus) + boyPlanetPos.get(Planet.Jupiter));
 		double kshetra = (girlPlanetPos.get(Planet.Moon) + girlPlanetPos.get(Planet.Mars) + girlPlanetPos.get(Planet.Jupiter));
 
-		beejaRasi = Rasi.ofDeg(beeja);
+		beejaRasi = ofDeg(beeja);
 		beejaPos = beeja % 30;
 
-		kshetraRasi = Rasi.ofDeg(kshetra);
+		kshetraRasi = ofDeg(kshetra);
 		kshetraPos = kshetra % 30;
 
 	}
 
 	private Rasi boyRasi() {
-		return Rasi.ofIndex(boyRasi);
+		return ofIndex(boyRasi);
 	}
 
 	private Rasi girlRasi() {
-		return Rasi.ofIndex(girlRasi);
+		return ofIndex(girlRasi);
 	}
 
 	private Nakshathra boyNak() {
-		return Nakshathra.ofIndex(boyNak);
+		return ofIndex(boyNak);
 	}
 
 	private Nakshathra girlNak() {
-		return Nakshathra.ofIndex(girlNak);
+		return ofIndex(girlNak);
 	}
 
 	public EnumMap<Kuta, Integer> getKutas() {
@@ -1295,31 +1317,30 @@ public class Compactibility implements Exportable {
 	}
 
 	public Rasi getBoyRasi() {
-		return Rasi.ofIndex(boyRasi);
+		return ofIndex(boyRasi);
 	}
 
 	public Rasi getGirlRasi() {
-		return Rasi.ofIndex(girlRasi);
+		return ofIndex(girlRasi);
 	}
 
 	public Nakshathra getBoyNak() {
-		return Nakshathra.ofIndex(boyNak);
+		return ofIndex(boyNak);
 	}
 
 	public Nakshathra getGirlNak() {
-		return Nakshathra.ofIndex(girlNak);
+		return ofIndex(girlNak);
 	}
 
 	public TableData<? extends TableRowData> getKutaTableData() {
 
 		if (kutaTableData == null) {
 
-			TableData<TableRowData> kutaData = TableDataFactory.getTableData(
+			TableData<TableRowData> kutaData = getTableData(
 					constructKutaRows(), Kuta.class);
-			TableData<TableRowData> totalRowData = TableDataFactory
-					.getTableData(constructTotalRow());
+			TableData<TableRowData> totalRowData = getTableData(constructTotalRow());
 
-			kutaTableData = TableDataFactory.getTableData(kutaData,
+			kutaTableData = getTableData(kutaData,
 					totalRowData);
 
 		}
@@ -1371,13 +1392,13 @@ public class Compactibility implements Exportable {
 
 	private EnumMap<Kuta, TableRowData> constructKutaRows() {
 
-		EnumMap<Kuta, TableRowData> rows = new EnumMap<Kuta, TableRowData>(
+		EnumMap<Kuta, TableRowData> rows = new EnumMap<>(
 				Kuta.class);
 
 		MapTableRowHelper helper = new MapTableRowHelper(
 				kutaTableColumnMetaData);
 
-		for (Kuta kuta : Kuta.values()) {
+		for (Kuta kuta : values()) {
 
 			rows.put(kuta, helper.createRow(kuta, kutas.get(kuta), kuta
 					.maxValue()));
@@ -1392,9 +1413,9 @@ public class Compactibility implements Exportable {
 
 		totalRow.addColumn(AstrosoftTableColumn.Kuta, DisplayStrings.TOTAL_STR);
 		totalRow.addColumn(AstrosoftTableColumn.KutaGained, totalKutaGained);
-		totalRow.addColumn(AstrosoftTableColumn.MaxKuta, Kuta.totalValue());
+		totalRow.addColumn(AstrosoftTableColumn.MaxKuta, totalValue());
 
-		List<TableRowData> totalRowData = new ArrayList<TableRowData>();
+		List<TableRowData> totalRowData = new ArrayList<>();
 		totalRowData.add(totalRow);
 		return totalRowData;
 	}
@@ -1412,13 +1433,13 @@ public class Compactibility implements Exportable {
 
 		if (boyInfo == null) {
 
-			List<TableRowData> rows = new ArrayList<TableRowData>();
+			List<TableRowData> rows = new ArrayList<>();
 
 			rows.add(helper.createRow(DisplayStrings.BOY_STR, boyName));
 
 			if (hasHoroscope) {
 				rows.add(helper.createRow(DisplayStrings.DOB_STR, boyBirthData.birthDayString()));
-				rows.add(helper.createRow(DisplayStrings.TOB_STR, AstroUtil.timeFormat(boyBirthData.birthTime(),true)));
+				rows.add(helper.createRow(DisplayStrings.TOB_STR, timeFormat(boyBirthData.birthTime(),true)));
 				rows.add(helper.createRow(DisplayStrings.PLACE_STR, boyBirthData.place()));
 			}
 			rows.add(helper.createRow(DisplayStrings.NAK_STR, boyNak()));
@@ -1434,7 +1455,7 @@ public class Compactibility implements Exportable {
 
 			}
 
-			boyInfo = TableDataFactory.getTableData(rows);
+			boyInfo = getTableData(rows);
 
 		}
 		return boyInfo;
@@ -1448,12 +1469,12 @@ public class Compactibility implements Exportable {
 
 		if (girlInfo == null) {
 
-			List<TableRowData> rows = new ArrayList<TableRowData>();
+			List<TableRowData> rows = new ArrayList<>();
 
 			rows.add(helper.createRow(DisplayStrings.GIRL_STR, girlName));
 			if (hasHoroscope) {
 				rows.add(helper.createRow(DisplayStrings.DOB_STR, girlBirthData.birthDayString()));
-				rows.add(helper.createRow(DisplayStrings.TOB_STR, AstroUtil.timeFormat(girlBirthData.birthTime(),true)));
+				rows.add(helper.createRow(DisplayStrings.TOB_STR, timeFormat(girlBirthData.birthTime(),true)));
 				rows.add(helper.createRow(DisplayStrings.PLACE_STR, girlBirthData.place()));
 			}
 			rows.add(helper.createRow(DisplayStrings.NAK_STR, girlNak()));
@@ -1467,7 +1488,7 @@ public class Compactibility implements Exportable {
 				rows.add(helper.createRow(AstrosoftTableColumn.Kshetra,
 						kshetraRasi, this.kshetraPos));
 			}
-			girlInfo = TableDataFactory.getTableData(rows);
+			girlInfo = getTableData(rows);
 
 		}
 		return girlInfo;
@@ -1485,10 +1506,10 @@ public class Compactibility implements Exportable {
 
 		if (doshaTableData == null) {
 
-			List<TableRowData> rows = new ArrayList<TableRowData>();
+			List<TableRowData> rows = new ArrayList<>();
 
 
-			for(Planet p : Planet.doshaPlanets()){
+			for(Planet p : doshaPlanets()){
 				rows.add(helper.createRow(p, this.boyDosha
 						.get(p), this.girlDosha
 						.get(p)));
@@ -1497,7 +1518,7 @@ public class Compactibility implements Exportable {
 
 			rows.add(helper.createRow(DisplayStrings.TOTAL_STR, this.bDoshaTotal, this.gDoshaTotal));
 
-			doshaTableData = TableDataFactory.getTableData(rows);
+			doshaTableData = getTableData(rows);
 
 		}
 		return doshaTableData;
@@ -1518,7 +1539,7 @@ public class Compactibility implements Exportable {
 
 	public String createDocumentName() {
 
-		return AstroSoft.getPreferences().getAstrosoftFilesDir() + boyName + "_" + girlName + "_" + "_Compactibility.pdf";
+		return getPreferences().getAstrosoftFilesDir() + boyName + "_" + girlName + "_" + "_Compactibility.pdf";
 	}
 
 	public static void main(String[] args) {
@@ -1564,10 +1585,10 @@ public class Compactibility implements Exportable {
 
 			for (int c1 = s1; c1 < (s1 + 3); c1++) {
 
-				System.out.print(Nakshathra.ofIndex(c1) + " , ");
+				System.out.print(ofIndex(c1) + " , ");
 
 			//	if (Rasi.ofIndex(r1).equals(Rasi.Makara) && Nakshathra.ofIndex(c1).equals(Nakshathra.Uththiradam)) {
-				if (Rasi.ofIndex(r1).equals(Rasi.Kataka) && Nakshathra.ofIndex(c1).equals(Nakshathra.Ayilyam)) {
+				if (ofIndex(r1).equals(Rasi.Kataka) && ofIndex(c1).equals(Nakshathra.Ayilyam)) {
 				for (int r2 = 0; r2 < 12; r2++) {
 
 					int s2 = (r2 / 4) + (r2 * 2);
@@ -1576,9 +1597,7 @@ public class Compactibility implements Exportable {
 
 						// System.out.println(cnt++ + " - [ " + r1 + " , " + c1
 						// + " ] [ " + r2 + " , " + c2 + " ]");
-						Compactibility c = new Compactibility(null, null, Nakshathra
-								.ofIndex(c1), Nakshathra.ofIndex(c2), Rasi
-								.ofIndex(r1), Rasi.ofIndex(r2));
+						Compactibility c = new Compactibility(null, null, ofIndex(c1), ofIndex(c2), ofIndex(r1), ofIndex(r2));
 
 
 						  /*for (Kuta k : Kuta.values()) {

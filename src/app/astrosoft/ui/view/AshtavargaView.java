@@ -17,6 +17,7 @@ import javax.swing.JPanel;
 
 import app.astrosoft.beans.AshtaVargaChartData;
 import app.astrosoft.consts.AshtavargaName;
+import static app.astrosoft.consts.AshtavargaName.ashtavargas;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Language;
 import app.astrosoft.consts.TableStyle;
@@ -44,7 +45,7 @@ public class AshtavargaView extends AstrosoftView {
 		Font font = UIUtil.getFont(Font.BOLD, 12,Font.BOLD, 10 );
 		//System.out.println(tabbedPane.);
 		
-		for(AshtavargaName name : AshtavargaName.ashtavargas()){
+		for(AshtavargaName name : ashtavargas()){
 		
 			JPanel panel = new JPanel(new BorderLayout());
 			

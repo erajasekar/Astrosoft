@@ -17,11 +17,14 @@ import app.astrosoft.consts.Month;
 import app.astrosoft.consts.XmlConsts;
 import app.astrosoft.core.Panchang;
 import app.astrosoft.core.PanchangList;
+import static app.astrosoft.export.FOPTransformer.exportToPDF;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
+import static java.util.logging.Logger.getLogger;
 
 public class PanchangExporter extends AbstractExporter{
 	
-	private static final Logger log = Logger.getLogger(HoroscopeExporter.class.getName());
+	private static final Logger log = getLogger(HoroscopeExporter.class.getName());
 	
 	private static SimpleDateFormat df = new SimpleDateFormat("MMM yyyy");
 	
@@ -38,7 +41,7 @@ public class PanchangExporter extends AbstractExporter{
 			xmlWriter.add(xmlef.createStartElement(XmlConsts.ASTROSOFT_TAG, null,null));
 			xmlWriter.add(xmlef.createNamespace("xsi",XmlConsts.XML_NS));
 			xmlWriter.add(xmlef.createStartElement(XmlConsts.PANCHANG_TAG, null,null));
-			xmlWriter.add(xmlef.createAttribute(XmlConsts.Location, AstroSoft.getPreferences().getPlace().toString())); 
+			xmlWriter.add(xmlef.createAttribute(XmlConsts.Location, getPreferences().getPlace().toString())); 
 			
 			for(Panchang p:panchangList){
 				export(p);
@@ -78,6 +81,6 @@ public class PanchangExporter extends AbstractExporter{
 		
 		pe.export2Xml(pl);
 		
-		FOPTransformer.exportToPDF(file, "C:/AstroSoft/resources/export/panchang2pdf.xsl", "C:/AstroSoft/resources/export/panchang.pdf");
+		exportToPDF(file, "C:/AstroSoft/resources/export/panchang2pdf.xsl", "C:/AstroSoft/resources/export/panchang.pdf");
 	}
 }

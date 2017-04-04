@@ -18,10 +18,12 @@ import app.astrosoft.beans.PlanetCharacter;
 import app.astrosoft.consts.Planet;
 import app.astrosoft.consts.Sex;
 import app.astrosoft.core.Horoscope;
+import static java.util.EnumSet.noneOf;
+import static java.util.logging.Logger.getLogger;
 
 public class YogaFacts {
 	
-	private static final Logger log = Logger.getLogger(YogaFacts.class.getName());
+	private static final Logger log = getLogger(YogaFacts.class.getName());
 
 	private static final double POWERFUL_PLANET_THRESHOLD = 75.0;
 	
@@ -65,11 +67,11 @@ public class YogaFacts {
 
 	public void setPowerfulPlanets(Map<Planet, Double> strengthPercent){
 		
-		powerfulPlanets = EnumSet.noneOf(Planet.class);
+		powerfulPlanets = noneOf(Planet.class);
 		
 		for(Entry<Planet,Double> entry : strengthPercent.entrySet()){
 			
-			if (entry.getValue().doubleValue() >= POWERFUL_PLANET_THRESHOLD){
+			if (entry.getValue() >= POWERFUL_PLANET_THRESHOLD){
 				powerfulPlanets.add(entry.getKey());
 			}
 		}

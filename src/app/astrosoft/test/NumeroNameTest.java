@@ -16,6 +16,7 @@ import app.astrosoft.persistence.NumerologicalName;
 import app.astrosoft.service.NumeroNameService;
 import app.astrosoft.ui.comp.NumeroNamePagination;
 import app.astrosoft.ui.comp.Pagination;
+import static java.util.logging.Logger.getLogger;
 
 public class NumeroNameTest {
 	
@@ -23,7 +24,7 @@ public class NumeroNameTest {
 		//System.setProperty("java.util.logging.config.file", "./resources/logging.properties");
 	}
 	
-	private static final Logger log = Logger.getLogger(NumeroNameTest.class.getName());
+	private static final Logger log = getLogger(NumeroNameTest.class.getName());
 	
 	public static void main(String[] args) {
 		

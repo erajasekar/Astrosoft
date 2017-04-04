@@ -20,6 +20,8 @@ import javax.swing.border.Border;
 import app.astrosoft.ui.table.AstrosoftTable;
 import app.astrosoft.ui.util.UIConsts;
 import app.astrosoft.ui.util.UIUtil;
+import static javax.swing.BorderFactory.createEmptyBorder;
+import static javax.swing.BorderFactory.createMatteBorder;
 
 public class TitledTable extends JPanel {
 	
@@ -61,7 +63,7 @@ public class TitledTable extends JPanel {
 			
 			
 			footer.setBackground(UIConsts.THEME_CLR);
-			footer.setBorder(BorderFactory.createMatteBorder(
+			footer.setBorder(createMatteBorder(
 	                0, 1, 1, 1, Color.GRAY));
 			add(footer, BorderLayout.PAGE_END);
 		}
@@ -83,7 +85,7 @@ public class TitledTable extends JPanel {
 	}
 	
 	public void removeScrollPaneBorder(){
-		scrollPane.setBorder(BorderFactory.createEmptyBorder());
+		scrollPane.setBorder(createEmptyBorder());
 		table.addBorder();
 	}
 	

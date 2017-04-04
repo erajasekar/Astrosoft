@@ -14,6 +14,7 @@ import javax.swing.table.TableCellRenderer;
 
 import app.astrosoft.consts.Roman;
 import app.astrosoft.ui.util.UIUtil;
+import static app.astrosoft.ui.util.UIUtil.getFont;
 
 public class LocalizedCellRenderer implements TableCellRenderer {
 
@@ -36,7 +37,7 @@ public class LocalizedCellRenderer implements TableCellRenderer {
 				value, isSelected, hasFocus, row, column);
 		
 		if (! (value instanceof Number || value instanceof Roman) ){
-			c.setFont(UIUtil.getFont(font.getFontName(), font.getStyle(), font.getSize(), 14));
+			c.setFont(getFont(font.getFontName(), font.getStyle(), font.getSize(), 14));
 		}
 		
 		return c;

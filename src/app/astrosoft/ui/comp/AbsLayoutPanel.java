@@ -12,6 +12,7 @@ import javax.swing.JComponent;
 import javax.swing.JPanel;
 
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getScreenSize;
 
 public class AbsLayoutPanel extends JPanel{
 
@@ -19,7 +20,7 @@ public class AbsLayoutPanel extends JPanel{
 		
 		super();
 		setLayout(null);
-		Dimension screenSize = AstroSoft.getScreenSize();
+		Dimension screenSize = getScreenSize();
 		setBounds(0,0, screenSize.width, screenSize.height);
 		
 		for(JComponent c : comps){

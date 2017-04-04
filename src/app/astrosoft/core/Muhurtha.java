@@ -14,16 +14,25 @@ import java.util.List;
 
 import swisseph.SweDate;
 import app.astrosoft.beans.Interval;
+import static app.astrosoft.beans.Interval.intersection;
+import static app.astrosoft.beans.Interval.intersection;
 import app.astrosoft.beans.MuhurthaBean;
 import app.astrosoft.consts.DisplayFormat;
 import app.astrosoft.consts.MuhurthaRank;
+import static app.astrosoft.consts.MuhurthaRank.values;
 import app.astrosoft.consts.Nakshathra;
+import static app.astrosoft.consts.Nakshathra.degFor;
+import static app.astrosoft.consts.Nakshathra.muhurtaNakshathras;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.longitudeForRasi;
 import app.astrosoft.ui.AstroSoft;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableDataFactory;
+import static app.astrosoft.ui.table.TableDataFactory.getTableData;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.decimal;
+import static app.astrosoft.util.AstroUtil.incJulDate;
 import app.astrosoft.util.MuhurthaHelper;
 
 /** Class for muhurtha calculations */
@@ -55,7 +64,7 @@ public class Muhurtha {
 
 		//TODO Remove if muthurtha should start from today
 		date.add(Calendar.DATE, -2);
-		double muhurthaTime = AstroUtil.decimal(date.get(Calendar.HOUR), date.get(Calendar.MINUTE), date.get(Calendar.SECOND));// - AstroSoft.getPreferences().getPlace().timeZone();
+		double muhurthaTime = decimal(date.get(Calendar.HOUR), date.get(Calendar.MINUTE), date.get(Calendar.SECOND));// - AstroSoft.getPreferences().getPlace().timeZone();
 		SweDate sd = new SweDate(date.get(Calendar.YEAR), date.get(Calendar.MONTH) + 1, date.get(Calendar.DATE), muhurthaTime);
 
 		mDate = sd.getJulDay();
@@ -92,13 +101,13 @@ public class Muhurtha {
 
 	private List<Interval> calcFavNakLongitudes() {
 
-		List<Interval> favNakLongitudes =  new java.util.ArrayList <Interval> ();
+		List<Interval> favNakLongitudes =  new java.util.ArrayList <> ();
 
 		int [] favNakPos = {1, 3, 5, 7, 8, 10, 12, 14, 16, 17, 19, 21, 23, 25, 26};
 
 		for(int i: favNakPos) {
 
-			favNakLongitudes.add(Nakshathra.degFor(mNak.absolute(i)));
+			favNakLongitudes.add(degFor(mNak.absolute(i)));
 		}
 
 		//System.out.println("Fav Nak Longitudes: " + favNakLongitudes);
@@ -108,13 +117,13 @@ public class Muhurtha {
 
 	private List<Interval> calcFavRasiLongitudes() {
 
-		List<Interval> favRasiLongitudes =  new java.util.ArrayList <Interval> ();
+		List<Interval> favRasiLongitudes =  new java.util.ArrayList <> ();
 
 		int [] favRasiPos = {0,2,6,9,10};
 
 		for(int i: favRasiPos) {
 
-			favRasiLongitudes.add(Rasi.longitudeForRasi(mRasi.absolute(i)));
+			favRasiLongitudes.add(longitudeForRasi(mRasi.absolute(i)));
 		}
 
 		//System.out.println("Fav Rasi Longitudes: " + favRasiLongitudes);
@@ -124,10 +133,10 @@ public class Muhurtha {
 
 	private List<Interval> calcFavMuhurthaLongitudes(MuhurthaRank rank) {
 
-		List<Interval> favMuhurthaLongitudes =  new java.util.ArrayList <Interval> ();
+		List<Interval> favMuhurthaLongitudes =  new java.util.ArrayList <> ();
 
-		for(Nakshathra nak : Nakshathra.muhurtaNakshathras(rank)) {
-			favMuhurthaLongitudes.add(Nakshathra.degFor(nak));
+		for(Nakshathra nak : muhurtaNakshathras(rank)) {
+			favMuhurthaLongitudes.add(degFor(nak));
 		}
 
 		//System.out.println("Fav Muhurtha Longitudes with rank: " + rank + " - " + favMuhurthaLongitudes);
@@ -137,13 +146,13 @@ public class Muhurtha {
 
 	private void calcFavLongitudes(){
 
-		favLogitudes = new EnumMap<MuhurthaRank, List<Interval>> (MuhurthaRank.class);
+		favLogitudes = new EnumMap<> (MuhurthaRank.class);
 
 		List<Interval> favNakLongitudes = calcFavNakLongitudes();
 		favLogitudes.put(MuhurthaRank.VeryGood, favNakLongitudes);
 
 		if (filterByRasi){
-			favLogitudes.put(MuhurthaRank.VeryGood, Interval.intersection(favNakLongitudes, calcFavRasiLongitudes()));
+			favLogitudes.put(MuhurthaRank.VeryGood, intersection(favNakLongitudes, calcFavRasiLongitudes()));
 		}
 
 		//System.out.println("Fav Longitudes after rasi filter ->" + favLogitudes);
@@ -151,11 +160,11 @@ public class Muhurtha {
         
 		if (filterByMuhurthaNaks){
 
-			for(MuhurthaRank r :  MuhurthaRank.values()){
+			for(MuhurthaRank r :  values()){
 
 				List<Interval> favMuhurthaLongitudes = calcFavMuhurthaLongitudes(r);
 				favLogitudes.put(r,
-								Interval.intersection(rasiFilteredfavNakLongitudes,
+								intersection(rasiFilteredfavNakLongitudes,
 								favMuhurthaLongitudes));
 			}
 		}
@@ -168,7 +177,7 @@ public class Muhurtha {
 
 		MuhurthaHelper muhurthaHelper = new MuhurthaHelper(favLogitudes);
 
-		endJulDay = AstroUtil.incJulDate(startJulDay, 0, incPeriod, 0);
+		endJulDay = incJulDate(startJulDay, 0, incPeriod, 0);
 
 		Interval period = new Interval(startJulDay, endJulDay);
 		List <MuhurthaBean>muhurthaList = muhurthaHelper.getTransists(period);
@@ -183,7 +192,7 @@ public class Muhurtha {
 		//System.out.println(muhurthaList);
 		startJulDay = endJulDay;
 
-		return TableDataFactory.getTableData(muhurthaList);
+		return getTableData(muhurthaList);
 	}
 
 	public void printFavLongitudes(){

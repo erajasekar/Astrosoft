@@ -16,12 +16,19 @@ import app.astrosoft.core.Horoscope;
 import app.astrosoft.test.SampleHoroscopes;
 import app.astrosoft.xps.beans.YogaFacts;
 import app.astrosoft.consts.Planet;
+import static app.astrosoft.test.SampleHoroscopes.getMyHoroscope;
+import static app.astrosoft.test.SampleHoroscopes.getSubaHoroscope;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.of;
+import static java.util.EnumSet.range;
 
 public class YogaFactsTestCase {
 
-	private static Horoscope raja = SampleHoroscopes.getMyHoroscope();
+	private static Horoscope raja = getMyHoroscope();
 	
-	private static Horoscope suba = SampleHoroscopes.getSubaHoroscope();
+	private static Horoscope suba = getSubaHoroscope();
 	
 	@Test
 	public void testPowerfulPlanet1(){
@@ -31,7 +38,7 @@ public class YogaFactsTestCase {
 		
 		//System.out.println("raja -> " + facts.powerfulPlanets());
 		
-		assertTrue(facts.powerfulPlanets().containsAll(EnumSet.range(Planet.Sun,Planet.Saturn)));
+		assertTrue(facts.powerfulPlanets().containsAll(range(Planet.Sun,Planet.Saturn)));
 	}
 	
 	@Test
@@ -67,18 +74,18 @@ public class YogaFactsTestCase {
 	public void testPowerfulPlanet7(){
 		
 		YogaFacts facts = new YogaFacts();
-		facts.setPowerfulPlanets(EnumSet.of(Planet.Sun,Planet.Moon,Planet.Mars));
+		facts.setPowerfulPlanets(of(Planet.Sun,Planet.Moon,Planet.Mars));
 		
-		assertTrue(facts.isAnyPlanetPowerful(EnumSet.of(Planet.Sun,Planet.Saturn)));
+		assertTrue(facts.isAnyPlanetPowerful(of(Planet.Sun,Planet.Saturn)));
 	}
 	
 	@Test
 	public void testPowerfulPlanet4(){
 		
 		YogaFacts facts = new YogaFacts();
-		facts.setPowerfulPlanets(EnumSet.of(Planet.Sun,Planet.Moon,Planet.Mars));
+		facts.setPowerfulPlanets(of(Planet.Sun,Planet.Moon,Planet.Mars));
 		
-		assertFalse(facts.isAnyPlanetPowerful(EnumSet.of(Planet.Mercury,Planet.Saturn)));
+		assertFalse(facts.isAnyPlanetPowerful(of(Planet.Mercury,Planet.Saturn)));
 	}
 }
 

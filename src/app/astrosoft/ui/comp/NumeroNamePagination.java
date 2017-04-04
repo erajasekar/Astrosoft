@@ -9,6 +9,8 @@ package app.astrosoft.ui.comp;
 import app.astrosoft.consts.Operator;
 import app.astrosoft.persistence.NumerologicalName;
 import app.astrosoft.service.NumeroNameService;
+import static app.astrosoft.service.NumeroNameService.findAllNames;
+import static app.astrosoft.service.NumeroNameService.findDynamic;
 import app.astrosoft.ui.table.TableData;
 
 public class NumeroNamePagination extends AbstractPagination<NumerologicalName> {
@@ -41,9 +43,9 @@ public class NumeroNamePagination extends AbstractPagination<NumerologicalName> 
 	protected TableData<NumerologicalName> getData(int startIndex, int maxRows) {
 	
 		if (findAll){
-			return NumeroNameService.findAllNames(startIndex,maxRows);
+			return findAllNames(startIndex,maxRows);
 		}else {
-			return NumeroNameService.findDynamic(name, numeroVal, numeroNum, op1, op2, startIndex, maxRows);
+			return findDynamic(name, numeroVal, numeroNum, op1, op2, startIndex, maxRows);
 		}
 	}
 

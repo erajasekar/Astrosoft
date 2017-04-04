@@ -57,10 +57,22 @@ import app.astrosoft.util.AstrosoftFileFilter;
 import app.astrosoft.util.FileOps;
 import app.astrosoft.export.AstrosoftExporter.Type;
 import static app.astrosoft.export.AstrosoftExporter.*;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
+import static app.astrosoft.ui.dlg.OptionDialog.showDialog;
+import static app.astrosoft.ui.util.SpringUtilities.makeCompactGrid;
+import static app.astrosoft.ui.util.UIConsts.getTitleBorder;
+import static app.astrosoft.ui.util.UIUtil.createImageIcon;
+import static app.astrosoft.ui.util.UIUtil.setWindowLocation;
+import static app.astrosoft.util.AstroUtil.getCalendar;
+import static app.astrosoft.util.AstroUtil.getCalendar;
+import static app.astrosoft.util.FileOps.openDocument;
+import static java.awt.Cursor.getPredefinedCursor;
+import static java.util.logging.Logger.getLogger;
+import static javax.swing.BorderFactory.createEtchedBorder;
 
 public class PrintDialog extends AstrosoftDialog {
 
-	private static final Logger log = Logger.getLogger(PrintDialog.class.getName());
+	private static final Logger log = getLogger(PrintDialog.class.getName());
 	
 	private static final Dimension dlgSize = new Dimension(440,270);
 	
@@ -75,7 +87,7 @@ public class PrintDialog extends AstrosoftDialog {
 	
 	private static final Dimension printPanelSize = new Dimension(dlgSize.width - 60,dlgSize.height - 60);
 	
-	private static final String defaultPath = AstroSoft.getPreferences().getAstrosoftFilesDir();
+	private static final String defaultPath = getPreferences().getAstrosoftFilesDir();
 	
 	private static SimpleDateFormat df = new SimpleDateFormat("MMM");
 	
@@ -103,7 +115,7 @@ public class PrintDialog extends AstrosoftDialog {
 	    5, UIConsts.THEME_CLR, new Color( 0, 0, 0 ),
 	    new Color( 0, 0, 0 ), new Color( 0, 0, 0 ) );*/
 	
-	private JButton arrow = new JButton(UIUtil.createImageIcon("calendar"));
+	private JButton arrow = new JButton(createImageIcon("calendar"));
 	
 	public PrintDialog(AstroSoft parent){
 		super(parent, "Print ", dlgSize);
@@ -150,15 +162,9 @@ public class PrintDialog extends AstrosoftDialog {
 		JPanel buttonPanel = new JPanel();
 		
 		print = new JButton("Print");
-		print.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				
-				printClicked();
-				
-			}
-	    	
-	    });
+		print.addActionListener((ActionEvent e) -> {
+                    printClicked();
+        });
 		
 		cancel = new JButton("Cancel");
 		cancel.addActionListener(closeListener);
@@ -169,9 +175,9 @@ public class PrintDialog extends AstrosoftDialog {
 		printPanel.add(buttonPanel);
 		
 		
-		SpringUtilities.makeCompactGrid(printPanel, 3, 1, 10,10,10,23);
+		makeCompactGrid(printPanel, 3, 1, 10,10,10,23);
 		
-		printPanel.setBorder(UIConsts.getTitleBorder("Print"));
+		printPanel.setBorder(getTitleBorder("Print"));
 		
 		return printPanel;
 	}
@@ -183,11 +189,11 @@ public class PrintDialog extends AstrosoftDialog {
 		String outputFile = outputFileChooser.getFilePath();
 		
 		if (outputFile == null || outputFile.isEmpty()){
-			OptionDialog.showDialog("Please choose valid file " , JOptionPane.ERROR_MESSAGE);
+			showDialog("Please choose valid file " , JOptionPane.ERROR_MESSAGE);
 			return;
 		}
 		
-		setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+		setCursor(getPredefinedCursor(Cursor.WAIT_CURSOR));
 		print.setEnabled(false);
 		cancel.setEnabled(false);
 		
@@ -196,14 +202,14 @@ public class PrintDialog extends AstrosoftDialog {
 		FutureTask<Object> printTask = null;
 		
 		if (type.equals(AstrosoftExporter.Type.Horosocope)){
-			printTask = AstrosoftExporter.export2Pdf(AstrosoftExporter.Type.Horosocope, parent.getHoroscope(), outputFile);
+			printTask = export2Pdf(AstrosoftExporter.Type.Horosocope, parent.getHoroscope(), outputFile);
 		}else if (type.equals(AstrosoftExporter.Type.Compactibility)){
-			printTask = AstrosoftExporter.export2Pdf(AstrosoftExporter.Type.Compactibility, parent.getCompactibility(), outputFile);
+			printTask = export2Pdf(AstrosoftExporter.Type.Compactibility, parent.getCompactibility(), outputFile);
 		}else if (type.equals(AstrosoftExporter.Type.Panchang)){
 			
 			closePanInputWindow();
 			PanchangList panchang = null;
-			Calendar panCal = (spinner != null) ? AstroUtil.getCalendar(spinner.getSelectedDate()) : AstroUtil.getCalendar();
+			Calendar panCal = (spinner != null) ? getCalendar(spinner.getSelectedDate()) : getCalendar();
 			
 			if (fullYear.isSelected()){
 				panchang = new PanchangList(panCal.get(Calendar.YEAR));
@@ -211,16 +217,10 @@ public class PrintDialog extends AstrosoftDialog {
 				panchang = new PanchangList(panCal.get(Calendar.YEAR), panCal.get(Calendar.MONTH));
 			}
 			
-			printTask = AstrosoftExporter.export2Pdf(type, panchang, outputFile);
+			printTask = export2Pdf(type, panchang, outputFile);
 		}
 		
-		ProgressListener listener = new ProgressListener(){
-
-			public void completed() {
-				printCompleted();	
-			}
-			
-		};
+		ProgressListener listener = this::printCompleted;
 		
 		ProgressBarPanel pbarPanel = new ProgressBarPanel(progressSize, printTask, "Printing", listener);
 		
@@ -229,28 +229,22 @@ public class PrintDialog extends AstrosoftDialog {
 
 	protected void printCompleted() {
 		
-		setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		setCursor(getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		
 		print.setEnabled(true);
 		cancel.setEnabled(true);
 		
 		JPanel p = new JPanel(new SpringLayout());
 		
-		acrobatPanel = new FileChooserPanel(acrobatSize,AstroSoft.getPreferences().getAcrobatExecutable(), "Acrobat Executable", FileOps.FileDialogMode.OPEN);
+		acrobatPanel = new FileChooserPanel(acrobatSize,getPreferences().getAcrobatExecutable(), "Acrobat Executable", FileOps.FileDialogMode.OPEN);
 		p.add(acrobatPanel);
 		
 		JButton open = new JButton("Open");
 		JButton close = new JButton("Close");
 		
-		open.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				
-				openClicked();
-				
-			}
-	    	
-	    });
+		open.addActionListener((ActionEvent e) -> {
+                    openClicked();
+        });
 		
 		close.addActionListener(closeListener);
 		
@@ -261,7 +255,7 @@ public class PrintDialog extends AstrosoftDialog {
 		
 		p.add(buttonPanel);
 		
-		SpringUtilities.makeCompactGrid(p, 2, 1, 10,10,10,10);
+		makeCompactGrid(p, 2, 1, 10,10,10,10);
 		
 		refresh(p);
 		
@@ -270,11 +264,11 @@ public class PrintDialog extends AstrosoftDialog {
 	private void openClicked() {
 		
 		try {
-			AstroSoft.getPreferences().setAcrobatExecutable(acrobatPanel.getFilePath());
-			FileOps.openDocument(outputFileChooser.getFilePath());
+			getPreferences().setAcrobatExecutable(acrobatPanel.getFilePath());
+			openDocument(outputFileChooser.getFilePath());
 		}catch(AstrosoftException e){
 			
-			OptionDialog.showDialog(e.getMessage(),JOptionPane.ERROR_MESSAGE);
+			showDialog(e.getMessage(),JOptionPane.ERROR_MESSAGE);
 		}
 		
 	}
@@ -319,13 +313,9 @@ public class PrintDialog extends AstrosoftDialog {
 		
 		printTypes.addItem(AstrosoftExporter.Type.Panchang);
 		
-		arrow.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				arrowClicked();
-			}
-			
-		});
+		arrow.addActionListener((ActionEvent e) -> {
+                    arrowClicked();
+        });
 		
 		JPanel comboPanel = new JPanel(new BorderLayout());
 		
@@ -335,7 +325,7 @@ public class PrintDialog extends AstrosoftDialog {
 		typePanel.add(new JLabel("Print "));
 		typePanel.add(comboPanel);
 		
-		SpringUtilities.makeCompactGrid(typePanel, 1, 2, 0,0,5,5);
+		makeCompactGrid(typePanel, 1, 2, 0,0,5,5);
 		
 		return typePanel;
 	}
@@ -344,7 +334,7 @@ public class PrintDialog extends AstrosoftDialog {
 		
 		if (!windowShown) {
 			panInputWindow = createPanchangInputWindow();
-			UIUtil.setWindowLocation(panInputWindow, printTypes);
+			setWindowLocation(panInputWindow, printTypes);
 			panInputWindow.setVisible(true);
 			windowShown = true;
 		}else {
@@ -411,14 +401,9 @@ public class PrintDialog extends AstrosoftDialog {
 		
 		spinner = new CalendarSpinner(CalendarSpinner.FMT_MONTH_YEAR);
 		
-		spinner.addDateListener( new DateListener () {
-
-			public void dateChanged(Date date) {
-				
-				outputFileChooser.setFilePath(getPanchangOutputFile(date));
-			}
-			
-		});
+		spinner.addDateListener( (Date date) -> {
+                    outputFileChooser.setFilePath(getPanchangOutputFile(date));
+        });
 		
 		JPanel panChooser = spinner.getChooser();
 		JPanel p = new JPanel();
@@ -427,18 +412,15 @@ public class PrintDialog extends AstrosoftDialog {
 		p.add(fullYear);
 		
 		p.setBackground(UIConsts.CAL_COMBO_BACKGROUND);
-		p.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.LOWERED));
+		p.setBorder(createEtchedBorder(EtchedBorder.LOWERED));
 		
 		windowPane.add(p, BorderLayout.CENTER);
 		
 		window.pack();
 		
-		fullYear.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				outputFileChooser.setFilePath(getPanchangOutputFile(spinner.getSelectedDate()));
-			}
-		});
+		fullYear.addActionListener((ActionEvent e) -> {
+                    outputFileChooser.setFilePath(getPanchangOutputFile(spinner.getSelectedDate()));
+        });
 		return window;
 	}
 	
@@ -447,7 +429,7 @@ public class PrintDialog extends AstrosoftDialog {
 		StringBuilder sb = new StringBuilder(defaultPath);
 		sb.append("Panchang");
 		
-		Calendar cal = (date != null) ? AstroUtil.getCalendar(date) : AstroUtil.getCalendar();
+		Calendar cal = (date != null) ? getCalendar(date) : getCalendar();
 			
 		if (!fullYear.isSelected()){
 			sb.append("_");

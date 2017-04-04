@@ -15,6 +15,7 @@ import app.astrosoft.beans.Interval;
 import app.astrosoft.beans.MuhurthaBean;
 import app.astrosoft.consts.MuhurthaRank;
 import app.astrosoft.consts.Planet;
+import static java.util.logging.Logger.getLogger;
 
 
 /** 
@@ -22,7 +23,7 @@ import app.astrosoft.consts.Planet;
  */
 public class MuhurthaHelper {
 	
-	private static final Logger log = Logger.getLogger(MuhurthaHelper.class.getName());
+	private static final Logger log = getLogger(MuhurthaHelper.class.getName());
 	
 	private EnumMap <MuhurthaRank, List<Interval>>  tLongitudes;
 	
@@ -40,7 +41,7 @@ public class MuhurthaHelper {
     //TODO: Make this to run in seperate thread.
 	public List<MuhurthaBean> getTransists(Interval period) {
 
-		List<MuhurthaBean> mTransists = new java.util.ArrayList<MuhurthaBean>();
+		List<MuhurthaBean> mTransists = new java.util.ArrayList<>();
 		
 		for(MuhurthaRank r : tLongitudes.keySet()) {
 			

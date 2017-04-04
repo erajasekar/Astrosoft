@@ -10,13 +10,14 @@ import static app.astrosoft.xps.yoga.test.YogaAnalysisTestHelper.getLogger;
 import static app.astrosoft.xps.yoga.test.YogaAnalysisTestHelper.getSession;
 
 import java.util.logging.Logger;
+import static java.util.logging.Logger.getLogger;
 
 import org.junit.After;
 
 @SuppressWarnings("unchecked")
 public abstract class YogaAnalysisTestCase {
 	
-	protected static final Logger log = Logger.getLogger(YogaAnalysisTestCase.class.getName());
+	protected static final Logger log = getLogger(YogaAnalysisTestCase.class.getName());
 	
 	//private static Rasi[] chart1;
 	

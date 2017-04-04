@@ -87,7 +87,7 @@ public class HelloWorldExample {
         message.setStatus( Message.STATUSVALS.HELLO );
         session.insert( message );*/
         
-        List<String> l = new ArrayList<String>();
+        List<String> l = new ArrayList<>();
         
         l.add("a");
         l.add("b");

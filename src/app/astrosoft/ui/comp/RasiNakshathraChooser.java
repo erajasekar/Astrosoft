@@ -13,11 +13,14 @@ import app.astrosoft.consts.DisplayFormat;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Language;
 import app.astrosoft.consts.Nakshathra;
+import static app.astrosoft.consts.Nakshathra.ofRasi;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.values;
 import app.astrosoft.ui.AstroSoft;
 import app.astrosoft.ui.util.CallBack;
 import app.astrosoft.ui.util.LocationGenerator;
 import app.astrosoft.ui.util.UIConsts;
+import static app.astrosoft.ui.util.UIConsts.getTitleBorder;
 import app.astrosoft.ui.util.UIUtil;
 import app.astrosoft.util.Internalization;
 
@@ -73,14 +76,12 @@ public class RasiNakshathraChooser extends JPanel {
      
     public void initComponents() {
         setLayout(new AbsoluteLayout());
-        rasiCombo =  new JComboBox(Rasi.values());
+        rasiCombo =  new JComboBox(values());
     	nakCombo =  new JComboBox();
     	
     	populateNakCombo(Rasi.Mesha);
-        rasiCombo.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                populateNakCombo((Rasi)rasiCombo.getSelectedItem());
-            }
+        rasiCombo.addActionListener((ActionEvent e) -> {
+            populateNakCombo((Rasi)rasiCombo.getSelectedItem());
         });
         
         rasiCombo.setFont(font);
@@ -108,14 +109,14 @@ public class RasiNakshathraChooser extends JPanel {
         add(nakCombo, new AbsoluteConstraints(locGen.getNextColumn(),comboSize));
         
         if (title != null){
-            setBorder(UIConsts.getTitleBorder(title));
+            setBorder(getTitleBorder(title));
         }
         setVisible(true);
     }
     
     private void populateNakCombo(Rasi rasi){
         nakCombo.removeAllItems();
-        Set<Nakshathra> naks = Nakshathra.ofRasi(rasi);
+        Set<Nakshathra> naks = ofRasi(rasi);
         for(Nakshathra nak : naks){
             nakCombo.addItem(nak);
         }

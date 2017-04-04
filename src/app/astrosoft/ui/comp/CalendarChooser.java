@@ -35,7 +35,7 @@ public abstract class CalendarChooser {
 	}
 	
 	protected CalendarChooser() {
-		listeners = new ArrayList<DateListener>();
+		listeners = new ArrayList<>();
 	}
 	
 	public void addDateListener(DateListener listener){

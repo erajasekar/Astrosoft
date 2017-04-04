@@ -32,7 +32,7 @@ public class CollectionUtil {
 	
 	public static <K extends Enum<K>,V> EnumMap<K,V> newEnumMap(Class<K> type, Map.Entry<K, V> ...entries){
 		
-		EnumMap<K,V> map = new EnumMap<K, V>(type);
+		EnumMap<K,V> map = new EnumMap<>(type);
 		
 		for (Map.Entry<K, V> entry:entries){
 			map.put(entry.getKey(), entry.getValue());

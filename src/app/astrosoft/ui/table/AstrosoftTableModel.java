@@ -15,6 +15,7 @@ import javax.swing.table.AbstractTableModel;
 import app.astrosoft.consts.AstrosoftTableColumn;
 import java.util.Collections;
 import app.astrosoft.ui.table.TableData;
+import static app.astrosoft.ui.table.TableDataFactory.getTableData;
 import app.astrosoft.ui.table.TableRowData;
 
 
@@ -97,11 +98,11 @@ public class AstrosoftTableModel extends AbstractTableModel {
 	
 	public <E extends TableRowData>TableData<E> getData(List <Integer> indexes){
 		
-		List <E> data = new ArrayList<E>();
+		List <E> data = new ArrayList<>();
 		for(Integer i : indexes){
 			data.add((E)rows.getRow(i));
 		}
 		
-		return TableDataFactory.getTableData(data);
+		return getTableData(data);
 	}
 }

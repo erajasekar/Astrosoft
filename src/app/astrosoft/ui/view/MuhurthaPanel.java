@@ -22,7 +22,9 @@ import javax.swing.JScrollPane;
 import javax.swing.border.LineBorder;
 
 import app.astrosoft.beans.Interval;
+import static app.astrosoft.beans.Interval.parseDate;
 import app.astrosoft.beans.MuhurthaBean;
+import static app.astrosoft.beans.MuhurthaBean.getColumnMetaData;
 import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.DisplayFormat;
 import app.astrosoft.consts.TableStyle;
@@ -54,20 +56,16 @@ public class MuhurthaPanel extends JPanel {
         this.muhurtha = muhurtha;
         this.handler = handler;
         muhurtha.calcMuhurtha();
-        model = new SortableTableModel(muhurtha.getNextTransitPeriods(),MuhurthaBean.getColumnMetaData() , AstrosoftTableColumn.Period);
+        model = new SortableTableModel(muhurtha.getNextTransitPeriods(),getColumnMetaData() , AstrosoftTableColumn.Period);
         mTable = new SortableTable(model, TableStyle.SCROLL_SINGLE_ROW_SELECT);
        
         okButton = new JButton("More");
-        okButton.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e) {
-                moreClicked();
-            }
+        okButton.addActionListener((ActionEvent e) -> {
+            moreClicked();
         });
         panButton = new JButton("Panchang");
-        panButton.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e) {
-                panchangClicked();
-            }
+        panButton.addActionListener((ActionEvent e) -> {
+            panchangClicked();
         });
         
         TablePopupWindowModel popupModel =  new TablePopupWindowModel(){
@@ -150,7 +148,7 @@ public class MuhurthaPanel extends JPanel {
             AstrosoftTableModel model = (AstrosoftTableModel)mTable.getModel();
             Calendar cal = new GregorianCalendar();
 			try {
-				cal = Interval.parseDate((String)model.getValueAt(selectedRow,model.getColumnIndex(AstrosoftTableColumn.Period)), DisplayFormat.DATE);
+				cal = parseDate((String)model.getValueAt(selectedRow,model.getColumnIndex(AstrosoftTableColumn.Period)), DisplayFormat.DATE);
 			} catch (ParseException e) {
 				e.printStackTrace();
 			}

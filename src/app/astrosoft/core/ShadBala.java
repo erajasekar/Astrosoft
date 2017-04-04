@@ -26,6 +26,7 @@ import app.astrosoft.beans.HousePosition;
 import app.astrosoft.beans.PlanetaryInfo;
 import app.astrosoft.beans.HousePosition.Bhava;
 import app.astrosoft.consts.AstroConsts;
+import static app.astrosoft.consts.AstroConsts.permanentRel;
 import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.Ayanamsa;
 import app.astrosoft.consts.Paksha;
@@ -34,6 +35,18 @@ import app.astrosoft.consts.Rasi;
 import app.astrosoft.consts.Roman;
 import app.astrosoft.consts.Varga;
 import app.astrosoft.consts.Planet.Character;
+import static app.astrosoft.consts.Planet.allPlanets;
+import static app.astrosoft.consts.Planet.majorPlanets;
+import static app.astrosoft.consts.Planet.ofIndex;
+import static app.astrosoft.consts.Planet.values;
+import static app.astrosoft.consts.Rasi.ofIndex;
+import static app.astrosoft.consts.Roman.of;
+import static app.astrosoft.core.ShadBala.Bala.bhavaBalas;
+import static app.astrosoft.core.ShadBala.Bala.kalaBalas;
+import static app.astrosoft.core.ShadBala.Bala.planetBalas;
+import static app.astrosoft.core.ShadBala.Bala.sthanaBalas;
+import static app.astrosoft.core.ShadBala.Bala.toTableColumn;
+import static app.astrosoft.core.VargaCharts.oddEven;
 import app.astrosoft.ui.table.DefaultColumnMetaData;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableRowData;
@@ -44,10 +57,25 @@ import app.astrosoft.util.SwissHelper;
 import app.astrosoft.util.Utils;
 import app.astrosoft.export.Exportable;
 import app.astrosoft.export.Exporter;
+import static app.astrosoft.util.AstroUtil.getSunRise;
+import static app.astrosoft.util.AstroUtil.getSunSet;
+import static app.astrosoft.util.SwissHelper.calcNatonnataBalaDeg;
+import static app.astrosoft.util.Utils.sortMap;
+import static java.lang.Math.abs;
+import static java.lang.Math.abs;
+import static java.lang.Math.abs;
+import static java.lang.Math.abs;
+import static java.lang.Math.abs;
+import static java.lang.Math.abs;
+import static java.lang.Math.sqrt;
+import static java.util.Collections.reverseOrder;
+import static java.util.Collections.sort;
+import static java.util.EnumSet.range;
+import static java.util.logging.Logger.getLogger;
 
 public class ShadBala implements Exportable {
 
-	private static final Logger log = Logger.getLogger(ShadBala.class.getName());
+	private static final Logger log = getLogger(ShadBala.class.getName());
 
 	private static enum BhavaType {
 		Poorva, Uttra
@@ -106,7 +134,7 @@ public class ShadBala implements Exportable {
 
 		public static List<AstrosoftTableColumn> toTableColumn(
 				EnumSet<Bala> balas) {
-			List<AstrosoftTableColumn> cols = new ArrayList<AstrosoftTableColumn>();
+			List<AstrosoftTableColumn> cols = new ArrayList<>();
 			for (Bala b : balas) {
 				cols.add(AstrosoftTableColumn.valueOf(b.name()));
 			}
@@ -144,7 +172,7 @@ public class ShadBala implements Exportable {
 
 	private EnumMap<Bala, EnumMap<Planet, Double>> PlanetBala;
 	private EnumMap<Bala, ArrayList<Double>> BhavaBala;
-	private EnumMap<Planet, Double> StrengthPer = new EnumMap<Planet, Double>(
+	private EnumMap<Planet, Double> StrengthPer = new EnumMap<>(
 			Planet.class);
 
 	private EnumMap<Planet, Integer> ShadBalaRank;
@@ -213,7 +241,7 @@ public class ShadBala implements Exportable {
 
 	private void calcBalas() {
 
-		PlanetBala = new EnumMap<Bala, EnumMap<Planet, Double>>(Bala.class);
+		PlanetBala = new EnumMap<>(Bala.class);
 		double[] MinStrength = {300.0, 360.0, 300.0, 420.0, 390.0, 330.0, 300.0};
 
 		PlanetBala.put(Bala.ResidentialStrength, calcResidentialStrength());
@@ -226,10 +254,10 @@ public class ShadBala implements Exportable {
 		PlanetBala.put(Bala.NaisargikaBala, calcNaisargikaBala());
 		calcIshtaKashtaBala();
 
-		EnumMap<Planet, Double> ShadBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> ShadBala = new EnumMap<>(
 				Planet.class);
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			double totalShadBala = PlanetBala.get(Bala.SthanaBala).get(p)
 					+ PlanetBala.get(Bala.DigBala).get(p)
@@ -246,7 +274,7 @@ public class ShadBala implements Exportable {
 
 		PlanetBala.put(Bala.ShadBala, ShadBala);
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			double percent = (ShadBala.get(p) / MinStrength[p.ordinal()]) * 100;
 			StrengthPer.put(p, percent);
@@ -259,7 +287,7 @@ public class ShadBala implements Exportable {
 
 	private EnumMap<Planet, Double> calcNaisargikaBala() {
 
-		EnumMap<Planet, Double> NaisargikaBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> NaisargikaBala = new EnumMap<>(
 				Planet.class);
 
 		NaisargikaBala.put(Planet.Sun, 60.00);
@@ -283,7 +311,7 @@ public class ShadBala implements Exportable {
 
 				int mercHouse = divChart.get(Varga.Rasi).get(Planet.Mercury);
 
-				for (Planet p : Planet.allPlanets()) {
+				for (Planet p : allPlanets()) {
 
 					if (divChart.get(Varga.Rasi).get(p) == mercHouse) {
 
@@ -353,10 +381,10 @@ public class ShadBala implements Exportable {
 		double length = 0;
 		BhavaType bhavaType;
 
-		EnumMap<Planet, Double> ResidentialStrength = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> ResidentialStrength = new EnumMap<>(
 				Planet.class);
 
-		for (Planet p : Planet.allPlanets()) {
+		for (Planet p : allPlanets()) {
 
 			bhavaType = poorvaUttraBhava(planetPosition.get(p), planetBhava
 					.get(p));
@@ -438,13 +466,13 @@ public class ShadBala implements Exportable {
 		PlanetBala.put(Bala.KendraBala, calcKendraBala());
 		PlanetBala.put(Bala.DrekkanaBala, calcDrekkanaBala());
 
-		EnumMap<Planet, Double> SthanaBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> SthanaBala = new EnumMap<>(
 				Planet.class);
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			double total = 0;
-			for (Bala b : Bala.sthanaBalas()) {
+			for (Bala b : sthanaBalas()) {
 				total = total + (PlanetBala.get(b).get(p));
 			}
 			SthanaBala.put(p, total);
@@ -459,11 +487,11 @@ public class ShadBala implements Exportable {
 
 		double[] debiliPos = {190.0, 213.0, 118.0, 345.0, 275.0, 177.0, 20.0};
 
-		EnumMap<Planet, Double> OchchaBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> OchchaBala = new EnumMap<>(
 				Planet.class);
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
-			double balaVal = Math.abs(planetPosition.get(p)
+			double balaVal = abs(planetPosition.get(p)
 					- debiliPos[p.ordinal()]) / 3;
 
 			if (balaVal > 60.00) {
@@ -481,13 +509,13 @@ public class ShadBala implements Exportable {
 		int rasiSign;
 		int navSign;
 
-		EnumMap<Planet, Double> OjaYugmarasyamsaBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> OjaYugmarasyamsaBala = new EnumMap<>(
 				Planet.class);
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
-			rasiSign = VargaCharts.oddEven(divChart.get(Varga.Rasi).get(p));
-			navSign = VargaCharts.oddEven(divChart.get(Varga.Navamsa).get(p));
+			rasiSign = oddEven(divChart.get(Varga.Rasi).get(p));
+			navSign = oddEven(divChart.get(Varga.Navamsa).get(p));
 
 			if ((p == Planet.Sun) || (p == Planet.Mars)
 					|| (p == Planet.Mercury) || (p == Planet.Jupiter)
@@ -511,7 +539,7 @@ public class ShadBala implements Exportable {
 	private EnumMap<Planet, Double> calcKendraBala() {
 
 		EnumMap<Planet, Double> KendraBala = initBala();
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			switch (planetLocation.get(p)) {
 
@@ -553,7 +581,7 @@ public class ShadBala implements Exportable {
 
 		EnumMap<Planet, Double> DrekkanaBala = initBala();
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			drek = (int) ((planetPosition.get(p) % 30) / 10) + 1;
 
@@ -580,10 +608,10 @@ public class ShadBala implements Exportable {
 
 		calcRelationShips();
 
-		EnumMap<Planet, Double> SaptavargajaBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> SaptavargajaBala = new EnumMap<>(
 				Planet.class);
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			SaptavargajaBala.put(p, (SaptavargajaBala(Varga.Rasi, p)
 					+ SaptavargajaBala(Varga.Hora, p) + SaptavargajaBala(Varga.Drekkana, p)
@@ -601,7 +629,7 @@ public class ShadBala implements Exportable {
 		Planet owner;
 		double bala = 0.0;
 
-		house = Rasi.ofIndex(divChart.get(varga).get(pl) - 1);
+		house = ofIndex(divChart.get(varga).get(pl) - 1);
 		owner = house.owner();
 
 		if (pl == owner) {
@@ -651,9 +679,9 @@ public class ShadBala implements Exportable {
 
 		int dist = 0;
 
-		for (Planet i : Planet.majorPlanets()) {
+		for (Planet i : majorPlanets()) {
 
-			for (Planet j : Planet.majorPlanets()) {
+			for (Planet j : majorPlanets()) {
 
 				if (i == j) {
 					Rel[i.ordinal()][j.ordinal()] = 2;
@@ -675,7 +703,7 @@ public class ShadBala implements Exportable {
 				}
 
 				Rel[i.ordinal()][j.ordinal()] = Rel[i.ordinal()][j.ordinal()]
-						+ AstroConsts.permanentRel(i, j);
+						+ permanentRel(i, j);
 
 			}
 
@@ -688,10 +716,10 @@ public class ShadBala implements Exportable {
 		double powerLessPos = 0.0;
 		double arc = 0.0;
 
-		EnumMap<Planet, Double> DigBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> DigBala = new EnumMap<>(
 				Planet.class);
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			if ((p == Planet.Sun) || (p == Planet.Mars)) {
 				powerLessPos = housePosition.getBhava(4).mid();
@@ -709,7 +737,7 @@ public class ShadBala implements Exportable {
 				powerLessPos = housePosition.getBhava(1).mid();
 			}
 
-			arc = Math.abs(planetPosition.get(p) - powerLessPos);
+			arc = abs(planetPosition.get(p) - powerLessPos);
 
 			if (arc > 180.00) {
 				arc = 360.0 - arc;
@@ -740,7 +768,7 @@ public class ShadBala implements Exportable {
 
 	private EnumMap<Planet, Double> calcVaraBala() {
 
-		VaraAdipathi = Planet.ofIndex((int) ((Ahargana + 2) % 7));
+		VaraAdipathi = ofIndex((int) ((Ahargana + 2) % 7));
 		EnumMap<Planet, Double> VaraBala = initBala();
 		VaraBala.put(VaraAdipathi, 45.0);
 
@@ -749,8 +777,7 @@ public class ShadBala implements Exportable {
 
 	private EnumMap<Planet, Double> calcAbdaBala() {
 
-		Planet AbdaAdipathi = Planet
-				.ofIndex((int) ((((Ahargana / 360) * 3) + 3) % 7));
+		Planet AbdaAdipathi = ofIndex((int) ((((Ahargana / 360) * 3) + 3) % 7));
 
 		EnumMap<Planet, Double> AbdaBala = initBala();
 		AbdaBala.put(AbdaAdipathi, 15.0);
@@ -761,8 +788,7 @@ public class ShadBala implements Exportable {
 
 	private EnumMap<Planet, Double> calcMasaBala() {
 
-		Planet MasaAdipathi = Planet
-				.ofIndex((int) ((((Ahargana / 30) * 2) + 3) % 7));
+		Planet MasaAdipathi = ofIndex((int) ((((Ahargana / 30) * 2) + 3) % 7));
 
 		EnumMap<Planet, Double> MasaBala = initBala();
 		MasaBala.put(MasaAdipathi, 30.0);
@@ -786,10 +812,10 @@ public class ShadBala implements Exportable {
 
 	private EnumMap<Planet, Double> calcPakshaBala() {
 
-		EnumMap<Planet, Double> PakshaBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> PakshaBala = new EnumMap<>(
 				Planet.class);
 
-		double arc = Math.abs(planetPosition.get(Planet.Moon)
+		double arc = abs(planetPosition.get(Planet.Moon)
 				- planetPosition.get(Planet.Sun));
 
 		if (arc > 180.0) {
@@ -836,14 +862,14 @@ public class ShadBala implements Exportable {
 		} else if (birthData.birthTime() < sunrise) {
 
 			lsunrise = sunrise;
-			lsunset = AstroUtil.getSunSet(birthYear, birthMonth, birthDate,
+			lsunset = getSunSet(birthYear, birthMonth, birthDate,
 					birthData.longitude(), birthData.latitude(), birthData
 							.timeZone());
 
 		} else if (birthData.birthTime() > sunset) {
 
 			birthDay.add(Calendar.DATE, 1);
-			lsunrise = AstroUtil.getSunRise(birthDay.get(Calendar.YEAR),
+			lsunrise = getSunRise(birthDay.get(Calendar.YEAR),
 					birthDay.get(Calendar.MONTH) + 1, birthDay
 							.get(Calendar.DATE), birthData.longitude(),
 					birthData.latitude(), birthData.timeZone());
@@ -929,7 +955,7 @@ public class ShadBala implements Exportable {
 		int[] wdaydiff = {0, 3, 6, 2, 5, 1, 4};
 		double sunrise;
 
-		sunrise = AstroUtil.getSunRise(birthYear, birthMonth, birthDate,
+		sunrise = getSunRise(birthYear, birthMonth, birthDate,
 				birthData.longitude(), birthData.latitude(), birthData
 						.timeZone());
 
@@ -952,10 +978,10 @@ public class ShadBala implements Exportable {
 
 	private EnumMap<Planet, Double> calcNatonnataBala() {
 
-		double btimeDeg = SwissHelper.calcNatonnataBalaDeg(birthData.birthSD(),
+		double btimeDeg = calcNatonnataBalaDeg(birthData.birthSD(),
 				birthData.birthTime());
 
-		EnumMap<Planet, Double> NatonnataBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> NatonnataBala = new EnumMap<>(
 				Planet.class);
 
 		NatonnataBala.put(Planet.Sun, btimeDeg / 3);
@@ -981,7 +1007,7 @@ public class ShadBala implements Exportable {
 
 		EnumMap<Planet, Double> AyanaBala = initBala();
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			if ((p == Planet.Sun) || (p == Planet.Venus) || (p == Planet.Mars)
 					|| (p == Planet.Jupiter)) {
@@ -991,7 +1017,7 @@ public class ShadBala implements Exportable {
 						(((24 + (kranti[p.ordinal()] * -1)) * 60) / 48));
 			} else {
 				AyanaBala.put(p,
-						(((24 + Math.abs(kranti[p.ordinal()])) * 60) / 48));
+						(((24 + abs(kranti[p.ordinal()])) * 60) / 48));
 			}
 
 		}
@@ -1017,7 +1043,7 @@ public class ShadBala implements Exportable {
 		double rem;
 		double[] kranti = new double[7];
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			sayanaPos = planetPosition.get(p) + ayanamsa;
 
@@ -1060,34 +1086,34 @@ public class ShadBala implements Exportable {
 		Planet winner;
 
 		EnumMap<Planet, Double> YuddhaBala = initBala();
-		EnumMap<Planet, Double> KalaBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> KalaBala = new EnumMap<>(
 				Planet.class);
 
 		YuddhaBala.put(Planet.Sun, 0.0);
 		YuddhaBala.put(Planet.Moon, 0.0);
 		PlanetBala.put(Bala.YuddhaBala, YuddhaBala);
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			double totalKala = 0.0;
 
-			for (Bala b : Bala.kalaBalas()) {
+			for (Bala b : kalaBalas()) {
 				totalKala = totalKala + PlanetBala.get(b).get(p);
 			}
 			KalaBala.put(p, totalKala);
 
 		}
 
-		for (Planet i : EnumSet.range(Planet.Mars, Planet.Venus)) {
+		for (Planet i : range(Planet.Mars, Planet.Venus)) {
 
-			for (Planet j : EnumSet.range(i.nextPlanet(), Planet.Saturn)) {
+			for (Planet j : range(i.nextPlanet(), Planet.Saturn)) {
 
 				winner = findWinner(i, j);
 
 				if (winner != null) {
 
-					ybala = Math.abs(KalaBala.get(i) - KalaBala.get(j))
-							/ Math.abs(discDia[i.ordinal()]
+					ybala = abs(KalaBala.get(i) - KalaBala.get(j))
+							/ abs(discDia[i.ordinal()]
 									- discDia[j.ordinal()]);
 
 					// System.out.println("(" + i + " , " + j + ")" + " Ybala: "
@@ -1144,7 +1170,7 @@ public class ShadBala implements Exportable {
 		double vdrishti;
 		int[] sp = new int[7];
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			if (calcSubaPapa(p)) {
 				sp[p.ordinal()] = 1;
@@ -1154,10 +1180,10 @@ public class ShadBala implements Exportable {
 
 		}
 
-		for (Planet i : Planet.majorPlanets()) {
+		for (Planet i : majorPlanets()) {
 
 			// System.out.print(DisplayConsts.planetSyms[0][i]);
-			for (Planet j : Planet.majorPlanets()) {
+			for (Planet j : majorPlanets()) {
 
 				dk = planetPosition.get(j) - planetPosition.get(i);
 
@@ -1182,14 +1208,14 @@ public class ShadBala implements Exportable {
 
 		double bala = 0;
 
-		EnumMap<Planet, Double> DrikBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> DrikBala = new EnumMap<>(
 				Planet.class);
 
-		for (Planet i : Planet.majorPlanets()) {
+		for (Planet i : majorPlanets()) {
 
 			bala = 0;
 
-			for (Planet j : Planet.majorPlanets()) {
+			for (Planet j : majorPlanets()) {
 
 				bala = bala
 						+ (sp[j.ordinal()] * drishti[j.ordinal()][i.ordinal()]);
@@ -1297,7 +1323,7 @@ public class ShadBala implements Exportable {
 			ck = 360 - ck;
 		}
 
-		EnumMap<Planet, Double> ChestaBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> ChestaBala = new EnumMap<>(
 				Planet.class);
 
 		ChestaBala.put(Planet.Sun, ck / 3.00);
@@ -1313,7 +1339,7 @@ public class ShadBala implements Exportable {
 
 		ChestaBala.put(Planet.Moon, ck / 3.00);
 
-		for (Planet p : EnumSet.range(Planet.Mars, Planet.Saturn)) {
+		for (Planet p : range(Planet.Mars, Planet.Saturn)) {
 
 			ck = (seegh[p.ordinal()] - ((madhya[p.ordinal()] + planetPosition
 					.get(p)) / 2.0));
@@ -1344,21 +1370,21 @@ public class ShadBala implements Exportable {
 
 		double prod;
 
-		EnumMap<Planet, Double> IshtaBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> IshtaBala = new EnumMap<>(
 				Planet.class);
-		EnumMap<Planet, Double> KashtaBala = new EnumMap<Planet, Double>(
+		EnumMap<Planet, Double> KashtaBala = new EnumMap<>(
 				Planet.class);
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			prod = PlanetBala.get(Bala.OchchaBala).get(p)
 					* PlanetBala.get(Bala.ChestaBala).get(p);
 
 			// System.out.println(OchchaBala[pl] + " + " + ChestaBala[pl]);
-			IshtaBala.put(p, Math.sqrt(prod));
+			IshtaBala.put(p, sqrt(prod));
 			prod = (60.00 - PlanetBala.get(Bala.OchchaBala).get(p))
 					* (60.00 - PlanetBala.get(Bala.ChestaBala).get(p));
-			KashtaBala.put(p, Math.sqrt(prod));
+			KashtaBala.put(p, sqrt(prod));
 		}
 
 		PlanetBala.put(Bala.IshtaBala, IshtaBala);
@@ -1368,16 +1394,16 @@ public class ShadBala implements Exportable {
 
 	public void calcBhavaBalas() {
 
-		BhavaBala = new EnumMap<Bala, ArrayList<Double>>(Bala.class);
+		BhavaBala = new EnumMap<>(Bala.class);
 		BhavaBala.put(Bala.BhavaAdhipathiBala, calcBhavaAdhipathiBala());
 		BhavaBala.put(Bala.BhavaDigBala, calcBhavaDigBala());
 		BhavaBala.put(Bala.BhavaDrishtiBala, calcBhavaDrishtiBala());
 
-		ArrayList<Double> totalBhavaBala = new ArrayList<Double>();
+		ArrayList<Double> totalBhavaBala = new ArrayList<>();
 		for (int i = 0; i < 12; i++) {
 
 			double total = 0;
-			for (Bala b : Bala.bhavaBalas()) {
+			for (Bala b : bhavaBalas()) {
 				total = total + BhavaBala.get(b).get(i);
 			}
 			totalBhavaBala.add(i, total);
@@ -1390,7 +1416,7 @@ public class ShadBala implements Exportable {
 
 		Planet owner;
 
-		ArrayList<Double> BhavaAdhipathiBala = new ArrayList<Double>();
+		ArrayList<Double> BhavaAdhipathiBala = new ArrayList<>();
 		for (int i = 1; i <= 12; i++) {
 
 			owner = housePosition.getBhava(i).house().owner();
@@ -1404,7 +1430,7 @@ public class ShadBala implements Exportable {
 
 	public ArrayList<Double> calcBhavaDigBala() {
 
-		ArrayList<Double> BhavaDigBala = new ArrayList<Double>();
+		ArrayList<Double> BhavaDigBala = new ArrayList<>();
 
 		int dig = 0;
 
@@ -1460,7 +1486,7 @@ public class ShadBala implements Exportable {
 		double vdrishti;
 		int[] sp = new int[7];
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			if (calcSubaPapa(p)) {
 				sp[p.ordinal()] = 1;
@@ -1472,7 +1498,7 @@ public class ShadBala implements Exportable {
 
 		sp[3] = 1;
 
-		for (Planet i : Planet.majorPlanets()) {
+		for (Planet i : majorPlanets()) {
 
 			for (int j = 1; j <= 12; j++) {
 
@@ -1497,7 +1523,7 @@ public class ShadBala implements Exportable {
 
 		double bala = 0;
 
-		ArrayList<Double> BhavaDrishtiBala = new ArrayList<Double>();
+		ArrayList<Double> BhavaDrishtiBala = new ArrayList<>();
 
 		for (int i = 0; i < 12; i++) {
 
@@ -1517,10 +1543,9 @@ public class ShadBala implements Exportable {
 
 	private void calcRanks() {
 
-		List<ComparableEntry<Planet, Double>> StrengthPerOrdered = Utils
-				.sortMap(StrengthPer.entrySet(), true);
+		List<ComparableEntry<Planet, Double>> StrengthPerOrdered = sortMap(StrengthPer.entrySet(), true);
 
-		ShadBalaRank = new EnumMap<Planet, Integer>(Planet.class);
+		ShadBalaRank = new EnumMap<>(Planet.class);
 
 		for (int rank = 1; rank <= 7; rank++) {
 			ComparableEntry<Planet, Double> entry = StrengthPerOrdered
@@ -1528,15 +1553,15 @@ public class ShadBala implements Exportable {
 			ShadBalaRank.put(entry.getKey(), rank);
 		}
 
-		BhavaBalaRank = new ArrayList<Integer>();
+		BhavaBalaRank = new ArrayList<>();
 
 		ArrayList<Double> BhavaBalaOrig = BhavaBala.get(Bala.BhavaBala);
 
-		ArrayList<Double> BhavaBalaOrdered = new ArrayList<Double>();
+		ArrayList<Double> BhavaBalaOrdered = new ArrayList<>();
 
 		BhavaBalaOrdered.addAll(BhavaBalaOrig);
 
-		Collections.sort(BhavaBalaOrdered, Collections.reverseOrder());
+		sort(BhavaBalaOrdered, reverseOrder());
 
 		for (int house = 0; house < 12; house++) {
 
@@ -1548,8 +1573,8 @@ public class ShadBala implements Exportable {
 
 	private static EnumMap<Planet, Double> initBala() {
 
-		EnumMap<Planet, Double> bala = new EnumMap<Planet, Double>(Planet.class);
-		for (Planet p : Planet.majorPlanets()) {
+		EnumMap<Planet, Double> bala = new EnumMap<>(Planet.class);
+		for (Planet p : majorPlanets()) {
 			bala.put(p, 0.0);
 		}
 
@@ -1571,8 +1596,7 @@ public class ShadBala implements Exportable {
 	public DefaultColumnMetaData getPlanetBalaColumnMetaData() {
 
 		if (planetBalaColumnMetaData == null) {
-			planetBalaColumnMetaData = new PlanetBalaColumnMetaData(Bala
-					.planetBalas(), AstrosoftTableColumn.ShadBala,
+			planetBalaColumnMetaData = new PlanetBalaColumnMetaData(planetBalas(), AstrosoftTableColumn.ShadBala,
 					AstrosoftTableColumn.Rupa,
 					AstrosoftTableColumn.BalaPercentage,
 					AstrosoftTableColumn.Rank, AstrosoftTableColumn.IshtaBala,
@@ -1583,29 +1607,24 @@ public class ShadBala implements Exportable {
 				public Comparator getColumnComparator(final AstrosoftTableColumn col) {
 
 
-					return new Comparator(){
-
-						public int compare(Object o1, Object o2) {
-
-							if(sortableColumns.contains(col)) {
-								Comparable r1 = (Comparable)((PlanetBalaRow)o1).getColumnData(col);
-								Comparable r2 = (Comparable)((PlanetBalaRow)o2).getColumnData(col);
-
-								if (r1 == null && r2 ==null){
-									return 0;
-								}else if (r1 == null){
-									return -1;
-								}else if (r2 == null){
-									return 1;
-								}else {
-									return r1.compareTo(r2);
-								}
-							}else{
-								return 0;
-							}
-						}
-
-					};
+					return (Comparator) (Object o1, Object o2) -> {
+                                            if(sortableColumns.contains(col)) {
+                                                Comparable r1 = (Comparable)((PlanetBalaRow)o1).getColumnData(col);
+                                                Comparable r2 = (Comparable)((PlanetBalaRow)o2).getColumnData(col);
+                                                
+                                                if (r1 == null && r2 ==null){
+                                                    return 0;
+                                                }else if (r1 == null){
+                                                    return -1;
+                                                }else if (r2 == null){
+                                                    return 1;
+                                                }else {
+                                                    return r1.compareTo(r2);
+                                                }
+                                            }else{
+                                                return 0;
+                                            }
+                    };
 				}
 
 			};
@@ -1625,8 +1644,7 @@ public class ShadBala implements Exportable {
 	public DefaultColumnMetaData getBhavaBalaColumnMetaData() {
 
 		if (bhavaBalaColumnMetaData == null) {
-			List<AstrosoftTableColumn> cols = Bala.toTableColumn(Bala
-					.bhavaBalas());
+			List<AstrosoftTableColumn> cols = toTableColumn(bhavaBalas());
 			cols.add(0, AstrosoftTableColumn.House);
 			cols.add(1,AstrosoftTableColumn.Bhava);
 			cols.add(AstrosoftTableColumn.BhavaBala);
@@ -1650,21 +1668,16 @@ public class ShadBala implements Exportable {
 				public Comparator getColumnComparator(final AstrosoftTableColumn col) {
 
 
-					return new Comparator(){
-
-						public int compare(Object o1, Object o2) {
-
-							if (sortableColumns.contains(col)){
-
-								Comparable r1 = (Comparable)((BhavaBalaRow)o1).getColumnData(col);
-								Comparable r2 = (Comparable)((BhavaBalaRow)o2).getColumnData(col);
-								return r1.compareTo(r2);
-							}else{
-								return 0;
-							}
-						}
-
-					};
+					return (Comparator) (Object o1, Object o2) -> {
+                                            if (sortableColumns.contains(col)){
+                                                
+                                                Comparable r1 = (Comparable)((BhavaBalaRow)o1).getColumnData(col);
+                                                Comparable r2 = (Comparable)((BhavaBalaRow)o2).getColumnData(col);
+                                                return r1.compareTo(r2);
+                                            }else{
+                                                return 0;
+                                            }
+                    };
 				}
 			};
 			bhavaBalaColumnMetaData.localizeColumns();
@@ -1676,8 +1689,7 @@ public class ShadBala implements Exportable {
 	public DefaultColumnMetaData getSthanaBalaColumnMetaData() {
 
 		if (sthanaBalaColumnMetaData == null) {
-			sthanaBalaColumnMetaData = new PlanetBalaColumnMetaData(Bala
-					.sthanaBalas(), AstrosoftTableColumn.SthanaBala);
+			sthanaBalaColumnMetaData = new PlanetBalaColumnMetaData(sthanaBalas(), AstrosoftTableColumn.SthanaBala);
 		}
 		return sthanaBalaColumnMetaData;
 	}
@@ -1685,8 +1697,7 @@ public class ShadBala implements Exportable {
 	public DefaultColumnMetaData getKalaBalaColumnMetaData() {
 
 		if (kalaBalaColumnMetaData == null) {
-			kalaBalaColumnMetaData = new PlanetBalaColumnMetaData(Bala
-					.kalaBalas(), AstrosoftTableColumn.KalaBala);
+			kalaBalaColumnMetaData = new PlanetBalaColumnMetaData(kalaBalas(), AstrosoftTableColumn.KalaBala);
 		}
 		return kalaBalaColumnMetaData;
 	}
@@ -1695,7 +1706,7 @@ public class ShadBala implements Exportable {
 
 		public PlanetBalaColumnMetaData(EnumSet<Bala> balas,
 				AstrosoftTableColumn... otherCols) {
-			List<AstrosoftTableColumn> cols = Bala.toTableColumn(balas);
+			List<AstrosoftTableColumn> cols = toTableColumn(balas);
 			cols.add(0, AstrosoftTableColumn.Planet);
 			for (AstrosoftTableColumn col : otherCols) {
 				cols.add(col);
@@ -1722,7 +1733,7 @@ public class ShadBala implements Exportable {
 
 		public PlanetBalaRow getRow(int index) {
 
-			return new PlanetBalaRow(Planet.values()[index]);
+			return new PlanetBalaRow(values()[index]);
 		}
 
 		public int getRowCount() {
@@ -1757,7 +1768,7 @@ public class ShadBala implements Exportable {
 				Integer rank = ShadBalaRank.get(row);
 
 				if (rank != null)
-					return Roman.of(ShadBalaRank.get(row));
+					return of(ShadBalaRank.get(row));
 				else
 					return null;
 			} else {
@@ -1792,13 +1803,13 @@ public class ShadBala implements Exportable {
 		public Object getColumnData(AstrosoftTableColumn col) {
 
 			if (col == AstrosoftTableColumn.House ){
-				return Roman.of(bhava + 1);
+				return of(bhava + 1);
 			} else if (col == AstrosoftTableColumn.Bhava) {
 				return housePosition.getBhava(bhava + 1).house();
 			} else if (col == AstrosoftTableColumn.Rupa) {
 				return BhavaBala.get(Bala.BhavaBala).get(bhava) / 60.00;
 			} else if (col == AstrosoftTableColumn.Rank) {
-				return Roman.of(BhavaBalaRank.get(bhava));
+				return of(BhavaBalaRank.get(bhava));
 			} else {
 				Bala b = col.toEnum(Bala.class);
 				return BhavaBala.get(b).get(bhava);
@@ -1817,7 +1828,7 @@ public class ShadBala implements Exportable {
 		StringBuilder sb = new StringBuilder();
 		sb.append("ShadBala \n");
 
-		for (Planet p : Planet.majorPlanets()) {
+		for (Planet p : majorPlanets()) {
 
 			// sb.append("Planet Position: " + h.planetPositions[i]);
 			sb.append(p.toString() + " --> " + planetLocation.get(p) + "\n");

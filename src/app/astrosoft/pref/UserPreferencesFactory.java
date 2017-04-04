@@ -4,6 +4,7 @@ import java.util.prefs.PreferencesFactory;
 import java.util.prefs.Preferences;
 
 import java.io.*;
+import static java.lang.System.getProperty;
 
 /**
  * This preferences factory only works for a single user and won't be shared
@@ -34,7 +35,7 @@ public class UserPreferencesFactory implements PreferencesFactory {
    
    public static Preferences getSystemRoot() {
       if ( systemRoot == null ) {
-         PREFS_ROOT = new File( System.getProperty( "user.home" ) + File.separator + ".astrosoft_prefs" );
+         PREFS_ROOT = new File( getProperty( "user.home" ) + File.separator + ".astrosoft_prefs" );
          try {
             PREFS_ROOT.mkdirs();
          }

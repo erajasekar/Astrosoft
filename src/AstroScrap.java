@@ -4,6 +4,9 @@
  * @author relango
  */
 
+import static AstroScrap.Alp.ofVal1;
+import static AstroScrap.Alp.ofVal2;
+import static AstroScrap.Alp.values;
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.List;
@@ -13,6 +16,10 @@ import app.astrosoft.consts.Rasi;
 import app.astrosoft.util.AstroUtil;
 import app.astrosoft.util.Timer;
 import static app.astrosoft.consts.AstroConsts.*;
+import static app.astrosoft.util.AstroUtil.dms;
+import static app.astrosoft.util.AstroUtil.incJulDate;
+import static java.lang.Enum.valueOf;
+import static java.util.Collections.unmodifiableList;
 import swisseph.SweDate;
 
 
@@ -41,30 +48,30 @@ public class AstroScrap {
 		
 		for(int i = 0; i < 27; i++){
 			
-			System.out.println(i + " -> " + AstroUtil.dms(i * nakLength) );
+			System.out.println(i + " -> " + dms(i * nakLength) );
 		}
 		
 		//System.out.println(longitudeForRasiNak(4,9));
 		
 		SweDate sd = new SweDate();
-		System.out.println(SweDate.getDate(AstroUtil.incJulDate(sd.getJulDay(), 1, 1, 0)));
+		System.out.println(SweDate.getDate(incJulDate(sd.getJulDay(), 1, 1, 0)));
 		
 		//TEST ENUM PERFORMANCE
 		
 		Timer t = new Timer();
 		for(int i=0; i < 10000; i++){
-			Alp.ofVal1(i);
+			ofVal1(i);
 		}
 		t.print("Time of ofVal1()");
 		t.reset();
 		for(int i=0; i < 10000; i++){
-			Alp.ofVal2(i);
+			ofVal2(i);
 		}
 		t.print("Time of ofVal2()");
 		
-		EnumMap<Alp, String> em = new EnumMap<Alp, String>(Alp.class);
+		EnumMap<Alp, String> em = new EnumMap<>(Alp.class);
 		for(int i=0; i < 10000; i++){
-			em.put(Alp.values()[i%26], "a");
+			em.put(values()[i%26], "a");
 		}
 		
 		int arr[] = new int[10000];
@@ -103,13 +110,13 @@ public class AstroScrap {
 		//Enum t = (Enum)e.getDeclaringClass();
 		//System.out.println((e.valueOf(e.getDeclaringClass(),"A")));
 		
-		T t = Enum.valueOf(e.getDeclaringClass(), e.name());
+		T t = valueOf(e.getDeclaringClass(), e.name());
 		/*switch(t){
 			
 		}*/
 		
-		List<String> c = new ArrayList<String>();
-		List l = java.util.Collections.unmodifiableList(c);
+		List<String> c = new ArrayList<>();
+		List l = unmodifiableList(c);
 		
 		System.out.println(l.iterator());
 		

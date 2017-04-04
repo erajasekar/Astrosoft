@@ -20,6 +20,7 @@ import javax.swing.JPanel;
 import app.astrosoft.beans.PlanetChartData;
 import app.astrosoft.beans.PlanetaryInfo;
 import app.astrosoft.consts.Varga;
+import static app.astrosoft.consts.Varga.values;
 import app.astrosoft.ui.util.UIUtil;
 
 public class VargaChartPanel extends JPanel {
@@ -40,20 +41,16 @@ public class VargaChartPanel extends JPanel {
 		this.planetaryInfo = planetaryInfo;
 		this.panelSize = panelSize;
 		
-		vargaCombo = new JComboBox(Varga.values());
+		vargaCombo = new JComboBox(values());
 		
 		vargaCombo.setFont(UIUtil.getFont("Tahoma", Font.PLAIN, 11));
 		
 		vargaCombo.setSelectedItem(Varga.Rasi);
 		vargaCombo.setPreferredSize(comboSize);
 		
-		vargaCombo.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				vargaChanged((Varga)vargaCombo.getSelectedItem());
-			}
-			
-		});
+		vargaCombo.addActionListener((ActionEvent e) -> {
+                    vargaChanged((Varga)vargaCombo.getSelectedItem());
+        });
 		setLayout(new BorderLayout());
 		
 		//chartSize = panelSize;

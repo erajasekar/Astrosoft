@@ -14,6 +14,7 @@ import javax.swing.JOptionPane;
 import app.astrosoft.ui.AstroSoft;
 import app.astrosoft.ui.util.UIConsts;
 import app.astrosoft.ui.util.UIUtil;
+import static app.astrosoft.ui.util.UIUtil.applyOptionPaneBackground;
 import app.astrosoft.util.Utils;
 
 
@@ -42,13 +43,13 @@ public class OptionDialog  {
 		
 		JDialog dialog = pane.createDialog(pane, title);
 		
-		UIUtil.applyOptionPaneBackground(pane,UIConsts.OPTIONPANE_BACKGROUND);
+		applyOptionPaneBackground(pane,UIConsts.OPTIONPANE_BACKGROUND);
 		
 		dialog.setVisible(true);
 		
 		Object selectedValue = pane.getValue();
 	    if(selectedValue instanceof Integer) {
-	    	return ((Integer)selectedValue).intValue();
+	    	return ((Integer)selectedValue);
 		}
 	    return JOptionPane.CLOSED_OPTION;
 	}

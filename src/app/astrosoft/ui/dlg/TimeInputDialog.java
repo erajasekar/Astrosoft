@@ -22,10 +22,13 @@ import javax.swing.SpringLayout;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.ui.AstroSoft;
 import app.astrosoft.ui.comp.CalendarChooser;
+import static app.astrosoft.ui.comp.CalendarChooser.getTimeChooser;
 import app.astrosoft.ui.comp.DateListener;
 import app.astrosoft.ui.comp.PlaceChooser;
 import app.astrosoft.ui.util.SpringUtilities;
+import static app.astrosoft.ui.util.SpringUtilities.makeCompactGrid;
 import app.astrosoft.ui.util.UIConsts;
+import static app.astrosoft.ui.util.UIConsts.getTitleBorder;
 
 public class TimeInputDialog extends AstrosoftDialog {
 
@@ -41,29 +44,23 @@ public class TimeInputDialog extends AstrosoftDialog {
 	     super( parent, title.toString(), dlgSize );
 	     initComponents();
 	     timeChooser.setSelectedDate(initialValue);
-	     okButton.addActionListener(new ActionListener(){
-
-				public void actionPerformed(ActionEvent e) {
-					listener.dateChanged(timeChooser.getSelectedDate());
-					System.out.println("dlg -> " + timeChooser.getSelectedDate());				
-					closeDialog();
-				}
-			});
+	     okButton.addActionListener((ActionEvent e) -> {
+                 listener.dateChanged(timeChooser.getSelectedDate());
+                 System.out.println("dlg -> " + timeChooser.getSelectedDate());
+                 closeDialog();
+        });
 	     setVisible(true);
 	}
 	
 	private void initComponents(){
 		
-		 timeChooser = CalendarChooser.getTimeChooser();
+		 timeChooser = getTimeChooser();
 	     dlgPanel.setLayout(new FlowLayout());
 	     dlgPanel.add(createTimeChooser());
 	     
-	     cancelButton.addActionListener(new ActionListener(){
-
-				public void actionPerformed(ActionEvent arg0) {
-					closeDialog();
-				}
-			});
+	     cancelButton.addActionListener((ActionEvent arg0) -> {
+                 closeDialog();
+        });
 	     
 	     
 	     add(dlgPanel);
@@ -86,9 +83,9 @@ public class TimeInputDialog extends AstrosoftDialog {
 		
 		timePanel.add(buttonPanel);
 		
-		SpringUtilities.makeCompactGrid(timePanel, 2, 1, 5,5,10,10);
+		makeCompactGrid(timePanel, 2, 1, 5,5,10,10);
 		
-		timePanel.setBorder(UIConsts.getTitleBorder(getTitle()));
+		timePanel.setBorder(getTitleBorder(getTitle()));
 		
 		timePanel.setPreferredSize(panelSize);
 		

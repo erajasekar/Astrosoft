@@ -11,10 +11,11 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import static java.util.logging.Logger.getLogger;
 
 public class XpsUtil {
 	
-	private static final Logger log = Logger.getLogger(XpsUtil.class.getName());
+	private static final Logger log = getLogger(XpsUtil.class.getName());
 
 	private static String RULE_PATH="/resources/rules/";
 	

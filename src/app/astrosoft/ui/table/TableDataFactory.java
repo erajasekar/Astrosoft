@@ -15,57 +15,60 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import app.astrosoft.consts.AstrosoftTableColumn;
+import static java.lang.Enum.valueOf;
+import static java.lang.Math.ceil;
+import static java.util.logging.Logger.getLogger;
 
 public class TableDataFactory {
 	
-	private static final Logger log = Logger.getLogger(TableDataFactory.class.getName());
+	private static final Logger log = getLogger(TableDataFactory.class.getName());
 
 	public static <E extends TableRowData> TableData<E> getTableData(List<E> rows){
-		return new ListTableData<E>(rows);
+		return new ListTableData<>(rows);
 	}
 	
 	public static <E extends TableRowData> TableData<E> getTableData(E[] rows){
-		return new ListTableData<E>(rows);
+		return new ListTableData<>(rows);
 	}
 	
 	public static <E extends TableRowData> TableData<E> getSortedTableData(TableData<E> data, Comparator<TableRowData> cmp){
-		return new ListTableData<E>(data, cmp);
+		return new ListTableData<>(data, cmp);
 	}
 	
 	public static <K extends Enum<K>, V extends TableRowData> TableData<V> getTableData(EnumMap<K,V> data, Class <K> enumClass){
-		return new EnumMapTableData<K,V>(data, enumClass);
+		return new EnumMapTableData<>(data, enumClass);
 	}
 	
 	public static <E extends TableRowData> TableData<E> getTableData(TableData<E> t1, TableData<E> t2){
-		return new ExtendedTableData<E>(t1,t2);
+		return new ExtendedTableData<>(t1,t2);
 	}
 	
 	public static <E extends TableRowData> TableData<E> emptyTableData(){
-		return new ListTableData<E>(java.util.Collections.EMPTY_LIST);
+		return new ListTableData<>(java.util.Collections.EMPTY_LIST);
 	}
 	
 	public static <E extends TableRowData> List<ListTableData<E>> splitTableData(ListTableData<E> table, int size){
 		List<E> rows = table.getAllRows();
-		List<ListTableData<E>> data = new ArrayList<ListTableData<E>>();
-		int count  = (int)Math.ceil(rows.size() / size);
+		List<ListTableData<E>> data = new ArrayList<>();
+		int count  = (int)ceil(rows.size() / size);
 		int index = 0;
 		int i = 0;
 		for(index = 0; i < count ; index = index + size, i++){
-			data.add(new ListTableData<E>(rows.subList(index, index + size)));
+			data.add(new ListTableData<>(rows.subList(index, index + size)));
 		}
 		if (index < rows.size()){
-			data.add(new ListTableData<E>(rows.subList(index, rows.size())));
+			data.add(new ListTableData<>(rows.subList(index, rows.size())));
 		}
 		return data;
 	}
 	
 	public static <E extends TableRowData> TableData<E> getTableData(Iterable<E> rows){
 		
-		List <E> data = new ArrayList<E>();
+		List <E> data = new ArrayList<>();
 		for(E row : rows){
 			data.add(row);
 		}
-		return new ListTableData<E>(data);
+		return new ListTableData<>(data);
 	}
 	
 	public static <E extends TableRowData>String toCSV(TableData<E> data, ColumnMetaData colData){
@@ -90,7 +93,7 @@ public class TableDataFactory {
 		
 		
 		
-		List<AstrosoftTableColumn> newCols = new ArrayList<AstrosoftTableColumn>();
+		List<AstrosoftTableColumn> newCols = new ArrayList<>();
 		newCols.add(rowHeader);
 		
 		for(int i = 0; i < data.getRowCount(); i++) {
@@ -102,9 +105,9 @@ public class TableDataFactory {
 			try {
 				
 				if (val instanceof Enum){
-					val = Enum.valueOf(AstrosoftTableColumn.class, ((Enum)val).name());
+					val = valueOf(AstrosoftTableColumn.class, ((Enum)val).name());
 				}else{
-					val = Enum.valueOf(AstrosoftTableColumn.class, val.toString());
+					val = valueOf(AstrosoftTableColumn.class, val.toString());
 				}
 			
 			}catch(IllegalArgumentException e){
@@ -117,9 +120,9 @@ public class TableDataFactory {
 		
 		final ColumnMetaData newColMetaData = new DefaultColumnMetaData(newCols); 
 		MapTableRowHelper rowHelper = new MapTableRowHelper(newColMetaData);
-		List<MapTableRow> rows = new ArrayList<MapTableRow>();
+		List<MapTableRow> rows = new ArrayList<>();
 		
-		List <AstrosoftTableColumn> cols = new ArrayList<AstrosoftTableColumn>(colData.getVisibleColumns());
+		List <AstrosoftTableColumn> cols = new ArrayList<>(colData.getVisibleColumns());
 		cols.remove(colHeader);
 	
 		for(AstrosoftTableColumn col:cols){
@@ -134,7 +137,7 @@ public class TableDataFactory {
 			rows.add(rowHelper.createRow(vals));
 		}
 		
-		final TableData<MapTableRow> reversedTableData = TableDataFactory.getTableData(rows);
+		final TableData<MapTableRow> reversedTableData = getTableData(rows);
 		
 		//System.out.println(reversedTableData);
 		

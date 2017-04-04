@@ -31,10 +31,14 @@ import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Language;
 import app.astrosoft.consts.TableStyle;
 import app.astrosoft.persistence.NumerologicalName;
+import static app.astrosoft.persistence.NumerologicalName.getColumnMetaData;
 import app.astrosoft.service.NumeroNameService;
+import static app.astrosoft.service.NumeroNameService.addName;
+import static app.astrosoft.service.NumeroNameService.deleteNames;
 import app.astrosoft.test.NumeroNameTest;
 import app.astrosoft.ui.comp.AstrosoftTabbedPane;
 import app.astrosoft.ui.comp.EmptyPagination;
+import static app.astrosoft.ui.comp.EmptyPagination.getInstance;
 import app.astrosoft.ui.comp.NameAddPanel;
 import app.astrosoft.ui.comp.NameSearchPanel;
 import app.astrosoft.ui.comp.NumeroNamePagination;
@@ -47,12 +51,15 @@ import app.astrosoft.ui.table.AstrosoftTableModel;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.ui.table.TableDataFactory;
+import static app.astrosoft.ui.table.TableDataFactory.emptyTableData;
 import app.astrosoft.ui.table.TableRowSelectionListener;
 import app.astrosoft.ui.util.UIConsts;
+import static java.awt.Cursor.getPredefinedCursor;
+import static java.util.logging.Logger.getLogger;
 
 public class FindNameView extends AstrosoftView {
 
-	private static final Logger log = Logger.getLogger(FindNameView.class.getName());
+	private static final Logger log = getLogger(FindNameView.class.getName());
 	
 	private static final Dimension size = new Dimension(700, 436);
 	
@@ -67,28 +74,20 @@ public class FindNameView extends AstrosoftView {
 	private PagingPanel<NumerologicalName> pagingPanel;
 	private int pageLength = 15;
 	
-	private TableData<? extends TableRowData> data = TableDataFactory.emptyTableData();
+	private TableData<? extends TableRowData> data = emptyTableData();
 	
 	AstrosoftTableModel nameModel;
 
 	public FindNameView() {
 		super(DisplayStrings.FIND_NAME_STR.toString(), size, loc);
 		
-		searchPanel = new NameSearchPanel(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				searchButtonClicked();
-				
-			}
-		});
+		searchPanel = new NameSearchPanel((ActionEvent e) -> {
+                    searchButtonClicked();
+        });
 		
-		addPanel = new NameAddPanel(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				addButtonClicked();
-				
-			}
-		});
+		addPanel = new NameAddPanel((ActionEvent e) -> {
+                    addButtonClicked();
+        });
 		
 		constructTabbedPane();
 		constructNameTable();
@@ -108,23 +107,18 @@ public class FindNameView extends AstrosoftView {
 
 	private void constructNameTable() {
 		
-		nameModel = new AstrosoftTableModel(data, NumerologicalName.getColumnMetaData());
+		nameModel = new AstrosoftTableModel(data, getColumnMetaData());
 		nameTable = new AstrosoftTable(nameModel, TableStyle.MULTI_ROW_GRID);
 		
 		tablePanel = new TitledTable(null, nameTable, tableSize, createFooter());
 		add(tablePanel, BorderLayout.CENTER);
 		
-		nameTable.addRowSelectionListener(new TableRowSelectionListener<NumerologicalName>(){
-
-			public void selectionChanged(TableData<NumerologicalName> data) {
-
-				if (data.getRowCount() > 0){ 
-					NumerologicalName firstRow = data.getRow(0);
-					addPanel.setValues(firstRow.getName(), firstRow.getNumeroVal(), firstRow.getNumeroNum());
-				}
-			}
-			
-		});
+		nameTable.addRowSelectionListener((TableData<NumerologicalName> data1) -> {
+            if (data1.getRowCount() > 0) {
+                NumerologicalName firstRow = data1.getRow(0);
+                addPanel.setValues(firstRow.getName(), firstRow.getNumeroVal(), firstRow.getNumeroNum());
+            }
+        });
 		
 		tablePanel.setVisible(false);
 		
@@ -145,23 +139,16 @@ public class FindNameView extends AstrosoftView {
 		
 		//deleteButton.setEnabled(false);
 		
-		deleteButton.addActionListener(new ActionListener(){
-
-			public void actionPerformed(ActionEvent e) {
-				log.fine("Delete Button Clicked");
-				
-				TableData <NumerologicalName> selected = nameTable.getSelectedData();
-				List <NumerologicalName> names = new ArrayList<NumerologicalName>();
-				
-				for(int i = 0 ; i < selected.getRowCount(); i++){
-					names.add(selected.getRow(i));
-				}
-				
-				NumeroNameService.deleteNames(names);
-				searchButtonClicked();
-			}
-			
-		});
+		deleteButton.addActionListener((ActionEvent e) -> {
+                    log.fine("Delete Button Clicked");
+            TableData <NumerologicalName> selected = nameTable.getSelectedData();
+            List <NumerologicalName> names = new ArrayList<>();
+            for(int i = 0 ; i < selected.getRowCount(); i++){
+                names.add(selected.getRow(i));
+            }
+            deleteNames(names);
+            searchButtonClicked();
+        });
 		
 		
 		return footer;
@@ -169,23 +156,23 @@ public class FindNameView extends AstrosoftView {
 	}
 	private void createPagingPanel(JPanel footer) {
 		
-		Pagination<NumerologicalName> pagination = EmptyPagination.getInstance(pageLength);
-		pagingPanel = new PagingPanel<NumerologicalName>(nameModel, pagination);
+		Pagination<NumerologicalName> pagination = getInstance(pageLength);
+		pagingPanel = new PagingPanel<>(nameModel, pagination);
 		
 		footer.add(pagingPanel, BorderLayout.EAST);
 	}
 
 	private void searchButtonClicked() {
 		log.fine("Name Search Button Clicked");
-		setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+		setCursor(getPredefinedCursor(Cursor.WAIT_CURSOR));
 		tablePanel.setVisible(true);
 		pagingPanel.setPagination(new NumeroNamePagination(searchPanel.getName(), searchPanel.getNumeroValue(), searchPanel.getNumeroNumber(), searchPanel.getOperator1(), searchPanel.getOperator2(),pageLength));
-		setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		setCursor(getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 	}
 	
 	private void addButtonClicked() {
 		log.fine("Name Add Button Clicked");
-		NumeroNameService.addName(addPanel.getName());
+		addName(addPanel.getName());
 		addPanel.resetValues();
 		searchButtonClicked();
 	}

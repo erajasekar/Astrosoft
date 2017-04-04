@@ -11,6 +11,7 @@ package app.astrosoft.ui.table;
 import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.TableStyle;
 import app.astrosoft.ui.util.UIUtil;
+import static app.astrosoft.ui.util.UIUtil.createImageIcon;
 import java.awt.Component;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -68,7 +69,7 @@ public class SortableTable extends AstrosoftTable {
     public ImageIcon getSortImageIcon(){
         SortableTableModel model = (SortableTableModel )getModel();
         String imageName = model.getSortInfo().getSortDir()? IMAGE_ARROW_DOWN : IMAGE_ARROW_UP;
-        return UIUtil.createImageIcon(imageName);
+        return createImageIcon(imageName);
     }
     
     private void setSortableHeaderRender() {

@@ -12,6 +12,7 @@ import app.astrosoft.consts.AshtavargaName;
 import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.Rasi;
 import app.astrosoft.core.Ashtavarga;
+import static app.astrosoft.core.Ashtavarga.getCount;
 import app.astrosoft.export.Exportable;
 import app.astrosoft.export.Exporter;
 import app.astrosoft.ui.table.ColumnMetaData;
@@ -19,6 +20,7 @@ import app.astrosoft.ui.table.DefaultColumnMetaData;
 import app.astrosoft.ui.table.Table;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableRowData;
+import static java.lang.String.valueOf;
 
 public class AshtaVargaChartData extends AbstractChartData implements Exportable{
 
@@ -30,9 +32,9 @@ public class AshtaVargaChartData extends AbstractChartData implements Exportable
 		this.varga = varga;
 		chartName = name.toString();
 		
-		int count = Ashtavarga.getCount(name);
+		int count = getCount(name);
 		if ( count != -1){
-			chartName = chartName + " ( " +String.valueOf(count) + " ) ";
+			chartName = chartName + " ( " +valueOf(count) + " ) ";
 		}
 	}
 
@@ -47,14 +49,7 @@ public class AshtaVargaChartData extends AbstractChartData implements Exportable
 
 					public TableRowData getRow(final int index){
 						
-						return new TableRowData(){
-
-							public Object getColumnData(AstrosoftTableColumn col) {
-								
-								return (index == 1) ? varga.get(rasi) : null;
-							}
-							
-						};
+						return (AstrosoftTableColumn col) -> (index == 1) ? varga.get(rasi) : null;
 					}
 
 					public int getRowCount() {

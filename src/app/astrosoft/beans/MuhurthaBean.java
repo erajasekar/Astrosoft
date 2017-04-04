@@ -11,7 +11,9 @@ import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.DisplayFormat;
 import app.astrosoft.consts.MuhurthaRank;
 import app.astrosoft.consts.Nakshathra;
+import static app.astrosoft.consts.Nakshathra.ofDeg;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.ofDeg;
 import app.astrosoft.ui.table.ColumnMetaData;
 import app.astrosoft.ui.table.DefaultColumnMetaData;
 import app.astrosoft.ui.table.TableRowData;
@@ -37,9 +39,9 @@ public class MuhurthaBean implements TableRowData {
 		this.longitude = longitudes;
 		this.rank = rank;
 
-		nak = Nakshathra.ofDeg(longitudes.getStart());
+		nak = ofDeg(longitudes.getStart());
 
-		rasi = Rasi.ofDeg(longitudes.getStart());
+		rasi = ofDeg(longitudes.getStart());
 	}
 
 	public Interval getPeriod() {

@@ -1,3 +1,4 @@
+import static java.lang.Math.abs;
 import swisseph.*;
 
 public class Sw1 {
@@ -103,7 +104,7 @@ public class Sw1 {
     private String dms(double val){
         String res = new String();
         if (val < 0){
-            val = Math.abs(val);
+            val = abs(val);
             res = res + "-";
         }
         int deg = (int)val;

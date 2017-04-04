@@ -15,9 +15,14 @@ import app.astrosoft.consts.AstroConsts;
 import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.Ayanamsa;
 import app.astrosoft.consts.Planet;
+import static app.astrosoft.consts.Planet.allPlanets;
+import static app.astrosoft.consts.Planet.isNode;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.ofDeg;
 import app.astrosoft.core.Ephemeris.EphData;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
+import static app.astrosoft.util.Utils.sortMap;
 import swisseph.DblObj;
 import swisseph.SweConst;
 import swisseph.SweDate;
@@ -54,7 +59,7 @@ public class SwissHelper {
 	
 	public SwissHelper() {
 		sw = new SwissEph();
-		sw.swe_set_sid_mode(AstroSoft.getPreferences().getAyanamsa().ayaValue(), 0.0, 0.0);
+		sw.swe_set_sid_mode(getPreferences().getAyanamsa().ayaValue(), 0.0, 0.0);
 	}
 
 	public void setSweDate(SweDate sweDate) {
@@ -69,14 +74,14 @@ public class SwissHelper {
 	}
 	
 	public void calcPlanetaryPosition() {
-		calcPlanetaryPosition(Planet.allPlanets());
+		calcPlanetaryPosition(allPlanets());
 	}
 
 	public void calcPlanetaryPosition(Set<Planet> planets){
 		
-		planetPos = new EnumMap<Planet, Double>(Planet.class);
+		planetPos = new EnumMap<>(Planet.class);
 		
-		isReverse = new EnumMap<Planet, Boolean>(Planet.class);
+		isReverse = new EnumMap<>(Planet.class);
 		
 		double[] res = new double[6];
 		StringBuffer sbErr = new StringBuffer();
@@ -87,7 +92,7 @@ public class SwissHelper {
 					AstroConsts.iflag, res, sbErr);
 			planetPos.put(planet, res[0]);
 
-			if ((res[3] < 0) && (!Planet.isNode(planet))) {
+			if ((res[3] < 0) && (!isNode(planet))) {
 
 				isReverse.put(planet, true);
 			}
@@ -125,7 +130,7 @@ public class SwissHelper {
 		sw.swe_houses(sweDate.getJulDay(), HOUSE_FLAG, birthLat, birthLong, HOUSE_SYSTEM,
 				positions, ac);
 		
-		return Rasi.ofDeg(positions[1]);
+		return ofDeg(positions[1]);
 	}
 	
 	public double getPlanetSpeed(Planet planet){
@@ -167,7 +172,7 @@ public class SwissHelper {
 	public EnumMap<Planet, EphData> getEphData(){
 		
 		calcPlanetaryPosition();
-		EnumMap<Planet, EphData> planetEphData = new EnumMap<Planet, EphData>(Planet.class);
+		EnumMap<Planet, EphData> planetEphData = new EnumMap<>(Planet.class);
 		
 		for(Planet planet : planetPos.keySet()){
 
@@ -220,6 +225,6 @@ public class SwissHelper {
 			System.out.println(e.getKey() + " -> " + housePos.locateHouse(e.getValue()));
 		}
 		
-		System.out.println(Utils.sortMap(sh.getPlanetaryPosition().entrySet(), true));
+		System.out.println(sortMap(sh.getPlanetaryPosition().entrySet(), true));
 	}
 }

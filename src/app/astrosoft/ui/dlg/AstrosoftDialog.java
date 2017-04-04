@@ -9,8 +9,10 @@
 package  app.astrosoft.ui.dlg;
 
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getScreenSize;
 import app.astrosoft.ui.util.UIConsts;
 import app.astrosoft.ui.util.UIUtil;
+import static app.astrosoft.ui.util.UIUtil.setPanelBackground;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -48,7 +50,7 @@ public abstract class AstrosoftDialog extends javax.swing.JDialog {
         /*java.awt.Dimension screenSize =
             java.awt.Toolkit.getDefaultToolkit(  ).getScreenSize(  );*/
         
-        java.awt.Dimension screenSize = AstroSoft.getScreenSize();
+        java.awt.Dimension screenSize = getScreenSize();
 
         setBounds( 
             ( screenSize.width - size.width ) / 2, ( screenSize.height - size.height ) / 2, size.width,
@@ -58,7 +60,7 @@ public abstract class AstrosoftDialog extends javax.swing.JDialog {
     
     public void setBackground(Color bgColor){
     	super.setBackground(bgColor);
-        UIUtil.setPanelBackground(dlgPanel, bgColor);
+        setPanelBackground(dlgPanel, bgColor);
     }
     
     // Sets background to theme color
@@ -73,7 +75,7 @@ public abstract class AstrosoftDialog extends javax.swing.JDialog {
     
     public void resetSize(Dimension size){
     	
-    	java.awt.Dimension screenSize = AstroSoft.getScreenSize();
+    	java.awt.Dimension screenSize = getScreenSize();
 
         setBounds( 
             ( screenSize.width - size.width ) / 2, ( screenSize.height - size.height ) / 2, size.width,

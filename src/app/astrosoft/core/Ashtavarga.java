@@ -14,10 +14,16 @@ import java.util.List;
 import java.util.Vector;
 
 import app.astrosoft.consts.AshtavargaName;
+import static app.astrosoft.consts.AshtavargaName.ofPlanet;
 import app.astrosoft.consts.AstrosoftTableColumn;
+import static app.astrosoft.consts.AstrosoftTableColumn.keyvalCols;
 import app.astrosoft.consts.DisplayStrings;
 import app.astrosoft.consts.Planet;
+import static app.astrosoft.consts.Planet.majorPlanets;
+import static app.astrosoft.consts.Planet.majorPlanetsAsc;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.ofIndex;
+import static app.astrosoft.consts.Rasi.values;
 import app.astrosoft.export.Exportable;
 import app.astrosoft.export.Exporter;
 import app.astrosoft.ui.table.ColumnMetaData;
@@ -27,7 +33,9 @@ import app.astrosoft.ui.table.MapTableRowHelper;
 import app.astrosoft.ui.table.Table;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableDataFactory;
+import static app.astrosoft.ui.table.TableDataFactory.getTableData;
 import app.astrosoft.ui.table.TableRowData;
+import static java.lang.Math.min;
 
 
 public class Ashtavarga implements Exportable {
@@ -122,7 +130,7 @@ public class Ashtavarga implements Exportable {
     public Ashtavarga( EnumMap<Planet, Integer> pos ) {
 
     	planetPos = pos;
-        v = new Vector<int []>(  );
+        v = new Vector<>(  );
         v.add( one );
         v.add( two );
         v.add( three );
@@ -145,7 +153,7 @@ public class Ashtavarga implements Exportable {
 
     private void initCount() {
     	
-    	count = new EnumMap<AshtavargaName, Integer>(AshtavargaName.class);
+    	count = new EnumMap<>(AshtavargaName.class);
     	count.put(AshtavargaName.Sun, 48);
     	count.put(AshtavargaName.Moon, 49);
     	count.put(AshtavargaName.Mars, 39);
@@ -176,18 +184,18 @@ public class Ashtavarga implements Exportable {
 
     private void computeAstavarga(  ) {
 
-    	ashtavarga = new EnumMap<AshtavargaName, EnumMap<Rasi, Integer>> (AshtavargaName.class);
+    	ashtavarga = new EnumMap<> (AshtavargaName.class);
     	
         int diff = 0;
         int paral = 0;
         
-        for ( Planet planet : Planet.majorPlanets() ) {
+        for ( Planet planet : majorPlanets() ) {
 
         	EnumMap<Rasi, Integer> paralsInHouse = initParals();
-            for ( Rasi house : Rasi.values() ) {
+            for ( Rasi house : values() ) {
 
             	int total = 0;
-                for ( Planet subpla : Planet.majorPlanetsAsc() ) {
+                for ( Planet subpla : majorPlanetsAsc() ) {
 
                     diff = ( (house.ordinal() + 1) - planetPos.get(subpla) + 12 ) % 12;
                     paral = getParal( diff, ( 8 * planet.ordinal() ) + subpla.ashtavargaNo() );
@@ -197,7 +205,7 @@ public class Ashtavarga implements Exportable {
                 }
                 paralsInHouse.put(house, total);
              }
-            ashtavarga.put(AshtavargaName.ofPlanet(planet), paralsInHouse);
+            ashtavarga.put(ofPlanet(planet), paralsInHouse);
         }
 
     }
@@ -205,14 +213,14 @@ public class Ashtavarga implements Exportable {
     private void calcSarvastaVarga(  ) {
 
         int sum = 0;
-        EnumMap<Rasi, Integer> paralsInHouse = new EnumMap<Rasi, Integer>(Rasi.class);
+        EnumMap<Rasi, Integer> paralsInHouse = new EnumMap<>(Rasi.class);
         
-        for ( Rasi h : Rasi.values() ) {
+        for ( Rasi h : values() ) {
 
         	sum = 0;
-            for ( Planet p : Planet.majorPlanets() ) {
+            for ( Planet p : majorPlanets() ) {
 
-                sum = sum + ashtavarga.get(AshtavargaName.ofPlanet(p)).get(h);
+                sum = sum + ashtavarga.get(ofPlanet(p)).get(h);
 
             }
 
@@ -227,7 +235,7 @@ public class Ashtavarga implements Exportable {
 
     	int i, j, k, min;
     	
-    	trikonaReduced = new EnumMap<AshtavargaName, EnumMap<Rasi, Integer>> (AshtavargaName.class);
+    	trikonaReduced = new EnumMap<> (AshtavargaName.class);
     	
         for ( AshtavargaName ashtavargaName : ashtavarga.keySet() ) {
         	
@@ -266,7 +274,7 @@ public class Ashtavarga implements Exportable {
 	            } else {
 	
 	            	
-	                min = Math.min( Math.min( i, j ), k );
+	                min = min( min( i, j ), k );
 	
 	                if ( i != min ) {
 	
@@ -299,7 +307,7 @@ public class Ashtavarga implements Exportable {
         Rasi i;
         Rasi j;
 
-        ekathipathiyaReduced = new EnumMap<AshtavargaName, EnumMap<Rasi, Integer>> (AshtavargaName.class);
+        ekathipathiyaReduced = new EnumMap<> (AshtavargaName.class);
         
         for ( AshtavargaName ashtavargaName : ashtavarga.keySet()) {
 
@@ -392,7 +400,7 @@ public class Ashtavarga implements Exportable {
 
         int house = h.ordinal() + 1;
 
-        for ( Planet p : Planet.majorPlanetsAsc() ){
+        for ( Planet p : majorPlanetsAsc() ){
 
             if ( planetPos.get(p) == house ) {
 
@@ -408,8 +416,8 @@ public class Ashtavarga implements Exportable {
 
     private void calcGunakaras(  ) {
 
-    	rasiGuna = new EnumMap<AshtavargaName, Integer>(AshtavargaName.class);
-        grahaGuna = new EnumMap<AshtavargaName, Integer>(AshtavargaName.class);
+    	rasiGuna = new EnumMap<>(AshtavargaName.class);
+        grahaGuna = new EnumMap<>(AshtavargaName.class);
         
         int result = 0;
 
@@ -419,7 +427,7 @@ public class Ashtavarga implements Exportable {
         	
             result = 0;
 
-            for ( Rasi i : Rasi.values() ) {
+            for ( Rasi i : values() ) {
 
                 result = result + ( rasiGunaVals[i.ordinal()] * ekaParals.get(i) );
                 
@@ -427,11 +435,11 @@ public class Ashtavarga implements Exportable {
             rasiGuna.put(ashtavargaName ,result);
             result = 0;
 
-            for ( Planet j : Planet.majorPlanets() ) {
+            for ( Planet j : majorPlanets() ) {
 
                 result =
                     result
-                    + ( grahaGunaVals[j.ordinal()] * ekaParals.get(Rasi.ofIndex(planetPos.get(j) - 1)) );
+                    + ( grahaGunaVals[j.ordinal()] * ekaParals.get(ofIndex(planetPos.get(j) - 1)) );
 
             }
 
@@ -443,8 +451,8 @@ public class Ashtavarga implements Exportable {
 
     private EnumMap<Rasi, Integer> initParals(){
     	
-    	EnumMap<Rasi, Integer> vargas = new EnumMap<Rasi, Integer> (Rasi.class);
-    	for(Rasi h : Rasi.values()){
+    	EnumMap<Rasi, Integer> vargas = new EnumMap<> (Rasi.class);
+    	for(Rasi h : values()){
     		vargas.put(h, 0);
     	}
     	
@@ -463,12 +471,12 @@ public class Ashtavarga implements Exportable {
     
     public Table getGunaTable(final AshtavargaName ashtavargaName){
     
-    	final DefaultColumnMetaData colMetaData = new DefaultColumnMetaData(AstrosoftTableColumn.keyvalCols());
+    	final DefaultColumnMetaData colMetaData = new DefaultColumnMetaData(keyvalCols());
     	colMetaData.localizeColumns();
     	
     	MapTableRowHelper helper = new MapTableRowHelper(colMetaData);
     	
-    	List<MapTableRow> rows = new ArrayList<MapTableRow>();
+    	List<MapTableRow> rows = new ArrayList<>();
     	
     	int rasiGunaVal = rasiGuna.get(ashtavargaName);
 		int grahaGunaVal = grahaGuna.get(ashtavargaName);
@@ -477,7 +485,7 @@ public class Ashtavarga implements Exportable {
     	rows.add(helper.createRow(DisplayStrings.GRAHA_GUNA_STR, grahaGunaVal));
     	rows.add(helper.createRow(DisplayStrings.SUTHDHA_BINDU_STR, (rasiGunaVal + grahaGunaVal)));
     	
-    	final TableData<MapTableRow> data = TableDataFactory.getTableData(rows);
+    	final TableData<MapTableRow> data = getTableData(rows);
     	
     	Table gunaTable = new Table(){
 
@@ -535,7 +543,7 @@ public class Ashtavarga implements Exportable {
         	sb.append( ashtavargaName + " Astavarga \n\n" );
             sum = 0;
 
-            for ( Rasi j : Rasi.values() ) {
+            for ( Rasi j : values() ) {
 
                 sum = sum + ashtavarga.get(ashtavargaName).get(j);
                 
@@ -557,7 +565,7 @@ public class Ashtavarga implements Exportable {
     
     public static void main( String[] args ) {
 
-    	EnumMap<Planet, Integer> pos = new EnumMap<Planet, Integer>(Planet.class);
+    	EnumMap<Planet, Integer> pos = new EnumMap<>(Planet.class);
     	
     	pos.put(Planet.Sun, 8);
     	pos.put(Planet.Moon, 10);

@@ -130,9 +130,10 @@ public class UserPreferences extends AbstractPreferences {
          File f = new File( getDirectory(), "prefs" );
          if ( !f.exists() )
             return ;
-         ObjectInputStream decoder = new ObjectInputStream( new FileInputStream( f ) );
-         Hashtable map = ( Hashtable ) decoder.readObject();
-         decoder.close();
+         Hashtable map;
+          try (ObjectInputStream decoder = new ObjectInputStream( new FileInputStream( f ) )) {
+              map = ( Hashtable ) decoder.readObject();
+          }
          root.putAll( map );
       }
       catch ( Exception e ) {
@@ -153,9 +154,9 @@ public class UserPreferences extends AbstractPreferences {
          if ( dir == null )
             throw new BackingStoreException( "Can't open directory." );
          File f = new File( dir, "prefs" );
-         ObjectOutputStream encoder = new ObjectOutputStream( new FileOutputStream( f ) );
-         encoder.writeObject( root );
-         encoder.close();
+          try (ObjectOutputStream encoder = new ObjectOutputStream( new FileOutputStream( f ) )) {
+              encoder.writeObject( root );
+          }
       }
       catch ( BackingStoreException bse ) {
          throw bse;

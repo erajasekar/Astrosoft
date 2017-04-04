@@ -16,14 +16,15 @@ import java.util.List;
 import java.util.Set;
 
 import app.astrosoft.consts.AstrosoftTableColumn;
+import static java.util.Arrays.asList;
 
 public class DefaultColumnMetaData implements ColumnMetaData {
     
-    protected List<AstrosoftTableColumn> columns = new ArrayList<AstrosoftTableColumn>();
+    protected List<AstrosoftTableColumn> columns = new ArrayList<>();
     
-    protected List<AstrosoftTableColumn> sortableColumns = new ArrayList<AstrosoftTableColumn>();
+    protected List<AstrosoftTableColumn> sortableColumns = new ArrayList<>();
     
-    protected List<AstrosoftTableColumn> localeColumns = new ArrayList<AstrosoftTableColumn>();
+    protected List<AstrosoftTableColumn> localeColumns = new ArrayList<>();
     
     protected int hiddenCols = 0;
     
@@ -63,7 +64,7 @@ public class DefaultColumnMetaData implements ColumnMetaData {
     }
     
     public void setColumns(AstrosoftTableColumn... cols){
-        columns = Arrays.asList(cols);
+        columns = asList(cols);
     }
     
     public void addColumns(List<AstrosoftTableColumn> cols) {
@@ -71,7 +72,7 @@ public class DefaultColumnMetaData implements ColumnMetaData {
 	}
     
     public void setSortableColumns(AstrosoftTableColumn... cols){
-        sortableColumns = Arrays.asList(cols);
+        sortableColumns = asList(cols);
     }
     
     public void setHiddenColumnCount(int count){
@@ -79,7 +80,7 @@ public class DefaultColumnMetaData implements ColumnMetaData {
     }
 
     public void localizeColumns(AstrosoftTableColumn... cols) {
-		localeColumns = Arrays.asList(cols);
+		localeColumns = asList(cols);
 	}
     
     public void localizeColumns() {

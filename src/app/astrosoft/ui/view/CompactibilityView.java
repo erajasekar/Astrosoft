@@ -24,6 +24,9 @@ import app.astrosoft.consts.TableStyle;
 import app.astrosoft.consts.Varga;
 import app.astrosoft.core.Ashtavarga;
 import app.astrosoft.core.Compactibility;
+import static app.astrosoft.core.Compactibility.getDoshaTableColumnMetaData;
+import static app.astrosoft.core.Compactibility.getInfoTableColumnMetaData;
+import static app.astrosoft.core.Compactibility.getKutaTableColumnMetaData;
 import app.astrosoft.ui.comp.AstrosoftTabbedPane;
 import app.astrosoft.ui.comp.Chart;
 import app.astrosoft.ui.comp.TitledTable;
@@ -72,16 +75,16 @@ public class CompactibilityView extends AstrosoftView {
 		JPanel kutaPanel = new JPanel(new GridLayout(1,3, 10, 10));
 		
 		SortableTableModel kutaModel = new SortableTableModel(c
-				.getKutaTableData(), Compactibility.getKutaTableColumnMetaData());
+				.getKutaTableData(), getKutaTableColumnMetaData());
 		SortableTable kutaTable = new SortableTable(kutaModel, TableStyle.SCROLL);
 		kutaTable.setColumnWidth(100, AstrosoftTableColumn.Kuta);
 		kutaTable.setRowColor(13, Color.RED);
 		
 		AstrosoftTableModel boyModel = new AstrosoftTableModel(c
-				.getBoyInfo(), Compactibility.getInfoTableColumnMetaData());
+				.getBoyInfo(), getInfoTableColumnMetaData());
 		
 		AstrosoftTableModel girlModel = new AstrosoftTableModel(c
-				.getGirlInfo(), Compactibility.getInfoTableColumnMetaData());
+				.getGirlInfo(), getInfoTableColumnMetaData());
 		
 		AstrosoftTable boyTable = new AstrosoftTable(boyModel, TableStyle.NONE);
 		
@@ -151,7 +154,7 @@ public class CompactibilityView extends AstrosoftView {
 	private JPanel createDoshaPanel(){
 		
 		final AstrosoftTable doshaTable = new AstrosoftTable( new AstrosoftTableModel(c
-				.getDoshaTableData(), Compactibility.getDoshaTableColumnMetaData()), TableStyle.STANDARD);
+				.getDoshaTableData(), getDoshaTableColumnMetaData()), TableStyle.STANDARD);
 		
 		doshaTable.setRowColor(5, Color.RED);
 		

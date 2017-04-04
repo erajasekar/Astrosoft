@@ -29,6 +29,7 @@ import app.astrosoft.consts.AstrosoftTableColumn;
 import app.astrosoft.consts.Language;
 import app.astrosoft.consts.Planet;
 import app.astrosoft.consts.Rasi;
+import static app.astrosoft.consts.Rasi.values;
 import app.astrosoft.consts.XmlConsts;
 import app.astrosoft.core.Ashtavarga;
 import app.astrosoft.core.Compactibility;
@@ -38,11 +39,18 @@ import app.astrosoft.core.ShadBala;
 import app.astrosoft.core.Vimshottari;
 import app.astrosoft.pref.AstrosoftPref;
 import app.astrosoft.ui.AstroSoft;
+import static app.astrosoft.ui.AstroSoft.getPreferences;
 import app.astrosoft.ui.table.ColumnMetaData;
 import app.astrosoft.ui.table.Table;
 import app.astrosoft.ui.table.TableData;
 import app.astrosoft.ui.table.TableRowData;
 import app.astrosoft.util.AstroUtil;
+import static app.astrosoft.util.AstroUtil.dms;
+import static java.lang.Double.valueOf;
+import static java.lang.String.valueOf;
+import static java.util.logging.Logger.getLogger;
+import static javax.xml.stream.XMLEventFactory.newInstance;
+import static javax.xml.stream.XMLOutputFactory.newInstance;
 
 /**
  * This is abstract Exporter class to implement common behaviour between all Exporter classes.
@@ -54,11 +62,11 @@ import app.astrosoft.util.AstroUtil;
  */
 public abstract class AbstractExporter implements Exporter{
 
-	private static final Logger log = Logger.getLogger(AbstractExporter.class.getName());
+	private static final Logger log = getLogger(AbstractExporter.class.getName());
 
-	protected static final XMLOutputFactory factory = XMLOutputFactory.newInstance();
+	protected static final XMLOutputFactory factory = newInstance();
 
-	protected static final XMLEventFactory xmlef = XMLEventFactory.newInstance();
+	protected static final XMLEventFactory xmlef = newInstance();
 
 	protected static final Format formatter = new java.text.DecimalFormat("000.00");
 
@@ -76,7 +84,7 @@ public abstract class AbstractExporter implements Exporter{
 	public void export2Xml(Exportable exportable){
 
 		//Switch to English to write all data in English
-		AstrosoftPref pref = AstroSoft.getPreferences();
+		AstrosoftPref pref = getPreferences();
 		Language currLang = pref.getLanguage();
 		pref.setLanguage(Language.ENGLISH);
 
@@ -176,7 +184,7 @@ public abstract class AbstractExporter implements Exporter{
 
 		if (columnClass == Degree.class){
 
-			strVal = AstroUtil.dms(Double.valueOf(value.toString()));
+			strVal = dms(valueOf(value.toString()));
 
 		} else if (value instanceof Double){
 
@@ -199,11 +207,11 @@ public abstract class AbstractExporter implements Exporter{
 
 			xmlWriter.add(xmlef.createAttribute(XmlConsts.Name, planetChart.getChartName()));
 
-			for(Rasi rasi:Rasi.values()){
+			for(Rasi rasi:values()){
 
 				xmlWriter.add(xmlef.createStartElement(XmlConsts.HOUSE_TAG, null,null));
 
-				xmlWriter.add(xmlef.createAttribute(XmlConsts.Number, String.valueOf(rasi.ordinal()+1)));
+				xmlWriter.add(xmlef.createAttribute(XmlConsts.Number, valueOf(rasi.ordinal()+1)));
 
 				EnumMap<Rasi, List<Planet>> planetsInRasi = planetChart.getPlanetsInRasi();
 

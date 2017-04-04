@@ -16,6 +16,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.Action;
 
 import app.astrosoft.consts.Command;
+import static app.astrosoft.consts.Command.values;
 import app.astrosoft.ui.util.UIUtil;
 
 public class AstrosoftActionManager
@@ -24,13 +25,13 @@ public class AstrosoftActionManager
     
     public AstrosoftActionManager(AstrosoftActionHandler handler) {
         
-        asActions = new EnumMap<Command,Action>(Command.class);
+        asActions = new EnumMap<>(Command.class);
         createAstrosoftActions(handler);
     }
     
     private void createAstrosoftActions(AstrosoftActionHandler handler) {
         
-    	for(Command cmd: Command.values()){
+    	for(Command cmd: values()){
     		asActions.put(cmd, new AstrosoftAction(cmd, handler));
     	}
     }

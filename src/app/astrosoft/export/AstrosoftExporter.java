@@ -6,8 +6,10 @@
 
 package app.astrosoft.export;
 
+import static app.astrosoft.export.FOPTransformer.exportToPDF;
 import java.util.concurrent.FutureTask;
 import java.util.logging.Logger;
+import static java.util.logging.Logger.getLogger;
 
 import javax.swing.SwingUtilities;
 
@@ -62,24 +64,19 @@ public class AstrosoftExporter {
 
 	};
 
-	private static final Logger log = Logger.getLogger(AstrosoftExporter.class.getName());
+	private static final Logger log = getLogger(AstrosoftExporter.class.getName());
 
 	public static FutureTask<Object> export2Pdf(final Type exporterType, final Exportable exportable, final String pdfFile){
 
-		Runnable r = new Runnable () {
-			
-			public void run() {
-				String xmlFile = pdfFile.replaceAll(".pdf|.PDF",".xml");
-				export2Xml(exporterType,exportable,xmlFile);
+		Runnable r = () -> {
+                    String xmlFile = pdfFile.replaceAll(".pdf|.PDF",".xml");
+            export2Xml(exporterType,exportable,xmlFile);
+            log.info("XML File: " + xmlFile);
+            log.info("PDF File: " + pdfFile);
+            exportToPDF(xmlFile, exporterType.getTemplate(), pdfFile);
+        };
 		
-				log.info("XML File: " + xmlFile);
-				log.info("PDF File: " + pdfFile);
-		
-				FOPTransformer.exportToPDF(xmlFile, exporterType.getTemplate(), pdfFile);
-			}
-		};
-		
-		FutureTask<Object> task = new FutureTask<Object>(r,null);
+		FutureTask<Object> task = new FutureTask<>(r,null);
 		
 		new Thread(task).start();
 		
