@@ -1,0 +1,2491 @@
+objc[86605]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/bin/java (0x1051fd4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1052c54e0). One of the two will be used. Which one is undefined.
+----------------------Raja----------------------
+
+
+Bhava
+Ascendant: 167 : 21 : 42
+Sidereal Time: 006 : 43 : 44
+1	152 : 07 : 10	167 : 21 : 42	182 : 31 : 34	030 : 24 : 24
+
+2	182 : 31 : 34	197 : 41 : 27	212 : 31 : 40	030 : 00 : 05
+
+3	212 : 31 : 40	227 : 21 : 53	241 : 54 : 57	029 : 23 : 16
+
+4	241 : 54 : 57	256 : 28 : 00	271 : 18 : 17	029 : 23 : 20
+
+5	271 : 18 : 17	286 : 08 : 34	301 : 30 : 36	030 : 12 : 18
+
+6	301 : 30 : 36	316 : 52 : 38	332 : 07 : 10	030 : 36 : 34
+
+7	332 : 07 : 10	347 : 21 : 42	002 : 31 : 34	030 : 24 : 24
+
+8	002 : 31 : 34	017 : 41 : 27	032 : 31 : 40	030 : 00 : 05
+
+9	032 : 31 : 40	047 : 21 : 53	061 : 54 : 57	029 : 23 : 16
+
+10	061 : 54 : 57	076 : 28 : 00	091 : 18 : 17	029 : 23 : 20
+
+11	091 : 18 : 17	106 : 08 : 34	121 : 30 : 36	030 : 12 : 18
+
+12	121 : 30 : 36	136 : 52 : 38	152 : 07 : 10	030 : 36 : 34
+
+
+Planetary Info
+Sun	235 : 21 : 36	25.360274011834008	AmatyaKaraka
+Moon	272 : 58 : 44	2.9791221240034815	DaraKaraka
+Mars	260 : 46 : 10	20.769450991800852	BhratruKaraka
+Mercury	224 : 05 : 03	14.084236235880496	PuthraKaraka
+Jupiter	163 : 47 : 27	13.79102475564244	GnatiKaraka
+Venus	207 : 10 : 44	27.178977932865564	AtmaKaraka
+Saturn	164 : 52 : 21	14.872576101274774	MatruKaraka
+Rahu	108 : 26 : 39	18.44441748747157	
+Ketu	288 : 26 : 39	18.444417487471583	
+Asc	167 : 21 : 42	17.361735900474145	
+
+Charts
+Bhava -> 8 , 10 , 9 , 8 , 6 , 7 , 6 , 4 , 10 , 6 , 
+Rasi -> 8 , 10 , 9 , 8 , 6 , 7 , 6 , 4 , 10 , 6 , 
+Hora -> 5 , 4 , 4 , 4 , 4 , 4 , 4 , 5 , 5 , 5 , 
+Drekkana -> 4 , 10 , 5 , 12 , 10 , 3 , 10 , 8 , 2 , 10 , 
+Chaturtamsa -> 5 , 10 , 3 , 11 , 9 , 4 , 9 , 10 , 4 , 12 , 
+Navamsa -> 11 , 10 , 7 , 8 , 2 , 3 , 2 , 9 , 3 , 3 , 
+Saptamsa -> 7 , 4 , 1 , 5 , 3 , 1 , 3 , 2 , 8 , 4 , 
+Dasamsa -> 12 , 6 , 3 , 8 , 6 , 4 , 6 , 6 , 12 , 7 , 
+Dwadasamsa -> 6 , 11 , 5 , 1 , 11 , 5 , 11 , 11 , 5 , 12 , 
+Shodasamsa -> 6 , 2 , 8 , 12 , 4 , 3 , 4 , 10 , 10 , 6 , 
+Vimshamsa -> 1 , 2 , 6 , 6 , 2 , 7 , 2 , 1 , 1 , 4 , 
+ChaturVimshamsa -> 12 , 6 , 9 , 3 , 3 , 2 , 3 , 6 , 6 , 5 , 
+Bhamsa -> 8 , 6 , 7 , 10 , 4 , 7 , 5 , 2 , 8 , 7 , 
+Trimshamsa -> 8 , 2 , 3 , 12 , 12 , 7 , 12 , 12 , 12 , 12 , 
+Khavedamsa -> 4 , 10 , 4 , 1 , 1 , 1 , 2 , 7 , 7 , 6 , 
+Akshvedamsa -> 7 , 5 , 4 , 2 , 5 , 5 , 7 , 4 , 4 , 11 , 
+Shastiamsa -> 10 , 3 , 2 , 12 , 9 , 1 , 11 , 4 , 10 , 4 , 
+Panchamsa -> 8 , 2 , 3 , 12 , 12 , 7 , 12 , 10 , 10 , 12 , 
+Shashtamsa -> 12 , 7 , 5 , 9 , 9 , 6 , 9 , 10 , 10 , 10 , 
+Ashtamsa -> 11 , 1 , 2 , 8 , 12 , 8 , 12 , 5 , 5 , 1 , 
+Ekadamsa -> 3 , 11 , 5 , 7 , 7 , 3 , 7 , 6 , 6 , 6 , 
+
+
+Thithi Chathruthi Paksha Shukla
+AshtaVarga 
+Ashtavarga
+Sun Astavarga 
+
+Mesha -->  3
+Vrishabha -->  3
+Mithuna -->  5
+Kataka -->  6
+Simha -->  4
+Kanya -->  5
+Thula -->  4
+Vrichika -->  3
+Dhanus -->  4
+Makara -->  3
+Kumbha -->  3
+Meena -->  5
+Sum 48
+
+RasiGuna 60
+GrahaGuna 45
+Moon Astavarga 
+
+Mesha -->  4
+Vrishabha -->  3
+Mithuna -->  6
+Kataka -->  5
+Simha -->  5
+Kanya -->  4
+Thula -->  2
+Vrichika -->  4
+Dhanus -->  2
+Makara -->  6
+Kumbha -->  5
+Meena -->  3
+Sum 49
+
+RasiGuna 81
+GrahaGuna 40
+Mars Astavarga 
+
+Mesha -->  3
+Vrishabha -->  2
+Mithuna -->  5
+Kataka -->  4
+Simha -->  3
+Kanya -->  6
+Thula -->  1
+Vrichika -->  2
+Dhanus -->  2
+Makara -->  3
+Kumbha -->  2
+Meena -->  6
+Sum 39
+
+RasiGuna 98
+GrahaGuna 65
+Mercury Astavarga 
+
+Mesha -->  6
+Vrishabha -->  2
+Mithuna -->  5
+Kataka -->  6
+Simha -->  5
+Kanya -->  5
+Thula -->  7
+Vrichika -->  3
+Dhanus -->  4
+Makara -->  3
+Kumbha -->  4
+Meena -->  4
+Sum 54
+
+RasiGuna 89
+GrahaGuna 71
+Jupiter Astavarga 
+
+Mesha -->  2
+Vrishabha -->  3
+Mithuna -->  5
+Kataka -->  7
+Simha -->  4
+Kanya -->  6
+Thula -->  3
+Vrichika -->  6
+Dhanus -->  5
+Makara -->  4
+Kumbha -->  6
+Meena -->  5
+Sum 56
+
+RasiGuna 94
+GrahaGuna 84
+Venus Astavarga 
+
+Mesha -->  6
+Vrishabha -->  6
+Mithuna -->  4
+Kataka -->  5
+Simha -->  3
+Kanya -->  4
+Thula -->  4
+Vrichika -->  5
+Dhanus -->  4
+Makara -->  6
+Kumbha -->  3
+Meena -->  2
+Sum 52
+
+RasiGuna 80
+GrahaGuna 55
+Saturn Astavarga 
+
+Mesha -->  2
+Vrishabha -->  2
+Mithuna -->  4
+Kataka -->  4
+Simha -->  4
+Kanya -->  5
+Thula -->  2
+Vrichika -->  5
+Dhanus -->  2
+Makara -->  2
+Kumbha -->  5
+Meena -->  2
+Sum 39
+
+RasiGuna 100
+GrahaGuna 75
+SarvaAshtavarga Astavarga 
+
+Mesha -->  26
+Vrishabha -->  21
+Mithuna -->  34
+Kataka -->  37
+Simha -->  28
+Kanya -->  35
+Thula -->  23
+Vrichika -->  28
+Dhanus -->  23
+Makara -->  27
+Kumbha -->  28
+Meena -->  27
+Sum 337
+
+RasiGuna 214
+GrahaGuna 271
+
+Total 674
+
+ShadBala 
+ShadBala 
+Sun --> 3
+Sun --> 45.05246001900654
+OchachaBala:-->Sun :-> 15.120091337278003
+OjaYugmarasyamsaBala:-->Sun :-> 15.0
+KendraBala:-->Sun :-> 15.0
+DrekkanaBala:-->Sun :-> 0.0
+SapthavargaBala:-->Sun :-> 116.25
+SthanaBala:-->Sun :-> 161.370091337278
+DigBala:-->Sun :-> 7.03553630371916
+NaisargikaBala:-->Sun :-> 60.0
+AbdaBala:-->Sun :-> 0.0
+MasaBala:-->Sun :-> 0.0
+VaraBala:-->Sun :-> 0.0
+PakshaBala:-->Sun :-> 47.46038396261017
+TribhagaBala:-->Sun :-> 0.0
+HoraBala:-->Sun :-> 60.0
+NatonnataBala:-->Sun :-> 8.092097509581473
+AyanaBala:-->Sun :-> 1.5959482067276731
+YuddhaBala:-->Sun :-> 0.0
+KalaBala:-->Sun :-> 117.14842967891931
+DrikBala:-->Sun :-> -10.979612163591916
+ChestaBala:-->Sun :-> 3.682957400140784
+IshtaBala:-->Sun :-> 7.462348978802358
+KashtaBala:-->Sun :-> 50.27428495798131
+ShadBala:-->Sun :-> 5.57624075260541
+ShadBala Per:-->Sun :-> 111.52481505210821
+ShadBala Rank:-->Sun :-> 5
+Moon --> 5
+Moon --> 11.283591126169084
+OchachaBala:-->Moon :-> 19.99304070800116
+OjaYugmarasyamsaBala:-->Moon :-> 30.0
+KendraBala:-->Moon :-> 30.0
+DrekkanaBala:-->Moon :-> 0.0
+SapthavargaBala:-->Moon :-> 90.0
+SthanaBala:-->Moon :-> 169.99304070800116
+DigBala:-->Moon :-> 54.495920266329335
+NaisargikaBala:-->Moon :-> 51.43
+AbdaBala:-->Moon :-> 0.0
+MasaBala:-->Moon :-> 0.0
+VaraBala:-->Moon :-> 0.0
+PakshaBala:-->Moon :-> 25.07923207477965
+TribhagaBala:-->Moon :-> 0.0
+HoraBala:-->Moon :-> 0.0
+NatonnataBala:-->Moon :-> 51.90790249041853
+AyanaBala:-->Moon :-> 56.506255018386014
+YuddhaBala:-->Moon :-> 0.0
+KalaBala:-->Moon :-> 133.4933895835842
+DrikBala:-->Moon :-> 1.7506253795438802
+ChestaBala:-->Moon :-> 12.539616037389825
+IshtaBala:-->Moon :-> 15.833668365171699
+KashtaBala:-->Moon :-> 43.57459866911891
+ShadBala:-->Moon :-> 6.852716265624309
+ShadBala Per:-->Moon :-> 114.21193776040515
+ShadBala Rank:-->Moon :-> 4
+Mars --> 4
+Mars --> 71.00301055882551
+OchachaBala:-->Mars :-> 47.58981699726695
+OjaYugmarasyamsaBala:-->Mars :-> 30.0
+KendraBala:-->Mars :-> 60.0
+DrekkanaBala:-->Mars :-> 0.0
+SapthavargaBala:-->Mars :-> 142.5
+SthanaBala:-->Mars :-> 280.08981699726695
+DigBala:-->Mars :-> 1.434189356269788
+NaisargikaBala:-->Mars :-> 17.14
+AbdaBala:-->Mars :-> 0.0
+MasaBala:-->Mars :-> 0.0
+VaraBala:-->Mars :-> 0.0
+PakshaBala:-->Mars :-> 47.46038396261017
+TribhagaBala:-->Mars :-> 0.0
+HoraBala:-->Mars :-> 0.0
+NatonnataBala:-->Mars :-> 51.90790249041853
+AyanaBala:-->Mars :-> 1.0371331229671021
+YuddhaBala:-->Mars :-> 0.0
+KalaBala:-->Mars :-> 100.40541957599581
+DrikBala:-->Mars :-> 1.9779633696728247
+ChestaBala:-->Mars :-> 12.246050953355544
+IshtaBala:-->Mars :-> 24.140988459659162
+KashtaBala:-->Mars :-> 24.34410086185249
+ShadBala:-->Mars :-> 6.888224004209348
+ShadBala Per:-->Mars :-> 137.76448008418697
+ShadBala Rank:-->Mars :-> 2
+Mercury --> 3
+Mercury --> 77.8889239238053
+OchachaBala:-->Mercury :-> 40.30525458803984
+OjaYugmarasyamsaBala:-->Mercury :-> 0.0
+KendraBala:-->Mercury :-> 15.0
+DrekkanaBala:-->Mercury :-> 15.0
+SapthavargaBala:-->Mercury :-> 90.0
+SthanaBala:-->Mercury :-> 160.30525458803984
+DigBala:-->Mercury :-> 41.09249988819787
+NaisargikaBala:-->Mercury :-> 25.7
+AbdaBala:-->Mercury :-> 0.0
+MasaBala:-->Mercury :-> 0.0
+VaraBala:-->Mercury :-> 45.0
+PakshaBala:-->Mercury :-> 47.46038396261017
+TribhagaBala:-->Mercury :-> 0.0
+HoraBala:-->Mercury :-> 0.0
+NatonnataBala:-->Mercury :-> 60.0
+AyanaBala:-->Mercury :-> 57.39064375492169
+YuddhaBala:-->Mercury :-> 0.0
+KalaBala:-->Mercury :-> 209.85102771753185
+DrikBala:-->Mercury :-> 0.1718453532337989
+ChestaBala:-->Mercury :-> 11.72193102007725
+IshtaBala:-->Mercury :-> 21.736039520291065
+KashtaBala:-->Mercury :-> 30.835438663016127
+ShadBala:-->Mercury :-> 7.480709309451343
+ShadBala Per:-->Mercury :-> 106.86727584930489
+ShadBala Rank:-->Mercury :-> 6
+Jupiter --> 1
+Jupiter --> 76.57349655954111
+OchachaBala:-->Jupiter :-> 37.069658414785856
+OjaYugmarasyamsaBala:-->Jupiter :-> 0.0
+KendraBala:-->Jupiter :-> 60.0
+DrekkanaBala:-->Jupiter :-> 0.0
+SapthavargaBala:-->Jupiter :-> 67.5
+SthanaBala:-->Jupiter :-> 164.56965841478586
+DigBala:-->Jupiter :-> 58.809762951722774
+NaisargikaBala:-->Jupiter :-> 34.28
+AbdaBala:-->Jupiter :-> 0.0
+MasaBala:-->Jupiter :-> 0.0
+VaraBala:-->Jupiter :-> 0.0
+PakshaBala:-->Jupiter :-> 12.539616037389825
+TribhagaBala:-->Jupiter :-> 60.0
+HoraBala:-->Jupiter :-> 0.0
+NatonnataBala:-->Jupiter :-> 8.092097509581473
+AyanaBala:-->Jupiter :-> 26.288555510130887
+YuddhaBala:-->Jupiter :-> 0.0
+KalaBala:-->Jupiter :-> 106.92026905710219
+DrikBala:-->Jupiter :-> 0.04340129947162907
+ChestaBala:-->Jupiter :-> 25.42268034119843
+IshtaBala:-->Jupiter :-> 30.69869828244379
+KashtaBala:-->Jupiter :-> 28.15794294470852
+ShadBala:-->Jupiter :-> 6.500762867738015
+ShadBala Per:-->Jupiter :-> 100.01173642673868
+ShadBala Rank:-->Jupiter :-> 7
+Venus --> 2
+Venus --> 36.05124913304962
+OchachaBala:-->Venus :-> 10.059659310955189
+OjaYugmarasyamsaBala:-->Venus :-> 0.0
+KendraBala:-->Venus :-> 30.0
+DrekkanaBala:-->Venus :-> 15.0
+SapthavargaBala:-->Venus :-> 150.0
+SthanaBala:-->Venus :-> 205.0596593109552
+DigBala:-->Venus :-> 43.570698336624694
+NaisargikaBala:-->Venus :-> 42.85
+AbdaBala:-->Venus :-> 0.0
+MasaBala:-->Venus :-> 30.0
+VaraBala:-->Venus :-> 0.0
+PakshaBala:-->Venus :-> 12.539616037389825
+TribhagaBala:-->Venus :-> 60.0
+HoraBala:-->Venus :-> 0.0
+NatonnataBala:-->Venus :-> 8.092097509581473
+AyanaBala:-->Venus :-> 7.233777380466986
+YuddhaBala:-->Venus :-> 0.0
+KalaBala:-->Venus :-> 117.86549092743829
+DrikBala:-->Venus :-> 0.8602119420962815
+ChestaBala:-->Venus :-> 17.557896383463383
+IshtaBala:-->Venus :-> 13.290088631559003
+KashtaBala:-->Venus :-> 46.038821815611
+ShadBala:-->Venus :-> 7.129399281676298
+ShadBala Per:-->Venus :-> 129.6254414850236
+ShadBala Rank:-->Venus :-> 3
+Saturn --> 1
+Saturn --> 83.66927252455073
+OchachaBala:-->Saturn :-> 48.29085870042493
+OjaYugmarasyamsaBala:-->Saturn :-> 0.0
+KendraBala:-->Saturn :-> 60.0
+DrekkanaBala:-->Saturn :-> 15.0
+SapthavargaBala:-->Saturn :-> 133.125
+SthanaBala:-->Saturn :-> 256.4158587004249
+DigBala:-->Saturn :-> 0.8297199330664569
+NaisargikaBala:-->Saturn :-> 8.57
+AbdaBala:-->Saturn :-> 15.0
+MasaBala:-->Saturn :-> 0.0
+VaraBala:-->Saturn :-> 0.0
+PakshaBala:-->Saturn :-> 47.46038396261017
+TribhagaBala:-->Saturn :-> 0.0
+HoraBala:-->Saturn :-> 0.0
+NatonnataBala:-->Saturn :-> 51.90790249041853
+AyanaBala:-->Saturn :-> 34.2552244719787
+YuddhaBala:-->Saturn :-> 0.0
+KalaBala:-->Saturn :-> 148.6235109250074
+DrikBala:-->Saturn :-> 0.21524665270542442
+ChestaBala:-->Saturn :-> 26.152579389224986
+IshtaBala:-->Saturn :-> 35.5377336916229
+KashtaBala:-->Saturn :-> 19.907893674563223
+ShadBala:-->Saturn :-> 7.3467819266738195
+ShadBala Per:-->Saturn :-> 146.9356385334764
+ShadBala Rank:-->Saturn :-> 1
+BhavaAdhipathiBala: 1 : -->7.480709309451343
+BhavaDigBala: 1 : -->60.0
+BhavaDrishtiBala: 1 : -->0.5263916276053457
+BhavaBala: 1 : -->509.3689501946859
+BhavaBala Rank: 1 : -->4
+BhavaAdhipathiBala: 2 : -->7.129399281676298
+BhavaDigBala: 2 : -->50.0
+BhavaDrishtiBala: 2 : -->3.1238661964595273
+BhavaBala: 2 : -->480.88782309703737
+BhavaBala Rank: 2 : -->8
+BhavaAdhipathiBala: 3 : -->6.888224004209348
+BhavaDigBala: 3 : -->20.0
+BhavaDrishtiBala: 3 : -->2.950755139934188
+BhavaBala: 3 : -->436.24419539249504
+BhavaBala Rank: 3 : -->10
+BhavaAdhipathiBala: 4 : -->6.500762867738015
+BhavaDigBala: 4 : -->0.0
+BhavaDrishtiBala: 4 : -->36.2136707363613
+BhavaBala: 4 : -->426.25944280064215
+BhavaBala Rank: 4 : -->11
+BhavaAdhipathiBala: 5 : -->7.3467819266738195
+BhavaDigBala: 5 : -->50.0
+BhavaDrishtiBala: 5 : -->73.41750184585932
+BhavaBala: 5 : -->564.2244174462885
+BhavaBala Rank: 5 : -->2
+BhavaAdhipathiBala: 6 : -->7.3467819266738195
+BhavaDigBala: 6 : -->10.0
+BhavaDrishtiBala: 6 : -->46.90594139025493
+BhavaBala: 6 : -->497.71285699068414
+BhavaBala Rank: 6 : -->6
+BhavaAdhipathiBala: 7 : -->6.500762867738015
+BhavaDigBala: 7 : -->30.0
+BhavaDrishtiBala: 7 : -->61.150365199017685
+BhavaBala: 7 : -->481.19613726329857
+BhavaBala Rank: 7 : -->7
+BhavaAdhipathiBala: 8 : -->6.888224004209348
+BhavaDigBala: 8 : -->40.0
+BhavaDrishtiBala: 8 : -->45.48057122614331
+BhavaBala: 8 : -->498.77401147870415
+BhavaBala Rank: 8 : -->5
+BhavaAdhipathiBala: 9 : -->7.129399281676298
+BhavaDigBala: 9 : -->50.0
+BhavaDrishtiBala: 9 : -->113.91121377316212
+BhavaBala: 9 : -->591.67517067374
+BhavaBala Rank: 9 : -->1
+BhavaAdhipathiBala: 10 : -->7.480709309451343
+BhavaDigBala: 10 : -->30.0
+BhavaDrishtiBala: 10 : -->33.042538349512185
+BhavaBala: 10 : -->511.8850969165928
+BhavaBala Rank: 10 : -->3
+BhavaAdhipathiBala: 11 : -->6.852716265624309
+BhavaDigBala: 11 : -->10.0
+BhavaDrishtiBala: 11 : -->26.97424155539025
+BhavaBala: 11 : -->448.1372174928488
+BhavaBala Rank: 11 : -->9
+BhavaAdhipathiBala: 12 : -->5.57624075260541
+BhavaDigBala: 12 : -->40.0
+BhavaDrishtiBala: 12 : -->7.8569826956578765
+BhavaBala: 12 : -->382.43142785198245
+BhavaBala Rank: 12 : -->12
+
+
+Dasas
+Su08-Feb-1978
+Mo08-Feb-1984
+Ma08-Feb-1994
+Ra/Ra08-Feb-2001
+Ra/Ju21-Oct-2003
+Ra/Sa16-Mar-2006
+Ra/Me20-Jan-2009
+Ra/Ke09-Aug-2011
+Ra/Ve27-Aug-2012
+Ra/Su27-Aug-2015
+Ra/Mo/Mo22-Jul-2016
+Ra/Mo/Ma05-Sep-2016
+Ra/Mo/Ra07-Oct-2016
+Ra/Mo/Ju29-Dec-2016
+Ra/Mo/Sa12-Mar-2017
+Ra/Mo/Me06-Jun-2017
+*Ra/Mo/Ke23-Aug-2017
+Ra/Mo/Ve24-Sep-2017
+Ra/Mo/Su24-Dec-2017
+Ra/Ma20-Jan-2018
+Ju08-Feb-2019
+Sa08-Feb-2035
+Me08-Feb-2054
+Ke08-Feb-2071
+Ve08-Feb-2078
+
+
+----------------------Elango----------------------
+
+
+Bhava
+Ascendant: 020 : 07 : 30
+Sidereal Time: 020 : 30 : 38
+1	002 : 51 : 21	020 : 07 : 30	034 : 34 : 30	031 : 43 : 08
+
+2	034 : 34 : 30	049 : 01 : 30	062 : 09 : 17	027 : 34 : 46
+
+3	062 : 09 : 17	075 : 17 : 03	088 : 39 : 37	026 : 30 : 20
+
+4	088 : 39 : 37	102 : 02 : 11	116 : 58 : 37	028 : 18 : 59
+
+5	116 : 58 : 37	131 : 55 : 02	148 : 45 : 07	031 : 46 : 30
+
+6	148 : 45 : 07	165 : 35 : 13	182 : 51 : 21	034 : 06 : 13
+
+7	182 : 51 : 21	200 : 07 : 30	214 : 34 : 30	031 : 43 : 08
+
+8	214 : 34 : 30	229 : 01 : 30	242 : 09 : 17	027 : 34 : 46
+
+9	242 : 09 : 17	255 : 17 : 03	268 : 39 : 37	026 : 30 : 20
+
+10	268 : 39 : 37	282 : 02 : 11	296 : 58 : 37	028 : 18 : 59
+
+11	296 : 58 : 37	311 : 55 : 02	328 : 45 : 07	031 : 46 : 30
+
+12	328 : 45 : 07	345 : 35 : 13	002 : 51 : 21	034 : 06 : 13
+
+
+Planetary Info
+Sun	003 : 31 : 13	3.520485156115423	GnatiKaraka
+Moon	216 : 42 : 37	6.710352604756679	MatruKaraka
+Mars	055 : 42 : 01	25.700510734307983	AtmaKaraka
+Mercury	022 : 55 : 28	22.924482349759256	AmatyaKaraka
+Jupiter	150 : 05 : 17	0.08811632739900688	DaraKaraka
+Venus	004 : 10 : 08	4.169163901201929	PuthraKaraka
+Saturn	230 : 34 : 27	20.574310104193756	BhratruKaraka
+Rahu	206 : 28 : 15	26.471033838322427	
+Ketu	026 : 28 : 15	26.471033838322455	
+Asc	020 : 07 : 30	20.125084357809424	
+
+Charts
+Bhava -> 1 , 8 , 2 , 1 , 6 , 1 , 8 , 7 , 1 , 1 , 
+Rasi -> 1 , 8 , 2 , 1 , 6 , 1 , 8 , 7 , 1 , 1 , 
+Hora -> 5 , 4 , 5 , 4 , 4 , 5 , 5 , 4 , 4 , 4 , 
+Drekkana -> 1 , 8 , 10 , 9 , 6 , 1 , 4 , 3 , 9 , 9 , 
+Chaturtamsa -> 1 , 8 , 11 , 10 , 6 , 1 , 2 , 4 , 10 , 7 , 
+Navamsa -> 2 , 6 , 5 , 7 , 10 , 2 , 10 , 2 , 8 , 7 , 
+Saptamsa -> 1 , 3 , 1 , 6 , 12 , 1 , 6 , 1 , 7 , 5 , 
+Dasamsa -> 2 , 6 , 6 , 8 , 2 , 2 , 10 , 3 , 9 , 7 , 
+Dwadasamsa -> 2 , 10 , 12 , 10 , 6 , 2 , 4 , 5 , 11 , 9 , 
+Shodasamsa -> 2 , 8 , 6 , 1 , 9 , 3 , 3 , 3 , 3 , 11 , 
+Vimshamsa -> 3 , 1 , 2 , 4 , 5 , 3 , 10 , 6 , 6 , 2 , 
+ChaturVimshamsa -> 7 , 9 , 12 , 11 , 4 , 8 , 8 , 2 , 2 , 9 , 
+Bhamsa -> 4 , 4 , 3 , 9 , 4 , 4 , 4 , 6 , 12 , 7 , 
+Trimshamsa -> 1 , 6 , 8 , 3 , 2 , 1 , 10 , 7 , 7 , 3 , 
+Khavedamsa -> 5 , 3 , 5 , 7 , 7 , 6 , 10 , 12 , 12 , 3 , 
+Akshvedamsa -> 6 , 3 , 7 , 11 , 9 , 7 , 11 , 4 , 4 , 7 , 
+Shastiamsa -> 8 , 9 , 5 , 10 , 6 , 9 , 1 , 11 , 5 , 5 , 
+Panchamsa -> 1 , 6 , 8 , 3 , 2 , 1 , 10 , 7 , 7 , 3 , 
+Shashtamsa -> 1 , 8 , 12 , 5 , 7 , 1 , 11 , 6 , 6 , 5 , 
+Ashtamsa -> 1 , 6 , 11 , 7 , 9 , 2 , 10 , 8 , 8 , 6 , 
+Ekadamsa -> 11 , 10 , 3 , 4 , 12 , 11 , 5 , 3 , 3 , 5 , 
+
+
+Thithi Thrithiyai Paksha Krishna
+AshtaVarga 
+Ashtavarga
+Sun Astavarga 
+
+Mesha -->  2
+Vrishabha -->  4
+Mithuna -->  4
+Kataka -->  4
+Simha -->  4
+Kanya -->  5
+Thula -->  2
+Vrichika -->  3
+Dhanus -->  4
+Makara -->  6
+Kumbha -->  6
+Meena -->  4
+Sum 48
+
+RasiGuna 90
+GrahaGuna 10
+Moon Astavarga 
+
+Mesha -->  4
+Vrishabha -->  1
+Mithuna -->  6
+Kataka -->  4
+Simha -->  4
+Kanya -->  6
+Thula -->  4
+Vrichika -->  3
+Dhanus -->  2
+Makara -->  7
+Kumbha -->  5
+Meena -->  3
+Sum 49
+
+RasiGuna 79
+GrahaGuna 84
+Mars Astavarga 
+
+Mesha -->  2
+Vrishabha -->  2
+Mithuna -->  6
+Kataka -->  2
+Simha -->  5
+Kanya -->  6
+Thula -->  0
+Vrichika -->  3
+Dhanus -->  1
+Makara -->  3
+Kumbha -->  7
+Meena -->  2
+Sum 39
+
+RasiGuna 123
+GrahaGuna 67
+Mercury Astavarga 
+
+Mesha -->  5
+Vrishabha -->  4
+Mithuna -->  5
+Kataka -->  4
+Simha -->  7
+Kanya -->  5
+Thula -->  0
+Vrichika -->  4
+Dhanus -->  6
+Makara -->  3
+Kumbha -->  8
+Meena -->  3
+Sum 54
+
+RasiGuna 165
+GrahaGuna 38
+Jupiter Astavarga 
+
+Mesha -->  5
+Vrishabha -->  6
+Mithuna -->  3
+Kataka -->  5
+Simha -->  4
+Kanya -->  5
+Thula -->  4
+Vrichika -->  3
+Dhanus -->  7
+Makara -->  5
+Kumbha -->  5
+Meena -->  4
+Sum 56
+
+RasiGuna 68
+GrahaGuna 25
+Venus Astavarga 
+
+Mesha -->  4
+Vrishabha -->  3
+Mithuna -->  6
+Kataka -->  6
+Simha -->  4
+Kanya -->  4
+Thula -->  2
+Vrichika -->  4
+Dhanus -->  4
+Makara -->  5
+Kumbha -->  6
+Meena -->  4
+Sum 52
+
+RasiGuna 53
+GrahaGuna 10
+Saturn Astavarga 
+
+Mesha -->  5
+Vrishabha -->  1
+Mithuna -->  1
+Kataka -->  4
+Simha -->  1
+Kanya -->  6
+Thula -->  2
+Vrichika -->  2
+Dhanus -->  1
+Makara -->  6
+Kumbha -->  6
+Meena -->  4
+Sum 39
+
+RasiGuna 92
+GrahaGuna 118
+SarvaAshtavarga Astavarga 
+
+Mesha -->  27
+Vrishabha -->  21
+Mithuna -->  31
+Kataka -->  29
+Simha -->  29
+Kanya -->  37
+Thula -->  14
+Vrichika -->  22
+Dhanus -->  25
+Makara -->  35
+Kumbha -->  43
+Meena -->  24
+Sum 337
+
+RasiGuna 354
+GrahaGuna 198
+
+Total 674
+
+ShadBala 
+ShadBala 
+Sun --> 1
+Sun --> 3.847668899373414
+OchachaBala:-->Sun :-> 57.84016171870514
+OjaYugmarasyamsaBala:-->Sun :-> 15.0
+KendraBala:-->Sun :-> 60.0
+DrekkanaBala:-->Sun :-> 15.0
+SapthavargaBala:-->Sun :-> 123.75
+SthanaBala:-->Sun :-> 271.59016171870513
+DigBala:-->Sun :-> 32.83872501801594
+NaisargikaBala:-->Sun :-> 60.0
+AbdaBala:-->Sun :-> 0.0
+MasaBala:-->Sun :-> 0.0
+VaraBala:-->Sun :-> 0.0
+PakshaBala:-->Sun :-> 11.063289149547082
+TribhagaBala:-->Sun :-> 0.0
+HoraBala:-->Sun :-> 0.0
+NatonnataBala:-->Sun :-> 35.80777634069733
+AyanaBala:-->Sun :-> 86.242554929255
+YuddhaBala:-->Sun :-> 0.0
+KalaBala:-->Sun :-> 133.1136204194994
+DrikBala:-->Sun :-> 5.760030797230552
+ChestaBala:-->Sun :-> 38.926998802083865
+IshtaBala:-->Sun :-> 47.45043630923084
+KashtaBala:-->Sun :-> 6.7464268089879775
+ShadBala:-->Sun :-> 8.388375632557517
+ShadBala Per:-->Sun :-> 167.76751265115035
+ShadBala Rank:-->Sun :-> 1
+Moon --> 8
+Moon --> 14.776650544192483
+OchachaBala:-->Moon :-> 1.2367842015855597
+OjaYugmarasyamsaBala:-->Moon :-> 30.0
+KendraBala:-->Moon :-> 30.0
+DrekkanaBala:-->Moon :-> 0.0
+SapthavargaBala:-->Moon :-> 63.75
+SthanaBala:-->Moon :-> 124.98678420158556
+DigBala:-->Moon :-> 21.775435868468872
+NaisargikaBala:-->Moon :-> 51.43
+AbdaBala:-->Moon :-> 0.0
+MasaBala:-->Moon :-> 0.0
+VaraBala:-->Moon :-> 0.0
+PakshaBala:-->Moon :-> 22.126578299094163
+TribhagaBala:-->Moon :-> 0.0
+HoraBala:-->Moon :-> 60.0
+NatonnataBala:-->Moon :-> 24.19222365930267
+AyanaBala:-->Moon :-> 55.782116485770445
+YuddhaBala:-->Moon :-> 0.0
+KalaBala:-->Moon :-> 162.1009184441673
+DrikBala:-->Moon :-> -13.295043240874438
+ChestaBala:-->Moon :-> 48.93671085045292
+IshtaBala:-->Moon :-> 7.779726914063295
+KashtaBala:-->Moon :-> 25.497341973921365
+ShadBala:-->Moon :-> 5.783301587889122
+ShadBala Per:-->Moon :-> 96.38835979815202
+ShadBala Rank:-->Moon :-> 7
+Mars --> 2
+Mars --> 49.158124563948114
+OchachaBala:-->Mars :-> 20.76649642189734
+OjaYugmarasyamsaBala:-->Mars :-> 15.0
+KendraBala:-->Mars :-> 30.0
+DrekkanaBala:-->Mars :-> 0.0
+SapthavargaBala:-->Mars :-> 131.25
+SthanaBala:-->Mars :-> 197.01649642189733
+DigBala:-->Mars :-> 15.445383158618426
+NaisargikaBala:-->Mars :-> 17.14
+AbdaBala:-->Mars :-> 0.0
+MasaBala:-->Mars :-> 0.0
+VaraBala:-->Mars :-> 0.0
+PakshaBala:-->Mars :-> 11.063289149547082
+TribhagaBala:-->Mars :-> 0.0
+HoraBala:-->Mars :-> 0.0
+NatonnataBala:-->Mars :-> 24.19222365930267
+AyanaBala:-->Mars :-> 59.2027404766543
+YuddhaBala:-->Mars :-> 0.0
+KalaBala:-->Mars :-> 94.45825328550404
+DrikBala:-->Mars :-> -15.61509284710983
+ChestaBala:-->Mars :-> 21.44763845368008
+IshtaBala:-->Mars :-> 21.1043196338213
+KashtaBala:-->Mars :-> 38.891441406456636
+ShadBala:-->Mars :-> 5.498211307876501
+ShadBala Per:-->Mars :-> 109.96422615753
+ShadBala Rank:-->Mars :-> 5
+Mercury --> 1
+Mercury --> 80.62705285967984
+OchachaBala:-->Mercury :-> 12.64149411658643
+OjaYugmarasyamsaBala:-->Mercury :-> 30.0
+KendraBala:-->Mercury :-> 60.0
+DrekkanaBala:-->Mercury :-> 0.0
+SapthavargaBala:-->Mercury :-> 91.875
+SthanaBala:-->Mercury :-> 194.51649411658644
+DigBala:-->Mercury :-> 59.06686733601672
+NaisargikaBala:-->Mercury :-> 25.7
+AbdaBala:-->Mercury :-> 0.0
+MasaBala:-->Mercury :-> 30.0
+VaraBala:-->Mercury :-> 45.0
+PakshaBala:-->Mercury :-> 11.063289149547082
+TribhagaBala:-->Mercury :-> 60.0
+HoraBala:-->Mercury :-> 0.0
+NatonnataBala:-->Mercury :-> 60.0
+AyanaBala:-->Mercury :-> 51.263414568854614
+YuddhaBala:-->Mercury :-> 0.0
+KalaBala:-->Mercury :-> 257.3267037184017
+DrikBala:-->Mercury :-> -0.8866967480790606
+ChestaBala:-->Mercury :-> 37.651123204160285
+IshtaBala:-->Mercury :-> 21.816655391426593
+KashtaBala:-->Mercury :-> 32.533204779478154
+ShadBala:-->Mercury :-> 9.5562415271181
+ShadBala Per:-->Mercury :-> 136.51773610168715
+ShadBala Rank:-->Mercury :-> 3
+Jupiter --> 6
+Jupiter --> 7.935576073463738
+OchachaBala:-->Jupiter :-> 41.637294557533664
+OjaYugmarasyamsaBala:-->Jupiter :-> 0.0
+KendraBala:-->Jupiter :-> 15.0
+DrekkanaBala:-->Jupiter :-> 15.0
+SapthavargaBala:-->Jupiter :-> 75.0
+SthanaBala:-->Jupiter :-> 146.63729455753366
+DigBala:-->Jupiter :-> 16.678989343470136
+NaisargikaBala:-->Jupiter :-> 34.28
+AbdaBala:-->Jupiter :-> 15.0
+MasaBala:-->Jupiter :-> 0.0
+VaraBala:-->Jupiter :-> 0.0
+PakshaBala:-->Jupiter :-> 48.93671085045292
+TribhagaBala:-->Jupiter :-> 60.0
+HoraBala:-->Jupiter :-> 0.0
+NatonnataBala:-->Jupiter :-> 35.80777634069733
+AyanaBala:-->Jupiter :-> 33.344162245739255
+YuddhaBala:-->Jupiter :-> 0.0
+KalaBala:-->Jupiter :-> 193.0886494368895
+DrikBala:-->Jupiter :-> -34.63702487695111
+ChestaBala:-->Jupiter :-> 50.462365053658324
+IshtaBala:-->Jupiter :-> 45.837935793499305
+KashtaBala:-->Jupiter :-> 13.233925386575422
+ShadBala:-->Jupiter :-> 6.7751712252433425
+ShadBala Per:-->Jupiter :-> 104.23340346528221
+ShadBala Rank:-->Jupiter :-> 6
+Venus --> 1
+Venus --> 7.603975975375194
+OchachaBala:-->Venus :-> 57.610278699599355
+OjaYugmarasyamsaBala:-->Venus :-> 15.0
+KendraBala:-->Venus :-> 60.0
+DrekkanaBala:-->Venus :-> 0.0
+SapthavargaBala:-->Venus :-> 121.875
+SthanaBala:-->Venus :-> 254.48527869959935
+DigBala:-->Venus :-> 27.377501230346223
+NaisargikaBala:-->Venus :-> 42.85
+AbdaBala:-->Venus :-> 0.0
+MasaBala:-->Venus :-> 0.0
+VaraBala:-->Venus :-> 0.0
+PakshaBala:-->Venus :-> 48.93671085045292
+TribhagaBala:-->Venus :-> 0.0
+HoraBala:-->Venus :-> 0.0
+NatonnataBala:-->Venus :-> 35.80777634069733
+AyanaBala:-->Venus :-> 43.42849892584207
+YuddhaBala:-->Venus :-> 0.0
+KalaBala:-->Venus :-> 128.17298611699232
+DrikBala:-->Venus :-> 6.0032853266379895
+ChestaBala:-->Venus :-> 2.137274032624267
+IshtaBala:-->Venus :-> 11.096348619113435
+KashtaBala:-->Venus :-> 11.75907261409178
+ShadBala:-->Venus :-> 7.683772090103336
+ShadBala Per:-->Venus :-> 139.70494709278793
+ShadBala Rank:-->Venus :-> 2
+Saturn --> 8
+Saturn --> 88.2011029648052
+OchachaBala:-->Saturn :-> 49.80856329860208
+OjaYugmarasyamsaBala:-->Saturn :-> 0.0
+KendraBala:-->Saturn :-> 30.0
+DrekkanaBala:-->Saturn :-> 0.0
+SapthavargaBala:-->Saturn :-> 75.0
+SthanaBala:-->Saturn :-> 154.80856329860208
+DigBala:-->Saturn :-> 49.85025808453855
+NaisargikaBala:-->Saturn :-> 8.57
+AbdaBala:-->Saturn :-> 0.0
+MasaBala:-->Saturn :-> 0.0
+VaraBala:-->Saturn :-> 0.0
+PakshaBala:-->Saturn :-> 11.063289149547082
+TribhagaBala:-->Saturn :-> 0.0
+HoraBala:-->Saturn :-> 0.0
+NatonnataBala:-->Saturn :-> 24.19222365930267
+AyanaBala:-->Saturn :-> 58.6739211154854
+YuddhaBala:-->Saturn :-> 0.0
+KalaBala:-->Saturn :-> 93.92943392433514
+DrikBala:-->Saturn :-> -15.028037928304073
+ChestaBala:-->Saturn :-> 45.42460359403793
+IshtaBala:-->Saturn :-> 47.5661039336579
+KashtaBala:-->Saturn :-> 12.187872245357068
+ShadBala:-->Saturn :-> 5.625913682886828
+ShadBala Per:-->Saturn :-> 112.51827365773654
+ShadBala Rank:-->Saturn :-> 4
+BhavaAdhipathiBala: 1 : -->5.498211307876501
+BhavaDigBala: 1 : -->30.0
+BhavaDrishtiBala: 1 : -->28.161843671672344
+BhavaBala: 1 : -->388.05452214426236
+BhavaBala Rank: 1 : -->11
+BhavaAdhipathiBala: 2 : -->7.683772090103336
+BhavaDigBala: 2 : -->20.0
+BhavaDrishtiBala: 2 : -->22.7643210755907
+BhavaBala: 2 : -->503.7906464817909
+BhavaBala Rank: 2 : -->6
+BhavaAdhipathiBala: 3 : -->9.5562415271181
+BhavaDigBala: 3 : -->40.0
+BhavaDrishtiBala: 3 : -->-3.6698284507941565
+BhavaBala: 3 : -->609.7046631762919
+BhavaBala Rank: 3 : -->1
+BhavaAdhipathiBala: 4 : -->5.783301587889122
+BhavaDigBala: 4 : -->60.0
+BhavaDrishtiBala: 4 : -->16.749826232979917
+BhavaBala: 4 : -->423.7479215063272
+BhavaBala Rank: 4 : -->10
+BhavaAdhipathiBala: 5 : -->8.388375632557517
+BhavaDigBala: 5 : -->10.0
+BhavaDrishtiBala: 5 : -->19.93026429017293
+BhavaBala: 5 : -->533.232802243624
+BhavaBala Rank: 5 : -->3
+BhavaAdhipathiBala: 6 : -->9.5562415271181
+BhavaDigBala: 6 : -->10.0
+BhavaDrishtiBala: 6 : -->-17.37443999012171
+BhavaBala: 6 : -->566.0000516369644
+BhavaBala Rank: 6 : -->2
+BhavaAdhipathiBala: 7 : -->7.683772090103336
+BhavaDigBala: 7 : -->0.0
+BhavaDrishtiBala: 7 : -->63.10691628031671
+BhavaBala: 7 : -->524.1332416865168
+BhavaBala Rank: 7 : -->4
+BhavaAdhipathiBala: 8 : -->5.498211307876501
+BhavaDigBala: 8 : -->50.0
+BhavaDrishtiBala: 8 : -->69.30546505777042
+BhavaBala: 8 : -->449.1981435303604
+BhavaBala Rank: 8 : -->8
+BhavaAdhipathiBala: 9 : -->6.7751712252433425
+BhavaDigBala: 9 : -->50.0
+BhavaDrishtiBala: 9 : -->57.67918607441542
+BhavaBala: 9 : -->514.189459589016
+BhavaBala Rank: 9 : -->5
+BhavaAdhipathiBala: 10 : -->5.625913682886828
+BhavaDigBala: 10 : -->60.0
+BhavaDrishtiBala: 10 : -->47.85410005005359
+BhavaBala: 10 : -->445.40892102326325
+BhavaBala Rank: 10 : -->9
+BhavaAdhipathiBala: 11 : -->5.625913682886828
+BhavaDigBala: 11 : -->40.0
+BhavaDrishtiBala: 11 : -->-7.245697623443434
+BhavaBala: 11 : -->370.3091233497662
+BhavaBala Rank: 11 : -->12
+BhavaAdhipathiBala: 12 : -->6.7751712252433425
+BhavaDigBala: 12 : -->20.0
+BhavaDrishtiBala: 12 : -->37.58211740769761
+BhavaBala: 12 : -->464.09239092229814
+BhavaBala Rank: 12 : -->7
+
+
+Dasas
+Sa25-Jun-1952
+Me25-Jun-1971
+Ke25-Jun-1988
+Ve25-Jun-1995
+Su/Su25-Jun-2015
+Su/Mo13-Oct-2015
+Su/Ma12-Apr-2016
+Su/Ra18-Aug-2016
+Su/Ju/Ju13-Jul-2017
+*Su/Ju/Sa21-Aug-2017
+Su/Ju/Me06-Oct-2017
+Su/Ju/Ke17-Nov-2017
+Su/Ju/Ve04-Dec-2017
+Su/Ju/Su22-Jan-2018
+Su/Ju/Mo05-Feb-2018
+Su/Ju/Ma01-Mar-2018
+Su/Ju/Ra18-Mar-2018
+Su/Sa01-May-2018
+Su/Me13-Apr-2019
+Su/Ke17-Feb-2020
+Su/Ve25-Jun-2020
+Mo25-Jun-2021
+Ma25-Jun-2031
+Ra25-Jun-2038
+Ju25-Jun-2056
+
+
+----------------------Mani----------------------
+
+
+Bhava
+Ascendant: 104 : 19 : 01
+Sidereal Time: 002 : 24 : 49
+1	089 : 52 : 01	104 : 19 : 01	118 : 20 : 48	028 : 28 : 46
+
+2	118 : 20 : 48	132 : 22 : 34	147 : 49 : 11	029 : 28 : 23
+
+3	147 : 49 : 11	163 : 15 : 47	179 : 16 : 19	031 : 27 : 07
+
+4	179 : 16 : 19	195 : 16 : 50	210 : 42 : 00	031 : 25 : 41
+
+5	210 : 42 : 00	226 : 07 : 09	240 : 46 : 05	030 : 04 : 05
+
+6	240 : 46 : 05	255 : 25 : 01	269 : 52 : 01	029 : 05 : 55
+
+7	269 : 52 : 01	284 : 19 : 01	298 : 20 : 48	028 : 28 : 46
+
+8	298 : 20 : 48	312 : 22 : 34	327 : 49 : 11	029 : 28 : 23
+
+9	327 : 49 : 11	343 : 15 : 47	359 : 16 : 19	031 : 27 : 07
+
+10	359 : 16 : 19	015 : 16 : 50	030 : 42 : 00	031 : 25 : 41
+
+11	030 : 42 : 00	046 : 07 : 09	060 : 46 : 05	030 : 04 : 05
+
+12	060 : 46 : 05	075 : 25 : 01	089 : 52 : 01	029 : 05 : 55
+
+
+Planetary Info
+Sun	114 : 03 : 01	24.050282294150875	AtmaKaraka
+Moon	333 : 02 : 05	3.0347229187320863	GnatiKaraka
+Mars	041 : 49 : 23	11.823188546499367	BhratruKaraka
+Mercury	095 : 40 : 37	5.677073312423616	PuthraKaraka
+Jupiter	240 : 38 : 55	0.6487625549154927	DaraKaraka
+Venus	127 : 21 : 59	7.366616680780609	MatruKaraka
+Saturn	259 : 33 : 53	19.56477338267507	AmatyaKaraka
+Rahu	142 : 23 : 00	22.383379073722836	
+Ketu	322 : 23 : 00	22.383379073722836	
+Asc	104 : 19 : 01	14.31709257565295	
+
+Charts
+Bhava -> 4 , 12 , 2 , 4 , 8 , 5 , 9 , 5 , 11 , 4 , 
+Rasi -> 4 , 12 , 2 , 4 , 9 , 5 , 9 , 5 , 11 , 4 , 
+Hora -> 5 , 4 , 4 , 4 , 5 , 5 , 4 , 4 , 4 , 4 , 
+Drekkana -> 12 , 12 , 6 , 4 , 9 , 5 , 1 , 1 , 7 , 8 , 
+Chaturtamsa -> 1 , 12 , 5 , 4 , 9 , 5 , 3 , 11 , 5 , 7 , 
+Navamsa -> 11 , 4 , 1 , 5 , 1 , 3 , 6 , 7 , 1 , 8 , 
+Saptamsa -> 3 , 6 , 10 , 11 , 9 , 6 , 1 , 10 , 4 , 1 , 
+Dasamsa -> 8 , 9 , 1 , 1 , 9 , 7 , 3 , 12 , 6 , 4 , 
+Dwadasamsa -> 1 , 1 , 6 , 6 , 9 , 7 , 4 , 1 , 7 , 9 , 
+Shodasamsa -> 1 , 10 , 11 , 4 , 9 , 8 , 7 , 4 , 4 , 8 , 
+Vimshamsa -> 5 , 7 , 4 , 4 , 5 , 1 , 6 , 11 , 11 , 10 , 
+ChaturVimshamsa -> 11 , 6 , 1 , 8 , 5 , 10 , 8 , 10 , 10 , 3 , 
+Bhamsa -> 7 , 12 , 2 , 3 , 1 , 7 , 6 , 9 , 3 , 10 , 
+Trimshamsa -> 10 , 2 , 6 , 6 , 1 , 11 , 3 , 3 , 3 , 12 , 
+Khavedamsa -> 3 , 11 , 10 , 2 , 1 , 10 , 3 , 6 , 6 , 2 , 
+Akshvedamsa -> 1 , 1 , 10 , 9 , 9 , 4 , 2 , 2 , 2 , 10 , 
+Shastiamsa -> 4 , 6 , 1 , 3 , 10 , 7 , 12 , 1 , 7 , 8 , 
+Panchamsa -> 8 , 2 , 6 , 2 , 1 , 11 , 3 , 3 , 3 , 12 , 
+Shashtamsa -> 11 , 7 , 9 , 8 , 1 , 2 , 4 , 5 , 5 , 9 , 
+Ashtamsa -> 7 , 9 , 8 , 2 , 9 , 6 , 2 , 10 , 10 , 4 , 
+Ekadamsa -> 4 , 11 , 8 , 10 , 12 , 10 , 5 , 4 , 4 , 7 , 
+
+
+Thithi Chathruthi Paksha Krishna
+AshtaVarga 
+Ashtavarga
+Sun Astavarga 
+
+Mesha -->  4
+Vrishabha -->  6
+Mithuna -->  4
+Kataka -->  3
+Simha -->  5
+Kanya -->  3
+Thula -->  4
+Vrichika -->  2
+Dhanus -->  5
+Makara -->  5
+Kumbha -->  3
+Meena -->  4
+Sum 48
+
+RasiGuna 95
+GrahaGuna 66
+Moon Astavarga 
+
+Mesha -->  5
+Vrishabha -->  6
+Mithuna -->  3
+Kataka -->  3
+Simha -->  1
+Kanya -->  6
+Thula -->  5
+Vrichika -->  3
+Dhanus -->  5
+Makara -->  4
+Kumbha -->  5
+Meena -->  3
+Sum 49
+
+RasiGuna 116
+GrahaGuna 76
+Mars Astavarga 
+
+Mesha -->  2
+Vrishabha -->  6
+Mithuna -->  3
+Kataka -->  3
+Simha -->  3
+Kanya -->  5
+Thula -->  2
+Vrichika -->  4
+Dhanus -->  5
+Makara -->  2
+Kumbha -->  1
+Meena -->  3
+Sum 39
+
+RasiGuna 111
+GrahaGuna 84
+Mercury Astavarga 
+
+Mesha -->  4
+Vrishabha -->  5
+Mithuna -->  6
+Kataka -->  4
+Simha -->  5
+Kanya -->  3
+Thula -->  5
+Vrichika -->  5
+Dhanus -->  7
+Makara -->  3
+Kumbha -->  2
+Meena -->  5
+Sum 54
+
+RasiGuna 123
+GrahaGuna 73
+Jupiter Astavarga 
+
+Mesha -->  6
+Vrishabha -->  6
+Mithuna -->  3
+Kataka -->  5
+Simha -->  4
+Kanya -->  4
+Thula -->  4
+Vrichika -->  5
+Dhanus -->  5
+Makara -->  5
+Kumbha -->  4
+Meena -->  5
+Sum 56
+
+RasiGuna 43
+GrahaGuna 31
+Venus Astavarga 
+
+Mesha -->  5
+Vrishabha -->  5
+Mithuna -->  3
+Kataka -->  5
+Simha -->  4
+Kanya -->  6
+Thula -->  6
+Vrichika -->  4
+Dhanus -->  2
+Makara -->  2
+Kumbha -->  4
+Meena -->  6
+Sum 52
+
+RasiGuna 130
+GrahaGuna 58
+Saturn Astavarga 
+
+Mesha -->  6
+Vrishabha -->  6
+Mithuna -->  2
+Kataka -->  4
+Simha -->  2
+Kanya -->  2
+Thula -->  5
+Vrichika -->  1
+Dhanus -->  2
+Makara -->  3
+Kumbha -->  4
+Meena -->  2
+Sum 39
+
+RasiGuna 108
+GrahaGuna 67
+SarvaAshtavarga Astavarga 
+
+Mesha -->  32
+Vrishabha -->  40
+Mithuna -->  24
+Kataka -->  27
+Simha -->  24
+Kanya -->  29
+Thula -->  31
+Vrichika -->  24
+Dhanus -->  31
+Makara -->  24
+Kumbha -->  23
+Meena -->  28
+Sum 337
+
+RasiGuna 393
+GrahaGuna 187
+
+Total 674
+
+ShadBala 
+ShadBala 
+Sun --> 1
+Sun --> 30.62409996471233
+OchachaBala:-->Sun :-> 25.316572568616376
+OjaYugmarasyamsaBala:-->Sun :-> 15.0
+KendraBala:-->Sun :-> 60.0
+DrekkanaBala:-->Sun :-> 0.0
+SapthavargaBala:-->Sun :-> 75.0
+SthanaBala:-->Sun :-> 175.31657256861638
+DigBala:-->Sun :-> 27.07682507877001
+NaisargikaBala:-->Sun :-> 60.0
+AbdaBala:-->Sun :-> 0.0
+MasaBala:-->Sun :-> 0.0
+VaraBala:-->Sun :-> 0.0
+PakshaBala:-->Sun :-> 12.994813541527073
+TribhagaBala:-->Sun :-> 0.0
+HoraBala:-->Sun :-> 0.0
+NatonnataBala:-->Sun :-> 27.943559396169974
+AyanaBala:-->Sun :-> 99.79230009668233
+YuddhaBala:-->Sun :-> 0.0
+KalaBala:-->Sun :-> 140.73067303437938
+DrikBala:-->Sun :-> -11.41738494652813
+ChestaBala:-->Sun :-> 44.21430104214676
+IshtaBala:-->Sun :-> 33.45675658075898
+KashtaBala:-->Sun :-> 23.398763733547355
+ShadBala:-->Sun :-> 6.528444762253961
+ShadBala Per:-->Sun :-> 130.56889524507923
+ShadBala Rank:-->Sun :-> 2
+Moon --> 9
+Moon --> 33.767712168024836
+OchachaBala:-->Moon :-> 40.01157430624403
+OjaYugmarasyamsaBala:-->Moon :-> 30.0
+KendraBala:-->Moon :-> 15.0
+DrekkanaBala:-->Moon :-> 0.0
+SapthavargaBala:-->Moon :-> 116.25
+SthanaBala:-->Moon :-> 201.26157430624403
+DigBala:-->Moon :-> 14.08201153724294
+NaisargikaBala:-->Moon :-> 51.43
+AbdaBala:-->Moon :-> 0.0
+MasaBala:-->Moon :-> 0.0
+VaraBala:-->Moon :-> 0.0
+PakshaBala:-->Moon :-> 25.989627083054145
+TribhagaBala:-->Moon :-> 0.0
+HoraBala:-->Moon :-> 0.0
+NatonnataBala:-->Moon :-> 32.056440603830026
+AyanaBala:-->Moon :-> 31.83939364676802
+YuddhaBala:-->Moon :-> 0.0
+KalaBala:-->Moon :-> 89.88546133365219
+DrikBala:-->Moon :-> -14.680042633844955
+ChestaBala:-->Moon :-> 47.00518645847293
+IshtaBala:-->Moon :-> 43.36763206311875
+KashtaBala:-->Moon :-> 16.116633174426592
+ShadBala:-->Moon :-> 5.69965007572157
+ShadBala Per:-->Moon :-> 94.99416792869283
+ShadBala Rank:-->Moon :-> 7
+Mars --> 11
+Mars --> 72.1375237814162
+OchachaBala:-->Mars :-> 25.392270484500212
+OjaYugmarasyamsaBala:-->Mars :-> 15.0
+KendraBala:-->Mars :-> 30.0
+DrekkanaBala:-->Mars :-> 0.0
+SapthavargaBala:-->Mars :-> 93.75
+SthanaBala:-->Mars :-> 164.14227048450022
+DigBala:-->Mars :-> 51.15252299465385
+NaisargikaBala:-->Mars :-> 17.14
+AbdaBala:-->Mars :-> 15.0
+MasaBala:-->Mars :-> 0.0
+VaraBala:-->Mars :-> 45.0
+PakshaBala:-->Mars :-> 12.994813541527073
+TribhagaBala:-->Mars :-> 60.0
+HoraBala:-->Mars :-> 0.0
+NatonnataBala:-->Mars :-> 32.056440603830026
+AyanaBala:-->Mars :-> 56.86041731789755
+YuddhaBala:-->Mars :-> 0.0
+KalaBala:-->Mars :-> 221.91167146325463
+DrikBala:-->Mars :-> -0.630757821865096
+ChestaBala:-->Mars :-> 27.306680343674998
+IshtaBala:-->Mars :-> 26.332083345614354
+KashtaBala:-->Mars :-> 33.63690775963017
+ShadBala:-->Mars :-> 8.01703979107031
+ShadBala Per:-->Mars :-> 160.3407958214062
+ShadBala Rank:-->Mars :-> 1
+Mercury --> 1
+Mercury --> 40.20735769560163
+OchachaBala:-->Mercury :-> 36.89235777080786
+OjaYugmarasyamsaBala:-->Mercury :-> 15.0
+KendraBala:-->Mercury :-> 60.0
+DrekkanaBala:-->Mercury :-> 0.0
+SapthavargaBala:-->Mercury :-> 76.875
+SthanaBala:-->Mercury :-> 188.76735777080785
+DigBala:-->Mercury :-> 57.11999357892355
+NaisargikaBala:-->Mercury :-> 25.7
+AbdaBala:-->Mercury :-> 0.0
+MasaBala:-->Mercury :-> 0.0
+VaraBala:-->Mercury :-> 0.0
+PakshaBala:-->Mercury :-> 12.994813541527073
+TribhagaBala:-->Mercury :-> 0.0
+HoraBala:-->Mercury :-> 0.0
+NatonnataBala:-->Mercury :-> 60.0
+AyanaBala:-->Mercury :-> 56.00335668920156
+YuddhaBala:-->Mercury :-> 0.0
+KalaBala:-->Mercury :-> 128.99817023072862
+DrikBala:-->Mercury :-> -12.1856493507876
+ChestaBala:-->Mercury :-> 22.722294262993955
+IshtaBala:-->Mercury :-> 28.953048359783256
+KashtaBala:-->Mercury :-> 29.349614772528767
+ShadBala:-->Mercury :-> 6.852036108211106
+ShadBala Per:-->Mercury :-> 97.88623011730151
+ShadBala Rank:-->Mercury :-> 6
+Jupiter --> 6
+Jupiter --> 0.8158246315422086
+OchachaBala:-->Jupiter :-> 11.450412481694835
+OjaYugmarasyamsaBala:-->Jupiter :-> 30.0
+KendraBala:-->Jupiter :-> 15.0
+DrekkanaBala:-->Jupiter :-> 15.0
+SapthavargaBala:-->Jupiter :-> 157.5
+SthanaBala:-->Jupiter :-> 228.95041248169483
+DigBala:-->Jupiter :-> 14.55611000691249
+NaisargikaBala:-->Jupiter :-> 34.28
+AbdaBala:-->Jupiter :-> 0.0
+MasaBala:-->Jupiter :-> 0.0
+VaraBala:-->Jupiter :-> 0.0
+PakshaBala:-->Jupiter :-> 47.00518645847293
+TribhagaBala:-->Jupiter :-> 60.0
+HoraBala:-->Jupiter :-> 0.0
+NatonnataBala:-->Jupiter :-> 27.943559396169974
+AyanaBala:-->Jupiter :-> 0.4365416514099074
+YuddhaBala:-->Jupiter :-> 0.0
+KalaBala:-->Jupiter :-> 135.3852875060528
+DrikBala:-->Jupiter :-> -15.46277415287779
+ChestaBala:-->Jupiter :-> 44.81030700500389
+IshtaBala:-->Jupiter :-> 22.651633465131695
+KashtaBala:-->Jupiter :-> 27.156091939687318
+ShadBala:-->Jupiter :-> 7.375322380779769
+ShadBala Per:-->Jupiter :-> 113.4664981658426
+ShadBala Rank:-->Jupiter :-> 5
+Venus --> 2
+Venus --> 64.29161728341086
+OchachaBala:-->Venus :-> 16.544461106406462
+OjaYugmarasyamsaBala:-->Venus :-> 0.0
+KendraBala:-->Venus :-> 30.0
+DrekkanaBala:-->Venus :-> 0.0
+SapthavargaBala:-->Venus :-> 105.0
+SthanaBala:-->Venus :-> 151.54446110640646
+DigBala:-->Venus :-> 37.36195305010657
+NaisargikaBala:-->Venus :-> 42.85
+AbdaBala:-->Venus :-> 0.0
+MasaBala:-->Venus :-> 0.0
+VaraBala:-->Venus :-> 0.0
+PakshaBala:-->Venus :-> 47.00518645847293
+TribhagaBala:-->Venus :-> 0.0
+HoraBala:-->Venus :-> 60.0
+NatonnataBala:-->Venus :-> 27.943559396169974
+AyanaBala:-->Venus :-> 44.32688880593803
+YuddhaBala:-->Venus :-> 0.0
+KalaBala:-->Venus :-> 179.27563466058095
+DrikBala:-->Venus :-> -7.377498189109151
+ChestaBala:-->Venus :-> 9.021440383019126
+IshtaBala:-->Venus :-> 12.216991018275513
+KashtaBala:-->Venus :-> 47.06698184688593
+ShadBala:-->Venus :-> 6.877933183516733
+ShadBala Per:-->Venus :-> 125.05333060939515
+ShadBala Rank:-->Venus :-> 3
+Saturn --> 6
+Saturn --> 71.29667453505719
+OchachaBala:-->Saturn :-> 40.145075539108305
+OjaYugmarasyamsaBala:-->Saturn :-> 15.0
+KendraBala:-->Saturn :-> 15.0
+DrekkanaBala:-->Saturn :-> 15.0
+SapthavargaBala:-->Saturn :-> 37.5
+SthanaBala:-->Saturn :-> 122.6450755391083
+DigBala:-->Saturn :-> 51.74922693567404
+NaisargikaBala:-->Saturn :-> 8.57
+AbdaBala:-->Saturn :-> 0.0
+MasaBala:-->Saturn :-> 30.0
+VaraBala:-->Saturn :-> 0.0
+PakshaBala:-->Saturn :-> 12.994813541527073
+TribhagaBala:-->Saturn :-> 0.0
+HoraBala:-->Saturn :-> 0.0
+NatonnataBala:-->Saturn :-> 32.056440603830026
+AyanaBala:-->Saturn :-> 59.07038531384949
+YuddhaBala:-->Saturn :-> 0.0
+KalaBala:-->Saturn :-> 134.1216394592066
+DrikBala:-->Saturn :-> -19.330812025953456
+ChestaBala:-->Saturn :-> 48.63079702772302
+IshtaBala:-->Saturn :-> 44.18469214790326
+KashtaBala:-->Saturn :-> 15.024468915575843
+ShadBala:-->Saturn :-> 5.773098782262641
+ShadBala Per:-->Saturn :-> 115.46197564525285
+ShadBala Rank:-->Saturn :-> 4
+BhavaAdhipathiBala: 1 : -->5.69965007572157
+BhavaDigBala: 1 : -->30.0
+BhavaDrishtiBala: 1 : -->17.206991295695325
+BhavaBala: 1 : -->389.1859958389895
+BhavaBala Rank: 1 : -->12
+BhavaAdhipathiBala: 2 : -->6.528444762253961
+BhavaDigBala: 2 : -->20.0
+BhavaDrishtiBala: 2 : -->29.485617193369492
+BhavaBala: 2 : -->441.19230292860715
+BhavaBala Rank: 2 : -->9
+BhavaAdhipathiBala: 3 : -->6.852036108211106
+BhavaDigBala: 3 : -->40.0
+BhavaDrishtiBala: 3 : -->4.215304467962392
+BhavaBala: 3 : -->455.3374709606287
+BhavaBala Rank: 3 : -->8
+BhavaAdhipathiBala: 4 : -->6.877933183516733
+BhavaDigBala: 4 : -->30.0
+BhavaDrishtiBala: 4 : -->13.635542147282479
+BhavaBala: 4 : -->456.31153315828647
+BhavaBala Rank: 4 : -->7
+BhavaAdhipathiBala: 5 : -->8.01703979107031
+BhavaDigBala: 5 : -->40.0
+BhavaDrishtiBala: 5 : -->0.8948320520257891
+BhavaBala: 5 : -->521.9172195162444
+BhavaBala Rank: 5 : -->2
+BhavaAdhipathiBala: 6 : -->7.375322380779769
+BhavaDigBala: 6 : -->20.0
+BhavaDrishtiBala: 6 : -->6.056288413509286
+BhavaBala: 6 : -->468.57563126029544
+BhavaBala Rank: 6 : -->6
+BhavaAdhipathiBala: 7 : -->5.773098782262641
+BhavaDigBala: 7 : -->30.0
+BhavaDrishtiBala: 7 : -->48.667726189083375
+BhavaBala: 7 : -->425.0536531248419
+BhavaBala Rank: 7 : -->10
+BhavaAdhipathiBala: 8 : -->5.773098782262641
+BhavaDigBala: 8 : -->10.0
+BhavaDrishtiBala: 8 : -->63.51020129633837
+BhavaBala: 8 : -->419.8961282320969
+BhavaBala Rank: 8 : -->11
+BhavaAdhipathiBala: 9 : -->7.375322380779769
+BhavaDigBala: 9 : -->10.0
+BhavaDrishtiBala: 9 : -->45.639562483219834
+BhavaBala: 9 : -->498.158905330006
+BhavaBala Rank: 9 : -->3
+BhavaAdhipathiBala: 10 : -->8.01703979107031
+BhavaDigBala: 10 : -->60.0
+BhavaDrishtiBala: 10 : -->47.664448405771786
+BhavaBala: 10 : -->588.6868358699903
+BhavaBala Rank: 10 : -->1
+BhavaAdhipathiBala: 11 : -->6.877933183516733
+BhavaDigBala: 11 : -->50.0
+BhavaDrishtiBala: 11 : -->24.723288407372188
+BhavaBala: 11 : -->487.3992794183762
+BhavaBala Rank: 11 : -->5
+BhavaAdhipathiBala: 12 : -->6.852036108211106
+BhavaDigBala: 12 : -->50.0
+BhavaDrishtiBala: 12 : -->29.538174894553755
+BhavaBala: 12 : -->490.6603413872201
+BhavaBala Rank: 12 : -->4
+
+
+Dasas
+Ju20-Dec-1944
+Sa20-Dec-1960
+Me20-Dec-1979
+Ke20-Dec-1996
+Ve/Ve20-Dec-2003
+Ve/Su20-Apr-2007
+Ve/Mo20-Apr-2008
+Ve/Ma20-Dec-2009
+Ve/Ra19-Feb-2011
+Ve/Ju19-Feb-2014
+Ve/Sa/Sa20-Oct-2016
+*Ve/Sa/Me21-Apr-2017
+Ve/Sa/Ke02-Oct-2017
+Ve/Sa/Ve08-Dec-2017
+Ve/Sa/Su19-Jun-2018
+Ve/Sa/Mo15-Aug-2018
+Ve/Sa/Ma20-Nov-2018
+Ve/Sa/Ra26-Jan-2019
+Ve/Sa/Ju19-Jul-2019
+Ve/Me20-Dec-2019
+Ve/Ke20-Oct-2022
+Su20-Dec-2023
+Mo20-Dec-2029
+Ma20-Dec-2039
+Ra20-Dec-2046
+
+
+----------------------Suba----------------------
+
+
+Bhava
+Ascendant: 163 : 09 : 28
+Sidereal Time: 006 : 27 : 21
+1	147 : 53 : 28	163 : 09 : 28	178 : 22 : 19	030 : 28 : 50
+
+2	178 : 22 : 19	193 : 35 : 10	208 : 31 : 04	030 : 08 : 45
+
+3	208 : 31 : 04	223 : 26 : 58	238 : 01 : 01	029 : 29 : 57
+
+4	238 : 01 : 01	252 : 35 : 04	267 : 20 : 03	029 : 19 : 01
+
+5	267 : 20 : 03	282 : 05 : 01	297 : 21 : 15	030 : 01 : 12
+
+6	297 : 21 : 15	312 : 37 : 29	327 : 53 : 28	030 : 32 : 13
+
+7	327 : 53 : 28	343 : 09 : 28	358 : 22 : 19	030 : 28 : 50
+
+8	358 : 22 : 19	013 : 35 : 10	028 : 31 : 04	030 : 08 : 45
+
+9	028 : 31 : 04	043 : 26 : 58	058 : 01 : 01	029 : 29 : 57
+
+10	058 : 01 : 01	072 : 35 : 04	087 : 20 : 03	029 : 19 : 01
+
+11	087 : 20 : 03	102 : 05 : 01	117 : 21 : 15	030 : 01 : 12
+
+12	117 : 21 : 15	132 : 37 : 29	147 : 53 : 28	030 : 32 : 13
+
+
+Planetary Info
+Sun	347 : 19 : 25	17.323878694597795	BhratruKaraka
+Moon	146 : 33 : 25	26.557199724748358	AmatyaKaraka
+Mars	272 : 00 : 42	2.0117998747834918	DaraKaraka
+Mercury	328 : 45 : 44	28.76248428084091	AtmaKaraka
+Jupiter	011 : 20 : 08	11.335623358338509	MatruKaraka
+Venus	033 : 09 : 05	3.151515858458744	GnatiKaraka
+Saturn	248 : 46 : 05	8.768224416638986	PuthraKaraka
+Rahu	329 : 25 : 29	29.424893789554403	
+Ketu	149 : 25 : 29	29.424893789554403	
+Asc	163 : 09 : 28	13.157831434709777	
+
+Charts
+Bhava -> 12 , 5 , 10 , 12 , 1 , 2 , 9 , 12 , 6 , 6 , 
+Rasi -> 12 , 5 , 10 , 11 , 1 , 2 , 9 , 11 , 5 , 6 , 
+Hora -> 5 , 4 , 4 , 4 , 5 , 4 , 5 , 4 , 4 , 4 , 
+Drekkana -> 4 , 1 , 10 , 7 , 5 , 2 , 9 , 7 , 1 , 10 , 
+Chaturtamsa -> 6 , 2 , 10 , 8 , 4 , 2 , 12 , 8 , 2 , 9 , 
+Navamsa -> 9 , 8 , 10 , 3 , 4 , 10 , 3 , 3 , 9 , 1 , 
+Saptamsa -> 10 , 11 , 4 , 5 , 3 , 8 , 11 , 5 , 11 , 3 , 
+Dasamsa -> 1 , 1 , 6 , 8 , 4 , 11 , 11 , 8 , 2 , 6 , 
+Dwadasamsa -> 6 , 3 , 10 , 10 , 5 , 3 , 12 , 10 , 4 , 11 , 
+Shodasamsa -> 6 , 7 , 2 , 8 , 7 , 6 , 1 , 8 , 8 , 4 , 
+Vimshamsa -> 4 , 2 , 2 , 4 , 8 , 11 , 10 , 4 , 4 , 1 , 
+ChaturVimshamsa -> 5 , 2 , 5 , 4 , 2 , 6 , 12 , 4 , 4 , 2 , 
+Bhamsa -> 1 , 12 , 5 , 8 , 11 , 6 , 8 , 9 , 3 , 3 , 
+Trimshamsa -> 12 , 7 , 2 , 7 , 9 , 2 , 11 , 7 , 7 , 12 , 
+Khavedamsa -> 6 , 12 , 9 , 3 , 4 , 11 , 12 , 4 , 4 , 12 , 
+Akshvedamsa -> 10 , 8 , 4 , 12 , 6 , 9 , 10 , 1 , 1 , 4 , 
+Shastiamsa -> 10 , 10 , 2 , 8 , 11 , 8 , 2 , 9 , 3 , 8 , 
+Panchamsa -> 12 , 7 , 2 , 7 , 11 , 2 , 11 , 7 , 7 , 12 , 
+Shashtamsa -> 10 , 6 , 7 , 6 , 3 , 7 , 2 , 6 , 6 , 9 , 
+Ashtamsa -> 1 , 12 , 1 , 12 , 4 , 5 , 11 , 12 , 12 , 12 , 
+Ekadamsa -> 6 , 3 , 12 , 2 , 8 , 11 , 9 , 2 , 2 , 8 , 
+
+
+Thithi Chathurdasi Paksha Shukla
+AshtaVarga 
+Ashtavarga
+Sun Astavarga 
+
+Mesha -->  4
+Vrishabha -->  1
+Mithuna -->  5
+Kataka -->  4
+Simha -->  4
+Kanya -->  4
+Thula -->  6
+Vrichika -->  5
+Dhanus -->  5
+Makara -->  5
+Kumbha -->  3
+Meena -->  2
+Sum 48
+
+RasiGuna 97
+GrahaGuna 37
+Moon Astavarga 
+
+Mesha -->  3
+Vrishabha -->  5
+Mithuna -->  4
+Kataka -->  3
+Simha -->  4
+Kanya -->  4
+Thula -->  5
+Vrichika -->  5
+Dhanus -->  2
+Makara -->  4
+Kumbha -->  7
+Meena -->  3
+Sum 49
+
+RasiGuna 78
+GrahaGuna 42
+Mars Astavarga 
+
+Mesha -->  3
+Vrishabha -->  1
+Mithuna -->  4
+Kataka -->  5
+Simha -->  3
+Kanya -->  3
+Thula -->  4
+Vrichika -->  2
+Dhanus -->  4
+Makara -->  4
+Kumbha -->  3
+Meena -->  3
+Sum 39
+
+RasiGuna 65
+GrahaGuna 34
+Mercury Astavarga 
+
+Mesha -->  3
+Vrishabha -->  2
+Mithuna -->  5
+Kataka -->  6
+Simha -->  4
+Kanya -->  6
+Thula -->  4
+Vrichika -->  5
+Dhanus -->  4
+Makara -->  6
+Kumbha -->  5
+Meena -->  4
+Sum 54
+
+RasiGuna 86
+GrahaGuna 47
+Jupiter Astavarga 
+
+Mesha -->  5
+Vrishabha -->  5
+Mithuna -->  6
+Kataka -->  4
+Simha -->  1
+Kanya -->  4
+Thula -->  6
+Vrichika -->  5
+Dhanus -->  4
+Makara -->  5
+Kumbha -->  7
+Meena -->  4
+Sum 56
+
+RasiGuna 81
+GrahaGuna 75
+Venus Astavarga 
+
+Mesha -->  4
+Vrishabha -->  3
+Mithuna -->  4
+Kataka -->  5
+Simha -->  4
+Kanya -->  5
+Thula -->  5
+Vrichika -->  4
+Dhanus -->  6
+Makara -->  4
+Kumbha -->  4
+Meena -->  4
+Sum 52
+
+RasiGuna 44
+GrahaGuna 18
+Saturn Astavarga 
+
+Mesha -->  3
+Vrishabha -->  2
+Mithuna -->  4
+Kataka -->  2
+Simha -->  1
+Kanya -->  4
+Thula -->  6
+Vrichika -->  3
+Dhanus -->  4
+Makara -->  3
+Kumbha -->  3
+Meena -->  4
+Sum 39
+
+RasiGuna 101
+GrahaGuna 53
+SarvaAshtavarga Astavarga 
+
+Mesha -->  25
+Vrishabha -->  19
+Mithuna -->  32
+Kataka -->  29
+Simha -->  21
+Kanya -->  30
+Thula -->  36
+Vrichika -->  29
+Dhanus -->  29
+Makara -->  31
+Kumbha -->  32
+Meena -->  24
+Sum 337
+
+RasiGuna 343
+GrahaGuna 115
+
+Total 674
+
+ShadBala 
+ShadBala 
+Sun --> 7
+Sun --> 72.617367198955
+OchachaBala:-->Sun :-> 52.441292898199265
+OjaYugmarasyamsaBala:-->Sun :-> 15.0
+KendraBala:-->Sun :-> 60.0
+DrekkanaBala:-->Sun :-> 0.0
+SapthavargaBala:-->Sun :-> 127.5
+SthanaBala:-->Sun :-> 254.94129289819926
+DigBala:-->Sun :-> 31.579771855762203
+NaisargikaBala:-->Sun :-> 60.0
+AbdaBala:-->Sun :-> 0.0
+MasaBala:-->Sun :-> 0.0
+VaraBala:-->Sun :-> 0.0
+PakshaBala:-->Sun :-> 6.922226323283148
+TribhagaBala:-->Sun :-> 0.0
+HoraBala:-->Sun :-> 0.0
+NatonnataBala:-->Sun :-> 28.82588989534465
+AyanaBala:-->Sun :-> 60.0
+YuddhaBala:-->Sun :-> 0.0
+KalaBala:-->Sun :-> 95.7481162186278
+DrikBala:-->Sun :-> -5.354397791439904
+ChestaBala:-->Sun :-> 33.67225013446082
+IshtaBala:-->Sun :-> 42.021617434871416
+KashtaBala:-->Sun :-> 14.106868890121733
+ShadBala:-->Sun :-> 7.281913053019156
+ShadBala Per:-->Sun :-> 145.63826106038312
+ShadBala Rank:-->Sun :-> 2
+Moon --> 12
+Moon --> 8.739187018451544
+OchachaBala:-->Moon :-> 22.147600091750547
+OjaYugmarasyamsaBala:-->Moon :-> 15.0
+KendraBala:-->Moon :-> 15.0
+DrekkanaBala:-->Moon :-> 15.0
+SapthavargaBala:-->Moon :-> 71.25
+SthanaBala:-->Moon :-> 138.39760009175055
+DigBala:-->Moon :-> 24.657545532479052
+NaisargikaBala:-->Moon :-> 51.43
+AbdaBala:-->Moon :-> 0.0
+MasaBala:-->Moon :-> 30.0
+VaraBala:-->Moon :-> 0.0
+PakshaBala:-->Moon :-> 106.1555473534337
+TribhagaBala:-->Moon :-> 0.0
+HoraBala:-->Moon :-> 0.0
+NatonnataBala:-->Moon :-> 31.17411010465535
+AyanaBala:-->Moon :-> 25.097952581859648
+YuddhaBala:-->Moon :-> 0.0
+KalaBala:-->Moon :-> 192.4276100399487
+DrikBala:-->Moon :-> -16.2033259171584
+ChestaBala:-->Moon :-> 53.07777367671685
+IshtaBala:-->Moon :-> 34.286226172507945
+KashtaBala:-->Moon :-> 16.187120776849877
+ShadBala:-->Moon :-> 6.511823829116998
+ShadBala Per:-->Moon :-> 108.53039715194997
+ShadBala Rank:-->Moon :-> 5
+Mars --> 5
+Mars --> 31.71352192570516
+OchachaBala:-->Mars :-> 51.33726662492783
+OjaYugmarasyamsaBala:-->Mars :-> 0.0
+KendraBala:-->Mars :-> 30.0
+DrekkanaBala:-->Mars :-> 15.0
+SapthavargaBala:-->Mars :-> 78.75
+SthanaBala:-->Mars :-> 175.08726662492782
+DigBala:-->Mars :-> 6.475745582490769
+NaisargikaBala:-->Mars :-> 17.14
+AbdaBala:-->Mars :-> 15.0
+MasaBala:-->Mars :-> 0.0
+VaraBala:-->Mars :-> 0.0
+PakshaBala:-->Mars :-> 6.922226323283148
+TribhagaBala:-->Mars :-> 0.0
+HoraBala:-->Mars :-> 0.0
+NatonnataBala:-->Mars :-> 31.17411010465535
+AyanaBala:-->Mars :-> 3.313473246576697
+YuddhaBala:-->Mars :-> 0.0
+KalaBala:-->Mars :-> 56.409809674515195
+DrikBala:-->Mars :-> 24.280282543418213
+ChestaBala:-->Mars :-> 29.551145036795372
+IshtaBala:-->Mars :-> 38.94964713352198
+KashtaBala:-->Mars :-> 16.241007115400347
+ShadBala:-->Mars :-> 5.149070824369122
+ShadBala Per:-->Mars :-> 102.98141648738246
+ShadBala Rank:-->Mars :-> 6
+Mercury --> 6
+Mercury --> 5.70609759261272
+OchachaBala:-->Mercury :-> 5.412505239719697
+OjaYugmarasyamsaBala:-->Mercury :-> 30.0
+KendraBala:-->Mercury :-> 15.0
+DrekkanaBala:-->Mercury :-> 0.0
+SapthavargaBala:-->Mercury :-> 129.375
+SthanaBala:-->Mercury :-> 179.7875052397197
+DigBala:-->Mercury :-> 4.798449051289613
+NaisargikaBala:-->Mercury :-> 25.7
+AbdaBala:-->Mercury :-> 0.0
+MasaBala:-->Mercury :-> 0.0
+VaraBala:-->Mercury :-> 0.0
+PakshaBala:-->Mercury :-> 6.922226323283148
+TribhagaBala:-->Mercury :-> 0.0
+HoraBala:-->Mercury :-> 60.0
+NatonnataBala:-->Mercury :-> 60.0
+AyanaBala:-->Mercury :-> 33.79327934966048
+YuddhaBala:-->Mercury :-> 0.0
+KalaBala:-->Mercury :-> 160.71550567294364
+DrikBala:-->Mercury :-> -8.069432139116994
+ChestaBala:-->Mercury :-> 7.1091914267121865
+IshtaBala:-->Mercury :-> 6.203106951137475
+KashtaBala:-->Mercury :-> 53.73245514455241
+ShadBala:-->Mercury :-> 6.167353654192469
+ShadBala Per:-->Mercury :-> 88.10505220274956
+ShadBala Rank:-->Mercury :-> 7
+Jupiter --> 8
+Jupiter --> 85.20724352265613
+OchachaBala:-->Jupiter :-> 32.1118744527795
+OjaYugmarasyamsaBala:-->Jupiter :-> 15.0
+KendraBala:-->Jupiter :-> 30.0
+DrekkanaBala:-->Jupiter :-> 0.0
+SapthavargaBala:-->Jupiter :-> 135.0
+SthanaBala:-->Jupiter :-> 212.1118744527795
+DigBala:-->Jupiter :-> 9.392597307876258
+NaisargikaBala:-->Jupiter :-> 34.28
+AbdaBala:-->Jupiter :-> 0.0
+MasaBala:-->Jupiter :-> 0.0
+VaraBala:-->Jupiter :-> 45.0
+PakshaBala:-->Jupiter :-> 53.07777367671685
+TribhagaBala:-->Jupiter :-> 60.0
+HoraBala:-->Jupiter :-> 0.0
+NatonnataBala:-->Jupiter :-> 28.82588989534465
+AyanaBala:-->Jupiter :-> 46.73405559037476
+YuddhaBala:-->Jupiter :-> 0.0
+KalaBala:-->Jupiter :-> 233.63771916243627
+DrikBala:-->Jupiter :-> -12.861617668016706
+ChestaBala:-->Jupiter :-> 9.374793476871295
+IshtaBala:-->Jupiter :-> 17.350567459020677
+KashtaBala:-->Jupiter :-> 37.57448755965914
+ShadBala:-->Jupiter :-> 8.098922778865775
+ShadBala Per:-->Jupiter :-> 124.5988119825504
+ShadBala Rank:-->Jupiter :-> 4
+Venus --> 9
+Venus --> 31.031626335262768
+OchachaBala:-->Venus :-> 47.94949471384709
+OjaYugmarasyamsaBala:-->Venus :-> 30.0
+KendraBala:-->Venus :-> 15.0
+DrekkanaBala:-->Venus :-> 0.0
+SapthavargaBala:-->Venus :-> 131.25
+SthanaBala:-->Venus :-> 224.1994947138471
+DigBala:-->Venus :-> 13.144349089617485
+NaisargikaBala:-->Venus :-> 42.85
+AbdaBala:-->Venus :-> 0.0
+MasaBala:-->Venus :-> 0.0
+VaraBala:-->Venus :-> 0.0
+PakshaBala:-->Venus :-> 53.07777367671685
+TribhagaBala:-->Venus :-> 0.0
+HoraBala:-->Venus :-> 0.0
+NatonnataBala:-->Venus :-> 28.82588989534465
+AyanaBala:-->Venus :-> 54.757327035929784
+YuddhaBala:-->Venus :-> 0.0
+KalaBala:-->Venus :-> 136.6609906079913
+DrikBala:-->Venus :-> -8.769250200227134
+ChestaBala:-->Venus :-> 21.707378797056037
+IshtaBala:-->Venus :-> 32.26232857189504
+KashtaBala:-->Venus :-> 21.481281019220603
+ShadBala:-->Venus :-> 7.16321605013808
+ShadBala Per:-->Venus :-> 130.24029182069236
+ShadBala Rank:-->Venus :-> 3
+Saturn --> 4
+Saturn --> 73.8022632223506
+OchachaBala:-->Saturn :-> 43.74392519445367
+OjaYugmarasyamsaBala:-->Saturn :-> 30.0
+KendraBala:-->Saturn :-> 60.0
+DrekkanaBala:-->Saturn :-> 0.0
+SapthavargaBala:-->Saturn :-> 101.25
+SthanaBala:-->Saturn :-> 234.99392519445365
+DigBala:-->Saturn :-> 28.53679766064307
+NaisargikaBala:-->Saturn :-> 8.57
+AbdaBala:-->Saturn :-> 0.0
+MasaBala:-->Saturn :-> 0.0
+VaraBala:-->Saturn :-> 0.0
+PakshaBala:-->Saturn :-> 6.922226323283148
+TribhagaBala:-->Saturn :-> 60.0
+HoraBala:-->Saturn :-> 0.0
+NatonnataBala:-->Saturn :-> 31.17411010465535
+AyanaBala:-->Saturn :-> 59.822254168719404
+YuddhaBala:-->Saturn :-> 0.0
+KalaBala:-->Saturn :-> 157.9185905966579
+DrikBala:-->Saturn :-> 20.77371894368349
+ChestaBala:-->Saturn :-> 34.08603203258789
+IshtaBala:-->Saturn :-> 38.61420509876224
+KashtaBala:-->Saturn :-> 20.524604790026597
+ShadBala:-->Saturn :-> 8.0813177404671
+ShadBala Per:-->Saturn :-> 161.626354809342
+ShadBala Rank:-->Saturn :-> 1
+BhavaAdhipathiBala: 1 : -->6.167353654192469
+BhavaDigBala: 1 : -->60.0
+BhavaDrishtiBala: 1 : -->27.97014213393902
+BhavaBala: 1 : -->458.0113613854872
+BhavaBala Rank: 1 : -->8
+BhavaAdhipathiBala: 2 : -->7.16321605013808
+BhavaDigBala: 2 : -->50.0
+BhavaDrishtiBala: 2 : -->89.78840832437177
+BhavaBala: 2 : -->569.5813713326565
+BhavaBala Rank: 2 : -->2
+BhavaAdhipathiBala: 3 : -->5.149070824369122
+BhavaDigBala: 3 : -->20.0
+BhavaDrishtiBala: 3 : -->80.3009411740194
+BhavaBala: 3 : -->409.24519063616674
+BhavaBala Rank: 3 : -->11
+BhavaAdhipathiBala: 4 : -->8.098922778865775
+BhavaDigBala: 4 : -->30.0
+BhavaDrishtiBala: 4 : -->82.4395249124408
+BhavaBala: 4 : -->598.3748916443873
+BhavaBala Rank: 4 : -->1
+BhavaAdhipathiBala: 5 : -->8.0813177404671
+BhavaDigBala: 5 : -->10.0
+BhavaDrishtiBala: 5 : -->23.55827617120058
+BhavaBala: 5 : -->518.4373405992266
+BhavaBala Rank: 5 : -->4
+BhavaAdhipathiBala: 6 : -->8.0813177404671
+BhavaDigBala: 6 : -->10.0
+BhavaDrishtiBala: 6 : -->-6.69112929155915
+BhavaBala: 6 : -->488.1879351364668
+BhavaBala Rank: 6 : -->7
+BhavaAdhipathiBala: 7 : -->8.098922778865775
+BhavaDigBala: 7 : -->30.0
+BhavaDrishtiBala: 7 : -->-4.312885976467893
+BhavaBala: 7 : -->511.6224807554786
+BhavaBala Rank: 7 : -->5
+BhavaAdhipathiBala: 8 : -->5.149070824369122
+BhavaDigBala: 8 : -->40.0
+BhavaDrishtiBala: 8 : -->-3.315456588000398
+BhavaBala: 8 : -->345.62879287414694
+BhavaBala Rank: 8 : -->12
+BhavaAdhipathiBala: 9 : -->7.16321605013808
+BhavaDigBala: 9 : -->50.0
+BhavaDrishtiBala: 9 : -->25.88569089518614
+BhavaBala: 9 : -->505.67865390347094
+BhavaBala Rank: 9 : -->6
+BhavaAdhipathiBala: 10 : -->6.167353654192469
+BhavaDigBala: 10 : -->30.0
+BhavaDrishtiBala: 10 : -->27.389100433415585
+BhavaBala: 10 : -->427.43031968496376
+BhavaBala Rank: 10 : -->10
+BhavaAdhipathiBala: 11 : -->6.511823829116998
+BhavaDigBala: 11 : -->10.0
+BhavaDrishtiBala: 11 : -->34.55611098542463
+BhavaBala: 11 : -->435.26554073244455
+BhavaBala Rank: 11 : -->9
+BhavaAdhipathiBala: 12 : -->7.281913053019156
+BhavaDigBala: 12 : -->40.0
+BhavaDrishtiBala: 12 : -->74.63535653368069
+BhavaBala: 12 : -->551.55013971483
+BhavaBala Rank: 12 : -->3
+
+
+Dasas
+Ve31-May-1968
+Su31-May-1988
+Mo31-May-1994
+Ma31-May-2004
+Ra/Ra31-May-2011
+Ra/Ju11-Feb-2014
+Ra/Sa/Sa06-Jul-2016
+Ra/Sa/Me18-Dec-2016
+Ra/Sa/Ke15-May-2017
+*Ra/Sa/Ve14-Jul-2017
+Ra/Sa/Su04-Jan-2018
+Ra/Sa/Mo25-Feb-2018
+Ra/Sa/Ma23-May-2018
+Ra/Sa/Ra22-Jul-2018
+Ra/Sa/Ju25-Dec-2018
+Ra/Me13-May-2019
+Ra/Ke30-Nov-2021
+Ra/Ve18-Dec-2022
+Ra/Su18-Dec-2025
+Ra/Mo11-Nov-2026
+Ra/Ma12-May-2028
+Ju31-May-2029
+Sa31-May-2045
+Me31-May-2064
+Ke31-May-2081
+
+
+----------------------Viji----------------------
+
+
+Bhava
+Ascendant: 192 : 50 : 34
+Sidereal Time: 008 : 27 : 43
+1	178 : 10 : 59	192 : 50 : 34	207 : 31 : 56	029 : 20 : 57
+
+2	207 : 31 : 56	222 : 13 : 17	236 : 43 : 27	029 : 11 : 31
+
+3	236 : 43 : 27	251 : 13 : 37	266 : 06 : 12	029 : 22 : 45
+
+4	266 : 06 : 12	280 : 58 : 48	296 : 34 : 13	030 : 28 : 01
+
+5	296 : 34 : 13	312 : 09 : 39	327 : 50 : 31	031 : 16 : 17
+
+6	327 : 50 : 31	343 : 31 : 23	358 : 10 : 59	030 : 20 : 27
+
+7	358 : 10 : 59	012 : 50 : 34	027 : 31 : 56	029 : 20 : 57
+
+8	027 : 31 : 56	042 : 13 : 17	056 : 43 : 27	029 : 11 : 31
+
+9	056 : 43 : 27	071 : 13 : 37	086 : 06 : 12	029 : 22 : 45
+
+10	086 : 06 : 12	100 : 58 : 48	116 : 34 : 13	030 : 28 : 01
+
+11	116 : 34 : 13	132 : 09 : 39	147 : 50 : 31	031 : 16 : 17
+
+12	147 : 50 : 31	163 : 31 : 23	178 : 10 : 59	030 : 20 : 27
+
+
+Planetary Info
+Sun	110 : 48 : 49	20.81373623911354	BhratruKaraka
+Moon	317 : 14 : 26	17.240702180266	MatruKaraka
+Mars	188 : 33 : 33	8.559335305994239	GnatiKaraka
+Mercury	124 : 00 : 07	4.0021130072207285	DaraKaraka
+Jupiter	189 : 09 : 39	9.16097847476064	PuthraKaraka
+Venus	087 : 37 : 23	27.623117929781685	AtmaKaraka
+Saturn	173 : 51 : 36	23.860243610692066	AmatyaKaraka
+Rahu	079 : 25 : 48	19.430193781333756	
+Ketu	259 : 25 : 48	19.43019378133374	
+Asc	192 : 50 : 34	12.843031854349476	
+
+Charts
+Bhava -> 4 , 11 , 7 , 5 , 7 , 4 , 6 , 3 , 9 , 7 , 
+Rasi -> 4 , 11 , 7 , 5 , 7 , 3 , 6 , 3 , 9 , 7 , 
+Hora -> 5 , 4 , 5 , 5 , 5 , 4 , 5 , 4 , 4 , 5 , 
+Drekkana -> 12 , 3 , 7 , 5 , 7 , 11 , 2 , 7 , 1 , 11 , 
+Chaturtamsa -> 10 , 5 , 10 , 5 , 10 , 12 , 3 , 9 , 3 , 10 , 
+Navamsa -> 10 , 12 , 9 , 2 , 9 , 3 , 5 , 12 , 6 , 10 , 
+Saptamsa -> 2 , 3 , 8 , 5 , 9 , 9 , 5 , 7 , 1 , 9 , 
+Dasamsa -> 6 , 4 , 9 , 6 , 10 , 12 , 9 , 9 , 3 , 11 , 
+Dwadasamsa -> 12 , 5 , 10 , 6 , 10 , 2 , 3 , 10 , 4 , 12 , 
+Shodasamsa -> 12 , 2 , 5 , 7 , 5 , 11 , 9 , 7 , 7 , 7 , 
+Vimshamsa -> 2 , 8 , 6 , 11 , 7 , 11 , 8 , 5 , 5 , 9 , 
+ChaturVimshamsa -> 8 , 6 , 11 , 8 , 12 , 3 , 11 , 8 , 8 , 3 , 
+Bhamsa -> 4 , 10 , 2 , 4 , 3 , 7 , 1 , 12 , 6 , 6 , 
+Trimshamsa -> 10 , 9 , 11 , 1 , 11 , 7 , 10 , 3 , 3 , 9 , 
+Khavedamsa -> 10 , 11 , 12 , 6 , 1 , 1 , 2 , 2 , 2 , 6 , 
+Akshvedamsa -> 8 , 6 , 1 , 11 , 2 , 2 , 8 , 2 , 2 , 8 , 
+Shastiamsa -> 9 , 9 , 12 , 1 , 1 , 10 , 5 , 5 , 11 , 8 , 
+Panchamsa -> 10 , 9 , 11 , 1 , 11 , 7 , 10 , 3 , 3 , 9 , 
+Shashtamsa -> 11 , 4 , 2 , 1 , 2 , 6 , 11 , 4 , 4 , 3 , 
+Ashtamsa -> 6 , 9 , 3 , 6 , 3 , 4 , 3 , 2 , 2 , 4 , 
+Ekadamsa -> 5 , 6 , 9 , 11 , 9 , 2 , 4 , 5 , 5 , 8 , 
+
+
+Thithi Thrithiyai Paksha Krishna
+AshtaVarga 
+Ashtavarga
+Sun Astavarga 
+
+Mesha -->  5
+Vrishabha -->  5
+Mithuna -->  4
+Kataka -->  6
+Simha -->  4
+Kanya -->  2
+Thula -->  4
+Vrichika -->  3
+Dhanus -->  5
+Makara -->  4
+Kumbha -->  2
+Meena -->  4
+Sum 48
+
+RasiGuna 79
+GrahaGuna 65
+Moon Astavarga 
+
+Mesha -->  4
+Vrishabha -->  3
+Mithuna -->  2
+Kataka -->  5
+Simha -->  6
+Kanya -->  3
+Thula -->  3
+Vrichika -->  4
+Dhanus -->  6
+Makara -->  3
+Kumbha -->  6
+Meena -->  4
+Sum 49
+
+RasiGuna 93
+GrahaGuna 53
+Mars Astavarga 
+
+Mesha -->  5
+Vrishabha -->  4
+Mithuna -->  2
+Kataka -->  5
+Simha -->  3
+Kanya -->  3
+Thula -->  3
+Vrichika -->  3
+Dhanus -->  5
+Makara -->  3
+Kumbha -->  0
+Meena -->  3
+Sum 39
+
+RasiGuna 77
+GrahaGuna 78
+Mercury Astavarga 
+
+Mesha -->  4
+Vrishabha -->  7
+Mithuna -->  5
+Kataka -->  6
+Simha -->  5
+Kanya -->  4
+Thula -->  5
+Vrichika -->  4
+Dhanus -->  4
+Makara -->  4
+Kumbha -->  1
+Meena -->  5
+Sum 54
+
+RasiGuna 90
+GrahaGuna 115
+Jupiter Astavarga 
+
+Mesha -->  6
+Vrishabha -->  4
+Mithuna -->  3
+Kataka -->  5
+Simha -->  7
+Kanya -->  2
+Thula -->  6
+Vrichika -->  6
+Dhanus -->  3
+Makara -->  6
+Kumbha -->  4
+Meena -->  4
+Sum 56
+
+RasiGuna 111
+GrahaGuna 84
+Venus Astavarga 
+
+Mesha -->  4
+Vrishabha -->  5
+Mithuna -->  8
+Kataka -->  3
+Simha -->  4
+Kanya -->  3
+Thula -->  4
+Vrichika -->  2
+Dhanus -->  5
+Makara -->  5
+Kumbha -->  6
+Meena -->  3
+Sum 52
+
+RasiGuna 78
+GrahaGuna 43
+Saturn Astavarga 
+
+Mesha -->  4
+Vrishabha -->  3
+Mithuna -->  1
+Kataka -->  6
+Simha -->  4
+Kanya -->  2
+Thula -->  2
+Vrichika -->  2
+Dhanus -->  3
+Makara -->  4
+Kumbha -->  4
+Meena -->  4
+Sum 39
+
+RasiGuna 97
+GrahaGuna 58
+SarvaAshtavarga Astavarga 
+
+Mesha -->  32
+Vrishabha -->  31
+Mithuna -->  25
+Kataka -->  36
+Simha -->  33
+Kanya -->  19
+Thula -->  27
+Vrichika -->  24
+Dhanus -->  31
+Makara -->  29
+Kumbha -->  23
+Meena -->  27
+Sum 337
+
+RasiGuna 161
+GrahaGuna 106
+
+Total 674
+
+ShadBala 
+ShadBala 
+Sun --> 10
+Sun --> 36.924909693646995
+OchachaBala:-->Sun :-> 26.39542125362882
+OjaYugmarasyamsaBala:-->Sun :-> 0.0
+KendraBala:-->Sun :-> 60.0
+DrekkanaBala:-->Sun :-> 0.0
+SapthavargaBala:-->Sun :-> 105.0
+SthanaBala:-->Sun :-> 191.39542125362883
+DigBala:-->Sun :-> 56.72209318872152
+NaisargikaBala:-->Sun :-> 60.0
+AbdaBala:-->Sun :-> 0.0
+MasaBala:-->Sun :-> 0.0
+VaraBala:-->Sun :-> 0.0
+PakshaBala:-->Sun :-> 8.808988647050818
+TribhagaBala:-->Sun :-> 60.0
+HoraBala:-->Sun :-> 0.0
+NatonnataBala:-->Sun :-> 59.23097324902992
+AyanaBala:-->Sun :-> 102.1251718605619
+YuddhaBala:-->Sun :-> 0.0
+KalaBala:-->Sun :-> 230.16513375664266
+DrikBala:-->Sun :-> -13.342125054775288
+ChestaBala:-->Sun :-> 45.19076535282809
+IshtaBala:-->Sun :-> 34.53736075993346
+KashtaBala:-->Sun :-> 22.308251654362717
+ShadBala:-->Sun :-> 8.749008719070297
+ShadBala Per:-->Sun :-> 174.98017438140593
+ShadBala Rank:-->Sun :-> 1
+Moon --> 5
+Moon --> 67.60619895595852
+OchachaBala:-->Moon :-> 34.746900726755335
+OjaYugmarasyamsaBala:-->Moon :-> 15.0
+KendraBala:-->Moon :-> 30.0
+DrekkanaBala:-->Moon :-> 0.0
+SapthavargaBala:-->Moon :-> 63.75
+SthanaBala:-->Moon :-> 143.49690072675534
+DigBala:-->Moon :-> 47.91310454167072
+NaisargikaBala:-->Moon :-> 51.43
+AbdaBala:-->Moon :-> 0.0
+MasaBala:-->Moon :-> 0.0
+VaraBala:-->Moon :-> 0.0
+PakshaBala:-->Moon :-> 17.617977294101635
+TribhagaBala:-->Moon :-> 0.0
+HoraBala:-->Moon :-> 0.0
+NatonnataBala:-->Moon :-> 0.7690267509700751
+AyanaBala:-->Moon :-> 39.50494106945854
+YuddhaBala:-->Moon :-> 0.0
+KalaBala:-->Moon :-> 57.891945114530245
+DrikBala:-->Moon :-> 16.44187449928794
+ChestaBala:-->Moon :-> 51.19101135294918
+IshtaBala:-->Moon :-> 42.17498061153236
+KashtaBala:-->Moon :-> 14.914900764029893
+ShadBala:-->Moon :-> 5.286230414704071
+ShadBala Per:-->Moon :-> 88.10384024506786
+ShadBala Rank:-->Moon :-> 7
+Mars --> 1
+Mars --> 70.77959845060072
+OchachaBala:-->Mars :-> 23.519778435331414
+OjaYugmarasyamsaBala:-->Mars :-> 30.0
+KendraBala:-->Mars :-> 60.0
+DrekkanaBala:-->Mars :-> 15.0
+SapthavargaBala:-->Mars :-> 97.5
+SthanaBala:-->Mars :-> 226.01977843533143
+DigBala:-->Mars :-> 30.806893499761298
+NaisargikaBala:-->Mars :-> 17.14
+AbdaBala:-->Mars :-> 0.0
+MasaBala:-->Mars :-> 0.0
+VaraBala:-->Mars :-> 0.0
+PakshaBala:-->Mars :-> 8.808988647050818
+TribhagaBala:-->Mars :-> 0.0
+HoraBala:-->Mars :-> 0.0
+NatonnataBala:-->Mars :-> 0.7690267509700751
+AyanaBala:-->Mars :-> 14.451642222902038
+YuddhaBala:-->Mars :-> 0.8872603324078326
+KalaBala:-->Mars :-> 24.916917953330767
+DrikBala:-->Mars :-> -1.9992922233373367
+ChestaBala:-->Mars :-> 34.1879563153968
+IshtaBala:-->Mars :-> 28.356536419226554
+KashtaBala:-->Mars :-> 30.68597517843012
+ShadBala:-->Mars :-> 5.5178708996747154
+ShadBala Per:-->Mars :-> 110.3574179934943
+ShadBala Rank:-->Mars :-> 5
+Mercury --> 11
+Mercury --> 47.667494700965726
+OchachaBala:-->Mercury :-> 46.33403766907357
+OjaYugmarasyamsaBala:-->Mercury :-> 15.0
+KendraBala:-->Mercury :-> 30.0
+DrekkanaBala:-->Mercury :-> 0.0
+SapthavargaBala:-->Mercury :-> 157.5
+SthanaBala:-->Mercury :-> 248.83403766907355
+DigBala:-->Mercury :-> 37.053027050957084
+NaisargikaBala:-->Mercury :-> 25.7
+AbdaBala:-->Mercury :-> 0.0
+MasaBala:-->Mercury :-> 30.0
+VaraBala:-->Mercury :-> 0.0
+PakshaBala:-->Mercury :-> 51.19101135294918
+TribhagaBala:-->Mercury :-> 0.0
+HoraBala:-->Mercury :-> 60.0
+NatonnataBala:-->Mercury :-> 60.0
+AyanaBala:-->Mercury :-> 45.635822038642715
+YuddhaBala:-->Mercury :-> 0.0
+KalaBala:-->Mercury :-> 246.8268333915919
+DrikBala:-->Mercury :-> -7.508125632701681
+ChestaBala:-->Mercury :-> 11.37708967971461
+IshtaBala:-->Mercury :-> 22.95967120375039
+KashtaBala:-->Mercury :-> 25.77748748146402
+ShadBala:-->Mercury :-> 9.371381035977258
+ShadBala Per:-->Mercury :-> 133.87687194253226
+ShadBala Rank:-->Mercury :-> 3
+Jupiter --> 1
+Jupiter --> 74.88359012749886
+OchachaBala:-->Jupiter :-> 28.613007175079787
+OjaYugmarasyamsaBala:-->Jupiter :-> 30.0
+KendraBala:-->Jupiter :-> 60.0
+DrekkanaBala:-->Jupiter :-> 15.0
+SapthavargaBala:-->Jupiter :-> 116.25
+SthanaBala:-->Jupiter :-> 249.8630071750798
+DigBala:-->Jupiter :-> 58.77264887347039
+NaisargikaBala:-->Jupiter :-> 34.28
+AbdaBala:-->Jupiter :-> 0.0
+MasaBala:-->Jupiter :-> 0.0
+VaraBala:-->Jupiter :-> 0.0
+PakshaBala:-->Jupiter :-> 51.19101135294918
+TribhagaBala:-->Jupiter :-> 60.0
+HoraBala:-->Jupiter :-> 0.0
+NatonnataBala:-->Jupiter :-> 59.23097324902992
+AyanaBala:-->Jupiter :-> 14.201793184761547
+YuddhaBala:-->Jupiter :-> -0.8872603324078326
+KalaBala:-->Jupiter :-> 183.7365174543328
+DrikBala:-->Jupiter :-> -1.9992922233373367
+ChestaBala:-->Jupiter :-> 28.290075369630966
+IshtaBala:-->Jupiter :-> 28.451083099502533
+KashtaBala:-->Jupiter :-> 31.548045531413727
+ShadBala:-->Jupiter :-> 9.215715944152944
+ShadBala Per:-->Jupiter :-> 141.78024529466066
+ShadBala Rank:-->Jupiter :-> 2
+Venus --> 9
+Venus --> 10.214648368439695
+OchachaBala:-->Venus :-> 29.792294023406104
+OjaYugmarasyamsaBala:-->Venus :-> 0.0
+KendraBala:-->Venus :-> 15.0
+DrekkanaBala:-->Venus :-> 15.0
+SapthavargaBala:-->Venus :-> 133.125
+SthanaBala:-->Venus :-> 192.9172940234061
+DigBala:-->Venus :-> 4.452299291832158
+NaisargikaBala:-->Venus :-> 42.85
+AbdaBala:-->Venus :-> 15.0
+MasaBala:-->Venus :-> 0.0
+VaraBala:-->Venus :-> 0.0
+PakshaBala:-->Venus :-> 51.19101135294918
+TribhagaBala:-->Venus :-> 0.0
+HoraBala:-->Venus :-> 0.0
+NatonnataBala:-->Venus :-> 59.23097324902992
+AyanaBala:-->Venus :-> 57.61727382662835
+YuddhaBala:-->Venus :-> 0.0
+KalaBala:-->Venus :-> 183.03925842860744
+DrikBala:-->Venus :-> -11.858831376639067
+ChestaBala:-->Venus :-> 13.756224051359633
+IshtaBala:-->Venus :-> 20.2442453944314
+KashtaBala:-->Venus :-> 37.37537139753949
+ShadBala:-->Venus :-> 7.085937406976106
+ShadBala Per:-->Venus :-> 128.83522558138372
+ShadBala Rank:-->Venus :-> 4
+Saturn --> 12
+Saturn --> 29.48739219631741
+OchachaBala:-->Saturn :-> 51.28674787023069
+OjaYugmarasyamsaBala:-->Saturn :-> 15.0
+KendraBala:-->Saturn :-> 15.0
+DrekkanaBala:-->Saturn :-> 0.0
+SapthavargaBala:-->Saturn :-> 120.0
+SthanaBala:-->Saturn :-> 201.2867478702307
+DigBala:-->Saturn :-> 6.327596081219137
+NaisargikaBala:-->Saturn :-> 8.57
+AbdaBala:-->Saturn :-> 0.0
+MasaBala:-->Saturn :-> 0.0
+VaraBala:-->Saturn :-> 45.0
+PakshaBala:-->Saturn :-> 8.808988647050818
+TribhagaBala:-->Saturn :-> 0.0
+HoraBala:-->Saturn :-> 0.0
+NatonnataBala:-->Saturn :-> 0.7690267509700751
+AyanaBala:-->Saturn :-> 38.71348063578492
+YuddhaBala:-->Saturn :-> 0.0
+KalaBala:-->Saturn :-> 93.29149603380581
+DrikBala:-->Saturn :-> -2.142636418429861
+ChestaBala:-->Saturn :-> 19.81126546400723
+IshtaBala:-->Saturn :-> 31.875623552218514
+KashtaBala:-->Saturn :-> 18.712952113134698
+ShadBala:-->Saturn :-> 5.452407817180551
+ShadBala Per:-->Saturn :-> 109.048156343611
+ShadBala Rank:-->Saturn :-> 6
+BhavaAdhipathiBala: 1 : -->7.085937406976106
+BhavaDigBala: 1 : -->60.0
+BhavaDrishtiBala: 1 : -->15.881396912009224
+BhavaBala: 1 : -->501.0376413305756
+BhavaBala Rank: 1 : -->6
+BhavaAdhipathiBala: 2 : -->5.5178708996747154
+BhavaDigBala: 2 : -->10.0
+BhavaDrishtiBala: 2 : -->30.566592651454396
+BhavaBala: 2 : -->371.6388466319373
+BhavaBala Rank: 2 : -->10
+BhavaAdhipathiBala: 3 : -->9.215715944152944
+BhavaDigBala: 3 : -->40.0
+BhavaDrishtiBala: 3 : -->19.736096064483966
+BhavaBala: 3 : -->612.6790527136606
+BhavaBala Rank: 3 : -->3
+BhavaAdhipathiBala: 4 : -->5.452407817180551
+BhavaDigBala: 4 : -->0.0
+BhavaDrishtiBala: 4 : -->37.486091500070486
+BhavaBala: 4 : -->364.6305605309035
+BhavaBala Rank: 4 : -->11
+BhavaAdhipathiBala: 5 : -->5.452407817180551
+BhavaDigBala: 5 : -->20.0
+BhavaDrishtiBala: 5 : -->100.49730197610113
+BhavaBala: 5 : -->447.64177100693416
+BhavaBala Rank: 5 : -->8
+BhavaAdhipathiBala: 6 : -->9.215715944152944
+BhavaDigBala: 6 : -->40.0
+BhavaDrishtiBala: 6 : -->33.75162665364387
+BhavaBala: 6 : -->626.6945833028204
+BhavaBala Rank: 6 : -->1
+BhavaAdhipathiBala: 7 : -->5.5178708996747154
+BhavaDigBala: 7 : -->30.0
+BhavaDrishtiBala: 7 : -->50.547705987715865
+BhavaBala: 7 : -->411.61995996819877
+BhavaBala Rank: 7 : -->9
+BhavaAdhipathiBala: 8 : -->7.085937406976106
+BhavaDigBala: 8 : -->40.0
+BhavaDrishtiBala: 8 : -->19.793668583736775
+BhavaBala: 8 : -->484.9499130023031
+BhavaBala Rank: 8 : -->7
+BhavaAdhipathiBala: 9 : -->9.371381035977258
+BhavaDigBala: 9 : -->20.0
+BhavaDrishtiBala: 9 : -->38.219571566909686
+BhavaBala: 9 : -->620.5024337255452
+BhavaBala Rank: 9 : -->2
+BhavaAdhipathiBala: 10 : -->5.286230414704071
+BhavaDigBala: 10 : -->0.0
+BhavaDrishtiBala: 10 : -->-3.782133672271975
+BhavaBala: 10 : -->313.3916912099723
+BhavaBala Rank: 10 : -->12
+BhavaAdhipathiBala: 11 : -->8.749008719070297
+BhavaDigBala: 11 : -->50.0
+BhavaDrishtiBala: 11 : -->-10.642917770251652
+BhavaBala: 11 : -->564.2976053739661
+BhavaBala Rank: 11 : -->5
+BhavaAdhipathiBala: 12 : -->9.371381035977258
+BhavaDigBala: 12 : -->50.0
+BhavaDrishtiBala: 12 : -->-2.0678593338826428
+BhavaBala: 12 : -->610.2150028247528
+BhavaBala Rank: 12 : -->4
+
+
+Dasas
+Ra28-Apr-1968
+Ju29-Apr-1986
+Sa/Sa29-Apr-2002
+Sa/Me02-May-2005
+Sa/Ke10-Jan-2008
+Sa/Ve18-Feb-2009
+Sa/Su19-Apr-2012
+Sa/Mo02-Apr-2013
+Sa/Ma01-Nov-2014
+Sa/Ra/Ra10-Dec-2015
+Sa/Ra/Ju15-May-2016
+Sa/Ra/Sa01-Oct-2016
+Sa/Ra/Me15-Mar-2017
+*Sa/Ra/Ke09-Aug-2017
+Sa/Ra/Ve09-Oct-2017
+Sa/Ra/Su31-Mar-2018
+Sa/Ra/Mo22-May-2018
+Sa/Ra/Ma17-Aug-2018
+Sa/Ju16-Oct-2018
+Me29-Apr-2021
+Ke29-Apr-2038
+Ve29-Apr-2045
+Su29-Apr-2065
+Mo29-Apr-2071
+Ma29-Apr-2081
+
+

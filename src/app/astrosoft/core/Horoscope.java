@@ -572,8 +572,10 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 
 	public static void main(String[] args) {
 
-		/*Horoscope h = new Horoscope("Raja", 11, 12, 1980, 1, 44,
+	/*	Horoscope h = new Horoscope("Raja", 11, 12, 1980, 1, 44,
 				77 + (44.00 / 60.00), 11 + (22.00 / 60.00), 5.5, "Erode");
+		h.setAyanamsa(Ayanamsa.LAHARI);
+		h.calculateAll();
 
 		System.out.println(h);
 		// Horoscope h = new
@@ -585,11 +587,11 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 		 * 60.00 ), 13 + ( 0.00 / 60.00 ), 5.5, "Banglore" );
 		 */
 
-		/*h.setAyanamsa(Ayanamsa.LAHARI);
 
-		// h.calcPlanetPositions();
-		// h.calcHousePositions();
-		int i = 0;
+
+
+
+	/*	int i = 0;
 
 		for (i = 0; i < 10; i++) {
 
@@ -656,27 +658,32 @@ public class Horoscope implements  PreferenceChangeListener , Exportable {
 		AstroSoft.getPreferences().setAyanamsa(Ayanamsa.LAHARI);
 		Horoscope h = new Horoscope("Raja", 11, 12, 1980, 1, 44,
 				77 + (44.00 / 60.00), 11 + (22.00 / 60.00), 5.5, "Erode");
+		h.calculateAll();
 
 		System.out.println("----------------------Raja----------------------");
-		System.out.println(h.getPlanetaryInfo());
+		System.out.println(h);
 
 		Horoscope b = new Horoscope("Elango", 17, 4, 1957, 7, 10,
 				77 + (44.00 / 60.00), 11 + (22.00 / 60.00), 5.5, "Erode");
 
+		b.calculateAll();
 		System.out.println("----------------------Elango----------------------");
-		System.out.println(b.getPlanetaryInfo());
+		System.out.println(b);
 
 		Horoscope g = new Horoscope("Mani", 10, 8, 1960, 5, 30,
 				77 + (44.00 / 60.00), 11 + (22.00 / 60.00), 5.5, "Erode");
+		g.calculateAll();
 		System.out.println("----------------------Mani----------------------");
-		System.out.println(g.getPlanetaryInfo());
+		System.out.println(g);
 
 		Horoscope s = new Horoscope("Suba",31,3,1988,18,10,77+(44.00/60.00),11+(22.00/60.00),5.5,"Erode");
+		s.calculateAll();
 		System.out.println("----------------------Suba----------------------");
-		System.out.println(s.getPlanetaryInfo());
+		System.out.println(s);
 		h = new Horoscope("Viji",7,8,1982,11,45,77+(44.00/60.00),11+(22.00/60.00),5.5,"Erode");
+		h.calculateAll();
 		System.out.println("----------------------Viji----------------------");
-		System.out.println(h.getPlanetaryInfo());
+		System.out.println(h);
 	}
 
 	public void doExport(Exporter e) {
