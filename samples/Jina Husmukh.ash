@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Jina Husmukh</Name><DateTime>Sep 28 1959, 07:00:00 AM</DateTime><Place><City>Soroti</City><Longitude dir="E">33.36</Longitude><Latitude dir="N">01.42</Latitude><TimeZone>Africa/Kampala</TimeZone></Place></BirthData>

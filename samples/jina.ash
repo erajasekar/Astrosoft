@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Jinia</Name><DateTime>Sep 28 1959, 07:00:00 AM</DateTime><Place><City>Uganda</City><Longitude dir="E">01.07</Longitude><Latitude dir="N">33.52</Latitude><TimeZone>Africa/Kampala</TimeZone></Place></BirthData>

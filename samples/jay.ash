@@ -1,10 +1,1 @@
-Jayaram
-13
-5
-1979
-10
-12
-80.25
-11.366666666666667
-5.5
-Chennai
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Jayaram</Name><DateTime>May 13 1979, 10:12:00 AM</DateTime><Place><City>Chennai</City><Longitude dir="E">80.15</Longitude><Latitude dir="N">11.22</Latitude><TimeZone>IST</TimeZone></Place></BirthData>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BirthData><Name>Walt disney</Name><DateTime>Dec 5 1901, 12:35:00 AM</DateTime><Place><City>Chicago</City><Longitude dir="W">87.39</Longitude><Latitude dir="N">41.51</Latitude><TimeZone>America/New_York</TimeZone></Place></BirthData>
