@@ -9,12 +9,14 @@ Astrosoft is a free indian astrology software program for astrologers
 
 * Install Java JDK from [oracle](https://www.oracle.com/java/technologies/javase-downloads.html) if you don't already have Java installed on your system.
 * Run `java -version` to verify if Java is installed. 
+* You will need Java version 8 or later. If you have older version Java Installed, please install version higher than Java 8.
 * Download code from [GitHub](https://github.com/erajasekar/Astrosoft) by clicking this [link](https://github.com/erajasekar/Astrosoft/archive/master.zip) or clicking `Clone or download -> Download Zip` button in Github
 * Unzip `Astrosoft - master.zip`
 * Open command window on windows or terminal window in Mac/Linux.
-* Change dir to Astrosoft installation dir for e.g `cd C:\Astrosoft - master`
+* Change dir to Astrosoft installation dir for e.g `cd C:\Astrosoft - master`. For help with changing dirs in Linux or Mac, watch this [video](https://www.youtube.com/watch?v=y7mooASbLfQ).
 * Run `cd bin`
 * Launch Astrosoft by running command `./RunAstroSoft.bat` 
+* If you have Linux or MacOS, then run ./RunAstroSoft.sh to Launch Astrosoft.
 * If you run into problems or need help contact **[innovativeastrosolutions@gmail.com](mailto:innovativeastrosolutions@gmail.com)**
 
 Features:
